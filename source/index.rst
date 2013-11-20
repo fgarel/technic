@@ -12,6 +12,9 @@ Contents:
    :maxdepth: 2
 
 
+.. include:: environnementTravail/environnementTravail.rst
+.. include:: qgis/qgis.rst
+
 
 Indices and tables
 ==================
