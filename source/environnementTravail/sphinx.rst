@@ -7,15 +7,42 @@
 Sphinx
 ======
 
-Installation de l'environnement de Travail
-==========================================
+#) Installation
+#) Creation de deux projets sphinx
+#) Installation des extensions (plugins) et paramètrage des extensions dans les projets
 
-Creation d'un environnement python incluant
+Environnement virtuel python avec l'outil sphinx
+================================================
+Creation d'un environnement virtuel python
+ecriture_sphinx
+
+
+Creation d'un environnement python
 mkvirtualenv ecriture_sphinx
 pip install sphinx
 
+Utilisation de cet environnement
+workon ecriture_sphinx
+
+
+2 projets sphinx
+================
+Se positionner dans le bon répertoire
+et execution de la commande sphinx-quickstart
+~/travail/ecriture_sphinx/report/
+~/travail/ecriture_sphinx/technic/
+
+Installation et Configuration de quelques plugins
+=================================================
+
+Extension sphinxcontrib-plantuml
+--------------------------------
+pip search sphinxcontrib-plantuml
+pip install sphinxcontrib-plantuml
+Installation de plantuml
+
 Extension hieroglyph
-====================
+--------------------
 
 Ajout de hieroglyph dans l'environnement python
 pip install hieroglyph
@@ -33,17 +60,14 @@ slides:
     @echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
 
 
-Extension sphinxcontrib-plantuml
-================================
-pip search sphinxcontrib-plantuml
-pip install sphinxcontrib-plantuml
-Installation de plantuml
-
+Extension ???
+-------------
 
 
 Autres extensions
-=================
+-----------------
 Les extensions sont listées ici
 http://sphinx-doc.org/extensions.html
 https://bitbucket.org/birkenfeld/sphinx-contrib
+
 
