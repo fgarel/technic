@@ -3,23 +3,51 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to technic's documentation!
-===================================
+.. http://docs.python.org/devguide/documenting.html#sections
 
-Contents:
+.. Normally, there are no heading levels assigned to certain characters
+.. as the structure is determined from the succession of headings.
+.. However, for the Python documentation, here is a suggested convention:
 
-.. toctree::
-   :maxdepth: 2
+.. # with overline, for parts
+.. * with overline, for chapters
+.. =, for sections
+.. -, for subsections
+.. ^, for subsubsections
+.. ", for paragraphs"
+
+.. #######################
+.. Documentation technique
+.. #######################
+
+.. environnementTravail/environnementTravail           => parts    => ########
+.. environnementTravail/environnementTravail/Principe  => chapters => ********
+.. environnementTravail/plantuml/plantuml              => chapters => ********
+.. environnementTravail/sphinx/sphinx                  => chapters => ********
+.. environnementtravail/git/git                        => chapters => ********
+
+.. qgis/qgis                                           => parts    => ########
+.. qgis/qgis/installation                              => chapters => ********
+.. qgis/qgis/utilisation                               => chapters => ********
+
+##################
+Table des matières
+##################
+
+.. .. contents:: Table des matières
+
+.. .. toctree::
+..   :maxdepth: 2
 
 
 .. include:: environnementTravail/environnementTravail.rst
 .. include:: qgis/qgis.rst
 
 
-Indices and tables
-==================
+.. .. Indices and tables
+.. ..   ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
