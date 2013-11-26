@@ -91,6 +91,8 @@ Plantuml et sphinx
 ------------------
 https://pypi.python.org/pypi/sphinxcontrib-plantuml
 
+Cette configuration est détaillée au paragraphe sphinx.
+
 Autres compagnons de plantuml
 -----------------------------
 http://plantuml.sourceforge.net/running.html

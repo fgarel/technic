@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-====================
- Presentation Title
-====================
+==============================
+Génération de la documentation
+==============================
 
 First Slide
 ===========
@@ -19,3 +19,10 @@ Second Slide
 * Bulleted
 * List
 
+.. uml::
+  :alt: Alice and Bob
+
+  Alice -> Bob: Hello
+  Alice <- Bob: Hi
+
+.. .. include:: environnementTravail/sequence_uml.rst

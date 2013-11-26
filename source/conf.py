@@ -28,6 +28,7 @@ import sys, os
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', \
               'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.mathjax', \
               'sphinx.ext.ifconfig', 'sphinx.ext.viewcode', \
+              'sphinxcontrib.plantuml', \
               'hieroglyph']
 
 # Add any paths that contain templates here, relative to this directory.
@@ -290,3 +291,12 @@ epub_copyright = u'2013, Frédéric Garel'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
+
+# configuration pour l'extension sphinxcontrib-plantuml
+# attention, cette extension necessite l'outil epstopdf qui est disponible
+# dans le paquet texlive-font-utils
+plantuml = 'plantuml'
+plantuml_output_format = 'svg'
+plantuml_latex_output_format = 'pdf'
+plantuml_epstopdf = 'epstopdf'
+#plantuml_output_format = 'svg'
