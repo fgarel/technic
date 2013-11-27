@@ -92,6 +92,14 @@ Plantuml et sphinx
 https://pypi.python.org/pypi/sphinxcontrib-plantuml
 
 Cette configuration est détaillée au paragraphe sphinx.
+Cependant, il faut avoir créer l'utilitaire plantmul tel que décrit dans le paragraphe précédent.
+
+.. code::
+
+  sudo vim /usr/local/bin/plantuml
+  #!/bin/bash
+  java -jar $HOME/install/plantuml/plantuml.jar -tsvg $@
+  sudo chmod +x /usr/local/bin/plantuml
 
 Autres compagnons de plantuml
 -----------------------------

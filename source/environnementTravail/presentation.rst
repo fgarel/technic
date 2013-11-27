@@ -3,21 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==============================
-Génération de la documentation
-==============================
+************************
+Titre de la présentation
+************************
 
-First Slide
-===========
+Premiere Diapo
+==============
 
-Some content on the first slide.
+Une documentation, ecrite au format Restful, peut être transformée en plusieurs formats de sortie.
 
-Second Slide
-============
+Seconde Diapo
+=============
 
-* A
-* Bulleted
-* List
+Les formats qui peuvent être générés sont :
+
+  * html
+  * pdf
+  * presentation (hieroglyph)
+  * presentation (hovercraft)
 
 .. uml::
   :alt: Alice and Bob
@@ -26,3 +29,33 @@ Second Slide
   Alice <- Bob: Hi
 
 .. .. include:: environnementTravail/sequence_uml.rst
+
+Troisième Diapo
+===============
+
+Une documentation peut contenir :
+  liste
+  diagramme
+  tableau
+  graphique
+  code
+
+Quatrième Diapo
+===============
+
+Exemple de diagramme
+
+.. uml::
+  :alt: Alice and Bob
+
+  Alice -> Bob: Hello
+  Alice <- Bob: Hi
+
+Cinquieme Diapo
+===============
+
+Exemple de code
+
+.. code::
+
+  vi ~/.vimrc
