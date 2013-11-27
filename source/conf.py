@@ -29,7 +29,11 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphin
               'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.mathjax', \
               'sphinx.ext.ifconfig', 'sphinx.ext.viewcode', \
               'sphinxcontrib.plantuml', \
+#              'sphinxcontrib.googlemaps', \
+              'sphinxcontrib.aafig', \
               'hieroglyph']
+
+#              'sphinxcontrib.googlemaps', \
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['.templates']
@@ -292,6 +296,7 @@ epub_copyright = u'2013, Frédéric Garel'
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
 
+# -- Options for plantuml ---------------------------------------------------
 # configuration pour l'extension sphinxcontrib-plantuml
 # attention, cette extension necessite l'outil epstopdf qui est disponible
 # dans le paquet texlive-font-utils
@@ -300,3 +305,12 @@ plantuml_output_format = 'svg'
 plantuml_latex_output_format = 'pdf'
 plantuml_epstopdf = 'epstopdf'
 #plantuml_output_format = 'svg'
+
+# -- Options for hieroglyph ---------------------------------------------------
+#slide_theme = 'slides'
+slide_theme = 'single-level'
+slide_theme_options = {'custom_css': 'custom.css'}
+
+# -- Options for hieroglyph ---------------------------------------------------
+aafig_format = dict(latex='pdf', html='svg', text=None)
+aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)

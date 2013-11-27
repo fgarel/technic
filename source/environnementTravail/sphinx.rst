@@ -59,8 +59,9 @@ Les principales commandes qui seront utilisées seront
   make slides
   make latexpdf
 
+Nous le verrons ci-après, pour que la génération de slides fonctionne, il faut avoir installé un plugin à sphinx (hieroglyph)
 
-Pour que la génération de pdf fonctionne, il faut avoir installé quelques paquets supplémentaires
+De même, pour que la génération de pdf fonctionne, il faut avoir installé quelques paquets supplémentaires
 
 https://github.com/davetron5000/scala-style/issues/18
 
@@ -148,6 +149,18 @@ http://docs.hieroglyph.io/en/latest/getting-started.html#adding-hieroglyph-to-an
   vi conf.py
   extension = [ ...., 'hieroglyph']
 
+Attention, il faut aussi ajouter quelques variables de configuration dans conf.py
+
+.. code::
+
+  vi conf.py
+  
+  # configuration pour hieroglyph
+  #slide_theme = 'slides'
+  slide_theme = 'single-level'
+  slide_theme_options = {'custom_css': 'custom.css'}
+
+
 Ajout d'un builder dans le makefile
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 http://docs.hieroglyph.io/en/latest/builders.html
@@ -162,15 +175,111 @@ http://docs.hieroglyph.io/en/latest/builders.html
 
 Extension hovercraft
 --------------------
+
+Cette extension n'a pas l'air de fonctionner avec python2
+
 https://pypi.python.org/pypi/hovercraft/
 
 https://hovercraft.readthedocs.org/en/1.0/
 
 Ajout de hovercraft dans l'environnement python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Normalement, l'installation devrait etre
+
 .. code::
 
   pip install hovercraft
+
+Cependant, on se rend compte qu'il faut un prérequis
+le paquet libxslt-dev qui contient le fichier xmlversion.h
+
+.. code::
+
+  #sudo aptitude install libxml2-dev
+  sudo aptitude install libxlst-dev
+
+Cette fois-ci, l'installation ne pose plus de problème
+
+.. code::
+
+  pip install hovercraft
+
+
+Extension googlemaps
+--------------------
+
+Cette extension n'a pas l'air de fonctionner avec latexpdf
+
+Ajout de googlemaps dans l'environnement python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code::
+
+  pip install sphinxcontrib-googlemaps
+
+Enregistrement de sphinxcontrib-googlemaps dans la config de sphinx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+https://github.com/thewtex/sphinx-contrib/tree/master/googlemaps
+
+.. code::
+
+  vi conf.py
+  extension = [ ...., \
+                'sphinxcontrib.plantuml', \
+                'sphinxcontrib.googlemaps', \
+                'hieroglyph']
+
+Modification de la langue par defaut
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C'est un japonais qui a developpé ce plugin.
+Il faut aller modifier le fichier source.
+
+.. code::
+
+  cdvirtualenv
+  vi lib/python2.7/site-packages/sphinxcontrib/googlemaps.py
+  lang = 'fr'
+  baseurl = "http://maps.google.fr/maps?"
+
+Extension aafig
+---------------
+
+http://pythonhosted.org/sphinxcontrib-aafig/
+
+https://launchpad.net/aafigure
+
+Ajout de aafig dans l'environnement python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code::
+
+  pip install aafigure
+  pip install sphinxcontrib-aafig
+  pip install reportlab
+
+
+Enregistrement de aafig dans la config de sphinx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code::
+
+  vi conf.py
+  extension = [ ...., \
+                'sphinxcontrib.plantuml', \
+                'sphinxcontrib.googlemaps', \
+                'sphinxcontrib.aafig', \
+                'hieroglyph']
+
+
+Attention, il faut aussi ajouter quelques variables de configuration dans conf.py
+
+.. code::
+
+  vi conf.py
+  
+  # configuration pour l'extension aafig
+  aafig_format = dict(latex='pdf', html='svg', text=None)
+  aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)
+
 
 Autres extensions
 -----------------

@@ -22,23 +22,16 @@ Les formats qui peuvent être générés sont :
   * presentation (hieroglyph)
   * presentation (hovercraft)
 
-.. uml::
-  :alt: Alice and Bob
-
-  Alice -> Bob: Hello
-  Alice <- Bob: Hi
-
-.. .. include:: environnementTravail/sequence_uml.rst
-
 Troisième Diapo
 ===============
 
 Une documentation peut contenir :
-  liste
-  diagramme
-  tableau
-  graphique
-  code
+
+  * liste
+  * diagramme
+  * tableau
+  * graphique
+  * code
 
 Quatrième Diapo
 ===============
@@ -59,3 +52,60 @@ Exemple de code
 .. code::
 
   vi ~/.vimrc
+
+Sixième Diapo
+=============
+
+Exemple de tableau
+
++-------------+---------------+---------------+---------------+
+|  Colonne 1  |     Titre pour 2 colonnes     |               |
++  Colonne 1  +---------------+---------------+     Total     +
+|  Colonne 1  |   Colonne 2   |   Colonne 3   |               |
++=============+===============+===============+===============+
+|   cel 1.1.  |    cel 1.2.   |    cel 1.3.   | **Tot lig 1** |
++-------------+---------------+---------------+---------------+
+|   cel 2.1.  |    cel 2.2.   |    cel 2.3.   | **Tot lig 2** |
++-------------+---------------+---------------+---------------+
+|   cel 3.1.  |     cellules 3.2. et 3.3.     | **Tot lig 3** |
++-------------+---------------+---------------+---------------+
+|             |               |               |               |
++-------------+---------------+---------------+---------------+
+|   cel 6.1.  |    cel 6.2.   |    cel 6.3.   | **Tot lig 6** |
++-------------+---------------+---------------+---------------+
+|  **Total**  | **Tot col 2** | **Tot col 3** |   **Total**   |
++-------------+---------------+---------------+---------------+
+
+Septième Diapo
+==============
+
+Un extrait de carte
+
+.. .. googlemaps::
+..    19 rue des roseaux, 17000 La Rochelle
+
+Huitième Diapo
+==============
+
+.. code::
+
+  cd source/.static
+  convert logo: logo.png
+
+Une image existante
+
+.. .. image:: ../.static/logo.png
+
+.. image:: /.static/logo.png
+   :height: 300px
+   :scale: 50 %
+
+Neuvième Diapo
+==============
+
+Une image dessinée à la volée
+
+.. aafig::
+
+   DD o--->
+
