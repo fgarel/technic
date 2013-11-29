@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# 1ere partie on recupere les fichiers sql
+# on les recode en utf8
+rm -rf ../apres_recode/*
+cp ../avant_recode/* ../apres_recode/
+recode l1..utf8 ../apres_recode/*
+
+# 2eme partie on execute les commandes sql
+
+psql template1 -c 'drop database "topographie8";'
+psql template1 -c 'drop database "topographie";'
+psql template1 -c 'create DATABASE "topographie" with encoding='\'UTF8\'';'
+
+psql topographie -f '../apres_recode/theme.sql'
+psql topographie -f '../apres_recode/domaine.sql'
+psql topographie -f '../apres_recode/classe.sql'
+psql topographie -f '../apres_recode/objet.sql'
+psql topographie -f '../apres_recode/objet_attribut.sql'
+psql topographie -f '../apres_recode/attribut_valeur.sql'
+psql topographie -f '../apres_recode/attribut_valeur_sig.sql'
+psql topographie -f '../apres_recode/representation.sql'
+psql topographie -f '../apres_recode/representation_covadis.sql'

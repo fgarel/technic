@@ -1,0 +1,13 @@
+Creation et administration d'un projet et de sa documentation
+
+le projet sera heberge avec bitbucket.org
+
+aller sur le site https://bitbucket.org puis creer un nouveau projet
+
+charger le repertoire local vers le depot bitbucket.org
+git config --global user.name "Frédéric Garel"
+git config --global user.email "frederic.garel@gmail.com"
+# pushing your local repository to bitbucket.org
+git checkout master
+git remote add origin ssh://git@bitbucketr.org:fgarel/csv2db.git
+git push origin master

@@ -1,0 +1,38 @@
+Mise au point de la chaine
+
+un repertoire contenant une liste de fichier svg
+un repertoire contenant une liste de fichier png ou jpeg
+
+vers un pdf unique avec latex (gestion de la "liste des figures")
+
+
+Installation
+
+1.1. Telechargment de latexbd
+cd ~/Travail/latex
+cd bin
+wget http://etienne.marache.pagesperso-orange.fr/latex/lbd/lbd.tar
+tar xvf lbd.tar
+
+export PATH=$PATH:.
+
+1.2. Installation et utilisation de virtualenvwrapper
+sudo aptitude install virutalenvwrapper
+mkvirtualenv latexbd
+
+workon latexbd
+
+1.3. lancement du serveur de base de données postgresql 
+1.3.1. test de la connexion
+sur le serveur :
+ifconfig 
+sur le client :
+psql -h 10.2.10.2 -d dbmapnik -U contrib
+1.3.2. creation d'une base latexbd
+sur le serveur
+createdb -h 10.2.10.2 -U contrib -E UTF8 latexbd
+sur le client
+psql -h 10.2.10.2 -d latexbd -U contrib
+1.3.3. remplissage de la table latexbd
+psql -h 10.2.10.2 -U contrib -d latexbd -f exemples-lbd
+

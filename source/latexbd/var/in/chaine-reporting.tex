@@ -1,0 +1,435 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a4paper,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Reporting}
+
+
+
+\begin{document}
+
+%\begin{landscape}
+\maketitle{}
+%\end{landscape}
+
+\frontmatter
+
+\chapter{Introduction}
+L'objectif de ce document est de décrire la chaine de traitement qui a été utilisé pour générer le catalogue topographique.
+\paragraph{Le catalogue topographique}
+\label{sec:LeCatalogueTopographique}
+Le produit final est un fichier pdf.
+En ce qui concerne le contenu, il est extrait d'une Base de Données Postgresql.
+Des images sont aussi insérées dans ce catalogue.
+\paragraph{Un schéma de la procédure}
+\label{sec:UnSchémaDeLaProcédure}
+Le fichier pdf est généré à l'aide de l'outil \LaTeX.
+
+Les images insérées dans ce document ont été converties à l'aide de plusieurs utilitaires dont ImageMagick et swftools.
+Les extraits de cartes ont quant à eux, été réalisé grace à mapyrus.
+
+Les données attributaires ont pu être incorporées dans le document latex à l'aide de l'outil latexbd.
+Ces données sont extraites d'une base de données Postgresql.
+Initialement au format Excel, elles ont été insérées dans la base Postgresql à l'aide des utilitaires cvsToSql et psql.
+
+
+\paragraph{Les outils}
+\label{sec:LesOutils}
+Pour réaliser ce catalogue, nous avons donc utiliser :
+\begin{enumerate}
+	\item Postgresql
+	\item \LaTeX
+	\item ainsi que divers autres outils complémentaires
+  \begin{enumerate}
+	  \item recode (pour la gestion des caractères accentuées)
+	  \item latexbd (utilitaire permettant d'interfacer \LaTeX et Postgresql)
+	  \item csv2sql (pour transferer des données excel dans la base postgresql)
+  \end{enumerate}
+\end{enumerate}
+
+\mainmatter
+
+\chapter{Pour aller vite...}
+\section{Description de la procédure "`données attributaires"'}
+\begin{enumerate}
+	\item Mise à jour des fichiers Excel
+	\item Transfert des données Excel dans la base Postgresql 
+	\begin{enumerate}
+  	\item Utilisation de csvToSql
+  	\item Execution d'un script de transfert
+	  %\item Utilisation de recode
+	  %\item Execution de commandes SQL
+  \end{enumerate}
+	\item Compilation du document .tex
+\end{enumerate}
+\vspace{\baselineskip}
+\section{Mise à jour des fichiers Excel}
+Les fichiers à modifier sont sur le réseau, dans le répertoire
+\begin{verbatim}
+F:\INFO\geomatique\dossiers_en_cours\donnees_topo
+\end{verbatim}
+Ces fichiers sont :
+\begin{itemize}
+	\item Theme.xls
+	\item Domaine.xls
+	\item Classe.xls
+	\item Objet.xls
+	\item Representation.xls
+	\item Representation\_covadis.xls
+\end{itemize}
+\section{Transfert des données Excel dans la base Postgresql}
+\subsection{Utilisation de csvToSql}
+\label{sec:UtilisationDeCsvToSql}
+Cet utilitaire se lance à partir de la commande suivante :
+\begin{verbatim}
+C:\libre\csvtosql_jdk50\bin\rungui.bat
+\end{verbatim}
+L'utilisation de l'outil est très simple, on charge un fichier .xml qui décrit les différents paramètres de la conversion,
+puis on lance l'exécution de ce transfert selon ces paramètres.
+
+
+Pour de plus amples informations sur csvToSql, il faut aller sur le site
+\begin{verbatim}
+http://csvtosql.sourceforge.net/
+\end{verbatim}
+
+\subsection{Execution d'un script de transfert}
+\label{sec:ExecutionDUnScriptDeTransfert}
+Sous linux, dans le répertoire
+\begin{verbatim}
+/catalogue_topo/bin
+\end{verbatim}
+un script shell nommé
+\begin{verbatim}
+fichier_commande
+\end{verbatim} est à exécuter.
+Ce script effectue les différentes manipulations spécifiques du transfert de fichier texte vers la base Postgresql
+\begin{itemize}
+  \item ré-encodage des fichiers,
+  \item execution de commandes SQL.
+\end{itemize}
+\section{Compilation du document .tex}
+Ici aussi, on va utiliser un script. Ce script lance la commande latexbd qui s'occupe de générer le fichier .pdf en sortie.
+Ce script est :
+\begin{verbatim}
+/catalogue_topo/bin/reporting_test.sh
+\end{verbatim}
+\section{Commentaires : les limites de la procédure}
+Voici les différents problèmes rencontrés :
+\begin{itemize}
+  \item utilisation des caractères accentués : problème résolu
+  \item utilisation du caractère \_ : problème résolu
+\end{itemize}
+
+\section{Description de la procédure "`données graphiques"'}
+\begin{enumerate}
+	\item Recensement des fichiers graphiques
+	\item Conversion des graphiques
+	\begin{enumerate}
+  	\item Utilisation de swftools
+  	\item Utilisation d'ImageMagick
+	  %\item Utilisation de recode
+	  %\item Execution de commandes SQL
+  \end{enumerate}
+	\item Utilisation de graphicx
+\end{enumerate}
+\vspace{\baselineskip}
+
+\section{Conversion des graphiques}
+la commande pour convertir du format swf en jpeg est :
+\begin{verbatim}
+c:\libre\swftools\swfextract.exe -j 1 -o feuclignotant.jpg feuclignotant.swf
+\end{verbatim}
+
+\chapter{Installation de la chaîne de traitement}
+\section{Introduction}
+La chaine de traitement va nous permettre de faire du reporting de Postgresql vers un fichier .pdf.
+Nous pouvons faire un parallèle très grossier entre \LaTeX et les états de MS Access.
+Nous allons
+\begin{itemize}
+  \item utiliser différents maillons
+  \begin{itemize}
+    \item Postgresql
+    \item recode
+    \item latexbd
+  \end{itemize}
+  \item gérer les caractères accentués
+\end{itemize}
+On remonte la chaîne à partir de la fin
+\vspace{\baselineskip}
+\section{Les maillons de la chaîne}
+\vspace{\baselineskip}
+\subsection{Le document catalogue-topo-but.tex}
+\label{sec:LeDocumentCatalogueTopoButTex}
+Ce document est généré par latxbd à partir du document catalogue-topo.tex
+
+Ce fichier -but.tex est un pur \LaTeX. Il peut comporter des caractères accentués,
+ mais il doit avoir un caractère d'échappement avant le caractère souligné.
+Sous Linux, l'en-tête du document contient :
+\begin{itemize}
+  \item \begin{verbatim}\usepackage[utf8]{inputenc} \end{verbatim}
+  \item \begin{verbatim}\usepackage[T1]{fontenc}  \end{verbatim}
+  \item \begin{verbatim}\usepackage[french]{babel} \end{verbatim}
+\end{itemize}
+\subsection{Le document catalogue-topo.tex}
+\label{sec:LeDocumentCatalogueTopoTex}
+Ce document n'est pas un document \LaTeX. C'est un document source pour latexbd.
+Latexbd est un utilitaire récupéré sur ce site :
+\begin{verbatim}
+http://perso.orange.fr/Etienne.Marache/latex/lbd/latexbd.html
+\end{verbatim}
+Il permet de faire la liaison entre \LaTeX et une base de données.
+
+Installation des paquets :
+\begin{itemize}
+  \item texlive
+  \item texlive-lang-french
+  \item texmaker
+  \item xpdf
+  \item gv
+  \item python-sqlalchemy
+  \item python-psycopg2
+\end{itemize}
+
+On télécharge puis on recopie les fichiers de latexbd.
+\begin{itemize}
+  \item Dans le répertoire /home/fred/catalogue\_topo/reporting/tutorial, on place
+  \begin {itemize}
+    \item les fichiers .tex
+    \item le fichier exemples-lbd.sql
+  \end{itemize}
+  \item Dans le répertoire /usr/local/bin, on place les fichiers
+  \begin {itemize}
+    \item latexbd
+    \item latexbd.py
+    \item lbda.py    
+  \end{itemize}
+\end{itemize}
+Dans le répertoire /usr/local/bin, on change les droits sur les fichiers :
+\begin{verbatim}
+chmod 755 latexbd.py
+chmod 755 latexbd
+chmod 755 lbda.py
+\end{verbatim}
+Attention, le document catalogue-topo.tex, comme le document catalogue-topo-but.tex ne doivent pas, contenir le caractère souligné.
+
+En ce qui concerne le fichier catalogue-topo.tex, si les noms de colonnes de la base contiennent le caractère souligné, alors on utlisera les alias.
+
+D'autre part, nous allons faire une petite modification dans le script shell /usr/local/bin/latexbd afin que celui-ci produise des documents sans \_ mais avec \\\_.
+Modification du script shell /usr/local/bin/latexbd
+\begin{verbatim}
+# après $lb $fichier
+awk '{gsub("\_","\\\_",$0); print}' $fichier-but.tex > $fichier-temp.tex
+# cette ligne est equivalente à 
+sed "s/\_/\\\_/g" $fichier-but.tex > $fichier-temp.tex
+# puis ensuite on recopie le -temp en -but
+cp $fichier-temp.tex $fichier-but.tex
+\end{verbatim}
+
+\subsection{La Base Postgresql doit être en UTF8}
+\label{sec:LaBasePostgresqlDoitÊtreEnUTF8}
+Latexbd va aller piocher les informations dans une base de données appelée topographie. Cette base de données doit être en UTF8.
+
+
+Pour créer une base de données en UTF8, on peut utiliser les commandes suivantes
+\begin{verbatim}
+psql template1 -c 'DROP DATABASE "topographie";'
+psql template1 -c 'CREATE DATABASE "topographie" WITH ENCODING='\'UTF8\'';'
+\end{verbatim}
+
+\subsection{Les fichiers SQL}
+\label{sec:LesFichiersSQL}
+Les fichiers SQL sont générés par l'utilitaire csvToSql (sous windows). Ils sont ensuite passés sous Linux.
+Le script fichier\_commande s'occupe de re-encoder les fichiers SQL avant de lancer leur execution sous Postgresql.
+\begin{verbatim}
+recode l1..utf8 < attribut_valeur.sql > attribut_valeur2.sql
+recode l1..dump < attribut_valeur.sql | pager
+recode l1..count < attribut_valeur.sql
+\end{verbatim}
+
+\subsection{Utilitaires spécifiques aux graphiques}
+Téléchargement et installation des swftools
+\begin{verbatim}
+http://www.swftools.org/
+\end{verbatim}
+
+
+\chapter{Pour aller plus loin...}
+\section{Les commandes latexbd et lbdpython}
+
+\section{Les problèmes d'encodage}
+
+\section{Les commandes shell}
+
+\section{L'utilisation de Postgresql}
+\subsection{Pour supprimer une base de données}
+\label{sec:PourSupprimerUneBaseDeDonnées}
+\begin{verbatim}
+psql template1 -c 'DROP DATABASE "exemples-lbd";'
+\end{verbatim}
+\subsection{Création d'une base Postgresql}
+\label{sec:CréationDUneBasePostgresql}
+\begin{verbatim}
+createdb topographie
+psql template1 -c 'CREATE DATABASE "topographie" WITH ENCODING='\'UTF8\'';'
+psql template1 -c 'CREATE DATABASE "exemples-lbd" WITH ENCODING='\'UTF8\'';'
+\end{verbatim}
+\subsection{Ajout du langage plpgsql à cette base}
+\label{sec:AjoutDuLangagePlpgsqlÀCetteBase}
+\begin{verbatim}
+createlang plpgsql topologie
+\end{verbatim}
+\subsection{Ajout de fonctionnalités postgis à la base topologie}
+\label{sec:AjoutDeFonctionnalitésPostgisÀLaBaseTopologie}
+\begin{verbatim}
+psql topologie
+     -f /usr/share/postgresql-8.1-postgis/lwpostgis.sql
+psql topologie
+     -f /usr/share/postgresql-8.1-postgis/spatial-ref-sys.sql
+psql topologie
+     -f /usr/share/postgresql-8.1-postgis/lwpostgis-upgrade.sql
+\end{verbatim}
+\subsection{Pour consulter et interroger le serveur Postgresql}
+\label{sec:PourConsulterEtInterrogerLeServeurPostgresql}
+\subsubsection{A l'aide de pgsql}
+\label{sec:ALAideDePgsql}
+\begin{verbatim}
+\l liste les bases
+\dt liste les tables de la base courante
+\du liste les roles
+\end{verbatim}
+\subsubsection{à l'aide de henplus}
+\label{sec:àLAideDeHenplus}
+\begin{verbatim}
+connect jdbc:postgresql://localhost/topologie
+\end{verbatim}
+\backmatter
+\chapter{Conclusion}
+\chapter{Annexes}
+\section*{csvToSql}
+A titre d'information, voici le contenu d'un fichier descripor.xml.
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <!-- CONFIGURATOR DATA -->
+  <descriptor version="3"/> 
+
+  <!-- DEFINE HERE TABLE STRUCTURE -->
+  <structure tablename="theme">
+    <field name="theme_id"     type="VARCHAR">
+    	<param name="notnullvalue"  value="'mystring'"/>
+    </field>
+    <field name="theme_libelle"  type="VARCHAR"/>
+  </structure>
+    
+  <!-- WHAT GRAMMAR USE -->
+  <!-- ici, on a le choix entre -->
+  <!-- mysql -->
+  <!-- oracle -->
+  <!-- standard -->
+  <grammar class="net.sf.csv2sql.grammars.standard.GrammarFactory"/>
+
+  <!-- TEMPORARY STORAGE -->
+  <storage class="net.sf.csv2sql.storage.Memory"/>
+
+  <!-- RENDERER CONFIGURATION -->
+  <!-- ici, on a le choix entre -->
+  <!-- SSqlInsertRenderer -->
+  <!-- SqlInsertRendererFromExcel -->
+  <render class="net.sf.csv2sql.renders.SqlInsertRendererFromExcel">
+    <param name="inputfile"     value="theme.xls"/>
+    <!--optional-->        
+    <param name="trimdata"           value="true"/>    
+    <param name="suppressheader"     value="true"/>
+    <param name="removedoublequotes" value="false"/>
+    <!-- decomment for add id autogeneated field -->
+    <!--<param name="idGenerator"   value="net.sf.csv2sql.idgenerators.Incremental"/>-->  
+    <!--<param name="startrow" value="2"/>-->
+    <!--<param name="stoprow" value="4"/>-->
+    <!--<param name="presql" value="BEGIN TRANSACTION;"/>-->
+    <param name="presql" value="
+SELECT drop_table_if_exists ('theme',false);
+CREATE TABLE theme
+(
+  theme_id character varying(256) NOT NULL,
+  theme_libelle character varying(256) NOT NULL
+) 
+WITH OIDS;
+"/>
+    <!--<param name="postsql" value="COMMIT;"/>-->
+    <param name="postsql" value="
+VACUUM ANALYSE theme;
+"/>
+  </render>
+  
+  <!-- WRITER CONFIGURATION -->
+  <!-- ici, on a le choix entre -->
+  <!-- SqlFileWriter -->
+  <!-- StandardOutputWriter -->
+  <!-- JDBCBatchWriter -->
+  <!-- JDBCWriter -->
+  <output>
+  
+    <writerAppender active="true"
+        class="net.sf.csv2sql.writers.SqlFileWriter">
+        <param name="filename" value="F:\INFO\geomatique\dossiers_en_cours\donnees_topo\theme.sql"/>
+    </writerAppender>
+        
+    <writerAppender active="true"
+        class="net.sf.csv2sql.writers.StandardOutputWriter">
+    </writerAppender>
+            
+    <!-- change parameters and activate it --> 
+    <writerAppender active="false"
+        class="net.sf.csv2sql.writers.JdbcWriter">
+        <param name="driver"    value="org.postgresql.Driver"/>
+        <param name="url"       value="jdbc:postgresql://localhost/test"/>
+        <param name="username"  value="fred"/>
+                
+        <!--optional-->
+        <param name="password"  value="fred"/>      
+        <!--<param name="commit"    value="false"/>-->        
+        <param name="jdbcjar"   value="C:/libre/csvtosql_jdk50/lib/postgresql-8.2-505.jdbc4.jar"/>       
+    </writerAppender>        
+
+    <!-- change parameters and activate it -->
+    <writerAppender active="false"     
+        class="net.sf.csv2sql.writers.JdbcBatchWriter">
+        <param name="driver"        value="org.postgresql.Driver"/>
+        <param name="url"           value="jdbc:postgresql://localhost/test"/>
+        <param name="username"      value="fred"/>        
+        <param name="batchcount"    value="10"/>
+        
+        <!--optional-->              
+        <param name="password"      value="fred"/>        
+        <param name="commitbatchcount"  value="0"/>        
+        <param name="jdbcjar"       value="/root/myJdbcDriver.jar"/>       
+    </writerAppender> 
+        
+  </output>
+
+</root>
+\end{verbatim}
+
+
+\section*{Catalogue_topo.tex}
+
+\tableofcontents
+
+\end{document}

@@ -1,0 +1,19 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>sampleqgis</Name>
+    <ElementPath>sampleqgis</ElementPath>
+    <GeometryType>3</GeometryType>
+    <DatasetSpecificInfo>
+      <FeatureCount>1</FeatureCount>
+      <ExtentXMin>-0.72418</ExtentXMin>
+      <ExtentXMax>-0.14987</ExtentXMax>
+      <ExtentYMin>0.06801</ExtentYMin>
+      <ExtentYMax>0.45844</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>id</Name>
+      <ElementPath>id</ElementPath>
+      <Type>Integer</Type>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

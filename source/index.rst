@@ -42,6 +42,13 @@ Table des matières
 
 .. include:: environnementTravail/environnementTravail.rst
 .. include:: qgis/qgis.rst
+.. include:: mapnik/mapnik.rst
+.. include:: dt-dict/dt-dict.rst
+.. include:: latexbd/latexbd.rst
+.. include:: geogit/geogit.rst
+.. include:: gnss/gnss.rst
+.. include:: geopy/geopy.rst
+.. include:: cadastre/cadastre.rst
 
 
 .. .. Indices and tables

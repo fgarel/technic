@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:MultiPolygon
+srsName="EPSG:4326"><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:Line
+arRing><gml:coordinates>-1.198972157066899,46.168620056306267 -
+1.199063336068237,46.16852051736835 -1.198639600748718,46.168399204044213 -
+1.19839283354017,46.168340102584239 -1.198290964586951,46.16841786764995 -
+1.198639600748718,46.168511185583682 -1.198972157066899,46.168610724538489 -
+1.198972157066899,46.168620056306267</gml:coordinates></gml:LinearRing></gml:outerBoun
+daryIs></gml:Polygon></gml:polygonMember></gml:MultiPolygon>

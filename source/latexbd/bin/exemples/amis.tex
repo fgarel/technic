@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[latin1]{inputenc}
+\usepackage{array}
+
+%\texdbconnection{postgres,localhost,rouqui,rtuRTU,exemples-lbd}
+
+%\texdbdef{##q}{SELECT %   
+%   nom,
+%   prenom,
+%   tel%   
+%FROM amis ORDER by nom,prenom}
+
+\begin{document}
+\begin{tabular}{|>{\scshape}l|l|l|}
+\hline
+Nom&Prénom&Téléphone\\
+\hline
+\texdbfor{##q}{row.nom&row.prenom&row.tel\\\hline}
+\end{tabular}
+\end{document}

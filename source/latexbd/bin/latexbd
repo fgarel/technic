@@ -1,0 +1,119 @@
+#!/bin/bash
+
+#---------------------------------------------------------------------------
+#  LatexBD 0.9-0.11
+#  --  enhances LaTeX with database access features
+#  (C) 2007 Etienne Marache <e.marache@wanadoo.fr>
+
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#---------------------------------------------------------------------------
+
+
+nom="LaTeXBD"
+LATEXBDVERSION="0.11"
+LATEXBDRELEASE="2007/11/08"
+
+# initialisation ds variables d'option
+optalchemy=0
+optaide=0
+optdvi=0
+optlatex=0
+optpdf=0
+optpdflatex=0
+optversion=0
+
+
+while getopts ":adfhlpv" option
+do
+  case $option in
+      a) optalchemy=1;;
+      d) optdvi=1 ;;
+      f) optpdf=1 ;;
+      h) optaide=1 ;;
+      l) optlatex=1 ;;
+      p) optpdflatex=1 ;;
+      v) optversion=1 ;;
+      *) echo "latexbd option -$OPTARG inconnue"
+         optaide =1 ;;
+  esac
+done
+shift $((OPTIND -1))
+
+# help
+if [ $optaide = 1 ]; then
+  echo "Syntax: $nom -options file"
+  echo "file est un fichier .tex, le suffixe peut être omis"
+  echo "les options sont -adfhlpv"
+  echo "-a pour utilisation uniquement de l'environnement lbdpython"
+  echo "-l pour compilation latex et -d pour affichage xdvi"
+  echo "-p pour compilation pdflatex et -f pour affichage xpdf"
+  exit 0
+fi
+
+# version info
+if [ $optversion = 1 ]; then
+   echo "$nom versions $LATEXBDVERSION ($LATEXBDRELEASE)."
+   echo "Relased under the GPL."
+   exit 0
+fi
+
+fichier=$1
+
+# un nom de fichier est nécessaire
+if [ "x$fichier" == "x" ]; then
+  echo $0: erreur, vous devez donner un nom de fichier.
+  optaide=1
+fi
+
+# supprime une éventuelle extension .tex
+fichier=`echo $fichier | sed -e "s/\(.*\).tex/\1/"`
+
+# lance latexbd.py ou lbda.py sur le fichier
+if [ $optalchemy = 1 ]; then lbd=lbda.py 
+else lbd=latexbd.py 
+fi 
+
+$lbd $fichier || (echo "latexdb.py a échoué"; exit 1)&&
+
+if [ $optlatex = 1 ]; 
+then
+# compilation latex
+#latex -interaction=nonstopmode $fichier-but
+latex $fichier-but
+echo "Compilation de $fichier-but"
+cp $fichier-but.dvi $fichier.dvi
+echo "$fichier.dvi créé"
+fi
+
+if [ $optpdflatex = 1 ]; 
+then
+# compilation pdflatex
+pdflatex $fichier-but
+echo "Compilation de $fichier-but"
+cp $fichier-but.pdf $fichier.pdf
+echo "$fichier.pdf créé"
+fi
+
+if [ $optdvi = 1 ];
+    then
+    xdvi $fichier
+fi
+exit 0
+
+if [ $optpdf = 1 ];
+    then
+    xpdf $fichier
+fi
+exit 0
