@@ -47,6 +47,113 @@ Les deux projets sont
  * ~/travail/ecriture_sphinx/report/
  * ~/travail/ecriture_sphinx/technic/
 
+Configuration d'un premier projet
+---------------------------------
+C'est le projet technic qui sera configuré en premier
+
+La configuration est détaillée dans les paragraphes suivants.
+
+Il est rappelé ici que la mise en place de l'environnement de travail sphinx se joue sur 4 niveaux :
+ - le système : l'installation est à faire une fois pour toute
+ - l'environnement python : celui-ci est commun aux deux projets sphinx, donc pour le second projet, il n'y a pas besoin de refaire un pip install
+ - le fichier Makefile : il y a un fichier makefile par projet sphinx
+ - le fichier conf.py : ce fichier doit donc finir par ces lignes :
+
+1er niveau
+
+.. code::
+
+  sudo aptitude install texlive-latex-recommended \
+                        texlive-latex-extra \
+                        texlive-fonts-recommended
+
+  sudo aptitude install texlive-font-utils
+  sudo aptitude install libxlst-dev
+
+2d niveau
+
+.. code::
+
+  pip install sphinxcontrib-plantuml
+  pip install hieroglyph
+  pip install hovercraft
+  pip install sphinxcontrib-googlemaps
+
+  cdvirtualenv
+  vi lib/python2.7/site-packages/sphinxcontrib/googlemaps.py
+  lang = 'fr'
+  baseurl = "http://maps.google.fr/maps?"
+
+  pip install aafigure
+  pip install sphinxcontrib-aafig
+  pip install reportlab
+
+3eme niveau
+
+.. code::
+
+  vi makefile
+
+  help:
+      @echo "  latexpdf   to make LaTeX files and run them through pdflatex"
+      @echo "  slides     to make slides (hieroglyph)"
+      @echo "  text       to make text files" 
+
+  latexpdf:
+      $(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+      @echo "Running LaTeX files through pdflatex..."
+      $(MAKE) -C $(BUILDDIR)/latex all-pdf
+      @echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
+
+  slides:
+      $(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
+      @echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
+
+  text:
+      $(SPHINXBUILD) -b text $(ALLSPHINXOPTS) $(BUILDDIR)/text
+      @echo
+      @echo "Build finished. The text files are in $(BUILDDIR)/text."
+
+
+4ème niveau
+
+.. code::
+
+  vi source/conf.py
+  
+  extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', \
+                'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.mathjax', \
+                'sphinx.ext.ifconfig', 'sphinx.ext.viewcode', \
+                'sphinxcontrib.plantuml', \
+                # 'sphinxcontrib.googlemaps', \
+                'sphinxcontrib.aafig', \
+                'hieroglyph']
+
+  # -- Options for plantuml ---------------------------------------------------
+  # configuration pour l'extension sphinxcontrib-plantuml
+  # attention, cette extension necessite l'outil epstopdf qui est disponible
+  # dans le paquet texlive-font-utils
+  plantuml = 'plantuml'
+  plantuml_output_format = 'svg'
+  plantuml_latex_output_format = 'pdf'
+  plantuml_epstopdf = 'epstopdf'
+  #plantuml_output_format = 'svg'
+
+  # -- Options for hieroglyph ---------------------------------------------------
+  #slide_theme = 'slides'
+  slide_theme = 'single-level'
+  slide_theme_options = {'custom_css': 'custom.css'}
+
+  # -- Options for hieroglyph ---------------------------------------------------
+  aafig_format = dict(latex='pdf', html='svg', text=None)
+  aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)
+
+
+Configuration du second projet
+------------------------------
+
+Il suffit de faire les modifications dans le fichier Makefile et dans le fichier conf.py
+
 Génération des builds à partir des sources
 ==========================================
 La génération de la documentation se fait à l'aide d'un makefile
