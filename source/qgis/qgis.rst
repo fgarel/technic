@@ -6,6 +6,8 @@ Qgis
 Installation
 ************
 
+.. include:: installation.rst
+
 *******************
 Utilisation de qgis
 *******************

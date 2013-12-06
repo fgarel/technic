@@ -145,6 +145,11 @@ http://osgeo-org.1560.x6.nabble.com/loading-Web-Map-Tile-Service-in-QGIS-td49973
 
 https://wiki.sit.earthdata.nasa.gov/display/GIBS/GIBS+Supported+Clients#GIBSSupportedClients-Script-levelaccesstoimagery
 
+
+Un plugin qui permet de lire des tuiles :
+https://github.com/minorua/TileLayerPlugin
+
+
 Connexion d'un GPS à qgis
 =========================
 
