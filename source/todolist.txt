@@ -1,0 +1,50 @@
+git et github
+pour partage entre boulot et maison
+
+
+Marché topo et presentation de la marche a suivre
+=================================================
+
+pour faire le presentation
+http://www.bortzmeyer.org/logiciel-presentation-nouveau.html
+si on reste sous sphinx et restructured text
+hieoglyph
+http://docs.hieroglyph.io/en/latest/index.html
+-> git + reveal.js
+reveal.js
+http://www.framablog.org/index.php/post/2013/11/06/revealjs-alternative-libre-powerpoint
+https://github.com/hakimel/reveal.js/wiki/Example-Presentations
+https://github.com/hakimel/reveal.js/wiki/Example-Presentations
+pour faire un blog
+si on reste sous sphinx
+-> tinkerer
+
+
+pour le contenu
+-> geogit
+-> uml plantuml
+
+
+
+Patrimoine
+==========
+
+audit ATAL
+
+Import cadastre
+
+comparaison : Atal + cadastre + AJ + cartographie
+
+export du resultat dans un document latex
+mylatex pour l'insertion des figures
+latexdb pour la relation entre postgresql et latex
+mapnik2 pour la generation d'une image
+
+Cartographie
+============
+Paramètrage d'ATLOG
+
+chaine de la saisie à la publication
+
+
+

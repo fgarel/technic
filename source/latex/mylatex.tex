@@ -1,0 +1,60 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+%\usepackage[xetex,hiresbb]{graphicx}
+\usepackage{graphicx}
+
+\begin{document}
+
+% debut d'une premiere figure
+\begin{figure}[!h]
+\centering
+%\includegraphics[width=\textwidth]{mydessin.pdf}
+\includegraphics[width=100pt]{mydessin.pdf}
+\caption{Ceci est mydessin.pdf}
+\label{mydessin1}
+\end{figure}
+
+% debut d'une seconde figure
+\begin{figure}[!h]
+\centering
+%\includegraphics[width=\textwidth]{mydessin.pdf}
+\includegraphics[width=200pt]{mydessin.pdf}
+\caption{Ceci est aussi mydessin.pdf}
+\label{mydessin2}
+\end{figure}
+
+% debut d'une troisieme figure
+\begin{figure}[!h]
+\centering
+%\includegraphics[width=\textwidth]{mydessin.pdf}
+\includegraphics[width=300pt]{mydessin.pdf}
+\caption{Ceci est encore mydessin.pdf}
+\label{mydessin3}
+\end{figure}
+
+% debut d'une quatrieme figure
+\begin{figure}[!h]
+\centering
+%\includegraphics[width=\textwidth]{mydessin.pdf}
+\includegraphics[width=400pt]{mydessin.pdf}
+\caption{Ceci est encore et toujours mydessin.pdf}
+\label{mydessin4}
+\end{figure}
+
+% reference a une figure
+Sur la figure~\ref{mydessin1}, page~\pageref{mydessin1}, nous avons mis une largeur de 100 pt.
+
+Sur la figure~\ref{mydessin2}, page~\pageref{mydessin2}, nous avons mis une largeur de 200 pt.
+
+Sur la figure~\ref{mydessin3}, page~\pageref{mydessin3}, nous avons mis une largeur de 300 pt.
+
+Sur la figure~\ref{mydessin4}, page~\pageref{mydessin4}, nous avons mis une largeur de 400 pt.
+
+% liste des figures
+\listoffigures
+
+\end{document}
