@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.26)  9 DEC 2013 17:29
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.13)  9 DEC 2013 22:38
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/fred/Travail/ecriture_sphinx/technic/source/latex/mylatex.tex
-(/home/fred/Travail/ecriture_sphinx/technic/source/latex/mylatex.tex
+**/home/fred/travail/ecriture_sphinx/technic/source/latex/mylatex.tex
+(/home/fred/travail/ecriture_sphinx/technic/source/latex/mylatex.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, french, basque, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -122,10 +122,10 @@ Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
 l.18 \RequireXeTeX
                    
 Here is how much of TeX's memory you used:
- 1520 strings out of 495061
- 19453 string characters out of 1182621
- 66040 words of memory out of 3000000
- 4740 multiletter control sequences out of 15000+50000
+ 1520 strings out of 495028
+ 19453 string characters out of 1181229
+ 66049 words of memory out of 3000000
+ 4749 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,0n,24p,280b,36s stack positions out of 5000i,500n,10000p,200000b,50000s

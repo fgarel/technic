@@ -69,6 +69,15 @@ Se mettre sous develop
   git co develop
   git pull origin develop
 
+On peut aussi faire :
+
+.. code::
+
+  got co develop
+  git fetch origin develop
+  git diff ...FETCH_HEAD
+  git pull origin develop
+
 Se mettre sous master
 
 .. code::
