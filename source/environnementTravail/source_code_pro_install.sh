@@ -1,4 +1,13 @@
 #!/bin/bash
+
+
+# Ce petit script a pour objectif d'installer la police d'Adobe appelée
+# SourceCodePro
+#
+# Pour lancer l'installation, il suffit d'executer le script en mode superuser
+
+# sudo ~/.source_code_pro_install.sh
+
 FONT_NAME="SourceCodePro"
 # Url pour le telechargement de la font
 # Attention l'url latest permet de telecharger le fichier de font web

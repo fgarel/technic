@@ -155,6 +155,19 @@ function psql2dxf(){
             "$TABLE"
 }
 
+function psqlinfo(){
+    ogrinfo \
+            PG:"host=$HOST port=$PORT dbname=$DBNAME user=$USER password=$PASSWORD" \
+            "$TABLE" \
+            -so
+}
+
+function dxfinfo(){
+    ogrinfo \
+            $1 \
+            entities \
+            -so
+}
 
 function dxftodxf(){
     if [ -f $1 ]
@@ -208,7 +221,7 @@ function psqltodxf(){
 #echo "BEFORE GETOPT: $@";
 
 OPTS=$( getopt -o "h:p:d:U:P:s:t:a:i:f:A:" \
-               -l "help,host:,port:,dbname:,user:,password:,s_srs:,t_srs:,a_srs:,encodage_ini:,encodage_fin:,action:,dxftodxf,dxftopsql,psqltodxf" \
+               -l "help,host:,port:,dbname:,user:,password:,s_srs:,t_srs:,a_srs:,encodage_ini:,encodage_fin:,action:,dxftodxf,dxftopsql,psqltodxf,psqlinfo,dxfinfo" \
                -- "$@" )
 
 #echo "AFTER  GETOPT: $@";
@@ -279,6 +292,12 @@ while true ; do
             #init2 $2;
             #psqltodxf;
             shift ;;
+        --psqlinfo) echo "Info sur une table d'une base PostgreSQL";
+            ACTION="psqlinfo"
+            shift ;;
+        --dxfinfo) echo "Info sur un fichier DXF";
+            ACTION="dxfinfo"
+            shift ;;
         --) #echo "Veuillez choisir entre dxftopsql et psqltodxf"
             shift ;
             break;;
@@ -300,6 +319,12 @@ case "$ACTION" in
            ;;
     psqltodxf)
            psqltodxf $@
+           ;;
+    psqlinfo)
+           psqlinfo $@
+           ;;
+    dxfinfo)
+           dxfinfo $@
            ;;
 esac
 
