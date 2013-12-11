@@ -10,4 +10,4 @@
 # latexmk 
 
 # sudo aptitude install autolatex
-autolatex -f mylatex.tex
+autolatex --xelatex -f mylatex.tex
