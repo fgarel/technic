@@ -6,7 +6,15 @@
 \usepackage{babel}
 %\usepackage[xetex,hiresbb]{graphicx}
 \usepackage{graphicx}
-\usepackage{subfig}
+%\usepackage{sidecap}   % to place caption beside a figure
+%\usepackage{wrapfig}   % wrapping text around figures
+\usepackage{caption}   % to have subfigures within figures
+\usepackage{subcaption}
+\usepackage{float}
+\floatstyle{boxed}
+\restylefloat{figure}
+
+% http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 
 \begin{document}
 
@@ -72,8 +80,8 @@ Lorem ipsum dolor...
 \section{Surveillance de la façade}
 Les points cibles
 % debut d'une premiere figure
-\begin{figure}[!h]
-\centering
+%\begin{figure}[!h]
+%\centering
 %\includegraphics[width=\textwidth]{mydessin.pdf}
 %\includegraphics[width=100pt]{~/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station\ 1/Points\ cible\ S1/P1020538.JPG}
 %\includegraphics[width=100pt]{P1020538.JPG}
@@ -83,27 +91,57 @@ Les points cibles
 %\includegraphics[bb=0 0 2880 2160,width=18cm,keepaspectratio=true]{P1020538.JPG}
 %\includegraphics[bb=0 0 2880 2160,trim=0 0 400 300,width=500pt,keepaspectratio=true]{photo538.JPG}
 %\includegraphics[trim=0 0 100 100,width=300pt,keepaspectratio=true]{photo538.JPG}
-\includegraphics[bb=0 0 400 300,width=400pt,keepaspectratio=true]{test.jpg}
-\includegraphics[bb=0 0 400 300,viewport=0 0 400 300,width=400pt,keepaspectratio=true]{test.jpg}
+%\includegraphics[bb=0 0 400 300,width=400pt,keepaspectratio=true]{test.jpg}
+%\includegraphics[bb=0 0 400 300,viewport=0 0 400 300,width=400pt,keepaspectratio=true]{test.jpg}
 %\includegraphics[bb=0 0 400 300,trim=0 0 399 299,width=400pt,keepaspectratio=true]{test.jpg}
 %\includegraphics[trim=0 0 3000 2000,width=300pt,keepaspectratio=true]{P1020538.JPG}
 %\includegraphics[width=100pt]{p1020538.jpg}
-\caption{Point 1009}
-\label{mydessin1}
-\end{figure}
+%\caption{Point 1009}
+%\label{mydessin1}
+%\end{figure}
 
-\begin{figure}[t]
+\begin{figure}[h]
     \centering
-    \subfloat[Assis]{
+    \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
-    \label{fig-pomme}}
-    \subfloat[De dos]{
+        \caption{bb=0 0 400 300}
+        \label{essai_1}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
-%        (a) Assis
-%        (b) De dos
-    \label{fig-dos}}
-%    Figure 1 – Deux images
-    \caption{Deux images}\label{fig-double}
+        \caption{bb=0 0 400 300}
+        \label{essai_2}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
+        \caption{bb=0 0 400 300}
+        \label{essai_3}
+    \end{subfigure}
+    \\
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
+        \caption{bb=0 0 400 300}
+        \label{essai_4}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
+        \caption{bb=0 0 400 300}
+        \label{essai_5}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[bb=0 0 400 300,height=3cm]{test.jpg}
+        \caption{bb=0 0 400 300}
+        \label{essai_6}
+    \end{subfigure}
+    \caption{Les options pour l'insertion d'une image}%\label{fig-double}
+    \label{fig:Les options}
+
 \end{figure}
 
 
