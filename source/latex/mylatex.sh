@@ -10,4 +10,5 @@
 # latexmk 
 
 # sudo aptitude install autolatex
-autolatex --xelatex -f mylatex.tex
+#autolatex --xelatex -f mylatex.tex
+autolatex --xelatex -f rapport_facade_hdv.tex
