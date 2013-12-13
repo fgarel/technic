@@ -1,0 +1,32 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE ou DGI d’arrondissement;
+7;9;3;X;ccopre;Préfixe de section ou quartier servi pour les communes associées, &des1.;
+10;11;2;X;ccosec;Section cadastrale;
+12;15;4;X;dnupla;Numéro de plan;
+16;17;2;X;ccosub;Lettres indicatives de suf;
+18;19;2;X;filler01;;
+20;21;2;X;cenr;Code enregistrement;21
+22;30;9;9;dcntsf;Contenance de la suf;en centiares
+31;36;6;X;dnupro;Compte communal du propriétaire de la suf;
+37;38;2;X;gnexps;Code exonération permanente;ep cd cr dr ni rt
+39;48;10;9;drcsub;Revenu cadastral en valeur actualise référence 1980;Exprimé en centimes d’Euros
+49;58;10;9;drcsuba;Revenu cadastral revalorisé en valeur du 01/01 de l’année;Exprimé en centimes d’Euros
+59;59;1;X;ccostn;Série-tarif;A à Z, sauf I,O,Q
+60;61;2;X;cgrnum;Groupe de nature de culture;01 à 13
+62;63;2;X;dsgrpf;Sous-groupe alphabétique;
+64;65;2;X;dclssf;Classe dans le groupe et la série-tarif;
+66;70;5;X;cnatsp;code nature de culture spéciale;
+71;71;1;X;drgpos;Top terrain constructible;« 0 » ou « 1 »
+72;74;3;X;ccoprel;Préfixe de la parcelle identifiant le lot;
+75;76;2;X;ccosecl;Section de la parcelle identifiant le lot;
+77;80;4;X;dnuplal;N° de plan de la parcelle de référence;
+81;83;3;X;dnupdl;Numéro d ordre de la pdl;en général, 001
+84;90;7;X;dnulot;Numéro du lot - Le lot de BND se présente sous la forme 00Axxxx;
+91;136;46;X;rclsi;Données classement révisé;INDISPONIBLE
+137;137;1;X;gnidom;Indicateur de suf non imposable;* ou blanc
+138;138;1;X;topja;Indicateur jeune agriculteur;J ou blanc
+139;146;8;X;datja;Date d’installation jeune agriculteur;peut être servie si topja = J
+147;147;1;X;postel;Indicateur de bien appartenant à la Poste;X ou blanc
+148;150;3;X;filler02;;

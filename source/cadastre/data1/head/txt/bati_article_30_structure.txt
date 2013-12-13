@@ -1,0 +1,35 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;23;7;X;filler01;;
+24;27;4;X;janbil;Année d’immobilisation;servie pour ets. industriels
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;30
+33;35;3;X;dnuexb;Numéro d’ordre de l’article;001 à 015
+36;37;2;X;ccolloc;Code de collectivité locale accordant l’exonération;C D R TC tableau 2.3.9
+38;42;5;9;pexb;Taux d’exonération accordée;999V99
+43;44;2;X;gnextl;Nature d’exonération temporaire (et permanente pour ets. Industriels);tableau des codes 2.3.10 et 2.3.8
+45;48;4;X;jandeb;année de début d’exonération;
+49;52;4;X;janimp;année de retour à imposition;
+53;61;9;9;vecdif;montant saisi de l’EC bénéficiant exo;INDISPONIBLE
+62;62;1;X;filler02;;
+63;71;9;9;vecdifa;vecdif multiplié par coeff;INDISPONIBLE
+72;72;1;X;filler03;;
+73;81;9;9;fcexb;Fraction EC exonérée;INDISPONIBLE
+82;82;1;X;filler04;;
+83;91;9;9;fcexba;fcexb multiplié par coeff;INDISPONIBLE
+92;92;1;X;filler05;;
+93;101;9;9;rcexba;revenu cadastral exonéré;INDISPONIBLE
+102;102;1;X;filler06;;
+103;111;9;9;dvldif2;Montant de VL exonérée (valeur 70);
+112;112;1;X;filler07;;
+113;121;9;9;dvldif2a;Montant de VL exonérée (valeur de l’année);
+122;122;1;X;filler08;;
+123;131;9;9;fcexb2;Fraction de VL exonérée (valeur 70);
+132;132;1;X;filler09;;
+133;141;9;9;fcexba2;Fraction de VL exonérée (valeur de l’année);
+142;142;1;X;filler10;;
+143;151;9;9;rcexba2;Revenu  cadastral exonéré (valeur de l’année);
+152;200;49;X;filler11;;

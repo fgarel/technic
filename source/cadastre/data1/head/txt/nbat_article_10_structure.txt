@@ -1,0 +1,34 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE ou DGI d’arrondissement;
+7;9;3;X;ccopre;Préfixe de section ou quartier servi pour les communes associées;
+10;11;2;X;ccosec;Section cadastrale;
+12;15;4;X;dnupla;Numéro de plan;
+16;19;4;X;filler01;;
+20;21;2;X;cenr;code enregistrement;10
+22;30;9;9;dcntpa;Contenance de la parcelle;en centiares
+31;31;1;X;dsrpar;Lettre de série-role;
+32;37;6;X;dnupro;Compte communal du propriétaire de la parcelle;
+38;45;8;X;jdatat;Date de l acte;jjmmaaaa
+46;50;5;X;dreflf;Référence au Livre Foncier en Alsace-Moselle;
+51;51;1;X;gpdl;Indicateur d’appartenance à pdl ou Identifiant de la pdl si gpdl=2;cf. détail supra
+52;54;3;X;cprsecr;Préfixe de la parcelle de référence;
+55;56;2;X;ccosecr;Section de la parcelle de référence;
+57;60;4;X;dnuplar;N° de plan de la parcelle de référence;
+61;63;3;X;dnupdl;Numéro d’ordre de la pdl;En général, 001
+64;64;1;X;gurbpa;Caractère Urbain de la parcelle;U, * ou blanc
+65;68;4;X;dparpi;Numéro de parcelle primitive
+69;69;1;X;ccoarp;Indicateur d’arpentage;A ou blanc
+70;70;1;X;gparnf;Indicateur de parcelle non figurée au plan;1 = figurée, 0 = non figurée
+71;71;1;X;gparbat;Indicateur de parcelle référençant un bâtiment;1 = oui, sinon 0
+72;83;12;X;parrev;Info de la révision;INDISPONIBLE
+84;84;1;X;gpardp;parcelle n appartenant pas au domaine public;INDISPONIBLE
+85;85;1;X;fviti;parcelle au casier viticole;INDISPONIBLE
+86;89;4;X;dnvoiri;Numéro de voirie;
+90;90;1;X;dindic;Indice de répétition;
+91;95;5;X;ccovoi;Code Majic2 de la voie;
+96;99;4;X;ccoriv;Code Rivoli de la voie;
+100;103;4;X;ccocif;Code du cdif (code topad);
+104;104;1;X;gpafpd;Domanialité, représentation au plan;INDISPONIBLE
+105;150;46;X;filler02;;

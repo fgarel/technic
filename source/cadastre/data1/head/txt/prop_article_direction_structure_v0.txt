@@ -1,0 +1,8 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;14;11;X;filler01;low value;
+15;44;30;X;libdir;libelle de la direction;
+45;46;2;X;parmdat;date de référence du fichier;D2 D4
+47;54;8;X;jdatparm;date de création du fichier;jjmmaa
+55;550;496;X;filler02;;

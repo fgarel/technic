@@ -1,0 +1,33 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;27;11;X;filler01;;
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;21
+33;35;3;X;filler02;;
+36;36;1;X;ccoaff;Affectation de la pev;H P L S K C T B tableau 2.3.7
+37;37;1;X;ccostb;lettre  de série tarif bâtie ou secteur locatif;A à Z sauf I O Q
+38;39;2;X;dcapec;Catégorie;Commentaires 2.2.3
+40;42;3;9;dcetlc;Coefficient d entretien;9V99
+43;45;3;9;dcsplc;Coefficient de situation particulière;S9V99
+46;51;6;9;dsupot;Surface pondérée;Présence non systématique
+52;60;9;9;dvlper;Valeur  locative  de la pev, en valeur de référence (1970) sauf pour les établissements de code évaluation A;
+61;69;9;9;dvlpera;Valeur  locative  de la pev, en valeur de l’année;
+70;71;2;X;gnexpl;Nature d’exonération permanente;Gérée dans art 30 pour les EI tableau 2.3.8
+72;101;30;X;libocc;nom de l occupant;INDISPONIBLE
+102;102;1;X;ccthp;Code occupation à la Th ou à la TP;
+103;103;1;X;retimp;Top : retour partiel ou total à imposition;
+104;106;3;X;dnuref;Numéro de local type;
+107;138;32;X;rclsst;Données reclassement;INDISPONIBLE
+139;139;1;X;gnidom;Top : pev non imposable (Dom);
+140;142;3;9;dcsglc;Coefficient de situation générale;S9V99
+143;143;1;X;ccogrb;Code groupe bâti révisé;INDISPONIBLE
+144;147;4;X;cocdi;Code cdi topad;INDISPONIBLE
+148;150;3;X;cosatp;Code service topad;INDISPONIBLE
+151;151;1;X;gsatp;Nature service gérant tp;INDISPONIBLE
+152;152;1;X;clocv;Indicateur local vacant;INDISPONIBLE
+153;161;9;9;dvltpe;VL TOTALE DE LA PEV MAJIC2;
+162;164;3;9;dcralc;correctif d’ascenseur;format S9V99
+165;200;36;X;filler03;;

@@ -1,0 +1,10 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccode;code département;
+3;3;1;X;ccodir;code direction;
+4;35;32;X;filler01;;low value   
+36;65;30;X;libdir;libelle de la direction;    
+66;67;2;X;parmdat;date de référence du Fichier;D4
+68;75;8;X;jdatparm;date de création du fichier;jjmmssaa
+76;77;2;X;voterev;intégration ou non  de la révision;INDISPONIBLE
+78;81;4;X;jandoc;année de campagne;
+82;200;119;X;filler02;;

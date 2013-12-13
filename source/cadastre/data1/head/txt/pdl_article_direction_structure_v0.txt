@@ -1,0 +1,8 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;27;24;X;clw;;low-value
+28;57;30;X;libdir;libelle de la direction;
+58;59;2;X;parmdat;type de restitution;
+60;67;8;X;jdatparm;date de passage;JJ/MM/SSAA
+68;100;33;X;filler01;;

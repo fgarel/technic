@@ -1,0 +1,18 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;27;11;X;filler01;;
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;50
+33;35;3;X;dnudes;Numéro d’ordre de descriptif;P01
+36;44;9;X;vsupot;surface pondérée;INDISPONIBLE
+45;53;9;9;vsurz1;Surface réelle totale zone 1;INDISPONIBLE
+54;62;9;9;vsurz2;Surface réelle totale zone 2;INDISPONIBLE
+63;71;9;9;vsurz3;Surface réelle totale zone 3;INDISPONIBLE
+72;80;9;9;vsurzt;Surface réelle totale;
+81;81;1;X;filler02;;
+82;90;9;9;vsurb1;surface réelle des bureaux 1;INDISPONIBLE
+91;99;9;9;vsurb2;surface réelle des bureaux 2;INDISPONIBLE
+100;200;101;X;filler03;;

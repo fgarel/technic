@@ -1,0 +1,68 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;7;1;X;cgroup;groupe de compte communal;+  * A B ..
+8;12;5;X;dnumcp;numéro d’ordre de compte;
+13;14;2;X;dnulp;numéro de libellé partiel;01 à 06
+15;18;4;X;ccocif;code cdif;
+19;24;6;X;dnuper;numéro de personne dans le cdif;Il s’agit du numéro de personne Majic3.
+25;25;1;X;ccodro;code du droit réel ou parti- culier;Nouveau code en 2009 : C (fiduciaire)
+26;26;1;X;ccodem;code du démembrement/indivi-sion;C S L I V
+27;27;1;X;gdesip;indicateur du destinataire de l’avis d’imposition;1 = oui, 0 = non
+28;28;1;X;gtoper;indicateur de personne physi-que ou morale;1 = physique,2 = morale
+29;29;1;X;ccoqua;Code qualité de personne phy-sique;1, 2 ou 3
+30;31;2;X;gnexcf;code exo ecf;INDISPONIBLE
+32;34;3;X;dtaucf;taux exo ecf;INDISPONIBLE
+35;37;3;X;dnatpr;Code nature de personne physique ou morale;Voir $ 2.2.7
+38;39;2;X;ccogrm;Code groupe de personne morale;0 à 9 - 0A à 9A
+40;49;10;X;dsglpm;sigle de personne morale;
+50;56;7;X;dforme;forme juridique abrégée majic2;
+57;116;60;X;ddenom;Dénomination de personne physique ou morale;
+117;117;1;X;gtyp3;type de la 3eme ligne d’a-dresse;
+118;118;1;X;gtyp4;Type de la 4eme ligne d’a-dresse;
+119;119;1;X;gtyp5;type de la 5eme ligne d’a-dresse;
+120;120;1;X;gtyp6;type de la 6eme ligne d’a-dresse;
+121;150;30;X;dlign3;3eme ligne d’adresse;
+151;186;36;X;dlign4;4eme ligne d’adresse;
+187;216;30;X;dlign5;5eme ligne d’adresse;
+217;248;32;X;dlign6;6eme ligne d’adresse;
+249;251;3;X;ccopay;code de pays étranger et TOM;non servi pour France métropole et Dom
+252;253;2;X;ccodep1a2;Code département de l’adresse;
+254;254;1;X;ccodira;Code direction de l’adresse;
+255;257;3;X;ccocom-adr;Code commune de l’adresse;
+258;262;5;X;ccovoi;Code majic2 de la voie;
+263;266;4;X;ccoriv;Code rivoli de la voie;
+267;270;4;X;dnvoiri;numéro de voirie;
+271;271;1;X;dindic;indice de répétition de voirie;
+272;276;5;X;ccopos;Code postal;
+277;286;10;X;dnirpp;zone à blanc;INDISPONIBLE
+287;289;3;X;dqualp;Qualité abrégée;M, MME ou MLE
+290;319;30;X;dnomlp;Nom d’usage;
+320;334;15;X;dprnlp;Prénoms associés au nom d’usage;
+335;344;10;X;jdatnss;date de naissance;sous la forme jj/mm/aaaa
+345;402;58;X;dldnss;lieu de naissance;
+403;405;3;X;epxnee;mention du complément;EPX ou NEE si complément
+406;435;30;X;dnomcp;Nom complément;
+436;450;15;X;dprncp;Prénoms associés au complément;
+451;451;1;X;topcdi;top transalp;INDISPONIBLE
+452;452;1;X;oriard;origine adresse;INDISPONIBLE
+453;453;1;X;fixard;pérennité adresse;INDISPONIBLE
+454;461;8;X;datadr;date adresse;INDISPONIBLE
+462;462;1;X;topdec;origine décès;INDISPONIBLE
+463;466;4;X;datdec;date de décès;INDISPONIBLE
+467;476;10;X;dsiren;numéro siren;
+477;477;1;X;ccmm;création compte cadastral;INDISPONIBLE
+478;478;1;X;topja;indic jeune agriculteur;INDISPONIBLE
+479;486;8;X;datja;date jeune agriculteur;INDISPONIBLE
+487;490;4;X;filler1;;
+491;493;3;X;anospi;ano transalp;INDISPONIBLE
+494;494;1;9;cblpmo;code blocage caractère personne morale;INDISPONIBLE
+495;495;1;9;gtodge;top appartenance à la DGE;INDISPONIBLE
+496;496;1;9;gpctf;top paiement centralisé à la taxe foncière;INDISPONIBLE
+497;497;1;9;gpctsb;top paiement centralisé à la TSBCS;INDISPONIBLE
+498;499;2;9;jmodge;mois d’entrée à la DGE;INDISPONIBLE
+500;503;4;9;jandge;année d’entrée à la DGE;INDISPONIBLE
+504;507;4;9;jantfc;année d’entrée paiement TF;INDISPONIBLE
+508;511;4;9;jantbc;année d’entrée paiement TSBCS;INDISPONIBLE
+512;550;39;X;filler2;à blanc;

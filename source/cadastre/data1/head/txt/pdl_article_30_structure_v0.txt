@@ -1,0 +1,15 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;18;18;X;kpdl;Identifiant pdl;
+19;25;7;X;dnulot;Numéro de lot;
+26;27;2;X;cenr;Code enregistrement;30
+28;28;1;X;cconlo;Code nature du lot;
+29;37;9;9;dcntlo;Superficie du lot;
+38;44;7;9;dnumql;Numérateur;
+45;51;7;9;ddenql;Dénominateur;
+52;71;20;x;dfilot;pdl-fille du lot;
+72;79;8;X;datact;date de l acte;
+80;82;3;X;filler01;;
+83;88;6;X;dnuprol;Compte du lot;
+89;93;5;x;dreflf;Référence livre foncier;
+94;97;4;x;ccocif;code cdif;
+98;100;3;x;filler02;;

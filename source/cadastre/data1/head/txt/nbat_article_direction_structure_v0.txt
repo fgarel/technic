@@ -1,0 +1,13 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code de département;
+3;3;1;X;ccodir;code de direction;
+4;21;18;X;filler01;;low value   
+22;51;30;X;libdir;libelle de la direction;    
+52;53;2;X;parmdat;type de restitution;D2 D4
+54;61;8;X;jdatparm;date de création du fichier;jjmmssaa
+62;63;2;X;voterev;intégration ou non  de la révision;INDISPONIBLE
+64;67;4;X;jandoc;année de campagne;
+68;78;11;9;nnbcom;Nbre de communes (absorbantes) du fichier;INDISPONIBLE
+79;89;11;9;nnbpar;Nombre de parcelles du fichier;INDISPONIBLE
+90;100;11;9;nnbenr;Nombre d articles du fichier;INDISPONIBLE
+101;150;50;X;filler02;;blanc

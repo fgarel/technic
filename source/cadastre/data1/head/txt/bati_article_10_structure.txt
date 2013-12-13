@@ -1,0 +1,47 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;16;10;X;invar;numéro invariant;
+17;30;14;X;filler01;;
+31;32;2;X;cenr;code enregistrement;10
+33;35;3;X;filler02;;
+36;36;1;X;gpdl;indicateur d’appartenance à un lot de pdl;1 = oui, sinon 0
+37;37;1;X;dsrpar;lettre de série rôle;
+38;43;6;X;dnupro;compte communal de propriétaire;
+44;51;8;X;jdatat;date d’acte de mutation;jjmmaaaa
+52;57;6;X;dnufnl;compte communal de fonctionnaire logé;redevable de la tom
+58;58;1;X;ccoeva;code évaluation;A B C D E T tableau 2.3.1
+59;59;1;X;ccitlv;local imposable à la taxe sur les locaux vacants;indisponible
+60;60;1;X;dteloc;type de local;1 à 8 tableau 2.3.2
+61;62;2;X;gtauom;zone  de ramassage des ordures ménagères;P RA RB RC RD ou blanc
+63;65;3;X;dcomrd;Pourcentage de réduction sur tom;
+66;66;1;X;ccoplc;Code de construction particulière;R U V W X Y Z ou blanc tabl. 2.3.3
+67;68;2;X;cconlc;Code nature de local;voir tableau 2.3.4
+69;77;9;9;dvltrt;Valeur locative totale retenue pour le local;
+78;81;4;X;ccoape;Code NAF pour les locaux professionnels;
+82;83;2;X;cc48lc;Catégorie de loi de 48;
+84;92;9;9;dloy48a;Loyer de 48 en valeur de l’année;
+93;93;1;X;top48a;top taxation indiquant si la pev est impose au loyer ou a la vl;1 = loyer O = vl
+94;94;1;X;dnatlc;Nature d occupation;A P V L T D tableau 2.3.6
+95;102;8;X;dnupas;no passerelle TH/TP;INDISPONIBLE
+103;104;2;X;gnexcf;code nature exo ecf;INDISPONIBLE
+105;107;3;9;dtaucf;taux exo ecf;INDISPONIBLE
+108;108;1;X;cchpr;Top indiquant une mutation propriétaire;* ou blanc
+109;112;4;X;jannat;Année de construction;
+113;114;2;X;dnbniv;Nombre de niveaux de la construction;
+115;115;1;X;hlmsem;Local appartenant à hlm ou sem;5 = hlm, 6 = sem, sinon blanc
+116;116;1;X;postel;Local de Poste ou France Telecom;X, Y, Z, ou blanc
+117;118;2;X;dnatcg;Code  nature du changement évaluation;INDISPONIBLE
+119;126;8;X;jdatcgl;date constatation changement;INDISPONIBLE
+127;132;6;X;dnutbx;no gestionnaire déclarant taxe bureaux;INDISPONIBLE
+133;141;9;9;dvltla;VL totale du local actualisée;INDISPONIBLE
+142;145;4;X;janloc;Année de création du local;INDISPONIBLE
+146;147;2;X;ccsloc;Code cause création du local;INDISPONIBLE
+148;148;1;9;fburx;Indicateur présence bureaux;INDISPONIBLE
+149;149;1;X;gimtom;Indicateur imposition OM exploitable à partir de 2002;D, E, V ou blanc
+150;151;2;X;cbtabt;Code exonération HLM zone sensible;ZS, ZT ou blanc
+152;155;4;X;jdtabt;Année début d’exonération ZS;
+156;159;4;X;jrtabt;Année fin d’exonération ZS;
+160;163;4;X;jacloc;Année d’achèvement du local;INDISPONIBLE
+164;200;37;X;filler03;;

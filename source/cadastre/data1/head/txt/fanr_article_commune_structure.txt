@@ -1,0 +1,15 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;3;3;X;ccode;code département;
+4;6;3;X;ccocom;code commune INSEE;
+7;10;4;X;filler01;;
+11;11;1;X;cleriv;Clé Rivoli;
+12;41;30;X;libdir;libelle de la commune;
+42;42;1;X;filler02;;
+43;43;1;X;typcom;type de la commune;
+44;49;6;X;crur;caractère RUR
+50;50;1;X;cpop;caractère de population;
+51;52;2;X;filler03;;
+53;59;7;X;popul;population
+60;73;14;X;code1;caractère et date d`annulation ?
+74;74;1;X;filler04;;
+75;88;14;X;code2;date de création ?

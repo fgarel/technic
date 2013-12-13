@@ -1,0 +1,27 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;cocom;Code commune INSEE ou DGI d’arrondissement;
+7;9;3;X;ccopre;Préfixe de section ou quartier servi pour les communes associées, &des1.;
+10;11;2;X;ccosec;Section cadastrale;
+12;15;4;X;dnupla;Numéro de plan;
+16;17;2;X;ccosub;Lettres indicatives de suf;
+18;19;2;X;filler01;Espace séparateur 1;
+20;21;2;X;cenr;Code enregistrement;36
+22;22;1;X:filler02;Espace séparateur 2;
+23;32;10;9;majposa1;Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.;exprimé en centimes d’Euros
+33;33;1;X:filler03;Espace séparateur 3;
+34;43;10;9;bisufad1;Base d’imposition de la suf en valeur de l’année;exprimé en centimes d’Euros
+44;44;1;X:filler04;Espace séparateur 4;
+45;54;10;9;majposa2;Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.;exprimé en centimes d’Euros
+55;55;1;X:filler05;Espace séparateur 5;
+56;65;10;9;bisufad2;Base d’imposition de la suf en valeur de l’année;exprimé en centimes d’Euros
+67;67;1;X:filler06;Espace séparateur 6;
+68;76;10;9;majposa3;Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.;exprimé en centimes d’Euros
+77;77;1;X:filler07;Espace séparateur 7;
+78;87;10;9;bisufad3;Base d’imposition de la suf en valeur de l’année;exprimé en centimes d’Euros
+88;88;1;X:filler08;Espace séparateur 8;
+89;98;10;9;majposa4;Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.;exprimé en centimes d’Euros
+99;99;1;X:filler09;Espace séparateur 9;
+100;109;10;9;bisufad4;Base d’imposition de la suf en valeur de l’année;exprimé en centimes d’Euros
+110;150;41;X;filler10;Espace séparateur 10;

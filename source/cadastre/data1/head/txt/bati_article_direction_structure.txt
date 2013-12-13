@@ -1,0 +1,6 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;30;30;X;dep;département;low value
+31;32;2;X;parmdat;date de référence du Fichier;D4
+33;40;8;X;jdatparm;date de création du fichier;jjmmssaa
+41;42;2;X;voterev;intégration ou non  de la révision;INDISPONIBLE
+43;46;4;X;jandoc;année de campagne;

@@ -1,0 +1,38 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;23;7;X;filler01;;
+24;27;4;X;janbil;Année d’immobilisation;High value pour ets. Industriels
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;36
+33;35;3;X;filler02;;
+36;44;9;9;vlbaic;Part de VL imposée (valeur70);
+45;45;1;X;filler03;;
+46;54;9;9;vlbaiac;Part de VL imposée (valeur de l’année);
+55;55;1;X;filler04;;
+56;64;9;9;bipevlac;Base  d’imposition de la pev(valeur de l’année);
+65;65;1;X;filler05;;
+66;74;9;9;vlbaid;Part de VL imposée (valeur70);
+75;75;1;X;filler06;;
+76;84;9;9;vlbaiad;Part de VL imposée (valeur de l’année);
+85;85;1;X;filler07;;
+86;94;9;9;bipevlad;Base  d’imposition de la pev(valeur de l’année);
+95;95;1;X;filler08;;
+96;104;9;9;vlbair;Part de VL imposée (valeur70);
+105;105;1;X;filler09;;
+106;114;9;9;vlbaiar;Part de VL imposée (valeur de l’année);
+115;115;1;X;filler10;;
+116;124;9;9;bipevlar;Base  d’imposition de la pev(valeur de l’année);
+125;125;1;X;filler11;;
+126;134;9;9;vlbaigc;Part de VL imposée (valeur70);
+135;135;1;X;filler12;;
+136;144;9;9;vlbaiagc;Part de VL imposée (valeur de l’année);
+145;145;1;X;filler13;;
+146;154;9;9;bipevlagc;Base  d’imposition de la pev(valeur de l’année);
+155;155;1;X;filler14;;
+156;164;9;9;bateom;BASE ORDURES MENAGERES;
+165;165;1;X;filler15;;
+166;174;9;9;baomec;BASE ORDURES MENAGERES ECRETEE;
+175;200;26;X;filler16;;

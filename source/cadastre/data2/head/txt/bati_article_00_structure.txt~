@@ -1,0 +1,26 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;16;10;X;invar;numéro invariant;
+17;30;14;X;filler01;;
+31;32;2;X;cenr;code enregistrement;00
+33;35;3;X;filler02;;
+36;38;3;X;ccopre;préfixe de section ou quartier servi pour les communes associées,;
+39;40;2;X;ccosec;lettres de section;
+41;44;4;X;dnupla;numéro de plan;
+45;45;1;X;filler03;;
+46;47;2;X;dnubat;lettre de bâtiment;
+48;49;2;X;desc;numéro d’entrée;
+50;51;2;X;dniv;niveau étage;
+52;56;5;X;dpor;numéro de local;      
+57;60;4;X;ccoriv;Code Rivoli de la voie;
+61;61;1;X;filler04;;
+62;66;5;X;ccovoi;Code Majic2 de la voie;
+67;70;4;X;dnvoiri;Numéro de voirie;
+71;71;1;X;dindic;indice de répétition;
+72;75;4;X;ccocif;code du cdi/cdif (code topad);
+76;105;30;X;dvoilib;libelle de la voie;
+106;106;1;X;cleinvar;clé alpha no invariant;
+107;107;1;X;locinc;code local sans évaluation;INDISPONIBLE
+108;200;93;X;filler05;;

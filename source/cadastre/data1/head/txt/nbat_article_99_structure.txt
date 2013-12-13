@@ -1,0 +1,8 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE ou DGI d’arrondissement;
+7;9;3;X;ccopre;Préfixe de section ou quartier servi pour les communes associées;
+10;11;2;X;ccosec;Section cadastrale;
+12;15;4;X;dnupla;Numéro de plan;
+16;17;2;X;filler01;;

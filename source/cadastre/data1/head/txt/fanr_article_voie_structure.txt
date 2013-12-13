@@ -1,0 +1,16 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccode;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;10;4;X;ccoriv;Code Rivoli de la voie;
+11;11;1;X;cleriv;Clé Rivoli;
+12;15;4;X;natvoi;nature de la voie;
+16;41;26;X;libvoi;libelle de la voie;
+42;42;1;X;filler02;;
+43;43;1;X;typcom;type de la commune;
+44;49;6;X;crur;caractère RUR
+50;50;1;X;carvoi;caractère de voie;0 = publique, 1 = privée
+51;59;9;X;filler03;;
+60;73;14;X;code1;caractère et date d`annulation ?
+74;74;1;X;filler04;;
+75;88;14;X;code2;date de création ?

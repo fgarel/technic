@@ -1,0 +1,19 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;9;3;X;ccopre;code du préfixe;
+10;11;2;X;ccosec;lettres de section;
+12;15;4;X;dnupla;numéro de plan;
+16;18;3;x;dnupdl;no de pdl;
+19;25;7;x;filler01;;
+26;27;2;X;cenr;code enregistrement;10
+28;28;1;nivim;niveau imbrication;
+29;31;3;X;ctpdl;type de pdl;bnd, cl, cv, tf, clv, mp.
+32;61;30;X;dnompdl;
+62;81;20;X;dmrpdl;lot mère(plan+pdl+lot);
+82;82;1;X;gprmut;top 1ere mut effectuée;
+83;88;6;X;dnupro;compte de la pdl;
+89;93;5;X;filler02;;
+94;97;4;X;ccocif;code cdif;
+98;100;3;X;filler03;;

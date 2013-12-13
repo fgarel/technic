@@ -1,0 +1,49 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;27;11;X;filler01;;
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;40
+33;35;3;X;dnudes;Numéro d’ordre de descriptif;bHb, bHA...
+36;37;2;X;cconad1;Nature de dépendance;Tableau 2.3.5
+38;43;6;9;dsueic1;Surface réelle de l’élément incorporé;
+44;45;2;9;dcimei1;Coefficient de pondération;9V9
+46;47;2;X;cconad2;Nature de dépendance;Tableau 2.3.5
+48;53;6;9;dsueic2;Surface réelle de l’élément incorporé;
+54;55;2;9;dcimei2;Coefficient de pondération;9V9
+56;57;2;X;cconad3;Nature de dépendance;Tableau 2.3.5
+58;63;6;9;dsueic3;Surface réelle de l’élément incorporé;
+64;65;2;9;dcimei3;Coefficient de pondération;9V9
+66;67;2;X;cconad4;Nature de dépendance;Tableau 2.3.5
+68;73;6;9;dsueic4;Surface réelle de l’élément incorporé;
+74;75;2;9;dcimei4;Coefficient de pondération;9V9
+76;76;1;X;geaulc;Présence d’eau;O = oui, N = non
+77;77;1;X;gelelc;Présence d’électricité;O = oui, N = non
+78;78;1;X;gesclc;Présence d’escalier de ser- vice (appartement);O = oui, N = non, blanc
+79;79;1;X;ggazlc;Présence du gaz;O = oui, N = non
+80;80;1;X;gasclc;Présence d’ascenseur (appartement);O = oui, N = non, blanc
+81;81;1;X;gchclc;Présence du chauffage central;O = oui, N = non
+82;82;1;X;gvorlc;Présence de vide-ordures (appartement);O = oui, N = non, blanc
+83;83;1;X;gteglc;Présence du tout à l’égout;O = oui, N = non
+84;85;2;X;dnbbai;Nombre de baignoires;
+86;87;2;X;dnbdou;Nombre de douches;
+88;89;2;X;dnblav;Nombre de lavabos;
+90;91;2;X;dnbwc;Nombre de WC;
+92;94;3;9;deqdha;Equivalence superficielle des éléments de confort;
+95;96;2;X;dnbppr;Nombre de pièces principales;
+97;98;2;X;dnbsam;Nombre de salles à manger;
+99;100;2;X;dnbcha;Nombre de chambres;
+101;102;2;X;dnbcu8;Nombre de cuisines de moins de 9 m2;
+103;104;2;X;dnbcu9;Nombre  de  cuisines  d’au moins 9 m2;
+105;106;2;X;dnbsea;Nombre de salles d’eau;
+107;108;2;X;dnbann;Nombre de pièces annexes;
+109;110;2;X;dnbpdc;Nombre de pièces;
+111;116;6;9;dsupdc;Superficie des pièces;
+117;118;2;X;dmatgm;Matériaux des gros murs;
+119;120;2;X;dmatto;Matériaux des toitures;
+121;124;4;X;jannat;Année d’achèvement;
+125;125;1;X;detent;état d’entretien;
+126;127;2;X;dnbniv;Nombre de niveaux;
+128;200;73;X;filler02;;

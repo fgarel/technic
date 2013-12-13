@@ -1,0 +1,23 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE ou DGI d’arrondissement;
+7;9;3;X;ccopre;Préfixe de section ou quartier servi pour les communes associées, &des1.;
+10;11;2;X;ccosec;Section cadastrale;
+12;15;4;X;dnupla;Numéro de plan;
+16;17;2;X;ccosub;Lettres indicatives de suf;
+18;19;2;X;rnuexn;Numéro d ordre d’exonération temporaire;01 à 04
+20;21;2;X;cenr;Code enregistrement;30
+22;31;10;9;vecexn;Montant de VL sur lequel porte l’exonération;en centimes d’Euros
+32;33;2;X;ccolloc;Collectivité accordant l’exonération;TC, C, R d OU GC
+34;38;5;9;pexn;Pourcentage d’exonération;100
+39;40;2;X;gnexts;Code d’exonération temporaire;TA TR NO PB PP PR PF ER TU OL HP HR ou NA
+41;44;4;X;jandeb;Année de début d’exonération;à blanc
+45;48;4;X;jfinex;Année de retour à imposition;à blanc
+49;58;10;9;fcexn;Fraction de vecsuf exonérée;INDISPONIBLE
+59;68;10;9;fcexna;fcexn en année N;INDISPONIBLE
+69;78;10;9;rcexna;revenu  (4/5 fcexna) correspondant;INDISPONIBLE
+79;88;10;9;rcexnba;Revenu cadastral exonéré, en valeur de l’année;Exprimé en centimes d’Euros
+89;89;1;X;filler01;espace séparateur;
+90;99;10;9;mpexnba;Fraction majo TC exonérée, en valeur de l’année;INDISPONIBLE
+100;150;51;X;filler02;;

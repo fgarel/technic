@@ -1,0 +1,17 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodepl;code département;
+3;3;1;X;ccodirl;code direction;
+4;6;3;X;ccocoml;code commune INSEE;
+7;9;3;X;ccoprel;code préfixe;
+10;11;2;X;ccosecl;code section;
+12;15;4;X;dnuplal;numero de plan;    
+16;18;3;X;dnupdl;numero de PDL;
+19;25;7;X;dnulot;numero de lot;
+26;27;2;X;cenr;code enregistrement
+28;29;2;X;ccodebpb;code département;
+30;30;1;X;ccodird;code direction;
+31;33;3;X;ccocomb;code commune INSEE;
+34;36;3;X;ccopreb;code préfixe;
+37;46;10;X;invloc;numéro invariant du local;
+47;53;7;X;dnumql;numérateur du lot;
+54;60;7;X;ddenql;dénominateur du lot;

@@ -1,0 +1,27 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccodep;Code département;
+3;3;1;X;ccodir;Code direction;
+4;6;3;X;ccocom;Code commune INSEE;
+7;16;10;X;invar;Numéro invariant;
+17;27;11;X;filler01;;
+28;30;3;X;dnupev;Numéro de pev;
+31;32;2;X;cenr;Code enregistrement;60
+33;35;3;X;dnudes;Numéro d’ordre de descriptif;001, 002...
+36;41;6;9;dsudep;Surface réelle de la dépendance;
+42;43;2;X;cconad;Nature de dépendance;cf tableau des codes
+44;49;6;X;asitet;Localisation (bat, esc, niv);
+50;51;2;X;dmatgm;Matériaux des gros murs;0 à 9 cf art 40
+52;53;2;X;dmatto;Matériaux des toitures;0 à 4 cf art 40
+54;54;1;X;detent;état d’entretien;1 à 5 cf art 40
+55;55;1;X;geaulc;Présence d’eau;O = oui, N = non
+56;56;1;X;gelelc;Présence d’électricité;O = oui, N = non
+57;57;1;X;gchclc;Présence du chauffage central;O = oui, N = non
+58;59;2;X;dnbbai;Nombre de baignoires;
+60;61;2;X;dnbdou;Nombre de douches;
+62;63;2;X;dnblav;Nombre de lavabos;
+64;65;2;X;dnbwc;Nombre de WC;
+66;68;3;9;deqtlc;Equivalence superficielle des éléments de confort;;
+69;70;2;9;dcimlc;Coefficient de pondération;1,0 - 0,2 à 0,6
+71;73;3;9;dcetde;Coefficient d entretien;9V99
+74;76;3;9;dcspde;Coefficient de situation particulière;S9V99 de -0,10 à +0,10
+77;200;124;X;filler02;;
