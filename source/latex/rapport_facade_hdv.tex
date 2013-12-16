@@ -4,8 +4,25 @@
 \usepackage{fontspec}
 %\usepackage[utf8]{inputenc}
 \usepackage{xunicode}
+\usepackage{calc}
+\usepackage{fp}  %calcul avec une meilleur précision %ihttp://en.wikibooks.org/wiki/LaTeX/Macros
+\usepackage{ifthen}
+\usepackage{xstring}
 \usepackage[a4paper]{geometry}
+%\usepackage[a4paper,width=170mm,top=25mm,bottom=25mm,bindingoffst=10mm]{geometry}
+\usepackage{fancyhdr}   % header and footer
+\pagestyle{fancy}
+%personnalisation des entetes et des pieds de pages
+%https://www.sharelatex.com/blog/2013/08/06/thesis-series-pt2.html#.Uq6z-kNx5yA
+\fancyhead{}
+\fancyhead[RO,LE]{Surveillance de la Façade de l'Hôtel de Ville}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Chapitre \thechapter}
+\fancyfoot[CO,RE]{Ville de La Rochelle}
+
 \usepackage{babel}
+\usepackage{datetime}
 %\usepackage[xetex,hiresbb]{graphicx}
 \usepackage{graphicx}
 %\usepackage{sidecap}   % to place caption beside a figure
@@ -17,31 +34,35 @@
 \restylefloat{figure}
 % http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 
-
 % les chemins ou sont stockées les images
 %\graphicspath{ {~/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station\ 1/Points\ cible\ S1/} }
-\graphicspath{{images/}{~/}{~/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station\ 1/Points\ cible\ S1/}}
-
+\graphicspath{{/home/fred/}
+              {/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_1/Points_cible_S1/}
+              {/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_1/Points_reference_S1/}
+              {/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_2/Points_cible_S2/}
+              {/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_2/Points_reference_S2/}
+              {images/}}
+%\graphicspath{{/home/fred/}{/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_1/Points_cible_S1/}{/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/Station_2/Points_cible_S2/}{images/}}
+\input{macros/includegraphics.tex}
 
 \begin{document}
 
 \input{chapters/front_title}
 
-
-\chapter*{Abstract}
-\input{chapters/front_abstract}
+%\chapter*{Abstract}
+%\input{chapters/front_abstract}
 %Abstract goes here
 
-\chapter*{Dedication}
-\input{chapters/front_dedication}
+%\chapter*{Dedication}
+%\input{chapters/front_dedication}
 %To mum and dad
 
-\chapter*{Declaration}
-\input{chapters/front_declaration}
+%\chapter*{Declaration}
+%\input{chapters/front_declaration}
 %I declare that..
 
-\chapter*{Acknowledgements}
-\input{chapters/front_acknowledgements}
+%\chapter*{Acknowledgements}
+%\input{chapters/front_acknowledgements}
 %I want to thank...
 
 \tableofcontents
@@ -50,21 +71,22 @@
 \chapter{Introduction}
 \input{chapters/introduction}
 
-\chapter{Chapter Two Title}
+\chapter{Les observations}
 \input{chapters/chapter02}
 
-\chapter{Chapter Three Title}
+\chapter{Les calculs}
 \input{chapters/chapter03}
 
-\chapter{Chapter Four Title}
+\chapter{Les résultats}
 \input{chapters/chapter04}
 
 \chapter{Conclusion}
 \input{chapters/conclusion}
 
 \appendix
-\chapter{Appendix Title}
+\chapter{Les points observés}
 \input{chapters/appendix01}
+\chapter{Inclure des graphiques dans un document}
 \input{chapters/appendix02}
 
 

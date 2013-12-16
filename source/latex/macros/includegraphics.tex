@@ -1,0 +1,143 @@
+
+
+%definition de quelques macros pour l'inseertion des photos
+
+% 1er type d'insertion : on insert une image et son zoom
+% il aurait été plus simple de faire cela dans une seule et même macro, mais cela n'a pas pu être possible
+
+% nous avons donc plusiseurs commandes
+%pour l'insertion de photo horizontale et pour l'insertion de photo verticale
+%pour des zoom centré (huitSix) ou pour des zoom décalés
+
+
+
+
+% photo horizontale, avec un zoom au centre
+% definition d'une nouvelle commande avec deux arguments
+% le premier est la photo, le second est le point
+\newcommand\includePhotoDetailHorizontalHuitSix[2]{
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}%+200+150
+        \label{#1}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=600 450 1000 750,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo horizontale, avec un zoom décalé
+\newcommand\includePhotoDetailHorizontalHuitHuit[2]{% on centre sur le point de coordonnes 800 800
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}%+200+150
+        \label{#1}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=600 650 1000 950,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo verticale, avec un zoom au centre
+\newcommand\includePhotoDetailVerticalHuitSix[2]{
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}%+200+150
+        \label{#1}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=-90,viewport=600 450 1000 750,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo verticale, avec un zoom décalé
+%\newcommand\includePhotoDetailVerticalSixSix[2]{% On centre sur le point de cooreonnes 600 600
+%\begin{figure}[!h]
+%    \centering
+%    \begin{subfigure}[b]{0.45\textwidth}
+%        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+%        \caption{Point #2}%+200+150
+%        \label{#1}
+%    \end{subfigure}
+%    ~
+%    \begin{subfigure}[b]{0.45\textwidth}
+%        \includegraphics[angle=-90,viewport=400 450 800 750,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}
+%        \caption{Détail du point #2}%+200+150
+%        \label{Zoom #1}
+%    \end{subfigure}
+%    \caption{Détail du point #2}
+%    \label{Point Cible #2}
+%\end{figure}
+%}
+
+% photo verticale, avec un zoom décalé
+\newcommand\includePhotoDetailVerticalDixQuatre[2]{% On centre sur le point de cooreonnes 1000 400
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}%+200+150
+        \label{#1}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=-90,viewport=800 250 1200 550,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+
+
+
+% Pour info, les essais concernant les calculs artithmétiques
+% paquet fp, mais par la suite,
+% je n'arrive pas à faire passer mystr en tant qu'option valide à includegraphics
+\newcommand{\offsetxy}[4]{
+        \FPeval{\dxi}{600+#3}
+        \FPclip{\dxi}{\dxi}
+        \FPeval{\dxf}{1000+#3}
+        \FPclip{\dxf}{\dxf}
+        \FPeval{\dyi}{450+#4}
+        \FPclip{\dyi}{\dyi}
+        \FPeval{\dyf}{750+#4}
+        \FPclip{\dyf}{\dyf}
+        \newcommand\mystr{angle=0,viewport=\dxi \dyi \dxf \dyf,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true}
+        \mystr
+        %\includegraphics[\mystr]{#1.JPG}
+        \newcommand\viewport{\dxi \dyi \dxf \dyf}
+        \viewport
+
+        \includegraphics[angle=0,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        %\includegraphics[viewport=\viewport,angle=0,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+}
+%\offsetxy{P1020539}{1010}{000}{000}
+
+
