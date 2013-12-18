@@ -2,27 +2,66 @@
 
 %definition de quelques macros pour l'inseertion des photos
 
-% 1er type d'insertion : on insert une image et son zoom
+% 1er type d'insertion : on insert une image
+% Les deux arguments sont :
+%  - Nom de la photo
+%  - Numero du point
+%\includePhotoTiersVerticalDixQuatre{P1020538}{1009}
+
+
+% 2d type d'insertion : on insert une image et son zoom
 % il aurait été plus simple de faire cela dans une seule et même macro, mais cela n'a pas pu être possible
 
 % nous avons donc plusiseurs commandes
-%pour l'insertion de photo horizontale et pour l'insertion de photo verticale
-%pour des zoom centré (huitSix) ou pour des zoom décalés
+% - pour l'insertion de photo horizontale et pour l'insertion de photo verticale
+% - pour des zoom centré (huitSix) ou pour des zoom décalés
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\includePhotoTiersHorizontal[2]{% 3 photos par ligne, orientation paysage
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}
+        \label{#1}
+    \end{subfigure}
+}
+\newcommand\includePhotoTiersVertical[2]{% 3 photos par ligne, orientation portrait
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=3.3cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}
+        \label{#1}
+    \end{subfigure}
+}
 
+\newcommand\includePhotoMoitieHorizontal[2]{% 2 photos par ligne, orientation paysage
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}
+        \label{#1}
+    \end{subfigure}
+}
 
+\newcommand\includePhotoMoitieVertical[2]{% 2 photos par ligne, orientation portrait
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}
+        \label{#1}
+    \end{subfigure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % photo horizontale, avec un zoom au centre
 % definition d'une nouvelle commande avec deux arguments
 % le premier est la photo, le second est le point
 \newcommand\includePhotoDetailHorizontalHuitSix[2]{
 \begin{figure}[!h]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
-        \caption{Point #2}%+200+150
-        \label{#1}
-    \end{subfigure}
+    \includePhotoMoitieHorizontal{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
     ~
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=0,viewport=600 450 1000 750,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
@@ -38,11 +77,12 @@
 \newcommand\includePhotoDetailHorizontalHuitHuit[2]{% on centre sur le point de coordonnes 800 800
 \begin{figure}[!h]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
-        \caption{Point #2}%+200+150
-        \label{#1}
-    \end{subfigure}
+    \includePhotoMoitieHorizontal{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
     ~
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=0,viewport=600 650 1000 950,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
@@ -58,11 +98,12 @@
 \newcommand\includePhotoDetailVerticalHuitSix[2]{
 \begin{figure}[!h]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
-        \caption{Point #2}%+200+150
-        \label{#1}
-    \end{subfigure}
+    \includePhotoMoitieVertical{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
     ~
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=-90,viewport=600 450 1000 750,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}
@@ -98,11 +139,12 @@
 \newcommand\includePhotoDetailVerticalDixQuatre[2]{% On centre sur le point de cooreonnes 1000 400
 \begin{figure}[!h]
     \centering
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
-        \caption{Point #2}%+200+150
-        \label{#1}
-    \end{subfigure}
+    \includePhotoMoitieVertical{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
     ~
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=-90,viewport=800 250 1200 550,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}

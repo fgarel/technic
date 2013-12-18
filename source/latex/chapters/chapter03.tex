@@ -1,0 +1,32 @@
+
+Pour établir l'état initial, nous avons d'abord calculer les coordonnées des stations d'observations, puis les coordonnées des points fixes et des points cibles.
+
+Pour établir les états suivants, nous nous basons sur les points fixes, c'est à dire qu'à partir des coordonnées des points fixes, nous déterminons les coordonnées des stations d'observations et des points cibles.
+
+\section{Les Stations d'observation}
+
+Les coordonnées d'une première station et son orientation ont été calculées dans le système Lambert 93 CC46.
+Les coordonnées des autres stations ont été calculées en suivant les méthodes de topographie traditionnelles : cheminement, observation de points doubles, ...
+
+En valeur absolue, les coordonnées de ces stations n'ont aucune incidence sur les distances relatives entre les points fixes et les points cibles.  
+
+\section{Points fixes ou Points de référence}
+Pour établir l'état initial, nous avons déterminer les coordonnées des points fixes à partir des coordonnées des stations.
+Ces coordonnés ne seront plus modifiées lors des calculs pour les états suivants.
+
+La précision des observations est de l'ordre de 2 à 3 millimètres, cependant nous avons choisi un nombre suffisant de points afin de moyenner ces erreurs d'observations.
+Nous pouvons estimer que les coordonnées des points fixes, après calcul et compensation, ont une précision de 1 à 2 millimètres.
+En effet, un point peut être observé plusieurs fois, à partir de deux ou trois stations différentes.
+Aussi, le calcul des coordonnées est réalisé en utilisant un logiciel de calcul topométrique permettant la compensation en bloc.
+
+\section{Points cibles}
+En ce qui concerne l'état initial, les coordonnées des points cibles et des points fixes ont été calculés en même temps.
+
+Par contre, concernant les états suivants, nous utilisons le logiciel de calcul topométrique en fixant les coordonnées des points fixes.
+
+De même que pour les points fixes, nous pouvons estimer que :
+\begin{itemize}
+    \item la précision des observations est de l'ordre de 2 à 3 millimètres
+    \item la précision des coordonnées est de l'ordre de 1 à 2 millimètres
+\end{itemize}
+Il en résulte que la précision des distances relatives entre les points fixes et les points cibles est de l'ordre de 2 à 3 millimètres

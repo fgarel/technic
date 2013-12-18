@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.11)  16 DEC 2013 17:52
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013) (format=xelatex 2013.12.11)  18 DEC 2013 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -705,60 +705,6 @@ LaTeX Warning: Label `P1020547' multiply defined.
 
 LaTeX Warning: Label `sub@P1020547' multiply defined.
 
-
-LaTeX Warning: Label `P1020563' multiply defined.
-
-
-LaTeX Warning: Label `sub@P1020563' multiply defined.
-
-
-LaTeX Warning: Label `P1020564' multiply defined.
-
-
-LaTeX Warning: Label `sub@P1020564' multiply defined.
-
-
-LaTeX Warning: Label `essai_a' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_a' multiply defined.
-
-
-LaTeX Warning: Label `essai_4' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_4' multiply defined.
-
-
-LaTeX Warning: Label `essai_5' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_5' multiply defined.
-
-
-LaTeX Warning: Label `essai_6' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_6' multiply defined.
-
-
-LaTeX Warning: Label `essai_a' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_a' multiply defined.
-
-
-LaTeX Warning: Label `essai_2' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_2' multiply defined.
-
-
-LaTeX Warning: Label `essai_3' multiply defined.
-
-
-LaTeX Warning: Label `sub@essai_3' multiply defined.
-
 )
 \openout1 = `rapport_facade_hdv.aux'.
 
@@ -904,21 +850,17 @@ Chapitre 1.
 
 ]
 Chapitre 2.
-(./chapters/chapter02.tex) [3
+(./chapters/chapter02.tex [3
 
-]
+]) [4]
 Chapitre 3.
-(./chapters/chapter03.tex) [4
+(./chapters/chapter03.tex [5
 
-]
+]) [6]
 Chapitre 4.
-(./chapters/chapter04.tex) [5
+(./chapters/chapter04.tex [7
 
-]
-Chapitre 5.
-(./chapters/conclusion.tex) [6
-
-]
+] [8] [9])
 Annexe A.
 (./chapters/appendix01.tex
 File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
@@ -1086,214 +1028,26 @@ tation_1/Points_cible_S1/P1020547.JPG" >
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020563.JPG Graphic file (type QTm)
+) [10
 
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020563.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020564.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020564.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020565.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020565.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020566.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020566.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020567.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020567.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020568.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020568.JPG" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020569.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020569.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020570.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020570.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020572.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020572.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_cible_S2/P1020573.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_cible_S2/P1020573.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020574.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020574.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020575.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020575.JPG" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020563.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020563.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020563.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020563.JPG" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020564.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020564.JPG" >
-File: /home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/St
-ation_2/Points_reference_S2/P1020564.JPG Graphic file (type QTm)
-
-<use  "/home/fred/f/CARTOGRAPHIE/Plans/2_Topo_EnCours/hotel_de_ville/20131210/S
-tation_2/Points_reference_S2/P1020564.JPG" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [7
-
-] [8] [9] [10] [11] [12] [13]
-Annexe B.
-(./chapters/appendix02.tex
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-File: test.jpg Graphic file (type QTm)
-<use  "test.jpg" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: mydessin.pdf Graphic file (type QTm)
-<use  "mydessin.pdf" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: mydessin.pdf Graphic file (type QTm)
-<use  "mydessin.pdf" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `mydessin1' on page 14 undefined on input line 256.
-
-
-LaTeX Warning: Reference `mydessin1' on page 14 undefined on input line 256.
-
-[14
-
-]
-
-LaTeX Warning: Reference `mydessin2' on page 15 undefined on input line 258.
-
-
-LaTeX Warning: Reference `mydessin2' on page 15 undefined on input line 258.
-
-[15] [16] [17] [18] [19] (./rapport_facade_hdv.lof)
+] [11] [12] [13] [14] (./rapport_facade_hdv.lof)
 \tf@lof=\write5
 \openout5 = `rapport_facade_hdv.lof'.
 
-[20
+[15
 
 ] (./rapport_facade_hdv.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
- ) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 18871 strings out of 493918
- 360496 string characters out of 6148598
- 459605 words of memory out of 5000000
- 21863 multiletter control sequences out of 15000+600000
+ 18761 strings out of 493918
+ 357679 string characters out of 6148598
+ 452123 words of memory out of 5000000
+ 21778 multiletter control sequences out of 15000+600000
  5491 words of font info for 41 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  46i,10n,43p,10471b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on rapport_facade_hdv.pdf (21 pages).
+Output written on rapport_facade_hdv.pdf (16 pages).

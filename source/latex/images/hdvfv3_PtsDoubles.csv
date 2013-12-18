@@ -1,0 +1,20 @@
+ATLOG : RAPPORT DE CALCUL TOPOMATHRIX SUR POINTS DOUBLES
+
+Date : 17/12/2013 14:05:58
+
+
+Nom du fichier de données traité : C:\DONNEES\hdvfv3_cal.mdb
+Projection : Lambert Conique Conforme 46
+Altération linéaire : -8.2(cm/km)
+Correction au niveau zéro de l'ellipsoïde : -0.9(cm/km)
+
+
+
+Matricule;Xmoy;Ymoy;Zmoy;Station;Ecart X;Ecart Y;Ecart Z
+1023;1379519.245;5226116.798;15.269
+;;;;S.1;0.004;-0.001;-0.005
+;;;;S.2;-0.004;0.001;0.005
+1049;1379519.366;5226093.230;9.881
+;;;;S.3;-0.001;0.002;0.000
+;;;;S.5;0.001;-0.002;0.000
+
