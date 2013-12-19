@@ -1,0 +1,61 @@
+Documents listant differentes ressources pour 
+
+Essai 1 : 
+A partir de python, on genere des fichiers tex
+(http://forum.mathematex.net/latex-f6/exemple-de-script-python-pour-generer-du-code-latex-t8574.html)
+
+
+
+Essai 2 :
+Dans un fichier latex, on inclut des instructions python
+(latexbd, python inside latex (http://thewikiblog.appspot.com/blog/python-inside-latex))
+le reste de la doc se trouve ici :
+
+utilisation de latex sous windows avec TeXnicCenter
+/home/garel/x/Documents ans Settings/garel/Mes documents/libre/TeXnicCenter/travail
+
+doc latex
+/home/garel/x/Documents ans Settings/garel/Mes documents/sav/linux/home/garel/doc/latex/
+
+mes premiers essais avec latex se trouve ici
+/home/garel/x/Documents ans Settings/garel/Mes documents/sav/linux/usr/local/bin/
+
+et enfin, mes essais un pleu plus poussés sont ici
+/home/garel/x/Documents ans Settings/garel/Mes documents/sav/linux/home/garel/a_trier/CatalogueTopo/
+
+la doc de depart est ici
+/home/garel/x/Documents ans Settings/garel/Mes documents/sav/linux/home/garel/a_trier/CatalogueTopo/chaine-reporting.pdf
+http://pagesperso-orange.fr/Etienne.Marache/latex/lbd/latexbd.html
+
+
+
+Installation de l'environnement latex sous linux
+aptitude install latex-beamer/testing
+aptitude install prosper
+aptitude install xindy/testng
+aptitude install purifyeps/testing
+aptitude install texlive/testing
+aptitude install texlive-lang-french/testing
+aptitude install texlive-latex-recommended/testing
+aptitude install texlive-doc-fr/testing
+
+
+1er document tex
+cd /home/garel/travail/docInterne/latex/travail
+vi LaTeX1.tex
+\documentclass{article}
+\begin{document}
+Hello, world!
+\end{document}
+latex LaTeX1.tex
+pdflatex LaTeX1.tex
+
+les documents LaTex2, LaTeX3 et LaTeX4 aborde d'autres aspects
+
+la doc a suivre après est 
+/home/garel/travail/docInterne/latex/CatalogueTopo/doc/chaine-reporting.pdf
+
+
+la doc sur lees les documents de base latex sont
+http://perso.enstimac.fr/~gaborit/latex/latex-in-french.html
+

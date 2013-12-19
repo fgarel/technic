@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\author{Frédéric Garel}
+\begin{document}
+\begin{figure}[h]
+  \hfill         % permet de caler à droite de la page
+  \begin{minipage}[t]{5cm}
+    \begin{center}
+      \includegraphics[height=2cm,width=5cm,clip=false,keepaspectratio=true]{/home/fred/CatalogueTopo/Images/RepresentationChagneau/Images/F\_05\_01\_02\_01}
+      \caption[05\_01\_02\_01]{\label{} F\_05\_01\_02\_01.png}
+    \end{center}
+  \end{minipage}
+\end{figure}
+\begin{figure}[h]
+  \hfill         % permet de caler à droite de la page
+  \begin{minipage}[t]{5cm}
+    \begin{center}
+      \includegraphics[height=2cm,width=5cm,clip=false,keepaspectratio=true]{/home/fred/CatalogueTopo/Images/RepresentationChagneau/Images/F\_05\_01\_02\_02}
+      \caption[05\_01\_02\_02]{\label{} F\_05\_01\_02\_02.png}
+    \end{center}
+  \end{minipage}
+\end{figure}
+\end{document}

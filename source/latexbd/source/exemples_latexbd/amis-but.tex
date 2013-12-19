@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+
+% Les paramtres de connexion :
+%%\texdbconnection{postgres, localhost, fred, fred, exemples-lbd}
+
+% La requte :
+%%\texdbdef{##q}{SELECT %
+%%   nom ,
+%%   prenom ,
+%%   tel %
+%%   FROM amis ORDER by nom, prenom}
+
+\begin{document}
+\begin{tabular}{|>{\scshape}l|l|l|}
+\hline
+Nom&Prénom&Téléphone\\
+\hline
+% On rentre ici les donnes .
+%\texdbfor{##q}{row.nom&row.prenom&row.tel\\\hline}
+Ami&Alfred&0000000001\\\hline
+Ami&Leo,Lea&3300330033\\\hline
+Amie&Julie&9999999998\\\hline
+\end{tabular}
+\end{document}

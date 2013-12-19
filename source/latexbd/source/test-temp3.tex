@@ -1,0 +1,95 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a3paper,landscape,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Catalogue des objets topographiques}
+
+% Les parametres de connexion
+
+
+% les requetes
+
+\begin{document}
+
+% essai code python pour fabriquer un tableau
+\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}
+\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+\end{tabular}
+
+% essai code python pour parcourir resultat requete
+avant tableau
+\begin{tabular}{|m{3cm}|m{3cm}|}
+\hline
+01\_00\_00\_00 & Raster, Prise de vue \\\hline
+03\_00\_00\_00 & Urbanisme et cartes à petite echelle \\\hline
+05\_00\_00\_00 & Réseau de Transport de personnes / déplacement \\\hline
+07\_00\_00\_00 & Voirie \\\hline
+09\_00\_00\_00 & Bâti \\\hline
+11\_00\_00\_00 & Réseau de Transport Eau et Energie \\\hline
+12\_00\_00\_00 & Réseau chauffage urbain \\\hline
+13\_00\_00\_00 & Reseau de Distribution \\\hline
+15\_00\_00\_00 & Reseau de Transport d information \\\hline
+17\_00\_00\_00 & Reseau en attente \\\hline
+19\_00\_00\_00 & Réseau de Collecte \\\hline
+21\_00\_00\_00 & Signalisation lumineuse \\\hline
+23\_00\_00\_00 & Signalisation verticale \\\hline
+25\_00\_00\_00 & Signalisation horizontale \\\hline
+27\_00\_00\_00 & Stationnement \\\hline
+29\_00\_00\_00 & Espaces verts \\\hline
+31\_00\_00\_00 & Mobilier urbain \\\hline
+33\_00\_00\_00 & Geodesie, Points de référence et Habillage \\\hline
+\end{tabular}
+apres tableau
+
+% essai d'un tableau
+\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}
+\hline
+\multicolumn{4}{|c|}{Essai Tableau} \\
+\hline
+\multicolumn{1}{|c|}{Theme} & \multicolumn{1}{|c|}{Domaine}  & \multicolumn{2}{|c|}{classe} \\
+\cline{1-4}      \multirow{5}*{theme\\_01} & \multirow{2}*{domaine\\_01} & 1 & 2 \\
+\cline{3-4}                               &                            & 2 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine\\_02} & 3 & 2 \\
+\cline{3-4}                               &                            & 4 & 2 \\
+\cline{3-4}                               &                            & 5 & 2 \\
+\cline{1-4}      \multirow{6}*{theme\\_02} & \multirow{3}*{domaine\\_03} & 6 & 2 \\
+\cline{3-4}                               &                            & 7 & 2 \\
+\cline{3-4}                               &                            & 8 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine\\_04} & 9 & 2 \\
+\cline{3-4}                               &                            & 10 & 2 \\
+\cline{3-4}                               &                            & 11 & 2 \\
+\cline{1-4}      \multirow{2}*{theme\\_03} & \multirow{1}*{domaine\\_05} & 12 & 2 \\
+\cline{2-4}                               & \multirow{1}*{domaine\\_06} & 13 & 2 \\
+\cline{1-4}      \multirow{1}*{theme\\_04} & \multirow{1}*{domaine\\_07} & 14 & 2 \\
+\hline
+\end{tabular}
+
+
+
+\end{document}

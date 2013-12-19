@@ -1,0 +1,873 @@
+\select@language {french}
+\contentsline {chapter}{Pr\IeC {\'e}face}{i}
+\contentsline {chapter}{Introduction}{xxi}
+\contentsline {chapter}{\numberline {1}Syst\IeC {\`e}me de classement}{1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}
+\contentsline {section}{\numberline {1.2}Les Th\IeC {\`e}mes}{1}
+\contentsline {section}{\numberline {1.3}Les Domaines}{1}
+\contentsline {section}{\numberline {1.4}Les Classes}{3}
+\contentsline {chapter}{\numberline {2}Catalogue des objets topographiques non-pris en charge dans le SIG}{11}
+\contentsline {section}{\numberline {2.1}Introduction}{11}
+\contentsline {section}{\numberline {2.2}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un tableau}{11}
+\contentsline {section}{\numberline {2.3}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un document structur\IeC {\'e} - Version sans les attributs et sans la repr\IeC {\'e}sentation}{21}
+\contentsline {subsection}{\numberline {2.3.1}Raster, Prise de vue}{21}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres prises de vue}{21}
+\contentsline {paragraph}{Autres prises de vue}{21}
+\contentsline {subsection}{\numberline {2.3.2}Urbanisme et cartes \IeC {\`a} petite echelle}{21}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Limites administratives et cartes \IeC {\`a} petites echelle}{21}
+\contentsline {paragraph}{\IeC {\'E}chelle communale}{21}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Document d urbanisme}{21}
+\contentsline {paragraph}{Sch\IeC {\'e}ma Directeur ou SCOT}{21}
+\contentsline {paragraph}{Prescriptions, Servitudes et autres zonages}{21}
+\contentsline {paragraph}{ZPPAUP}{22}
+\contentsline {paragraph}{Plan de sauvegarde et de mise en valeur}{22}
+\contentsline {subsection}{\numberline {2.3.3}R\IeC {\'e}seau de Transport de personnes / d\IeC {\'e}placement}{22}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Referentiel Voirie filaire / Adresse}{22}
+\contentsline {paragraph}{Surfacique}{22}
+\contentsline {paragraph}{Carrefour}{22}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport en commun}{22}
+\contentsline {paragraph}{Station transport en commun}{22}
+\contentsline {paragraph}{Ligne transport en commun}{22}
+\contentsline {paragraph}{Voie r\IeC {\'e}serv\IeC {\'e}e taxi et transport en commun}{22}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cheminement pieton et PMR}{23}
+\contentsline {paragraph}{Voie pi\IeC {\'e}tonne}{23}
+\contentsline {paragraph}{Passage souterrain}{23}
+\contentsline {paragraph}{Pont, passerelle pi\IeC {\'e}tonne}{23}
+\contentsline {subsection}{\numberline {2.3.4}Voirie}{23}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Classement / gestion}{23}
+\contentsline {paragraph}{Gestion Conseil G\IeC {\'e}n\IeC {\'e}ral}{23}
+\contentsline {paragraph}{Gestion CDA}{23}
+\contentsline {paragraph}{Gestion Ville}{23}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Chauss\IeC {\'e}e / accotement}{23}
+\contentsline {paragraph}{Objets surfaciques (chauss\IeC {\'e}e, accotement, rev\IeC {\^e}tement, )}{23}
+\contentsline {paragraph}{Objets lin\IeC {\'e}aires (limite de chauss\IeC {\'e}e, limite de rev\IeC {\^e}tement, bordure, foss\IeC {\'e}, )}{24}
+\contentsline {paragraph}{Objets ponctuels ( )}{24}
+\contentsline {subsection}{\numberline {2.3.5}B\IeC {\^a}ti}{24}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objet surfacique bati}{24}
+\contentsline {paragraph}{Emprise b\IeC {\^a}timent}{24}
+\contentsline {paragraph}{Ouvrage d art, pont, passerelle}{24}
+\contentsline {paragraph}{Bloc b\IeC {\'e}ton, pilier}{24}
+\contentsline {paragraph}{Statue ou monument}{25}
+\contentsline {paragraph}{Limite surface tax\IeC {\'e}e}{25}
+\contentsline {paragraph}{Devanture}{25}
+\contentsline {paragraph}{Ruine}{25}
+\contentsline {paragraph}{Mur cyclop\IeC {\'e}en}{25}
+\contentsline {paragraph}{Tombe}{25}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cloture / Element de s\IeC {\'e}paration (objet lin\IeC {\'e}aire)}{25}
+\contentsline {paragraph}{Limite de propri\IeC {\'e}t\IeC {\'e} (fa\IeC {\c c}ade<->domaine public)}{25}
+\contentsline {paragraph}{Limite s\IeC {\'e}parative entre deux propri\IeC {\'e}t\IeC {\'e}s}{25}
+\contentsline {paragraph}{Limite de b\IeC {\^a}timent / fa\IeC {\c c}ade}{26}
+\contentsline {paragraph}{Pro\IeC {\'e}minence d un b\IeC {\^a}timent par rapport \IeC {\`a} sa fa\IeC {\c c}ade lev\IeC {\'e}e}{26}
+\contentsline {paragraph}{Mur}{26}
+\contentsline {paragraph}{Mur de sout\IeC {\`e}nement}{26}
+\contentsline {paragraph}{Limite \IeC {\'e}paisseur mur (deuxi\IeC {\`e}me trait)}{26}
+\contentsline {paragraph}{Cl\IeC {\^o}ture}{26}
+\contentsline {paragraph}{Pr\IeC {\'e}au}{26}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Seuil, Entr\IeC {\'e}e}{27}
+\contentsline {paragraph}{B\IeC {\^a}ti Seuil, Entr\IeC {\'e}e}{27}
+\contentsline {subsection}{\numberline {2.3.6}R\IeC {\'e}seau de Transport Eau et Energie}{27}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{27}
+\contentsline {paragraph}{Conduite de transfert (feeder)}{27}
+\contentsline {paragraph}{Ouvrage d adduction (notion d eau brute, d aqueduc)}{27}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{27}
+\contentsline {paragraph}{GDF haute pression transport}{27}
+\contentsline {paragraph}{GDF moyenne pression transport}{27}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} X}{27}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} Y}{28}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e} (RTE = R\IeC {\'e}seau de Transport d \IeC {\'e}lectricit\IeC {\'e})}{28}
+\contentsline {paragraph}{HTB (U > 75 kV)}{28}
+\contentsline {paragraph}{HTA (1500 < U < 75 kV)}{28}
+\contentsline {subsection}{\numberline {2.3.7}Reseau de Distribution}{28}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{28}
+\contentsline {paragraph}{Objet surfacique du r\IeC {\'e}seau}{28}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire du r\IeC {\'e}seau}{28}
+\contentsline {paragraph}{Objet ponctuel du r\IeC {\'e}seau}{28}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{29}
+\contentsline {paragraph}{GDF basse pression distribution}{29}
+\contentsline {paragraph}{Vanne Gaz}{29}
+\contentsline {paragraph}{Branchement individuel GDF}{29}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment}{29}
+\contentsline {paragraph}{Gaz basse pression distribution Soci\IeC {\'e}t\IeC {\'e} Y}{29}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e}}{29}
+\contentsline {paragraph}{Objet surfacique (r\IeC {\'e}seau de distribution \IeC {\'E}lectricit\IeC {\'e})}{29}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (HTA (1500 < U < 75 kV))}{29}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTB (750 < U < 1500 V))}{30}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTA (120 < U < 750 V))}{30}
+\contentsline {paragraph}{Objet ponctuel}{30}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eclairage public}{30}
+\contentsline {paragraph}{Objet surfacique (\IeC {\'E}clairage public)}{30}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{30}
+\contentsline {paragraph}{Objet ponctuel}{31}
+\contentsline {subsection}{\numberline {2.3.8}Reseau de Transport d information}{31}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau Ville de La Rochelle}{31}
+\contentsline {paragraph}{Poste de Contr\IeC {\^o}le d Acc\IeC {\`e}s (PCA)}{31}
+\contentsline {paragraph}{Regard comptage routier}{31}
+\contentsline {paragraph}{R\IeC {\'e}seau DSI}{31}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau op\IeC {\'e}rateur}{31}
+\contentsline {paragraph}{Objet surfacique}{31}
+\contentsline {paragraph}{Objet ponctuel}{31}
+\contentsline {subsection}{\numberline {2.3.9}Reseau en attente}{32}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet lin\IeC {\'e}aire}{32}
+\contentsline {paragraph}{Fourreau en attente - objet lin\IeC {\'e}aire}{32}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet ponctuel}{32}
+\contentsline {paragraph}{Fourreau en attente - objet ponctuel}{32}
+\contentsline {subsection}{\numberline {2.3.10}R\IeC {\'e}seau de Collecte}{32}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement pluvial}{32}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{32}
+\contentsline {paragraph}{Objet ponctuel}{32}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement eaux us\IeC {\'e}es}{32}
+\contentsline {paragraph}{Objet surfacique}{32}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{33}
+\contentsline {paragraph}{Objet ponctuel}{33}
+\contentsline {subsection}{\numberline {2.3.11}Signalisation lumineuse}{33}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Information parking - Panneau \IeC {\`a} messages variables (PMV)}{33}
+\contentsline {paragraph}{Panneau \IeC {\`a} messages variables (PMV)}{33}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Feu tricolore - Feu et signal lumineux (R11 \IeC {\`a} R24)}{33}
+\contentsline {paragraph}{Armoire de commande Signalisation Tricolore}{33}
+\contentsline {paragraph}{Regard Technique Signalisation Tricolore}{33}
+\contentsline {paragraph}{Feu et signal lumineux (R11 \IeC {\`a} R24) accroch\IeC {\'e} \IeC {\`a} un point de r\IeC {\'e}f\IeC {\'e}rence (support ou applique)}{33}
+\contentsline {subsection}{\numberline {2.3.12}Signalisation verticale}{33}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de police}{33}
+\contentsline {paragraph}{Panneaux de danger (A1a \IeC {\`a} A24)}{33}
+\contentsline {paragraph}{Panneaux d intersection et de priorit\IeC {\'e} (AB1 \IeC {\`a} AB25)}{34}
+\contentsline {paragraph}{Panneaux de prescription (B0 \IeC {\`a} B51)}{34}
+\contentsline {paragraph}{Panneaux d indication (C1a \IeC {\`a} CE50)}{34}
+\contentsline {paragraph}{Panonceaux (M1 \IeC {\`a} M11b)}{34}
+\contentsline {paragraph}{Symboles (SE2b \IeC {\`a} SU1)}{34}
+\contentsline {paragraph}{Autres objets}{34}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de direction}{34}
+\contentsline {paragraph}{Panneaux de direction (D21a \IeC {\`a} D79b)}{34}
+\contentsline {paragraph}{Panneaux de jalonnement pi\IeC {\'e}tonnier (Dp1a \IeC {\`a} Dp2b)}{34}
+\contentsline {paragraph}{Panneaux de jalonnement pour cyclistes (Dv11 \IeC {\`a} Dv61)}{35}
+\contentsline {paragraph}{Panneaux de localisation (E31 \IeC {\`a} EB20)}{35}
+\contentsline {paragraph}{Panneaux d information (H11 \IeC {\`a} H33)}{35}
+\contentsline {paragraph}{Id\IeC {\'e}ogrammes, embl\IeC {\`e}mes ou logotypes (ID1 \IeC {\`a} ID15a41 + Logotype)}{35}
+\contentsline {paragraph}{Autres objets}{35}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres types de signal routier}{35}
+\contentsline {paragraph}{Balises (J1 \IeC {\`a} J14b)}{35}
+\contentsline {paragraph}{Feux de balisage et d alerte (G1 \IeC {\`a} R2d)}{35}
+\contentsline {paragraph}{Panneaux \IeC {\`a} messages variables (PMV)}{35}
+\contentsline {paragraph}{Panneaux et dispositifs de signalisation temporaire (AK2 \IeC {\`a} KR11)}{36}
+\contentsline {subsection}{\numberline {2.3.13}Signalisation horizontale}{36}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales axiales}{36}
+\contentsline {paragraph}{Lignes continues (continue)}{36}
+\contentsline {paragraph}{Lignes discontinues de type T1 (T1, Tp1, ou T3)}{36}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3)}{36}
+\contentsline {paragraph}{Lignes mixtes (T1 ou T3)}{36}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes continues d\IeC {\'e}limitant le Terre Plein Central, les ilots ou certains couloirs r\IeC {\'e}serv\IeC {\'e}s}{36}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de terre-plein central (continue)}{36}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation du contour des \IeC {\^\i }lots (continue)}{36}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de certains couloirs r\IeC {\'e}serv\IeC {\'e}s (continue)}{37}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales de rives ou de d\IeC {\'e}limitation de certaines voies}{37}
+\contentsline {paragraph}{Lignes discontinues de type T2 (T2)}{37}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3 ou Tp3)}{37}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Pr\IeC {\'e}signalisation des points singuliers}{37}
+\contentsline {paragraph}{Ligne d annonce d une ligne continue (T3)}{37}
+\contentsline {paragraph}{Fl\IeC {\`e}ches de rabattement}{37}
+\contentsline {paragraph}{Fl\IeC {\`e}ches directionnelles}{37}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes Transversales}{38}
+\contentsline {paragraph}{Ligne \_STOP\_ (continue)}{38}
+\contentsline {paragraph}{Ligne \_C\IeC {\'e}dez-le-passage\_ (Tp2)}{38}
+\contentsline {paragraph}{Ligne d effet des feux (Tp2)}{38}
+\contentsline {paragraph}{Ligne de guidage en intersection Tourne \IeC {\`a} gauche \IeC {\`a} l indon\IeC {\'e}sienne - carrefour en ba\IeC {\"\i }onnette (Tp2)}{38}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}but et de fin de voie cyclable (Tp2)}{38}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Passages pour pi\IeC {\'e}tons}{38}
+\contentsline {paragraph}{Passages pour pi\IeC {\'e}tons}{38}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques de ralentisseur de type dos-d \IeC {\^a}ne}{38}
+\contentsline {paragraph}{Marques de ralentisseur de type dos-d \IeC {\^a}ne}{38}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives aux transports en commun}{39}
+\contentsline {paragraph}{Ligne marquant l emplacement d un arr\IeC {\^e}t d autobus (jaune, continue, zigzag)}{39}
+\contentsline {paragraph}{Franchissement des carrefours par les voies r\IeC {\'e}serv\IeC {\'e}es (blanc, damier)}{40}
+\contentsline {paragraph}{Inscriptions sur les voies r\IeC {\'e}serv\IeC {\'e}es (\_BUS\_)}{40}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives au stationnement}{40}
+\contentsline {paragraph}{Ligne d\IeC {\'e}limitant les places de stationnement (blanche ou bleue, Tp2 ou continue)}{40}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2)}{40}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de s arr\IeC {\^e}ter (jaune, continue)}{40}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques pour voies cyclables}{40}
+\contentsline {paragraph}{Travers\IeC {\'e}es de chauss\IeC {\'e}es par les voies cyclables (Tp2)}{40}
+\contentsline {subsection}{\numberline {2.3.14}Stationnement}{40}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Zone de stationnement (plusieurs emplacements)}{40}
+\contentsline {paragraph}{Contour de parking}{40}
+\contentsline {paragraph}{Zone de livraison}{41}
+\contentsline {paragraph}{Horodateur}{41}
+\contentsline {paragraph}{P\IeC {\'e}age}{41}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Emplacement de stationnement}{41}
+\contentsline {paragraph}{Emplacement normal}{41}
+\contentsline {paragraph}{Emplacement PMR}{41}
+\contentsline {paragraph}{Emplacement Taxi}{41}
+\contentsline {paragraph}{Emplacement Transporteur de fond}{41}
+\contentsline {paragraph}{Emplacement Livraison}{41}
+\contentsline {paragraph}{Emplacement V\IeC {\'e}hicule \IeC {\'e}lectrique}{42}
+\contentsline {subsection}{\numberline {2.3.15}Espaces verts}{42}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Typologie Espaces Verts}{42}
+\contentsline {paragraph}{Parcs, jardins et squares}{42}
+\contentsline {paragraph}{Accompagnement de voies}{42}
+\contentsline {paragraph}{Accompagnement b\IeC {\^a}timents publics}{42}
+\contentsline {paragraph}{Accompagnement habitations}{42}
+\contentsline {paragraph}{Accompagnement \IeC {\'e}tablissement industriels et commerciaux}{42}
+\contentsline {paragraph}{Espaces verts \IeC {\'e}tablissements sociaux ou \IeC {\'e}ducatifs}{42}
+\contentsline {paragraph}{Sports}{42}
+\contentsline {paragraph}{Cimeti\IeC {\`e}res}{43}
+\contentsline {paragraph}{Campings}{43}
+\contentsline {paragraph}{\IeC {\'E}tablissements horticoles}{43}
+\contentsline {paragraph}{Espaces naturels am\IeC {\'e}nag\IeC {\'e}s}{43}
+\contentsline {paragraph}{Jardins familiaux}{43}
+\contentsline {paragraph}{Arbres d alignement}{43}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision d\IeC {\'e}cim\IeC {\'e}trique)}{43}
+\contentsline {paragraph}{Surfacique}{43}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{44}
+\contentsline {paragraph}{Ponctuel}{44}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces verts Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision m\IeC {\'e}trique)}{44}
+\contentsline {paragraph}{Surfacique}{44}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{44}
+\contentsline {paragraph}{Ponctuel}{44}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gestion}{45}
+\contentsline {paragraph}{Espaces Verts entretien Ville La Rochelle}{45}
+\contentsline {paragraph}{Espaces Verts entretien Organisme HLM}{45}
+\contentsline {paragraph}{Espaces Verts entretien Autre organisme ou priv\IeC {\'e}}{45}
+\contentsline {subsection}{\numberline {2.3.16}Mobilier urbain}{45}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Stationnement}{45}
+\contentsline {paragraph}{Horodateur}{45}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport}{45}
+\contentsline {paragraph}{Arceau stationnement v\IeC {\'e}lo}{45}
+\contentsline {paragraph}{Arceau chicane}{45}
+\contentsline {paragraph}{Poteau d arr\IeC {\^e}t de bus}{45}
+\contentsline {paragraph}{Borne Auto Plus}{45}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Affichage}{46}
+\contentsline {paragraph}{Panneau d affichage libre}{46}
+\contentsline {paragraph}{Fourreau pour mat de pavoisement}{46}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces Verts}{46}
+\contentsline {paragraph}{Objet Surfacique (vespachien, jeu d enfants, kiosque, )}{46}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire ()}{46}
+\contentsline {paragraph}{Objet Ponctuel (Banc, Jardini\IeC {\`e}re, )}{46}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont S\IeC {\'e}curit\IeC {\'e}}{46}
+\contentsline {paragraph}{Objet Surfacique (Poste de Contr\IeC {\^o}le d acc\IeC {\`e}s, )}{46}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire (barri\IeC {\`e}re de ville, cha\IeC {\^\i }ne, gabarit de hauteur, barri\IeC {\`e}re levante, )}{47}
+\contentsline {paragraph}{Objet Ponctuel (Borne / Potelet, )}{47}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Services (souvent externe \IeC {\`a} la ville de La Rochelle)}{47}
+\contentsline {paragraph}{Boite aux lettres}{47}
+\contentsline {paragraph}{Cabine t\IeC {\'e}l\IeC {\'e}phonique}{47}
+\contentsline {paragraph}{Coffret relais de la poste}{47}
+\contentsline {paragraph}{Container d\IeC {\'e}chet}{47}
+\contentsline {subsection}{\numberline {2.3.17}Geodesie, Points de r\IeC {\'e}f\IeC {\'e}rence et Habillage}{48}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont G\IeC {\'e}od\IeC {\'e}sie}{48}
+\contentsline {paragraph}{Point g\IeC {\'e}od\IeC {\'e}sique}{48}
+\contentsline {paragraph}{Point nivellement}{48}
+\contentsline {paragraph}{Courbe de niveau}{48}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Points de r\IeC {\'e}f\IeC {\'e}rence}{48}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un appareil de fontainerie du r\IeC {\'e}seau eau potable ou gaz}{48}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un regard ou d une plaque}{48}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un Support (syst\IeC {\`e}me d accrochage vertical)}{48}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Habillage}{49}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{49}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{49}
+\contentsline {paragraph}{Texte divers non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{49}
+\contentsline {paragraph}{Texte divers g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{49}
+\contentsline {section}{\numberline {2.4}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un document structur\IeC {\'e} - Version avec les attributs et avec la repr\IeC {\'e}sentation}{49}
+\contentsline {subsection}{\numberline {2.4.1}Raster, Prise de vue}{49}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres prises de vue}{49}
+\contentsline {paragraph}{Autres prises de vue}{49}
+\contentsline {subsection}{\numberline {2.4.2}Urbanisme et cartes \IeC {\`a} petite echelle}{50}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Limites administratives et cartes \IeC {\`a} petites echelle}{50}
+\contentsline {paragraph}{\IeC {\'E}chelle communale}{50}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Document d urbanisme}{50}
+\contentsline {paragraph}{Sch\IeC {\'e}ma Directeur ou SCOT}{50}
+\contentsline {paragraph}{Prescriptions, Servitudes et autres zonages}{50}
+\contentsline {paragraph}{ZPPAUP}{53}
+\contentsline {paragraph}{Plan de sauvegarde et de mise en valeur}{53}
+\contentsline {subsection}{\numberline {2.4.3}R\IeC {\'e}seau de Transport de personnes / d\IeC {\'e}placement}{53}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Referentiel Voirie filaire / Adresse}{53}
+\contentsline {paragraph}{Surfacique}{53}
+\contentsline {paragraph}{Carrefour}{54}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport en commun}{54}
+\contentsline {paragraph}{Station transport en commun}{54}
+\contentsline {paragraph}{Ligne transport en commun}{54}
+\contentsline {paragraph}{Voie r\IeC {\'e}serv\IeC {\'e}e taxi et transport en commun}{55}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cheminement pieton et PMR}{55}
+\contentsline {paragraph}{Voie pi\IeC {\'e}tonne}{55}
+\contentsline {paragraph}{Passage souterrain}{55}
+\contentsline {paragraph}{Pont, passerelle pi\IeC {\'e}tonne}{55}
+\contentsline {subsection}{\numberline {2.4.4}Voirie}{56}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Classement / gestion}{56}
+\contentsline {paragraph}{Gestion Conseil G\IeC {\'e}n\IeC {\'e}ral}{56}
+\contentsline {paragraph}{Gestion CDA}{56}
+\contentsline {paragraph}{Gestion Ville}{56}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Chauss\IeC {\'e}e / accotement}{57}
+\contentsline {paragraph}{Objets surfaciques (chauss\IeC {\'e}e, accotement, rev\IeC {\^e}tement, )}{57}
+\contentsline {paragraph}{Objets lin\IeC {\'e}aires (limite de chauss\IeC {\'e}e, limite de rev\IeC {\^e}tement, bordure, foss\IeC {\'e}, )}{57}
+\contentsline {paragraph}{Objets ponctuels ( )}{59}
+\contentsline {subsection}{\numberline {2.4.5}B\IeC {\^a}ti}{59}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objet surfacique bati}{59}
+\contentsline {paragraph}{Emprise b\IeC {\^a}timent}{59}
+\contentsline {paragraph}{Ouvrage d art, pont, passerelle}{59}
+\contentsline {paragraph}{Bloc b\IeC {\'e}ton, pilier}{60}
+\contentsline {paragraph}{Statue ou monument}{60}
+\contentsline {paragraph}{Limite surface tax\IeC {\'e}e}{61}
+\contentsline {paragraph}{Devanture}{61}
+\contentsline {paragraph}{Ruine}{62}
+\contentsline {paragraph}{Mur cyclop\IeC {\'e}en}{62}
+\contentsline {paragraph}{Tombe}{62}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cloture / Element de s\IeC {\'e}paration (objet lin\IeC {\'e}aire)}{63}
+\contentsline {paragraph}{Limite de propri\IeC {\'e}t\IeC {\'e} (fa\IeC {\c c}ade<->domaine public)}{63}
+\contentsline {paragraph}{Limite s\IeC {\'e}parative entre deux propri\IeC {\'e}t\IeC {\'e}s}{63}
+\contentsline {paragraph}{Limite de b\IeC {\^a}timent / fa\IeC {\c c}ade}{63}
+\contentsline {paragraph}{Pro\IeC {\'e}minence d un b\IeC {\^a}timent par rapport \IeC {\`a} sa fa\IeC {\c c}ade lev\IeC {\'e}e}{63}
+\contentsline {paragraph}{Mur}{64}
+\contentsline {paragraph}{Mur de sout\IeC {\`e}nement}{64}
+\contentsline {paragraph}{Limite \IeC {\'e}paisseur mur (deuxi\IeC {\`e}me trait)}{65}
+\contentsline {paragraph}{Cl\IeC {\^o}ture}{66}
+\contentsline {paragraph}{Pr\IeC {\'e}au}{66}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Seuil, Entr\IeC {\'e}e}{66}
+\contentsline {paragraph}{B\IeC {\^a}ti Seuil, Entr\IeC {\'e}e}{66}
+\contentsline {subsection}{\numberline {2.4.6}R\IeC {\'e}seau de Transport Eau et Energie}{68}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{68}
+\contentsline {paragraph}{Conduite de transfert (feeder)}{68}
+\contentsline {paragraph}{Ouvrage d adduction (notion d eau brute, d aqueduc)}{68}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{68}
+\contentsline {paragraph}{GDF haute pression transport}{68}
+\contentsline {paragraph}{GDF moyenne pression transport}{68}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} X}{69}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} Y}{69}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e} (RTE = R\IeC {\'e}seau de Transport d \IeC {\'e}lectricit\IeC {\'e})}{69}
+\contentsline {paragraph}{HTB (U > 75 kV)}{69}
+\contentsline {paragraph}{HTA (1500 < U < 75 kV)}{70}
+\contentsline {subsection}{\numberline {2.4.7}Reseau de Distribution}{70}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{70}
+\contentsline {paragraph}{Objet surfacique du r\IeC {\'e}seau}{70}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire du r\IeC {\'e}seau}{70}
+\contentsline {paragraph}{Objet ponctuel du r\IeC {\'e}seau}{71}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{73}
+\contentsline {paragraph}{GDF basse pression distribution}{73}
+\contentsline {paragraph}{Vanne Gaz}{73}
+\contentsline {paragraph}{Branchement individuel GDF}{73}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment}{74}
+\contentsline {paragraph}{Gaz basse pression distribution Soci\IeC {\'e}t\IeC {\'e} Y}{75}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e}}{75}
+\contentsline {paragraph}{Objet surfacique (r\IeC {\'e}seau de distribution \IeC {\'E}lectricit\IeC {\'e})}{75}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (HTA (1500 < U < 75 kV))}{75}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTB (750 < U < 1500 V))}{76}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTA (120 < U < 750 V))}{76}
+\contentsline {paragraph}{Objet ponctuel}{76}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eclairage public}{78}
+\contentsline {paragraph}{Objet surfacique (\IeC {\'E}clairage public)}{78}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{79}
+\contentsline {paragraph}{Objet ponctuel}{79}
+\contentsline {subsection}{\numberline {2.4.8}Reseau de Transport d information}{79}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau Ville de La Rochelle}{79}
+\contentsline {paragraph}{Poste de Contr\IeC {\^o}le d Acc\IeC {\`e}s (PCA)}{79}
+\contentsline {paragraph}{Regard comptage routier}{80}
+\contentsline {paragraph}{R\IeC {\'e}seau DSI}{81}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau op\IeC {\'e}rateur}{81}
+\contentsline {paragraph}{Objet surfacique}{81}
+\contentsline {paragraph}{Objet ponctuel}{81}
+\contentsline {subsection}{\numberline {2.4.9}Reseau en attente}{84}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet lin\IeC {\'e}aire}{84}
+\contentsline {paragraph}{Fourreau en attente - objet lin\IeC {\'e}aire}{84}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet ponctuel}{84}
+\contentsline {paragraph}{Fourreau en attente - objet ponctuel}{84}
+\contentsline {subsection}{\numberline {2.4.10}R\IeC {\'e}seau de Collecte}{85}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement pluvial}{85}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{85}
+\contentsline {paragraph}{Objet ponctuel}{86}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement eaux us\IeC {\'e}es}{87}
+\contentsline {paragraph}{Objet surfacique}{87}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{87}
+\contentsline {paragraph}{Objet ponctuel}{88}
+\contentsline {subsection}{\numberline {2.4.11}Signalisation lumineuse}{88}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Information parking - Panneau \IeC {\`a} messages variables (PMV)}{88}
+\contentsline {paragraph}{Panneau \IeC {\`a} messages variables (PMV)}{88}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Feu tricolore - Feu et signal lumineux (R11 \IeC {\`a} R24)}{89}
+\contentsline {paragraph}{Armoire de commande Signalisation Tricolore}{89}
+\contentsline {paragraph}{Regard Technique Signalisation Tricolore}{89}
+\contentsline {paragraph}{Feu et signal lumineux (R11 \IeC {\`a} R24) accroch\IeC {\'e} \IeC {\`a} un point de r\IeC {\'e}f\IeC {\'e}rence (support ou applique)}{89}
+\contentsline {subsection}{\numberline {2.4.12}Signalisation verticale}{90}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de police}{90}
+\contentsline {paragraph}{Panneaux de danger (A1a \IeC {\`a} A24)}{90}
+\contentsline {paragraph}{Panneaux d intersection et de priorit\IeC {\'e} (AB1 \IeC {\`a} AB25)}{91}
+\contentsline {paragraph}{Panneaux de prescription (B0 \IeC {\`a} B51)}{91}
+\contentsline {paragraph}{Panneaux d indication (C1a \IeC {\`a} CE50)}{92}
+\contentsline {paragraph}{Panonceaux (M1 \IeC {\`a} M11b)}{93}
+\contentsline {paragraph}{Symboles (SE2b \IeC {\`a} SU1)}{93}
+\contentsline {paragraph}{Autres objets}{94}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de direction}{94}
+\contentsline {paragraph}{Panneaux de direction (D21a \IeC {\`a} D79b)}{94}
+\contentsline {paragraph}{Panneaux de jalonnement pi\IeC {\'e}tonnier (Dp1a \IeC {\`a} Dp2b)}{95}
+\contentsline {paragraph}{Panneaux de jalonnement pour cyclistes (Dv11 \IeC {\`a} Dv61)}{96}
+\contentsline {paragraph}{Panneaux de localisation (E31 \IeC {\`a} EB20)}{96}
+\contentsline {paragraph}{Panneaux d information (H11 \IeC {\`a} H33)}{97}
+\contentsline {paragraph}{Id\IeC {\'e}ogrammes, embl\IeC {\`e}mes ou logotypes (ID1 \IeC {\`a} ID15a41 + Logotype)}{97}
+\contentsline {paragraph}{Autres objets}{98}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres types de signal routier}{99}
+\contentsline {paragraph}{Balises (J1 \IeC {\`a} J14b)}{99}
+\contentsline {paragraph}{Feux de balisage et d alerte (G1 \IeC {\`a} R2d)}{100}
+\contentsline {paragraph}{Panneaux \IeC {\`a} messages variables (PMV)}{100}
+\contentsline {paragraph}{Panneaux et dispositifs de signalisation temporaire (AK2 \IeC {\`a} KR11)}{101}
+\contentsline {subsection}{\numberline {2.4.13}Signalisation horizontale}{101}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales axiales}{101}
+\contentsline {paragraph}{Lignes continues (continue)}{101}
+\contentsline {paragraph}{Lignes discontinues de type T1 (T1, Tp1, ou T3)}{102}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3)}{103}
+\contentsline {paragraph}{Lignes mixtes (T1 ou T3)}{104}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes continues d\IeC {\'e}limitant le Terre Plein Central, les ilots ou certains couloirs r\IeC {\'e}serv\IeC {\'e}s}{104}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de terre-plein central (continue)}{104}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation du contour des \IeC {\^\i }lots (continue)}{105}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de certains couloirs r\IeC {\'e}serv\IeC {\'e}s (continue)}{105}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales de rives ou de d\IeC {\'e}limitation de certaines voies}{106}
+\contentsline {paragraph}{Lignes discontinues de type T2 (T2)}{106}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3 ou Tp3)}{106}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Pr\IeC {\'e}signalisation des points singuliers}{107}
+\contentsline {paragraph}{Ligne d annonce d une ligne continue (T3)}{107}
+\contentsline {paragraph}{Fl\IeC {\`e}ches de rabattement}{107}
+\contentsline {paragraph}{Fl\IeC {\`e}ches directionnelles}{107}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes Transversales}{108}
+\contentsline {paragraph}{Ligne \_STOP\_ (continue)}{108}
+\contentsline {paragraph}{Ligne \_C\IeC {\'e}dez-le-passage\_ (Tp2)}{108}
+\contentsline {paragraph}{Ligne d effet des feux (Tp2)}{108}
+\contentsline {paragraph}{Ligne de guidage en intersection Tourne \IeC {\`a} gauche \IeC {\`a} l indon\IeC {\'e}sienne - carrefour en ba\IeC {\"\i }onnette (Tp2)}{109}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}but et de fin de voie cyclable (Tp2)}{110}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Passages pour pi\IeC {\'e}tons}{110}
+\contentsline {paragraph}{Passages pour pi\IeC {\'e}tons}{110}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques de ralentisseur de type dos-d \IeC {\^a}ne}{110}
+\contentsline {paragraph}{Marques de ralentisseur de type dos-d \IeC {\^a}ne}{110}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives aux transports en commun}{111}
+\contentsline {paragraph}{Ligne marquant l emplacement d un arr\IeC {\^e}t d autobus (jaune, continue, zigzag)}{111}
+\contentsline {paragraph}{Franchissement des carrefours par les voies r\IeC {\'e}serv\IeC {\'e}es (blanc, damier)}{111}
+\contentsline {paragraph}{Inscriptions sur les voies r\IeC {\'e}serv\IeC {\'e}es (\_BUS\_)}{111}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives au stationnement}{112}
+\contentsline {paragraph}{Ligne d\IeC {\'e}limitant les places de stationnement (blanche ou bleue, Tp2 ou continue)}{112}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2)}{112}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de s arr\IeC {\^e}ter (jaune, continue)}{112}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques pour voies cyclables}{113}
+\contentsline {paragraph}{Travers\IeC {\'e}es de chauss\IeC {\'e}es par les voies cyclables (Tp2)}{113}
+\contentsline {subsection}{\numberline {2.4.14}Stationnement}{113}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Zone de stationnement (plusieurs emplacements)}{113}
+\contentsline {paragraph}{Contour de parking}{113}
+\contentsline {paragraph}{Zone de livraison}{113}
+\contentsline {paragraph}{Horodateur}{114}
+\contentsline {paragraph}{P\IeC {\'e}age}{114}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Emplacement de stationnement}{114}
+\contentsline {paragraph}{Emplacement normal}{114}
+\contentsline {paragraph}{Emplacement PMR}{115}
+\contentsline {paragraph}{Emplacement Taxi}{115}
+\contentsline {paragraph}{Emplacement Transporteur de fond}{116}
+\contentsline {paragraph}{Emplacement Livraison}{116}
+\contentsline {paragraph}{Emplacement V\IeC {\'e}hicule \IeC {\'e}lectrique}{116}
+\contentsline {subsection}{\numberline {2.4.15}Espaces verts}{117}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Typologie Espaces Verts}{117}
+\contentsline {paragraph}{Parcs, jardins et squares}{117}
+\contentsline {paragraph}{Accompagnement de voies}{117}
+\contentsline {paragraph}{Accompagnement b\IeC {\^a}timents publics}{118}
+\contentsline {paragraph}{Accompagnement habitations}{118}
+\contentsline {paragraph}{Accompagnement \IeC {\'e}tablissement industriels et commerciaux}{118}
+\contentsline {paragraph}{Espaces verts \IeC {\'e}tablissements sociaux ou \IeC {\'e}ducatifs}{119}
+\contentsline {paragraph}{Sports}{119}
+\contentsline {paragraph}{Cimeti\IeC {\`e}res}{120}
+\contentsline {paragraph}{Campings}{120}
+\contentsline {paragraph}{\IeC {\'E}tablissements horticoles}{120}
+\contentsline {paragraph}{Espaces naturels am\IeC {\'e}nag\IeC {\'e}s}{121}
+\contentsline {paragraph}{Jardins familiaux}{121}
+\contentsline {paragraph}{Arbres d alignement}{122}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision d\IeC {\'e}cim\IeC {\'e}trique)}{122}
+\contentsline {paragraph}{Surfacique}{122}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{123}
+\contentsline {paragraph}{Ponctuel}{124}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces verts Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision m\IeC {\'e}trique)}{125}
+\contentsline {paragraph}{Surfacique}{125}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{126}
+\contentsline {paragraph}{Ponctuel}{126}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gestion}{126}
+\contentsline {paragraph}{Espaces Verts entretien Ville La Rochelle}{126}
+\contentsline {paragraph}{Espaces Verts entretien Organisme HLM}{127}
+\contentsline {paragraph}{Espaces Verts entretien Autre organisme ou priv\IeC {\'e}}{127}
+\contentsline {subsection}{\numberline {2.4.16}Mobilier urbain}{127}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Stationnement}{127}
+\contentsline {paragraph}{Horodateur}{127}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport}{128}
+\contentsline {paragraph}{Arceau stationnement v\IeC {\'e}lo}{128}
+\contentsline {paragraph}{Arceau chicane}{128}
+\contentsline {paragraph}{Poteau d arr\IeC {\^e}t de bus}{129}
+\contentsline {paragraph}{Borne Auto Plus}{129}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Affichage}{130}
+\contentsline {paragraph}{Panneau d affichage libre}{130}
+\contentsline {paragraph}{Fourreau pour mat de pavoisement}{130}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces Verts}{131}
+\contentsline {paragraph}{Objet Surfacique (vespachien, jeu d enfants, kiosque, )}{131}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire ()}{131}
+\contentsline {paragraph}{Objet Ponctuel (Banc, Jardini\IeC {\`e}re, )}{131}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont S\IeC {\'e}curit\IeC {\'e}}{132}
+\contentsline {paragraph}{Objet Surfacique (Poste de Contr\IeC {\^o}le d acc\IeC {\`e}s, )}{132}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire (barri\IeC {\`e}re de ville, cha\IeC {\^\i }ne, gabarit de hauteur, barri\IeC {\`e}re levante, )}{132}
+\contentsline {paragraph}{Objet Ponctuel (Borne / Potelet, )}{133}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Services (souvent externe \IeC {\`a} la ville de La Rochelle)}{134}
+\contentsline {paragraph}{Boite aux lettres}{134}
+\contentsline {paragraph}{Cabine t\IeC {\'e}l\IeC {\'e}phonique}{135}
+\contentsline {paragraph}{Coffret relais de la poste}{135}
+\contentsline {paragraph}{Container d\IeC {\'e}chet}{135}
+\contentsline {subsection}{\numberline {2.4.17}Geodesie, Points de r\IeC {\'e}f\IeC {\'e}rence et Habillage}{136}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont G\IeC {\'e}od\IeC {\'e}sie}{136}
+\contentsline {paragraph}{Point g\IeC {\'e}od\IeC {\'e}sique}{136}
+\contentsline {paragraph}{Point nivellement}{136}
+\contentsline {paragraph}{Courbe de niveau}{137}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Points de r\IeC {\'e}f\IeC {\'e}rence}{138}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un appareil de fontainerie du r\IeC {\'e}seau eau potable ou gaz}{138}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un regard ou d une plaque}{138}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un Support (syst\IeC {\`e}me d accrochage vertical)}{139}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Habillage}{139}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{139}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{140}
+\contentsline {paragraph}{Texte divers non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{140}
+\contentsline {paragraph}{Texte divers g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{140}
+\contentsline {chapter}{\numberline {3}Catalogue des objets SIG}{143}
+\contentsline {section}{\numberline {3.1}Introduction}{143}
+\contentsline {section}{\numberline {3.2}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un tableau}{143}
+\contentsline {section}{\numberline {3.3}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un document structur\IeC {\'e}}{154}
+\contentsline {subsection}{\numberline {3.3.1}Raster, Prise de vue}{154}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Scan}{154}
+\contentsline {paragraph}{Scan IGN}{154}
+\contentsline {paragraph}{Scan Documents d urbanisme}{155}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Ortho-Photo}{155}
+\contentsline {paragraph}{Ortho \IeC {\`a} l echelle du d\IeC {\'e}partement ou de l agglo}{155}
+\contentsline {paragraph}{Ortho commune de La Rochelle}{155}
+\contentsline {subsection}{\numberline {3.3.2}Urbanisme et cartes \IeC {\`a} petite echelle}{156}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Limites administratives et cartes \IeC {\`a} petites echelle}{156}
+\contentsline {paragraph}{\IeC {\'E}chelle nationale ou r\IeC {\'e}gionale}{156}
+\contentsline {paragraph}{\IeC {\'E}chelle locale (d\IeC {\'e}partement, CDA)}{156}
+\contentsline {paragraph}{\IeC {\'E}chelle communale}{159}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Document d urbanisme}{162}
+\contentsline {paragraph}{Zonage POS ou PLU}{162}
+\contentsline {paragraph}{Monuments et sites class\IeC {\'e}s ou inscrits}{162}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cadastre}{164}
+\contentsline {paragraph}{Cadastre Hors La Rochelle}{164}
+\contentsline {paragraph}{Cadastre La Rochelle}{164}
+\contentsline {subsection}{\numberline {3.3.3}R\IeC {\'e}seau de Transport de personnes / d\IeC {\'e}placement}{165}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Referentiel Voirie filaire / Adresse}{165}
+\contentsline {paragraph}{Voirie filaire}{165}
+\contentsline {paragraph}{Point adresse postale}{165}
+\contentsline {paragraph}{Photos}{165}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont 2 roues}{165}
+\contentsline {paragraph}{Bande cyclable}{165}
+\contentsline {paragraph}{Piste cyclable}{166}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment d\IeC {\'e}placement 2 roues}{166}
+\contentsline {subsection}{\numberline {3.3.4}Reseau de Distribution}{166}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{166}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire du r\IeC {\'e}seau}{166}
+\contentsline {paragraph}{Objet ponctuel du r\IeC {\'e}seau}{166}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment}{166}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e}}{167}
+\contentsline {paragraph}{Poste EDF}{167}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (HTA (1500 < U < 75 kV))}{167}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTA (120 < U < 750 V))}{167}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eclairage public}{167}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{167}
+\contentsline {paragraph}{Objet ponctuel}{167}
+\contentsline {subsection}{\numberline {3.3.5}Reseau de Transport d information}{168}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau op\IeC {\'e}rateur}{168}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{168}
+\contentsline {paragraph}{Objet ponctuel}{168}
+\contentsline {subsection}{\numberline {3.3.6}R\IeC {\'e}seau de Collecte}{168}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement pluvial}{168}
+\contentsline {paragraph}{Objet surfacique}{168}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{168}
+\contentsline {paragraph}{Objet ponctuel}{168}
+\contentsline {subsection}{\numberline {3.3.7}Mobilier urbain}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Propret\IeC {\'e} urbaine}{169}
+\contentsline {paragraph}{Corbeille}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport}{169}
+\contentsline {paragraph}{Groupe d Arceaux stationnement v\IeC {\'e}lo (Parking cycle)}{169}
+\contentsline {paragraph}{Abribus}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Affichage}{169}
+\contentsline {paragraph}{Informatif et/ou publicitaire (planim\IeC {\`e}tre)}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces Verts}{169}
+\contentsline {paragraph}{Objet Ponctuel (Banc, Jardini\IeC {\`e}re, )}{169}
+\contentsline {subsection}{\numberline {3.3.8}Geodesie, Points de r\IeC {\'e}f\IeC {\'e}rence et Habillage}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont G\IeC {\'e}od\IeC {\'e}sie}{169}
+\contentsline {paragraph}{Point g\IeC {\'e}od\IeC {\'e}sique}{169}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Habillage}{170}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{170}
+\contentsline {chapter}{\numberline {4}Catalogue de l'ensemble des objets}{171}
+\contentsline {section}{\numberline {4.1}Introduction}{171}
+\contentsline {section}{\numberline {4.2}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un tableau}{171}
+\contentsline {section}{\numberline {4.3}Les Objets - Pr\IeC {\'e}sentation sous la forme d'un document structur\IeC {\'e}}{192}
+\contentsline {subsection}{\numberline {4.3.1}Raster, Prise de vue}{192}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Scan}{192}
+\contentsline {paragraph}{Scan IGN}{192}
+\contentsline {paragraph}{Scan Documents d urbanisme}{192}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Ortho-Photo}{193}
+\contentsline {paragraph}{Ortho \IeC {\`a} l echelle du d\IeC {\'e}partement ou de l agglo}{193}
+\contentsline {paragraph}{Ortho commune de La Rochelle}{193}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres prises de vue}{193}
+\contentsline {paragraph}{Autres prises de vue}{193}
+\contentsline {subsection}{\numberline {4.3.2}Urbanisme et cartes \IeC {\`a} petite echelle}{194}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Limites administratives et cartes \IeC {\`a} petites echelle}{194}
+\contentsline {paragraph}{\IeC {\'E}chelle nationale ou r\IeC {\'e}gionale}{194}
+\contentsline {paragraph}{\IeC {\'E}chelle locale (d\IeC {\'e}partement, CDA)}{194}
+\contentsline {paragraph}{\IeC {\'E}chelle communale}{197}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Document d urbanisme}{200}
+\contentsline {paragraph}{Sch\IeC {\'e}ma Directeur ou SCOT}{200}
+\contentsline {paragraph}{Zonage POS ou PLU}{200}
+\contentsline {paragraph}{Prescriptions, Servitudes et autres zonages}{200}
+\contentsline {paragraph}{Monuments et sites class\IeC {\'e}s ou inscrits}{201}
+\contentsline {paragraph}{ZPPAUP}{202}
+\contentsline {paragraph}{Plan de sauvegarde et de mise en valeur}{202}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cadastre}{202}
+\contentsline {paragraph}{Cadastre Hors La Rochelle}{202}
+\contentsline {paragraph}{Cadastre La Rochelle}{203}
+\contentsline {subsection}{\numberline {4.3.3}R\IeC {\'e}seau de Transport de personnes / d\IeC {\'e}placement}{204}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Referentiel Voirie filaire / Adresse}{204}
+\contentsline {paragraph}{Surfacique}{204}
+\contentsline {paragraph}{Voirie filaire}{204}
+\contentsline {paragraph}{Carrefour}{204}
+\contentsline {paragraph}{Point adresse postale}{204}
+\contentsline {paragraph}{Photos}{204}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport en commun}{204}
+\contentsline {paragraph}{Station transport en commun}{204}
+\contentsline {paragraph}{Ligne transport en commun}{204}
+\contentsline {paragraph}{Voie r\IeC {\'e}serv\IeC {\'e}e taxi et transport en commun}{204}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont 2 roues}{205}
+\contentsline {paragraph}{Bande cyclable}{205}
+\contentsline {paragraph}{Piste cyclable}{205}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment d\IeC {\'e}placement 2 roues}{205}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cheminement pieton et PMR}{205}
+\contentsline {paragraph}{Voie pi\IeC {\'e}tonne}{205}
+\contentsline {paragraph}{Passage souterrain}{205}
+\contentsline {paragraph}{Pont, passerelle pi\IeC {\'e}tonne}{205}
+\contentsline {subsection}{\numberline {4.3.4}Voirie}{206}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Classement / gestion}{206}
+\contentsline {paragraph}{Gestion Conseil G\IeC {\'e}n\IeC {\'e}ral}{206}
+\contentsline {paragraph}{Gestion CDA}{206}
+\contentsline {paragraph}{Gestion Ville}{206}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Chauss\IeC {\'e}e / accotement}{206}
+\contentsline {paragraph}{Objets surfaciques (chauss\IeC {\'e}e, accotement, rev\IeC {\^e}tement, )}{206}
+\contentsline {paragraph}{Objets lin\IeC {\'e}aires (limite de chauss\IeC {\'e}e, limite de rev\IeC {\^e}tement, bordure, foss\IeC {\'e}, )}{206}
+\contentsline {paragraph}{Objets ponctuels ( )}{206}
+\contentsline {subsection}{\numberline {4.3.5}B\IeC {\^a}ti}{207}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objet surfacique bati}{207}
+\contentsline {paragraph}{Emprise b\IeC {\^a}timent}{207}
+\contentsline {paragraph}{Ouvrage d art, pont, passerelle}{207}
+\contentsline {paragraph}{Bloc b\IeC {\'e}ton, pilier}{207}
+\contentsline {paragraph}{Statue ou monument}{207}
+\contentsline {paragraph}{Limite surface tax\IeC {\'e}e}{207}
+\contentsline {paragraph}{Devanture}{207}
+\contentsline {paragraph}{Ruine}{207}
+\contentsline {paragraph}{Mur cyclop\IeC {\'e}en}{208}
+\contentsline {paragraph}{Tombe}{208}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Cloture / Element de s\IeC {\'e}paration (objet lin\IeC {\'e}aire)}{208}
+\contentsline {paragraph}{Limite de propri\IeC {\'e}t\IeC {\'e} (fa\IeC {\c c}ade<->domaine public)}{208}
+\contentsline {paragraph}{Limite s\IeC {\'e}parative entre deux propri\IeC {\'e}t\IeC {\'e}s}{208}
+\contentsline {paragraph}{Limite de b\IeC {\^a}timent / fa\IeC {\c c}ade}{208}
+\contentsline {paragraph}{Pro\IeC {\'e}minence d un b\IeC {\^a}timent par rapport \IeC {\`a} sa fa\IeC {\c c}ade lev\IeC {\'e}e}{208}
+\contentsline {paragraph}{Mur}{208}
+\contentsline {paragraph}{Mur de sout\IeC {\`e}nement}{209}
+\contentsline {paragraph}{Limite \IeC {\'e}paisseur mur (deuxi\IeC {\`e}me trait)}{209}
+\contentsline {paragraph}{Cl\IeC {\^o}ture}{209}
+\contentsline {paragraph}{Pr\IeC {\'e}au}{209}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Seuil, Entr\IeC {\'e}e}{209}
+\contentsline {paragraph}{B\IeC {\^a}ti Seuil, Entr\IeC {\'e}e}{209}
+\contentsline {subsection}{\numberline {4.3.6}R\IeC {\'e}seau de Transport Eau et Energie}{209}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{209}
+\contentsline {paragraph}{Conduite de transfert (feeder)}{209}
+\contentsline {paragraph}{Ouvrage d adduction (notion d eau brute, d aqueduc)}{210}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{210}
+\contentsline {paragraph}{GDF haute pression transport}{210}
+\contentsline {paragraph}{GDF moyenne pression transport}{210}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} X}{210}
+\contentsline {paragraph}{Soci\IeC {\'e}t\IeC {\'e} Y}{210}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e} (RTE = R\IeC {\'e}seau de Transport d \IeC {\'e}lectricit\IeC {\'e})}{210}
+\contentsline {paragraph}{HTB (U > 75 kV)}{210}
+\contentsline {paragraph}{HTA (1500 < U < 75 kV)}{210}
+\contentsline {subsection}{\numberline {4.3.7}Reseau de Distribution}{211}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eau potable}{211}
+\contentsline {paragraph}{Objet surfacique du r\IeC {\'e}seau}{211}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire du r\IeC {\'e}seau}{211}
+\contentsline {paragraph}{Objet ponctuel du r\IeC {\'e}seau}{211}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment}{211}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gaz}{212}
+\contentsline {paragraph}{GDF basse pression distribution}{212}
+\contentsline {paragraph}{Vanne Gaz}{212}
+\contentsline {paragraph}{Branchement individuel GDF}{212}
+\contentsline {paragraph}{Autre \IeC {\'e}l\IeC {\'e}ment}{212}
+\contentsline {paragraph}{Gaz basse pression distribution Soci\IeC {\'e}t\IeC {\'e} Y}{212}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Electricit\IeC {\'e}}{212}
+\contentsline {paragraph}{Objet surfacique (r\IeC {\'e}seau de distribution \IeC {\'E}lectricit\IeC {\'e})}{212}
+\contentsline {paragraph}{Poste EDF}{212}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (HTA (1500 < U < 75 kV))}{212}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTB (750 < U < 1500 V))}{213}
+\contentsline {paragraph}{Objet lin\IeC {\'e}aire (BTA (120 < U < 750 V))}{213}
+\contentsline {paragraph}{Objet ponctuel}{213}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Eclairage public}{213}
+\contentsline {paragraph}{Objet surfacique (\IeC {\'E}clairage public)}{213}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{213}
+\contentsline {paragraph}{Objet ponctuel}{214}
+\contentsline {subsection}{\numberline {4.3.8}Reseau de Transport d information}{214}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau Ville de La Rochelle}{214}
+\contentsline {paragraph}{Poste de Contr\IeC {\^o}le d Acc\IeC {\`e}s (PCA)}{214}
+\contentsline {paragraph}{Regard comptage routier}{214}
+\contentsline {paragraph}{R\IeC {\'e}seau DSI}{214}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau op\IeC {\'e}rateur}{214}
+\contentsline {paragraph}{Objet surfacique}{214}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{215}
+\contentsline {paragraph}{Objet ponctuel}{215}
+\contentsline {subsection}{\numberline {4.3.9}Reseau en attente}{215}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet lin\IeC {\'e}aire}{215}
+\contentsline {paragraph}{Fourreau en attente - objet lin\IeC {\'e}aire}{215}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Fourreau en attente - objet ponctuel}{215}
+\contentsline {paragraph}{Fourreau en attente - objet ponctuel}{215}
+\contentsline {subsection}{\numberline {4.3.10}R\IeC {\'e}seau de Collecte}{216}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement pluvial}{216}
+\contentsline {paragraph}{Objet surfacique}{216}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{216}
+\contentsline {paragraph}{Objet ponctuel}{216}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont R\IeC {\'e}seau d assainissement eaux us\IeC {\'e}es}{216}
+\contentsline {paragraph}{Objet surfacique}{216}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire}{216}
+\contentsline {paragraph}{Objet ponctuel}{217}
+\contentsline {subsection}{\numberline {4.3.11}Signalisation lumineuse}{217}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Information parking - Panneau \IeC {\`a} messages variables (PMV)}{217}
+\contentsline {paragraph}{Panneau \IeC {\`a} messages variables (PMV)}{217}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Feu tricolore - Feu et signal lumineux (R11 \IeC {\`a} R24)}{217}
+\contentsline {paragraph}{Armoire de commande Signalisation Tricolore}{217}
+\contentsline {paragraph}{Regard Technique Signalisation Tricolore}{217}
+\contentsline {paragraph}{Feu et signal lumineux (R11 \IeC {\`a} R24) accroch\IeC {\'e} \IeC {\`a} un point de r\IeC {\'e}f\IeC {\'e}rence (support ou applique)}{217}
+\contentsline {subsection}{\numberline {4.3.12}Signalisation verticale}{217}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de police}{217}
+\contentsline {paragraph}{Panneaux de danger (A1a \IeC {\`a} A24)}{217}
+\contentsline {paragraph}{Panneaux d intersection et de priorit\IeC {\'e} (AB1 \IeC {\`a} AB25)}{217}
+\contentsline {paragraph}{Panneaux de prescription (B0 \IeC {\`a} B51)}{218}
+\contentsline {paragraph}{Panneaux d indication (C1a \IeC {\`a} CE50)}{218}
+\contentsline {paragraph}{Panonceaux (M1 \IeC {\`a} M11b)}{218}
+\contentsline {paragraph}{Symboles (SE2b \IeC {\`a} SU1)}{218}
+\contentsline {paragraph}{Autres objets}{218}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Signalisation verticale de direction}{218}
+\contentsline {paragraph}{Panneaux de direction (D21a \IeC {\`a} D79b)}{218}
+\contentsline {paragraph}{Panneaux de jalonnement pi\IeC {\'e}tonnier (Dp1a \IeC {\`a} Dp2b)}{218}
+\contentsline {paragraph}{Panneaux de jalonnement pour cyclistes (Dv11 \IeC {\`a} Dv61)}{218}
+\contentsline {paragraph}{Panneaux de localisation (E31 \IeC {\`a} EB20)}{219}
+\contentsline {paragraph}{Panneaux d information (H11 \IeC {\`a} H33)}{219}
+\contentsline {paragraph}{Id\IeC {\'e}ogrammes, embl\IeC {\`e}mes ou logotypes (ID1 \IeC {\`a} ID15a41 + Logotype)}{219}
+\contentsline {paragraph}{Autres objets}{219}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Autres types de signal routier}{219}
+\contentsline {paragraph}{Balises (J1 \IeC {\`a} J14b)}{219}
+\contentsline {paragraph}{Feux de balisage et d alerte (G1 \IeC {\`a} R2d)}{219}
+\contentsline {paragraph}{Panneaux \IeC {\`a} messages variables (PMV)}{219}
+\contentsline {paragraph}{Panneaux et dispositifs de signalisation temporaire (AK2 \IeC {\`a} KR11)}{219}
+\contentsline {subsection}{\numberline {4.3.13}Signalisation horizontale}{220}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales axiales}{220}
+\contentsline {paragraph}{Lignes continues (continue)}{220}
+\contentsline {paragraph}{Lignes discontinues de type T1 (T1, Tp1, ou T3)}{220}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3)}{220}
+\contentsline {paragraph}{Lignes mixtes (T1 ou T3)}{220}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes continues d\IeC {\'e}limitant le Terre Plein Central, les ilots ou certains couloirs r\IeC {\'e}serv\IeC {\'e}s}{220}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de terre-plein central (continue)}{220}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation du contour des \IeC {\^\i }lots (continue)}{220}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}limitation de certains couloirs r\IeC {\'e}serv\IeC {\'e}s (continue)}{220}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes longitudinales de rives ou de d\IeC {\'e}limitation de certaines voies}{221}
+\contentsline {paragraph}{Lignes discontinues de type T2 (T2)}{221}
+\contentsline {paragraph}{Lignes discontinues de type T3 (T3 ou Tp3)}{221}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Pr\IeC {\'e}signalisation des points singuliers}{221}
+\contentsline {paragraph}{Ligne d annonce d une ligne continue (T3)}{221}
+\contentsline {paragraph}{Fl\IeC {\`e}ches de rabattement}{221}
+\contentsline {paragraph}{Fl\IeC {\`e}ches directionnelles}{221}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Lignes Transversales}{221}
+\contentsline {paragraph}{Ligne \_STOP\_ (continue)}{221}
+\contentsline {paragraph}{Ligne \_C\IeC {\'e}dez-le-passage\_ (Tp2)}{222}
+\contentsline {paragraph}{Ligne d effet des feux (Tp2)}{222}
+\contentsline {paragraph}{Ligne de guidage en intersection Tourne \IeC {\`a} gauche \IeC {\`a} l indon\IeC {\'e}sienne - carrefour en ba\IeC {\"\i }onnette (Tp2)}{222}
+\contentsline {paragraph}{Ligne de d\IeC {\'e}but et de fin de voie cyclable (Tp2)}{222}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Passages pour pi\IeC {\'e}tons}{222}
+\contentsline {paragraph}{Passages pour pi\IeC {\'e}tons}{222}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques de ralentisseur de type dos-d \IeC {\^a}ne}{222}
+\contentsline {paragraph}{Marques de ralentisseur de type dos-d \IeC {\^a}ne}{222}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives aux transports en commun}{222}
+\contentsline {paragraph}{Ligne marquant l emplacement d un arr\IeC {\^e}t d autobus (jaune, continue, zigzag)}{222}
+\contentsline {paragraph}{Franchissement des carrefours par les voies r\IeC {\'e}serv\IeC {\'e}es (blanc, damier)}{223}
+\contentsline {paragraph}{Inscriptions sur les voies r\IeC {\'e}serv\IeC {\'e}es (\_BUS\_)}{223}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques relatives au stationnement}{223}
+\contentsline {paragraph}{Ligne d\IeC {\'e}limitant les places de stationnement (blanche ou bleue, Tp2 ou continue)}{223}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2)}{223}
+\contentsline {paragraph}{Ligne confirmant ou indiquant l interdiction de s arr\IeC {\^e}ter (jaune, continue)}{223}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Marques pour voies cyclables}{223}
+\contentsline {paragraph}{Travers\IeC {\'e}es de chauss\IeC {\'e}es par les voies cyclables (Tp2)}{223}
+\contentsline {subsection}{\numberline {4.3.14}Stationnement}{223}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Zone de stationnement (plusieurs emplacements)}{223}
+\contentsline {paragraph}{Contour de parking}{223}
+\contentsline {paragraph}{Zone de livraison}{224}
+\contentsline {paragraph}{Horodateur}{224}
+\contentsline {paragraph}{P\IeC {\'e}age}{224}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Emplacement de stationnement}{224}
+\contentsline {paragraph}{Emplacement normal}{224}
+\contentsline {paragraph}{Emplacement PMR}{224}
+\contentsline {paragraph}{Emplacement Taxi}{224}
+\contentsline {paragraph}{Emplacement Transporteur de fond}{224}
+\contentsline {paragraph}{Emplacement Livraison}{224}
+\contentsline {paragraph}{Emplacement V\IeC {\'e}hicule \IeC {\'e}lectrique}{225}
+\contentsline {subsection}{\numberline {4.3.15}Espaces verts}{225}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Typologie Espaces Verts}{225}
+\contentsline {paragraph}{Parcs, jardins et squares}{225}
+\contentsline {paragraph}{Accompagnement de voies}{225}
+\contentsline {paragraph}{Accompagnement b\IeC {\^a}timents publics}{225}
+\contentsline {paragraph}{Accompagnement habitations}{225}
+\contentsline {paragraph}{Accompagnement \IeC {\'e}tablissement industriels et commerciaux}{225}
+\contentsline {paragraph}{Espaces verts \IeC {\'e}tablissements sociaux ou \IeC {\'e}ducatifs}{225}
+\contentsline {paragraph}{Sports}{225}
+\contentsline {paragraph}{Cimeti\IeC {\`e}res}{226}
+\contentsline {paragraph}{Campings}{226}
+\contentsline {paragraph}{\IeC {\'E}tablissements horticoles}{226}
+\contentsline {paragraph}{Espaces naturels am\IeC {\'e}nag\IeC {\'e}s}{226}
+\contentsline {paragraph}{Jardins familiaux}{226}
+\contentsline {paragraph}{Arbres d alignement}{226}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision d\IeC {\'e}cim\IeC {\'e}trique)}{226}
+\contentsline {paragraph}{Surfacique}{226}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{227}
+\contentsline {paragraph}{Ponctuel}{227}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces verts Objets topographiques espaces verts (necessitant une pr\IeC {\'e}cision m\IeC {\'e}trique)}{227}
+\contentsline {paragraph}{Surfacique}{227}
+\contentsline {paragraph}{Lin\IeC {\'e}aire}{227}
+\contentsline {paragraph}{Ponctuel}{227}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Gestion}{228}
+\contentsline {paragraph}{Espaces Verts entretien Ville La Rochelle}{228}
+\contentsline {paragraph}{Espaces Verts entretien Organisme HLM}{228}
+\contentsline {paragraph}{Espaces Verts entretien Autre organisme ou priv\IeC {\'e}}{228}
+\contentsline {subsection}{\numberline {4.3.16}Mobilier urbain}{228}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Stationnement}{228}
+\contentsline {paragraph}{Horodateur}{228}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Propret\IeC {\'e} urbaine}{228}
+\contentsline {paragraph}{Corbeille}{228}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Transport}{228}
+\contentsline {paragraph}{Groupe d Arceaux stationnement v\IeC {\'e}lo (Parking cycle)}{228}
+\contentsline {paragraph}{Arceau stationnement v\IeC {\'e}lo}{228}
+\contentsline {paragraph}{Arceau chicane}{229}
+\contentsline {paragraph}{Abribus}{229}
+\contentsline {paragraph}{Poteau d arr\IeC {\^e}t de bus}{229}
+\contentsline {paragraph}{Borne Auto Plus}{229}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Affichage}{229}
+\contentsline {paragraph}{Informatif et/ou publicitaire (planim\IeC {\`e}tre)}{229}
+\contentsline {paragraph}{Panneau d affichage libre}{229}
+\contentsline {paragraph}{Fourreau pour mat de pavoisement}{229}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Espaces Verts}{230}
+\contentsline {paragraph}{Objet Surfacique (vespachien, jeu d enfants, kiosque, )}{230}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire ()}{230}
+\contentsline {paragraph}{Objet Ponctuel (Banc, Jardini\IeC {\`e}re, )}{230}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont S\IeC {\'e}curit\IeC {\'e}}{230}
+\contentsline {paragraph}{Objet Surfacique (Poste de Contr\IeC {\^o}le d acc\IeC {\`e}s, )}{230}
+\contentsline {paragraph}{Objet Lin\IeC {\'e}aire (barri\IeC {\`e}re de ville, cha\IeC {\^\i }ne, gabarit de hauteur, barri\IeC {\`e}re levante, )}{230}
+\contentsline {paragraph}{Objet Ponctuel (Borne / Potelet, )}{230}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Services (souvent externe \IeC {\`a} la ville de La Rochelle)}{231}
+\contentsline {paragraph}{Boite aux lettres}{231}
+\contentsline {paragraph}{Cabine t\IeC {\'e}l\IeC {\'e}phonique}{231}
+\contentsline {paragraph}{Coffret relais de la poste}{231}
+\contentsline {paragraph}{Container d\IeC {\'e}chet}{231}
+\contentsline {subsection}{\numberline {4.3.17}Geodesie, Points de r\IeC {\'e}f\IeC {\'e}rence et Habillage}{231}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont G\IeC {\'e}od\IeC {\'e}sie}{231}
+\contentsline {paragraph}{Point g\IeC {\'e}od\IeC {\'e}sique}{231}
+\contentsline {paragraph}{Point nivellement}{231}
+\contentsline {paragraph}{Courbe de niveau}{232}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Points de r\IeC {\'e}f\IeC {\'e}rence}{232}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un appareil de fontainerie du r\IeC {\'e}seau eau potable ou gaz}{232}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un regard ou d une plaque}{232}
+\contentsline {paragraph}{Position g\IeC {\'e}ographique d un Support (syst\IeC {\`e}me d accrochage vertical)}{232}
+\contentsline {subsubsection}{\relax \fontsize {14.4}{18}\selectfont Habillage}{232}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{232}
+\contentsline {paragraph}{\IeC {\'E}l\IeC {\'e}ment d habillage g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{233}
+\contentsline {paragraph}{Texte divers non g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{233}
+\contentsline {paragraph}{Texte divers g\IeC {\'e}o-r\IeC {\'e}f\IeC {\'e}renc\IeC {\'e}}{233}
+\contentsline {chapter}{Conclusion}{235}

@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{supertabular}
+\texdbconnection{postgres,localhost,fred,fred,topographie}
+
+% famille de requtes
+\texdbdef{##q}[range(1,53,1)]{
+SELECT date, temp
+FROM temperatures
+WHERE EXTRACT(week from date)=##1
+  AND date_trunc(week, date) > 2005-12-31 
+  AND date_trunc(week, date) < 2007-01-01 
+ORDER BY date}
+
+\texdbdef{##r}[range(1,53,1)]{
+SELECT round(avg(temp),1) as moy
+FROM temperatures
+WHERE EXTRACT(week from date)=##1
+  AND date_trunc(week, date) > 2005-12-31 
+  AND date_trunc(week, date) < 2007-01-01 
+GROUP BY date_trunc(week, date::timestamp)}
+
+\begin{document}
+\begin{supertabular}{cc}
+\hline
+Date & Temprature \\
+\hline
+\begin{lbdpour}{range(1,53,1)}
+\texdbfor{##q##1}{row.date & row.temp \\}
+\hline
+\texdbfor {##r##1}{semaine ##1 & moyenne : row.moy \\}
+\hline
+\end{lbdpour}
+\end{supertabular}
+\end{document}

@@ -1,0 +1,66 @@
+% Tout ce qui est mis derrière un « % » n'est pas vu par LaTeX
+% On appelle cela des « commentaires ».  Les commentaires permettent de
+% commenter son document - comme ce que je suis en train de faire
+% actuellement - et de cacher du code - cf. la ligne \pagestyle.
+
+\documentclass[a4paper]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[cyr]{aeguill}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage[english,francais]{babel}
+\usepackage{url}
+\let\urlorig\url
+\renewcommand{\url}[1]{%
+  \begin{otherlanguage}{english}\urlorig{#1}\end{otherlanguage}%
+}
+\renewcommand{\contentsname}{Sommaire} % si tableofcontents au début
+\newcommand{\Numero}{\No}
+\newcommand{\numero}{\no}
+\newcommand{\fup}[1]{\up{#1}}
+%%% N'oubliez pas les espaces devant les doubles ponctuations
+\NoAutoSpaceBeforeFDP
+
+
+\title{Mon premier document Latex}   % Les paramètres du titre : titre, auteur, date
+\author{Frédéric Garel}
+\date{}                       % La date n'est pas requise (la date du
+                              % jour de compilation est utilisée en son
+			                        % absence
+
+\begin{document}
+
+\maketitle                    % Faire un titre utilisant les données
+                              % passées à \title, \author et \date
+
+\begin{abstract}
+  Résumé résumé résumé, etc.  % Résumé de l'article
+\end{abstract}
+
+% \tableofcontents            % Table des matières
+
+% \listoffigures              % Table des figures
+
+% \listoftables               % Liste des tableaux
+
+\part{Titre de la 1ere Partie}                  % Commencer une partie...
+
+\section{Titre de la section}               % Commencer une section, etc.
+
+\subsection{Titre de la sub section}            % Section plus petite
+
+\subsubsection{Titre de la sub sub section}         % Encore plus petite
+
+\paragraph{Titre du paragraphe}             % Toutes petites sections (le nom \paragraph
+                              % n'est pas très bien choisi)
+
+\subparagraph{Titre du sous-paragraphe}          % La dernière
+
+\appendix                     % Commençons les annexes
+
+\section{Titre de l'annexe A}               % Annexe A
+
+\section{Titre de l'annexe B}               % Annexe B
+
+\end{document}

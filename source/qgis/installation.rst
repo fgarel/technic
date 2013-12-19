@@ -1,4 +1,4 @@
-**********
+************
 Installation
 ************
 
@@ -33,5 +33,9 @@ Lire des données ECW
 Pour pouvoir lire des fichiers ecw, il faut suivre les instructions lues ici
 http://doc.ubuntu-fr.org/qgis
 
+Qgis et le plugin cadastre
+--------------------------
 
+Il existe maintenant un plugin pour qgis permettant d'importer des donnees MAJIC et EDIGEO
+https://github.com/3liz/QgisCadastrePlugin/blob/master/doc/index.rst
 

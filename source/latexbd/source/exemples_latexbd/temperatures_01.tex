@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{numprint}
+\newcommand*{\mois}[1]{
+\ifcase #1
+\or janvier \or février \or mars \or avril \or mai \or juin \or
+juillet \or août \or septembre \or octobre \or novembre \or
+décembre \fi}
+
+% Les paramtres de connexion ( locale ):
+\texdbconnection{postgres,localhost,fred,fred, exemples-lbd}
+
+% Cration de la table
+
+\texdbinstruction{
+CREATE TABLE temperatures (
+  date date UNIQUE,
+  temp numeric (3,1))}
+
+% On complete la table :
+\texdbinstruction {
+COPY temperatures FROM
+/home/fred/latexbd/rel-temp}
+
+% On cre la famille de requtes ## q1, ... ,##q12 ,
+% ##1 est remplac par les entiers de 1  12.
+\texdbdef{##q}[range(1,13,1)]{
+SELECT
+  date_part(month::text,
+            date_trunc(month::text, date::timestamp with time zone)) 
+    AS mois,
+  date_part(year::text,
+            date_trunc(month::text, date::timestamp with time zone))
+    AS an,
+  min(mini) as mini,
+  max(mini) as maxi,
+  round(avg(mini),1) as moy
+FROM mini
+WHERE date_part(month::text,
+                date_trunc(month::text,
+                           date::timestamp with time zone)) = ##1
+GROUP BY date_trunc(month::text, date::timestamp with time zone)
+ORDER BY an}
+
+\begin{document}
+% ## q et ##1 sont remplacs par ## i et i , o i parcourt les entiers de
+% 1  12. ## texdbfor est remplac
+\texdbfor{##q}[range(1,13,1)]{
+\numprint{row.an}& row.mini & row.maxi & row.moy \\} %
+\begin{center}
+{\large \textbf{\mois{##1}}}
+
+\smallskip
+\begin{tabular}
+{|>{\nprounddigits{0}} c||r|r|r|}
+\hline
+Anne & Minimum & Maximum & Moyenne \\
+\hline
+% Introduction des cellules de ## qi
+## texdbfor %
+\hline
+\end{tabular}
+\end{center}
+\endtexdbfor
+% fin de la boucle
+\end{document}

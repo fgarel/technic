@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <!-- CONFIGURATOR DATA -->
+  <descriptor version="3"/> 
+
+  <!-- DEFINE HERE TABLE STRUCTURE -->
+  <structure tablename="attribut_valeur_topo">
+    <field name="attribut"     type="VARCHAR"/>
+    <field name="champ_01"  type="VARCHAR"/>
+    <field name="champ_02"     type="VARCHAR"/>
+    <field name="valeur_01_champ_01"  type="VARCHAR"/>
+    <field name="valeur_02_champ_01"     type="VARCHAR"/>
+    <field name="valeur_01_champ_02"  type="VARCHAR"/>
+  </structure>
+    
+  <!-- WHAT GRAMMAR USE -->
+  <!-- ici, on a le choix entre -->
+  <!-- mysql -->
+  <!-- oracle -->
+  <!-- standard -->
+  <grammar class="net.sf.csv2sql.grammars.standard.GrammarFactory"/>
+
+  <!-- TEMPORARY STORAGE -->
+  <storage class="net.sf.csv2sql.storage.Memory"/>
+
+  <!-- RENDERER CONFIGURATION -->
+  <!-- ici, on a le choix entre -->
+  <!-- SSqlInsertRenderer -->
+  <!-- SqlInsertRendererFromExcel -->
+  <render class="net.sf.csv2sql.renders.SqlInsertRendererFromExcel">
+    <param name="inputfile"     value="attribut_valeur_topo.xls"/>
+    <!--optional-->        
+    <param name="trimdata"           value="true"/>    
+    <param name="suppressheader"     value="true"/>
+    <param name="removedoublequotes" value="false"/>
+    <!-- decomment for add id autogeneated field -->
+    <!--<param name="idGenerator"   value="net.sf.csv2sql.idgenerators.Incremental"/>-->  
+    <!--<param name="startrow" value="2"/>-->
+    <!--<param name="stoprow" value="4"/>-->
+    <!--<param name="presql" value="BEGIN TRANSACTION;"/>-->
+    <param name="presql" value="
+SELECT drop_table_if_exists ('attribut_valeur_topo',false);
+CREATE TABLE attribut_valeur_topo
+(
+  attribut character varying(256),
+  champ_01 character varying(256),
+  champ_02 character varying(256),
+  valeur_01_champ_01 character varying(256),
+  valeur_02_champ_01 character varying(256),
+  valeur_01_champ_02 character varying(256)
+) 
+WITH OIDS;
+"/>
+    <!--<param name="postsql" value="COMMIT;"/>-->
+    <param name="postsql" value="
+VACUUM ANALYSE attribut_valeur_topo;
+"/>
+  </render>
+  
+  <!-- WRITER CONFIGURATION -->
+  <!-- ici, on a le choix entre -->
+  <!-- SqlFileWriter -->
+  <!-- StandardOutputWriter -->
+  <!-- JDBCBatchWriter -->
+  <!-- JDBCWriter -->
+  <output>
+  
+    <writerAppender active="true"
+        class="net.sf.csv2sql.writers.SqlFileWriter">
+        <param name="filename" value="F:\INFO\geomatique\dossiers_en_cours\donnees_topo\excel2sql\attribut_valeur_topo.sql"/>
+    </writerAppender>
+        
+    <writerAppender active="true"
+        class="net.sf.csv2sql.writers.StandardOutputWriter">
+    </writerAppender>
+            
+    <!-- change parameters and activate it --> 
+    <writerAppender active="false"
+        class="net.sf.csv2sql.writers.JdbcWriter">
+        <param name="driver"    value="org.postgresql.Driver"/>
+        <param name="url"       value="jdbc:postgresql://localhost/CatalogueTopo"/>
+        <param name="username"  value="fred"/>
+                
+        <!--optional-->
+        <param name="password"  value="fred"/>      
+        <!--<param name="commit"    value="false"/>-->        
+        <param name="jdbcjar"   value="C:/libre/csvtosql_jdk50/lib/postgresql-8.2-505.jdbc4.jar"/>       
+    </writerAppender>        
+
+    <!-- change parameters and activate it -->
+    <writerAppender active="false"     
+        class="net.sf.csv2sql.writers.JdbcBatchWriter">
+        <param name="driver"        value="org.postgresql.Driver"/>
+        <param name="url"           value="jdbc:postgresql://localhost/CatalogueTopo"/>
+        <param name="username"      value="fred"/>        
+        <param name="batchcount"    value="10"/>
+        
+        <!--optional-->              
+        <param name="password"      value="fred"/>        
+        <param name="commitbatchcount"  value="0"/>        
+        <param name="jdbcjar"       value="/root/myJdbcDriver.jar"/>       
+    </writerAppender> 
+        
+  </output>
+  
+
+</root>
+

@@ -1,0 +1,142 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a3paper,landscape,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Catalogue des objets topographiques}
+
+% Les parametres de connexion
+\begin{lbdpython}
+db = create_engine('postgres://fred@localhost/topographie')
+metadata = BoundMetaData(db)
+\end{lbdpython}
+
+
+% les requetes
+\begin{lbdpython}
+# on definit les tables : cf syntaxe SQLAlchemy :
+# paragraphe creating a table
+theme_table = Table('theme', metadata, autoload=True)
+domaine_table = Table('domaine', metadata, autoload=True)
+classe_table = Table('classe', metadata, autoload=True)
+objet_table = Table('objet', metadata, autoload=True)
+
+# on definit les alias
+th = theme_table.alias(th)
+dom = domaine_table.alias()
+cls = classe_table.alias()
+obj = objet_table.alias()
+
+# on initialise les requetes
+#ReqThS = {}
+req_domaine_select = {}
+req_classe_select = {}
+req_objet_select = {}
+req_theme_count = {}
+req_domaine_count = {}
+req_classe_count = {}
+req_objet_count = {}
+
+# on definit les requetes selection
+#ReqThS = select([th.c.theme_id, th.c.theme_libelle])
+ReqThS = select([theme_table.c.theme_id, theme_table.c.theme_libelle])
+
+# on definit les requetes specifiques au comptage
+# ces requetes sont utilisés pour la mise en forme du tableau
+# -- pour chaque theme, calcul du nombre de domaines
+#SELECT
+#   theme.theme_id as ThemeId,
+#   count(1)
+#FROM theme, domaine
+#WHERE theme.theme_id = domaine.theme_id 
+#GROUP BY theme.theme_id
+#ORDER BY theme.theme_id;
+req_theme_count = select([th.c.theme_id, count(1)]),
+                  and_(th.c.theme_id == dom.c.theme_id),
+                  group_by=[th.c.theme_id]),
+                  order_by=[th.c.theme_id])
+\end{lbdpython}
+
+\begin{document}
+\maketitle{}
+% essai code python pour fabriquer un tableau
+\begin{lbdpython}
+but.write(r"\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}")
+but.write("\n")
+but.write(r"\hline")
+but.write("\n")
+for i in range(1,12,1):
+  # le r à l'interieur des parentheses empeche l'interpretation ?
+  but.write(r"1 & 2 & 3 & 4 \\\hline")
+  but.write("\n")
+but.write(r"\end{tabular}")
+but.write("\n")
+\end{lbdpython}
+
+% essai code python pour parcourir resultat requete
+\begin{lbdpython}
+but.write(r"avant \\")
+but.write("\n")
+but.write(r"\begin{tabular}{|m{3cm}|m{3cm}|}")
+but.write("\n")
+but.write(r"\hline")
+but.write("\n")
+result = ReqThS.execute()
+for row in result:
+  chaine = r"%s & %s \\" %(row.theme_id,row.theme_libelle)
+  but.write(chaine)
+  but.write(r"\hline")
+  but.write("\n")
+result = req_theme_count.execute()
+for row in result:
+  chaine = r"%s & %s \\" %(row.theme_id,row.count)
+  but.write(chaine)
+  but.write(r"\hline")
+  but.write("\n")
+
+but.write(r"\end{tabular}")
+but.write("\n")
+but.write(r"apres \\")
+but.write("\n")
+\end{lbdpython}
+
+% essai d'un tableau
+\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}
+\hline
+\multicolumn{4}{|c|}{Essai Tableau} \\
+\hline
+\multicolumn{1}{|c|}{Theme} & \multicolumn{1}{|c|}{Domaine}  & \multicolumn{2}{|c|}{classe} \\
+\cline{1-4}      \multirow{5}*{theme\_01} & \multirow{2}*{domaine\_01} & 1 & 2 \\
+\cline{3-4}                               &                            & 2 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine\_02} & 3 & 2 \\
+\cline{3-4}                               &                            & 4 & 2 \\
+\cline{3-4}                               &                            & 5 & 2 \\
+\cline{1-4}      \multirow{6}*{theme\_02} & \multirow{3}*{domaine\_03} & 6 & 2 \\
+\cline{3-4}                               &                            & 7 & 2 \\
+\cline{3-4}                               &                            & 8 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine\_04} & 9 & 2 \\
+\cline{3-4}                               &                            & 10 & 2 \\
+\cline{3-4}                               &                            & 11 & 2 \\
+\cline{1-4}      \multirow{2}*{theme\_03} & \multirow{1}*{domaine\_05} & 12 & 2 \\
+\cline{2-4}                               & \multirow{1}*{domaine\_06} & 13 & 2 \\
+\cline{1-4}      \multirow{1}*{theme\_04} & \multirow{1}*{domaine\_07} & 14 & 2 \\
+\hline
+\end{tabular}
+
+
+
+\end{document}

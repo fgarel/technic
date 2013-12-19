@@ -1,0 +1,2243 @@
+% Tout ce qui est mis derrière un « % » n'est pas vu par LaTeX
+% On appelle cela des « commentaires ».  Les commentaires permettent de
+% commenter son document - comme ce que je suis en train de faire
+% actuellement - et de cacher du code - cf. la ligne \pagestyle.
+
+\documentclass[a4paper, 11pt, utf8]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[francais, frenchb]{babel}
+%\usepackage[english, francais]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{placeins}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{url}
+%\let\urlorig\url
+%\renewcommand{\url}[1]{%
+%  \begin{otherlanguage}{english}\urlorig{#1}\end{otherlanguage}%
+%}
+\renewcommand{\contentsname}{Sommaire} % si tableofcontents au début
+\newcommand{\Numero}{\No}
+\newcommand{\numero}{\no}
+%\newcommand{\fup}[1]{\up{#1}}
+%%% N'oubliez pas les espaces devant les doubles ponctuations
+\NoAutoSpaceBeforeFDP
+
+
+\title{Livre des coins}       % Les paramètres du titre : titre, auteur, date
+\author{Frédéric Garel}
+\date{}                       % La date n'est pas requise (la date du
+                              % jour de compilation est utilisée en son
+			                        % absence
+
+\begin{document}
+
+\maketitle                    % Faire un titre utilisant les données
+                              % passées à \title, \author et \date
+
+\begin{abstract}              % Résumé de l'article
+  Recensement et visualisation des vignettes "coins".
+  % Résumé de l'article
+  Pour chaque zone extraite, on effectue un aggrandissement aux 4 coins de l'image.
+\end{abstract}
+
+%\tableofcontents             % Table des matières
+
+% \listoffigures              % Table des figures
+
+% \listoftables               % Liste des tableaux
+
+%\part{Titre de la 1ere Partie}                  % Commencer une partie...
+
+%\section{Titre de la section}                   % Commencer une section, etc.
+
+%\subsection{Titre de la sub section}            % Section plus petite
+
+%\subsubsection{Résolutions, cartes}             % Encore plus petite
+
+\clearpage
+\section{Résolutions, cartes}                    % Commencer une section, etc.
+Pour chaque résolution, on affiche les différentes cartes
+
+\clearpage
+\paragraph{Resolution 0300}
+\subparagraph{Carte 1} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte1.png}}
+    \caption{zppaupGeneral0300-carte1}
+    \label{fig-zppaupGeneral0300-carte1}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 2}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte2.png}}
+    \caption{zppaupGeneral0300-carte2}
+    \label{fig-zppaupGeneral0300-carte2}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Carte 3} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte3.png}}
+    \caption{zppaupGeneral0300-carte3}
+    \label{fig-zppaupGeneral0300-carte3}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 4}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte4.png}}
+    \caption{zppaupGeneral0300-carte4}
+    \label{fig-zppaupGeneral0300-carte4}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{CartoucheComplet} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcartoucheComplet.png}}
+    \caption{zppaupGeneral0300-cartoucheComplet}
+    \label{fig-zppaupGeneral0300-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Cartouche Simplifie}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral0300-cartoucheSimplifie}
+    \label{fig-zppaupGeneral0300-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Liste Elements Rares} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDListeElementsRares.png}}
+    \caption{zppaupGeneral0300-ListeElementsRares}
+    \label{fig-zppaupGeneral0300-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Mentions Legales}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDMentionsLegales.png}}
+    \caption{zppaupGeneral0300-MentionsLegales}
+    \label{fig-zppaupGeneral0300-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Superficie} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDSuperficie.png}}
+    \caption{zppaupGeneral0300-Superficie}
+    \label{fig-zppaupGeneral0300-Superficie}
+  \end{center}
+\end{figure}
+%
+\subparagraph{legende Total}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDlegendeTotal.png}}
+    \caption{zppaupGeneral0300-legendeTotal}
+    \label{fig-zppaupGeneral0300-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Protections}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeProtections.png}}
+    \caption{zppaupGeneral0300-LegendeProtections}
+    \label{fig-zppaupGeneral0300-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Perimetre}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendePerimetre.png}}
+    \caption{zppaupGeneral0300-LegendePerimetre}
+    \label{fig-zppaupGeneral0300-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Secteurs}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral0300-LegendeSecteurs}
+    \label{fig-zppaupGeneral0300-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Elements}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeElements.png}}
+    \caption{zppaupGeneral0300-LegendeElements}
+    \label{fig-zppaupGeneral0300-LegendeElements}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{Resolution 0600}
+\subparagraph{Carte 1} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte1.png}}
+    \caption{zppaupGeneral0600-carte1}
+    \label{fig-zppaupGeneral0600-carte1}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 2}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte2.png}}
+    \caption{zppaupGeneral0600-carte2}
+    \label{fig-zppaupGeneral0600-carte2}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Carte 3} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte3.png}}
+    \caption{zppaupGeneral0600-carte3}
+    \label{fig-zppaupGeneral0600-carte3}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 4}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte4.png}}
+    \caption{zppaupGeneral0600-carte4}
+    \label{fig-zppaupGeneral0600-carte4}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{CartoucheComplet} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcartoucheComplet.png}}
+    \caption{zppaupGeneral0600-cartoucheComplet}
+    \label{fig-zppaupGeneral0600-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Cartouche Simplifie}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral0600-cartoucheSimplifie}
+    \label{fig-zppaupGeneral0600-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Liste Elements Rares} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDListeElementsRares.png}}
+    \caption{zppaupGeneral0600-ListeElementsRares}
+    \label{fig-zppaupGeneral0600-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Mentions Legales}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDMentionsLegales.png}}
+    \caption{zppaupGeneral0600-MentionsLegales}
+    \label{fig-zppaupGeneral0600-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Superficie} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDSuperficie.png}}
+    \caption{zppaupGeneral0600-Superficie}
+    \label{fig-zppaupGeneral0600-Superficie}
+  \end{center}
+\end{figure}
+%
+\subparagraph{legende Total}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDlegendeTotal.png}}
+    \caption{zppaupGeneral0600-legendeTotal}
+    \label{fig-zppaupGeneral0600-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Protections}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeProtections.png}}
+    \caption{zppaupGeneral0600-LegendeProtections}
+    \label{fig-zppaupGeneral0600-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Perimetre}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendePerimetre.png}}
+    \caption{zppaupGeneral0600-LegendePerimetre}
+    \label{fig-zppaupGeneral0600-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Secteurs}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral0600-LegendeSecteurs}
+    \label{fig-zppaupGeneral0600-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Elements}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeElements.png}}
+    \caption{zppaupGeneral0600-LegendeElements}
+    \label{fig-zppaupGeneral0600-LegendeElements}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{Resolution 1200}
+\subparagraph{Carte 1} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte1.png}}
+    \caption{zppaupGeneral1200-carte1}
+    \label{fig-zppaupGeneral1200-carte1}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 2}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte2.png}}
+    \caption{zppaupGeneral1200-carte2}
+    \label{fig-zppaupGeneral1200-carte2}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Carte 3} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte3.png}}
+    \caption{zppaupGeneral1200-carte3}
+    \label{fig-zppaupGeneral1200-carte3}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Carte 4}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte4.png}}
+    \caption{zppaupGeneral1200-carte4}
+    \label{fig-zppaupGeneral1200-carte4}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{CartoucheComplet} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcartoucheComplet.png}}
+    \caption{zppaupGeneral1200-cartoucheComplet}
+    \label{fig-zppaupGeneral1200-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Cartouche Simplifie}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral1200-cartoucheSimplifie}
+    \label{fig-zppaupGeneral1200-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Liste Elements Rares} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDListeElementsRares.png}}
+    \caption{zppaupGeneral1200-ListeElementsRares}
+    \label{fig-zppaupGeneral1200-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Mentions Legales}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDMentionsLegales.png}}
+    \caption{zppaupGeneral1200-MentionsLegales}
+    \label{fig-zppaupGeneral1200-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Superficie} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDSuperficie.png}}
+    \caption{zppaupGeneral1200-Superficie}
+    \label{fig-zppaupGeneral1200-Superficie}
+  \end{center}
+\end{figure}
+%
+\subparagraph{legende Total}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDlegendeTotal.png}}
+    \caption{zppaupGeneral1200-legendeTotal}
+    \label{fig-zppaupGeneral1200-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Protections}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeProtections.png}}
+    \caption{zppaupGeneral1200-LegendeProtections}
+    \label{fig-zppaupGeneral1200-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Perimetre}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendePerimetre.png}}
+    \caption{zppaupGeneral1200-LegendePerimetre}
+    \label{fig-zppaupGeneral1200-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Legende Secteurs}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral1200-LegendeSecteurs}
+    \label{fig-zppaupGeneral1200-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Legende Elements}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeElements.png}}
+    \caption{zppaupGeneral1200-LegendeElements}
+    \label{fig-zppaupGeneral1200-LegendeElements}
+  \end{center}
+\end{figure}
+%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{Cartes, résolutions}                    % Encore plus petite
+Pour chaque extraction, on affiche les différentes résolutions
+
+\clearpage
+\paragraph{Carte 1}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte1.png}}
+    \caption{zppaupGeneral0300-carte1}
+    \label{fig-zppaupGeneral0300-carte1}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte1.png}}
+    \caption{zppaupGeneral0600-carte1}
+    \label{fig-zppaupGeneral0600-carte1}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte1-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte1-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte1.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte1-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte1.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte1-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte1.png}}
+    \caption{zppaupGeneral1200-carte1}
+    \label{fig-zppaupGeneral1200-carte1}
+  \end{center}
+\end{figure}
+%
+\paragraph{Carte 2}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte2.png}}
+    \caption{zppaupGeneral0300-carte2}
+    \label{fig-zppaupGeneral0300-carte2}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte2.png}}
+    \caption{zppaupGeneral0600-carte2}
+    \label{fig-zppaupGeneral0600-carte2}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte2-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte2-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte2.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte2-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte2-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte2.png}}
+    \caption{zppaupGeneral1200-carte2}
+    \label{fig-zppaupGeneral1200-carte2}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{Carte 3}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte3.png}}
+    \caption{zppaupGeneral0300-carte3}
+    \label{fig-zppaupGeneral0300-carte3}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte3.png}}
+    \caption{zppaupGeneral0600-carte3}
+    \label{fig-zppaupGeneral0600-carte3}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte3-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte3-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte3.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte3-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte3.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte3-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte3.png}}
+    \caption{zppaupGeneral1200-carte3}
+    \label{fig-zppaupGeneral1200-carte3}
+  \end{center}
+\end{figure}
+%
+\paragraph{Carte 4}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcarte4.png}}
+    \caption{zppaupGeneral0300-carte4}
+    \label{fig-zppaupGeneral0300-carte4}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcarte4.png}}
+    \caption{zppaupGeneral0600-carte4}
+    \label{fig-zppaupGeneral0600-carte4}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-carte4-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcarte4.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-carte4-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcarte4.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-carte4-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-carte4-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcarte4.png}}
+    \caption{zppaupGeneral1200-carte4}
+    \label{fig-zppaupGeneral1200-carte4}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{Cartouche Complet}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcartoucheComplet.png}}
+    \caption{zppaupGeneral0300-cartoucheComplet}
+    \label{fig-zppaupGeneral0300-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcartoucheComplet.png}}
+    \caption{zppaupGeneral0600-cartoucheComplet}
+    \label{fig-zppaupGeneral0600-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcartoucheComplet.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcartoucheComplet.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheComplet-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcartoucheComplet.png}}
+    \caption{zppaupGeneral1200-cartoucheComplet}
+    \label{fig-zppaupGeneral1200-cartoucheComplet}
+  \end{center}
+\end{figure}
+%
+\paragraph{Cartouche Simplifie}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral0300-cartoucheSimplifie}
+    \label{fig-zppaupGeneral0300-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral0600-cartoucheSimplifie}
+    \label{fig-zppaupGeneral0600-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGcartoucheSimplifie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDcartoucheSimplifie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-cartoucheSimplifie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDcartoucheSimplifie.png}}
+    \caption{zppaupGeneral1200-cartoucheSimplifie}
+    \label{fig-zppaupGeneral1200-cartoucheSimplifie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{ListeElementsRares}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDListeElementsRares.png}}
+    \caption{zppaupGeneral0300-ListeElementsRares}
+    \label{fig-zppaupGeneral0300-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDListeElementsRares.png}}
+    \caption{zppaupGeneral0600-ListeElementsRares}
+    \label{fig-zppaupGeneral0600-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDListeElementsRares.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGListeElementsRares.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-ListeElementsRares-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDListeElementsRares.png}}
+    \caption{zppaupGeneral1200-ListeElementsRares}
+    \label{fig-zppaupGeneral1200-ListeElementsRares}
+  \end{center}
+\end{figure}
+%
+\paragraph{MentionsLegales}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDMentionsLegales.png}}
+    \caption{zppaupGeneral0300-MentionsLegales}
+    \label{fig-zppaupGeneral0300-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDMentionsLegales.png}}
+    \caption{zppaupGeneral0600-MentionsLegales}
+    \label{fig-zppaupGeneral0600-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGMentionsLegales.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDMentionsLegales.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-MentionsLegales-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDMentionsLegales.png}}
+    \caption{zppaupGeneral1200-MentionsLegales}
+    \label{fig-zppaupGeneral1200-MentionsLegales}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{Superficie}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDSuperficie.png}}
+    \caption{zppaupGeneral0300-Superficie}
+    \label{fig-zppaupGeneral0300-Superficie}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDSuperficie.png}}
+    \caption{zppaupGeneral0600-Superficie}
+    \label{fig-zppaupGeneral0600-Superficie}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-Superficie-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-Superficie-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDSuperficie.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-Superficie-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGSuperficie.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-Superficie-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDSuperficie.png}}
+    \caption{zppaupGeneral1200-Superficie}
+    \label{fig-zppaupGeneral1200-Superficie}
+  \end{center}
+\end{figure}
+%
+\paragraph{legendeTotal}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDlegendeTotal.png}}
+    \caption{zppaupGeneral0300-legendeTotal}
+    \label{fig-zppaupGeneral0300-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDlegendeTotal.png}}
+    \caption{zppaupGeneral0600-legendeTotal}
+    \label{fig-zppaupGeneral0600-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGlegendeTotal.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDlegendeTotal.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-legendeTotal-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDlegendeTotal.png}}
+    \caption{zppaupGeneral1200-legendeTotal}
+    \label{fig-zppaupGeneral1200-legendeTotal}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{LegendeProtections}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeProtections.png}}
+    \caption{zppaupGeneral0300-LegendeProtections}
+    \label{fig-zppaupGeneral0300-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeProtections.png}}
+    \caption{zppaupGeneral0600-LegendeProtections}
+    \label{fig-zppaupGeneral0600-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeProtections.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendeProtections.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeProtections-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeProtections.png}}
+    \caption{zppaupGeneral1200-LegendeProtections}
+    \label{fig-zppaupGeneral1200-LegendeProtections}
+  \end{center}
+\end{figure}
+%
+\paragraph{LegendePerimetre}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendePerimetre.png}}
+    \caption{zppaupGeneral0300-LegendePerimetre}
+    \label{fig-zppaupGeneral0300-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendePerimetre.png}}
+    \caption{zppaupGeneral0600-LegendePerimetre}
+    \label{fig-zppaupGeneral0600-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendePerimetre.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendePerimetre.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendePerimetre-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendePerimetre.png}}
+    \caption{zppaupGeneral1200-LegendePerimetre}
+    \label{fig-zppaupGeneral1200-LegendePerimetre}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\paragraph{LegendeSecteurs}
+\subparagraph{Resolution 0300} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral0300-LegendeSecteurs}
+    \label{fig-zppaupGeneral0300-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral0600-LegendeSecteurs}
+    \label{fig-zppaupGeneral0600-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeSecteurs.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGLegendeSecteurs.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeSecteurs-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeSecteurs.png}}
+    \caption{zppaupGeneral1200-LegendeSecteurs}
+    \label{fig-zppaupGeneral1200-LegendeSecteurs}
+  \end{center}
+\end{figure}
+%
+\paragraph{LegendeElements}%
+\subparagraph{Resolution 0300}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0300-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0300BDLegendeElements.png}}
+    \caption{zppaupGeneral0300-LegendeElements}
+    \label{fig-zppaupGeneral0300-LegendeElements}
+  \end{center}
+\end{figure}
+%
+\clearpage
+\subparagraph{Resolution 0600} 
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral0600-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general0600BDLegendeElements.png}}
+    \caption{zppaupGeneral0600-LegendeElements}
+    \label{fig-zppaupGeneral0600-LegendeElements}
+  \end{center}
+\end{figure}
+%
+\subparagraph{Resolution 1200}
+\hspace{0mm}
+\begin{figure}[!h]
+  \begin{center}
+    \subfloat[Haut Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-HG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HGLegendeElements.png}}
+    \hspace{0mm}
+    \subfloat[Haut Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-HD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200HDLegendeElements.png}}
+
+    \vspace*{0mm}
+    \subfloat[Bas Gauche]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-BG}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BGcarte2.png}}
+    \hspace{0mm}
+    \subfloat[Bas Droit]{%
+       \label{fig-zppaupGeneral1200-LegendeElements-BD}
+       \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{/home/garel/geodata/raster/urbanisme/zppaup_lr_2009_06_05/2dossierReglementaire/plansReglementaires2/ZPPAUP6_Planreglementaire-general1200BDLegendeElements.png}}
+    \caption{zppaupGeneral1200-LegendeElements}
+    \label{fig-zppaupGeneral1200-LegendeElements}
+  \end{center}
+\end{figure}
+%
+\clearpage
+%\appendix                                       % Commençons les annexes
+
+%\section{Titre de l'annexe A}                   % Annexe A
+
+%\section{Titre de l'annexe B}                   % Annexe B
+
+\listoffigures              % Table des figures
+% \tableofcontents            % Table des matières
+
+\end{document}

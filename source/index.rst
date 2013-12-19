@@ -30,9 +30,9 @@
 .. qgis/qgis/installation                              => chapters => ********
 .. qgis/qgis/utilisation                               => chapters => ********
 
-##################
-Table des matières
-##################
+.. ##################
+.. Table des matières
+.. ##################
 
 .. .. contents:: Table des matières
 
@@ -41,14 +41,15 @@ Table des matières
 
 
 .. include:: environnementTravail/environnementTravail.rst
-.. include:: qgis/qgis.rst
-.. include:: mapnik/mapnik.rst
-.. include:: dt-dict/dt-dict.rst
+.. include:: latex/latex.rst
 .. include:: latexbd/latexbd.rst
 .. include:: geogit/geogit.rst
+.. include:: dt-dict/dt-dict.rst
 .. include:: gnss/gnss.rst
 .. include:: geopy/geopy.rst
 .. include:: cadastre/cadastre.rst
+.. include:: qgis/qgis.rst
+.. include:: mapnik/mapnik.rst
 
 
 .. .. Indices and tables

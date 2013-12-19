@@ -1,0 +1,2568 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a3paper,landscape,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Catalogue des objets topographiques}
+
+% Les parametres de connexion
+
+\begin{document}
+
+%\begin{landscape}
+\maketitle{}
+%\end{landscape}
+
+
+% dans le frontmatter, on met la préface et l'introduction generale
+% dans le mainmatter, on met les differents chapitres
+% dans le backmatter, on met la conclusion general et le sommaire
+\frontmatter
+
+% préface
+% ^^^^^^^
+\chapter{Préface}
+Les services techniques de la ville de La Rochelle sont amenés à manipuler des plans à grande échelle.
+Ils peuvent parfois aussi être amenés à gérer ces objets topographiques qui sont représentés sur ces plans.
+En effet, certains de ces objets peuvent être sous la responsabilité de la ville de La Rochelle. 
+
+\vspace{\baselineskip}
+Le but de ce document est de recenser ces objets topographiques et de proposer une organisation informatique facilitant la gestion de ces objets.
+
+\vspace{\baselineskip}
+Dans ce document, on appelle objet topographique tout objet pouvant être réprésenté sur un plan à grande échelle.
+
+% introdution generale
+% ^^^^^^^^^^^^^^^^^^^^
+\chapter{Introduction}
+Les objets topographiques ont été classés.
+Ce classement se décompose en Thèmes, Domaines et Classes.
+
+Dans un premier temps, on présentera ce système de classement, puis, on listera ces différents objets en fonction de leur prise en charge actuel dans le SIG :
+\begin{enumerate}
+  \item l'objet n'est pas actuellement présent dans le SIG,
+  \item l'objet est déjà pris en charge dans le SIG,
+  \item liste de tous les objets, quelque soit son niveau de prise en charge.
+\end{enumerate}
+
+\mainmatter
+
+\chapter{Les objets SIG}
+
+
+
+% Les objets SIG
+% ^^^^^^^^^^^^^^
+\section{Les Objets - Présentation sous la forme d'un document structuré}
+
+\vspace{\baselineskip}
+% Requete req\_objet
+%%\texdbdef{##req\_objet}{
+%%SELECT
+%%   theme.theme\_id as ThemeId,
+%%   theme.theme\_libelle as ThemeLibelle,
+%%   domaine.domaine\_id as DomaineId,
+%%   domaine.domaine\_libelle as DomaineLibelle,
+%%   classe.classe\_id as ClasseId,
+%%   classe.classe\_libelle as ClasseLibelle,
+%%   objet.objet\_id as ObjetId,
+%%   objet.objet\_libelle as ObjetLibelle
+%%FROM theme, domaine, classe, objet
+%%WHERE theme.theme\_id = domaine.theme\_id
+%%  AND domaine.domaine\_id = classe.domaine\_id
+%%  AND classe.classe\_id = objet.classe\_id
+%%ORDER by theme.theme\_id, domaine.domaine\_id, classe.classe\_id, objet.objet\_id; }
+
+% les options de supertabular sont a definir
+% avant \begin{supertabular}
+\tablefirsthead{
+%\hline
+%\multicolumn{3}{|c|}{Objet} \\
+%\hline
+%\multicolumn{1}{|c|}{Theme / Domaine / Classe} & \multicolumn{2}{|c|}{Objet} \\
+\hline
+Classe & Identifiant & Objet \\
+\hline
+}
+\tablehead{
+%\hline
+%\multicolumn{3}{|c|}{Objet} \\
+%\hline
+%\multicolumn{1}{|c|}{Theme / Domaine / Classe} & \multicolumn{2}{|c|}{Objet} \\
+\hline
+Classe & Identifiant & Objet \\
+\hline
+}
+%\begin{supertabular}{|m{10cm}|c|m{15cm}|}
+
+\subsection{Raster, Prise de vue}
+\subsubsection{\large Autres prises de vue}
+\paragraph{Autres prises de vue}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Autres prises de vue & 01\_03\_01\_01 & Autres prises de vue\\
+\hline
+\end{supertabular}
+\subsection{Urbanisme et cartes à petite echelle}
+\subsubsection{\large Limites administratives et cartes à petites echelle}
+\paragraph{Échelle communale}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Échelle communale & 03\_01\_03\_06 & Secteur Elu\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Document d urbanisme}
+\paragraph{Schéma Directeur ou SCOT}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Schéma Directeur ou SCOT & 03\_02\_01\_01 & Schéma Directeur ou SCOT\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Prescriptions, Servitudes et autres zonages}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{9}{10cm}{Prescriptions, Servitudes et autres zonages} & 03\_02\_03\_01 & Espace boisé classé\\
+
+
+\cline{2-3}                    & 03\_02\_03\_02 & Emplacement réservé\\
+
+
+\cline{2-3}                    & 03\_02\_03\_03 & Secteur Plan Masse\\
+
+
+\cline{2-3}                    & 03\_02\_03\_04 & Zone de Publicité Restreinte\\
+
+
+\cline{2-3}                    & 03\_02\_03\_05 & Emprise de construction\\
+
+
+\cline{2-3}                    & 03\_02\_03\_06 & Perimetre de préemption (DPU)\\
+
+
+\cline{2-3}                    & 03\_02\_03\_07 & Prescriptions se superposant aux zonage\\
+
+
+\cline{2-3}                    & 03\_02\_03\_08 & Annexes du POS : Servitudes d Utilité Publique\\
+
+
+\cline{2-3}                    & 03\_02\_03\_09 & Annexes du POS : Informations utiles\\
+\hline
+\end{supertabular}
+
+
+\paragraph{ZPPAUP}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} ZPPAUP & 03\_02\_05\_01 & Zone de Protection du Patrimoine Architectural Urbain et Paysager\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Plan de sauvegarde et de mise en valeur}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Plan de sauvegarde et de mise en valeur & 03\_02\_06\_01 & Plan de Sauvegarde et de Mise en Valeur\\
+\hline
+\end{supertabular}
+\subsection{Réseau de Transport de personnes / déplacement}
+\subsubsection{\large Referentiel Voirie filaire / Adresse}
+\paragraph{Surfacique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Surfacique & 05\_01\_01\_01 & Objet Surfacique\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Carrefour}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Carrefour & 05\_01\_03\_01 & Carrefour\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Transport en commun}
+\paragraph{Station transport en commun}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Station transport en commun & 05\_02\_01\_01 & Station transport en commun\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne transport en commun}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne transport en commun & 05\_02\_02\_01 & Ligne transport en commun\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Voie réservée taxi et transport en commun}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Voie réservée taxi et transport en commun & 05\_02\_03\_01 & Voie réservée taxi et transport en commun\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Cheminement pieton et PMR}
+\paragraph{Voie piétonne}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Voie piétonne & 05\_04\_01\_01 & Voie piétonne\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Passage souterrain}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Passage souterrain & 05\_04\_02\_01 & Passage souterrain\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Pont, passerelle piétonne}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Pont, passerelle piétonne & 05\_04\_03\_01 & Pont, passerelle piétonne\\
+\hline
+\end{supertabular}
+\subsection{Voirie}
+\subsubsection{\large Classement / gestion}
+\paragraph{Gestion Conseil Général}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Gestion Conseil Général & 07\_01\_01\_01 & Gestion Conseil Général\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Gestion CDA}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Gestion CDA & 07\_01\_02\_01 & Gestion CDA\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Gestion Ville}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Gestion Ville & 07\_01\_03\_01 & Gestion Ville\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Chaussée / accotement}
+\paragraph{Objets surfaciques (chaussée, accotement, revêtement,)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{5}{10cm}{Objets surfaciques (chaussée, accotement, revêtement,)} & 07\_02\_01\_01 & Chaussée (objet surfacique)\\
+
+
+\cline{2-3}                    & 07\_02\_01\_02 & Revêtement (objet surfacique)\\
+
+
+\cline{2-3}                    & 07\_02\_01\_03 & Terre Plein\\
+
+
+\cline{2-3}                    & 07\_02\_01\_04 & Ralentisseur / Coussins berlinois\\
+
+
+\cline{2-3}                    & 07\_02\_01\_05 & Capteur / Boucle de comptage\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objets linéaires (limite de chaussée, limite de revêtement, bordure, fossé,)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{8}{10cm}{Objets linéaires (limite de chaussée, limite de revêtement, bordure, fossé,)} & 07\_02\_02\_01 & Limite de chaussée (objet linéaire)\\
+
+
+\cline{2-3}                    & 07\_02\_02\_02 & Limite de revêtement (objet linéaire)\\
+
+
+\cline{2-3}                    & 07\_02\_02\_03 & Fossé\\
+
+
+\cline{2-3}                    & 07\_02\_02\_04 & Fil d eau / Écoulement pluvial\\
+
+
+\cline{2-3}                    & 07\_02\_02\_05 & Caniveau\\
+
+
+\cline{2-3}                    & 07\_02\_02\_06 & Gargouille\\
+
+
+\cline{2-3}                    & 07\_02\_02\_07 & Bordure\\
+
+
+\cline{2-3}                    & 07\_02\_02\_08 & Voie ferrée\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objets ponctuels (...)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objets ponctuels (...) & 07\_02\_03\_00 & Objet ponctuel Voirie\\
+\hline
+\end{supertabular}
+\subsection{Bâti}
+\subsubsection{\large Objet surfacique bati}
+\paragraph{Emprise bâtiment}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emprise bâtiment & 09\_01\_01\_01 & Emprise bâtiment\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ouvrage d art  pont  passerelle}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ouvrage d art  pont  passerelle & 09\_01\_02\_01 & Ouvrage d art  pont  passerelle\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Bloc béton  pilier}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Bloc béton  pilier} & 09\_01\_03\_01 & Bloc béton pour endiguement\\
+
+
+\cline{2-3}                    & 09\_01\_03\_02 & Pilier\\
+
+
+\cline{2-3}                    & 09\_01\_03\_03 & Soubassement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Statue ou monument}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Statue ou monument & 09\_01\_04\_01 & Statue ou monument\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Limite surface taxée}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Limite surface taxée} & 09\_01\_05\_01 & Limite surface taxée\\
+
+
+\cline{2-3}                    & 09\_01\_05\_02 & Terrasse en bois\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Devanture}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Devanture} & 09\_01\_06\_01 & Devanture\\
+
+
+\cline{2-3}                    & 09\_01\_06\_02 & Marquise magasin\\
+
+
+\cline{2-3}                    & 09\_01\_06\_03 & Tente de marché ou magasin\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ruine}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ruine & 09\_01\_07\_01 & Ruine\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Mur cyclopéen}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Mur cyclopéen} & 09\_01\_08\_01 & Mur cyclopéen\\
+
+
+\cline{2-3}                    & 09\_01\_08\_02 & Enrochement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Tombe}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Tombe & 09\_01\_09\_01 & Tombe\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Cloture / Element de séparation (objet linéaire)}
+\paragraph{Limite de propriété (façade<->domaine public)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Limite de propriété (façade<->domaine public) & 09\_02\_01\_01 & Limite de propriété (façade<->domaine public)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Limite séparative entre deux propriétés}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Limite séparative entre deux propriétés & 09\_02\_02\_01 & Limite séparative entre deux propriétés\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Limite de bâtiment / façade}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Limite de bâtiment / façade & 09\_02\_03\_01 & Limite de bâtiment / façade\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Proéminence d un bâtiment par rapport à sa façade levée}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Proéminence d un bâtiment par rapport à sa façade levée} & 09\_02\_04\_01 & Proéminence d un bâtiment par rapport à sa façade levée\\
+
+
+\cline{2-3}                    & 09\_02\_04\_02 & Surplomb\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Mur}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Mur} & 09\_02\_05\_01 & Mur\\
+
+
+\cline{2-3}                    & 09\_02\_05\_02 & Mur de pierre sèche\\
+
+
+\cline{2-3}                    & 09\_02\_05\_03 & Mur bahut\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Mur de soutènement}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Mur de soutènement} & 09\_02\_06\_01 & Mur de soutènement\\
+
+
+\cline{2-3}                    & 09\_02\_06\_02 & Digue fleuve\\
+
+
+\cline{2-3}                    & 09\_02\_06\_03 & Objet linéaire d un pont\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Limite épaisseur mur (deuxième trait)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Limite épaisseur mur (deuxième trait)} & 09\_02\_07\_01 & Limite épaisseur mur (deuxième trait)\\
+
+
+\cline{2-3}                    & 09\_02\_07\_02 & Détail intérieur\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Clôture}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Clôture & 09\_02\_08\_01 & Clôture\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Préau}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Préau} & 09\_02\_09\_01 & Préau\\
+
+
+\cline{2-3}                    & 09\_02\_09\_02 & Verrière au sol\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Seuil, Entrée}
+\paragraph{Bâti Seuil, Entrée}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{7}{10cm}{Bâti Seuil, Entrée} & 09\_03\_01\_01 & Sortie de garage ou cour\\
+
+
+\cline{2-3}                    & 09\_03\_01\_02 & Seuil\\
+
+
+\cline{2-3}                    & 09\_03\_01\_03 & Pergolas\\
+
+
+\cline{2-3}                    & 09\_03\_01\_04 & Portillon\\
+
+
+\cline{2-3}                    & 09\_03\_01\_05 & Marches extérieures, escalier\\
+
+
+\cline{2-3}                    & 09\_03\_01\_06 & Grille de cave\\
+
+
+\cline{2-3}                    & 09\_03\_01\_07 & Grille/Bouche de ventilation\\
+\hline
+\end{supertabular}
+\subsection{Réseau de Transport Eau et Energie}
+\subsubsection{\large Eau potable}
+\paragraph{Conduite de transfert (feeder)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Conduite de transfert (feeder) & 11\_01\_01\_01 & Conduite de transfert (feeder)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ouvrage d adduction (notion d eau brute, d aqueduc)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ouvrage d adduction (notion d eau brute, d aqueduc) & 11\_01\_02\_01 & Ouvrage d adduction (notion d eau brute, d aqueduc)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Gaz}
+\paragraph{GDF haute pression transport}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} GDF haute pression transport & 11\_02\_01\_01 & GDF haute pression transport\\
+\hline
+\end{supertabular}
+
+
+\paragraph{GDF moyenne pression transport}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} GDF moyenne pression transport & 11\_02\_02\_01 & GDF moyenne pression transport\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Société X}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Société X & 11\_02\_03\_01 & Société X\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Société Y}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Société Y & 11\_02\_04\_01 & Société Y\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Electricité (RTE = Réseau de Transport d électricité)}
+\paragraph{HTB (U > 75 kV)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{HTB (U > 75 kV)} & 11\_03\_01\_01 & 400 kV (THT = Très Haute Tension)\\
+
+
+\cline{2-3}                    & 11\_03\_01\_02 & 225 kV (THT = Très Haute Tension)\\
+
+
+\cline{2-3}                    & 11\_03\_01\_03 & 150 kV (THT = Très Haute Tension)\\
+
+
+\cline{2-3}                    & 11\_03\_01\_04 & 90 kV (HT = Haute Tension)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{HTA (1500 < U < 75 kV)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{HTA (1500 < U < 75 kV)} & 11\_03\_02\_05 & 63 kV (Haute Tension)\\
+
+
+\cline{2-3}                    & 11\_03\_02\_06 & Pylône\\
+
+
+\cline{2-3}                    & 11\_03\_02\_07 & Pylône de caténaire\\
+\hline
+\end{supertabular}
+\subsection{Reseau de Distribution}
+\subsubsection{\large Eau potable}
+\paragraph{Objet surfacique du réseau}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Objet surfacique du réseau} & 13\_01\_01\_01 & Station de surpression\\
+
+
+\cline{2-3}                    & 13\_01\_01\_02 & Station de pompage\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet linéaire du réseau}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet linéaire du réseau & 13\_01\_02\_02 & Branchement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel du réseau}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{8}{10cm}{Objet ponctuel du réseau} & 13\_01\_03\_01 & Bouche à clef hexagonale\\
+
+
+\cline{2-3}                    & 13\_01\_03\_02 & Bouche à clef ronde\\
+
+
+\cline{2-3}                    & 13\_01\_03\_05 & Bouche incendie / Borne de puisage\\
+
+
+\cline{2-3}                    & 13\_01\_03\_06 & Compteur réseau\\
+
+
+\cline{2-3}                    & 13\_01\_03\_11 & Compteur abonné eau potable\\
+
+
+\cline{2-3}                    & 13\_01\_03\_12 & Coffret\\
+
+
+\cline{2-3}                    & 13\_01\_03\_13 & Plaque\\
+
+
+\cline{2-3}                    & 13\_01\_03\_14 & Fontaine\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Gaz}
+\paragraph{GDF basse pression distribution}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} GDF basse pression distribution & 13\_02\_01\_01 & GDF basse pression distribution\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Vanne Gaz}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Vanne Gaz & 13\_02\_02\_01 & Vanne Gaz\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Branchement individuel GDF}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Branchement individuel GDF & 13\_02\_03\_01 & Branchement individuel GDF\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Autre élément}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Autre élément & 13\_02\_04\_01 & Citerne\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Gaz basse pression distribution Société Y}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Gaz basse pression distribution Société Y & 13\_02\_05\_01 & Gaz basse pression distribution Société Y\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Electricité}
+\paragraph{Objet surfacique (réseau de distribution Électricité)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet surfacique (réseau de distribution Électricité) & 13\_03\_01\_01 & Objet surfacique (réseau de distribution Electricité)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet linéaire (HTA (1500 < U < 75 kV))}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet linéaire (HTA (1500 < U < 75 kV)) & 13\_03\_03\_01 & HTA 20 kV\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet linéaire (BTB (750 < U < 1500 V))}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet linéaire (BTB (750 < U < 1500 V)) & 13\_03\_04\_01 & Objet linéaire (BTB (750 < U < 1500 V))\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet linéaire (BTA (120 < U < 750 V))}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Objet linéaire (BTA (120 < U < 750 V))} & 13\_03\_05\_01 & BTA 400 V\\
+
+
+\cline{2-3}                    & 13\_03\_05\_02 & BTA 230 V\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{12}{10cm}{Objet ponctuel} & 13\_03\_15\_01 & Borne d alimentation - Prise électrique\\
+
+
+\cline{2-3}                    & 13\_03\_15\_02 & Borne de distribution Liselec\\
+
+
+\cline{2-3}                    & 13\_03\_15\_03 & Borne de distribution (marché, camping-car)\\
+
+
+\cline{2-3}                    & 13\_03\_15\_04 & Armoire de commande EDF\\
+
+
+\cline{2-3}                    & 13\_03\_15\_05 & Applique (Accrochage du réseau EDF à un point de façade)\\
+
+
+\cline{2-3}                    & 13\_03\_15\_06 & Poteau EDF\\
+
+
+\cline{2-3}                    & 13\_03\_15\_07 & Coffret / Compteur abonné / Branchement individuel\\
+
+
+\cline{2-3}                    & 13\_03\_15\_08 & Regard technique EDF\\
+
+
+\cline{2-3}                    & 13\_03\_15\_09 & Plaque simple\\
+
+
+\cline{2-3}                    & 13\_03\_15\_10 & Plaque double\\
+
+
+\cline{2-3}                    & 13\_03\_15\_11 & Plaque triple\\
+
+
+\cline{2-3}                    & 13\_03\_15\_12 & Plaque quadruple\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Eclairage public}
+\paragraph{Objet surfacique (Éclairage public)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet surfacique (Éclairage public) & 13\_04\_01\_01 & Éclairage public\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Objet Linéaire} & 13\_04\_02\_01 & Cable aérien ou souterrain\\
+
+
+\cline{2-3}                    & 13\_04\_02\_06 & Branchement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet ponctuel & 13\_04\_03\_01 & Armoire\\
+\hline
+\end{supertabular}
+\subsection{Reseau de Transport d information}
+\subsubsection{\large Réseau Ville de La Rochelle}
+\paragraph{Poste de Contrôle d Accès (PCA)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Poste de Contrôle d Accès (PCA) & 15\_01\_01\_01 & Poste de Contrôle d Accès (PCA)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Regard comptage routier}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Regard comptage routier & 15\_01\_02\_01 & Regard comptage routier\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Réseau DSI}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Réseau DSI & 15\_01\_03\_01 & Reseau DSI\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Réseau opérateur}
+\paragraph{Objet surfacique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet surfacique & 15\_02\_01\_01 & Objet surfacique\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{8}{10cm}{Objet ponctuel} & 15\_02\_03\_01 & Armoire FT\\
+
+
+\cline{2-3}                    & 15\_02\_03\_03 & Support : poteau EDF\\
+
+
+\cline{2-3}                    & 15\_02\_03\_04 & Support : potence\\
+
+
+\cline{2-3}                    & 15\_02\_03\_05 & Support : poteau FT\\
+
+
+\cline{2-3}                    & 15\_02\_03\_07 & Plaque simple\\
+
+
+\cline{2-3}                    & 15\_02\_03\_08 & Plaque double\\
+
+
+\cline{2-3}                    & 15\_02\_03\_09 & Plaque triple\\
+
+
+\cline{2-3}                    & 15\_02\_03\_10 & Plaque quadruple\\
+\hline
+\end{supertabular}
+\subsection{Reseau en attente}
+\subsubsection{\large Fourreau en attente - objet linéaire}
+\paragraph{Fourreau en attente - objet linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Fourreau en attente - objet linéaire & 17\_01\_01\_01 & Fourreau en attente\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Fourreau en attente - objet ponctuel}
+\paragraph{Fourreau en attente - objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{9}{10cm}{Fourreau en attente - objet ponctuel} & 17\_02\_01\_01 & Armoire\\
+
+
+\cline{2-3}                    & 17\_02\_01\_02 & Coffret\\
+
+
+\cline{2-3}                    & 17\_02\_01\_03 & Regard rond\\
+
+
+\cline{2-3}                    & 17\_02\_01\_04 & Regard carré\\
+
+
+\cline{2-3}                    & 17\_02\_01\_05 & Plaque ronde\\
+
+
+\cline{2-3}                    & 17\_02\_01\_06 & Plaque simple\\
+
+
+\cline{2-3}                    & 17\_02\_01\_07 & Plaque double\\
+
+
+\cline{2-3}                    & 17\_02\_01\_08 & Plaque triple\\
+
+
+\cline{2-3}                    & 17\_02\_01\_09 & Plaque quadruple\\
+\hline
+\end{supertabular}
+\subsection{Réseau de Collecte}
+\subsubsection{\large Réseau d assainissement pluvial}
+\paragraph{Objet Linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Objet Linéaire} & 19\_01\_02\_03 & Buse\\
+
+
+\cline{2-3}                    & 19\_01\_02\_04 & Descente d eau\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{Objet ponctuel} & 19\_01\_03\_02 & Plaque\\
+
+
+\cline{2-3}                    & 19\_01\_03\_04 & Avaloir\\
+
+
+\cline{2-3}                    & 19\_01\_03\_05 & Grille (ronde, carrée ou rectangulaire)\\
+
+
+\cline{2-3}                    & 19\_01\_03\_10 & Descente de dalle\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Réseau d assainissement eaux usées}
+\paragraph{Objet surfacique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet surfacique & 19\_02\_01\_01 & Objet surfacique\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet Linéaire & 19\_02\_02\_01 & Collecteur Eaux Usées\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet ponctuel & 19\_02\_03\_01 & Regard de Visite Eaux Usées\\
+\hline
+\end{supertabular}
+\subsection{Signalisation lumineuse}
+\subsubsection{\large Information parking - Panneau à messages variables (PMV)}
+\paragraph{Panneau à messages variables (PMV)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneau à messages variables (PMV) & 21\_01\_01\_01 & Panneau à messages variables (PMV)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Feu tricolore - Feu et signal lumineux (R11 à R24)}
+\paragraph{Armoire de commande Signalisation Tricolore}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Armoire de commande Signalisation Tricolore & 21\_02\_01\_01 & Armoire de commande Signalisation Tricolore\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Regard Technique Signalisation Tricolore}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Regard Technique Signalisation Tricolore & 21\_02\_02\_01 & Regard Technique Signalisation Tricolore\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Feu et signal lumineux (R11 à R24) accroché à un point de référence (support ou applique)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Feu et signal lumineux (R11 à R24) accroché à un point de référence (support ou applique) & 21\_02\_03\_01 & Feu de signalisation\\
+\hline
+\end{supertabular}
+\subsection{Signalisation verticale}
+\subsubsection{\large Signalisation verticale de police}
+\paragraph{Panneaux de danger (A1a à A24)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de danger (A1a à A24) & 23\_01\_01\_01 & Panneaux de danger (A1a à A24)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux d intersection et de priorité (AB1 à AB25)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux d intersection et de priorité (AB1 à AB25) & 23\_01\_02\_01 & Panneaux d intersection et de priorité (AB1 à AB25)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux de prescription (B0 à B51)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de prescription (B0 à B51) & 23\_01\_03\_01 & Panneaux de prescription (B0 à B51)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux d indication (C1a à CE50)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux d indication (C1a à CE50) & 23\_01\_04\_01 & Panneaux d indication (C1a à CE50)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panonceaux (M1 à M11b)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panonceaux (M1 à M11b) & 23\_01\_05\_01 & Panonceaux (M1 à M11b)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Symboles (SE2b à SU1)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Symboles (SE2b à SU1) & 23\_01\_06\_01 & Symboles (SE2b à SU1)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Autres objets}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Autres objets & 23\_01\_07\_01 & Emprise arrêté\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Signalisation verticale de direction}
+\paragraph{Panneaux de direction (D21a à D79b)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de direction (D21a à D79b) & 23\_02\_01\_01 & Panneaux de direction (D21a à D79b)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux de jalonnement piétonnier (Dp1a à Dp2b)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de jalonnement piétonnier (Dp1a à Dp2b) & 23\_02\_02\_01 & Panneaux de jalonnement piétonnier (Dp1a à Dp2b)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux de jalonnement pour cyclistes (Dv11 à Dv61)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de jalonnement pour cyclistes (Dv11 à Dv61) & 23\_02\_03\_01 & Panneaux de jalonnement pour cyclistes (Dv11 à Dv61)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux de localisation (E31 à EB20)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux de localisation (E31 à EB20) & 23\_02\_04\_01 & Panneaux de localisation (E31 à EB20)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux d information (H11 à H33)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux d information (H11 à H33) & 23\_02\_05\_01 & Panneaux d information (H11 à H33)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Idéogrammes, emblèmes ou logotypes (ID1 à ID15a41 + Logotype)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Idéogrammes, emblèmes ou logotypes (ID1 à ID15a41 + Logotype) & 23\_02\_06\_01 & Idéogrammes, emblèmes ou logotypes (ID1 à ID15a41 + Logotype)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Autres objets}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Autres objets & 23\_02\_07\_01 & Autres objets\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Autres types de signal routier}
+\paragraph{Balises (J1 à J14b)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Balises (J1 à J14b)} & 23\_03\_01\_01 & Balise\\
+
+
+\cline{2-3}                    & 23\_03\_01\_02 & Chicanes  balisettes\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Feux de balisage et d alerte (G1 à R2d)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Feux de balisage et d alerte (G1 à R2d) & 23\_03\_02\_01 & Feux de balisage et d alerte (G1 à R2d)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux à messages variables (PMV)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux à messages variables (PMV) & 23\_03\_03\_01 & Panneaux à messages variables (PMV)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Panneaux et dispositifs de signalisation temporaire (AK2 à KR11)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Panneaux et dispositifs de signalisation temporaire (AK2 à KR11) & 23\_03\_04\_01 & Panneaux et dispositifs de signalisation temporaire (AK2 à KR11)\\
+\hline
+\end{supertabular}
+\subsection{Signalisation horizontale}
+\subsubsection{\large Lignes longitudinales axiales}
+\paragraph{Lignes continues (continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Lignes continues (continue)} & 25\_01\_01\_01 & Ligne axiale ou de délimitation des voies\\
+
+
+\cline{2-3}                    & 25\_01\_01\_02 & Ligne axiale sur chaussée à 4 voies\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Lignes discontinues de type T1 (T1, Tp1, ou T3)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Lignes discontinues de type T1 (T1, Tp1, ou T3)} & 25\_01\_02\_01 & Ligne axiales ou de délimitation de voie en agglomération\\
+
+
+\cline{2-3}                    & 25\_01\_02\_02 & Ligne axiales ou de délimitation de voie en rase campagne\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Lignes discontinues de type T3 (T3)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Lignes discontinues de type T3 (T3)} & 25\_01\_03\_01 & Ligne d annonce d une ligne continue\\
+
+
+\cline{2-3}                    & 25\_01\_03\_02 & Ligne de dissuasion en remplacement d une ligne continue\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Lignes mixtes (T1 ou T3)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Lignes mixtes (T1 ou T3) & 25\_01\_04\_01 & La ligne mixte est constituée par une ligne continue doublée par une ligne discontinue de type T1 ou T3\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Lignes continues délimitant le Terre Plein Central, les ilots ou certains couloirs réservés}
+\paragraph{Ligne de délimitation de terre-plein central (continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne de délimitation de terre-plein central (continue) & 25\_02\_01\_01 & Ligne de délimitation de terre-plein central (continue)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne de délimitation du contour des îlots (continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne de délimitation du contour des îlots (continue) & 25\_02\_02\_01 & Ligne de délimitation du contour des îlots (continue)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne de délimitation de certains couloirs réservés (continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne de délimitation de certains couloirs réservés (continue) & 25\_02\_03\_01 & Ligne de délimitation de certains couloirs réservés (continue)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Lignes longitudinales de rives ou de délimitation de certaines voies}
+\paragraph{Lignes discontinues de type T2 (T2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Lignes discontinues de type T2 (T2)} & 25\_03\_01\_01 & Ligne d entrée et de sortie des voies pour véhicules lents\\
+
+
+\cline{2-3}                    & 25\_03\_01\_02 & Ligne de délimitation des voies de décélération, d insertion ou d entrecroisement\\
+
+
+\cline{2-3}                    & 25\_03\_01\_03 & Ligne de rive de chaussée\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Lignes discontinues de type T3 (T3 ou Tp3)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{5}{10cm}{Lignes discontinues de type T3 (T3 ou Tp3)} & 25\_03\_02\_01 & Ligne de délimitation dans certains cas d un couloir réservé aux autobus\\
+
+
+\cline{2-3}                    & 25\_03\_02\_02 & Ligne de délimitation dans certains cas de bandes cyclables\\
+
+
+\cline{2-3}                    & 25\_03\_02\_03 & Ligne de délimitation de voies pour véhicules lents sur lesquelles il n y a pas d interdiction de dépasser\\
+
+
+\cline{2-3}                    & 25\_03\_02\_04 & Ligne de rive aux approches de certains carrefours\\
+
+
+\cline{2-3}                    & 25\_03\_02\_05 & Ligne délimitant une bande d arrêt d urgence, ligne de rive sur autoroute\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Présignalisation des points singuliers}
+\paragraph{Ligne d annonce d une ligne continue (T3)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne d annonce d une ligne continue (T3) & 25\_04\_01\_01 & Ligne d annonce d une ligne continue (T3)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Flèches de rabattement}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Flèches de rabattement & 25\_04\_02\_01 & Flèches de rabattement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Flèches directionnelles}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Flèches directionnelles & 25\_04\_03\_01 & Flèches directionnelles\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Lignes Transversales}
+\paragraph{Ligne \_STOP\_ (continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne \_STOP\_ (continue) & 25\_05\_01\_01 & Ligne \_STOP\_ (continue)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne \_Cédez-le-passage\_ (Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne \_Cédez-le-passage\_ (Tp2) & 25\_05\_02\_01 & Ligne \_Cédez-le-passage\_ (Tp2)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne d effet des feux (Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne d effet des feux (Tp2) & 25\_05\_03\_01 & Ligne d effet des feux (Tp2)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne de guidage en intersection Tourne à gauche à l indonésienne - carrefour en baïonnette (Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne de guidage en intersection Tourne à gauche à l indonésienne - carrefour en baïonnette (Tp2) & 25\_05\_04\_01 & Ligne de guidage en intersection Tourne à gauche à l indonésienne - carrefour en baïonnette (Tp2)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne de début et de fin de voie cyclable (Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne de début et de fin de voie cyclable (Tp2) & 25\_05\_05\_01 & Ligne de début et de fin de voie cyclable (Tp2)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Passages pour piétons}
+\paragraph{Passages pour piétons}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Passages pour piétons & 25\_06\_01\_01 & Passages pour piétons\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Marques de ralentisseur de type dos-d âne}
+\paragraph{Marques de ralentisseur de type dos-d âne}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Marques de ralentisseur de type dos-d âne & 25\_07\_01\_01 & Marques de ralentisseur de type dos-d âne\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Marques relatives aux transports en commun}
+\paragraph{Ligne marquant l emplacement d un arrêt d autobus (jaune, continue, zigzag)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne marquant l emplacement d un arrêt d autobus (jaune, continue, zigzag) & 25\_08\_01\_01 & Ligne marquant l emplacement d un arrêt d autobus (jaune, continue, zigzag)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Franchissement des carrefours par les voies réservées (blanc, damier)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Franchissement des carrefours par les voies réservées (blanc, damier) & 25\_08\_02\_01 & Franchissement des carrefours par les voies réservées (blanc, damier)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Inscriptions sur les voies réservées (\_BUS\_)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Inscriptions sur les voies réservées (\_BUS\_) & 25\_08\_03\_01 & Inscriptions sur les voies réservées (\_BUS\_)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Marques relatives au stationnement}
+\paragraph{Ligne délimitant les places de stationnement (blanche ou bleue, Tp2 ou continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne délimitant les places de stationnement (blanche ou bleue, Tp2 ou continue) & 25\_09\_01\_01 & Ligne délimitant les places de stationnement (blanche ou bleue, Tp2 ou continue)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2) & 25\_09\_02\_01 & Ligne confirmant ou indiquant l interdiction de stationner (jaune, Tp2)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ligne confirmant ou indiquant l interdiction de s arrêter (jaune, continue)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ligne confirmant ou indiquant l interdiction de s arrêter (jaune, continue) & 25\_09\_03\_01 & Ligne confirmant ou indiquant l interdiction de s arrêter (jaune, continue)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Marques pour voies cyclables}
+\paragraph{Traversées de chaussées par les voies cyclables (Tp2)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Traversées de chaussées par les voies cyclables (Tp2) & 25\_10\_01\_01 & Traversées de chaussées par les voies cyclables (Tp2)\\
+\hline
+\end{supertabular}
+\subsection{Stationnement}
+\subsubsection{\large Zone de stationnement (plusieurs emplacements)}
+\paragraph{Contour de parking}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Contour de parking & 27\_01\_01\_01 & Zone de stationnement\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Zone de livraison}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Zone de livraison & 27\_01\_02\_01 & Zone de livraison\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Horodateur}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Horodateur & 27\_01\_03\_01 & Horodateur\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Péage}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Péage & 27\_01\_04\_01 & Péage\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Emplacement de stationnement}
+\paragraph{Emplacement normal}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement normal & 27\_02\_01\_01 & Emplacement normal\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Emplacement PMR}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement PMR & 27\_02\_02\_01 & Emplacement PMR\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Emplacement Taxi}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement Taxi & 27\_02\_03\_01 & Emplacement Taxi\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Emplacement Transporteur de fond}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement Transporteur de fond & 27\_02\_04\_01 & Emplacement Transporteur de fond\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Emplacement Livraison}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement Livraison & 27\_02\_05\_01 & Emplacement Livraison\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Emplacement Véhicule électrique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Emplacement Véhicule électrique & 27\_02\_06\_01 & Emplacement Véhicule électrique\\
+\hline
+\end{supertabular}
+\subsection{Espaces verts}
+\subsubsection{\large Typologie Espaces Verts}
+\paragraph{Parcs, jardins et squares}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Parcs, jardins et squares & 29\_01\_01\_01 & Parcs, jardins et squares\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Accompagnement de voies}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Accompagnement de voies & 29\_01\_02\_01 & Accompagnement de voies\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Accompagnement bâtiments publics}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Accompagnement bâtiments publics & 29\_01\_03\_01 & Accompagnement bâtiments publics\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Accompagnement habitations}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Accompagnement habitations & 29\_01\_04\_01 & Accompagnement habitations\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Accompagnement établissement industriels et commerciaux}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Accompagnement établissement industriels et commerciaux & 29\_01\_05\_01 & Accompagnement établissement industriels et commerciaux\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Espaces verts établissements sociaux ou éducatifs}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Espaces verts établissements sociaux ou éducatifs & 29\_01\_06\_01 & Espaces verts établissements sociaux ou éducatifs\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Sports}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Sports & 29\_01\_07\_01 & Sports\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Cimetières}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Cimetières & 29\_01\_08\_01 & Cimetières\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Campings}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Campings & 29\_01\_09\_01 & Campings\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Établissements horticoles}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Établissements horticoles & 29\_01\_10\_01 & Établissements horticoles\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Espaces naturels aménagés}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Espaces naturels aménagés & 29\_01\_11\_01 & Espaces naturels aménagés\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Jardins familiaux}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Jardins familiaux & 29\_01\_12\_01 & Jardins familiaux\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Arbres d alignement}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Arbres d alignement & 29\_01\_13\_01 & Arbres d alignement\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Objets topographiques espaces verts (necessitant une précision décimétrique)}
+\paragraph{Surfacique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{12}{10cm}{Surfacique} & 29\_02\_01\_01 & Locaux / Cabane\\
+
+
+\cline{2-3}                    & 29\_02\_01\_02 & Équipement de sport\\
+
+
+\cline{2-3}                    & 29\_02\_01\_03 & Boisement\\
+
+
+\cline{2-3}                    & 29\_02\_01\_04 & Espaces verts - massifs\\
+
+
+\cline{2-3}                    & 29\_02\_01\_05 & Lac / Étang / Bassin d orage\\
+
+
+\cline{2-3}                    & 29\_02\_01\_06 & Bassin / Pataugeoire\\
+
+
+\cline{2-3}                    & 29\_02\_01\_07 & Zone Arrosage automatique\\
+
+
+\cline{2-3}                    & 29\_02\_01\_08 & Pelouses\\
+
+
+\cline{2-3}                    & 29\_02\_01\_09 & Aire de jeu / Bac à sable\\
+
+
+\cline{2-3}                    & 29\_02\_01\_10 & Sols minéraux (stabilisés ou minéral)\\
+
+
+\cline{2-3}                    & 29\_02\_01\_11 & Allée\\
+
+
+\cline{2-3}                    & 29\_02\_01\_12 & Talus\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{6}{10cm}{Linéaire} & 29\_02\_02\_01 & Haie\\
+
+
+\cline{2-3}                    & 29\_02\_02\_02 & Tribune stade\\
+
+
+\cline{2-3}                    & 29\_02\_02\_03 & Fouilles archéologiques\\
+
+
+\cline{2-3}                    & 29\_02\_02\_04 & Haut de talus\\
+
+
+\cline{2-3}                    & 29\_02\_02\_05 & Pied de talus\\
+
+
+\cline{2-3}                    & 29\_02\_02\_06 & Limite de culture\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{Ponctuel} & 29\_02\_03\_01 & Arbre isolé\\
+
+
+\cline{2-3}                    & 29\_02\_03\_02 & Bouche d arrosage\\
+
+
+\cline{2-3}                    & 29\_02\_03\_03 & Fontaine\\
+
+
+\cline{2-3}                    & 29\_02\_03\_03 & Puit\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Espaces verts Objets topographiques espaces verts (necessitant une précision métrique)}
+\paragraph{Surfacique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Surfacique & 29\_03\_01\_01 & Plage, surface de sable\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Linéaire}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Linéaire & 29\_03\_02\_01 & Limite Plage, limite eau\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Ponctuel}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Ponctuel & 29\_03\_03\_01 & Bouée\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Gestion}
+\paragraph{Espaces Verts entretien Ville La Rochelle}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Espaces Verts entretien Ville La Rochelle & 29\_04\_01\_01 & Espaces Verts entretien Ville La Rochelle\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Espaces Verts entretien Organisme HLM}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Espaces Verts entretien Organisme HLM & 29\_04\_02\_01 & Espaces Verts entretien Organisme HLM\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Espaces Verts entretien Autre organisme ou privé}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Espaces Verts entretien Autre organisme ou privé & 29\_04\_03\_01 & Espaces Verts entretien Autre organisme ou privé\\
+\hline
+\end{supertabular}
+\subsection{Mobilier urbain}
+\subsubsection{\large Stationnement}
+\paragraph{Horodateur}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Horodateur & 31\_01\_01\_01 & Horodateur\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Transport}
+\paragraph{Arceau stationnement vélo}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Arceau stationnement vélo & 31\_03\_02\_01 & Arceaux stationnement vélo\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Arceau chicane}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Arceau chicane & 31\_03\_03\_01 & Arceaux pour chicane\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Poteau d arrêt de bus}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Poteau d arrêt de bus & 31\_03\_05\_01 & Poteau d arrêt de bus\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Borne Auto Plus}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Borne Auto Plus & 31\_03\_06\_01 & Borne autoplus\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Affichage}
+\paragraph{Panneau d affichage libre}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Panneau d affichage libre} & 31\_04\_02\_01 & Panneau d affichage libre\\
+
+
+\cline{2-3}                    & 31\_04\_02\_02 & Colonne d affichage libre\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Fourreau pour mat de pavoisement}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Fourreau pour mat de pavoisement} & 31\_04\_03\_01 & Fourreau pour Mat de Pavoisement\\
+
+
+\cline{2-3}                    & 31\_04\_03\_02 & Drapeau\\
+
+
+\cline{2-3}                    & 31\_04\_03\_03 & Pendule/horloge\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Espaces Verts}
+\paragraph{Objet Surfacique (vespachien, jeu d enfants, kiosque,  )}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{Objet Surfacique (vespachien, jeu d enfants, kiosque,  )} & 31\_05\_01\_01 & Sanisette\\
+
+
+\cline{2-3}                    & 31\_05\_01\_02 & Vespachien\\
+
+
+\cline{2-3}                    & 31\_05\_01\_03 & Aire de Jeux d enfants\\
+
+
+\cline{2-3}                    & 31\_05\_01\_04 & Kiosque\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Linéaire ()}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet Linéaire () & 31\_05\_02\_01 & Objet Linéaire Mobilier Urbain Espaces Verts\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Ponctuel (Banc, Jardinière,  )}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Objet Ponctuel (Banc, Jardinière,  )} & 31\_05\_03\_02 & Jardinière\\
+
+
+\cline{2-3}                    & 31\_05\_03\_03 & Grille d arbre\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Sécurité}
+\paragraph{Objet Surfacique (Poste de Contrôle d accès,  )}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Objet Surfacique (Poste de Contrôle d accès,  ) & 31\_06\_01\_01 & Boucle capteur Poste de Contrôle d Accès\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Linéaire (barrière de ville, chaîne, gabarit de hauteur, barrière levante,  )}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{7}{10cm}{Objet Linéaire (barrière de ville, chaîne, gabarit de hauteur, barrière levante,  )} & 31\_06\_02\_01 & Barrière fixe - Croix de saint andré\\
+
+
+\cline{2-3}                    & 31\_06\_02\_02 & Chaîne\\
+
+
+\cline{2-3}                    & 31\_06\_02\_03 & Gabarit de hauteur\\
+
+
+\cline{2-3}                    & 31\_06\_02\_04 & Barrière levante\\
+
+
+\cline{2-3}                    & 31\_06\_02\_05 & Obstacle de passage\\
+
+
+\cline{2-3}                    & 31\_06\_02\_06 & Glissière de sécurité\\
+
+
+\cline{2-3}                    & 31\_06\_02\_07 & Parapet\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Objet Ponctuel (Borne / Potelet,  )}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{Objet Ponctuel (Borne / Potelet,  )} & 31\_06\_03\_01 & Borne fixe / potelet\\
+
+
+\cline{2-3}                    & 31\_06\_03\_02 & Borne escamotable\\
+
+
+\cline{2-3}                    & 31\_06\_03\_03 & Poteau lecteur Poste de Contrôle d Accès\\
+
+
+\cline{2-3}                    & 31\_06\_03\_04 & Caméra\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Services (souvent externe à la ville de La Rochelle)}
+\paragraph{Boite aux lettres}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Boite aux lettres & 31\_07\_01\_01 & Boite aux lettres\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Cabine téléphonique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Cabine téléphonique & 31\_07\_02\_01 & Cabine téléphonique\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Coffret relais de la poste}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Coffret relais de la poste & 31\_07\_03\_01 & Coffret relais de La Poste\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Container déchet}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Container déchet & 31\_07\_04\_01 & Container à déchet\\
+\hline
+\end{supertabular}
+\subsection{Geodesie, Points de référence et Habillage}
+\subsubsection{\large Géodésie}
+\paragraph{Point géodésique}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Point géodésique & 33\_01\_01\_02 & Station de polygonation ou station GPS\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Point nivellement}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Point nivellement} & 33\_01\_02\_01 & Repère de nivellement\\
+
+
+\cline{2-3}                    & 33\_01\_02\_02 & Point altimétrique\\
+
+
+\cline{2-3}                    & 33\_01\_02\_03 & Texte altitude du point\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Courbe de niveau}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{2}{10cm}{Courbe de niveau} & 33\_01\_03\_01 & Courbe de niveau\\
+
+
+\cline{2-3}                    & 33\_01\_03\_02 & Texte altitude de la courbe\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Points de référence}
+\paragraph{Position géographique d un appareil de fontainerie du réseau eau potable ou gaz}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{3}{10cm}{Position géographique d un appareil de fontainerie du réseau eau potable ou gaz} & 33\_02\_01\_01 & Bouche a clef eau potable (position levée par géomètre)\\
+
+
+\cline{2-3}                    & 33\_02\_01\_02 & Bouche à clef gaz (position levée par géomètre)\\
+
+
+\cline{2-3}                    & 33\_02\_01\_03 & Poteau incendie (position levée par géomètre)\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Position géographique d un regard ou d une plaque}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{7}{10cm}{Position géographique d un regard ou d une plaque} & 33\_02\_02\_01 & Position géographique d un regard rond\\
+
+
+\cline{2-3}                    & 34\_02\_02\_02 & Position géographique d un regard carré\\
+
+
+\cline{2-3}                    & 35\_02\_02\_03 & Position géographique d une plaque ronde\\
+
+
+\cline{2-3}                    & 36\_02\_02\_04 & Position géographique d une plaque simple\\
+
+
+\cline{2-3}                    & 37\_02\_02\_05 & Position géographique d une plaque double\\
+
+
+\cline{2-3}                    & 38\_02\_02\_06 & Position géographique d une plaque triple\\
+
+
+\cline{2-3}                    & 39\_02\_02\_07 & Position géographique d une plaque quadruple\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Position géographique d un Support (système d accrochage vertical)}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Position géographique d un Support (système d accrochage vertical) & 33\_02\_03\_01 & Position géographique d un Support (système d accrochage vertical)\\
+\hline
+\end{supertabular}
+
+\subsubsection{\large Habillage}
+\paragraph{Élément d habillage non géo-référencé}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{4}{10cm}{Élément d habillage non géo-référencé} & 33\_03\_01\_01 & Cadre et cartouche\\
+
+
+\cline{2-3}                    & 33\_03\_01\_02 & Logo\\
+
+
+\cline{2-3}                    & 33\_03\_01\_03 & Flèche nord\\
+
+
+\cline{2-3}                    & 33\_03\_01\_04 & Barre d échelle graphique\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Élément d habillage géo-référencé}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} Élément d habillage géo-référencé & 33\_03\_02\_03 & Emprise géographique d une opération\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Texte divers non géo-référencé}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{5}{10cm}{Texte divers non géo-référencé} & 33\_03\_03\_01 & Date\\
+
+
+\cline{2-3}                    & 33\_03\_03\_02 & Auteur\\
+
+
+\cline{2-3}                    & 33\_03\_03\_03 & Échelle du plan d origine\\
+
+
+\cline{2-3}                    & 33\_03\_03\_04 & Légende\\
+
+
+\cline{2-3}                    & 33\_03\_03\_05 & Autre Texte du Cartouche\\
+\hline
+\end{supertabular}
+
+
+\paragraph{Texte divers géo-référencé}
+\noindent
+\vspace{\baselineskip}
+
+\renewcommand{\arraystretch}{1.2}
+\begin{supertabular}{|p{10cm}|c|p{15cm}|}
+\cline{2-3} \multirow{6}{10cm}{Texte divers géo-référencé} & 33\_03\_04\_01 & Nom du quartier\\
+
+
+\cline{2-3}                    & 33\_03\_04\_02 & Nom de la voie\\
+
+
+\cline{2-3}                    & 33\_03\_04\_03 & Numéro du bâtiment (adresse postale / numéro de façade)\\
+
+
+\cline{2-3}                    & 33\_03\_04\_04 & Nom du bâtiment\\
+
+
+\cline{2-3}                    & 33\_03\_04\_05 & Nom de la société occupant le bâtiment\\
+
+
+\cline{2-3}                    & 33\_03\_04\_06 & Nombre détage pour un bâtiment (ex: R+2)\\
+\hline
+\end{supertabular}
+
+\end{document}

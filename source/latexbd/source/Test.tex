@@ -1,0 +1,307 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a3paper,landscape,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Catalogue des objets topographiques}
+
+% Les parametres de connexion
+\begin{lbdpython}
+# #################### #
+# debut du code python #
+# #################### #
+# connexion à la base topographie
+# -------------------------------
+db = create_engine('postgres://fred@localhost/topographie')
+metadata = BoundMetaData(db)
+
+
+# definition des requetes : cf syntaxe SQLAlchemy
+# -----------------------------------------------
+# on definit les tables
+theme_table = Table('theme', metadata, autoload=True)
+domaine_table = Table('domaine', metadata, autoload=True)
+classe_table = Table('classe', metadata, autoload=True)
+objet_table = Table('objet', metadata, autoload=True)
+
+# on definit les alias
+th = theme_table.alias('th')
+dom = domaine_table.alias('dom')
+cls = classe_table.alias('cls')
+obj = objet_table.alias('obj')
+
+# les requetes seront definies et executées au fur et à mesure
+
+\end{lbdpython}
+
+\begin{document}
+
+%\begin{landscape}
+\maketitle{}
+%\end{landscape}
+
+
+% dans le frontmatter, on met la préface et l'introduction generale
+% dans le mainmatter, on met les differents chapitres
+% dans le backmatter, on met la conclusion general et le sommaire
+\frontmatter
+
+% préface
+% ^^^^^^^
+\chapter{Préface}
+Les services techniques de la ville de La Rochelle sont amenés à manipuler des plans à grande échelle.
+Ils peuvent parfois aussi être amenés à gérer ces objets topographiques qui sont représentés sur ces plans.
+En effet, certains de ces objets peuvent être sous la responsabilité de la ville de La Rochelle. 
+
+\vspace{\baselineskip}
+Le but de ce document est de recenser ces objets topographiques et de proposer une organisation informatique facilitant la gestion de ces objets.
+
+\vspace{\baselineskip}
+Dans ce document, on appelle objet topographique tout objet pouvant être réprésenté sur un plan à grande échelle.
+
+% introdution generale
+% ^^^^^^^^^^^^^^^^^^^^
+\chapter{Introduction}
+Les objets topographiques ont été classés.
+Ce classement se décompose en Thèmes, Domaines et Classes.
+
+Dans un premier temps, on présentera ce système de classement, puis, on listera ces différents objets en fonction de leur prise en charge actuel dans le SIG :
+\begin{enumerate}
+  \item l'objet n'est pas actuellement présent dans le SIG,
+  \item l'objet est déjà pris en charge dans le SIG,
+  \item liste de tous les objets, quelque soit son niveau de prise en charge.
+\end{enumerate}
+
+\mainmatter
+
+\chapter{Les objets SIG}
+
+
+
+% Les objets SIG
+% ^^^^^^^^^^^^^^
+\section{Les Objets - Présentation sous la forme d'un document structuré}
+
+\vspace{\baselineskip}
+% Requete req_objet
+%\texdbdef{##req_objet}{
+%SELECT
+%   theme.theme_id as ThemeId,
+%   theme.theme_libelle as ThemeLibelle,
+%   domaine.domaine_id as DomaineId,
+%   domaine.domaine_libelle as DomaineLibelle,
+%   classe.classe_id as ClasseId,
+%   classe.classe_libelle as ClasseLibelle,
+%   objet.objet_id as ObjetId,
+%   objet.objet_libelle as ObjetLibelle
+%FROM theme, domaine, classe, objet
+%WHERE theme.theme_id = domaine.theme_id
+%  AND domaine.domaine_id = classe.domaine_id
+%  AND classe.classe_id = objet.classe_id
+%ORDER by theme.theme_id, domaine.domaine_id, classe.classe_id, objet.objet_id; }
+
+% les options de supertabular sont a definir
+% avant \begin{supertabular}
+\tablefirsthead{
+%\hline
+%\multicolumn{3}{|c|}{Objet} \\
+%\hline
+%\multicolumn{1}{|c|}{Theme / Domaine / Classe} & \multicolumn{2}{|c|}{Objet} \\
+\hline
+Classe & Identifiant & Objet \\
+\hline
+}
+\tablehead{
+%\hline
+%\multicolumn{3}{|c|}{Objet} \\
+%\hline
+%\multicolumn{1}{|c|}{Theme / Domaine / Classe} & \multicolumn{2}{|c|}{Objet} \\
+\hline
+Classe & Identifiant & Objet \\
+\hline
+}
+%\begin{supertabular}{|m{10cm}|c|m{15cm}|}
+
+\begin{lbdpython}
+
+# on definit un booleen permettant de distinguer
+# la permiere ligne des autres lignes
+# c'est la premiere ligne pour un niveau 0
+# il faudra ecrire begin{supertabular}
+debut_niveau_00 = 1
+
+
+# on definit une requete de comptage
+# cette requete est utilisée pour la mise en forme du tableau
+#-- pour chaque theme, calcul du nombre d'objets
+#SELECT
+#   theme.theme_id as ThemeId,
+#   count(1)
+#FROM theme, domaine, classe, objet
+#WHERE theme.theme_id = domaine.theme_id 
+#  AND domaine.domaine_id = classe.domaine_id
+#  AND classe.classe_id = objet.classe_id
+#GROUP BY theme.theme_id
+#ORDER BY theme.theme_id;
+
+req_theme_count = select([th.c.theme_id, func.count(1)],
+                  and_(th.c.theme_id == dom.c.theme_id,
+                       dom.c.domaine_id == cls.c.domaine_id,
+                       cls.c.classe_id == obj.c.classe_id,
+                       obj.c.bool_objet_sig == 0),
+                  group_by=[th.c.theme_id],
+                  order_by=[th.c.theme_id])
+result_niveau_01 = req_theme_count.execute()
+for row_niveau_01 in result_niveau_01:
+   # on definit un booleen permettant de distinguer dans le tableau
+   # la permiere ligne des autres lignes
+   # c'est la premiere ligne pour un niveau 1
+   debut_niveau_01 = 1
+   theme_encours_id = row_niveau_01.theme_id
+   # on liste les domaines et on compte les objets correspondant à ce theme_encours_id
+   #-- pour chaque domaine, calcul du nombre d'objets
+   #SELECT
+   #   theme.theme_id as ThemeId,
+   #   domaine.domaine_id as DomaineId,
+   #   count(1)
+   #FROM theme, domaine, classe, objet
+   #WHERE theme.theme_id = domaine.theme_id
+   #  AND domaine.domaine_id = classe.domaine_id
+   #  AND classe.classe_id = objet.classe_id
+   #GROUP BY theme.theme_id, domaine.domaine_id
+   #ORDER BY theme.theme_id, domaine.domaine_id;
+   req_domaine_count = select([th.c.theme_id, dom.c.domaine_id, func.count(1)],
+                       and_(th.c.theme_id == dom.c.theme_id,
+                            dom.c.domaine_id == cls.c.domaine_id,
+                            cls.c.classe_id == obj.c.classe_id,
+                            th.c.theme_id == theme_encours_id,
+                            obj.c.bool_objet_sig == 0),
+                       group_by=[th.c.theme_id, dom.c.domaine_id],
+                       order_by=[th.c.theme_id, dom.c.domaine_id])
+   result_niveau_02 = req_domaine_count.execute()
+   for row_niveau_02 in result_niveau_02:
+      # on definit un booleen permettant de distinguer dans le tableau
+      # la permiere ligne des autres lignes
+      # c'est la premiere ligne pour un niveau 2
+      debut_niveau_02 = 1
+      domaine_encours_id = row_niveau_02.domaine_id
+      # on liste les classes et on compte les objets correspondant à ce domaine_encours_id
+      #-- pour chaque classe, calcul du nombre d'objets
+      #SELECT
+      #   theme.theme_id as ThemeId,
+      #   domaine.domaine_id as DomaineId,
+      #   classe.classe_id as Classe_id,
+      #   count(1)
+      #FROM theme, domaine, classe, objet
+      #WHERE theme.theme_id = domaine.theme_id 
+      #  AND domaine.domaine_id = classe.domaine_id
+      #  AND classe.classe_id = objet.classe_id
+      #GROUP BY theme.theme_id, domaine.domaine_id, classe.classe_id
+      #ORDER BY theme.theme_id, domaine.domaine_id, classe.classe_id;
+      req_classe_count = select([th.c.theme_id, dom.c.domaine_id,
+                                 cls.c.classe_id, func.count(1)],
+                         and_(th.c.theme_id == dom.c.theme_id,
+                              dom.c.domaine_id == cls.c.domaine_id,
+                              cls.c.classe_id == obj.c.classe_id,
+                              dom.c.domaine_id == domaine_encours_id,
+                              obj.c.bool_objet_sig == 0),
+                         group_by=[th.c.theme_id, dom.c.domaine_id, cls.c.classe_id],
+                         order_by=[th.c.theme_id, dom.c.domaine_id, cls.c.classe_id])
+      result_niveau_03 = req_classe_count.execute()
+      for row_niveau_03 in result_niveau_03:
+         # on definit un booleen permettant de distinguer dans le tableau
+         # la permiere ligne des autres lignes
+         # c'est la premiere ligne pour un niveau 3
+         debut_niveau_03 = 1
+         classe_encours_id = row_niveau_03.classe_id
+         # recherche des classes correspondant à ce domaine_encours_id
+         # -- selection objet
+         #SELECT
+         #   theme.theme_id as ThemeId,
+         #   theme.theme_libelle as ThemeLibelle,
+         #   domaine.domaine_id as DomaineId,
+         #   domaine.domaine_libelle as DomaineLibelle,
+         #   classe.classe_id as ClasseId,
+         #   classe.classe_libelle as ClasseLibelle,
+         #   objet.objet_id as ObjetId,
+         #   objet.objet_libelle as ObjetLibelle
+         #FROM theme, domaine, classe, objet
+         #WHERE theme.theme_id = domaine.theme_id
+         #  AND domaine.domaine_id = classe.domaine_id
+         #  AND domaine.domaine_id = domaine_encours_id
+         #ORDER by theme.theme_id, domaine.domaine_id, classe_id;
+         req_objet_select = select([th.c.theme_id, th.c.theme_libelle,
+                                    dom.c.domaine_id, dom.c.domaine_libelle,
+                                    cls.c.classe_id, cls.c.classe_libelle,
+                                    obj.c.objet_id, obj.c.objet_libelle],
+                              and_(th.c.theme_id == dom.c.theme_id,
+                                   dom.c.domaine_id == cls.c.domaine_id,                              
+                                   cls.c.classe_id == obj.c.classe_id,                              
+                                   cls.c.classe_id == classe_encours_id,
+                                   obj.c.bool_objet_sig == 0),
+                              order_by=[th.c.theme_id, dom.c.domaine_id, cls.c.classe_id, obj.c.objet_id])
+         result_niveau_04 = req_objet_select.execute()
+         for row_niveau_04 in result_niveau_04:
+            if (debut_niveau_00 == 0) and (debut_niveau_01 == 1 or debut_niveau_02 == 1 or debut_niveau_03 == 1):
+               but.write(r"\hline"+"\n")
+               chaine = r"\end{supertabular}"
+               but.write(chaine+"\n")               
+            if debut_niveau_01 == 1:
+               chaine = r"\subsection{%s}" %row_niveau_04.theme_libelle
+               but.write(chaine+"\n")
+            else:
+               but.write(""+"\n")
+            if debut_niveau_02 == 1:
+               chaine = r"\subsubsection{\large %s}" %row_niveau_04.domaine_libelle
+               but.write(chaine+"\n")
+            else:
+               but.write(""+"\n")
+            if debut_niveau_03 == 1:
+               if row_niveau_03.count == 1:
+                  chaine_colonne_03 = r"%s" %(row_niveau_04.classe_libelle)
+               else:
+                  chaine_colonne_03 = r"\multirow{%s}{10cm}{%s}" %(row_niveau_03.count, row_niveau_04.classe_libelle)
+               chaine = r"\paragraph{%s}" %row_niveau_04.classe_libelle
+               but.write(chaine+"\n")
+               chaine = r"\noindent"
+               but.write(chaine + "\n")
+               chaine = r"\vspace{\baselineskip}"
+               but.write(chaine + "\n" + "\n")
+               chaine = r"\renewcommand{\arraystretch}{1.2}"
+               but.write(chaine + "\n")
+               chaine = r"\begin{supertabular}{|p{10cm}|c|p{15cm}|}"
+               but.write(chaine+"\n")
+            else:
+               chaine_colonne_03 = r"                  "
+            chaine_cline = r"\cline{2-3}"
+            debut_niveau_00 = 0
+            debut_niveau_01 = 0
+            debut_niveau_02 = 0
+            debut_niveau_03 = 0
+            chaine_colonne_04 = r"%s" %(row_niveau_04.objet_id)
+            chaine_colonne_05 = r"%s" %(row_niveau_04.objet_libelle)
+            but.write(chaine_cline + " " + chaine_colonne_03 
+                      + " & " + chaine_colonne_04
+                      + " & " + chaine_colonne_05
+                      + r"\\" + "\n")
+# on n'oublie pas de refermer le tableau
+but.write(r"\hline"+"\n")
+chaine = r"\end{supertabular}"
+but.write(chaine+"\n")
+\end{lbdpython}
+
+\end{document}

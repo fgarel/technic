@@ -2,23 +2,8 @@
 Mapnik
 ######
 
-************
-Installation
-************
 
-*********************
-Utilisation de mapnik
-*********************
-
-
-Generer une image à partir d'une emprise
-========================================
-
-Les données initiales
----------------------
-
-lkljlkj 
-
-La generation de l'image
-------------------------
+.. include:: mapnik/introduction.rst
+.. include:: mapnik/chapter01.rst
+.. include:: mapnik/chapter02.rst
 

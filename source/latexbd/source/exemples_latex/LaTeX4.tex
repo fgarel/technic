@@ -1,0 +1,51 @@
+% Tout ce qui est mis derrière un « % » n'est pas vu par LaTeX
+% On appelle cela des « commentaires ».  Les commentaires permettent de
+% commenter son document - comme ce que je suis en train de faire
+% actuellement - et de cacher du code - cf. la ligne \pagestyle.
+
+\documentclass[a4paper]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[cyr]{aeguill}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage[english,francais]{babel}
+\usepackage{url}
+\let\urlorig\url
+\renewcommand{\url}[1]{%
+  \begin{otherlanguage}{english}\urlorig{#1}\end{otherlanguage}%
+}
+\renewcommand{\contentsname}{Sommaire} % si tableofcontents au début
+\newcommand{\Numero}{\No}
+\newcommand{\numero}{\no}
+\newcommand{\fup}[1]{\up{#1}}
+%%% N'oubliez pas les espaces devant les doubles ponctuations
+\NoAutoSpaceBeforeFDP
+
+
+\title{Mon premier document Latex}   % Les paramètres du titre : titre, auteur, date
+\author{Frédéric Garel}
+\date{}                       % La date n'est pas requise (la date du
+                              % jour de compilation est utilisée en son
+			                        % absence
+			                        
+% DB connection
+\textdbconnection{PostGreSQL,localhost,fred,fred,test}
+
+\texdbdef{##q1}{select objet_id, objet_libelle from objet}{##objet_id,##objet_libelle}	                        
+			                        
+
+\begin{document}
+
+\maketitle                    % Faire un titre utilisant les données
+                              % passées à \title, \author et \date
+
+\begin{tabular}{|1-1|}
+\hline
+objet_id & objet_libelle \\
+\texdbfor{##q1}{\hline \textit
+
+\end{tabular}\\
+
+This is a footer for the page.
+\end{document}

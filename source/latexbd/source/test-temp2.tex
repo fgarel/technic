@@ -1,0 +1,75 @@
+\documentclass[12pt,titlepage,oneside]{book}
+
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[a3paper,landscape,vmargin=2cm,hmargin=1.5cm]{geometry}
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{lscape}
+
+\usepackage{pslatex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Direction des Systèmes d'Information\\
+Pôle Géomatique}
+\title{Catalogue des objets topographiques}
+
+% Les parametres de connexion
+
+
+% les requetes
+
+\begin{document}
+
+% essai code python pour fabriquer un tableau
+\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}
+\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+1 & 2 & 3 & 4 \\\hline
+\end{tabular}
+
+% essai code python pour parcourir resultat requete
+avant \\
+\begin{tabular}{|m{3cm}|m{3cm}|}
+\hline
+
+% essai d'un tableau
+\begin{tabular}{|m{3cm}|m{3cm}|c|m{3cm}|}
+\hline
+\multicolumn{4}{|c|}{Essai Tableau} \\
+\hline
+\multicolumn{1}{|c|}{Theme} & \multicolumn{1}{|c|}{Domaine}  & \multicolumn{2}{|c|}{classe} \\
+\cline{1-4}      \multirow{5}*{theme01} & \multirow{2}*{domaine01} & 1 & 2 \\
+\cline{3-4}                               &                            & 2 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine02} & 3 & 2 \\
+\cline{3-4}                               &                            & 4 & 2 \\
+\cline{3-4}                               &                            & 5 & 2 \\
+\cline{1-4}      \multirow{6}*{theme02} & \multirow{3}*{domaine03} & 6 & 2 \\
+\cline{3-4}                               &                            & 7 & 2 \\
+\cline{3-4}                               &                            & 8 & 2 \\
+\cline{2-4}                               & \multirow{3}*{domaine04} & 9 & 2 \\
+\cline{3-4}                               &                            & 10 & 2 \\
+\cline{3-4}                               &                            & 11 & 2 \\
+\cline{1-4}      \multirow{2}*{theme03} & \multirow{1}*{domaine05} & 12 & 2 \\
+\cline{2-4}                               & \multirow{1}*{domaine06} & 13 & 2 \\
+\cline{1-4}      \multirow{1}*{theme04} & \multirow{1}*{domaine07} & 14 & 2 \\
+\hline
+\end{tabular}
+
+
+
+\end{document}
