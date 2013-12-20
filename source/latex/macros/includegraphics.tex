@@ -41,6 +41,7 @@
     \end{subfigure}
 }
 
+% Vertical
 \newcommand\includePhotoMoitieVertical[2]{% 2 photos par ligne, orientation portrait
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
@@ -49,6 +50,14 @@
     \end{subfigure}
 }
 
+% vertical retourné (2V)
+\newcommand\includePhotoMoitieVVertical[2]{% 2 photos par ligne, orientation portrait
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+        \caption{Point #2}
+        \label{#1}
+    \end{subfigure}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % photo horizontale, avec un zoom au centre
 % definition d'une nouvelle commande avec deux arguments
@@ -65,6 +74,69 @@
     ~
     \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[angle=0,viewport=600 450 1000 750,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo horizontale, avec un zoom décalé
+\newcommand\includePhotoDetailHorizontalHuitQuatre[2]{% on centre sur le point de coordonnes 800 400
+\begin{figure}[!h]
+    \centering
+    \includePhotoMoitieHorizontal{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=600 250 1000 550,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo horizontale, avec un zoom décalé
+\newcommand\includePhotoDetailHorizontalQuatreQuatre[2]{% on centre sur le point de coordonnes 400 400
+\begin{figure}[!h]
+    \centering
+    \includePhotoMoitieHorizontal{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=200 250 600 550,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
+
+% photo horizontale, avec un zoom décalé
+\newcommand\includePhotoDetailHorizontalSixSix[2]{% on centre sur le point de coordonnes 600 600
+\begin{figure}[!h]
+    \centering
+    \includePhotoMoitieHorizontal{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=0,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=0,viewport=400 450 800 750,bb=0 0 4000 3000,width=6.6cm,keepaspectratio=true,clip=true]{#1.JPG}
         \caption{Détail du point #2}%+200+150
         \label{Zoom #1}
     \end{subfigure}
@@ -94,6 +166,7 @@
 \end{figure}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % photo verticale, avec un zoom au centre
 \newcommand\includePhotoDetailVerticalHuitSix[2]{
 \begin{figure}[!h]
@@ -135,6 +208,7 @@
 %\end{figure}
 %}
 
+
 % photo verticale, avec un zoom décalé
 \newcommand\includePhotoDetailVerticalDixQuatre[2]{% On centre sur le point de cooreonnes 1000 400
 \begin{figure}[!h]
@@ -156,6 +230,27 @@
 \end{figure}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% photo verticaleRetourné, avec un zoom au centre
+\newcommand\includePhotoDetailVVerticalHuitSix[2]{
+\begin{figure}[!h]
+    \centering
+    \includePhotoMoitieVVertical{#1}{#2}
+    %\begin{subfigure}[b]{0.45\textwidth}
+    %    \includegraphics[angle=-90,viewport=0 0 1600 1200,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true]{#1.JPG}
+    %    \caption{Point #2}%+200+150
+    %    \label{#1}
+    %\end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[angle=90,viewport=600 450 1000 750,bb=0 0 4000 3000,width=4.4cm,keepaspectratio=true,clip=true]{#1.JPG}
+        \caption{Détail du point #2}%+200+150
+        \label{Zoom #1}
+    \end{subfigure}
+    \caption{Détail du point #2}
+    \label{Point Cible #2}
+\end{figure}
+}
 
 
 
