@@ -23,7 +23,7 @@ Pour récupérer l'image d'une parcelle
 
 http://www.cadastre.gouv.fr/scpc/rechercherParReferenceCadastrale.do?ville=LA+ROCHELLE&codePostal=17000&codeDepartement=017&rechercheType=1&prefixeParcelle=000&sectionLibelle=BX&numeroParcelle=217&prefixeFeuille=000&feuilleLibelle=BY01&nbResultatParPage=10&x=45&y=6
 
-http://www.cadastre.gouv.fr/scpc/afficherCarteParcelle.do?p=9A300000BX0217&f=9A300000BX01&dontSaveLastForward&keepVolatileSessioni
+http://www.cadastre.gouv.fr/scpc/afficherCarteParcelle.do?p=9A300000BX0217&f=9A300000BX01&dontSaveLastForward&keepVolatileSession
 
 Pour recuperer le plan pdf
 
