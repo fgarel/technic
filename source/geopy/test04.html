@@ -1,0 +1,687 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+
+
+
+
+
+
+
+<html lang="fr">
+
+
+
+
+<head>
+	<title>Commune : LA ROCHELLE (17) - Cadastre</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="imagetoolbar" content="no">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/carto/main.css" media="screen" type="text/css">
+	<!--[if IE 5.5000]>   <link rel="stylesheet" href="css/carto/main_IE_5_5.css" media="screen" type="text/css">  <![endif]-->
+	<!--[if gte IE 7.0]>  <link rel="stylesheet" href="css/IE7.css" media="screen" type="text/css">  <![endif]-->
+	<!--[if gte IE 6.0]>  <script type="text/JavaScript"> window.__IS_IE6__= 1; </script>  <![endif]-->
+	<!--[if IE 5.0]>  <script type="text/javascript"> window.__IS_IE5x__= 1; </script>  <![endif]-->
+	<!--[if IE 5.5000]>  <script type="text/javascript"> window.__IS_IE5x__= 1; </script>  <![endif]-->
+	<script type="text/javascript" src="js/fonctions.js"></script>
+
+
+	<!-- Code du contexte -->
+	<script type="text/javascript">
+
+		window.requestFichierPointsUrl="telechargerFichierPoints.do";
+		window.requestInformationParcellesUrl="afficherInfosParcelles.do";
+		window.requestInfoFeuilleUrl="editerInfosFeuille.do";
+		window.requestPrintPdfToPdf="imprimerExtraitCadastral.do";
+		window.requestPrintPlanSituation="imprimerPlanSituation.do";
+		window.requestPrint="/imprimerExtraitCadastralNonNormalise.do";
+
+		
+		
+
+		window.geoserverURL= "/scpc";
+		window.errorPagesBaseURL= "/scpc/html/error/";
+
+		
+
+		
+
+		
+
+		
+
+		window.aucuneProjection='M&eacute;trique locale';
+
+		function initMapContext(){
+			var tabPastilles=new Array();
+
+			
+			tabPastilles.push(new Point(1376764.41,5227483.61));
+			
+
+			
+
+			
+			
+
+			initMapTools(WMSMap.TYPE_VECTEUR);
+			window.contexte= new WMSMapContext(
+				window.carte,window.vignette,WMSMap.TYPE_VECTEUR,
+				"3946",
+				new GeoBox(
+					1376758.56,
+					5227464.64,
+					1376776.22,
+					5227497.24),
+				new GeoBox(
+					1376586.16,
+					5227250.41,
+					1377625.21,
+					5227732.03),
+				new GeoBox(
+					1372315.19,
+					5223018.39,
+					1382563.36,
+					5229860.5),
+				"RGF93CC46",
+				0,null,null,null,null,null,null,
+				"CDIF",
+				"9A300000BY01",
+				"9A300000BY01".substr(0,5),
+				tabPastilles,null);
+
+			
+			
+			
+
+			InterfaceAPI.setProjectionName("RGF93CC46");
+		}
+	</script>
+	<!-- Code du contexte -->
+
+	<!-- Code de l'integration -->
+	<link rel="stylesheet" type="text/css" href="css/carto/map.css" id="map.css"></link>
+	<script type="text/javascript" src="js/carto/Utils/XMLHttpRequest.js"></script>
+	<script type="text/javascript" src="js/carto/Chargement.js"></script>
+	<script type="text/javascript" src="js/carto/Main.js"></script>
+	<!-- Code de l'integration -->
+</head>
+
+
+
+<body onload="init(1);" onresize="redimensionnerCarto();">
+
+
+
+
+	<p id="logo">
+		
+				
+				
+					<img src="img/logo_carto.gif" alt="cadastre.gouv.fr" title="cadastre.gouv.fr">
+				
+		
+	</p>
+
+	<div id="content">
+
+		<div id="all_tools">
+
+			<div id="manips">
+				<p id="mini_carte"
+					title="Aper&ccedil;u du plan">
+					<img id="chargement_petite_carte" class="chargement_carte" src="img/carto/loading_carte.gif" alt="Chargement en cours" title="Chargement en cours">
+				</p>
+				<ul>
+					<li>
+						<a id="zoom_commune"
+							onclick="window.contexte.centrerCommune();" class="dis">&gt; Centrer sur la commune</a>
+					</li>
+					<li>
+						<a id="zoom_feuille"
+							 onclick="window.contexte.centrerFeuille();" class="dis">&gt; Centrer sur la feuille</a>
+					</li>
+				</ul>
+				<p id="zoom">
+					<a title="Zoom arri&egrave;re" id="moins" onclick="if(window.myZoomMinus) myZoomMinus.zoom()">
+						<img
+							src="img/carto/zoom_moins.gif"
+							alt="Zoom arri&egrave;re"
+							title="Zoom arri&egrave;re"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a onclick="if(window.myCurseur) myCurseur.gotoPalierPrecedent();">
+						<img
+							src="img/carto/zoom_palier_precedent.gif"
+							id="palier_pre"
+							title="Palier pr&eacute;c&eacute;dent"
+							alt="Palier pr&eacute;c&eacute;dent"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<span id="curseur_box">
+						<span id="curseur_tooltip" class="tooltip"></span>
+						<a onmousedown="if(window.myCurseur) myCurseur.activate();return false;" id="curseur">
+							<img id="img_curseur" src="img/carto/zoom_curseur.gif"
+								alt="D&eacute;placer le curseur pour zoomer"
+								title="D&eacute;placer le curseur pour zoomer">
+						</a>
+					</span>
+					<a id="suivant" onclick="if(window.myCurseur) myCurseur.gotoPalierSuivant();">
+						<img
+							src="img/carto/zoom_palier_suivant.gif"
+							title="Palier suivant"
+							id="palier_sui"
+							alt="Palier suivant"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a title="Zoom avant" id="plus" onclick="if(window.myZoomPlus) myZoomPlus.zoom()">
+						<img
+							src="img/carto/zoom_plus.gif"
+							alt="Zoom avant"
+							title="Zoom avant"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+				</p>
+				<p id="tools">
+					<a title="D&eacute;placement du plan &agrave; la souris">
+						<img
+							id="mode_pan"
+							src="img/carto/tool_pan.gif"
+							alt="D&eacute;placement du plan &agrave; la souris"
+							title="D&eacute;placement du plan &agrave; la souris"
+							onclick="if(window.myMode) myMode.activerOutil(this);"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a title="Centrer le plan">
+						<img
+							id="mode_centre"
+							src="img/carto/tool_centre.gif"
+							alt="Centrer le plan"
+							title="Centrer le plan"
+							onclick="if(window.myMode) myMode.activerOutil(this);"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a title="Zoom par s&eacute;lection">
+						<img
+							id="mode_zoom_box"
+							src="img/carto/tool_zoom.gif"
+							alt="Zoom par s&eacute;lection"
+							title="Zoom par s&eacute;lection"
+							onclick="if(window.myMode) myMode.activerOutil(this);"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a title="Zoom panoramique">
+						<img
+							src="img/carto/tool_elarg.gif"
+							alt="Zoom panoramique"
+							title="Zoom panoramique"
+							onclick="if(window.carte) carte.setViewGeoBox(carte.getWideGeoBox());carte.reload();"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+				</p>
+				<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+				<form action="javascript:if(window.myMode) myMode.mesModes['mode_centre'].panToCoord(dgebId('xcoord').value,dgebId('ycoord').value)" method="post" id="form_coordonnees">
+					<p id="systemeCoord">
+                        <label>Syst&egrave;me</label>
+                        <br>
+						<select name="systems" id="systemes" class="moyenlong"" onchange="
+	if(this.value=='WGS84DMS') {
+		dgebId('projCoords').style.display = 'none';
+		dgebId('geoCoords').style.display = 'block';
+
+		dgebId('loncoord').style.display = 'none';
+		dgebId('londegcoord').style.display = 'inline';
+		dgebId('lonmincoord').style.display = 'inline';
+		dgebId('lonseccoord').style.display = 'inline';
+
+		dgebId('latcoord').style.display = 'none';
+		dgebId('latdegcoord').style.display = 'inline';
+		dgebId('latmincoord').style.display = 'inline';
+		dgebId('latseccoord').style.display = 'inline';
+	} else if(this.value=='WGS84') {
+		dgebId('projCoords').style.display = 'none';
+		dgebId('geoCoords').style.display = 'block';
+
+		dgebId('loncoord').style.display = 'inline';
+		dgebId('londegcoord').style.display = 'none';
+		dgebId('lonmincoord').style.display = 'none';
+		dgebId('lonseccoord').style.display = 'none';
+
+		dgebId('latcoord').style.display = 'inline';
+		dgebId('latdegcoord').style.display = 'none';
+		dgebId('latmincoord').style.display = 'none';
+		dgebId('latseccoord').style.display = 'none';
+	} else {
+		dgebId('projCoords').style.display = 'block';
+		dgebId('geoCoords').style.display = 'none';
+	}
+						">
+                            <option value="">Projection</option>
+                            <option value="RGF93CC46" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;RGF93CC46</option>
+                            <option value="">G&eacute;ographique</option>
+							<option value="WGS84DMS">&nbsp;&nbsp;&nbsp;&nbsp;WGS84 (GPS) - DMS</option>
+							<option value="WGS84">&nbsp;&nbsp;&nbsp;&nbsp;WGS84 (GPS) - D&eacute;cimal</option>
+						</select>
+					</p>
+					<p id="geoCoords" style="display:none">
+					   <label for="loncoord"></label>
+  					   <input type="text" class="inputtext moyen" name="loncoord" id="loncoord" value=""
+  								onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+  								onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+  								onchange="
+  if(InterfaceAPI.checkNumericPositiveCoords(this)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLat();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="londegcoord" id="londegcoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 180)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="lonmincoord" id="lonmincoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 60)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="lonseccoord" id="lonseccoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 60)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+						<select name="longitude" id="longitude" class="inline" onchange="
+  if(dgebId('londegcoord').style.display == 'inline') {
+	InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  } else {
+	InterfaceAPI.updateGotoCoordinatesFromLonLat();
+  }">
+							
+								
+								
+								
+								
+								
+                                      <!-- France metropole -->
+									<option value="1" selected="selected">
+								
+							
+								N
+							</option>
+							
+								
+								
+								
+								
+								
+                                      <!-- France metropole -->
+									<option value="-1">
+								
+							
+								S
+							</option>
+						</select>
+                        </br>
+                        
+					    <label for="latcoord"></label>
+					    <input type="text" class="inputtext moyen" name="latcoord" id="latcoord" value=""
+						   onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+						   onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+						   onchange="
+  if(InterfaceAPI.checkNumericPositiveCoords(this)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLat();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="latdegcoord" id="latdegcoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 180)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="latmincoord" id="latmincoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 60)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+						<input type="text" class="inputtext trescourt" name="latseccoord" id="latseccoord" value=""
+							onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);"
+							onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"
+							onchange="
+  if(InterfaceAPI.checkNumericRangeValue(this, 0, 60)) {
+    InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  	return true;
+  }
+  return false;">
+					    <select name="latitude" id="latitude" class="inline" onchange="
+  if(dgebId('londegcoord').style.display == 'inline') {
+	InterfaceAPI.updateGotoCoordinatesFromLonLatDMS();
+  } else {
+	InterfaceAPI.updateGotoCoordinatesFromLonLat();
+  }">
+
+						   
+						       
+							
+							
+							
+							
+                                  <!-- France metropole -->
+								<option value="1" selected="selected">
+							
+						
+							E
+						</option>
+						
+							
+							
+							
+							
+							
+                                  <!-- France metropole -->
+								<option value="-1">
+							
+						
+							O
+						</option>
+				 	   </select>
+				 	   <input type="image" class="button" src="img/carto/but_valid.gif" value="" alt="Valider le zoom par coordonn&eacute;es" title="Valider le zoom par coordonn&eacute;es">
+                    </p>
+					<p id="projCoords">
+						<label for="xcoord">X :</label>
+						<input type="text" class="inputtext court" name="xcoord" id="xcoord" value="" onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);" onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);" onchange="
+	if(InterfaceAPI.checkNumericValues(this)) {
+		InterfaceAPI.updateGotoCoordinatesFromProj();
+		return true;
+	}
+	return false;">
+						&nbsp;
+						<label for="ycoord">Y :</label>
+						<input type="text" class="inputtext court" name="ycoord" id="ycoord" value="" onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);" onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);" onchange="
+	if(InterfaceAPI.checkNumericValues(this)) {
+		InterfaceAPI.updateGotoCoordinatesFromProj();
+		return true;
+	}
+	return false;">
+						<input type="image" class="button" src="img/carto/but_valid.gif" value="" alt="Valider le zoom par coordonn&eacute;es" title="Valider le zoom par coordonn&eacute;es">
+					</p>
+				</form>
+				<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+				<ul>
+					<li><a id="sauver_zoom" onclick="if(window.myMemoZoom){myMemoZoom.setZoom();}">&gt; M&eacute;moriser ce zoom</a></li>
+					<li><a id="zoom_memorise" onclick="if(window.myMemoZoom) myMemoZoom.getZoom();" class="dis">&gt; Zoom m&eacute;moris&eacute;</a></li>
+					<li><a id="zoom_precedent" onclick="if(window.myUndo) myUndo.doUndo();" class="dis">&gt; Zoom pr&eacute;c&eacute;dent</a></li>
+				</ul>
+				<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+				<p>
+					<input class="radio" type="checkbox" name="afficheDrapeau" id="afficheDrapeau"
+						onclick="window.carte.getWMSLayer('DRAPEAU').setVisible(this.checked);window.carte.reload();">
+					<label for="afficheDrapeau">Afficher un drapeau sur les parcelles en instance d'une mise &agrave; jour graphique</label>
+				</p>
+			</div>
+
+			<div id="outils">
+				<ul class="onglets_tools">
+					<li><h2><a id="menu_simples" onclick="if(window.myMenu) myMenu.simple()" class="on"><span><span>outils simples</span></span></a></h2></li>
+					<li><h2><a id="menu_advanced" onclick="if(window.myMenu) myMenu.avance()" ><span><span>outils avanc&eacute;s</span></span></a></h2></li>
+				</ul>
+				<div id="simples" class="clearfix">
+					<h3 id="title_simples_info" class="clearfix" onclick="if(window.myMenu) myMenu.infos();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>S'informer</a></h3>
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_simples_impression" class="clearfix" onclick="if(window.myMenu) myMenu.impression();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>Imprimer</a></h3>
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_simples_legendes" class="clearfix" onclick="if(window.myMenu) myMenu.legendes();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>L&eacute;gendes</a></h3>
+					<div id="tools_simples_legendes" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+				</div>
+				<div id="advanced" class="clearfix" style="display: none;">
+					<h3 id="title_advanced_info" class="clearfix" onclick="if(window.myMenu) myMenu.infos();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>S'informer</a></h3>
+					<div id="tools_advanced_info" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_advanced_impression" class="clearfix" onclick="if(window.myMenu) myMenu.impression();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>Imprimer</a></h3>
+					<div id="tools_advanced_impression" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_advanced_legendes" class="clearfix" onclick="if(window.myMenu) myMenu.legendes();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>L&eacute;gendes</a></h3>
+					<div id="tools_advanced_legendes" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_advanced_mesure" class="clearfix" onclick="if(window.myMenu) myMenu.mesure();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>Mesurer</a></h3>
+					<div id="tools_advanced_mesure" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+
+					
+					
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_advanced_dessin" class="clearfix" onclick="if(window.myMenu) myMenu.dessin();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>Dessiner</a></h3>
+					<div id="tools_advanced_dessin" class="outils">
+						<p class="clearfix"><span><img src="img/carto/loading_outils.gif" alt="Chargement en cours" title="Chargement en cours"></span></p>
+					</div>
+					
+					
+
+					<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+					<h3 id="title_advanced_fichier_point" class="clearfix" onclick="if(window.myMenu) myMenu.fichierpoint();" onmouseover="switchClass(this);" onmouseout="switchClass(this);"><a>Fichier de points</a></h3>
+
+					
+
+					<img src="img/carto/vide.gif" alt="S&eacute;paration" title="S&eacute;paration" class="trait">
+				</div>
+				<p><a title="D&eacute;sactiver" onclick="if(window.myMenu) myMenu.cacherOutils();"><img src="img/carto/but_dis.gif" alt="D&eacute;sactiver"></a></p>
+			</div>
+
+			<div id="affichage">
+				<h3 class="clearfix">Affichage</h3>
+				<img src="img/carto/trait.gif" alt="S&eacute;paration menu" title="S&eacute;paration menu" class="trait">
+				<p id="screens">
+					<a title="Affichage minimum">
+						<img
+							id="affichage_minimum"
+							src="img/carto/affichage_minimum.gif"
+							alt="Affichage minimum"
+							title="Affichage minimum"
+							onclick="if(window.myModeAffichage){myModeAffichage.setAffichage(this);carte.reload();}"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					<a title="Affichage moyen">
+						<img
+							id="affichage_moyen"
+							src="img/carto/affichage_moyen.gif"
+							alt="Affichage moyen"
+							title="Affichage moyen"
+							onclick="if(window.myModeAffichage){myModeAffichage.setAffichage(this);carte.reload();}"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					
+					
+					<a title="Affichage maximum">
+						<img
+							id="affichage_maximum"
+							src="img/carto/affichage_maximum.gif"
+							alt="Affichage maximum"
+							title="Affichage maximum"
+							onclick="if(window.myModeAffichage){myModeAffichage.setAffichage(this);carte.reload();}"
+							onmouseover="switchSRC(this);"
+							onmouseout="switchSRC(this);">
+					</a>
+					
+					
+				</p>
+				<ul>
+					<li><a id="sauver_affichage" onclick="if(window.myModeAffichage){myModeAffichage.saveAffichage();}" class="dis">&gt; M&eacute;moriser cet affichage</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="ItemExportPDF"></div>
+
+		<div id="conteneur_carte">
+			<ul id="liens_carte_full">
+				<li><a onclick="if(window.carte) carte.exporterPDF();" title="Imprimer le plan contenu dans la fen&ecirc;tre"><img src="img/carto/picto_print.gif" alt="Imprimer le plan contenu dans la fen&ecirc;tre"></a></li>
+				<li><a onclick="InterfaceAPI.switchSize();" title="Taille normale"><img src="img/carto/picto_reduc.gif" alt="Taille normale"></a></li>
+				<li><img src="img/carto/picto_full_dis.gif" alt="Plein &eacute;cran" title="Plein &eacute;cran"></li>
+			</ul>
+			<ul id="liens_carte">
+				<li><img src="img/carto/picto_reduc_dis.gif" alt="Taille normale" title="Taille normale"></li>
+				<li><a onclick="InterfaceAPI.switchSize();" title="Plein &eacute;cran"><img src="img/carto/picto_full.gif" alt="Plein &eacute;cran"></a></li>
+			</ul>
+
+			
+			
+			
+			
+			
+			
+				
+				
+				<h2 id="tit_carte"><span><span><strong>Parcelle 3 - Feuille 000 BY 01 - Commune : LA ROCHELLE (17)</strong></span></span></h2>
+			
+			
+			
+			
+			
+
+			<div id="carte">
+				<div id="carte_img">
+					<ul id="fleches" onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+						<li id="nd">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.TOP);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_nd.gif" alt="Nord" title="Nord">
+							</a>
+						</li>
+						<li id="nde">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.TOP_RIGHT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_horizontale.gif" alt="Nord-Est" title="Nord-Est">
+								<img src="img/carto/fleche_verticale.gif" alt="Nord-Est" title="Nord-Est">
+							</a>
+						</li>
+						<li id="est">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.RIGHT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_est.gif" alt="Est" title="Est">
+							</a>
+						</li>
+						<li id="sude">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.BOTTOM_RIGHT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_horizontale.gif" alt="Sud-Est" title="Sud-Est">
+								<img src="img/carto/fleche_verticale.gif" alt="Sud-Est" title="Sud-Est">
+							</a>
+						</li>
+						<li id="sud">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.BOTTOM);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_sud.gif" alt="Sud" title="Sud">
+							</a>
+						</li>
+						<li id="sudo">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.BOTTOM_LEFT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_horizontale.gif" alt="Sud-Ouest" title="Sud-Ouest">
+								<img src="img/carto/fleche_verticale.gif" alt="Sud-Ouest" title="Sud-Ouest">
+							</a>
+						</li>
+						<li id="ouest">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.LEFT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_ouest.gif" alt="Ouest" title="Ouest">
+							</a>
+						</li>
+						<li id="ndo">
+							<a
+								onclick="if(window.myMode) myMode.mesModes['mode_centre'].panTo(NavigationModePanTo.TOP_LEFT);"
+								onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+								<img src="img/carto/fleche_horizontale.gif" alt="Nord-Ouest" title="Nord-Ouest">
+								<img src="img/carto/fleche_verticale.gif" alt="Nord-Ouest" title="Nord-Ouest">
+							</a>
+						</li>
+					</ul>
+					<img id="chargement_grande_carte" class="chargement_carte" src="img/carto/loading_carte.gif" alt="Chargement en cours" title="Chargement en cours">
+
+					
+					<form action="javascript:if(window.carte) carte.getWorker().setText(dgebId('zoneSaisieTexte').value);" method="post" id="form_zone_saisie">
+						<p id="zone_saisie" onmouseover="if(window.EventsDispatcher) EventsDispatcher.setEnabled(false);" onmouseout="if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);">
+							<input type="text" class="inputtext moyen" value="" maxlength="50" name="zoneSaisieTexte" id="zoneSaisieTexte" onfocus="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(false);" onblur="if(window.EventsDispatcher) EventsDispatcher.setKeyDispatchEnabled(true);"/>
+							<a onclick="if(window.carte){carte.getWorker().setText(dgebId('zoneSaisieTexte').value);if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);}" title="Ins&eacute;rer">&gt; Ins&eacute;rer</a>
+							<a onclick="if(window.carte){carte.getWorker().cancel();if(window.EventsDispatcher) EventsDispatcher.setEnabled(true);}" title="Annuler">&gt; Annuler</a>
+						</p>
+					</form>
+					
+				</div>
+				<p id="infos_carte">
+                    
+					<span class="projectionTitre">&gt; Coordonn&eacute;es en projection :</span>
+                    <span id="projectionName" class="projectionNom">RGF93CC46</span>
+                    <span id="coords"></span>
+                    <br>
+                    <span class="projectionTitre">&gt; Coordonn&eacute;es g&eacute;ographiques :</span>
+                    <span class="projectionNom">WGS84 (GPS)</span>
+                    <span id="dmsCoords"></span> - <span id="latlonCoords"></span>
+				</p>
+				<p id="instruct">&nbsp;</p>
+			</div>
+		</div>
+
+		<div id="infos_texte" class="boites">
+			<h2 class="tit_boites"><a href="#" onclick="popup('aide.do?rubrique=cartographieId&amp;sousRubrique=cartographieNavigationId','aide')" class="aide"><img src="img/picto_aide.gif" alt="Aide" title="Aide"></a>
+				Veuillez patienter pendant le chargement des outils
+			</h2>
+			<div><img id="chargement_boite" src="img/carto/loading_carte.gif" alt="Chargement en cours" title="Chargement en cours"></div>
+		</div>
+
+	</div>
+
+	<div id="bas_page">
+		 <div id="div_footer"><p id="footer">&copy;2012 Ministère de l'Économie et des Finances</p></div> 
+		<p id="fermer"><a onclick="window.close();">Fermer la fen&ecirc;tre</a></p>
+	</div>
+
+</body>
+</html>
