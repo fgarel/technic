@@ -1,4 +1,6 @@
-
+****************
+ConvertDaoSig.sh
+****************
 Comment communiquer entre le monde de la DAO, ou le format DXF est roi, et la monde SIG, ou les données sont structurées ?
 
 La première des étapes pour répondre à cette question consiste déja à trouver la procédure permettant de passer les données d'un monde à l'autre.
