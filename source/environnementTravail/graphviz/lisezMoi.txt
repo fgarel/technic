@@ -1,0 +1,38 @@
+installation de graphviz
+
+aptitude install graphviz
+aptitude install librsvg2-bin
+aptitude install libsequel-ruby
+aptitude install rubygems
+aptitude install libsqlite3-ruby
+
+utilisation de graphviz
+vi test.dot
+rm -f test.png ; dot -Tpng test.dot > test.png ; display test.png
+
+utilisation avec debugging
+il faut lancer vimdot
+cet utilitaire est fourni avec graphviz : il ouvre deux outils en parallele : vim d'un cote, pour l'édition, et un visualiseur de l'autre, pour afficher le résultat de l'édition dès que l'on sauvegarde son travail.
+cela permet de fabriquer un fichier .dot quasi en interactif...
+
+utilisation avancée : rendu plus joli
+http://www.hokstad.com/making-graphviz-output-pretty-with-xsl.html
+http://github.com/vidarh/diagram-tools/tree/master
+wget http://github.com/vidarh/diagram-tools/blob/master/notugly.xsl
+rm -f test.svg ; \
+  rm -f test-notugly.svg ; \
+  rm -f test-notugly.png ; \
+  dot -Tsvg test.dot > test.svg ; \
+  xsltproc notugly.xsl test.svg > test-notugly.svg ; \
+  rsvg test-notugly.svg test-notugly.png
+la syntaxe est maintenant dans le script 
+dot2png.sh
+
+utilisation avancée : traceviz = traceroute avec graphviz
+traceviz.sh portail-sig.ville-larochelle.fr
+
+utilisation avancée : ancestors
+populateAncetres.sh
+
+ancestors.sh
+

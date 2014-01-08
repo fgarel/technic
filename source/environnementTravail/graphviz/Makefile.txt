@@ -1,0 +1,7 @@
+all:
+	merisedot exo1.zsh > mcd.dot
+	neato mcd.dot -o mcd.svg -Tsvg
+	neato mcd.dot -o mcd.png -Tpng
+
+clean:
+	rm *.dot *.svg *.png

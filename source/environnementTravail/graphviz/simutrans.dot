@@ -1,0 +1,120 @@
+digraph graphname {
+rankdir=LR;
+PuitPetrole [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Puit de pétrole</TD></TR>
+        <TR><TD PORT="Petrole" BGCOLOR="aquamarine2">Petrole</TD></TR></TABLE>>];
+PlateForme [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Plate-forme pétrolière</TD></TR>
+        <TR><TD PORT="Petrole" BGCOLOR="aquamarine2">Petrole</TD></TR></TABLE>>];
+Raffinerie [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Raffinerie</TD></TR>
+        <TR><TD PORT="Carburant" BGCOLOR="aquamarine2">Carburant</TD></TR>
+<TR><TD PORT="Plastique" BGCOLOR="white">Plastique</TD></TR></TABLE>>];
+Coal1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Mine de Charbon</TD></TR>
+        <TR><TD PORT="Charbon" BGCOLOR="brown">Charbon</TD></TR></TABLE>>];
+Fer1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Mine de Fer</TD></TR>
+        <TR><TD PORT="Fer" BGCOLOR="brown">Fer</TD></TR></TABLE>>];
+Sable1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Carrière de Sable</TD></TR>
+        <TR><TD PORT="Sable" BGCOLOR="brown">Sable</TD></TR></TABLE>>];
+Ferme1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Ferme d'élevage</TD></TR>
+        <TR><TD PORT="Viande" BGCOLOR="lightblue">Viande</TD></TR>
+<TR><TD PORT="Laine" BGCOLOR="white">Laine</TD></TR></TABLE>>];
+Poisson1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Banc de Poisson</TD></TR>
+        <TR><TD PORT="Poisson" BGCOLOR="lightblue">Poisson</TD></TR></TABLE>>];
+Poisson2 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Pisciculture</TD></TR>
+        <TR><TD PORT="Poisson" BGCOLOR="lightblue">Poisson</TD></TR></TABLE>>];
+Champ1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Champ Céréalier</TD></TR>
+        <TR><TD PORT="Bien Agricoles" BGCOLOR="white">Bien Agricoles</TD></TR></TABLE>>];
+Ethanol [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Plantation d'Ethanol</TD></TR>
+        <TR><TD PORT="Ethanol" BGCOLOR="aquamarine2">Ethanol</TD></TR></TABLE>>];
+ModernFuel [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Modern Fuel Station</TD></TR>
+        </TABLE>>];
+Forest1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Exploitation Forestière</TD></TR>
+        <TR><TD PORT="Bois" BGCOLOR="burlywood4">Bois</TD></TR></TABLE>>];
+Scierie1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Scierie</TD></TR>
+        <TR><TD PORT="Planche" BGCOLOR="burlywood4">Planche</TD></TR></TABLE>>];
+Meunerie [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Meunerie</TD></TR>
+        <TR><TD PORT="Farine" BGCOLOR="white">Farine</TD></TR></TABLE>>];
+Acierie1 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Acierie</TD></TR>
+        <TR><TD PORT="Acier" BGCOLOR="white">Acier</TD></TR></TABLE>>];
+Brasseur [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Brasseur</TD></TR>
+        <TR><TD PORT="Bierre" BGCOLOR="white">Bierre</TD></TR></TABLE>>];
+Conserverie [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Conserverie</TD></TR>
+        <TR><TD PORT="Conserves" BGCOLOR="white">Conserves</TD></TR></TABLE>>];
+Verrerie [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Verrerie</TD></TR>
+        <TR><TD PORT="Verre" BGCOLOR="white">Verre</TD></TR></TABLE>>];
+Textile [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Fabrique de textile</TD></TR>
+        <TR><TD PORT="Textile" BGCOLOR="white">Textile</TD></TR></TABLE>>];
+Electronique [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Usine d'électronique</TD></TR>
+        <TR><TD PORT="Unknow" BGCOLOR="white">Unknow</TD></TR></TABLE>>];
+Fabrique [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Fabrique de biens manufacturée</TD></TR>
+        <TR><TD PORT="Meubles" BGCOLOR="white">Meubles</TD></TR></TABLE>>];
+CarFactory [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Fabrique de voiture</TD></TR>
+        <TR><TD PORT="Voitures" BGCOLOR="white">Voitures</TD></TR></TABLE>>];
+CarSeller [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Vendeur de voitures</TD></TR>
+        </TABLE>>];
+UNK2 [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">UNK2</TD></TR>
+        <TR><TD PORT="Denrées" BGCOLOR="lightblue">Denrées</TD></TR></TABLE>>];
+Supermarche [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Supermarché</TD></TR>
+        </TABLE>>];
+Magasin [shape=plaintext, fontsize=8, fontname="Bitstream Vera Sans", label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD PORT="head">Grand Magasin</TD></TR>
+        </TABLE>>];
+Raffinerie:Carburant -> ModernFuel:head;
+Electronique:Unknow -> Magasin:head;
+PuitPetrole:Petrole -> Raffinerie:head;
+PlateForme:Petrole -> Raffinerie:head;
+Raffinerie:Plastique -> Electronique:head;
+Raffinerie:Plastique -> CarFactory:head;
+Coal1:Charbon -> Acierie1:head;
+Coal1:Charbon -> Verrerie:head;
+Fer1:Fer -> Acierie1:head;
+Poisson1:Poisson -> Conserverie:head;
+Poisson1:Poisson -> UNK2:head;
+Poisson2:Poisson -> Conserverie:head;
+Poisson2:Poisson -> UNK2:head;
+Ferme1:Laine -> Textile:head;
+Ethanol:Ethanol -> ModernFuel:head;
+Ethanol:Ethanol -> Brasseur:head;
+Forest1:Bois -> Scierie1:head;
+Scierie1:Planche -> Fabrique:head;
+Meunerie:Farine -> UNK2:head;
+Sable1:Sable -> Verrerie:head;
+Brasseur:Bierre -> Supermarche:head;
+Verrerie:Verre -> Brasseur:head;
+Verrerie:Verre -> Electronique:head;
+Conserverie:Conserves -> Supermarche:head;
+Textile:Textile -> Magasin:head;
+Champ1:"Bien Agricoles" -> Meunerie:head;
+Fabrique:Meubles -> Magasin:head;
+CarFactory:Voitures -> CarSeller:head;
+UNK2:Denrées -> Supermarche:head;
+Ferme1:Viande -> Conserverie:head;
+Ferme1:Viande -> UNK2:head;
+Acierie1:Acier -> Conserverie:head;
+Acierie1:Acier -> Electronique:head;
+Acierie1:Acier -> CarFactory:head;
+}

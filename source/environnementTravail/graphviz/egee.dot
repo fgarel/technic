@@ -1,0 +1,26 @@
+// conversion des pdf en png
+
+digraph G1 {
+
+    graph [bgcolor=lightyellow2, splines=true];
+    //edge [color=red, arrowsize=2];
+    //node [color=yellow, style=filled, shape=polygon, sides=6, fontname="verdana"];
+    subgraph processus {
+        // noeuds
+        P101 [label="Processus 1" style=filled color="lightblue" ];
+        P102 [label="Processus 2" style=filled color="lightblue" ];
+        P103 [label="Processus 3" style=filled color="lightblue" ];
+        P104 [label="Processus 4" style=filled color="lightblue" ];
+        P105 [label="Processus 5" style=filled color="lightblue" ];
+        P106 [label="Processus 6" style=filled color="lightblue" ];
+        P107 [label="Processus 7" style=filled color="lightblue" ];
+        // arcs
+        P101 -> P102;
+        P102 -> {P103 ; P104};
+        {P103 ; P104} -> P105;
+        P105 -> P106;
+        P106 -> P107;
+    }
+
+
+}

@@ -1,0 +1,74 @@
+// conversion des pdf en png
+
+digraph G1 {
+
+    graph [bgcolor=lightyellow2, splines=true];
+    //edge [color=red, arrowsize=2];
+    //node [color=yellow, style=filled, shape=polygon, sides=6, fontname="verdana"];
+    subgraph processus {
+        P101 [label="Processus 1" style=filled color="lightblue" ];
+        P102 [label="Processus 2" style=filled color="lightblue" ];
+        P103 [label="Processus 3" style=filled color="lightblue" ];
+        P104 [label="Processus 4" style=filled color="lightblue" ];
+        P105 [label="Processus 5" style=filled color="lightblue" ];
+        P106 [label="Processus 6" style=filled color="lightblue" ];
+        P107 [label="Processus 7" style=filled color="lightblue" ];
+        P101 -> P102;
+        P102 -> {P103 ; P104};
+        {P103 ; P104} -> P105;
+        P105 -> P106;
+        P106 -> P107;
+    }
+
+    subgraph doc {
+        P201 [label="1.1." style=filled color="lightblue" ];
+        P202 [label="2.1." style=filled color="lightblue" ];
+        P203 [label="3.1." style=filled color="lightblue" ];
+        P204 [label="3.2." style=filled color="lightblue" ];
+        P205 [label="4.1." style=filled color="lightblue" ];
+        P206 [label="4.2." style=filled color="lightblue" ];
+        P207 [label="5.1." style=filled color="lightblue" ];
+        P201 -> P202;
+        P202 -> {P203 ; P204};
+        {P203 ; P204} -> P205;
+        P205 -> P206;
+        P206 -> P207;
+    }
+
+    //"Conversion Pdf->Png" -> "Recueil d'infos";
+    //"Recueil d'infos" -> {"Extraction des zones" ; "Création des fichiers de calage"};
+    //"Extraction des zones" -> {"Assemblage des zones"};
+    //"Création des fichiers de calage" -> {"Assemblage des zones"};
+    //"Assemblage des zones" -> "Tuilage";
+
+    subgraph titre {
+        P301 [label="Conversion Pdf->Png" style=filled color="lightblue" ];
+        P302 [label="Recueil d'infos" style=filled color="lightblue" ];
+        P303 [label="Extraction des zones" style=filled color="lightblue" ];
+        P304 [label="Création des fichiers de calage" style=filled color="lightblue" ];
+        P305 [label="Assemblage des zones" style=filled color="lightblue" ];
+        P306 [label="Tuilage" style=filled color="lightblue" ];
+        P307 [label="Visualisation" style=filled color="lightblue" ];
+        P301 -> P302;
+        P302 -> {P303 ; P304};
+        {P303 ; P304} -> P305;
+        P305 -> P306;
+        P306 -> P307;
+    }
+
+    subgraph commande {
+        P401 [label="./pdf2png02.sh" style=filled color="lightblue" ];
+        P402 [label="calage.ods" style=filled color="lightblue" ];
+        P403 [label="crop" style=filled color="lightblue" ];
+        P404 [label="pgw" style=filled color="lightblue" ];
+        P405 [label="gdal_merge" style=filled color="lightblue" ];
+        P406 [label="gdal2tiles" style=filled color="lightblue" ];
+        P407 [label="openlayers" style=filled color="lightblue" ];
+        P401 -> P402;
+        P402 -> {P403 ; P404};
+        {P403 ; P404} -> P405;
+        P405 -> P406;
+        P406 -> P407;
+    }
+
+}

@@ -1,0 +1,11 @@
+digraph G {   "128.156.10.2"->"www.google.fr"
+   "128.156.10.2"->"www.gmail.com"
+   "128.156.10.2"->"docs.google.com"
+   "vlr3277"->"128.156.10.2"
+   "vlr3277"->"www.google.fr"
+  "www.google.fr" [style=filled fillcolor=lightblue]
+  "128.156.10.2" [style=filled fillcolor=lightgrey]
+  "www.gmail.com" [style=filled fillcolor=lightblue]
+  "vlr3277" [style=filled fillcolor=lightblue]
+  "docs.google.com" [style=filled fillcolor=lightblue]
+}

@@ -1,0 +1,96 @@
+#!/usr/bin/env zsh
+
+# 2007-06-22
+# - with parameter still supported by relation command
+# - cardinality added and fixed
+# - $header labeldistance added
+# - record type/name separated
+# mars 27 2006
+# -  bug empechant relations d'entité A a A découvert et corrigé
+
+# qiv -T for instant view
+# Makefile exemple:
+# all: ba.jpg
+# 
+# %.jpg: %.dot
+# 	neato -Tjpg -o$@ $< 
+# 
+# %.dot: %.merise
+# 	zsh merisedot $< > $@
+# 
+# clean:
+# 	rm *dot *jpg
+
+# content of $header and $footer and $boxFormat
+# can be overloaded in the merisedot script
+
+# header and footer of the final dot script 
+header='graph mcd {
+    edge  [
+    len=2
+    labeldistance=2
+    ];
+'
+footer='
+}'
+
+# printf type format for box rendering
+boxFormat='"%s" [
+    shape=%s
+    label="{\N|%s\\l}"
+];\n\n'
+
+
+# relations are written at the end of the script (just before footer)
+ListRelations=()
+
+# a wrapper to printf to draw boxes
+drawbox () {
+    typeset -a records
+    typeset rec_{name,type}
+    for rec_name rec_type ( "$with[@]" ) {
+	records+="$rec_name $rec_type"
+    }
+    print -f $boxFormat "$1" ${shape:-record} ${(j:\l:)records}
+}
+
+# ex :
+# with=(
+#     birthdate date
+#     firstname 'char(50)'
+#     lastname 'char(50)'
+# ) entity Author 
+entity () {
+
+    drawbox "$*"
+
+}
+
+relation () {
+
+    local idx=1
+    local key value name=$1
+
+    for cardinality entity ( "$between[@]" ) {
+	 # headlabel=${cardinality%%.*}
+	 # taillabel=${${cardinality##*.}:-*}
+	 
+         ListRelations+="${(qqq)entity} -- ${(qqq)name} [
+		taillabel=\"$cardinality\" 
+	    ];\n"
+    }
+
+    shape=Mrecord drawbox $name
+}
+
+# TODO: redefine &1 if -o arg
+
+tmp=$( mktemp )
+exec 3>&1
+{
+    source "$@" > $tmp
+    print $header
+    cat $tmp
+    print $ListRelations
+    print $footer
+} >&3

@@ -81,6 +81,7 @@ class ParcoursRepertoire(object):
             for extensions in self._liste_extension:
                 for filename in fnmatch.filter(filenames, extensions):
                     matches.append(os.path.join(root, filename))
+                    #print("os.path.join = {}".format(os.path.join(root)))
 
         #print('matches = ' + matches.__str__())
         return matches
@@ -108,7 +109,8 @@ def main():
         '/home/fred/t/GESTION_DU_PATRIMOINE/', plan)
     #__monparcours__ = ParcoursRepertoire('.', python)
 
-    print ('matches = ' + __monparcours__.get_files().__str__())
+    print ('matches = {}'.format(__monparcours__.get_files().__repr__()))
+    #print ('matches = {}'.format(__monparcours__.get_files().__str__().decode('utf-8')))
 
 
 if __name__ == "__main__":
