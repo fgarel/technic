@@ -50,6 +50,8 @@
 .. include:: cadastre/cadastre.rst
 .. include:: qgis/qgis.rst
 .. include:: mapnik/mapnik.rst
+.. include:: patrimoine/patrimoine.rst
+.. include:: csvpython/csvpython.rst
 
 
 .. .. Indices and tables
