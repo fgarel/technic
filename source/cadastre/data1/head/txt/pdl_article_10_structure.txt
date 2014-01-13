@@ -8,7 +8,7 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 16;18;3;x;dnupdl;no de pdl;
 19;25;7;x;filler01;;
 26;27;2;X;cenr;code enregistrement;10
-28;28;1;nivim;niveau imbrication;
+28;28;1;X;nivim;niveau imbrication;
 29;31;3;X;ctpdl;type de pdl;bnd, cl, cv, tf, clv, mp.
 32;61;30;X;dnompdl;
 62;81;20;X;dmrpdl;lot mère(plan+pdl+lot);

@@ -41,3 +41,5 @@ dos2unix -n ../data1/ini/REVDI_300.sav ../data1/ini/REVDI_300.txt
 ./01_08_bati.sh
 ./01_10_nbat.sh
 ./01_11_pdl.sh
+./01_12_prop.sh
+

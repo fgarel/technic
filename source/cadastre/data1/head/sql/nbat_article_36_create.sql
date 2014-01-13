@@ -11,21 +11,21 @@ CREATE TABLE nbat_article_36 (
 "ccosub" CHARACTER VARYING(2) NOT NULL,
 "filler01" CHARACTER VARYING(2) NOT NULL,
 "cenr" CHARACTER VARYING(2) NOT NULL,
-"Espace séparateur 2" CHARACTER VARYING(1) NOT NULL,
+"filler02" CHARACTER VARYING(1) NOT NULL,
 "majposa1" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 3" CHARACTER VARYING(1) NOT NULL,
+"filler03" CHARACTER VARYING(1) NOT NULL,
 "bisufad1" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 4" CHARACTER VARYING(1) NOT NULL,
+"filler04" CHARACTER VARYING(1) NOT NULL,
 "majposa2" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 5" CHARACTER VARYING(1) NOT NULL,
+"filler05" CHARACTER VARYING(1) NOT NULL,
 "bisufad2" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 6" CHARACTER VARYING(1) NOT NULL,
+"filler06" CHARACTER VARYING(1) NOT NULL,
 "majposa3" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 7" CHARACTER VARYING(1) NOT NULL,
+"filler07" CHARACTER VARYING(1) NOT NULL,
 "bisufad3" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 8" CHARACTER VARYING(1) NOT NULL,
+"filler08" CHARACTER VARYING(1) NOT NULL,
 "majposa4" CHARACTER VARYING(10) NOT NULL,
-"Espace séparateur 9" CHARACTER VARYING(1) NOT NULL,
+"filler09" CHARACTER VARYING(1) NOT NULL,
 "bisufad4" CHARACTER VARYING(10) NOT NULL,
 "filler10" CHARACTER VARYING(41) NOT NULL);
 -- Ajout des commentaires pour la table nbat_article_36
@@ -38,20 +38,20 @@ COMMENT ON COLUMN nbat_article_36."dnupla" IS 'Numéro de plan';
 COMMENT ON COLUMN nbat_article_36."ccosub" IS 'Lettres indicatives de suf';
 COMMENT ON COLUMN nbat_article_36."filler01" IS 'Espace séparateur 1';
 COMMENT ON COLUMN nbat_article_36."cenr" IS 'Code enregistrement';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 2" IS '';
+COMMENT ON COLUMN nbat_article_36."filler02" IS 'Espace séparateur 2';
 COMMENT ON COLUMN nbat_article_36."majposa1" IS 'Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 3" IS '';
+COMMENT ON COLUMN nbat_article_36."filler03" IS 'Espace séparateur 3';
 COMMENT ON COLUMN nbat_article_36."bisufad1" IS 'Base d’imposition de la suf en valeur de l’année';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 4" IS '';
+COMMENT ON COLUMN nbat_article_36."filler04" IS 'Espace séparateur 4';
 COMMENT ON COLUMN nbat_article_36."majposa2" IS 'Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 5" IS '';
+COMMENT ON COLUMN nbat_article_36."filler05" IS 'Espace séparateur 5';
 COMMENT ON COLUMN nbat_article_36."bisufad2" IS 'Base d’imposition de la suf en valeur de l’année';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 6" IS '';
+COMMENT ON COLUMN nbat_article_36."filler06" IS 'Espace séparateur 6';
 COMMENT ON COLUMN nbat_article_36."majposa3" IS 'Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 7" IS '';
+COMMENT ON COLUMN nbat_article_36."filler07" IS 'Espace séparateur 7';
 COMMENT ON COLUMN nbat_article_36."bisufad3" IS 'Base d’imposition de la suf en valeur de l’année';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 8" IS '';
+COMMENT ON COLUMN nbat_article_36."filler08" IS 'Espace séparateur 8';
 COMMENT ON COLUMN nbat_article_36."majposa4" IS 'Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.';
-COMMENT ON COLUMN nbat_article_36."Espace séparateur 9" IS '';
+COMMENT ON COLUMN nbat_article_36."filler09" IS 'Espace séparateur 9';
 COMMENT ON COLUMN nbat_article_36."bisufad4" IS 'Base d’imposition de la suf en valeur de l’année';
 COMMENT ON COLUMN nbat_article_36."filler10" IS 'Espace séparateur 10';

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOST=10.2.10.36
+HOST=10.2.10.56
 
 #-- import des bati à partir d'un fichier csv
 psql -d cadastre -U contrib -h $HOST -c "copy bati_article_direction from stdin delimiter ';';" \

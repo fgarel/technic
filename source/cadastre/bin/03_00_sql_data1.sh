@@ -1,9 +1,9 @@
 #!/bin/sh
 
-HOST=10.2.10.36
+HOST=10.2.10.56
 
 # affichage d'une info : ajout d'une ligne à .pgpass
-echo "echo \"10.2.10.36:5432:*:contrib:alambic\" >> ~/.pgpass"
+echo "echo \"10.2.10.56:5432:*:contrib:alambic\" >> ~/.pgpass"
 
 
 # Suppression et creation d'une base de donnees

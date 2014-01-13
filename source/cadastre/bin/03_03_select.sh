@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOST=10.2.10.36
+HOST=10.2.10.56
 
 # Selection de certains enregistrements
 # =====================================

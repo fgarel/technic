@@ -25,11 +25,16 @@ tail -n +2 ../data1/ini/NBAT_300.txt | \
   ../data1/foot/nbat_article_30.txt
   
 # article taxation de suf (36)
+#tail -n +2 ../data1/ini/NBAT_300.txt | \
+#  grep -E "^.{19}36" | \
+#  cut -b 1-2,3,4-6,7-9,10-11,12-15,16-17,18-19,20-21,22-109,110-150 --output-delimiter=';' > \
+#  ../data1/foot/nbat_article_36.txt
+  
 tail -n +2 ../data1/ini/NBAT_300.txt | \
   grep -E "^.{19}36" | \
-  cut -b 1-2,3,4-6,7-9,10-11,12-15,16-17,18-19,20-21,22-109,110-150 --output-delimiter=';' > \
+  cut -b 1-2,3,4-6,7-9,10-11,12-15,16-17,18-19,20-21,22,23-32,33,34-43,44,45-54,55,56-65,66,67-76,77,78-87,88,89-98,99,100-109,110-150 --output-delimiter=';' > \
   ../data1/foot/nbat_article_36.txt
-  
+
 # article restant (99)
 # on doit supprimer les lignes vides (la dernière)
 tail -n +2 ../data1/ini/NBAT_300.txt | \
