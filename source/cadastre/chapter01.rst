@@ -12,10 +12,12 @@ Ecrit en shell, ces petits utilitaires forment un ensemble dédié à la manipul
 Preparation de l'environnement
 ==============================
 
-les donnes initiales, c'est à dire les 6 fichiers MAJIC sont mis dans le repertoire data1/ini/ avec l'extension sav
+Les donnes initiales, c'est à dire les 6 fichiers MAJIC sont mis dans le repertoire data1/ini/ avec l'extension sav
 (les fichiers .txt sont recopiés en .sav)
 
 Pour info, les paramètres, c'est à dire les petites tables qui correspondent aux listes prédéfinies que l'on retrouve dans la documentation sont mis dans le repertoire data2/foot/
+
+Les utilitaires dos2unix et gawk doivent être installés sur la machine (avec gawk, cela fonctionne, avec mawk, cela ne fonctionne pas car il n'y a pas la commande switch)
 
 Un serveur de base de données postgresql est démarré et attend les connexions. Nous notons son adresse IP.
 

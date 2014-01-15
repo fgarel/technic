@@ -33,7 +33,13 @@ CREATE TABLE bati_article_21 (
 "clocv" CHARACTER VARYING(1) DEFAULT NULL,
 "dvltpe" CHARACTER VARYING(9) DEFAULT NULL,
 "dcralc" CHARACTER VARYING(3) DEFAULT NULL,
-"filler03" CHARACTER VARYING(36) DEFAULT NULL);
+"filler03" CHARACTER VARYING(1) DEFAULT NULL,
+"topcn" CHARACTER VARYING(1) DEFAULT NULL,
+"tpevtiom" CHARACTER VARYING(1) DEFAULT NULL,
+"DCSPLC-A" CHARACTER VARYING(5) DEFAULT NULL,
+"DCSGLC-A" CHARACTER VARYING(5) DEFAULT NULL,
+"DCRALC-A" CHARACTER VARYING(5) DEFAULT NULL,
+"filler04" CHARACTER VARYING(36) DEFAULT NULL);
 -- Ajout des commentaires pour la table bati_article_21
 COMMENT ON COLUMN bati_article_21."ccodep" IS 'Code département';
 COMMENT ON COLUMN bati_article_21."ccodir" IS 'Code direction';
@@ -67,3 +73,9 @@ COMMENT ON COLUMN bati_article_21."clocv" IS 'Indicateur local vacant';
 COMMENT ON COLUMN bati_article_21."dvltpe" IS 'VL TOTALE DE LA PEV MAJIC2';
 COMMENT ON COLUMN bati_article_21."dcralc" IS 'correctif d’ascenseur';
 COMMENT ON COLUMN bati_article_21."filler03" IS '';
+COMMENT ON COLUMN bati_article_21."topcn" IS 'top construction nouvelle';
+COMMENT ON COLUMN bati_article_21."tpevtiom" IS 'top local passible de la teom';
+COMMENT ON COLUMN bati_article_21."DCSPLC-A" IS 'Coefficient de situation particulière';
+COMMENT ON COLUMN bati_article_21."DCSGLC-A" IS 'Coefficient de situation générale';
+COMMENT ON COLUMN bati_article_21."DCRALC-A" IS 'Correctif d ascenceur';
+COMMENT ON COLUMN bati_article_21."filler04" IS '';

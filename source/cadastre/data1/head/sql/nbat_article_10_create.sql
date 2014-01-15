@@ -34,7 +34,15 @@ CREATE TABLE nbat_article_10 (
 "ccoriv" CHARACTER VARYING(4) NOT NULL,
 "ccocif" CHARACTER VARYING(4) NOT NULL,
 "gpafpd" CHARACTER VARYING(1) NOT NULL,
-"filler02" CHARACTER VARYING(46) NOT NULL);
+"filler02" CHARACTER VARYING(31) NOT NULL,
+"cconvo" CHARACTER VARYING(4) NOT NULL,
+"dvoilib" CHARACTER VARYING(26) NOT NULL,
+"ccocomm" CHARACTER VARYING(3) NOT NULL,
+"ccoprem" CHARACTER VARYING(3) NOT NULL,
+"ccosecm" CHARACTER VARYING(2) NOT NULL,
+"dnuplam" CHARACTER VARYING(4) NOT NULL,
+"type" CHARACTER VARYING(1) NOT NULL,
+"filler03" CHARACTER VARYING(22) NOT NULL);
 -- Ajout des commentaires pour la table nbat_article_10
 COMMENT ON COLUMN nbat_article_10."ccodep" IS 'code département';
 COMMENT ON COLUMN nbat_article_10."ccodir" IS 'code direction';
@@ -69,3 +77,11 @@ COMMENT ON COLUMN nbat_article_10."ccoriv" IS 'Code Rivoli de la voie';
 COMMENT ON COLUMN nbat_article_10."ccocif" IS 'Code du cdif (code topad)';
 COMMENT ON COLUMN nbat_article_10."gpafpd" IS 'Domanialité, représentation au plan';
 COMMENT ON COLUMN nbat_article_10."filler02" IS '';
+COMMENT ON COLUMN nbat_article_10."cconvo" IS 'Code nature de la voie';
+COMMENT ON COLUMN nbat_article_10."dvoilib" IS 'Libellé de la voie';
+COMMENT ON COLUMN nbat_article_10."ccocomm" IS 'Code INSEE de la commune de la parcelle mère';
+COMMENT ON COLUMN nbat_article_10."ccoprem" IS 'code du préfixe de section de la parcelle mère';
+COMMENT ON COLUMN nbat_article_10."ccosecm" IS 'Code section de la parcelle mère';
+COMMENT ON COLUMN nbat_article_10."dnuplam" IS 'Numéro de plan de la parcelle mère';
+COMMENT ON COLUMN nbat_article_10."type" IS 'Type de filiation';
+COMMENT ON COLUMN nbat_article_10."filler03" IS '';

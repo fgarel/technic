@@ -38,7 +38,9 @@ CREATE TABLE bati_article_36 (
 "bateom" CHARACTER VARYING(9) DEFAULT NULL,
 "filler15" CHARACTER VARYING(1) DEFAULT NULL,
 "baomec" CHARACTER VARYING(9) DEFAULT NULL,
-"filler16" CHARACTER VARYING(26) DEFAULT NULL);
+"mvltieomx" CHARACTER VARYING(6) DEFAULT NULL,
+"pvltieom" CHARACTER VARYING(16) DEFAULT NULL,
+"filler16" CHARACTER VARYING(4) DEFAULT NULL);
 -- Ajout des commentaires pour la table bati_article_36
 COMMENT ON COLUMN bati_article_36."ccodep" IS 'Code département';
 COMMENT ON COLUMN bati_article_36."ccodir" IS 'Code direction';
@@ -76,4 +78,6 @@ COMMENT ON COLUMN bati_article_36."filler14" IS '';
 COMMENT ON COLUMN bati_article_36."bateom" IS 'BASE ORDURES MENAGERES';
 COMMENT ON COLUMN bati_article_36."filler15" IS '';
 COMMENT ON COLUMN bati_article_36."baomec" IS 'BASE ORDURES MENAGERES ECRETEE';
+COMMENT ON COLUMN bati_article_36."mvltieomx" IS 'Montant TIEOM';
+COMMENT ON COLUMN bati_article_36."pvltieom" IS 'Ratio VL n-1 de la PEV / VL n-1 collectivité';
 COMMENT ON COLUMN bati_article_36."filler16" IS '';

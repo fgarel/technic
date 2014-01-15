@@ -68,7 +68,9 @@ CREATE TABLE prop_article_courant (
 "jandge" CHARACTER VARYING(4) NOT NULL,
 "jantfc" CHARACTER VARYING(4) NOT NULL,
 "jantbc" CHARACTER VARYING(4) NOT NULL,
-"filler2" CHARACTER VARYING(39) NOT NULL);
+"filler2" CHARACTER VARYING(22) NOT NULL,
+"dformjur" CHARACTER VARYING(4) NOT NULL,
+"filler3" CHARACTER VARYING(13) NOT NULL);
 -- Ajout des commentaires pour la table prop_article_courant
 COMMENT ON COLUMN prop_article_courant."ccodep" IS 'code département';
 COMMENT ON COLUMN prop_article_courant."ccodir" IS 'code direction';
@@ -137,3 +139,5 @@ COMMENT ON COLUMN prop_article_courant."jandge" IS 'année d’entrée à la DGE
 COMMENT ON COLUMN prop_article_courant."jantfc" IS 'année d’entrée paiement TF';
 COMMENT ON COLUMN prop_article_courant."jantbc" IS 'année d’entrée paiement TSBCS';
 COMMENT ON COLUMN prop_article_courant."filler2" IS 'à blanc';
+COMMENT ON COLUMN prop_article_courant."dformjur" IS 'Forme Juridique';
+COMMENT ON COLUMN prop_article_courant."filler3" IS 'à blanc';

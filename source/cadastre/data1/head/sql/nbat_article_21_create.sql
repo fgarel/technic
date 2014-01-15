@@ -26,7 +26,13 @@ CREATE TABLE nbat_article_21 (
 "ccosecl" CHARACTER VARYING(2) NOT NULL,
 "dnuplal" CHARACTER VARYING(4) NOT NULL,
 "dnupdl" CHARACTER VARYING(3) NOT NULL,
-"dnulot" CHARACTER VARYING(7) NOT NULL);
+"dnulot" CHARACTER VARYING(7) NOT NULL,
+"filler02" CHARACTER VARYING(46) NOT NULL,
+"gnidom" CHARACTER VARYING(1) NOT NULL,
+"topja" CHARACTER VARYING(1) NOT NULL,
+"datja" CHARACTER VARYING(8) NOT NULL,
+"postel" CHARACTER VARYING(1) NOT NULL,
+"filler03" CHARACTER VARYING(53) NOT NULL);
 -- Ajout des commentaires pour la table nbat_article_21
 COMMENT ON COLUMN nbat_article_21."ccodep" IS 'Code département';
 COMMENT ON COLUMN nbat_article_21."ccodir" IS 'Code direction';
@@ -53,3 +59,9 @@ COMMENT ON COLUMN nbat_article_21."ccosecl" IS 'Section de la parcelle identifia
 COMMENT ON COLUMN nbat_article_21."dnuplal" IS 'N° de plan de la parcelle de référence';
 COMMENT ON COLUMN nbat_article_21."dnupdl" IS 'Numéro d ordre de la pdl';
 COMMENT ON COLUMN nbat_article_21."dnulot" IS 'Numéro du lot - Le lot de BND se présente sous la forme 00Axxxx';
+COMMENT ON COLUMN nbat_article_21."filler02" IS '';
+COMMENT ON COLUMN nbat_article_21."gnidom" IS 'Indicateur de suf non imposable';
+COMMENT ON COLUMN nbat_article_21."topja" IS 'Indicateur jeune agriculteur';
+COMMENT ON COLUMN nbat_article_21."datja" IS 'Date installation jeune agriculteur';
+COMMENT ON COLUMN nbat_article_21."postel" IS 'Indicateur de bien appartenant à la Poste';
+COMMENT ON COLUMN nbat_article_21."filler03" IS '';

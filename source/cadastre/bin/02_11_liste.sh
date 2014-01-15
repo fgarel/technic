@@ -55,7 +55,7 @@ tail -n +2 ../data2/head/txt/$TXT | \
 }
 
 
-LIST='ccoaff ccodem ccodro ccoeva ccogrm ccolloc cconad cconlc cconlo ccoplc ccoqua cgrnum cgroup cnatsp ctpdl detent dmatgm dmatto dnatlc dnatpr dsgrpf dteloc gdesip gnexpl gnexps gnextl gnexts gparbat gparnf gpdl gtoper'
+LIST='ccoaff ccodem ccodro ccoeva ccogrm ccolloc cconad cconlc cconlo ccoplc ccoqua cgrnum cgroup cnatsp ctpdl detent dformjur dmatgm dmatto dnatcg dnatlc dnatpr dsgrpf dteloc gdesip gnexpl gnexps gnextl gnexts gparbat gparnf gpdl gtoper'
 for NAME in $LIST
 do
     #echo $NAME

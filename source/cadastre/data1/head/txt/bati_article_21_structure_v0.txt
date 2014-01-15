@@ -30,10 +30,4 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 152;152;1;X;clocv;Indicateur local vacant;INDISPONIBLE
 153;161;9;9;dvltpe;VL TOTALE DE LA PEV MAJIC2;
 162;164;3;9;dcralc;correctif d’ascenseur;format S9V99
-165;165;1;X;filler03;;
-166;166;1;X;topcn;top construction nouvelle
-167;167;1;X;tpevtiom;top local passible de la teom
-168;172;5;X;DCSPLC-A;Coefficient de situation particulière
-173;177;5;X;DCSGLC-A;Coefficient de situation générale
-178;182;5;X;DCRALC-A;Correctif d ascenceur
-183;200;36;X;filler04;;
+165;200;36;X;filler03;;

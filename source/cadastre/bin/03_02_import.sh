@@ -69,7 +69,7 @@ psql -d cadastre -U contrib -h $HOST -c "copy revdi_article_lotlocal from stdin 
 
 #-- import des listes à partir d'un fichier csv
 #LISTE='ccoaff ccodem'
-LIST='ccoaff ccodem ccodro ccoeva ccogrm ccolloc cconad cconlc cconlo ccoplc ccoqua cgrnum cgroup cnatsp ctpdl detent dmatgm dmatto dnatlc dnatpr dsgrpf dteloc gdesip gnexpl gnexps gnextl gnexts gparbat gparnf gpdl gtoper'
+LIST='ccoaff ccodem ccodro ccoeva ccogrm ccolloc cconad cconlc cconlo ccoplc ccoqua cgrnum cgroup cnatsp ctpdl detent dformjur dmatgm dmatto dnatlc dnatpr dsgrpf dteloc gdesip gnexpl gnexps gnextl gnexts gparbat gparnf gpdl gtoper'
 
 for NAME in $LIST
 do

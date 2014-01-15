@@ -73,7 +73,7 @@ COMMENT ON COLUMN bati_article_40."dsueic4" IS 'Surface réelle de l’élément
 COMMENT ON COLUMN bati_article_40."dcimei4" IS 'Coefficient de pondération';
 COMMENT ON COLUMN bati_article_40."geaulc" IS 'Présence d’eau';
 COMMENT ON COLUMN bati_article_40."gelelc" IS 'Présence d’électricité';
-COMMENT ON COLUMN bati_article_40."gesclc" IS 'Présence d’escalier de ser- vice (appartement)';
+COMMENT ON COLUMN bati_article_40."gesclc" IS 'Présence d’escalier de service (appartement)';
 COMMENT ON COLUMN bati_article_40."ggazlc" IS 'Présence du gaz';
 COMMENT ON COLUMN bati_article_40."gasclc" IS 'Présence d’ascenseur (appartement)';
 COMMENT ON COLUMN bati_article_40."gchclc" IS 'Présence du chauffage central';

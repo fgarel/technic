@@ -24,3 +24,9 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 77;80;4;X;dnuplal;N° de plan de la parcelle de référence;
 81;83;3;X;dnupdl;Numéro d ordre de la pdl;en général, 001
 84;90;7;X;dnulot;Numéro du lot - Le lot de BND se présente sous la forme 00Axxxx;
+91;136;46;X;filler02;;
+137;137;1;X;gnidom;Indicateur de suf non imposable
+138;138;1;X;topja;Indicateur jeune agriculteur
+139;146;8;X;datja;Date installation jeune agriculteur
+147;147;1;X;postel;Indicateur de bien appartenant à la Poste
+148;200;53;X;filler03;;

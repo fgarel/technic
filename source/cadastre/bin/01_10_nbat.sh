@@ -1,6 +1,15 @@
 #!/bin/sh
 
 
+# nbat_article_10
+cp ../data1/foot/nbat_article_10.txt \
+   ../data1/foot/nbat_article_10.sav
+
+./01_07_ajoute_champs.awk \
+   -v NBCHAMP=41 \
+   ../data1/foot/nbat_article_10.sav \
+   > ../data1/foot/nbat_article_10.txt 
+
 
 # nbat_article_21
 cp ../data1/foot/nbat_article_21.txt \
@@ -12,7 +21,7 @@ cp ../data1/foot/nbat_article_21.txt \
 #      > ../data1/foot/nbat_article_21.sav
 
 ./01_07_ajoute_champs.awk \
-   -v NBCHAMP=25 \
+   -v NBCHAMP=31 \
    ../data1/foot/nbat_article_21.sav \
    > ../data1/foot/nbat_article_21.txt 
 
@@ -25,6 +34,15 @@ cp ../data1/foot/nbat_article_30.txt \
    -v NBCHAMP=22 \
    ../data1/foot/nbat_article_30.sav \
    > ../data1/foot/nbat_article_30.txt 
+
+# nbat_article_36
+cp ../data1/foot/nbat_article_36.txt \
+   ../data1/foot/nbat_article_36.sav
+
+./01_07_ajoute_champs.awk \
+   -v NBCHAMP=27 \
+   ../data1/foot/nbat_article_36.sav \
+   > ../data1/foot/nbat_article_36.txt 
 
 
 # nbat_article_99

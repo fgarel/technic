@@ -65,4 +65,6 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 500;503;4;9;jandge;année d’entrée à la DGE;INDISPONIBLE
 504;507;4;9;jantfc;année d’entrée paiement TF;INDISPONIBLE
 508;511;4;9;jantbc;année d’entrée paiement TSBCS;INDISPONIBLE
-512;550;39;X;filler2;à blanc;
+512;533;22;X;filler2;à blanc;
+534;537;4;X;dformjur;Forme Juridique
+538;550;13;X;filler3;à blanc;

@@ -11,7 +11,7 @@ CREATE TABLE pdl_article_10 (
 "dnupdl" CHARACTER VARYING(3) NOT NULL,
 "filler01" CHARACTER VARYING(7) NOT NULL,
 "cenr" CHARACTER VARYING(2) NOT NULL,
-"nivim" CHARACTER VARYING(1) NOT NULL,
+"dnivim" CHARACTER VARYING(1) NOT NULL,
 "ctpdl" CHARACTER VARYING(3) NOT NULL,
 "dnompdl" CHARACTER VARYING(30) NOT NULL,
 "dmrpdl" CHARACTER VARYING(20) NOT NULL,
@@ -30,7 +30,7 @@ COMMENT ON COLUMN pdl_article_10."dnupla" IS 'numéro de plan';
 COMMENT ON COLUMN pdl_article_10."dnupdl" IS 'no de pdl';
 COMMENT ON COLUMN pdl_article_10."filler01" IS '';
 COMMENT ON COLUMN pdl_article_10."cenr" IS 'code enregistrement';
-COMMENT ON COLUMN pdl_article_10."nivim" IS 'niveau imbrication';
+COMMENT ON COLUMN pdl_article_10."dnivim" IS 'niveau imbrication';
 COMMENT ON COLUMN pdl_article_10."ctpdl" IS 'type de pdl';
 COMMENT ON COLUMN pdl_article_10."dnompdl" IS '';
 COMMENT ON COLUMN pdl_article_10."dmrpdl" IS 'lot mère(plan+pdl+lot)';

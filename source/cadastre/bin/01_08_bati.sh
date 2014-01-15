@@ -15,7 +15,7 @@ cp ../data1/foot/bati_article_10.txt \
    ../data1/foot/bati_article_10.sav
 
 ./01_07_ajoute_champs.awk \
-   -v NBCHAMP=46 \
+   -v NBCHAMP=47 \
    ../data1/foot/bati_article_10.sav \
    > ../data1/foot/bati_article_10.txt 
 
@@ -30,7 +30,7 @@ iconv -f latin1 -t utf-8 \
       > ../data1/foot/bati_article_21.sav
 
 ./01_07_ajoute_champs.awk \
-   -v NBCHAMP=32 \
+   -v NBCHAMP=38 \
    ../data1/foot/bati_article_21.sav \
    > ../data1/foot/bati_article_21.txt 
 
@@ -49,7 +49,7 @@ cp ../data1/foot/bati_article_36.txt \
    ../data1/foot/bati_article_36.sav
 
 ./01_07_ajoute_champs.awk \
-   -v NBCHAMP=37 \
+   -v NBCHAMP=39 \
    ../data1/foot/bati_article_36.sav \
    > ../data1/foot/bati_article_36.txt 
 

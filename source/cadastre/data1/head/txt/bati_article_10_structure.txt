@@ -43,5 +43,6 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 150;151;2;X;cbtabt;Code exonération HLM zone sensible;ZS, ZT ou blanc
 152;155;4;X;jdtabt;Année début d’exonération ZS;
 156;159;4;X;jrtabt;Année fin d’exonération ZS;
-160;163;4;X;jacloc;Année d’achèvement du local;INDISPONIBLE
-164;200;37;X;filler03;;
+160;168;9;X;filler03;;
+169;173;5;X;cconac;Coe NACE pour les locaux professionnels
+174;200;27;X;filler04;;

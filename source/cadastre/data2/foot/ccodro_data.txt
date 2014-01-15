@@ -1,24 +1,25 @@
 CCODRO;Signification
-P;PROPRIETAIRE
-U;USUFRUITIER (ASSOCIE AVEC N)
-N;NU-PROPRIETAIRE (ASSOCIE AVEC U)
-B;BAILLEUR A CONSTRUCTION (ASSOCIE AVEC R)
-R;PRENEUR A CONSTRUCTION (ASSOCIE AVEC B)
-F;FONCIER (ASSOCIE AVEC D OU T)
-T;TENUYER (ASSOCIE AVEC F)
-D;DOMANIER (ASSOCIE AVEC F)
-V;BAILLEUR D'UN BAIL A REHABILITATION (ASSOCIE AVEC W)
-W;PRENEUR D'UN BAIL A REHABILITATION (ASSOCIE AVEC V)
-A;LOCATAIRE-ATTRIBUTAIRE (ASSOCIE AVEC P)
-E;EMPHYTEOTE (ASSOCIE AVEC P)
-K;ANTICHRESISTE (ASSOCIE AVEC P)
-L;FONCTIONNAIRE LOGE
-G;GERANT,MANDATAIRE,GESTIONNAIRE
-S;SYNDIC DE COPROPRIETE
-H;ASSOCIE DANS UNE SOCIETE EN TRANSPARENCE FISCALE(ASSOCIE AVEC P)
-O;AUTORISATION D’OCCUPATION TEMPORAIRE (70 ANS)
-J;JEUNE AGRICULTEUR
-Q;GESTIONNAIRE TAXE SUR LES BUREAUX (ILE DE FRANCE)
-X;LA POSTE PROPRIETAIRE ET OCCUPANT
-Y;LA POSTE OCCUPANT - NON PROPRIETAIRE
-C;FIDUCIAIRE
+P;Proprietaire
+U;Usufruitier (associe avec n)
+N;Nu-proprietaire (associe avec u)
+B;Bailleur a construction (associe avec r)
+R;Preneur a construction (associe avec b)
+F;Foncier (associe avec d ou t)
+T;Tenuyer (associe avec f)
+D;Domanier (associe avec f)
+V;Bailleur d'un bail a rehabilitation (associe avec w)
+W;Preneur d'un bail a rehabilitation (associe avec v)
+A;Locataire-Attributaire (associe avec p)
+E;Emphyteote (associe avec p)
+K;Antichresiste (associe avec p)
+L;Fonctionnaire loge
+G;Gerant,mandataire,gestionnaire
+S;Syndic de copropriete
+H;Associe dans une societe en transparence fiscale(associe avec p)
+O;Autorisation d’occupation temporaire (70 ans)
+J;Jeune agriculteur
+Q;Gestionnaire taxe sur les bureaux (ile de france)
+X;La Poste proprietaire et occupant
+Y;La Poste occupant - non proprietaire
+C;Fiduciaire
+M;Occupant d'une parcelle appartenant au département de Mayotte ou à l'Etat (associé à P)

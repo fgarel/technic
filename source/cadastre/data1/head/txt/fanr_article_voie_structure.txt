@@ -2,15 +2,27 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 1;2;2;X;ccode;code département;
 3;3;1;X;ccodir;code direction;
 4;6;3;X;ccocom;code commune INSEE;
-7;10;4;X;ccoriv;Code Rivoli de la voie;
+7;10;4;X;ccoriv;Code Rivoli de la voie = id de la voie dans la commune;
 11;11;1;X;cleriv;Clé Rivoli;
 12;15;4;X;natvoi;nature de la voie;
 16;41;26;X;libvoi;libelle de la voie;
 42;42;1;X;filler02;;
 43;43;1;X;typcom;type de la commune;
-44;49;6;X;crur;caractère RUR
-50;50;1;X;carvoi;caractère de voie;0 = publique, 1 = privée
-51;59;9;X;filler03;;
-60;73;14;X;code1;caractère et date d`annulation ?
-74;74;1;X;filler04;;
-75;88;14;X;code2;date de création ?
+44;45;2;X;filler03;;
+46;46;1;X;crur;caractère RUR
+47;48;2;X;filler04;;
+49;49;1;X;carvoi;caractère de voie;0 = publique, 1 = privée
+50;50;1;X;carpop;caractère de population, blanc si < 3000 hab, * sinon
+51;59;9;X;filler05;;
+60;66;7;9;popul2;
+67;73;7;9;popul3;
+74;74;1;X;cannul;caractère d annulation;
+75;81;7;9;datannul;date d annulation
+82;88;7;9;datcreat;date de creation de l article
+89;103;15;X;filler06;;
+104;108;5;X;ccomaj;code identifiant majic de la voie
+109;109;1;X;typvoie;Type de voie
+110;110;1;X;clieudit;caractère du lieu-dit
+111;112;2;X;filler07;;
+113;120;8;X;motdir;dernier mot entierement alphabetique du libelle de la voie
+121;150;30;X;filler08;;

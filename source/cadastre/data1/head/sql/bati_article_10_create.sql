@@ -46,8 +46,9 @@ CREATE TABLE bati_article_10 (
 "cbtabt" CHARACTER VARYING(2) DEFAULT NULL,
 "jdtabt" CHARACTER VARYING(4) DEFAULT NULL,
 "jrtabt" CHARACTER VARYING(4) DEFAULT NULL,
-"jacloc" CHARACTER VARYING(4) DEFAULT NULL,
-"filler03" CHARACTER VARYING(37) DEFAULT NULL);
+"filler03" CHARACTER VARYING(9) DEFAULT NULL,
+"cconac" CHARACTER VARYING(5) DEFAULT NULL,
+"filler04" CHARACTER VARYING(27) DEFAULT NULL);
 -- Ajout des commentaires pour la table bati_article_10
 COMMENT ON COLUMN bati_article_10."ccodep" IS 'code département';
 COMMENT ON COLUMN bati_article_10."ccodir" IS 'code direction';
@@ -93,5 +94,6 @@ COMMENT ON COLUMN bati_article_10."gimtom" IS 'Indicateur imposition OM exploita
 COMMENT ON COLUMN bati_article_10."cbtabt" IS 'Code exonération HLM zone sensible';
 COMMENT ON COLUMN bati_article_10."jdtabt" IS 'Année début d’exonération ZS';
 COMMENT ON COLUMN bati_article_10."jrtabt" IS 'Année fin d’exonération ZS';
-COMMENT ON COLUMN bati_article_10."jacloc" IS 'Année d’achèvement du local';
 COMMENT ON COLUMN bati_article_10."filler03" IS '';
+COMMENT ON COLUMN bati_article_10."cconac" IS 'Coe NACE pour les locaux professionnels';
+COMMENT ON COLUMN bati_article_10."filler04" IS '';

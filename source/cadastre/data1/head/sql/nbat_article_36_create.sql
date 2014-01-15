@@ -27,7 +27,8 @@ CREATE TABLE nbat_article_36 (
 "majposa4" CHARACTER VARYING(10) NOT NULL,
 "filler09" CHARACTER VARYING(1) NOT NULL,
 "bisufad4" CHARACTER VARYING(10) NOT NULL,
-"filler10" CHARACTER VARYING(41) NOT NULL);
+"cntmajtc" CHARACTER VARYING(9) NOT NULL,
+"filler10" CHARACTER VARYING(82) NOT NULL);
 -- Ajout des commentaires pour la table nbat_article_36
 COMMENT ON COLUMN nbat_article_36."ccodep" IS 'Code département';
 COMMENT ON COLUMN nbat_article_36."ccodir" IS 'Code direction';
@@ -54,4 +55,5 @@ COMMENT ON COLUMN nbat_article_36."filler08" IS 'Espace séparateur 8';
 COMMENT ON COLUMN nbat_article_36."majposa4" IS 'Montant de la majoration terrain constructible. Servi pour la part communale. Toujours à zéro pour autres collectivités.';
 COMMENT ON COLUMN nbat_article_36."filler09" IS 'Espace séparateur 9';
 COMMENT ON COLUMN nbat_article_36."bisufad4" IS 'Base d’imposition de la suf en valeur de l’année';
+COMMENT ON COLUMN nbat_article_36."cntmajtc" IS 'Nouvelle contenance suf pour calcul majoration TC';
 COMMENT ON COLUMN nbat_article_36."filler10" IS 'Espace séparateur 10';

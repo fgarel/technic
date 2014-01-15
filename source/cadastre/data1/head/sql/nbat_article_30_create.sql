@@ -23,7 +23,7 @@ CREATE TABLE nbat_article_30 (
 "rcexnba" CHARACTER VARYING(10) NOT NULL,
 "filler01" CHARACTER VARYING(1) NOT NULL,
 "mpexnba" CHARACTER VARYING(10) NOT NULL,
-"filler02" CHARACTER VARYING(51) NOT NULL);
+"filler02" CHARACTER VARYING(101) NOT NULL);
 -- Ajout des commentaires pour la table nbat_article_30
 COMMENT ON COLUMN nbat_article_30."ccodep" IS 'Code département';
 COMMENT ON COLUMN nbat_article_30."ccodir" IS 'Code direction';

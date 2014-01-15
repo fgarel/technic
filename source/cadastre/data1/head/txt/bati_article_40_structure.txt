@@ -21,7 +21,7 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 74;75;2;9;dcimei4;Coefficient de pondération;9V9
 76;76;1;X;geaulc;Présence d’eau;O = oui, N = non
 77;77;1;X;gelelc;Présence d’électricité;O = oui, N = non
-78;78;1;X;gesclc;Présence d’escalier de ser- vice (appartement);O = oui, N = non, blanc
+78;78;1;X;gesclc;Présence d’escalier de service (appartement);O = oui, N = non, blanc
 79;79;1;X;ggazlc;Présence du gaz;O = oui, N = non
 80;80;1;X;gasclc;Présence d’ascenseur (appartement);O = oui, N = non, blanc
 81;81;1;X;gchclc;Présence du chauffage central;O = oui, N = non

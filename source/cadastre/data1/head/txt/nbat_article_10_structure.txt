@@ -31,4 +31,12 @@ DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
 96;99;4;X;ccoriv;Code Rivoli de la voie;
 100;103;4;X;ccocif;Code du cdif (code topad);
 104;104;1;X;gpafpd;Domanialité, représentation au plan;INDISPONIBLE
-105;150;46;X;filler02;;
+105;135;31;X;filler02;;
+136;139;4;X;cconvo;Code nature de la voie
+140;165;26;X;dvoilib;Libellé de la voie
+166;168;3;9;ccocomm;Code INSEE de la commune de la parcelle mère
+169;171;3;X;ccoprem;code du préfixe de section de la parcelle mère
+172;173;2;X;ccosecm;Code section de la parcelle mère
+174;177;4;X;dnuplam;Numéro de plan de la parcelle mère
+178;178;1;X;type;Type de filiation
+179;200;22;X;filler03;;
