@@ -1,1 +1,1 @@
-drop database cadastre;
+drop database patrimoine;

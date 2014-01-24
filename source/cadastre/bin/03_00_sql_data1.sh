@@ -18,7 +18,7 @@ echo "echo \"10.2.10.56:5432:*:contrib:alambic\" >> ~/.pgpass"
 #------------
 psql -h $HOST -U contrib -d template1 -f ./sql/dropdatabase.sql
 psql -h $HOST -U contrib -d template1 -f ./sql/createdatabase.sql
-
+psql -h $HOST -U contrib -d patrimoine -f ./sql/createschema.sql
 
 # Suppression et creation des tables
 #===================================
@@ -53,3 +53,16 @@ psql -h $HOST -U contrib -d template1 -f ./sql/createdatabase.sql
 # methode sql
 #------------
 #psql -h 10.2.10.2 -U contrib -d cadastre -f export.sql
+
+
+# import des données graphiques
+# =============================
+# methode shell
+#--------------
+./03_05_import_graphique.sh
+
+# jointure entre les données littérales du cadastre et le plan
+# ============================================================
+# methode shell
+#--------------
+./03_06_jointure_graphique_litteral.sh

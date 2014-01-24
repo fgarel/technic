@@ -3,64 +3,64 @@
 HOST=10.2.10.56
 
 #-- import des bati à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_direction from stdin delimiter ';';" \
     < ../data1/foot/bati_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_00 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_00 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_00.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_10 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_10 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_10.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_21 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_21 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_21.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_30 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_30 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_30.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_36 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_36 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_36.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_40 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_40 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_40.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_50 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_50 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_50.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_60 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_60 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_60.txt
-psql -d cadastre -U contrib -h $HOST -c "copy bati_article_99 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_99 from stdin delimiter ';';" \
     < ../data1/foot/bati_article_99.txt
 #-- import des fanr à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy fanr_article_commune from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy fanr_article_commune from stdin delimiter ';';" \
     < ../data1/foot/fanr_article_commune.txt
-psql -d cadastre -U contrib -h $HOST -c "copy fanr_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy fanr_article_direction from stdin delimiter ';';" \
     < ../data1/foot/fanr_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy fanr_article_voie from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy fanr_article_voie from stdin delimiter ';';" \
     < ../data1/foot/fanr_article_voie.txt
 #-- import des nbat à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_direction from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_10 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_10 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_10.txt
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_21 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_21 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_21.txt
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_30 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_30 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_30.txt
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_36 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_36 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_36.txt
-psql -d cadastre -U contrib -h $HOST -c "copy nbat_article_99 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_99 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_99.txt
 #-- import des pdl à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy pdl_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_direction from stdin delimiter ';';" \
     < ../data1/foot/pdl_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy pdl_article_10 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_10 from stdin delimiter ';';" \
     < ../data1/foot/pdl_article_10.txt
-psql -d cadastre -U contrib -h $HOST -c "copy pdl_article_20 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_20 from stdin delimiter ';';" \
     < ../data1/foot/pdl_article_20.txt
-psql -d cadastre -U contrib -h $HOST -c "copy pdl_article_30 from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_30 from stdin delimiter ';';" \
     < ../data1/foot/pdl_article_30.txt
 #-- import des proprietaires à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy prop_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy prop_article_direction from stdin delimiter ';';" \
     < ../data1/foot/prop_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy prop_article_courant from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy prop_article_courant from stdin delimiter ';';" \
     < ../data1/foot/prop_article_courant.txt
 #-- import des revdi à partir d'un fichier csv
-psql -d cadastre -U contrib -h $HOST -c "copy revdi_article_direction from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy revdi_article_direction from stdin delimiter ';';" \
     < ../data1/foot/revdi_article_direction.txt
-psql -d cadastre -U contrib -h $HOST -c "copy revdi_article_lotlocal from stdin delimiter ';';" \
+psql -d patrimoine -U contrib -h $HOST -c "copy revdi_article_lotlocal from stdin delimiter ';';" \
     < ../data1/foot/revdi_article_lotlocal.txt
 
 
@@ -75,5 +75,5 @@ for NAME in $LIST
 do
     TAB="liste_"$NAME
     DATA=$NAME"_data.txt"
-    tail -n+2 ../data2/foot/$DATA | psql -d cadastre -U contrib -h $HOST -c "copy $TAB from stdin delimiter ';'"
+    tail -n+2 ../data2/foot/$DATA | psql -d patrimoine -U contrib -h $HOST -c "copy $TAB from stdin delimiter ';'"
 done

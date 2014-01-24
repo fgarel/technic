@@ -40,6 +40,10 @@ Nous modifions le fichier .pgpass
 
   echo \"10.2.10.56:5432:_:contrib:pass\" >> ~/.pgpass
 
+Preparation du serveur postgresql
+---------------------------------
+Le serveur de base de données postgresql doit être configuré pour accepter les données.
+Une partie de cette configuration, sur le tablespace et sur les schemas, est détaillée dans les commentaires des scripts sql (/bin/sql)
 
 Explication de la procédure
 ===========================
@@ -53,19 +57,21 @@ en fonction du numero d'article
 
 Du repertoire data/ini vers data/head
 -------------------------------------
-des fichers permettent de structurer les tables, c'est a dire, le nom des colonnes, leurs longueurs.
+Des fichers de paramètrage (de configuration) permettent de définir la structure des tables, c'est a dire, le nom des colonnes, leurs longueurs.
 
-Ces fichiers sont actuellement lu par un script shell qui en fait des commandes sql : On pourrait très bien imaginé dans un futur proche créer des scripts python qui liraient ces mêmes fichiers pour en faire des fichiers model.py que l'on pourait ensuite utiliser avec sqlalchemy.
+Ces fichiers sont actuellement lu par un script shell qui en fait des commandes sql.
+On pourrait très bien imaginé dans un futur proche créer des scripts python qui liraient ces mêmes fichiers pour en faire des fichiers model.py que l'on pourait ensuite utiliser avec sqlalchemy.
 
 Du repertoire data/ini vers data/foot
 -------------------------------------
-le "head", c'est les en-têtes, tandis que le "foot", c'est les données.
+Les fichiers de configuration sont mis dans le sous-repertoire head.
+Le "head", c'est l'emplacement des en-têtes, tandis que le "foot", c'est celui des données.
 
-Des scripts permettent donc de lire les fichiers majic pour les ventiler en fichier "foot"
+Des scripts shell (dans le repertoire /bin) permettent donc de lire les fichiers majic pour les ventiler en fichier "foot"
 
 Des scripts sql et un orchestration shell
 -----------------------------------------
-Les scripts shell qui sont la pour jouer des instructions sql
+Les scripts shell qui sont la aussi pour jouer des instructions sql (dans le repertoire /bin/sql)
 
 Lancement du l'import
 =====================
