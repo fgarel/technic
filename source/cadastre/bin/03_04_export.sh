@@ -1,6 +1,7 @@
 #!/bin/sh
 
 HOST=10.2.10.56
+HOST=192.168.0.21
 
 #-- export des proprietaires à partir d'une vue vers un fichier csv
 #psql -d patrimoine -U contrib -h $HOST -c "copy (select * from vue_001) to stdout delimiter ';';" \
