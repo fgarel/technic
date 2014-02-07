@@ -1,0 +1,9 @@
+--
+-- remplissage de la table spip_documents_liens
+--
+INSERT INTO `spip_documents_liens` (`id_document`, `id_objet`, `objet`, `vu`) VALUES
+(1001, 3, 'rubrique', 'non'),
+(1003, 3, 'rubrique', 'non'),
+(1004, 4, 'rubrique', 'non'),
+(1005, 4, 'rubrique', 'non'),
+(1134, 4, 'rubrique', 'non'),

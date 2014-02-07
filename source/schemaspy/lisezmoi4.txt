@@ -1,0 +1,12 @@
+manipulation des données mysql sur le serveur opendata ovh 94.23.233.94
+
+http://94.23.233.94/phpmyadmin/
+mysql : login    : root
+mysql : password : GhyjUi98
+mysql : database : spipopendata
+
+les tables
+spip_documents
+spip_documents_liens
+spip_opendata_ressources
+

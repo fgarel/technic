@@ -1,0 +1,4 @@
+--
+-- remplissage de la table spip_opendata_ressource
+--
+INSERT INTO `spip_opendata_ressource` (`id_ressource`, `id_opendata`, `document`) VALUES

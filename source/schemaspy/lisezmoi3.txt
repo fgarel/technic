@@ -1,0 +1,17 @@
+1. installation et configuration de la liaison entre VLR et OVH
+le but est de pouvoir faire une connexion "non-interactive", c'est a dire,
+une connexion sans saisie de mot de passe.
+en effet, le script d'automatisation doit pouvoir transferer les fichiers sans 
+qu'aucun humain ne soit derrière la machine pour taper un mot de passe
+
+1.2. documentation
+http://ubuntuguide.net/ssh-to-remote-host-without-password
+http://doc.ubuntu-fr.org/ssh
+
+1.3. sur la machine VLR (dsibdd09)
+
+ssh-keygen -t rsa
+ssh-copy-id root@94.23.233.94
+
+et si on ne met rien dans la passphrase, ...., alors ça marche....
+

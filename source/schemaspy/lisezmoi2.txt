@@ -1,0 +1,65 @@
+OpenData
+
+1. Introduction
+
+
+2. L'infrastructure
+
+2.1. OVH
+2.1.1. site public opendata
+site web opendata, spip, mysql, postgresql
+hote : 94.23.233.94
+ssh  : login    : root
+ssh  : password : eShbQTew
+psql : login    : contrib
+psql : password : alambic
+mysql: login    : root
+mysql: password :
+
+2.2. VLR
+2.2.1. base de données interne
+postgresql, execution des jobs
+hote : dsibdd09
+ssh  : login    : root
+ssh  : password : MAIRIELR
+psql : login    : contrib
+psql : password : alambic
+
+
+2.2.2. developpement
+conception des jobs, execution des jobs windows 64 bits
+hote : dsiappli29
+rdp  : login    : garel
+rdp  : password : 
+
+3. Conception des jobs
+3.1. Modèle de jobs Talend
+
+3.2. Les problèmes
+stationnement : access
+dict : hyperfile
+erp : access
+patrimoine : access
+structuresociale : access
+taxesejour : hyperfile
+scolaire : access
+decoupelectoral : access
+
+4. Automatisation
+4.1. Preparation du serveur OVH
+creation des bases de données a l'aide du script ovh_create_database.sh
+4.2. Execution des jobs
+dsibdd09
+cd /data/opendata/batchs/bin
+./do_all.sh
+4.3. Transfert de VLR vers OVH
+il y a le transfert du contenu de la base de données, et il y a aussi le transfert des fichiers
+les fihciers arrivent dans le repertoire /var/www/opendata/IMG/
+4.4. Traitement complementaire sur la machine OVH
+4.4.1. changer le proprietaire des fichiers
+cd /var/www/opendata/IMG
+chown -R www-data:www-data *
+
+4.5. Automatisation
+sur dsibdd09, edition du fichier ~/.pgpass
+sur dsibdd09, génération d'une paire de clef ssh

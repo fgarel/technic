@@ -1,0 +1,24 @@
+
+
+
+script fait ou restant à faire :
+
+automatisation de la chaine
+definition des taches elementaires
+- "job" : des bases de données vers dsibdd09-job
+  actuellement, multiples fichiers talend
+
+- "anonymisation" : execution de requetes de selection sur dsibdd09-job
+script anonymisation.sh
+
+- export vers csv
+  script qui export les données de la base vers des fichiers excel
+
+- export vers xls
+  pas fait
+
+- transfert de dsibdd09-job vers dsibdd09-prod
+
+- transfert de dsibdd09-prod vers ovh (94.23.233.94)
+
+

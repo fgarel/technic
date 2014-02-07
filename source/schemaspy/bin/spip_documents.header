@@ -1,0 +1,4 @@
+--
+-- remplissage de la table spip_documents
+--
+INSERT INTO `spip_documents` (`id_document`, `id_vignette`, `extension`, `titre`, `date`, `descriptif`, `fichier`, `taille`, `largeur`, `hauteur`, `mode`, `distant`, `maj`, `statut`, `date_publication`, `brise`, `credits`) VALUES
