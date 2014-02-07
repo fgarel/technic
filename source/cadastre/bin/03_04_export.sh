@@ -55,6 +55,14 @@ psql -d patrimoine -U contrib -h $HOST -c "copy (select * from vlr_dgfip_pev_vie
 psql -d patrimoine -U contrib -h $HOST -c "copy (select * from dgfip_parcelle_prop) to stdout delimiter ';';" \
     > ../data1/fin/dgfip_parcelle_prop.txt
 
+
+
+psql -d patrimoine -U contrib -h $HOST -c "copy (select * from parcelle_larochelle) to stdout delimiter ';';" \
+    > ../data1/fin/parcelle_larochelle.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy (select * from parcelle_desc_larochelle) to stdout delimiter ';';" \
+    > ../data1/fin/parcelle_desc_larochelle.txt
+
+
 # recopie des fichiers dans le repertoire reseau, accessible pour qgis
 cp ../data1/fin/vlr_compte_communal_v1.txt ~fred/f/CARTOGRAPHIE/donnees/Patrimoine/
 cp ../data1/fin/vlr_compte_communal_v2.txt ~fred/f/CARTOGRAPHIE/donnees/Patrimoine/

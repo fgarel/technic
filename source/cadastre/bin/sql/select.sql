@@ -1124,3 +1124,25 @@ order by
 --select count(1)
 --from bati_article_00
 --left join nbat_article_10 on (bati_article_00.ccosec = nbat_article_10.ccosec and bati_article_00.dnupla = nbat_article_10.dnupla);
+
+
+
+
+
+-- selection des parcelles bati de la rochelle
+DROP TABLE if exists cadastre_travail.parcelle_desc_larochelle;
+CREATE table cadastre_travail.parcelle_desc_larochelle AS
+select
+ * 
+from parcelle_desc
+where proprietaire like '%COMMUNE DE LA ROCHELLE%'
+;
+
+-- selection des parcelles non-bati de la Rochelle
+DROP TABLE if exists cadastre_travail.parcelle_larochelle;
+CREATE table cadastre_travail.parcelle_larochelle AS
+select
+ * 
+from parcelle
+where proprietaire like '%COMMUNE DE LA ROCHELLE%'
+;
