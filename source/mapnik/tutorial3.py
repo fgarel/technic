@@ -146,7 +146,7 @@ _params_connection_dsibdd09 = dict(host='dsibdd09', \
                                    srid=2154, \
                                    user='contrib', \
                                    password='alambic')
-_params_connection_debian_parks2154 = dict(host='10.2.10.58', \
+_params_connection_debian_parks2154 = dict(host='10.2.10.56', \
                                    port=5432, \
                                    dbname='dbmapnik', \
                                    table='parks2154', \
@@ -154,7 +154,7 @@ _params_connection_debian_parks2154 = dict(host='10.2.10.58', \
                                    user='contrib', \
                                    password='alambic')
 _datasource_006 = mapnik.PostGIS(**_params_connection_debian_parks2154)
-_params_connection_debian_parks3946 = dict(host='10.2.10.58', \
+_params_connection_debian_parks3946 = dict(host='10.2.10.56', \
                                    port=5432, \
                                    dbname='dbmapnik', \
                                    table='parks', \
