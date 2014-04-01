@@ -18,3 +18,14 @@ aptitude install libmapnik-dev
 Utilisation de mapnik
 ---------------------
 ~/travail/mapnik/tutorial3.py
+
+
+Installation de mapnik dans un environnement virtuel
+----------------------------------------------------
+
+workon mapnik
+pip install mapnik2
+Exeption: Cant find boost_python lib!
+sudo aptitude install libboost-python1.49.0
+sudo aptitude install libboost-python1.49-dev
+sudo ln -sf /usr/lib/libboost_python-py27.so.1.48.0 /usr/lib/libboost_python.so

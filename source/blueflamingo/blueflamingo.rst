@@ -16,4 +16,5 @@ Téléchargement d'une image iso
 vagrant ou docker
 -----------------
 
+http://blog.docker.io/2013/07/docker-desktop-your-desktop-over-ssh-running-inside-of-a-docker-container/
 
