@@ -1,0 +1,8 @@
+jigdo=''
+debianMirror='ftp://ftp.fr.debian.org/debian/'
+nonusMirror='ftp://ftp.fr.debian.org/debian-non-US/'
+tmpDir='.'
+jigdoOpts='--cache jigdo-file-cache.db'
+wgetOpts='--passive-ftp --quiet --no-verbose --dot-style=mega --continue --timeout=30'
+scanMenu='/var/cache/apt/archives/ /mnt/iso.old/ /mnt/iso.tmp/'
+scanMenu='/mnt/iso.old/ /mnt/iso.tmp/'
