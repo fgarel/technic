@@ -998,7 +998,10 @@ order by
   pbd_section,
   pbd_numero,
   pbi_bat,
-  pbi_invariant
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
+  pbe_pev
   ;
 
 --ALTER TABLE cadastre_travail.bati_article
@@ -1027,15 +1030,24 @@ select distinct
   pbd_numero,
   pbd_parcelle,
   pbi_bat,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
   pbd_adresse_complete
 
 from bati_article
   left join dgfip_compte_communal_membre on (bati_article.numero_communal = dgfip_compte_communal_membre.numero_communal)
 
+--where pbd_parcelle = '300 CS 410'
+
 order by
   pbd_section,
   pbd_numero,
-  pbi_bat
+  pbi_bat,
+  pbd_adresse_complete,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte
 ;
 
 
@@ -1048,16 +1060,25 @@ select distinct
   pbd_numero,
   pbd_parcelle,
   pbi_bat,
-  invar,
-  pbd_adresse_complete
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
+  pbd_adresse_complete,
+  invar
 
 from bati_article
   left join dgfip_compte_communal_membre on (bati_article.numero_communal = dgfip_compte_communal_membre.numero_communal)
+
+--where pbd_parcelle = '300 CS 410'
 
 order by
   pbd_section,
   pbd_numero,
   pbi_bat,
+  pbd_adresse_complete,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
   invar
 ;
 
@@ -1070,19 +1091,26 @@ select distinct
   pbd_numero,
   pbd_parcelle,
   pbi_bat,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
+  pbd_adresse_complete,
   invar,
   pbe_pev,
-  pbd_adresse_complete,
   pbe_nature_local_signification,
   annee_achev,
   superficie_pev
 from bati_article
   left join dgfip_compte_communal_membre on (bati_article.numero_communal = dgfip_compte_communal_membre.numero_communal)
-
+--where pbd_parcelle = '300 CS 410'
 order by
   pbd_section,
   pbd_numero,
   pbi_bat,
+  pbd_adresse_complete,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
   invar,
   pbe_pev
 ;
@@ -1097,10 +1125,13 @@ select distinct
   pbd_numero,
   pbd_parcelle,
   pbi_bat,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
+  pbd_adresse_complete,
   invar,
   pbe_pev,
   descriptif_numero,
-  pbd_adresse_complete,
   pbe_nature_local_signification,
   annee_achev,
   superficie_pev,
@@ -1112,11 +1143,15 @@ select distinct
   elements_incorpores
 from bati_article
   left join dgfip_compte_communal_membre on (bati_article.numero_communal = dgfip_compte_communal_membre.numero_communal)
-
+--where pbd_parcelle = '300 CS 410'
 order by
   pbd_section,
   pbd_numero,
   pbi_bat,
+  pbd_adresse_complete,
+  pbi_ent,
+  pbi_niv,
+  pbi_porte,
   invar,
   pbe_pev,
   descriptif_numero
