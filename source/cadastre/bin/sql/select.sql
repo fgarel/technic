@@ -1169,7 +1169,7 @@ DROP TABLE if exists cadastre_travail.parcelle_desc_larochelle;
 CREATE table cadastre_travail.parcelle_desc_larochelle AS
 select
  * 
-from parcelle_desc
+from dgfip_desc
 where proprietaire like '%COMMUNE DE LA ROCHELLE%'
 ;
 
@@ -1178,6 +1178,6 @@ DROP TABLE if exists cadastre_travail.parcelle_larochelle;
 CREATE table cadastre_travail.parcelle_larochelle AS
 select
  * 
-from parcelle
+from dgfip_parcelle
 where proprietaire like '%COMMUNE DE LA ROCHELLE%'
 ;

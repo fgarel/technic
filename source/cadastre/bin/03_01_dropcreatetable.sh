@@ -1,7 +1,7 @@
 #!/bin/sh
 
 HOST=10.2.10.56
-HOST=192.168.0.21
+#HOST=192.168.0.21
 
 # Suppression et creation des tables
 #===================================

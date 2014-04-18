@@ -1,7 +1,7 @@
 #!/bin/sh
 
 HOST=10.2.10.56
-HOST=192.168.0.21
+#HOST=192.168.0.21
 
 #-- import des bati à partir d'un fichier csv
 psql -d patrimoine -U contrib -h $HOST -c "copy bati_article_direction from stdin delimiter ';';" \
