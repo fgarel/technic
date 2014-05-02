@@ -20,12 +20,12 @@ sudo mount -o loop debian-testing-amd64-netinst.iso.tmp /mnt/iso.tmp/
 #rm -f debian-testing-amd64-netinst.jigdo
 #rm -f debian-testing-amd64-netinst.template
 wget http://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-cd/debian-testing-amd64-netinst.jigdo \
-    -N \
-    -c
+    -N #\
+#    -c
 #    -r \
 wget http://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-cd/debian-testing-amd64-netinst.template \
-    -N \
-    -c
+    -N #\
+#    -c
 #    -r \
 
 # apres il faut lancer la commande jigdo-lite
