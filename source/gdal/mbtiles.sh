@@ -13,7 +13,11 @@
 
 #rm logo_3946.png
 convert -gravity center logo: -geometry 1365x1024 -crop 1024x1024+0+0 +repage logo_3946.png
+
+# le fichier généré est de type 8-bit (????)
+# info
 #identify logo_3946.png
+#gdalinfo logo_3946.png
 
 # creation d'un fichier worldfile (cc46)
 #rm logo_3946.pgw
@@ -57,7 +61,7 @@ convert -size 1000x1000 \
         maison_3946.png
 
 # creation d'un fichier worldfile (cc46)
-#rm logo_3946.pgw
+#rm maison_3946.pgw
 cat <<EOF > maison_3946.pgw
 0.1
 0
@@ -68,46 +72,62 @@ cat <<EOF > maison_3946.pgw
 EOF
 
 # info
-#gdalinfo logo_3946.png
+identify maison_3946.png
+#gdalinfo maison_3946.png
 
 # recopie du fichier de calage
+rm maison_3946-flatten.pgw
 cp maison_3946.pgw maison_3946-flatten.pgw
 
 # applatissement pour supprimer la transparence
 convert -flatten maison_3946.png maison_3946-flatten.png
 
+# info
+identify maison_3946-flatten.png
+#gdalinfo maison_3946-flatten.png
+
 # suppression des fichiers avec transparence,
 # a partir de maintenant, nous travaillons avec des fichiers aplatis
-rm maison_3946.png
-rm maison_3946.pgw
+#rm maison_3946.png
+#rm maison_3946.pgw
+
 # transformation du système de coordonnées
 # l'image resultante est en geotif
-#rm logo_3857.tfw
-#rm logo_3857.tif
+rm maison_3857.tfw
+rm maison_3857.tif
 gdalwarp -s_srs 'EPSG:3946' \
          -t_srs 'EPSG:3857' \
          -of GTiff \
          -co 'TFW=yes'\
-         maison_3946-flatten.png \
+         maison_3946.png \
          maison_3857.tif
+
+# suppression des fichiers png
 rm maison_3946-flatten.png
 rm maison_3946-flatten.pgw
 
 # info
-#gdalinfo logo_3857.tif
+identify maison_3857.tif
+#gdalinfo maison_3857.tif
 
-# conversion
+# conversion de tif vers png
 rm maison_3857.png
 rm maison_3857.wld
 gdal_translate -of png \
                -co 'WORLDFILE=yes' \
                maison_3857.tif \
                maison_3857.png
-rm maison_3857.tfw
-rm maison_3857.tif
+
+rm maison_3857.png
+convert maison_3857.tif maison_3857.png
+
+# suppression des fichiers tif
+#rm maison_3857.tfw
+#rm maison_3857.tif
 
 # info
-#gdalinfo logo_3857.png
+identify maison_3857.png
+#gdalinfo maison_3857.png
 
 # creation d'une mosaique
 rm -r tuiles
