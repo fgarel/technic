@@ -1,0 +1,26 @@
+
+
+
+Lien vers google street view
+
+<A href="https://maps.google.com/maps?z=14&t=m&q=45.732864, 4.818137&layer=c&cbll=45.732864,4.818137&cbp=11,0,0,0,0"target=_blank>Google Streetview</a>
+
+<A href="https://maps.google.com/maps?z=14&t=m&q=46.1711413,-1.1551461&layer=c&cbll=46.1711413,-1.1551461&cbp=11,0,0,0,0"target=_blank>Google Streetview</a>
+
+
+
+https://maps.google.com/maps?z=14&t=m&q=46.1711413,-1.1551461&layer=c&cbll=46.1711413,-1.1551461&cbp=11,0,0,0,0
+
+https://maps.google.com/maps?z=14&t=m&q=46.1711413,-1.1551461&layer=c&cbll=46.1711413,-1.1551461
+
+
+
+La création de l'url est documentée ici :
+http://stackoverflow.com/questions/387942/google-street-view-url
+
+'https://maps.google.fr/?q=&layer=c&cbll=' || ST_Y(ST_Transform(st_centroid(geom),4326)) || ',' || ST_X(ST_Transform(st_centroid(geom),4326)) || '&cbp=11,0,0,0,0&ll=' || ST_Y(ST_Transform(st_centroid(geom),4326)) || ',' || ST_X(ST_Transform(st_centroid(geom),4326)) || '&z=16'
+
+'https://maps.google.fr/?q=&layer=c&cbll=' || 46.1711413 || ',' || -1.1551461 || '&cbp=11,0,0,0,0&ll=' || 46.1711413 || ',' || -1.1551461 || '&z=16'
+
+https://maps.google.fr/?q=&layer=c&cbll=46.17136,-1.156021&cbp=11,180,45,2,0&ll=46.17136,-1.156021&z=16
+
