@@ -16,8 +16,8 @@ convert -gravity center logo: -geometry 1365x1024 -crop 1024x1024+0+0 +repage lo
 
 # le fichier généré est de type 8-bit (????)
 # info
-#identify logo_3946.png
-#gdalinfo logo_3946.png
+identify logo_3946.png
+gdalinfo logo_3946.png
 
 # creation d'un fichier worldfile (cc46)
 #rm logo_3946.pgw
@@ -47,8 +47,8 @@ rm logo_3946.png
 rm logo_3946.pgw
 
 # info
-#identify logo_3857.tif
-#gdalinfo logo_3857.tif
+identify logo_3857.tif
+gdalinfo logo_3857.tif
 
 # conversion de tif vers png
 rm logo_3857.png
@@ -67,7 +67,7 @@ gdal_translate -of png \
 
 # info
 identify logo_3857.png
-#gdalinfo logo_3857.png
+gdalinfo logo_3857.png
 
 # creation d'une mosaique
 rm -r tuiles
