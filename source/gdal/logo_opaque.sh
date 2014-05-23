@@ -16,8 +16,10 @@ convert -gravity center logo: -geometry 1365x1024 -crop 1024x1024+0+0 +repage lo
 
 # le fichier généré est de type 8-bit (????)
 # info
+file logo_3946.png
 identify logo_3946.png
-gdalinfo logo_3946.png
+gdalinfo logo_3946.png | grep -E Files\|Driver\|Band
+
 
 # creation d'un fichier worldfile (cc46)
 #rm logo_3946.pgw
@@ -47,8 +49,9 @@ rm logo_3946.png
 rm logo_3946.pgw
 
 # info
+file logo_3857.tif
 identify logo_3857.tif
-gdalinfo logo_3857.tif
+gdalinfo logo_3857.tif | grep -E Files\|Driver\|Band
 
 # conversion de tif vers png
 rm logo_3857.png
@@ -66,8 +69,9 @@ gdal_translate -of png \
 #rm logo_3857.tif
 
 # info
+file logo_3857.png
 identify logo_3857.png
-gdalinfo logo_3857.png
+gdalinfo logo_3857.png | grep -E Files\|Driver\|Band
 
 # creation d'une mosaique
 rm -r tuiles
@@ -78,7 +82,7 @@ gdal2tiles.py -p mercator \
               tuiles
 
 # transformation en mbtiles
-wget -O raster2mb https://raw.githubusercontent.com/crschmidt/raster2mb/master/raster2mb
+wget -q -O raster2mb https://raw.githubusercontent.com/crschmidt/raster2mb/master/raster2mb
 chmod +x raster2mb
 
 rm logo_3857.mbtiles
