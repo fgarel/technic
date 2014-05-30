@@ -1,0 +1,152 @@
+Map Compare News
+=============================
+
+Functionality:
+--------------
+(for maps see below)
+
+v2.0
+- all CSS/JS are local files, Map Compare can run offline on a laptop
+- upgrade JavaScript libs to latest version: jquery, jqModal, OpenLayers
+- support google maps v3
+- allow to display only one map
+- support up to 32 maps on a page
+- table with rows support. one row for <=3 maps, 2 rows for 4-10 maps,
+  3 rows for 11-21 maps, and 4 rows for more than 21 maps
+- noscript warning if JavaScript is disabled
+- update help.html page
+- center to Berlin downtown
+- supported browsers: Firefox, Safari, Google Chrome, Opera, IE8 or later
+
+v2.1
+- support fullscreen view
+- highlight active map
+- new URL parameter &fullscreen=1 to enable fullscreen mode
+
+v2.2
+- new menu for overlay maps (top right)
+- location service: where am I?
+- Web Accessibility: enable keyboard shortcuts: 
+  for navigation: arrow left, arrow top, arrow right, arrow bottom, h/j/k/l; 
+  for zoom: -/=/+; to toggle fullscreen: f; jump to geolocation: g; 
+  select number of maps: 1/2/3/4/6/8
+
+v2.3
+- Map Compare admin console to configure number of maps, your own
+  tile servers and the order of maps
+- run JavaScript code in strict mode, HTML5
+- JavaScript refactoring to avoid local variables
+- Maps are sorted in pull-down menu, by name (OSM maps first) or type
+
+v2.4
+- display overlay maps with opacity in percent range 0..100%
+- bing maps were off-by-one in zoom level
+
+v2.5
+- upgrade to OpenLayer v2.12, which fix the Google Map copyright bug
+- patch OpenLayer v2.11, which fix the Google Map copyright bug
+- move all maps left/right/top/down on key strokes, not just the first map
+- map.pan(): google maps don't support animate flag 
+- use stable google maps version 3.8
+
+v2.6
+- improve JS performance 
+- support up to 5 rows for more than 32 maps on a page
+- improve admin console design for smaller screens
+- new parameter "url" to set center of map
+- admin console: configure center and zoom level
+
+v2.7
+- new slider for overlay transparancy
+- development: improved console logging
+- support profiles for Satellite, Nokia, Google, Bing, Yahoo,
+  OpenStreeMap, Public Transport, Cycle, Commercial
+- profiles in fullscreen mode by default
+- help page for admin console
+- new class OpenLayers.Layer.Nokia
+
+v2.8
+- bugfix: adjust zoom for maps with lower zoom levels
+
+v2.9
+- map size fine tuning for full screen mode
+- fix google maps in full screen mode
+- ESC key: leave full screen mode
+- update help page
+- support multiple servers in URL config, e.g.: http://{switch:a,b}.tile.bbbike.org
+- bugfix for '-' event key in Firefox 15.x or later, see https://github.com/openlayers/openlayers/issues/605
+
+Maps:
+--------
+
+v2.0
+- disable stale maps
+- 3x BBBike maps: mapnik, mapnik (de), smoothness
+- 3x Yahoo maps
+- 3x Bing maps
+- mapnik: german, black/white
+- OSM Landscape, OSM Transport, OSM Hike&Bike and OSM Public Transport
+- Land Shading and overlay Hillshading
+- Mapquest (OSM) and Mapquest Satellite
+- Esri Topo and Esri 
+- MapBox (OSM)
+- Apple iPhoto (OSM)
+- overlay maps: ADFC Radwegenetz, Velo-Layer, MaxSpeed
+- Added Toner and Watercolor maps
+- Tile@Home is dead
+
+v2.1
+- OSM Wanderreitkarte
+
+v2.2
+- Skobbler
+- split Mapquest into Mapquest Europe and Mapquest America
+
+v2.3
+- Yandex Maps, Yandex Sat and Yandex Hybrid maps
+
+v2.5
+- new URL for OePNV-Karte
+- new maps: OSM no labels, OSM labels Russian (ru), OSM labels Japanese (ja)
+- new overlays: OSM labels ru, ja, ar, zh, en, fr, de, ko, pl, es
+- new overlays: Parking,  Power Map, Bicycle Network
+
+v2.6
+- new maps: Nokia Map, Terrain, Satellite, Hybrid, Public Transit, Traffic 
+- new map: Soviet Military Topo, ca. 1980
+- total number of maps supported on a screen: 53 (!)
+
+v2.7
+- fix overlay for google maps and Yahoo maps
+- fix zoom level for bing maps (zoomMin=0)
+- support 4 new google overlay maps: Bicycle, Traffic, Transit, Panoramio, and Weather
+- update to google maps v3.9 (for Transit)
+
+v2.8
+- new map: Maptookit Topo (OSM) 
+- new map: OSM OpenTopoMap
+- new maps: Cloudmade Map, Fine Line, Midnight, Pale Dawn, Tourist, Blackout, Thin, Cycle Walk
+
+v2.9
+- new map: Waze (US), Waze (World)
+- new maps: Google Map MapMaker and Google Hybrid MapMaker
+- new map: OSM2World/3D
+- new map: map1eu (OSM)
+- new map: bvg
+- new maps: OSM Roads, OSM Roads Greyscale, OSM Semitransparenti, ASTER GDEM & SRTM Hillshade, 
+ 	    ASTER GDEM contour lines, OSM Administrative Boundaries
+- new maps: Esri gray, Esri Satellite, Esri Physical, Esri Shaded Relief, Esri Terrain, 
+            Esri Boundaries & Places, Esri Reference Overlay, Esri Transportation
+- new maps: Falk OSM, Falk Original
+- new map: OSM Comic Sans
+- new map: OSM Mapnik Retina, OSM SouthEastAsia
+- new maps: OSM Waymarkedtrails for hiking, cycling, MTB and skating
+- new maps: Lyrk (OSM) and Lyrk Retina
+- new maps: OSM FR, OSM FR hot and OSM FR openriverboatmap
+- new maps: OSM GPS
+- renamed Nokia to HERE maps
+- new maps: Komoot, mapquest Labels
+- new maps: MapBox Satellite
+
+--
+Wolfram Schneider, May 2014, Map Compare v2.9, http://mc.bbbike.org/mc

@@ -1,0 +1,255 @@
+<div class="dialog-title">
+    <img class="dialog-close" src="img/close.png" width="20" height="20" alt="[Close]"/>
+    Help
+</div>
+
+<div class="dialog-msg">
+    <h3>Map Compare</h3>
+
+    <p>Map Compare shows you different maps from <a href="http://www.openstreetmap.org/">OpenStreetMap</a>
+    and Google side by side. Use the drop down
+    menus over the maps to choose the map type for each map. You can move and
+    zoom any map as usual and the other map will follow. Hold down the
+    shift key and move the mouse to zoom in to that area.
+
+    You can save the link named <i>Permalink</i> to always return to this page with the same map types
+    and position.</p>
+
+    <p>
+    You can use one of the pre-configured map profiles: 
+	<a href="?profile=bing">Bing</a>,
+	<a href="?profile=boundaries">Boundaries</a>,
+	<!-- <a href="?profile=cloudmade">Cloudmade</a>, -->
+	<a href="?profile=commercial">Commercial</a>,
+	<a href="?profile=cycle">Cycle</a>,
+	<a href="?profile=esri">Esri</a>,
+	<a href="?profile=falk">Falk</a>,
+	<a href="?profile=google">Google</a>,
+	<a href="?profile=mapbox">MapBox</a>,
+	<a href="?profile=mapquest">mapquest</a>,
+	<a href="?profile=here">HERE</a>,
+	<a href="?profile=openmapsurfer">openmapsurfer</a>,
+	<a href="?profile=osm">OpenStreetMap</a>,
+	<a href="?profile=retina">Retina</a>,
+	<a href="?profile=satellite">Satellite</a>,
+	<a href="?profile=topo">Topo</a>,
+	<a href="?profile=transit">Public Transport</a>,
+	<a href="?profile=waymarkedtrails">Waymarkedtrails</a>,
+	<a href="?profile=yahoo">Yahoo</a>
+    </p>
+
+    <h4>Here are some shortcuts:</h4>
+    <table>
+	<tr>
+	    <td>Press 'f' or ESC</td>
+	    <td>to toggle fullscreen</td>
+	</tr>
+	<tr>
+	    <td>Press '+' or '-'</td>
+	    <td>to zoom in or out</td>
+	</tr>
+	<tr>
+	    <td>Press arrow right, arrow up, arrow down, or h, j, k, l</td>
+	    <td>to navigation</td>
+	</tr>
+	<tr>
+	    <td>Press '1','2','3','4','6', '8', 5=15, 7=24, 9=all &nbsp;&nbsp;</td>
+	    <td>to show that number of maps</td>
+	</tr>
+	<tr>
+	    <td>Press 'p'</td>
+	    <td>to create a permalink</td>
+	</tr>
+	<tr>
+	    <td>Press 'g'</td>
+	    <td>to jump to the current geo location</td>
+	</tr>
+	<tr>
+	    <td>Press '?' or '/'</td>
+	    <td>to get this help</td>
+	</tr>
+    </table>
+    
+    <p>For experts: you can configure the default number of maps, zoom level, prefered maps, maps order or 
+    add your own tile server in the <a href="console.html">Map Compare Admin Console</a>
+    </p>
+	
+    <h4>The map types</h4>
+
+    <table>
+        <tr>
+            <td>BBBike</td>
+            <td>BBBike data rendered with Mapnik for Berlin from <a href="http://bbbike.org/Berlin/">BBBike.org</a> 
+		server</td>
+        </tr>
+        <tr>
+            <td>BBBike Smoothness</td>
+            <td>BBBike data for <a href="http://bbbike.org/Berlin/">Berlin</a> rendered overlay for street quality</td>
+        </tr>
+        <tr>
+            <td>OSM Mapnik</td>
+            <td>OpenStreetMap data rendered with Mapnik from official tile server, or in German style</td>
+        </tr>
+        <tr>
+            <td>OSM Mapnik (b/w)</td>
+            <td>OpenStreetMap data rendered with Mapnik black/white style from official tile server</td>
+        </tr>
+        <tr>
+            <td>OSM Hike&amp;Bike</td>
+            <td>OpenStreetMap data rendered with Hike&amp;Bike style</td>
+        </tr>
+        <tr>
+            <td>OSM CycleMap</td>
+            <td>Cycle map based on OpenStreetMap data, by <a href="http://www.opencyclemap.org/">opencyclemap.org</a></td>
+        </tr>
+        <tr>
+            <td>OSM Landscape</td>
+            <td>OpenStreetMap data rendered with Landscape style, by <a href="http://opencyclemap.org">opencyclemap.org</a></td>
+        </tr>
+        <tr>
+            <td>OSM Transport</td>
+            <td>OpenStreetMap data rendered with transport style, by <a href="http://opencyclemap.org">opencyclemap.org</a></td>
+        </tr>
+        <tr>
+            <td>OSM Public Transport</td>
+            <td>OpenStreetMap data rendered with public transport style, by <a href="http://xn--pnvkarte-m4a.de">&ouml;pnvkarte.de</a></td>
+        </tr>
+        <tr>
+            <td>Hillshading SRTM3 V2</td>
+            <td>SRTM3 data rendered, by <a href="http://toolserver.org">toolserver.org</a></td>
+        </tr>
+        <tr>
+            <td>Land Shading</td>
+            <td>OpenStreetMap data rendered with Land Shading style, by <a href="http://openpistemap.org">openpistemap.org</a></td>
+        </tr>
+        <tr>
+            <td>OSM labels</td>
+            <td>OSM labels Russian, Japanese etc., by <a href="http://toolserver.org">toolserver.org</a></td>
+        </tr>
+        <tr>
+            <td>Toner</td>
+            <td>Toner, Watercolor, based on OSM data, by <a href="http://stamen.com">stamen.com</a></td>
+        </tr>
+        <tr>
+            <td>Mapbox (OSM)</td>
+            <td>OpenStreetMap data rendered with MapBox style, by <a href="http://mapbox.com">MapBox.com</a></td>
+        </tr>
+
+        <tr>
+            <td>Google</td> 
+            <td>street map, satellite and aerial photos, and physical map, 
+		by <a href="http://maps.google.com/">Google</a></td>
+        </tr>
+        <tr>
+            <td>Yahoo</td>
+            <td>street map, satellite and aerial photos, by <a href="http://maps.yahoo.com">Yahoo</a></td>
+        </tr>
+        <tr>
+            <td>Bing</td>
+            <td>street map, aerial and hybrid map, by <a href="http://maps.bing.com/">Microsoft</a></td>
+        </tr>
+        <tr>
+            <td>MapQuest Map</td>
+	     <td>street map, satellite, by <a href="http://mapquest.com/">MapQuest</a></td>
+        </tr>
+	<tr>
+            <td>HERE</td>
+            <td>HERE Map, Terrain, Satellite, Hybrid, Public Transit, Traffic, by <a href="http://here.com/">HERE / Nokia</a></td>
+        </tr>
+        <tr>
+            <td>Esri</td>
+            <td>street map, topological map, by <a href="http://esri.com/">Esri</a></td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td><a href="http://apple.com/">Apple</a> iPhoto maps, based on OSM data</td>
+        </tr>
+        <tr>
+            <td>MapBox</td>
+            <td><a href="http://MapBox.com/">MapBox</a> maps, based on OSM data</td>
+        </tr>
+        <tr>
+            <td>Skobbler</td>
+            <td><a href="http://skobbler.com/">Skobbler</a> maps, based on OSM data</td>
+        </tr>
+        <tr>
+            <td>Wanderreitkarte</td>
+            <td><a href="http://www.wanderreitkarte.de/">Wanderreitkarte</a> Ride & Hike, based on OSM data</td>
+        </tr>
+        <tr>
+            <td>Soviet Military</td>
+            <td>Soviet Military topografic map from ca. 1985, hosted by <a href="http://www.atlogis.com/">Atlogis</a></td>
+        </tr>
+        <tr>
+            <td>Maptookit Topo</td>
+            <td>Maptookit topografic map, based on OSM and SRTM data, by <a href="http://maptoolkit.net/">Maptoolkit.net</a></td>
+        </tr>
+        <tr>
+            <td>OpenTopoMap</td>
+            <td>OpenTopoMap topografic map, based on OSM and SRTM data, by <a href="http://www.OpenTopoMap.org/">OpenTopoMap.org</a></td>
+        </tr>
+	<tr>
+            <td>Cloudmade</td>
+            <td>Cloudmade map, based on OSM data, by <a href="http://www.cloudmade.com/">Cloudmade.com</a></td>
+        </tr>
+        <tr>
+            <td>Waze</td>
+            <td>Waze map, by <a href="http://www.waze.com/">Waze.com</a></td>
+        </tr>
+        <tr>
+            <td>overlays</td>
+            <td>OSM based overlays: ADFC Radwegenetz, Velo-Layer, MaxSpeed, Parking,  Power Map, Bicycle Network</td>
+        </tr>
+        <tr>
+            <td>OSM2World</td>
+            <td>OSM2World 3D map, by <a href="http://osm2world.org/">osm2world.org</a></td>
+        </tr>
+	<tr>
+            <td>map1eu</td>
+            <td>map1eu print map, by <a href="http://map1.eu/">map1.eu</a></td>
+        </tr>
+	<tr>
+            <td>Falk</td>
+            <td>Falk OSM map, by <a href="http://falk.de/">falk.de</a></td>
+        </tr>
+	<tr>
+            <td>Lyrk</td>
+            <td>Lyrk OSM map, by <a href="https://geodienste.lyrk.de">lyrk.de</a></td>
+        </tr>
+	<tr>
+            <td>Komoot</td>
+            <td>Komoot OSM map, by <a href="https://komoot.de">komoot.de</a></td>
+        </tr>
+	<tr>
+            <td>OpenMapSurfer</td>
+            <td>OSM Administrative Boundaries, ASTER GDEM by <a href="http://korona.geog.uni-heidelberg.de">uni-heidelberg.de</a></td>
+        </tr>
+	<tr>
+            <td>OSM FR</td>
+            <td>OSM France by <a href="http://openstreetmap.fr">openstreetmap.fr</a></td>
+        </tr>
+	<tr>
+            <td>Waymarkedtrails</td>
+            <td>OSM Waymarkedtrails for hiking, cycling, MTB and skating, by <a href="http://waymarkedtrails.org">waymarkedtrails.org</a></td>
+        </tr>
+    </table>
+
+    <p>All map tiles copyrighted by their providers!</p>
+
+    <p>Comparison with Google Maps is for informational purposes only.
+    Do <b>not</b> use information from Google Maps to edit OpenStreetMap data.</p>
+
+    <p>Read what's <a href="NEWS.txt" target="_new">new</a> in Map Compare</p>
+
+    <hr/>
+    <!-- <img class="dialog-close" src="img/close.png" width="20" height="20" alt="[Close]"/> -->
+
+    <div id="footer">
+        <p>
+	<a href="http://www.bbbike.org/">BBBike</a> - 
+	<a href="http://extract.bbbike.org/">osm extract service</a>
+	</p>
+    </div>
+
+</div>
+
