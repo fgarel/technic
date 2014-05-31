@@ -21,16 +21,17 @@ print coor
 gcps = []
 # calcule des paramètres avec gdal.GCP (points d'appui)
 for index, txt in enumerate(pix):
-    gdal.GCPPixel = pix[index][0]
-    #gcps[index].GCPPixel = pix[index][0]
-    gdal.GCPLine = 8810 - int(pix[index][1])
-    #gcps[index].GCPLine = 8810 - int(pix[index][1])
-    gdal.GCPX = coor[index][0]
-    #gcps[index].GCPX = coor[index][0]
-    gdal.GCPY = coor[index][1]
-    #gcps[index].GCPY = coor[index][1]
     gcps.append(gdal.GCP())
-print gcps
+    #gdal.GCPPixel = pix[index][0]
+    gcps[index].GCPPixel = pix[index][0]
+    #gdal.GCPLine = 8810 - int(pix[index][1])
+    gcps[index].GCPLine = 8810 - int(pix[index][1])
+    #gdal.GCPX = coor[index][0]
+    gcps[index].GCPX = coor[index][0]
+    #gdal.GCPY = coor[index][1]
+    gcps[index].GCPY = coor[index][1]
+    #gcps.append(gdal.GCP())
+#print gcps
 geotransform = gdal.GCPsToGeoTransform(gcps)
 print geotransform
 #(1616433.1325852636, 0.084914736675147789, -0.0024185492110491138,
