@@ -22,13 +22,18 @@
 
 import mapnik
 
-# Instantiate a map object with given width, height and spatial reference system
+# Instantiate a map object with given width, height and
+# spatial reference system
 # pour connaitre les paramètres proj à utiliser pour le système CC46,
 # sous wikipedia, systeme de coordonnées, on pointe sur epsg:3946, qui
 # pointe vers
 # http://spatialreference.org/ref/epsg/3946/mapnikpython
 _proj4 = '+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs'
 _proj4_l93 = '+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs'
+
+_host_debian = '10.2.10.37'
+_host_dsibdd09 = '10.254.140.139'
+
 
 _map = mapnik.Map(256, 256, _proj4)
 # Set background colour to 'steelblue'.
@@ -128,7 +133,7 @@ _map.append_style('style_poi_C',_style_007)
 # Then provide the full filesystem path to a shapefile in WGS84 or EPSG 4326 projection without the .shp extension
 # A sample shapefile can be downloaded from http://mapnik-utils.googlecode.com/svn/data/world_borders.zip
 _datasource_001 = mapnik.Gdal(file='/home/fred/geodata/raster/test/mamaison.tif')
-_params_connection_dsibdd09_cadparcelle = dict(host='dsibdd09', \
+_params_connection_dsibdd09_cadparcelle = dict(host=_host_dsibdd09, \
                                    port=5435, \
                                    dbname='base_l93', \
                                    table='cad_parcelle', \
@@ -139,14 +144,14 @@ _datasource_002 = mapnik.PostGIS(**_params_connection_dsibdd09_cadparcelle)
 _datasource_003 = mapnik.Shapefile(file='/home/fred/geodata/vecteur/test/parcelle.shp')
 _datasource_004 = mapnik.Shapefile(file='/home/fred/geodata/vecteur/test/bati.shp')
 _datasource_005 = mapnik.Shapefile(file='/home/fred/geodata/vecteur/test/poi.shp')
-_params_connection_dsibdd09 = dict(host='dsibdd09', \
+_params_connection_dsibdd09 = dict(host=_host_dsibdd09, \
                                    port=5435, \
                                    dbname='base_l93', \
                                    table='cad_parcelle', \
                                    srid=2154, \
                                    user='contrib', \
                                    password='alambic')
-_params_connection_debian_parks2154 = dict(host='10.2.10.56', \
+_params_connection_debian_parks2154 = dict(host=_host_debian, \
                                    port=5432, \
                                    dbname='dbmapnik', \
                                    table='parks2154', \
@@ -154,7 +159,7 @@ _params_connection_debian_parks2154 = dict(host='10.2.10.56', \
                                    user='contrib', \
                                    password='alambic')
 _datasource_006 = mapnik.PostGIS(**_params_connection_debian_parks2154)
-_params_connection_debian_parks3946 = dict(host='10.2.10.56', \
+_params_connection_debian_parks3946 = dict(host=_host_debian, \
                                    port=5432, \
                                    dbname='dbmapnik', \
                                    table='parks', \

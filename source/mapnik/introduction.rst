@@ -13,5 +13,4 @@ utilisation de mapquest
 
 utilisation de mapnik
 
-:wq
 
