@@ -1,0 +1,812 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html class="   ">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>use case worksheet · boundlessgeo/GeoGit Wiki · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="boundlessgeo/GeoGit" name="twitter:title" /><meta content="GeoGit - Geospatial Distributed Version Control System" name="twitter:description" /><meta content="https://avatars2.githubusercontent.com/u/306022?s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars2.githubusercontent.com/u/306022?s=400" property="og:image" /><meta content="boundlessgeo/GeoGit" property="og:title" /><meta content="https://github.com/boundlessgeo/GeoGit" property="og:url" /><meta content="GeoGit - Geospatial Distributed Version Control System" property="og:description" />
+
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_wiki" data-pjax-transient />
+      <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="5EF7289C:089E:10E3E89D:538D9317" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico" />
+
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="6nH5z9ESkK17xH4quHXnBeot0TN8LddM6Ex/M248eW0nVTBEVRo5V2I/o4C0OtUHEtjxNWUKY2DJgaFG81YzwA==" name="csrf-token" />
+
+    <link href="https://assets-cdn.github.com/assets/github-29a3ddbb65032a52bae9896fa34cef3a26e24a08.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://assets-cdn.github.com/assets/github2-484a0e6e6f56118765e23504cea30ff74be47c4b.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+    <meta http-equiv="x-pjax-version" content="30ef5523be8db6cb6a62437b2f59b339">
+
+      
+  <meta name="description" content="GeoGit - Geospatial Distributed Version Control System" />
+
+  <meta content="306022" name="octolytics-dimension-user_id" /><meta content="boundlessgeo" name="octolytics-dimension-user_login" /><meta content="2125451" name="octolytics-dimension-repository_id" /><meta content="boundlessgeo/GeoGit" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="2125451" name="octolytics-dimension-repository_network_root_id" /><meta content="boundlessgeo/GeoGit" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/boundlessgeo/GeoGit/commits/master.atom" rel="alternate" title="Recent Commits to GeoGit:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="use-case-worksheet#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="https://github.com/join">Sign up</a>
+      <a class="button signin" href="https://github.com/login?return_to=%2Fboundlessgeo%2FGeoGit%2Fwiki%2Fuse-case-worksheet">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="https://github.com/explore">Explore</a></li>
+        <li class="features"><a href="https://github.com/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="https://github.com/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="https://github.com/search" class="command-bar-form" id="top_search_form" method="get">
+
+<div class="commandbar">
+  <span class="message"></span>
+  <input type="text" data-hotkey="s, /" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="boundlessgeo/GeoGit"
+      data-branch="master"
+      data-sha="770f8148236f058c07cf38eab613e9bf5afe625d"
+  >
+  <div class="display hidden"></div>
+</div>
+
+    <input type="hidden" name="nwo" value="boundlessgeo/GeoGit" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="https://github.com/login?return_to=%2Fboundlessgeo%2FGeoGit"
+    class="minibutton with-count star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="https://github.com/boundlessgeo/GeoGit/stargazers">
+      246
+    </a>
+
+  </li>
+
+    <li>
+      <a href="https://github.com/login?return_to=%2Fboundlessgeo%2FGeoGit"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked"></span>Fork
+      </a>
+      <a href="https://github.com/boundlessgeo/GeoGit/network" class="social-count">
+        72
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author"><a href="https://github.com/boundlessgeo" class="url fn" itemprop="url" rel="author"><span itemprop="title">boundlessgeo</span></a></span><!--
+       --><span class="path-divider">/</span><!--
+       --><strong><a href="https://github.com/boundlessgeo/GeoGit" class="js-current-repository js-repo-home-link">GeoGit</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline  ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="https://github.com/boundlessgeo/GeoGit" aria-label="Code" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /boundlessgeo/GeoGit">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="https://github.com/boundlessgeo/GeoGit/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g i" data-selected-links="repo_issues /boundlessgeo/GeoGit/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>99</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="https://github.com/boundlessgeo/GeoGit/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g p" data-selected-links="repo_pulls /boundlessgeo/GeoGit/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>3</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped tooltipped-w" aria-label="Wiki">
+          <a href="https://github.com/boundlessgeo/GeoGit/wiki" aria-label="Wiki" class="selected js-selected-navigation-item sunken-menu-item js-disable-pjax" data-hotkey="g w" data-selected-links="repo_wiki /boundlessgeo/GeoGit/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="https://github.com/boundlessgeo/GeoGit/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /boundlessgeo/GeoGit/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="https://github.com/boundlessgeo/GeoGit/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /boundlessgeo/GeoGit/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="https://github.com/boundlessgeo/GeoGit/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /boundlessgeo/GeoGit/network">
+          <span class="octicon octicon-repo-forked"></span> <span class="full-word">Network</span>
+          <img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/boundlessgeo/GeoGit.git" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/boundlessgeo/GeoGit.git" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/boundlessgeo/GeoGit" readonly="readonly">
+    <span class="url-box-clippy">
+    <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/boundlessgeo/GeoGit" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="use-case-worksheet#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="use-case-worksheet#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+                <a href="https://github.com/boundlessgeo/GeoGit/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download boundlessgeo/GeoGit as a zip file"
+                   title="Download boundlessgeo/GeoGit as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+
+<div id="wiki-wrapper" class="wiki-wrapper page">
+<div class="gh-header">
+  <div class="gh-header-show">
+      <div class="gh-header-actions">
+      </div>
+    <a class="gh-header-back js-issue-listing-back" href="https://github.com/boundlessgeo/GeoGit/wiki" title="Back to the Wiki Home">
+      <span class="mega-octicon octicon-chevron-left"></span>
+    </a>
+    <h1 class="gh-header-title instapaper_title">use case worksheet&nbsp;</h1>
+      <div class="gh-header-meta">
+        Jeffrey Johnson edited this page <time datetime="2013-09-09T19:54:32-07:00" is="relative-time">September 09, 2013</time>
+        &middot;
+        <a href="https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet/_history" class="history">
+          4 revisions
+        </a>
+      </div>
+  </div>
+</div>
+<div id="wiki-content">
+  <div class="wrap has-rightbar">
+
+  <div id="wiki-rightbar">
+    <div class="wiki-pages-box readability-sidebar box box-small js-wiki-pages-box ">
+      
+
+
+  <div class="box-header js-wiki-toggle-collapse wiki-auxiliary-content">
+    <h3 class="box-title">
+      <span class="octicon octicon-triangle-down caret-expanded"></span>
+      <span class="octicon octicon-triangle-right caret-collapsed"></span>
+      Pages <span class="box-title-count">85</span>
+    </h3>
+  </div>
+  <div class="box-body wiki-auxiliary-content wiki-auxiliary-content-no-bg">
+      <div class="filter-bar">
+        <input type="text" id="wiki-pages-filter" class="filter-input js-filterable-field" placeholder="Find a Page…" tabindex="2">
+      </div>
+
+    <ul class="wiki-pages" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/2014-Open-Academy-Project-Ideas">2014 Open Academy Project Ideas</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/architecture-and-design">architecture and design</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/CLI-how-to">CLI how to</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/DeltaCompression">DeltaCompression</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/deployment-and-installation">deployment and installation</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/design">design</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/feature-set">feature set</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/glossary">glossary</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki">Home</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/implementation-and-testing">implementation and testing</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/Implementation-notes">Implementation notes</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/OpenStreetMap-Interoperability">OpenStreetMap Interoperability</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/operations-and-support">operations and support</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/Project-plan">Project plan</a></strong>
+      </li>
+      <li>
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/project-planning">project planning</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/Project-proposal">Project proposal</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/qa-plan">qa plan</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/Release-Guide">Release Guide</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/requirements">requirements</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/requirements-and-specifications">requirements and specifications</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/risk-list">risk list</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/rnd">rnd</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/status-report">status report</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/target-and-benefits">target and benefits</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/test-suite">test suite</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc01">uc01</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc02">uc02</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc03">uc03</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc04">uc04</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc05">uc05</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc06">uc06</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc07">uc07</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc08">uc08</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc10">uc10</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc11">uc11</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc12">uc12</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc13">uc13</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc14">uc14</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc15">uc15</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc16">uc16</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc17">uc17</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc18">uc18</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc19">uc19</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc20">uc20</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc21">uc21</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc22">uc22</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc23">uc23</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc24">uc24</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc25">uc25</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc27">uc27</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc28">uc28</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc29">uc29</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc30">uc30</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc31">uc31</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc32">uc32</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc33">uc33</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc34">uc34</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc36">uc36</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc38">uc38</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc39">uc39</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc40">uc40</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc41">uc41</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc42">uc42</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc44">uc44</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc45">uc45</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc46">uc46</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc47">uc47</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc48">uc48</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/use-case-suite">use case suite</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="use-case-worksheet">use case worksheet</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-needs">user needs</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-01">user story 01</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-02">user story 02</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-02a">user story 02a</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-03">user story 03</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-04">user story 04</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-04a">user story 04a</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-05">user story 05</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-06">user story 06</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-07">user story 07</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-08">user story 08</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-09">user story 09</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-10">user story 10</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-11">user story 11</a></strong>
+      </li>
+      <li class="wiki-more-pages">
+        <strong><a href="https://github.com/boundlessgeo/GeoGit/wiki/user-story-12">user story 12</a></strong>
+      </li>
+      <li class="wiki-more-pages-link">
+        <a href="use-case-worksheet#" class="js-wiki-more-pages-link">
+          Show 70 more pages…
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+
+
+    <div class="clone-url"
+    data-protocol-type=""
+    data-url="https://github.com/boundlessgeo/GeoGit.wiki.git">
+      <h5>Clone this wiki locally</h5>
+      <div class="clone-url-box">
+        <input type="text" class="clone js-url-field"
+               value="https://github.com/boundlessgeo/GeoGit.wiki.git" readonly="readonly">
+        <span class="url-box-clippy">
+          <button aria-label="copy to clipboard" class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="https://github.com/boundlessgeo/GeoGit.wiki.git" data-copied-hint="copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+        </span>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="wiki-body" class="gollum-markdown-content instapaper_body">
+    <div class="markdown-body">
+      <h3>
+<a name="user-content-use-case-worksheet" class="anchor" href="use-case-worksheet#use-case-worksheet"><span class="octicon octicon-link"></span></a>Use Case Worksheet</h3>
+
+<p>Use Case Frequency Use Case Status Impl. Status Difficulty Priority</p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc01">UC01 Create Repository</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc02">UC02 Clone Repository</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc03">UC03 Pull from remote</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc04">UC04 Push to remote</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc05">UC05 Sparse-checkout repository</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc06">UC06 Import FeatureType</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc07">UC07 Export FeatureType</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc08">UC08 Synchronize FeatureType</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc10">UC10 Commit Changes</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc11">UC11 Review Changeset</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc12">UC12 Create patch</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc13">UC13 Manage Preferences</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc14">UC14 Apply patch</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc15">UC15 Find differences</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc16">UC16 Manage branches</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc17">UC17 Merge branch with no conflicts</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc18">UC18 Cherry-pick changesets</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc19">UC19 Fetch from filesystem remote</a></p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/specification/requirementsuse-case-suite/uc20">UC20 Switch branch</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc21">UC21 Push to web remote</a></p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc22">UC22 Push to filesystem remote</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc23">UC23 Configure ACL</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc24">UC24 Revert changeset</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc25">UC25 List changesets</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc27">UC27 Fetch objects from remote</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc28">UC28 Fetch from web remote</a></p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc29">UC29 Read and modify with GeoTools</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc30">UC30 Configure GeoServer versioned FeatureTypes</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc31">UC31 Update through WFS</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc32">UC32 Configure Owner’s Identity</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc33">UC33 Manage Remotes</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc34">UC34 Check modification status</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc36">UC36 Reset changes</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc38">UC38 Web publish</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc39">UC39 Filter changes</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc40">UC40 Create tag</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc41">UC41 Rebase</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc42">UC42 Resolve conflicts</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc44">UC44 Sparse Clone</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc45">UC45 Shallow Clone</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc46">UC46 Support WMS with Time dimension</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc47">UC47 Support WMS with “Branch” dimension</a>  </p>
+
+<p><a href="https://github.com/boundlessgeo/GeoGit/wiki/uc48">UC48 Support WMS-C with “Time/Branch”</a>  </p>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="https://github.com/blog">Blog</a></li>
+      <li><a href="https://github.com/about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.09761s from github-fe120-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+        <li><a href="https://github.com/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="use-case-worksheet#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="use-case-worksheet#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="use-case-worksheet#" class="octicon octicon-x close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-f120624597a361065113e4c5852f2894459aba3a.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-c2336e4289a8b9829d63948348080dd49651da27.js" type="text/javascript"></script>
+      
+        <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/wiki-32c4ea5b83ab2e0ce6f0e0f65a7308731c57af50.js" type="text/javascript"></script>
+
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>
+
