@@ -53,10 +53,101 @@ Récuperer les données d'OSM
 la méthode simple consiste à aller sur ce site, http://extract.bbbike.org/,
 ou ce site, http://download.geofabrik.de/europe/france/poitou-charentes.html,
 puis de lancer l'extraction.
+Un fichier planet est inclus dans ce répertoire.
+le lien pour le rechercher est :
+https://mail.ville-larochelle.fr/owa/redir.aspx?C=YFr5HgFf50KtqMvXn8fyIG0_6yKTVNEI0AOnbB6uavB1I1DLYSaJwn8t3LyvBpgaslmAqznKiIc.&URL=http%3a%2f%2fextract.bbbike.org%2f%3fsw_lng%3d-1.2498%26sw_lat%3d46.1263%26ne_lng%3d-1.0831%26ne_lat%3d46.2022%26format%3dosm.pbf%26city%3dLa%2520Rochelle
 
 Transférer les données OSM vers postGis
 ---------------------------------------
 nous allons avoir beoin de quelques utilitaires, dont :
-  - osm2psql
   - osmconvert
+  - osm2psql
 
+osmconvert
+----------
+Ce petit utilitaire va nous permettre de manipuler le fichier pbf que l'on a telechargé.
+http://wiki.openstreetmap.org/wiki/Osmconvert
+
+Installation
+
+.. cole::
+  wget -O - http://m.m.i24.cc/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
+
+Utilisation
+
+.. code::
+
+osm2pgsql
+---------
+Cet utilitaire va permettre de transférer les données osm vers une base de données postgresql
+http://wiki.openstreetmap.org/wiki/Osm2pgsql
+
+Installation à partir des sources
+On Debian Squeeze or Debian Lenny systems, it's highly recommended to compile from source to get the latest features,
+otherwise you get an outdated version which lacks important features like 64bit IDs, hstore or pbf support.
+
+When compiling under Ubuntu (12.04 LTS), you will need the following dependencies:
+.. code::
+  sudo apt-get install build-essential libxml2-dev libgeos++-dev libpq-dev libbz2-dev proj libtool automake git
+
+If you want PBF read support, you will also need libprotobuf-c0-dev and protobuf-c-compiler:
+.. code::
+  sudo apt-get install libprotobuf-c0-dev protobuf-c-compiler
+
+libprotobuf-c0-dev needs to be at least in version 0.14-1.
+Ubuntu <= 10.04 has only 0.11, so you need to build it from source [2]. To compile from source:
+
+.. code::
+  #sudo apt-get install protobuf-compiler libprotobuf-dev libprotoc-dev subversion
+  #svn checkout http://protobuf-c.googlecode.com/svn/trunk/ protobuf-c-read-only
+  #cd protobuf-c-read-only
+  #./autogen.sh
+  #make
+  #sudo make install
+
+If you want to use lua scripts for tag_transform, you will need to install lua5.2 liblua5.2-0 liblua5.2-dev and liblua5.1-0
+
+.. code::
+  sudo apt-get install lua5.2 liblua5.2-0 liblua5.2-dev liblua5.1-0
+
+You can get the source of osm2pgsql (28 mb) from git
+.. code::
+  git clone https://github.com/openstreetmap/osm2pgsql.git
+
+Next, enter the newly created directory containing the source for the utility:
+.. code::
+  cd osm2pgsql/
+
+If no Makefile and configure script exist, generate them with:
+.. code::
+
+  ./autogen.sh
+  ./configure
+
+Optionally, you can configure the compiler to produce a faster binary that can only run on CPUs that have the same capabilities as yours.
+.. code::
+  sed -i 's/-g -O2/-O2 -march=native -fomit-frame-pointer/' Makefile
+
+Finally, compile the sources into an executable program:
+.. code::
+  make
+
+.. code::
+  make install
+
+Les autres infos sur mapnik et les styles
+-----------------------------------------
+mapnik style osm
+
+
+http://wiki.openstreetmap.org/wiki/Mapnik_Example
+
+https://github.com/mapnik/mapnik/wiki/StyleShare
+
+http://wiki.openstreetmap.org/wiki/Stylesheet
+
+https://github.com/gravitystorm/openstreetmap-carto
+
+http://wiki.openstreetmap.org/wiki/CartoCSS
+
+https://github.com/mapbox/carto
