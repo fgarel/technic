@@ -70,7 +70,7 @@ http://wiki.openstreetmap.org/wiki/Osmconvert
 
 Installation
 
-.. cole::
+.. code::
   wget -O - http://m.m.i24.cc/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
 
 Utilisation
@@ -132,8 +132,87 @@ Finally, compile the sources into an executable program:
 .. code::
   make
 
+Et, enfin, installation du binaire dans /usr/local/bin
 .. code::
-  make install
+  sudo make install
+
+Nettoyage, suppression des sources
+.. code::
+  cd ..
+  rm -rf osm2pgsql
+
+
+Utilisation de osm2pgsql pour transférer les données osm vers postgresql
+------------------------------------------------------------------------
+
+Création d'une base de données
+La suppression de la base de données osm, puis la creation de la base de données osm, se fait
+en suivant le script suivant, mais qu'il faut modifier avec la bonne adresse IP
+.. code::
+  vi ./dropcreatedatabase.sh
+  ./dropcreatedatabase.sh
+
+Ce script va appeler deux scripts sql qui sont dans le repertoire sql
+.. code::
+  ./sql/dropdatabase.sql
+  ./sql/createdatabase.sql
+
+Avant de lancer le script de creation, il faut créer sur le serveur de base de données un tablespace
+La creation de ce tablespace est detaillé dans le fichier sql/createdatabase.sql
+http://docs.postgresql.fr/9.3/manage-ag-tablespaces.html
+http://www.dj-j.net/waka/Linux:Administration_PostgreSQL#Utilisation_des_tablespaces
+
+Utilisation de la commande osm2pgsql
+------------------------------------
+
+Pour un premier test, nous allons lancer la commande suivante :
+
+.. code::
+  osm2pgsql -s \
+            -c \
+            -d osm \
+            -U contrib \
+            -H 10.2.10.37 \
+            planet_-1.2498,46.1263_-1.0831,46.2022.osm.pbf
+
+
+Cependant, cette ligne de commande ne fait qu'utiliser un syle par defaut.
+
+Nous allons essqyer d'utiliser cartoCSS en suivant cette doc vue sur cette page :
+
+https://github.com/gravitystorm/openstreetmap-carto
+installation des fonts
+----------------------
+.. code::
+  sudo apt-get install ttf-dejavu fonts-droid ttf-unifont fonts-sipa-arundina fonts-sil-padauk fonts-khmeros \
+  ttf-indic-fonts-core ttf-tamil-fonts ttf-kannada-fonts
+
+Clonage du projet
+-----------------
+
+.. code::
+  git clone https://github.com/gravitystorm/openstreetmap-carto.git
+
+Lancement du script pour récupérer des fichiers shape
+.. code::
+  ./openstreetmap-carto/get-shapefile.sh
+
+Nettoyage des shapes
+.. code::
+  ogr2ogr ne_10m_populated_places_fixed.shp ne_10m_populated_places.shp
+
+.. code::
+  osm2pgsql -s \
+            -c \
+            -d osm \
+            -U contrib \
+            -H 10.2.10.37 \
+            planet_-1.2498,46.1263_-1.0831,46.2022.osm.pbf \
+            --style openstreetmap-carto/openstreetmap-carto.style
+
+Interrogation de la base
+.. code::
+  psql -h 10.2.10.37 -d osm -U contrib -c "select osm_id, name frome planet_osm_point where amenty='cinema' limit 5;"
 
 Les autres infos sur mapnik et les styles
 -----------------------------------------

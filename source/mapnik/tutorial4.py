@@ -186,6 +186,14 @@ class Fgmapnik:
         #                                               password='alambic')
         #_datasource_002 = mapnik.PostGIS(**_params_connection_dsibdd09_cadparcelle)
         _datasource_010 = mapnik.Osm(file='/home/fred/geodata/vecteur/osm/planet_-1.2498,46.1263_-1.0831,46.2022.osm')
+        _params_connection_dsibdd09_cadparcelle = dict(host='10.2.10.37',
+                                                       port=5435,
+                                                       dbname='osm',
+                                                       table='cad_parcelle',
+                                                       srid=2154,
+                                                       user='contrib',
+                                                       password='alambic')
+        #_datasource_002 = mapnik.PostGIS(**_params_connection_dsibdd09_cadparcelle)
         _layer_001 = mapnik.Layer('ortho', self._proj4_3946_cc46)
         _layer_001.datasource = _datasource_001
         _layer_001.styles.append('style_ortho')
