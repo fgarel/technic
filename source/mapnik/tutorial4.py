@@ -11,7 +11,8 @@ Le code est moins spagetti.
 
 """
 
-import mapnik
+#import mapnik
+import mapnik2 as mapnik
 #import os
 #import nose
 #from utilities import execution_path
@@ -175,8 +176,8 @@ class Fgmapnik:
         # ce tips a ete vu ici : https://trac.osgeo.org/gdal/wiki/FAQRaster
         #_datasource_001 = mapnik.Gdal(
         #    file='/home/fred/k/sig_donnees/raster/orthophotoplan/vue_2013/jp2/ortho_2013_lr_cc46.jp2')
-        _datasource_001 = mapnik.Gdal(
-            file='/home/fred/geodata/raster/test/mamaison2.tif')
+        #_datasource_001 = mapnik.Gdal(
+        #    file='/home/fred/geodata/raster/test/mamaison2.tif')
         #_params_connection_dsibdd09_cadparcelle = dict(host='dsibdd09',
         #                                               port=5435,
         #                                               dbname='base_l93',
@@ -185,27 +186,30 @@ class Fgmapnik:
         #                                               user='contrib',
         #                                               password='alambic')
         #_datasource_002 = mapnik.PostGIS(**_params_connection_dsibdd09_cadparcelle)
-        _datasource_010 = mapnik.Osm(file='/home/fred/geodata/vecteur/osm/planet_-1.2498,46.1263_-1.0831,46.2022.osm')
-        _params_connection_dsibdd09_cadparcelle = dict(host='10.2.10.37',
-                                                       port=5435,
+        #_datasource_010 = mapnik.Osm(file='/home/fred/geodata/vecteur/osm/planet_-1.2498,46.1263_-1.0831,46.2022.osm')
+        _params_connection_debian_osm = dict(host='192.168.0.21',
+                                                       port=5432,
                                                        dbname='osm',
-                                                       table='cad_parcelle',
-                                                       srid=2154,
+                                                       table='planet_osm_roads',
+                                                       srid=900913,
                                                        user='contrib',
                                                        password='alambic')
-        #_datasource_002 = mapnik.PostGIS(**_params_connection_dsibdd09_cadparcelle)
-        _layer_001 = mapnik.Layer('ortho', self._proj4_3946_cc46)
-        _layer_001.datasource = _datasource_001
-        _layer_001.styles.append('style_ortho')
-        _layer_010 = mapnik.Layer('osm', self._proj4_3857_pseudomercator)
-        _layer_010.datasource = _datasource_010
+        _datasource_011 = mapnik.PostGIS(**_params_connection_debian_osm)
+        #_layer_001 = mapnik.Layer('ortho', self._proj4_3946_cc46)
+        #_layer_001.datasource = _datasource_001
+        #_layer_001.styles.append('style_ortho')
+        #_layer_010 = mapnik.Layer('osm', self._proj4_3857_pseudomercator)
+        #_layer_010.datasource = _datasource_010
+        _layer_011 = mapnik.Layer('osm2', self._proj4_3857_pseudomercator)
+        _layer_011.datasource = _datasource_011
         #_layer_010.styles.append('style_osm')
         #_layer_002 = mapnik.Layer('cad_parcelle_sig', _proj4_l93)
         #_layer_002.datasource = _datasource_002
         #_layer_002.styles.append('style_cad_parcelle_sig')
 
-        _map.layers.append(_layer_001)
-        _map.layers.append(_layer_010)
+        #_map.layers.append(_layer_001)
+        #_map.layers.append(_layer_010)
+        _map.layers.append(_layer_011)
         #_map.layers.append(_layer_002)
         #_map.zoom_to_box(_layer_002.envelope())
         _map.zoom_to_box(mapnik.Box2d(1378100, 5226300, 1378200, 5226400))
