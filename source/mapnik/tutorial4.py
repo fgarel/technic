@@ -11,8 +11,8 @@ Le code est moins spagetti.
 
 """
 
-#import mapnik
-import mapnik2 as mapnik
+import mapnik
+#import mapnik2 as mapnik
 #import os
 #import nose
 #from utilities import execution_path
@@ -189,7 +189,7 @@ class Fgmapnik:
         #_datasource_010 = mapnik.Osm(file='/home/fred/geodata/vecteur/osm/planet_-1.2498,46.1263_-1.0831,46.2022.osm')
         _params_connection_debian_osm = dict(host='192.168.0.21',
                                                        port=5432,
-                                                       dbname='osm',
+                                                       dbname='gis',
                                                        table='planet_osm_roads',
                                                        srid=900913,
                                                        user='contrib',

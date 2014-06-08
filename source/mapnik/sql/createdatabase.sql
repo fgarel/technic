@@ -38,7 +38,7 @@
 --      Au moment de la creation de la base de données patrimoine
 --      il suffit de préciser que le tablespace à utiliser est tbs_patrimoine
 -- 4. Creation de la base de données utilisant le tablespace
-CREATE DATABASE osm
+CREATE DATABASE gis
   WITH OWNER = contrib
        TEMPLATE = templatepostgis
        ENCODING = 'UTF8'
