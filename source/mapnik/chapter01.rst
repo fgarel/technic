@@ -45,3 +45,9 @@ il y a trois fichiers qui sont à personnaliser
 settings.xml.inc
 datasource-settings.xml.inc
 fontset-settings.xml.inc
+
+
+Lancement de renderd
+
+.. code::
+  renderd -f -c /usr/local/etc/renderd.conf
