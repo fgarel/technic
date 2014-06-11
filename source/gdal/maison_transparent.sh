@@ -3,28 +3,6 @@
 
 # creation d'une image de dimension 1024x1024
 # utilisation d'imageMagick
-#rm logo_tmp.png
-#convert logo: -geometry 1365x1024 logo_tmp.png
-#identify logo_tmp.png
-#convert -gravity center logo_tmp.png -crop 1024x1024+0+0 +repage logo0.png
-#identify logo0.png
-#rm logo_tmp.png
-#rm logo0.png
-
-#rm logo_3946.png
-convert -gravity center logo: -geometry 1365x1024 -crop 1024x1024+0+0 +repage logo_3946.png
-#identify logo_3946.png
-
-# creation d'un fichier worldfile (cc46)
-#rm logo_3946.pgw
-cat <<EOF > logo_3946.pgw
-0.1
-0
-0
--0.1
-1379241
-5227395
-EOF
 
 # creation d'un dessin
 # la documentation sur image magick :
@@ -44,10 +22,10 @@ EOF
 convert -size 1000x1000 \
         xc:white \
         -alpha transparent \
-        -fill '#FFF68F7F' \
+        -fill '#FFF68F5F' \
         -stroke '#7F7F7F' \
         -draw "path 'M 100,900 500,900 500,700 900,100 700,100 250,700 Z'" \
-        -fill '#FFA5007F' \
+        -fill '#FFA500BF' \
         -stroke '#CD8500' \
         -draw "path 'M 100,900 500,900 500,700 250,700 Z'" \
         -fill '#FFF68F00' \
@@ -56,8 +34,13 @@ convert -size 1000x1000 \
         -draw "path 'M 100,900 500,900 500,700 900,100 700,100 250,700 Z'" \
         maison_3946.png
 
+# info
+file maison_3946.png
+identify maison_3946.png
+gdalinfo maison_3946.png | grep -E Files\|Driver\|Band
+
 # creation d'un fichier worldfile (cc46)
-#rm logo_3946.pgw
+#rm maison_3946.pgw
 cat <<EOF > maison_3946.pgw
 0.1
 0
@@ -67,14 +50,17 @@ cat <<EOF > maison_3946.pgw
 5227395
 EOF
 
-# info
-#gdalinfo logo_3946.png
 
 # recopie du fichier de calage
 cp maison_3946.pgw maison_3946-flatten.pgw
 
 # applatissement pour supprimer la transparence
-convert -flatten maison_3946.png maison_3946-flatten.png
+convert -flatten maison_3946.png png24:maison_3946-flatten.png
+
+# info
+file maison_3946-flatten.png
+identify maison_3946-flatten.png
+gdalinfo maison_3946-flatten.png | grep -E Files\|Driver\|Band
 
 # suppression des fichiers avec transparence,
 # a partir de maintenant, nous travaillons avec des fichiers aplatis
@@ -89,13 +75,15 @@ gdalwarp -s_srs 'EPSG:3946' \
          -of GTiff \
          -co 'TFW=yes'\
          -co 'ALPHA=yes'\
-         maison_3946.png \
+         maison_3946-flatten.png \
          maison_3857.tif
 #rm maison_3946-flatten.png
 #rm maison_3946-flatten.pgw
 
 # info
-#gdalinfo logo_3857.tif
+file maison_3857.tif
+identify maison_3857.tif
+gdalinfo maison_3857.tif | grep -E Files\|Driver\|Band
 
 # le but est d'obtenir un png que l'on aura reprojeté
 # limites : gdalwarp n'a pas de sortie en png
@@ -110,6 +98,7 @@ gdal_translate -of png \
                -co 'WORLDFILE=yes' \
                maison_3857.tif \
                maison_3857.png
+
 #rm maison_3857.tfw
 #rm maison_3857.tif
 

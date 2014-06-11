@@ -66,7 +66,7 @@ gdal_translate -of png \
 
 # suppression des fichiers tif
 #rm logo_3857.tfw
-#rm logo_3857.tif
+rm logo_3857.tif
 
 # info
 file logo_3857.png
