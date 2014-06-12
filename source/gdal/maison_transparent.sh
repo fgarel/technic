@@ -42,97 +42,116 @@ gdalinfo maison_3946.png | grep -E Files\|Driver\|Band
 # creation d'un fichier worldfile (cc46)
 #rm maison_3946.pgw
 cat <<EOF > maison_3946.pgw
-0.1
+0.09
 0
 0
--0.1
-1379241
-5227395
+-0.09
+1379230
+5227465
+EOF
+
+# A = k cos $
+# B = -k sin $
+# B = -k sin $
+# B = -k cos $
+#
+# si $=0 degre, alors sin$ = 0
+# si $=45 degre, alors sin = cos, 1er quadrant, donc sin et cos > 0
+# si $=45+180 = 225, alors 3ème quadrant, donc sin et cos < 0
+cat <<EOF > maison_3946.pgw
+-0.038
+0.038
+0.038
+0.038
+1379210
+5227355
 EOF
 
 
+# creation d'un fichier de type png32
 # recopie du fichier de calage
-cp maison_3946.pgw maison_3946-flatten.pgw
+cp maison_3946.pgw maison_3946-png32.pgw
 
-# applatissement pour supprimer la transparence
-convert -flatten maison_3946.png png24:maison_3946-flatten.png
+# en sortie, on force le format png32
+convert maison_3946.png png32:maison_3946-png32.png
 
 # info
-file maison_3946-flatten.png
-identify maison_3946-flatten.png
-gdalinfo maison_3946-flatten.png | grep -E Files\|Driver\|Band
+file maison_3946-png32.png
+identify maison_3946-png32.png
+gdalinfo maison_3946-png32.png | grep -E Files\|Driver\|Band
 
-# suppression des fichiers avec transparence,
 # a partir de maintenant, nous travaillons avec des fichiers aplatis
-#rm maison_3946.png
-#rm maison_3946.pgw
-# transformation du système de coordonnées
-# l'image resultante est en geotif
-rm maison_3857.tfw
-rm maison_3857.tif
-gdalwarp -s_srs 'EPSG:3946' \
-         -t_srs 'EPSG:3857' \
-         -of GTiff \
-         -co 'TFW=yes'\
-         -co 'ALPHA=yes'\
-         maison_3946-flatten.png \
-         maison_3857.tif
-#rm maison_3946-flatten.png
-#rm maison_3946-flatten.pgw
+rm maison_3946.png
+rm maison_3946.pgw
 
-# info
-file maison_3857.tif
-identify maison_3857.tif
-gdalinfo maison_3857.tif | grep -E Files\|Driver\|Band
+# transformation du système de coordonnées
+# on utilise pour cela gdalwarp
+# l'image resultante est soit en geotif
+# soit en vrt, mais pas en png
+# nous allons travailler avec le format d'image vrt
 
 # le but est d'obtenir un png que l'on aura reprojeté
 # limites : gdalwarp n'a pas de sortie en png
 #           le tiff en sortie est en gris 16
-# essai 1 : on devorme en tiff
-#           puis on convertit le tiff en png
-
-# conversion
-#rm maison_3857.png
-#rm maison_3857.wld
-gdal_translate -of png \
-               -co 'WORLDFILE=yes' \
-               maison_3857.tif \
-               maison_3857.png
-
-#rm maison_3857.tfw
-#rm maison_3857.tif
-
-# essai 2 : on deforme avec en sortie du vrt
-# puis on converti le fichier vrt en png avec gdal_translate
-rm maison_3857_v2.vrt
+# solution : on deforme avec en sortie du vrt
+#            puis on converti le fichier vrt en png avec gdal_translate
+rm maison_3857_bordtransparent.vrt
 gdalwarp -s_srs 'EPSG:3946' \
          -t_srs 'EPSG:3857' \
          -of vrt \
-         maison_3946.png \
-         maison_3857_v2.vrt
+         maison_3946-png32.png \
+         maison_3857_bordtransparent.vrt
+
+# info
+gdalinfo maison_3857_bordtransparent.vrt | grep -E Files\|Driver\|Band
 
 # conversion
-rm maison_3857_v2.png
-rm maison_3857_v2.wld
+rm maison_3857_bordtransparent.png
+rm maison_3857_bordtransparent.wld
 gdal_translate -of png \
                -co 'WORLDFILE=yes' \
-               maison_3857_v2.vrt \
-               maison_3857_v2.png
+               maison_3857_bordtransparent.vrt \
+               maison_3857_bordtransparent.png
+
+# info
+file maison_3857_bordtransparent.png
+identify maison_3857_bordtransparent.png
+gdalinfo maison_3857_bordtransparent.png | grep -E Files\|Driver\|Band
+
+# nettoyage
+rm maison_3857_bordtransparent.vrt
+rm maison_3946-png32.png
+rm maison_3946-png32.pgw
 #rm maison_3857.tfw
 #rm maison_3857.tif
 
-# essai 3 : on converti le fichier  en png avec gdal_translate
-# puis on deforme avec en sortie du vrt
-# puis on converti le fichier vrt en png avec gdal_translate
+# on transforme ensuite la couleur blanche des images en transparent
+# blanc = #ffffff
+# nota : on force aussi en sortie le type png32
+convert maison_3857_bordtransparent.png \
+        -transparent "#ffffff" \
+        png32:maison_3857_bordtransparent_blanctransparent.png
+
+
+cp maison_3857_bordtransparent.wld maison_3857_bordtransparent_blanctransparent.wld
+
 # info
-#gdalinfo logo_3857.png
+file maison_3857_bordtransparent_blanctransparent.png
+identify maison_3857_bordtransparent_blanctransparent.png
+gdalinfo maison_3857_bordtransparent_blanctransparent.png | grep -E Files\|Driver\|Band
+
+# nettoyage
+rm maison_3857_bordtransparent.png
+rm maison_3857_bordtransparent.wld
+rm maison_3857_bordtransparent.png.aux.xml
+
 
 # creation d'une mosaique
 rm -r tuiles
 gdal2tiles.py -p mercator \
               -s 'EPSG:3857' \
               -t "logo" \
-              maison_3857_v2.png \
+              maison_3857_bordtransparent_blanctransparent.png \
               tuiles
 
 # transformation en mbtiles
@@ -140,7 +159,7 @@ wget -O raster2mb https://raw.githubusercontent.com/crschmidt/raster2mb/master/r
 chmod +x raster2mb
 
 rm maison_3857.mbtiles
-./raster2mb maison_3857.png \
+./raster2mb maison_3857_bordtransparent_blanctransparent.png \
             maison_3857.mbtiles
 
 rm tmp.png
