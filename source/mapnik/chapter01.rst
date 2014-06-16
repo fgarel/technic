@@ -21,8 +21,8 @@ dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces 4 dépots
 Les 3 premiers dépots sont mentionnés dans la doc, mais, par rapport cette doc, nous ajoutons deux dépots
 permettant d'utiliser des feuilles de styles CSS au lieu de styles XML.
 
-pour installer carto, on a besoin de nodejs et de npm
-or, pour installer la dervicer version de npm, il ne faut pas prendre celle du paquet
+Pour installer carto, on a besoin de nodejs et de npm
+Or, pour installer la dernière version de npm, il ne faut pas prendre celle du paquet
 mais il faut installer npm à partir du dépot
 
 .. code::
@@ -49,7 +49,7 @@ Il faut aussi installer libapache2-mod-tile
 .. code::
   sudo apt-get install libapache2-mod-tile
 
-cette installation aura pour effet de créer un site web
+Cette installation aura pour effet de créer un site web
 /etc/apache2/sites-available/tileserver_site
 et un module
 /etc/apache2/mods-available/tile.load
@@ -57,6 +57,7 @@ et un module
 Il faut aussi installer renderd
 .. code::
   aptitude install renderd
+
 Configuration de renderd
 .. code::
   vi /etc/renderd.conf
@@ -65,15 +66,13 @@ Configuration de renderd
   ;XML=/home/fred/src/openstreetmap-carto/mapnik.xml
   XML=/home/fred/src/mapnik-style/osm.xml
 
-les modifications à apporter dans les fichiers ~/src/mapnik-style/inc/
+Les modifications à apporter dans les fichiers ~/src/mapnik-style/inc/
 
-il y a trois fichiers qui sont à personnaliser
+Il y a trois fichiers qui sont à personnaliser
 
 settings.xml.inc
 datasource-settings.xml.inc
 fontset-settings.xml.inc
-
-
 
 
 .. code::
@@ -83,8 +82,9 @@ fontset-settings.xml.inc
   cp settings.xml.inc.template settings.xml.inc
 
 
-recuperation des shapes worldboundaries
-cette info a été vue sur cette page
+Recuperation des shapes worldboundaries
+
+Cette info a été vue sur cette page
 http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
 
 .. code::
@@ -103,7 +103,7 @@ http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-
   sudo unzip ne_110m_admin_0_boundary_lines_land.zip -d world_boundaries
 
 
-edition des fichiers de configuaration
+Edition des fichiers de configuration
 .. code::
   vi settings.xml.inc
   
@@ -132,3 +132,46 @@ Lancement de renderd
 
 .. code::
   renderd -f
+
+Normallement, si les fichiers shapes sont présents dans /usr/local/share/world_boundaries/
+alors, il ne doit pas y avoir d'erreurs d'execution
+
+Essai de generation d'une image
+vue ici : http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
+.. code::
+  cd ~/src/mapnik-style
+  ./generate_xml.py --host 10.2.10.38\
+                    --dbname gis \
+                    --user contrib \
+                    --password alambic \
+                    --world_boundaries /usr/local/share/world_boundaries \
+                    --accept-none
+
+Avant de lancer la generation de l'image, nous allons modifier le script generate_image.py
+pour donner une nouvelle emprise
+(car, par default, ce script genere une image de l'angleterre)
+
+.. code::
+  vi generate_image.py
+  bounds = (-6.5, 49.5, 2.1, 59)
+  bounds = (-1.250, 46.140, -1.080, 46.170)
+  z = 12
+  imgx = 500 * z
+  imgy = 500 * z
+
+.. code::
+  ./generate_image.py ; display image.png
+
+
+Avant de lancer la generation des tuiles, nous allons modifier le script generate_tiles.py
+pour ajouter une nouvelle emprise
+
+.. code::
+  vi generate_tiles.py
+  bbox = (-1.250, 46.140, -1.080, 46.170)
+  render_tiles(bbox, mapfile, tile_dir, 10, 16, "La Rochelle")
+
+Lancement de la génération des tuiles
+
+.. code::
+  export MAPNIK_MAP_FILE=osm.xml; export MAPNIK_TILE_DIR=/var/lib/mod_tile; ./generate_tiles.py
