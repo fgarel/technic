@@ -3,12 +3,12 @@ Installation
 ************
 
 
-la meilleure doc que j'ai vue pour installer mapnik se trouve ici :
+La meilleure doc que j'ai vue pour installer mapnik se trouve ici :
 http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
 
-en suivant pas à pas la préocédure, on obtient un système qui est censé avoir un mapnik et un serveur de tuile
+En suivant pas à pas la préocédure, on obtient un système qui est censé avoir un mapnik et un serveur de tuile
 
-dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces 4 dépots
+Dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces 4 dépots
 
 .. code::
   git clone git://github.com/mapnik/mapnik
@@ -44,10 +44,16 @@ On peut désormais utiliser carto de la façon suivante
   cd ~/src/openstreetmap-carto/
   carto project.mml > mapnik.xml
 
-Il faut aussi installer libapache2-mod-tile
+Il faut aussi installer libapache2-mod-tile.
+
+La solution simple, cela aurait été de prendre le paquet.
 
 .. code::
-  sudo apt-get install libapache2-mod-tile
+  #sudo apt-get install libapache2-mod-tile_dir
+
+Cependant, avec ce paquet, nous avons l'utilitaire renderd qui n'est plus à jour.
+Les détails de l'installation du module mod_tile sont donc détaillés dans fginstallation.sh
+cf fginstallation.sh
 
 Cette installation aura pour effet de créer un site web
 /etc/apache2/sites-available/tileserver_site
@@ -56,15 +62,23 @@ et un module
 
 Il faut aussi installer renderd
 .. code::
-  aptitude install renderd
+  #aptitude install renderd
+
+Renderd sera aussi installé à partir des sources
 
 Configuration de renderd
 .. code::
-  vi /etc/renderd.conf
+  #vi /etc/renderd.conf
 
-  ;XML=/etc/mapnik-osm-data/osm.xml
-  ;XML=/home/fred/src/openstreetmap-carto/mapnik.xml
-  XML=/home/fred/src/mapnik-style/osm.xml
+  #;XML=/etc/mapnik-osm-data/osm.xml
+  #;XML=/home/fred/src/openstreetmap-carto/mapnik.xml
+  #XML=/home/fred/src/mapnik-style/osm.xml
+
+Si l'installation de renderd est réalisée à partir des sources,
+alors le fichier de configuration se trouve ici :
+/usr/local/etc/renderd.conf
+
+Les modifications de la configuration de renderd sont détaillées dans fginstallation.sh
 
 Les modifications à apporter dans les fichiers ~/src/mapnik-style/inc/
 
@@ -131,7 +145,8 @@ on peut maintenant tester la configuration en lancant renderd en mode foreground
 Lancement de renderd
 
 .. code::
-  renderd -f
+  #renderd -f
+  sudo -u www-data renderd -f -c /usr/local/etc/renderd.conf
 
 Normallement, si les fichiers shapes sont présents dans /usr/local/share/world_boundaries/
 alors, il ne doit pas y avoir d'erreurs d'execution
@@ -175,3 +190,28 @@ Lancement de la génération des tuiles
 
 .. code::
   export MAPNIK_MAP_FILE=osm.xml; export MAPNIK_TILE_DIR=/var/lib/mod_tile; ./generate_tiles.py
+
+Configuration de mod-tile
+cf fginstallation.sh
+
+activation du module, du site, et relance d'apache
+.. code::
+  sudo a2enmod tile
+  sudo a2ensite tileserver_site
+  sudo service apache2 restart
+
+Solution non trouvée pour configurer mod_tile
+L'astuce est donc de faire un lien symbolique
+
+.. code::
+  cd /var/www
+  sudo ln -s /var/lib/mod_tile osm
+  cd /var/lib/mod_tile
+  cp ~/src/mod_tile/slippymap.html /var/lib/mod_tile/slippymap.html
+
+On essaye
+.. code::
+  http://localhost/osm/16/32548/23274.png
+  http://localhost/mod_tiles
+  http://localhost/osm/slippymap.html
+  

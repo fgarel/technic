@@ -39,9 +39,15 @@ sudo npm install -g millstone
 
 
 # suivi de la doc avec les paquets
+# cela n'est pas une bonne idee d'utiliser les paquets ...
+# en effet, renderd n'est plus à jour : 
+# https://github.com/openstreetmap/mod_tile/issues/51
+# http://forum.openstreetmap.org/viewtopic.php?id=19291
+
+
 # http://switch2osm.org/serving-tiles/building-a-tile-server-from-packages/
 #for Ubuntu 12.04
-sudo apt-get install python-software-properties
+#sudo apt-get install python-software-properties
 #for Ubunto 12.10 and later
 #sudo apt-get install software-properties-common
 #Add the repository containing the packages:
@@ -50,14 +56,36 @@ sudo apt-get install python-software-properties
 #sudo apt-get update
 
 # installation de libapache2-mod-tile
-sudo apt-get install libapache2-mod-tile
-
-
+#sudo apt-get install libapache2-mod-tile
 
 # installation de osmosis
-sudo apt-get install osmosis
+#sudo apt-get install osmosis
+
+
+# installation de mod_tile et de renderd a partir des sources
+sudo aptitude remove libapache2-mod-tile renderd
+# pour compiler mod_tile, on a besoin du bianaire apxs2
+sudo aptitude install apache2-threaded-dev
+
+cd ~/src/mod_tile
+./autogen.sh
+./configure
+make
+sudo make install
+sudo make install-mod_tile
+sudo ldconfig
+
+# modification de la configuration de renderd
+sudo sed -i -e 's/;socketname=/socketname=/' /usr/local/etc/renderd.conf
+sudo sed -i -e 's/font_dir=\/usr\/share\/fonts\/truetype/font_dir=\/usr\/share\/fonts\/truetype\/ttf-dejavu/' /usr/local/etc/renderd.conf
+sudo sed -i -e 's/URI=\/osm_tiles\//URI=\/osm\//' /usr/local/etc/renderd.conf
+sudo sed -i -e 's/XML=\/home\/jburgess\/osm\/svn.openstreetmap.org\/applications\/rendering\/mapnik\/osm-local.xml/XML=\/home\/fred\/src\/mapnik-style\/osm.xml/' /usr/local/etc/renderd.conf
+sudo sed -i -e 's/HOST=tile.openstreetmap.org/HOST=localhost/' /usr/local/etc/renderd.conf
 
 
 
-
+# modification de la configuration de mod_tile
+sudo cp ~/Travail/ecriture_sphinx/technic/source/mapnik/tile.load /etc/apache2/mods-available/tile.load
+sudo sed -i -e 's/LoadTileConfigFile \/etc\/renderd.conf/LoadTileConfigFile \/usr\/local\/etc\/renderd.conf/' ~/Travail/ecriture_sphinx/technic/source/mapnik/tileserver_site
+sudo cp ~/Travail/ecriture_sphinx/technic/source/mapnik/tileserver_site /etc/apache2/sites-available/tileserver_site
 
