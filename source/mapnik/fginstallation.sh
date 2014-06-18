@@ -1,5 +1,8 @@
 #!/bin/sh
 
+POSTGIS_HOST='10.2.10.38'
+POSTGIS_HOST='192.168.0.21'
+
 # A Suivi de la doc avec les sources
 # http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
 
@@ -75,6 +78,7 @@ cd ~/src
 # 2.2.1. old school : xml
 # Installation de mapnik-style à partir des sources
 # mapnik-style est basé sur du XML
+cd ~/src
 rm -rf ~/src/mapnik-style
 svn co http://svn.openstreetmap.org/applications/rendering/mapnik mapnik-style
 cd ~/src/mapnik-style
@@ -96,7 +100,7 @@ sed -i -e 's/prefix "%(prefix)s"/prefix "planet_osm"/' ~/src/mapnik-style/inc/se
 # modification du fichier datasource-settings.xml.inc
 sed -i -e 's/Note:/Note :/' ~/src/mapnik-style/inc/datasource-settings.xml.inc
 sed -i -e 's/name="type">postgis</name="type">postgis</' ~/src/mapnik-style/inc/datasource-settings.xml.inc
-sed -i -e 's/name\="host">%(host)s</name="host">10.2.10.38</' ~/src/mapnik-style/inc/datasource-settings.xml.inc
+sed -i -e "s/name\="host">%(host)s</name="host">$POSTGIS_HOST</" ~/src/mapnik-style/inc/datasource-settings.xml.inc
 sed -i -e 's/name="port">%(port)s</name="port">5432</' ~/src/mapnik-style/inc/datasource-settings.xml.inc
 sed -i -e 's/name="dbname">%(dbname)s</name="dbname">gis</' ~/src/mapnik-style/inc/datasource-settings.xml.inc
 sed -i -e 's/name="user">%(user)s</name="user">contrib</' ~/src/mapnik-style/inc/datasource-settings.xml.inc
@@ -107,7 +111,7 @@ sed -i -e 's/name="extent">%(extent)s</name="extent">-20037508,-19929239,2003750
 
 # Generation du fichier xml
 cd ~/src/mapnik-style
-./generate_xml.py --host 10.2.10.38 \
+./generate_xml.py --host $POSTGIS_HOST \
                   --port 5432 \
                   --dbname gis \
                   --user contrib \
