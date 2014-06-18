@@ -2,23 +2,65 @@
 Installation
 ************
 
+Architecture
+============
 
+Un graphique simple pour expliquer les différentes briques qui composent la solution
+vu sur cette page 
+http://karussell.wordpress.com/2013/10/26/setup-tile-server-mapnik/
+Setup Mapnik From Scratch
+
+    A) browser/client (leaflet, openlayers)
+    |
+    B) tile server (mod_tile, tile cache, tile stache, mapproxy, geowebcache)
+    |
+    C) map web service = WMS (MapServer, GeoServer, Mapnik)
+    |
+    D) Data storage (PostgreSQL, vector tiles)
+    |
+    E) OSM data (xml, pbf)
+
+Sources ou paquets
+==================
+
+nous avons deux options pour l'installation :
+soit installer les briques à partir des sources
+soit utiliser les paquets du dépot XXXX
+
+Nous optons pour l'installation à partir des sources : nous allons donc commencer par
+supprimer les paquets d'une éventuelle installation précédente, pour éviter les conflits
+
+Désinstallation des paquets
+.. code::
+
+  sudo aptitude remove mapnik-utils \
+                       libmapnik2-2.0 \
+                       libmapnik \
+                       mapnik-doc \
+                       libmapnik2-dev \
+                       python-mapnik2 \
+                       tilemill
+
+  sudo aptitude purge "~c"
+
+Installation des différentes briques
+====================================
 La meilleure doc que j'ai vue pour installer mapnik se trouve ici :
 http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
 
 En suivant pas à pas la préocédure, on obtient un système qui est censé avoir un mapnik et un serveur de tuile
 
-Dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces 4 dépots
+Dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces differents dépots
 
 .. code::
   git clone git://github.com/mapnik/mapnik
   git clone git://github.com/openstreetmap/mod_tile.git
   svn co http://svn.openstreetmap.org/applications/rendering/mapnik mapnik-style
+  git clone git://githaub.com/isaacs/npm.git
   git clone https://github.com/mapbox/carto
   git clone https://github.com/gravitystorm/openstreetmap-carto
-  git clone git://githaub.com/isaacs/npm.git
 
-Les 3 premiers dépots sont mentionnés dans la doc, mais, par rapport cette doc, nous ajoutons deux dépots
+Les premiers dépots sont mentionnés dans la doc, mais, par rapport cette doc, nous ajoutons deux dépots
 permettant d'utiliser des feuilles de styles CSS au lieu de styles XML.
 
 Pour installer carto, on a besoin de nodejs et de npm

@@ -2,15 +2,39 @@
 
 # suivi de la doc avec les sources
 # 
-# installation, clonage de 5 projets, dans le repertoire ~/src
+# installation, clonage de quelques projets, dans le repertoire ~/src
 mkdir ~/src
 cd ~/src
+
+# mapnik
 git clone git://github.com/mapnik/mapnik
+cd ~/src/mapnik
+git fetch origin master
+
+#
 git clone git://github.com/openstreetmap/mod_tile.git
+cd ~/src/mod_tile
+git fetch origin master
+
+#
 svn co http://svn.openstreetmap.org/applications/rendering/mapnik mapnik-style
-git clone https://github.com/mapbox/carto
-git clone https://github.com/gravitystorm/openstreetmap-carto
+cd ~/src/mapnik-style
+
+# pour installer carto, il faut installer npm
 git clone git://github.com/isaacs/npm.git
+cd ~/src/npm
+git fetch origin master
+
+#
+git clone https://github.com/mapbox/carto
+cd ~/src/carto
+git fetch origin master
+
+# openstreetmap-carto
+git clone https://github.com/gravitystorm/openstreetmap-carto
+cd ~/src/openstreetmap-carto
+git fetch origin master
+
 
 # installation et compilation de carto 
 # avant de pouvoir installer carto, il faut installer npm
