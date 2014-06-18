@@ -33,11 +33,14 @@ supprimer les paquets d'une éventuelle installation précédente, pour éviter 
 Désinstallation des paquets
 .. code::
 
-  sudo aptitude remove mapnik-utils \
-                       libmapnik2-2.0 \
+  sudo aptitude remove \
                        libmapnik \
-                       mapnik-doc \
+                       libmapnik-dev \
+                       libmapnik2-2.0 \
                        libmapnik2-dev \
+                       mapnik-doc \
+                       mapnik-utils \
+                       python-mapnik \
                        python-mapnik2 \
                        tilemill
 
