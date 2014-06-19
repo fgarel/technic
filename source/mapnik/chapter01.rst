@@ -1,262 +1,232 @@
-************
-Installation
-************
+*****************************************************************
+Installation des utilitaires pour manipuler les données initiales
+*****************************************************************
 
-Architecture
-============
+Mapnik a besoin de lire des données en entrée.
 
-Un graphique simple pour expliquer les différentes briques qui composent la solution
-vu sur cette page 
-http://karussell.wordpress.com/2013/10/26/setup-tile-server-mapnik/
-Setup Mapnik From Scratch
+Pour des fichiers shape, il n'y a pas de problème particulier.
+Par contre, pour les fichiers raster (orthophoto) ou pour le plan Open Street Map (OSM),
+il y a quelques petites manipulations à faire au préalable
 
-    A) browser/client (leaflet, openlayers)
-    |
-    B) tile server (mod_tile, tile cache, tile stache, mapproxy, geowebcache)
-    |
-    C) map web service = WMS (MapServer, GeoServer, Mapnik)
-    |
-    D) Data storage (PostgreSQL, vector tiles)
-    |
-    E) OSM data (xml, pbf)
-
-Sources ou paquets
+Les données raster
 ==================
+Le fichier image d'origine est un très gros fichier, qui de plus, est sur le réseau.
+Dans le script python, la commande mapnik.Gdal()
+semble etre tres longue à s'éxecuter.
 
-nous avons deux options pour l'installation :
-soit installer les briques à partir des sources
-soit utiliser les paquets du dépot XXXX
+Un tips a ete vu ici : https://trac.osgeo.org/gdal/wiki/FAQRaster
 
-Nous optons pour l'installation à partir des sources : nous allons donc commencer par
-supprimer les paquets d'une éventuelle installation précédente, pour éviter les conflits
+L'idée est, à partir du gros fichier raster qui se trouve sur le réseau,
+d'extraire une partie de cette image et de la copier sur le disque local
 
-Désinstallation des paquets
-.. code::
-
-  sudo aptitude remove \
-                       libmapnik \
-                       libmapnik-dev \
-                       libmapnik2-2.0 \
-                       libmapnik2-dev \
-                       mapnik-doc \
-                       mapnik-utils \
-                       python-mapnik \
-                       python-mapnik2 \
-                       tilemill
-
-  sudo aptitude purge "~c"
-
-Installation des différentes briques
-====================================
-La meilleure doc que j'ai vue pour installer mapnik se trouve ici :
-http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
-
-En suivant pas à pas la préocédure, on obtient un système qui est censé avoir un mapnik et un serveur de tuile
-
-Dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces differents dépots
+Il faut en faire un extrait en utilisant la commande suivante :
 
 .. code::
-  git clone git://github.com/mapnik/mapnik
-  git clone git://github.com/openstreetmap/mod_tile.git
-  svn co http://svn.openstreetmap.org/applications/rendering/mapnik mapnik-style
-  git clone git://githaub.com/isaacs/npm.git
-  git clone https://github.com/mapbox/carto
-  git clone https://github.com/gravitystorm/openstreetmap-carto
+  gdal_translate -projwin 1378100 5226400 1378200 5226300 \
+                 ortho_2013_lr_cc46.jp2 \
+                 ~/geodata/raster/test/mamaison2.tif
 
-Les premiers dépots sont mentionnés dans la doc, mais, par rapport cette doc, nous ajoutons deux dépots
-permettant d'utiliser des feuilles de styles CSS au lieu de styles XML.
+La commande dans le script, sera donc modifié.
+A la place de :
+.. code::
+  _datasource_001 = mapnik.Gdal(
+    file='/home/fred/k/sig_donnees/raster/orthophotoplan/vue_2013/jp2/ortho_2013_lr_cc46.jp2')
 
-Pour installer carto, on a besoin de nodejs et de npm
-Or, pour installer la dernière version de npm, il ne faut pas prendre celle du paquet
-mais il faut installer npm à partir du dépot
+on aura :
+.. code::
+  _datasource_001 = mapnik.Gdal(
+    file='/home/fred/geodata/raster/test/mamaison2.tif')
+
+
+Les données OSM
+===============
+
+Avec mapnik, il est possible d'utiliser les données d'Open Street Map (OSM).
+D'après ce wiki, http://wiki.openstreetmap.org/wiki/Mapnik_Example,
+il faut récuperer les données d'osm, les injecter dans une base postgis.
+Alors, mapnik pourra utiliser cette source d'informations, accompagnée d'une feuille de style,
+pour générer l'image.
+
+
+Récuperer les données d'OSM
+---------------------------
+la méthode simple consiste à aller sur ce site, http://extract.bbbike.org/,
+ou ce site, http://download.geofabrik.de/europe/france/poitou-charentes.html,
+puis de lancer l'extraction.
+Un fichier planet est inclus dans ce répertoire.
+le lien pour le rechercher est :
+https://mail.ville-larochelle.fr/owa/redir.aspx?C=YFr5HgFf50KtqMvXn8fyIG0_6yKTVNEI0AOnbB6uavB1I1DLYSaJwn8t3LyvBpgaslmAqznKiIc.&URL=http%3a%2f%2fextract.bbbike.org%2f%3fsw_lng%3d-1.2498%26sw_lat%3d46.1263%26ne_lng%3d-1.0831%26ne_lat%3d46.2022%26format%3dosm.pbf%26city%3dLa%2520Rochelle
+
+Transférer les données OSM vers postGis
+---------------------------------------
+nous allons avoir beoin de quelques utilitaires, dont :
+  - osmconvert
+  - osm2psql
+
+osmconvert
+----------
+Ce petit utilitaire va nous permettre de manipuler le fichier pbf que l'on a telechargé.
+http://wiki.openstreetmap.org/wiki/Osmconvert
+
+Installation
 
 .. code::
-  # aptitude install npm
-  cd ~/src/npm/scripts
-  chmod +x install.sh
+  wget -O - http://m.m.i24.cc/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
 
-
-puis, on installe carto avec
-
-.. code::
-  cd ~/src/carto
-  sudo npm install -g carto
-  sudo npm install -g millstone
-
-On peut désormais utiliser carto de la façon suivante
-
-.. code::
-  cd ~/src/openstreetmap-carto/
-  carto project.mml > mapnik.xml
-
-Il faut aussi installer libapache2-mod-tile.
-
-La solution simple, cela aurait été de prendre le paquet.
-
-.. code::
-  #sudo apt-get install libapache2-mod-tile_dir
-
-Cependant, avec ce paquet, nous avons l'utilitaire renderd qui n'est plus à jour.
-Les détails de l'installation du module mod_tile sont donc détaillés dans fginstallation.sh
-cf fginstallation.sh
-
-Cette installation aura pour effet de créer un site web
-/etc/apache2/sites-available/tileserver_site
-et un module
-/etc/apache2/mods-available/tile.load
-
-Il faut aussi installer renderd
-.. code::
-  #aptitude install renderd
-
-Renderd sera aussi installé à partir des sources
-
-Configuration de renderd
-.. code::
-  #vi /etc/renderd.conf
-
-  #;XML=/etc/mapnik-osm-data/osm.xml
-  #;XML=/home/fred/src/openstreetmap-carto/mapnik.xml
-  #XML=/home/fred/src/mapnik-style/osm.xml
-
-Si l'installation de renderd est réalisée à partir des sources,
-alors le fichier de configuration se trouve ici :
-/usr/local/etc/renderd.conf
-
-Les modifications de la configuration de renderd sont détaillées dans fginstallation.sh
-
-Les modifications à apporter dans les fichiers ~/src/mapnik-style/inc/
-
-Il y a trois fichiers qui sont à personnaliser
-
-settings.xml.inc
-datasource-settings.xml.inc
-fontset-settings.xml.inc
-
-
-.. code::
-  cd ~/src/mapnik-style/inc/
-  cp fontset-settings.xml.inc.template fontset-settings.xml.inc
-  cp datasource-settings.xml.inc.template datasource-settings.xml.inc
-  cp settings.xml.inc.template settings.xml.inc
-
-
-Recuperation des shapes worldboundaries
-
-Cette info a été vue sur cette page
-http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
+Utilisation
 
 .. code::
 
-  cd /usr/local/share
-  sudo mkdir world_boundaries
-  sudo wget http://tile.openstreetmap.org/world_boundaries-spherical.tgz
-  sudo tar xzvf world_boundaries-spherical.tgz
-  sudo wget http://tile.openstreetmap.org/processed_p.tar.bz2
-  sudo tar xvjf processed_p.tar.bz2 -C world_boundaries
-  sudo wget http://tile.openstreetmap.org/shoreline_300.tar.bz2
-  sudo tar xjf shoreline_300.tar.bz2 -C world_boundaries
-  sudo wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
-  sudo unzip ne_10m_populated_places.zip -d world_boundaries
-  sudo wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip
-  sudo unzip ne_110m_admin_0_boundary_lines_land.zip -d world_boundaries
+osm2pgsql
+---------
+Cet utilitaire va permettre de transférer les données osm vers une base de données postgresql
+http://wiki.openstreetmap.org/wiki/Osm2pgsql
 
+Installation à partir des sources
+On Debian Squeeze or Debian Lenny systems, it's highly recommended to compile from source to get the latest features,
+otherwise you get an outdated version which lacks important features like 64bit IDs, hstore or pbf support.
 
-Edition des fichiers de configuration
+When compiling under Ubuntu (12.04 LTS), you will need the following dependencies:
 .. code::
-  vi settings.xml.inc
-  
-  <!ENTITY symbols "symbols">
-  <!ENTITY osm2pgsql_projection "&srs900913;">
-  <!ENTITY dwithin_node_way "&dwithin_900913;">
-  <!ENTITY world_boundaries "/usr/local/share/world_boundaries">
-  <!ENTITY prefix "planet_osm">
+  sudo apt-get install build-essential libxml2-dev libgeos++-dev libpq-dev libbz2-dev proj libtool automake git
+
+If you want PBF read support, you will also need libprotobuf-c0-dev and protobuf-c-compiler:
+.. code::
+  sudo apt-get install libprotobuf-c0-dev protobuf-c-compiler
+
+libprotobuf-c0-dev needs to be at least in version 0.14-1.
+Ubuntu <= 10.04 has only 0.11, so you need to build it from source [2]. To compile from source:
 
 .. code::
-  vi datasource-settings.xml.inc
-  
-  <Parameter name="type">postgis</Parameter>
-  <Parameter name="host">10.2.10.38</Parameter>
-  <Parameter name="port">5432</Parameter>
-  <Parameter name="dbname">gis</Parameter>
-  <Parameter name="user">contrib</Parameter>
-  <Parameter name="password">alambic</Parameter>
-  <Parameter name="estimate_extent">false</Parameter>
-  <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+  #sudo apt-get install protobuf-compiler libprotobuf-dev libprotoc-dev subversion
+  #svn checkout http://protobuf-c.googlecode.com/svn/trunk/ protobuf-c-read-only
+  #cd protobuf-c-read-only
+  #./autogen.sh
+  #make
+  #sudo make install
 
-Si on a bien telechargé les fichiers shape, si on correctement configuré les fichiers xml, alors
-on peut maintenant tester la configuration en lancant renderd en mode foreground.
-
-Lancement de renderd
+If you want to use lua scripts for tag_transform, you will need to install lua5.2 liblua5.2-0 liblua5.2-dev and liblua5.1-0
 
 .. code::
-  #renderd -f
-  sudo -u www-data renderd -f -c /usr/local/etc/renderd.conf
+  sudo apt-get install lua5.2 liblua5.2-0 liblua5.2-dev liblua5.1-0
 
-Normallement, si les fichiers shapes sont présents dans /usr/local/share/world_boundaries/
-alors, il ne doit pas y avoir d'erreurs d'execution
-
-Essai de generation d'une image
-vue ici : http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
+You can get the source of osm2pgsql (28 mb) from git
 .. code::
-  cd ~/src/mapnik-style
-  ./generate_xml.py --host 10.2.10.38\
-                    --dbname gis \
-                    --user contrib \
-                    --password alambic \
-                    --world_boundaries /usr/local/share/world_boundaries \
-                    --accept-none
+  git clone https://github.com/openstreetmap/osm2pgsql.git
 
-Avant de lancer la generation de l'image, nous allons modifier le script generate_image.py
-pour donner une nouvelle emprise
-(car, par default, ce script genere une image de l'angleterre)
+Next, enter the newly created directory containing the source for the utility:
+.. code::
+  cd osm2pgsql/
+
+If no Makefile and configure script exist, generate them with:
+.. code::
+
+  ./autogen.sh
+  ./configure
+
+Optionally, you can configure the compiler to produce a faster binary that can only run on CPUs that have the same capabilities as yours.
+.. code::
+  sed -i 's/-g -O2/-O2 -march=native -fomit-frame-pointer/' Makefile
+
+Finally, compile the sources into an executable program:
+.. code::
+  make
+
+Et, enfin, installation du binaire dans /usr/local/bin
+.. code::
+  sudo make install
+
+Nettoyage, suppression des sources
+.. code::
+  cd ..
+  rm -rf osm2pgsql
+
+
+Utilisation de osm2pgsql pour transférer les données osm vers postgresql
+------------------------------------------------------------------------
+
+Création d'une base de données
+La suppression de la base de données osm, puis la creation de la base de données osm, se fait
+en suivant le script suivant, mais qu'il faut modifier avec la bonne adresse IP
+.. code::
+  vi ./dropcreatedatabase.sh
+  ./dropcreatedatabase.sh
+
+Ce script va appeler deux scripts sql qui sont dans le repertoire sql
+.. code::
+  ./sql/dropdatabase.sql
+  ./sql/createdatabase.sql
+
+Avant de lancer le script de creation, il faut créer sur le serveur de base de données un tablespace
+La creation de ce tablespace est detaillé dans le fichier sql/createdatabase.sql
+http://docs.postgresql.fr/9.3/manage-ag-tablespaces.html
+http://www.dj-j.net/waka/Linux:Administration_PostgreSQL#Utilisation_des_tablespaces
+
+Utilisation de la commande osm2pgsql
+------------------------------------
+
+Pour un premier test, nous allons lancer la commande suivante :
 
 .. code::
-  vi generate_image.py
-  bounds = (-6.5, 49.5, 2.1, 59)
-  bounds = (-1.250, 46.140, -1.080, 46.170)
-  z = 12
-  imgx = 500 * z
-  imgy = 500 * z
+  osm2pgsql -s \
+            -c \
+            -d osm \
+            -U contrib \
+            -H 10.2.10.37 \
+            planet_-1.2498,46.1263_-1.0831,46.2022.osm.pbf
+
+
+Cependant, cette ligne de commande ne fait qu'utiliser un syle par defaut.
+
+Nous allons essqyer d'utiliser cartoCSS en suivant cette doc vue sur cette page :
+
+https://github.com/gravitystorm/openstreetmap-carto
+installation des fonts
+----------------------
+.. code::
+  sudo apt-get install ttf-dejavu fonts-droid ttf-unifont fonts-sipa-arundina fonts-sil-padauk fonts-khmeros \
+  ttf-indic-fonts-core ttf-tamil-fonts ttf-kannada-fonts
+
+Clonage du projet
+-----------------
 
 .. code::
-  ./generate_image.py ; display image.png
+  git clone https://github.com/gravitystorm/openstreetmap-carto.git
 
+Lancement du script pour récupérer des fichiers shape
+.. code::
+  ./openstreetmap-carto/get-shapefile.sh
 
-Avant de lancer la generation des tuiles, nous allons modifier le script generate_tiles.py
-pour ajouter une nouvelle emprise
+Nettoyage des shapes
+.. code::
+  ogr2ogr ne_10m_populated_places_fixed.shp ne_10m_populated_places.shp
 
 .. code::
-  vi generate_tiles.py
-  bbox = (-1.250, 46.140, -1.080, 46.170)
-  render_tiles(bbox, mapfile, tile_dir, 10, 16, "La Rochelle")
+  osm2pgsql -s \
+            -c \
+            -d osm \
+            -U contrib \
+            -H 10.2.10.37 \
+            planet_-1.2498,46.1263_-1.0831,46.2022.osm.pbf \
+            --style openstreetmap-carto/openstreetmap-carto.style
 
-Lancement de la génération des tuiles
-
+Interrogation de la base
 .. code::
-  export MAPNIK_MAP_FILE=osm.xml; export MAPNIK_TILE_DIR=/var/lib/mod_tile; ./generate_tiles.py
+  psql -h 10.2.10.37 -d osm -U contrib -c "select osm_id, name frome planet_osm_point where amenty='cinema' limit 5;"
 
-Configuration de mod-tile
-cf fginstallation.sh
+Les autres infos sur mapnik et les styles
+-----------------------------------------
+mapnik style osm
 
-activation du module, du site, et relance d'apache
-.. code::
-  sudo a2enmod tile
-  sudo a2ensite tileserver_site
-  sudo service apache2 restart
 
-Solution non trouvée pour configurer mod_tile
-L'astuce est donc de faire un lien symbolique
+http://wiki.openstreetmap.org/wiki/Mapnik_Example
 
-.. code::
-  cd /var/www
-  sudo ln -s /var/lib/mod_tile osm
-  cd /var/lib/mod_tile
-  cp ~/src/mod_tile/slippymap.html /var/lib/mod_tile/slippymap.html
+https://github.com/mapnik/mapnik/wiki/StyleShare
 
-On essaye
-.. code::
-  http://localhost/osm/16/32548/23274.png
-  http://localhost/mod_tiles
-  http://localhost/osm/slippymap.html
-  
+http://wiki.openstreetmap.org/wiki/Stylesheet
+
+https://github.com/gravitystorm/openstreetmap-carto
+
+http://wiki.openstreetmap.org/wiki/CartoCSS
+
+https://github.com/mapbox/carto

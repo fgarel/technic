@@ -12,27 +12,23 @@ Le code est moins spagetti.
 """
 
 import mapnik
-#import mapnik2 as mapnik
-#import os
-#import nose
-#from utilities import execution_path
-#from utilities import execution_path, run_all
 
 # config at home
-PG_HOST_CARTO = '192.168.0.21' # osm
-PG_HOST_VLR = '192.168.0.21'   # cadastre
+PG_HOST_CARTO = '192.168.0.21'  # osm
+PG_HOST_VLR = '192.168.0.21'    # cadastre
 PG_PORT_VLR = 5432
 PG_DBNAME_VLR = 'gis'
 MAPFILE = '/home/fred/src/mapnik-style/osm.xml'
 
 # config at work
-PG_HOST_CARTO = '10.2.10.38'   # osm      = debian
-PG_HOST_VLR = '10.254.140.139' # cadastre = dsibdd09
-PG_PORT_VLR = 5435
-PG_DBNAME_VLR = 'base_l93'
-MAPFILE = '/home/fred/src/mapnik-style/osm.xml'
+#PG_HOST_CARTO = '10.2.10.38'    # osm      = debian
+#PG_HOST_VLR = '10.254.140.139'  # cadastre = dsibdd09
+#PG_PORT_VLR = 5435
+#PG_DBNAME_VLR = 'base_l93'
+#MAPFILE = '/home/fred/src/mapnik-style/osm.xml'
 
-class Fgmapnik:
+
+class Fgmapnik(object):
 
     u"""
     Objet permettant de simplifier l'utilisation de mapnik.
@@ -145,10 +141,20 @@ class Fgmapnik:
         _layer.datasource = self._datasource
         _layer.styles.append('')
 
-
     def init_layer_ortho(self):
         u"""
         Initialisation du layer ortho.
+
+        # définition de la source de données pour l'ortho
+        # l'ortho de la rochelle est trop grande :
+        # il faut en faire un extrait en utilisant la commande suivante :
+        # gdal_translate -projwin 1378100 5226400 1378200 5226300 \
+        #                ortho_2013_lr_cc46.jp2 \
+        #                ~/geodata/raster/test/mamaison2.tif
+        # ce tips a ete vu ici : https://trac.osgeo.org/gdal/wiki/FAQRaster
+        #_datasource_001 = mapnik.Gdal(
+        #    file='/home/fred/k/sig_donnees/raster/
+        #          orthophotoplan/vue_2013/jp2/ortho_2013_lr_cc46.jp2')
 
         """
 
@@ -177,15 +183,16 @@ class Fgmapnik:
         """
 
         # Initialisation du layer, avec sa projection
-        _layer_002 = mapnik.Layer('cad_parcelle_sig', self._proj4_2154_l93.params())
+        _layer_002 = mapnik.Layer('cad_parcelle_sig',
+                                  self._proj4_2154_l93.params())
         # datasource de type postgis, avec la chaine de connection
         _params_connection_vlr_cadparcelle = dict(host=self._pg_host_vlr,
-                                                       port=self._pg_port_vlr,
-                                                       dbname=self._pg_dbname_vlr,
-                                                       table='cad_parcelle',
-                                                       srid=2154,
-                                                       user='contrib',
-                                                       password='alambic')
+                                                  port=self._pg_port_vlr,
+                                                  dbname=self._pg_dbname_vlr,
+                                                  table='cad_parcelle',
+                                                  srid=2154,
+                                                  user='contrib',
+                                                  password='alambic')
         _datasource_002 = mapnik.PostGIS(**_params_connection_vlr_cadparcelle)
         _layer_002.datasource = _datasource_002
 
@@ -249,7 +256,9 @@ class Fgmapnik:
         #_map = mapnik.Map(256, 256, self._proj4_3857_pseudomercator)
         #_map = mapnik.Map(256, 256, self._proj4_4326_wgs84)
         #_map = mapnik.Map(self._height, self._width)
-        _map = mapnik.Map(self._height, self._width, self._proj4_3857_pseudomercator.params())
+        _map = mapnik.Map(self._height,
+                          self._width,
+                          self._proj4_3857_pseudomercator.params())
         #_map.background = mapnik.Color('steelblue')
 
         # couche osm
@@ -257,72 +266,12 @@ class Fgmapnik:
         mapfile = self._mapfile
         mapnik.load_map(_map, mapfile)
 
-        # couche ortho
-        # creation du style pour l'ortho
-        _style_001 = mapnik.Style()
-        _rule = mapnik.Rule()
-        _rule.symbols.append(mapnik.RasterSymbolizer())
-        _style_001.rules.append(_rule)
-        _map.append_style('style_ortho', _style_001)
 
-        _style_002 = mapnik.Style()
-        _rule = mapnik.Rule()
-        _polygon_symbolizer = mapnik.PolygonSymbolizer(mapnik.Color('#02eff9'))
-        _polygon_symbolizer.fill_opacity = 0.5
-        _rule.symbols.append(_polygon_symbolizer)
-        _rule.symbols.append(mapnik.LineSymbolizer(
-            mapnik.Color('rgb(50%,50%,50%)'),
-            0.1))
-        _point_symbolizer = mapnik.PointSymbolizer()
-        _point_symbolizer.width = 15
-        _point_symbolizer.height = 15
-        _point_symbolizer.opacity = 0.8
-        _rule.symbols.append(_point_symbolizer)
-        _style_002.rules.append(_rule)
-        _map.append_style('style_cad_parcelle_sig', _style_002)
-
-        # définition de la source de données pour l'ortho
-        # l'ortho de la rochelle est trop grande :
-        # il faut en faire un extrait en utilisant la commande suivante :
-        # gdal_translate -projwin 1378100 5226400 1378200 5226300 \
-        #                ortho_2013_lr_cc46.jp2 \
-        #                ~/geodata/raster/test/mamaison2.tif
-        # ce tips a ete vu ici : https://trac.osgeo.org/gdal/wiki/FAQRaster
-        #_datasource_001 = mapnik.Gdal(
-        #    file='/home/fred/k/sig_donnees/raster/orthophotoplan/vue_2013/jp2/ortho_2013_lr_cc46.jp2')
-        _datasource_001 = mapnik.Gdal(
-            file='/home/fred/geodata/raster/test/mamaison2.tif')
-        _params_connection_vlr_cadparcelle = dict(host=self._pg_host_vlr,
-                                                       port=self._pg_port_vlr,
-                                                       dbname=self._pg_dbname_vlr,
-                                                       table='cad_parcelle',
-                                                       srid=2154,
-                                                       user='contrib',
-                                                       password='alambic')
-        _datasource_002 = mapnik.PostGIS(**_params_connection_vlr_cadparcelle)
-        #_datasource_010 = mapnik.Osm(file='/home/fred/geodata/vecteur/osm/planet_-1.2498,46.1263_-1.0831,46.2022.osm')
-        #_params_connection_debian_osm = dict(host=POSTGIS_HOST,
-        #                                               port=5432,
-        #                                               dbname='gis',
-        #                                               table='planet_osm_roads',
-        #                                               srid=900913,
-        #                                               user='contrib',
-        #                                               password='alambic')
-        #_datasource_011 = mapnik.PostGIS(**_params_connection_debian_osm)
-        _layer_001 = mapnik.Layer('ortho', self._proj4_3946_cc46.params())
-        _layer_001.datasource = _datasource_001
-        _layer_001.styles.append('style_ortho')
         #_layer_010 = mapnik.Layer('osm', self._proj4_3857_pseudomercator)
         #_layer_010.datasource = _datasource_010
-        #_layer_011 = mapnik.Layer('osm2', self._proj4_3857_pseudomercator)
-        #_layer_011.datasource = _datasource_011
-        #_layer_011.styles.append('style_osm')
-        _layer_002 = mapnik.Layer('cad_parcelle_sig', self._proj4_2154_l93.params())
-        _layer_002.datasource = _datasource_002
-        _layer_002.styles.append('style_cad_parcelle_sig')
 
         _map.layers.append(_layer_001)
-        _map.layers.append(_layer_002)
+        #_map.layers.append(_layer_002)
         #_map.layers.append(_layer_010)
         #_map.layers.append(_layer_011)
         #_map.layers.append(_layer_002)
@@ -360,9 +309,21 @@ class Fgmapnik:
 if __name__ == '__main__':
 
     #run_all(eval(x) for x in dir() if x.startswith("test_"))
-    _mon_fgmapnik = Fgmapnik(Height=256, Width=256, XCenterCC46=1379230, YCenterCC46=5227400)
-    _mon_fgmapnik.do_map_01(Scale=500, File='/home/fred/geodata/raster/test/000000_map01_000500.png')
-    _mon_fgmapnik.do_map_01(Scale=1000, File='/home/fred/geodata/raster/test/000000_map01_001000.png')
-    _mon_fgmapnik.do_map_01(Scale=2000, File='/home/fred/geodata/raster/test/000000_map01_002000.png')
-    _mon_fgmapnik = Fgmapnik(XCenterCC46=1379337, YCenterCC46=5225674)
-    _mon_fgmapnik.do_map_01(Scale=5000, File='/home/fred/geodata/raster/test/000001_map01_005000.png')
+    _mon_fgmapnik = Fgmapnik(Height=256,
+                             Width=256,
+                             XCenterCC46=1379230,
+                             YCenterCC46=5227400)
+    _mon_fgmapnik.do_map_01(
+        Scale=500,
+        File='/home/fred/geodata/raster/test/000000_map01_000500.png')
+    _mon_fgmapnik.do_map_01(
+        Scale=1000,
+        File='/home/fred/geodata/raster/test/000000_map01_001000.png')
+    _mon_fgmapnik.do_map_01(
+        Scale=2000,
+        File='/home/fred/geodata/raster/test/000000_map01_002000.png')
+    _mon_fgmapnik = Fgmapnik(XCenterCC46=1379337,
+                             YCenterCC46=5225674)
+    _mon_fgmapnik.do_map_01(
+        Scale=5000,
+        File='/home/fred/geodata/raster/test/000001_map01_005000.png')

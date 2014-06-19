@@ -1,98 +1,262 @@
-*********************
-Utilisation de mapnik
-*********************
+**********************
+Installation de mapnik
+**********************
 
-Les tests
-=========
-Pour commencer, nous allons apprendre à utliser mapnik en suivant le tutorial.
-Nous allons créer plusieurs scripts python qui font appel aux fonctionnalités de mapnik
+Architecture
+============
 
-tutorial01.py
--------------
-Ce script genere une carte du monde.
-En entrée, les données sont issues d'un fichier shape que l'on a précedemment télachargé
-En sortie, on peut affichier le résultat
+Un graphique simple pour expliquer les différentes briques qui composent la solution
+vu sur cette page 
+http://karussell.wordpress.com/2013/10/26/setup-tile-server-mapnik/
+Setup Mapnik From Scratch
+
+    A) browser/client (leaflet, openlayers)
+    |
+    B) tile server (mod_tile, tile cache, tile stache, mapproxy, geowebcache)
+    |
+    C) map web service = WMS (MapServer, GeoServer, Mapnik)
+    |
+    D) Data storage (PostgreSQL, vector tiles)
+    |
+    E) OSM data (xml, pbf)
+
+Sources ou paquets
+==================
+
+nous avons deux options pour l'installation :
+soit installer les briques à partir des sources
+soit utiliser les paquets du dépot XXXX
+
+Nous optons pour l'installation à partir des sources : nous allons donc commencer par
+supprimer les paquets d'une éventuelle installation précédente, pour éviter les conflits
+
+Désinstallation des paquets
+.. code::
+
+  sudo aptitude remove \
+                       libmapnik \
+                       libmapnik-dev \
+                       libmapnik2-2.0 \
+                       libmapnik2-dev \
+                       mapnik-doc \
+                       mapnik-utils \
+                       python-mapnik \
+                       python-mapnik2 \
+                       tilemill
+
+  sudo aptitude purge "~c"
+
+Installation des différentes briques
+====================================
+La meilleure doc que j'ai vue pour installer mapnik se trouve ici :
+http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
+
+En suivant pas à pas la préocédure, on obtient un système qui est censé avoir un mapnik et un serveur de tuile
+
+Dans le repertoire ~/src/ on s'arrange pour avoir un clone de ces differents dépots
 
 .. code::
-  tycat ~/geodata/raster/world/world.png
+  git clone git://github.com/mapnik/mapnik
+  git clone git://github.com/openstreetmap/mod_tile.git
+  svn co http://svn.openstreetmap.org/applications/rendering/mapnik mapnik-style
+  git clone git://githaub.com/isaacs/npm.git
+  git clone https://github.com/mapbox/carto
+  git clone https://github.com/gravitystorm/openstreetmap-carto
 
+Les premiers dépots sont mentionnés dans la doc, mais, par rapport cette doc, nous ajoutons deux dépots
+permettant d'utiliser des feuilles de styles CSS au lieu de styles XML.
 
-tutorial02.py
--------------
-Ce script genere une carte du monde.
-En entrée, les données sont issues d'un fichier shape que l'on a précedemment télachargé
-Ce second script est quasi équivalent au premier, à la différence qu'ici, 
-les paramètres de mapnik sont dans un fichier xml externe (tutorial2.xml)
-En sortie, on peut affichier le résultat
-
-.. code::
-  tycat hello_world_using_xml_config.png
-
-tutorial03.py
--------------
-Cette fois, on s'attaque aux données locales.
-Les sources de données sont de plusieurs types (raster, postgis, shape),
-les systèmes de projection sont aussi différents (2154 = lambert 93, 3946 = cc46.
-
-En entrée, les données sont :
- - _layer_001 : raster    mamaison.tiff ; _style_001 : style_ortho
- - _layer_002 : postgis   dsibdd09      ; _style_002 : style_cad_parcelle_sig
- - _layer_003 : shapefile parcelle.shp  ; _style_003 : style_cad_parcelle_topo
- - _layer_004 : shapefile bati.shp      ; _style_004 : style_cad_bati_topo
- - _layer_005 : shapefile poi.shp       ; _style_005 : style_poi_A
- - _layer_006 : postgis   debian        ; _style_006 : style_poi_B
- - _layer_007 : postgis   debian        ; _style_007 : style_poi_C
-
-En sortie, on peut affichier le résultat
+Pour installer carto, on a besoin de nodejs et de npm
+Or, pour installer la dernière version de npm, il ne faut pas prendre celle du paquet
+mais il faut installer npm à partir du dépot
 
 .. code::
-  tycat ~/geodata/raster/raster/test/larochelle_001000.png
-  tycat ~/geodata/raster/raster/test/larochelle_000500.png
-
-tutorial04.py
--------------
-Factorisation du code, et ecriture POO
+  # aptitude install npm
+  cd ~/src/npm/scripts
+  chmod +x install.sh
 
 
+puis, on installe carto avec
 
+.. code::
+  cd ~/src/carto
+  sudo npm install -g carto
+  sudo npm install -g millstone
 
-Generer une image à partir d'une emprise
-========================================
+On peut désormais utiliser carto de la façon suivante
 
-Les données initiales
----------------------
+.. code::
+  cd ~/src/openstreetmap-carto/
+  carto project.mml > mapnik.xml
 
+Il faut aussi installer libapache2-mod-tile.
 
-La generation de l'image
-------------------------
+La solution simple, cela aurait été de prendre le paquet.
 
+.. code::
+  #sudo apt-get install libapache2-mod-tile_dir
+
+Cependant, avec ce paquet, nous avons l'utilitaire renderd qui n'est plus à jour.
+Les détails de l'installation du module mod_tile sont donc détaillés dans fginstallation.sh
+cf fginstallation.sh
+
+Cette installation aura pour effet de créer un site web
+/etc/apache2/sites-available/tileserver_site
+et un module
+/etc/apache2/mods-available/tile.load
+
+Il faut aussi installer renderd
+.. code::
+  #aptitude install renderd
+
+Renderd sera aussi installé à partir des sources
+
+Configuration de renderd
+.. code::
+  #vi /etc/renderd.conf
+
+  #;XML=/etc/mapnik-osm-data/osm.xml
+  #;XML=/home/fred/src/openstreetmap-carto/mapnik.xml
+  #XML=/home/fred/src/mapnik-style/osm.xml
+
+Si l'installation de renderd est réalisée à partir des sources,
+alors le fichier de configuration se trouve ici :
+/usr/local/etc/renderd.conf
+
+Les modifications de la configuration de renderd sont détaillées dans fginstallation.sh
+
+Les modifications à apporter dans les fichiers ~/src/mapnik-style/inc/
+
+Il y a trois fichiers qui sont à personnaliser
+
+settings.xml.inc
+datasource-settings.xml.inc
+fontset-settings.xml.inc
 
 
 .. code::
-  tycat ~/geodata/raster/world/world.png
+  cd ~/src/mapnik-style/inc/
+  cp fontset-settings.xml.inc.template fontset-settings.xml.inc
+  cp datasource-settings.xml.inc.template datasource-settings.xml.inc
+  cp settings.xml.inc.template settings.xml.inc
 
 
+Recuperation des shapes worldboundaries
 
-Generer une image à partir d'une emprise
-========================================
+Cette info a été vue sur cette page
+http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
 
-Les données initiales
----------------------
+.. code::
 
-
-La generation de l'image
-------------------------
-
-
-
-Generer une image à partir d'une emprise
-========================================
-
-Les données initiales
----------------------
-
-
-La generation de l'image
-------------------------
+  cd /usr/local/share
+  sudo mkdir world_boundaries
+  sudo wget http://tile.openstreetmap.org/world_boundaries-spherical.tgz
+  sudo tar xzvf world_boundaries-spherical.tgz
+  sudo wget http://tile.openstreetmap.org/processed_p.tar.bz2
+  sudo tar xvjf processed_p.tar.bz2 -C world_boundaries
+  sudo wget http://tile.openstreetmap.org/shoreline_300.tar.bz2
+  sudo tar xjf shoreline_300.tar.bz2 -C world_boundaries
+  sudo wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
+  sudo unzip ne_10m_populated_places.zip -d world_boundaries
+  sudo wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip
+  sudo unzip ne_110m_admin_0_boundary_lines_land.zip -d world_boundaries
 
 
+Edition des fichiers de configuration
+.. code::
+  vi settings.xml.inc
+  
+  <!ENTITY symbols "symbols">
+  <!ENTITY osm2pgsql_projection "&srs900913;">
+  <!ENTITY dwithin_node_way "&dwithin_900913;">
+  <!ENTITY world_boundaries "/usr/local/share/world_boundaries">
+  <!ENTITY prefix "planet_osm">
+
+.. code::
+  vi datasource-settings.xml.inc
+  
+  <Parameter name="type">postgis</Parameter>
+  <Parameter name="host">10.2.10.38</Parameter>
+  <Parameter name="port">5432</Parameter>
+  <Parameter name="dbname">gis</Parameter>
+  <Parameter name="user">contrib</Parameter>
+  <Parameter name="password">alambic</Parameter>
+  <Parameter name="estimate_extent">false</Parameter>
+  <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+
+Si on a bien telechargé les fichiers shape, si on correctement configuré les fichiers xml, alors
+on peut maintenant tester la configuration en lancant renderd en mode foreground.
+
+Lancement de renderd
+
+.. code::
+  #renderd -f
+  sudo -u www-data renderd -f -c /usr/local/etc/renderd.conf
+
+Normallement, si les fichiers shapes sont présents dans /usr/local/share/world_boundaries/
+alors, il ne doit pas y avoir d'erreurs d'execution
+
+Essai de generation d'une image
+vue ici : http://fr.flossmanuals.net/openstreetmap/ch017_generer-des-cartes-pour-son-site-web
+.. code::
+  cd ~/src/mapnik-style
+  ./generate_xml.py --host 10.2.10.38\
+                    --dbname gis \
+                    --user contrib \
+                    --password alambic \
+                    --world_boundaries /usr/local/share/world_boundaries \
+                    --accept-none
+
+Avant de lancer la generation de l'image, nous allons modifier le script generate_image.py
+pour donner une nouvelle emprise
+(car, par default, ce script genere une image de l'angleterre)
+
+.. code::
+  vi generate_image.py
+  bounds = (-6.5, 49.5, 2.1, 59)
+  bounds = (-1.250, 46.140, -1.080, 46.170)
+  z = 12
+  imgx = 500 * z
+  imgy = 500 * z
+
+.. code::
+  ./generate_image.py ; display image.png
+
+
+Avant de lancer la generation des tuiles, nous allons modifier le script generate_tiles.py
+pour ajouter une nouvelle emprise
+
+.. code::
+  vi generate_tiles.py
+  bbox = (-1.250, 46.140, -1.080, 46.170)
+  render_tiles(bbox, mapfile, tile_dir, 10, 16, "La Rochelle")
+
+Lancement de la génération des tuiles
+
+.. code::
+  export MAPNIK_MAP_FILE=osm.xml; export MAPNIK_TILE_DIR=/var/lib/mod_tile; ./generate_tiles.py
+
+Configuration de mod-tile
+cf fginstallation.sh
+
+activation du module, du site, et relance d'apache
+.. code::
+  sudo a2enmod tile
+  sudo a2ensite tileserver_site
+  sudo service apache2 restart
+
+Solution non trouvée pour configurer mod_tile
+L'astuce est donc de faire un lien symbolique
+
+.. code::
+  cd /var/www
+  sudo ln -s /var/lib/mod_tile osm
+  cd /var/lib/mod_tile
+  cp ~/src/mod_tile/slippymap.html /var/lib/mod_tile/slippymap.html
+
+On essaye
+.. code::
+  http://localhost/osm/16/32548/23274.png
+  http://localhost/mod_tiles
+  http://localhost/osm/slippymap.html
+  
