@@ -26,7 +26,8 @@ Il faut en faire un extrait en utilisant la commande suivante :
                  ortho_2013_lr_cc46.jp2 \
                  ~/geodata/raster/test/mamaison2.tif
 
-La commande dans le script, sera donc modifié.
+La commande, dans le script final qui sert à la creation de l'atlas,
+sera donc modifiée.
 A la place de :
 .. code::
   _datasource_001 = mapnik.Gdal(
@@ -37,6 +38,10 @@ on aura :
   _datasource_001 = mapnik.Gdal(
     file='/home/fred/geodata/raster/test/mamaison2.tif')
 
+Nous avons donc créé un petit script qui simplifie cette extraction
+
+.. code::
+  rasterModify.sh
 
 Les données OSM
 ===============
