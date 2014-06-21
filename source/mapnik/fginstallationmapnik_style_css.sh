@@ -1,29 +1,10 @@
 #!/bin/sh
 
-POSTGIS_HOST='10.2.10.38'
-POSTGIS_HOST='192.168.0.21'
+#POSTGIS_HOST='10.2.10.38'
+#POSTGIS_HOST='192.168.0.21'
 
 # A Suivi de la doc avec les sources
 # http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
-
-# 1. on supprime les paquets binaires
-# First, remove any other old mapnik packages:
-./fginstallationmapnik_nettoyage.sh
-
-# 2. recuperation des sources, configuration, compilation et installation
-# installation, clonage de quelques projets, dans le repertoire ~/src
-mkdir ~/src
-
-# 2.1. Installation de mapnik à partir des sources
-# mapnik
-./fginstallationmapnik_mapnik.sh
-
-
-# 2.2. Les styles mapnik
-# 2.2.1. old school : xml
-# Installation de mapnik-style à partir des sources
-# mapnik-style est basé sur du XML
-./fginstallationmapnik_style_xml.sh
 
 
 # 2.2.2. new school : cartocss
@@ -31,7 +12,53 @@ mkdir ~/src
 # de reprendre le style d'openstreetmap, non plus en dialecte xml, mais en dialecte cartocss
 # ce projet a besoin de l'utilitaire carto qui va transformer du cartocss en xml
 # pour installer carto, il faut installer npm
-./fginstallationmapnik_style_css.sh
+
+# 2.2.2.1. npm
+# installation et compilation de carto 
+# avant de pouvoir installer carto, il faut installer npm
+# or npm ne peut pas être installé avec un simple aptitude install
+# car il y a un problème de version
+# How to fix npm "Cannot find module 'graceful-fs'" error
+# Problem: When running any npm command, you get a stacktrace similar to the following:
+# Error: Cannot find module 'graceful-fs'
+# Solution: Your npm isn't properly installed. Execute (as root):
+# curl https://npmjs.org/install.sh | bash
+# This reinstalls npm on your computer, it should work afterwards.
+# You might need to restart your shell after that for the changes to take effect.
+# In some cases even the installer fails because of the graceful-fs error,
+# in this case you might need to remove npm using your distribution's package manager first, e.g.
+# sudo apt-get remove npm
+# On utilise l'astuce vu sur cette page :
+# http://stackoverflow.com/questions/10776405/npm-cant-install-appjs-error-cannot-find-module-graceful-fs
+#sudo aptitude install npm
+cd ~/src
+rm -rf ~/src/npm
+git clone git://github.com/isaacs/npm.git
+cd ~/src/npm
+git fetch origin master
+cd ~/src/npm/scripts/
+chmod +x install.sh
+sudo ./install.sh
+
+
+# 2.2.2.2. carto
+cd ~/src
+rm -rf ~/src/carto
+git clone https://github.com/mapbox/carto
+cd ~/src/carto
+git fetch origin master
+cd ~/src/carto/
+sudo npm install -g carto
+sudo npm install -g millstone
+
+# 2.2.2.3. openstreetmap-carto
+cd ~/src
+rm -rf ~/src/openstreetmap-carto
+git clone https://github.com/gravitystorm/openstreetmap-carto
+cd ~/src/openstreetmap-carto
+git fetch origin master
+
+
 
 
 # 3. Installation d'un serveur de tuiles

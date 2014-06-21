@@ -28,10 +28,10 @@ ORTHO_TMP = '/home/fred/geodata/raster/test/mamaison2.tif'
 OUTPUT_FILE = '/home/fred/geodata/raster/test/000000_map01_001000.png'
 
 # config at work
-PG_HOST_CARTO = '10.2.10.38'    # osm      = debian
-PG_HOST_VLR = '10.254.140.139'  # cadastre = dsibdd09
-PG_PORT_VLR = 5435
-PG_DBNAME_VLR = 'base_l93'
+#PG_HOST_CARTO = '10.2.10.38'    # osm      = debian
+#PG_HOST_VLR = '10.254.140.139'  # cadastre = dsibdd09
+#PG_PORT_VLR = 5435
+#PG_DBNAME_VLR = 'base_l93'
 PG_USER_VLR = 'contrib'
 PG_PASSWORD_VLR = 'alambic'
 SITE_FILE = 'PatrimoineVLR.kml'
@@ -104,14 +104,20 @@ class Fgmapnik(object):
             self._height,
             self._width,
             self._proj4_3857_pseudomercator.params())
+        # initialisation de la carte 05 (plan de situation = base osm)
+        self._map_05 = mapnik.Map(
+            self._height,
+            self._width,
+            self._proj4_3857_pseudomercator.params())
+
+        # Initialisation du layer osm, avec sa projection
+        self._layer_osm = mapnik.Layer(
+            'osm',
+            self._proj4_3857_pseudomercator.params())
         # Initialisation du layer ortho, avec sa projection
         self._layer_ortho = mapnik.Layer(
             'ortho',
             self._proj4_3946_cc46.params())
-        # Initialisation du layer osm, avec sa projection
-        self._layer_osm = mapnik.Layer(
-            'osm',
-            self._proj4_2154_l93.params())
         # Initialisation du layer cadastre_vlr, avec sa projection
         self._layer_cadastre_vlr = mapnik.Layer(
             'cadastre_vlr',
@@ -123,8 +129,8 @@ class Fgmapnik(object):
         # Initialisation du layer site, avec sa projection
         self._layer_site = mapnik.Layer(
             'site',
-            self._proj4_3857_pseudomercator.params())
-            #self._proj4_4326_wgs84.params())
+            #self._proj4_3857_pseudomercator.params())
+            self._proj4_4326_wgs84.params())
 
 
     def _extract_image(self,
@@ -524,6 +530,56 @@ class Fgmapnik(object):
         print("display %s" % self._output_file)
 
 
+    def do_map_05(self, *args, **kwargs):
+        u"""
+        Dessin de la carte 05.
+
+        La carte 5 est une carte basé sur le fond de plan
+        issu d'Open Street Map
+        
+        La carte sera composée :
+            - _layer_001 = osm (système pseudomercator)
+            - _layer_002 = site (système pseuomercator)
+
+        et voila.
+
+        """
+        for arg in args:
+            #print("arg %s" % arg)
+            pass
+        for key, value in kwargs.iteritems():
+            #print("key %s == value %s" % (key, value))
+            if (key == 'Scale'):
+                self._scale = value
+            if (key == 'File'):
+                self._output_file = value
+
+        self._map_05.background = mapnik.Color('white')
+        
+        # la map_05 est basée sur OSM :
+        # on charge les données osm en utilisant un mapfile
+        mapnik.load_map(self._map_05, self._mapfile)        
+
+        # on utilise une fonction que va initialiser le layer cadastre_vlr
+        #self.init_layer_cadastre_vlr(self._map_05)
+        # on utilise une fonction que va initialiser le layer site
+        self.init_layer_site(self._map_05)
+        # le layer est ajouté à la carte
+        #self._map_05.layers.append(self._layer_cadastre_vlr)
+        self._map_05.layers.append(self._layer_site)
+        # on se place au bon endroit, à la bonne échelle
+        self.pan_map(self._map_05)
+        ##self._map_05.zoom_to_box(self._layer_site.envelope())
+        ##self._map_05.zoom_to_box(self._layer_site.envelope())
+        mapnik.render_to_file(
+            self._map_05,
+            self._output_file,
+            'png')
+        #print("self._layer_cadastre_vlr.srs = %s" % self._layer_cadastre_vlr.srs)
+        print("self._layer_site.srs = %s" % self._layer_site.srs)
+        print("self._map_05.srs = %s" % self._map_05.srs)
+        print("display %s" % self._output_file)
+
     def do_map_99(self, *args, **kwargs):
         u"""
         Dessin de toutes les cartes.
@@ -546,30 +602,30 @@ if __name__ == '__main__':
                              YCenterCC46=5227400)
     
     # Creation des différentes cartes pour cet objet
-    _mon_fgmapnik.do_map_01(
-        Scale=500,
-        File='/home/fred/geodata/raster/test/000000_map01_000500.png')
-    _mon_fgmapnik.do_map_01(
+    #_mon_fgmapnik.do_map_01(
+    #    Scale=500,
+    #    File='/home/fred/geodata/raster/test/000000_map01_000500.png')
+    _mon_fgmapnik.do_map_05(
         Scale=1000,
-        File='/home/fred/geodata/raster/test/000000_map01_001000.png')
-    _mon_fgmapnik.do_map_01(
-        Scale=2000,
-        File='/home/fred/geodata/raster/test/000000_map01_002000.png')
+        File='/home/fred/geodata/raster/test/000000_map05_001000.png')
+    #_mon_fgmapnik.do_map_01(
+    #    Scale=2000,
+    #    File='/home/fred/geodata/raster/test/000000_map01_002000.png')
 
     # Instanciation d'un second objet (site avec des coordonnées)
 
     _mon_fgmapnik = Fgmapnik(XCenterCC46=1379337,
                              YCenterCC46=5225674)
 
-    _mon_fgmapnik.do_map_01(
-        Scale=5000,
-        File='/home/fred/geodata/raster/test/000001_map01_005000.png')
-    _mon_fgmapnik.do_map_02(
-        Scale=5000,
-        File='/home/fred/geodata/raster/test/000001_map02_005000.png')
-    _mon_fgmapnik.do_map_03(
-        Scale=5000,
-        File='/home/fred/geodata/raster/test/000001_map03_005000.png')
-    _mon_fgmapnik.do_map_04(
+    #_mon_fgmapnik.do_map_01(
+    #    Scale=5000,
+    #    File='/home/fred/geodata/raster/test/000001_map01_005000.png')
+    #_mon_fgmapnik.do_map_02(
+    #    Scale=5000,
+    #    File='/home/fred/geodata/raster/test/000001_map02_005000.png')
+    #_mon_fgmapnik.do_map_03(
+    #    Scale=5000,
+    #    File='/home/fred/geodata/raster/test/000001_map03_005000.png')
+    _mon_fgmapnik.do_map_05(
         Scale=20000,
-        File='/home/fred/geodata/raster/test/000001_map04_020000.png')
+        File='/home/fred/geodata/raster/test/000001_map05_020000.png')
