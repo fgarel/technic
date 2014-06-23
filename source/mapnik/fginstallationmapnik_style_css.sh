@@ -13,6 +13,33 @@
 # ce projet a besoin de l'utilitaire carto qui va transformer du cartocss en xml
 # pour installer carto, il faut installer npm
 
+
+# installation de Node, node-gyp et npm
+sudo aptitude remove npm
+sudo aptitude remove nodejs
+
+# Node.js.
+# If you are building TileMill master, then you can see
+# which Node.js versions are supported by checking the engines value
+# in the package.json file here.
+
+# At the time of writing Node.js v0.10.29 was the latest release, 
+# works well with TileMill master (while v0.8.x is required for
+# TileMill 0.10.x and older). Build node like:
+
+##NODE_VERSION="0.10.29"
+##wget http://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz
+##tar xf node-v${NODE_VERSION}.tar.gz
+##cd node-v${NODE_VERSION}
+##./configure && make && sudo make install
+##cd ../
+
+
+# installation de node-gyp
+#sudo npm install -g node-gyp
+
+
+
 # 2.2.2.1. npm
 # installation et compilation de carto 
 # avant de pouvoir installer carto, il faut installer npm
@@ -57,6 +84,15 @@ rm -rf ~/src/openstreetmap-carto
 git clone https://github.com/gravitystorm/openstreetmap-carto
 cd ~/src/openstreetmap-carto
 git fetch origin master
+
+# installation des fonts
+sudo apt-get install ttf-dejavu fonts-droid ttf-unifont \
+             fonts-sipa-arundina fonts-sil-padauk fonts-khmeros \
+             ttf-indic-fonts-core ttf-tamil-fonts ttf-kannada-fonts
+
+
+# Lancement du script pour récupérer des fichiers shape
+~/src/openstreetmap-carto/get-shapefiles.sh
 
 
 

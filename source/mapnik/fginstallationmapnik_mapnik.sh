@@ -14,7 +14,7 @@ cd ~/src
 
 # 2.1. Installation de mapnik à partir des sources
 # mapnik
-rm -rf ~/src/mapnik
+#rm -rf ~/src/mapnik
 git clone git://github.com/mapnik/mapnik
 cd ~/src/mapnik
 git checkout master

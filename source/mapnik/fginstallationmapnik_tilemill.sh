@@ -1,40 +1,80 @@
 #!/bin/sh
 
-POSTGIS_HOST='10.2.10.38'
-##POSTGIS_HOST='192.168.0.21'
+#POSTGIS_HOST='10.2.10.38'
+#POSTGIS_HOST='192.168.0.21'
 
 # A Suivi de la doc avec les sources
 # http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
 
-# 1. on supprime les paquets binaires
-# First, remove any other old mapnik packages:
-##./fginstallationmapnik_nettoyage.sh
 
-# 2. recuperation des sources, configuration, compilation et installation
-# installation, clonage de quelques projets, dans le repertoire ~/src
-##mkdir ~/src
+# 2.4. Tilemill : interface graphique pour le design des cartes
+cd ~/src
 
-# 2.1. Installation de mapnik à partir des sources
-# mapnik
-##./fginstallationmapnik_mapnik.sh
+# Installation a partir des paquets ? non!
+#rm -f ~/src/install-tilemill.tar.gz
+#rm -f ~/src/install-tilemill.sh
+#wget http://tilemill.s3.amazonaws.com/latest/install-tilemill.tar.gz
+#tar xzvf install-tilemill.tar.gz
+#~/src/install-tilemill.sh
+# suppression du fichier tar.gz
+#rm -rf ~/src/install-tilemill.tar.gz
 
-
-# 2.2. Les styles mapnik
-# 2.2.1. old school : xml
-# Installation de mapnik-style à partir des sources
-# mapnik-style est basé sur du XML
-##export POSTGIS_HOST=$POSTGIS_HOST; ./fginstallationmapnik_style_xml.sh
+# Installation à partir des sources ? Oui
 
 
-# 2.2.2. new school : cartocss
-# un projet, appelé openstreetmap-carto, a pour objectif
-# de reprendre le style d'openstreetmap, non plus en dialecte xml, mais en dialecte cartocss
-# ce projet a besoin de l'utilitaire carto qui va transformer du cartocss en xml
-# pour installer carto, il faut installer npm
-##./fginstallationmapnik_style_css.sh
+# installation de la derniere version de nodejs
 
-# 2.3. Tilemill : interface graphique pour le design des cartes
-./fginstallationmapnik_tilemill.sh
+# Node.js.
+# If you are building TileMill master, then you can see
+# which Node.js versions are supported by checking the engines value
+# in the package.json file here.
+
+# At the time of writing Node.js v0.10.29 was the latest release, 
+# works well with TileMill master (while v0.8.x is required for
+# TileMill 0.10.x and older). Build node like:
+
+NODE_VERSION="0.10.29"
+rm -rf node-v${NODE_VERSION}
+wget http://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz
+tar xf node-v${NODE_VERSION}.tar.gz
+cd node-v${NODE_VERSION}
+./configure && make && sudo make install
+cd ../
+# suppression du fichier tar.gz
+rm -rf node-v${NODE_VERSION}.tar.gz
+
+
+# installation de node-gyp
+sudo npm install -g node-gyp
+
+# Installation des dépendances
+# Now, the last thing before building TileMill itself is
+# to install a few more dependencies needed by TileMill 
+# or its node modules.
+# One specific need is for its Desktop windowing UI.
+# On Debian systems this package is called libwebkit-dev 
+# and can be installed with:
+
+##sudo apt-get install libwebkit-dev
+
+# Also we need to install git (to download tilemill) and
+# the google protobuf library (which latest node-mapnik requires). 
+# On debian systems you can do this like:
+
+##sudo apt-get install -y git protobuf-compiler libprotobuf-lite7 libprotobuf-dev
+
+# Finally, we are ready to install TileMill master itself:
+
+rm -rf tilemill
+git clone https://github.com/mapbox/tilemill.git
+cd tilemill
+npm install
+
+# une fois installé, on peut lancer le serveur via la commande
+~/src/tilemill/index.js
+
+# pour le client, il suffit de pointer vers la page 
+# http://localhost:20009/
 
 
 # 3. Installation d'un serveur de tuiles

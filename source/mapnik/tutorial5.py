@@ -4,10 +4,8 @@
 u"""
 tutorial5.py : script pour la génération d'image.
 
-Ce script, découpé en fonction, est inspiré des scripts vus sur ce site :
-    https://github.com/mapnik/mapnik/blob/master/tests/python_tests/
-    https://github.com/mapnik/mapnik/wiki/GettingStartedInPython
-Le code est moins spagetti.
+Une classe d'objet Fgmapnik inclue plusieurs méthodes
+facilitant la génération automatique de cartes.
 
 """
 
@@ -28,10 +26,10 @@ ORTHO_TMP = '/home/fred/geodata/raster/test/mamaison2.tif'
 OUTPUT_FILE = '/home/fred/geodata/raster/test/000000_map01_001000.png'
 
 # config at work
-#PG_HOST_CARTO = '10.2.10.38'    # osm      = debian
-#PG_HOST_VLR = '10.254.140.139'  # cadastre = dsibdd09
-#PG_PORT_VLR = 5435
-#PG_DBNAME_VLR = 'base_l93'
+PG_HOST_CARTO = '10.2.10.38'    # osm      = debian
+PG_HOST_VLR = '10.254.140.139'  # cadastre = dsibdd09
+PG_PORT_VLR = 5435
+PG_DBNAME_VLR = 'base_l93'
 PG_USER_VLR = 'contrib'
 PG_PASSWORD_VLR = 'alambic'
 SITE_FILE = 'PatrimoineVLR.kml'
@@ -602,30 +600,33 @@ if __name__ == '__main__':
                              YCenterCC46=5227400)
     
     # Creation des différentes cartes pour cet objet
-    #_mon_fgmapnik.do_map_01(
-    #    Scale=500,
-    #    File='/home/fred/geodata/raster/test/000000_map01_000500.png')
-    _mon_fgmapnik.do_map_05(
+    _mon_fgmapnik.do_map_01(
+        Scale=500,
+        File='/home/fred/geodata/raster/test/000000_map01_000500.png')
+    _mon_fgmapnik.do_map_02(
         Scale=1000,
-        File='/home/fred/geodata/raster/test/000000_map05_001000.png')
-    #_mon_fgmapnik.do_map_01(
-    #    Scale=2000,
-    #    File='/home/fred/geodata/raster/test/000000_map01_002000.png')
+        File='/home/fred/geodata/raster/test/000000_map02_001000.png')
+    _mon_fgmapnik.do_map_01(
+        Scale=2000,
+        File='/home/fred/geodata/raster/test/000000_map01_002000.png')
+    _mon_fgmapnik.do_map_01(
+        Scale=10000,
+        File='/home/fred/geodata/raster/test/000000_map01_010000.png')
 
     # Instanciation d'un second objet (site avec des coordonnées)
 
     _mon_fgmapnik = Fgmapnik(XCenterCC46=1379337,
                              YCenterCC46=5225674)
 
-    #_mon_fgmapnik.do_map_01(
-    #    Scale=5000,
-    #    File='/home/fred/geodata/raster/test/000001_map01_005000.png')
+    _mon_fgmapnik.do_map_01(
+        Scale=5000,
+        File='/home/fred/geodata/raster/test/000001_map01_005000.png')
     #_mon_fgmapnik.do_map_02(
     #    Scale=5000,
     #    File='/home/fred/geodata/raster/test/000001_map02_005000.png')
     #_mon_fgmapnik.do_map_03(
     #    Scale=5000,
     #    File='/home/fred/geodata/raster/test/000001_map03_005000.png')
-    _mon_fgmapnik.do_map_05(
-        Scale=20000,
-        File='/home/fred/geodata/raster/test/000001_map05_020000.png')
+    #_mon_fgmapnik.do_map_05(
+    #    Scale=20000,
+    #    File='/home/fred/geodata/raster/test/000001_map05_020000.png')
