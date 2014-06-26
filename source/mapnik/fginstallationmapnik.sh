@@ -1,7 +1,7 @@
 #!/bin/sh
 
 POSTGIS_HOST='10.2.10.38'
-##POSTGIS_HOST='192.168.0.21'
+POSTGIS_HOST='192.168.0.21'
 
 # A Suivi de la doc avec les sources
 # http://switch2osm.org/serving-tiles/manually-building-a-tile-server-12-04/
@@ -23,7 +23,7 @@ POSTGIS_HOST='10.2.10.38'
 # 2.2.1. old school : xml
 # Installation de mapnik-style à partir des sources
 # mapnik-style est basé sur du XML
-##export POSTGIS_HOST=$POSTGIS_HOST; ./fginstallationmapnik_style_xml.sh
+export POSTGIS_HOST=$POSTGIS_HOST; ./fginstallationmapnik_style_xml.sh
 
 
 # 2.2.2. new school : cartocss
@@ -31,7 +31,7 @@ POSTGIS_HOST='10.2.10.38'
 # de reprendre le style d'openstreetmap, non plus en dialecte xml, mais en dialecte cartocss
 # ce projet a besoin de l'utilitaire carto qui va transformer du cartocss en xml
 # pour installer carto, il faut installer npm
-##./fginstallationmapnik_style_css.sh
+./fginstallationmapnik_style_css.sh
 
 # 2.3. Tilemill : interface graphique pour le design des cartes
 ./fginstallationmapnik_tilemill.sh

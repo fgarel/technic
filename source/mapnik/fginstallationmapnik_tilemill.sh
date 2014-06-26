@@ -68,7 +68,7 @@ sudo npm install -g node-gyp
 rm -rf tilemill
 git clone https://github.com/mapbox/tilemill.git
 cd tilemill
-npm install
+sudo npm install
 
 # une fois installé, on peut lancer le serveur via la commande
 ~/src/tilemill/index.js
