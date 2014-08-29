@@ -16,23 +16,37 @@
 # Author: Roberto Gandolfo Hashioka
 # Date: 07/28/2013
 
-FROM debian:wheezy
+#FROM debian:wheezy
+FROM debian:testing
 MAINTAINER Frédéric Garel "frederic.garel@gmail.com"
 
 # Set the env variable DEBIAN_FRONTEND to noninteractive
 ENV DEBIAN_FRONTEND noninteractive
 
 # Depots, mises a jour
-RUN echo "deb http://ftp.fr.debian.org/debian/ wheezy main non-free contrib" > /etc/apt/sources.list
+#RUN echo "deb http://ftp.fr.debian.org/debian/ wheezy main non-free contrib" > /etc/apt/sources.list
+#RUN echo "deb http://ftp.fr.debian.org/debian/ testing main non-free contrib" > /etc/apt/sources.list
 RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
+RUN (apt-get install -y -q aptitude)
+RUN (aptitude install -y -q vim ssh supervisor)
+RUN aptitude install -y -q git
+RUN aptitude install -y -q autopoint # necessaire pour compiler terminology
+RUN aptitude install -y -q automake # necessaire pour compiler terminology
+RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/efl.git)
+RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/elementary.git)
+RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminology.git)
 #RUN apt-get install -y -q vim ssh supervisor python-software-properties apache2 libapache2-mod-php5 php5-cli php5-mysql
 
 # Installing the environment required: xserver, xdm, flux box, roc-filer and ssh
 #RUN apt-get install -y -q vim ssh
 #RUN apt-get install -y xpra rox-filer ssh pwgen xserver-xephyr xdm fluxbox
 
-
+# Demarrage des services
+#
+RUN mkdir -p /var/log/supervisor
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+ADD start.sh /start.sh
 
 EXPOSE 22
 # Start xdm and ssh services.
-CMD ["/bin/bash"]
+CMD ["/bin/bash", "-e", "/start.sh"]
