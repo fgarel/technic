@@ -27,12 +27,31 @@ ENV DEBIAN_FRONTEND noninteractive
 #RUN echo "deb http://ftp.fr.debian.org/debian/ wheezy main non-free contrib" > /etc/apt/sources.list
 #RUN echo "deb http://ftp.fr.debian.org/debian/ testing main non-free contrib" > /etc/apt/sources.list
 RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
-RUN (apt-get install -y -q aptitude)
-RUN (aptitude install -y -q vim ssh supervisor)
-RUN aptitude install -y -q git
-RUN aptitude install -y -q autopoint # necessaire pour compiler terminology
-RUN aptitude install -y -q automake # necessaire pour compiler terminology
+RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove && apt-get install -y -q aptitude apt-file)
+#RUN (apt-get install -y -q aptitude)
+RUN (aptitude install -y -q vim ssh supervisor git)
+#RUN aptitude install -y -q git
+RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libjpeg-dev libgles2-mesa-dev libssl-dev libtool libluajit-5.1-dev make pkg-config xorg-dev)
+#RUN aptitude install -y -q git
+#RUN aptitude install -y -q autopoint # necessaire pour compiler terminology
+#RUN aptitude install -y -q automake # necessaire pour compiler terminology
+#RUN aptitude install -y -q check # necessaire pour compiler terminology
+#RUN aptitude install -y -q doxygen # necessaire pour compiler terminology
+#RUN aptitude install -y -q gcc # necessaire pour compiler terminology
+#RUN aptitude install -y -q 'g++' # necessaire pour compiler terminology
+#RUN aptitude install -y -q libfontconfig-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q libfribidi-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q libfreetype6-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q libjpeg-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q libssl-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q libtool # necessaire pour compiler terminology
+#RUN aptitude install -y -q libluajit-5.1-dev # necessaire pour compiler terminology
+#RUN aptitude install -y -q make # necessaire pour compiler terminology
+#RUN aptitude install -y -q pkg-config # necessaire pour compiler terminology
 RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/efl.git)
+#RUN (cd /usr/local/src/efl && automake -a && ~/.autogen.sh)
+#RUN (cd /usr/local/src/efl && automake -a)
+#RUN (cd /usr/local/src/efl && ~/.autogen.sh)
 RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/elementary.git)
 RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminology.git)
 #RUN apt-get install -y -q vim ssh supervisor python-software-properties apache2 libapache2-mod-php5 php5-cli php5-mysql
