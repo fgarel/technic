@@ -31,7 +31,7 @@ RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && ap
 #RUN (apt-get install -y -q aptitude)
 RUN (aptitude install -y -q vim ssh supervisor git)
 #RUN aptitude install -y -q git
-RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libglib2.0-dev libgles2-mesa-dev libgstreamer1.0-dev libjpeg-dev libopenjpeg-dev libpulse-dev libsndfile1-dev libssl-dev libtiff5-dev libtool libluajit-5.1-dev libxp-dev make pkg-config x11proto-print-dev xorg-dev xserver-xorg-dev)
+RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libglib2.0-dev libgles2-mesa-dev libgstreamer1.0-dev libjpeg-dev libluajit-5.1-dev libopenjpeg-dev libpulse-dev libsndfile1-dev libssl-dev libtiff5-dev libtool libudev-dev libxp-dev make pkg-config x11proto-print-dev xorg-dev xserver-xorg-dev)
 #RUN aptitude install -y -q git
 #RUN aptitude install -y -q autopoint # necessaire pour compiler terminology
 #RUN aptitude install -y -q automake # necessaire pour compiler terminology
