@@ -24,10 +24,18 @@ MAINTAINER Frédéric Garel "frederic.garel@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 # Depots, mises a jour
+ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
+RUN (rm -f /etc/apt/sources.list)
+RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
+#RUN (aptitude -y -q upgrade && aptitude -y -q dist-upgrade && aptitude -y -q autoclean && aptitude -y -q autoremove && aptitude -y -q install apt-file && apt-file update)
+RUN (cd /root && git clone --progress --verbose http://github.com/fgarel/myDebianInstall01.git /root/myDebianInstall01)
+RUN (cp /root/myDebianInstall01/usr/sbin/fggitfetch-preseed.sh /usr/sbin)
+#RUN (fggitfetch-preseed.sh)
 #RUN echo "deb http://ftp.fr.debian.org/debian/ wheezy main non-free contrib" > /etc/apt/sources.list
 #RUN echo "deb http://ftp.fr.debian.org/debian/ testing main non-free contrib" > /etc/apt/sources.list
 #RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
-RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove && apt-get install -y -q aptitude apt-file && apt-file update)
+#RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove && apt-get install -y -q aptitude apt-file && apt-file update)
 #RUN (apt-get install -y -q aptitude)
 RUN (aptitude install -y -q vim ssh supervisor git)
 #RUN aptitude install -y -q git
@@ -48,12 +56,12 @@ RUN (aptitude install -y -q vim ssh supervisor git)
 #RUN aptitude install -y -q libluajit-5.1-dev # necessaire pour compiler terminology
 #RUN aptitude install -y -q make # necessaire pour compiler terminology
 #RUN aptitude install -y -q pkg-config # necessaire pour compiler terminology
-RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/efl.git)
+#RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/efl.git)
 #RUN (cd /usr/local/src/efl && automake -a && ~/.autogen.sh)
 #RUN (cd /usr/local/src/efl && automake -a)
 #RUN (cd /usr/local/src/efl && ~/.autogen.sh)
-RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/elementary.git)
-RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminology.git)
+#RUN (cd /usr/local/src && git clone http://git.enlightenment.org/core/elementary.git)
+#RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminology.git)
 #RUN apt-get install -y -q vim ssh supervisor python-software-properties apache2 libapache2-mod-php5 php5-cli php5-mysql
 
 # Installing the environment required: xserver, xdm, flux box, roc-filer and ssh
@@ -65,9 +73,11 @@ RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminolog
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD start.sh /start.sh
-ADD https://github.com/fgarel/myDebianInstall01/tree/master/usr/sbin/fggitftech-preseed.sh /usr/sbin/fggitfetch-preseed.sh
-ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
-ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/preferences /etc/apt/preferences
+#ADD https://github.com/fgarel/myDebianInstall01/tree/master/usr/sbin/fggitftech-preseed.sh /usr/sbin/fggitfetch-preseed.sh
+#ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+#ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+#ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/preferences /etc/apt/preferences
+#ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences /etc/apt/preferences
 
 EXPOSE 22
 # Start xdm and ssh services.
