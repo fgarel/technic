@@ -31,7 +31,7 @@ RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && ap
 #RUN (apt-get install -y -q aptitude)
 RUN (aptitude install -y -q vim ssh supervisor git)
 #RUN aptitude install -y -q git
-RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libglib2.0-dev libgles2-mesa-dev libgstreamer1.0-dev libjpeg-dev libluajit-5.1-dev libopenjpeg-dev libpulse-dev libsndfile1-dev libssl-dev libtiff5-dev libtool libudev-dev libxp-dev make pkg-config x11proto-print-dev xorg-dev xserver-xorg-dev)
+#RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libglib2.0-dev libgles2-mesa-dev libgstreamer1.0-dev libjpeg-dev libluajit-5.1-dev libmount-dev libopenjpeg-dev libpulse-dev libsndfile1-dev libssl-dev libtiff5-dev libtool libudev-dev libxp-dev make pkg-config x11proto-print-dev xorg-dev xserver-xorg-dev)
 #RUN aptitude install -y -q git
 #RUN aptitude install -y -q autopoint # necessaire pour compiler terminology
 #RUN aptitude install -y -q automake # necessaire pour compiler terminology
@@ -65,6 +65,9 @@ RUN (cd /usr/local/src && git clone http://git.enlightenment.org/apps/terminolog
 RUN mkdir -p /var/log/supervisor
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD start.sh /start.sh
+ADD https://github.com/fgarel/myDebianInstall01/tree/master/usr/sbin/fggitftech-preseed.sh /usr/sbin/fggitfetch-preseed.sh
+ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/preferences /etc/apt/preferences
 
 EXPOSE 22
 # Start xdm and ssh services.
