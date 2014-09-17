@@ -24,20 +24,22 @@ MAINTAINER Frédéric Garel "frederic.garel@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 # Depots, mises a jour
-ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
-ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
-RUN (rm -f /etc/apt/sources.list)
-RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
+ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbini/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
+#ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+#ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
+RUN /usr/local/bin/blueflamingo-intaller
+#RUN (rm -f /etc/apt/sources.list)
+#RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
 #RUN (aptitude -y -q upgrade && aptitude -y -q dist-upgrade && aptitude -y -q autoclean && aptitude -y -q autoremove && aptitude -y -q install apt-file && apt-file update)
-RUN (cd /root && git clone --progress --verbose http://github.com/fgarel/myDebianInstall01.git /root/myDebianInstall01)
-RUN (cp /root/myDebianInstall01/usr/sbin/fggitfetch-preseed.sh /usr/sbin)
+#RUN (cd /root && git clone --progress --verbose http://github.com/fgarel/myDebianInstall01.git /root/myDebianInstall01)
+#RUN (cp /root/myDebianInstall01/usr/sbin/fggitfetch-preseed.sh /usr/sbin)
 #RUN (fggitfetch-preseed.sh)
 #RUN echo "deb http://ftp.fr.debian.org/debian/ wheezy main non-free contrib" > /etc/apt/sources.list
 #RUN echo "deb http://ftp.fr.debian.org/debian/ testing main non-free contrib" > /etc/apt/sources.list
 #RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove)
 #RUN (apt-get update && apt-get upgrade -y -q && apt-get dist-upgrade -y -q && apt-get -y -q autoclean && apt-get -y -q autoremove && apt-get install -y -q aptitude apt-file && apt-file update)
 #RUN (apt-get install -y -q aptitude)
-RUN (aptitude install -y -q vim ssh supervisor git)
+#RUN (aptitude install -y -q vim ssh supervisor git)
 #RUN aptitude install -y -q git
 #RUN (aptitude install -y -q autopoint automake check doxygen gcc 'g++' libfontconfig-dev libfribidi-dev libfreetype6-dev libgif-dev libglib2.0-dev libgles2-mesa-dev libgstreamer1.0-dev libjpeg-dev libluajit-5.1-dev libmount-dev libopenjpeg-dev libpulse-dev libsndfile1-dev libssl-dev libtiff5-dev libtool libudev-dev libxp-dev make pkg-config x11proto-print-dev xorg-dev xserver-xorg-dev)
 #RUN aptitude install -y -q git
