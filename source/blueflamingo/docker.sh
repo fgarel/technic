@@ -15,7 +15,7 @@
 # WARNING: Local (127.0.0.1) DNS resolver found in resolv.conf and containers can't use it. Using default external servers : [8.8.8.8 8.8.4.4]
 # http://askubuntu.com/questions/475764/docker-io-dns-doesnt-work-its-trying-to-use-8-8-8-8
 # sudo vi /etc/default/docker.io
-# DOCKER_OPTS="-dns 10.254.141.250 -dns 10.254.141.253"
+# DOCKER_OPTS="--dns 10.254.141.250 --dns 10.254.141.253"
 # ces adresses ip sont ceux des serveurs dns de la ville
 # dig mairie.fr
 # dig dsiad03.mairie.fr
