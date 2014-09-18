@@ -29,7 +29,12 @@ RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install 
 ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
+#RUN (chmod +x /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer)
+#RUN chmod +x /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer
+RUN chmod 775 /usr/local/sbin/blueflamingo-installer
+RUN cd /root/
 RUN /usr/local/sbin/blueflamingo-installer
+#RUN /usr/local/sbin/blueflamingo-installer
 #RUN (rm -f /etc/apt/sources.list)
 #RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
 #RUN (aptitude -y -q upgrade && aptitude -y -q dist-upgrade && aptitude -y -q autoclean && aptitude -y -q autoremove && aptitude -y -q install apt-file && apt-file update)
