@@ -36,13 +36,13 @@
 
 # utilisation de docker en automatise
 # vi Dockerfile
-sudo docker.io build -t fgarel/blueflamingo:1.0 .
+docker.io build -t fgarel/blueflamingo:1.0 .
 
 # pour lister les conteneurs
-sudo docker.io ps -as
+docker.io ps -as
 
 # pour lister les images
-sudo docker.io images
+docker.io images
 
 # pour travailler dans la nouvelle image blueflamingo
-sudo docker.io run -i -t fgarel/blueflamingo:1.0 /bin/bash
+docker.io run -i -t fgarel/blueflamingo:1.0 /bin/bash

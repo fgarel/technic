@@ -24,10 +24,11 @@ MAINTAINER Frédéric Garel "frederic.garel@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 # Depots, mises a jour
-ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbini/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
+RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git curl)
+ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
-RUN /usr/local/bin/blueflamingo-intaller
+RUN /usr/local/sbin/blueflamingo-intaller
 #RUN (rm -f /etc/apt/sources.list)
 #RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
 #RUN (aptitude -y -q upgrade && aptitude -y -q dist-upgrade && aptitude -y -q autoclean && aptitude -y -q autoremove && aptitude -y -q install apt-file && apt-file update)
