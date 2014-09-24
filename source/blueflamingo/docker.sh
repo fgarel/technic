@@ -27,8 +27,8 @@
 
 # recuperation du fichier blueflamingo-installer
 # on fait cette recuperation dans docker.sh et non dans le dockerfile pour regler les problèmes de proxy
-rm -f blueflamingo-installer
-wget https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer
+#rm -f blueflamingo-installer
+wget -O blueflamingo-installer https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer
 
 # utilisation de docker en interactif
 
