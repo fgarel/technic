@@ -25,17 +25,19 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Depots, mises a jour
 ADD sources.list /etc/apt/sources.list
-RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git curl)
+RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git curl wget)
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 # on recupere le fichier blueflamingo-installer dans le docker.sh et non dans le dockerfile pour que cela fonctionne avec le proxy
 ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
+ADD apt.postgresql.org.sh /usr/local/sbin/apt.postgresql.org.sh
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
 #RUN (chmod +x /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer)
 #RUN chmod +x /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer
-RUN chmod 775 /usr/local/sbin/blueflamingo-installer
-RUN cd /root/
-RUN /usr/local/sbin/blueflamingo-installer
+RUN (chmod 775 /usr/local/sbin/apt.postgresql.org.sh && cd /root/ && /usr/local/sbin/apt.postgresql.org.sh)
+RUN (chmod 775 /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer)
+#RUN cd /root/
+#RUN /usr/local/sbin/blueflamingo-installer
 #RUN /usr/local/sbin/blueflamingo-installer
 #RUN (rm -f /etc/apt/sources.list)
 #RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git)
