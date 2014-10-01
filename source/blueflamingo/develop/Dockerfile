@@ -28,8 +28,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git curl wget)
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 # on recupere le fichier blueflamingo-installer dans le docker.sh et non dans le dockerfile pour que cela fonctionne avec le proxy
-#ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
-ADD blueflamingo-installer /opt/.blueflamingo/usr/sbin/blueflamingo-installer
+ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
+#ADD blueflamingo-installer /opt/.blueflamingo/usr/sbin/blueflamingo-installer
 #ADD apt.postgresql.org.sh /usr/local/sbin/apt.postgresql.org.sh
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/preferences.testing /etc/apt/preferences
@@ -39,8 +39,12 @@ ADD blueflamingo-installer /opt/.blueflamingo/usr/sbin/blueflamingo-installer
 #RUN chmod 775 /usr/local/sbin/apt.postgresql.org.sh
 #RUN cd /root/
 #RUN /usr/local/sbin/apt.postgresql.org.sh
-#RUN (chmod 775 /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer)
-RUN (chmod 775 /opt/.blueflamingo/usr/sbin/blueflamingo-installer ; cd /opt/ ; touch toto ; echo "" >> /etc/profile ; echo "export PATH=/opt/.blueflamingo/usr/sbin/:$PATH" >> /etc/profile)
+#RUN (chmod 775 /usr/local/sbin/blueflamingo-installer ; export BLUEFLAMINGO_ROOT="/opt/.blueflamingo" ; /usr/local/sbin/blueflamingo-installer)
+RUN (chmod 775 /usr/local/sbin/blueflamingo-installer ; export BLUEFLAMINGO_ROOT="/opt/.blueflamingo")
+ENV BLUEFLAMINGO_ROOT /opt/.blueflamingo
+RUN (/usr/local/sbin/blueflamingo-installer)
+RUN (rm /usr/local/sbin/blueflamingo-installer)
+#RUN (chmod 775 /opt/.blueflamingo/usr/sbin/blueflamingo-installer ; cd /opt/ ; touch toto ; echo "" >> /etc/profile ; echo "export PATH=/opt/.blueflamingo/usr/sbin/:$PATH" >> /etc/profile)
 ENV PATH /opt/.blueflamingo/usr/sbin/:$PATH
 #RUN cd /root/
 #RUN /usr/local/sbin/blueflamingo-installer
