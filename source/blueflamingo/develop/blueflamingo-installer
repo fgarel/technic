@@ -1,0 +1,125 @@
+#!/usr/bin/env bash
+
+set -e
+[ -n "$BLUEFLAMINGO_DEBUG" ] && set -x
+
+if [ -z "$BLUEFLAMINGO_ROOT" ]; then
+  BLUEFLAMINGO_ROOT="${HOME}/.blueflamingo"
+fi
+
+shell="$1"
+if [ -z "$shell" ]; then
+  shell="$(ps c -p "$PPID" -o 'ucomm=' 2>/dev/null || true)"
+  shell="${shell##-}"
+  shell="${shell%% *}"
+  shell="$(basename "${shell:-$SHELL}")"
+fi
+
+colorize() {
+  if [ -t 1 ]; then printf "\e[%sm%s\e[m" "$1" "$2"
+  else echo -n "$2"
+  fi
+}
+
+checkout() {
+  [ -d "$2" ] || git clone "$1" "$2"
+}
+
+if ! command -v git 1>/dev/null 2>&1; then
+  echo "blueflamingo: Git is not installed, can't continue." >&2
+  exit 1
+fi
+
+#checkout "git://github.com/fgarel/myDebianInstall01.git"     "${BLUEFLAMINGO_ROOT}"
+checkout "https://github.com/fgarel/myDebianInstall01.git"     "${BLUEFLAMINGO_ROOT}"
+#checkout "git://github.com/yyuu/blueflamingo.git"            "${BLUEFLAMINGO_ROOT}"
+#checkout "git://github.com/yyuu/blueflamingo-doctor.git"     "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-doctor"
+#checkout "git://github.com/yyuu/blueflamingo-installer.git"  "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-installer"
+#checkout "git://github.com/yyuu/blueflamingo-pip-rehash.git" "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-pip-rehash"
+#checkout "git://github.com/yyuu/blueflamingo-update.git"     "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-update"
+#checkout "git://github.com/yyuu/blueflamingo-virtualenv.git" "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-virtualenv"
+#checkout "git://github.com/yyuu/blueflamingo-which-ext.git"  "${BLUEFLAMINGO_ROOT}/plugins/blueflamingo-which-ext"
+
+: <<'LONGCOMMENTAIRE'
+if ! command -v blueflamingo 1>/dev/null; then
+  { echo
+    colorize 1 "WARNING"
+    echo ": seems you still have not added 'blueflamingo' to the load path."
+    echo
+  } >&2
+
+  case "$shell" in
+  bash )
+    profile="~/.bash_profile"
+    ;;
+  zsh )
+    profile="~/.zshrc"
+    ;;
+  ksh )
+    profile="~/.profile"
+    ;;
+  fish )
+    profile="~/.config/fish/config.fish"
+    ;;
+  * )
+    profile="your profile"
+    ;;
+  esac
+
+  { echo "# Load blueflamingo automatically by adding"
+    echo "# the following to ${profile}:"
+    echo
+    case "$shell" in
+    fish )
+      echo "set -x PATH \"\$HOME/.blueflamingo/bin\" \$PATH"
+      echo 'status --is-interactive; and . (blueflamingo init -|psub)'
+      echo 'status --is-interactive; and . (blueflamingo virtualenv-init -|psub)'
+      ;;
+    * )
+      echo "export PATH=\"\$HOME/.blueflamingo/bin:\$PATH\""
+      echo "eval \"\$(blueflamingo init -)\""
+      echo "eval \"\$(blueflamingo virtualenv-init -)\""
+      ;;
+    esac
+  } >&2
+fi
+LONGCOMMENTAIRE
+
+#echo "${BLUEFLAMINGO_ROOT}"
+OS=`cat /etc/issue.net | cut -f 1 -d ' '`
+echo "OS 1 = "$OS
+if [ $OS = 'Debian' ]
+then
+    #cd "${BLUEFLAMINGO_ROOT}"/etc/apt/
+    #cat preferences | head -n 5
+    cp "${BLUEFLAMINGO_ROOT}"/etc/apt/preferences /etc/apt/preferences
+    cp "${BLUEFLAMINGO_ROOT}"/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
+    #cd -
+    rm -f /etc/apt/sources.list
+    #echo "aptitude update"
+    #aptitude update
+    echo "OS 2 = "$OS
+    cp -r "${BLUEFLAMINGO_ROOT}"/usr/sbin/* /usr/local/sbin/
+    #"${BLUEFLAMINGO_ROOT}"/usr/sbin/fgaptitudedoall.sh
+    # pour le moment, on ne lance pas d'installation
+    #/usr/local/sbin/fgaptitudedoall.sh
+    # ajout de la clef pour le depot postgresql
+
+    #apt-get install -y wget ca-certificates
+    ##wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+    ##echo "OS 3 = "$OS
+    #/usr/local/sbin/apt.postgresql.org.sh
+    # ajout de la clef pour le depot qgis
+    ##gpg --recv-key DD45F6C3
+    ##gpg --export --armor DD45F6C3 | apt-key add -
+    ##echo "OS 4 = "$OS
+
+    /usr/local/sbin/bfsys.sh
+    echo "OS 5 = "$OS
+elif [ $OS = 'Ubuntu' ]
+then
+    echo $OS
+    echo "OS 3 = "$OS
+fi
+#cp "${BLUEFLAMINGO_ROOT}"/etc/apt/preferences /etc/apt/preferences
+#cp "${BLUEFLAMINGO_ROOT}"/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
