@@ -41,6 +41,7 @@ ADD blueflamingo-installer /opt/.blueflamingo/usr/sbin/blueflamingo-installer
 #RUN /usr/local/sbin/apt.postgresql.org.sh
 #RUN (chmod 775 /usr/local/sbin/blueflamingo-installer && cd /root/ && /usr/local/sbin/blueflamingo-installer)
 RUN (chmod 775 /opt/.blueflamingo/usr/sbin/blueflamingo-installer ; cd /opt/ ; touch toto ; echo "" >> /etc/profile ; echo "export PATH=/opt/.blueflamingo/usr/sbin/:$PATH" >> /etc/profile)
+ENV PATH /opt/.blueflamingo/usr/sbin/:$PATH
 #RUN cd /root/
 #RUN /usr/local/sbin/blueflamingo-installer
 #RUN /usr/local/sbin/blueflamingo-installer
