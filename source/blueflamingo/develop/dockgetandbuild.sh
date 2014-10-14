@@ -27,8 +27,10 @@
 
 # recuperation du fichier blueflamingo-installer
 # on fait cette recuperation dans docker.sh et non dans le dockerfile pour regler les problèmes de proxy
-#rm -f blueflamingo-installer
-#wget -O blueflamingo-installer https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer
+rm -f blueflamingo-installer
+rm -f apt.postgresql.org.sh
+wget -O blueflamingo-installer https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer
+wget -O apt.postgresql.org.sh http://anonscm.debian.org/loggerhead/pkg-postgresql/postgresql-common/trunk/download/head:/apt.postgresql.org.s-20130224224205-px3qyst90b3xp8zj-1/apt.postgresql.org.sh
 
 # utilisation de docker en interactif
 
@@ -43,11 +45,3 @@
 # vi Dockerfile
 docker.io build -t fgarel/blueflamingo:1.0 .
 
-# pour lister les conteneurs
-docker.io ps -as
-
-# pour lister les images
-docker.io images
-
-# pour travailler dans la nouvelle image blueflamingo
-docker.io run -i -t fgarel/blueflamingo:1.0 /bin/bash
