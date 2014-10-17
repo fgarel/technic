@@ -1,0 +1,4 @@
+# installation de john the ripper
+aptitude install john john-data
+
+# 
