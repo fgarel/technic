@@ -2,13 +2,13 @@
 
 # arret et relance du service
 
-sudo service docker.io status
+sudo service docker status
 
-sudo service docker.io stop
+sudo service docker stop
 
 sudo rm -f /var/run/docker.*
 
-sudo service docker.io start
+sudo service docker start
 
 # pour lister les images
 docker.io images
