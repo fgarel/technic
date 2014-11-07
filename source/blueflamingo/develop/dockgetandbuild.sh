@@ -45,3 +45,6 @@ wget -O apt.postgresql.org.sh http://anonscm.debian.org/loggerhead/pkg-postgresq
 # vi Dockerfile
 docker.io build -t fgarel/blueflamingo:1.0 .
 
+echo ""
+echo "Si pb de connexion"
+echo "sudo vi /etc/default/docker.io"
