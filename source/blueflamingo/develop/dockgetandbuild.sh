@@ -48,3 +48,4 @@ docker.io build -t fgarel/blueflamingo:1.0 .
 echo ""
 echo "Si pb de connexion"
 echo "sudo vi /etc/default/docker.io"
+echo "sudo service docker.io restart"
