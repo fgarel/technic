@@ -26,6 +26,10 @@ ENV DEBIAN_FRONTEND noninteractive
 # Depots, mises a jour
 #ADD sources.list /etc/apt/sources.list
 RUN (apt-get update && apt-get -y -q install aptitude && aptitude -y -q install ssh git curl wget locales)
+RUN locale-gen fr_FR.UTF-8
+ENV LANG fr_FR.UTF-8
+ENV LANGUAGE fr_FR:fr
+ENV LC_ALL fr_FR.UTF-8
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/usr/sbin/blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 # on recupere le fichier blueflamingo-installer dans le docker.sh et non dans le dockerfile pour que cela fonctionne avec le proxy
 ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
