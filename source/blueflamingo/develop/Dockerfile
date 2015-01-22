@@ -49,7 +49,8 @@ ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 #RUN (chmod 775 /usr/local/sbin/blueflamingo-installer ; export BLUEFLAMINGO_ROOT="/opt/.blueflamingo")
 RUN (chmod 775 /usr/local/sbin/blueflamingo-installer)
 ENV BLUEFLAMINGO_ROOT /opt/.blueflamingo
-ENV PATH /opt/.blueflamingo/usr/sbin/:$PATH
+#ENV PATH /opt/.blueflamingo/usr/sbin/:$PATH
+ENV PATH /opt/.blueflamingo/usr/sbin/:/opt/.pyenv/bin/:$PATH
 ENV HOME /home/blueflamingo
 RUN (/usr/local/sbin/blueflamingo-installer)
 RUN (rm /usr/local/sbin/blueflamingo-installer)
