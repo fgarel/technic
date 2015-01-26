@@ -43,3 +43,8 @@
 # vi Dockerfile
 docker.io build -t fgarel/blueflamingo:1.0 .
 
+echo ""
+echo "---------------------"
+echo "en cas de problème"
+echo "il faut modifier la variable http_proxy"
+echo "sudo vi /etc/default/docker.io"

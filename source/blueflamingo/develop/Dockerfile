@@ -48,9 +48,10 @@ ADD blueflamingo-installer /usr/local/sbin/blueflamingo-installer
 #RUN (chmod 775 /usr/local/sbin/blueflamingo-installer ; export BLUEFLAMINGO_ROOT="/opt/.blueflamingo" ; /usr/local/sbin/blueflamingo-installer)
 #RUN (chmod 775 /usr/local/sbin/blueflamingo-installer ; export BLUEFLAMINGO_ROOT="/opt/.blueflamingo")
 RUN (chmod 775 /usr/local/sbin/blueflamingo-installer)
-ENV BLUEFLAMINGO_ROOT /opt/.blueflamingo
+ENV BLUEFLAMINGO_ROOT /opt/blueflamingo
+ENV PYENV_ROOT /opt/pyenv
 #ENV PATH /opt/.blueflamingo/usr/sbin/:$PATH
-ENV PATH /opt/.blueflamingo/usr/sbin/:/opt/.pyenv/bin/:$PATH
+ENV PATH $PYENV_ROOT/bin:$BLUEFLAMINGO_ROOT/usr/sbin/:$PATH
 ENV HOME /home/blueflamingo
 RUN (/usr/local/sbin/blueflamingo-installer)
 RUN (rm /usr/local/sbin/blueflamingo-installer)
@@ -103,9 +104,9 @@ RUN (rm /usr/local/sbin/blueflamingo-installer)
 
 # Demarrage des services
 #
-RUN mkdir -p /var/log/supervisor
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-ADD start.sh /start.sh
+###RUN mkdir -p /var/log/supervisor
+###ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+###ADD start.sh /start.sh
 #ADD https://github.com/fgarel/myDebianInstall01/tree/master/usr/sbin/fggitftech-preseed.sh /usr/sbin/fggitfetch-preseed.sh
 #ADD https://github.com/fgarel/myDebianInstall01/tree/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
 #ADD https://raw.githubusercontent.com/fgarel/myDebianInstall01/master/etc/apt/sources.list.d/all.list /etc/apt/sources.list.d/all.list
@@ -114,4 +115,4 @@ ADD start.sh /start.sh
 
 EXPOSE 22
 # Start xdm and ssh services.
-CMD ["/bin/bash", "-e", "/start.sh"]
+###CMD ["/bin/bash", "-e", "/start.sh"]
