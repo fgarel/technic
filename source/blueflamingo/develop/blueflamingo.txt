@@ -1,0 +1,35 @@
+# pour faire en sorte que le repertoire /opt soit accessible au groupe staff
+#
+# vu ici :
+# http://forum.hardware.fr/hfr/OSAlternatifs/Codes-scripts/regle-changer-definitivement-sujet_22127_1.htm
+#
+# Bon voilà voilà, j'aimerai bien changer les permissions d'un repertoire,
+# enfin surtout de tout nouveau fichier créé dans ce repertoire.
+# C'est dans le but de mettre /usr/local, et /opt dans un groupe particulier (staff par ex.),
+# et ainsi en ajoutant mon compte principal à staff,
+# de pouvoir changer les fichiers de config sans avoir obligatoirement à passer par le compte root. 
+ 
+# Bon, ce que j'ai fait (en tant que root) 
+# chown :staff /opt -R 
+# chmod g+rw /opt -R 
+ 
+# C'est tout bon, et ça roule.
+# Le truc, c'est qu'à chaque fois qu'un nouveau prog s'installe dans /opt (je suis sous gentoo),
+# forcément c'est du root:root.
+# Y a moyen de changer le groupe en staff automatiquement ?
+# Y a pas un rapport avec les umask ?
+
+#
+# Pour ceux que ça interesse, il faut rajouter le bit setgid au repertoire en question. 
+ 
+# exemple : chmod g+s /opt 
+# Si /opt appartient au groupe staff,
+# tous les sous repertoires créés dans /opt appartiendront aussi à staff.
+
+
+# autres complements
+# venv a besoin de gcc
+sudo aptitude install -t testing gcc
+
+# utilisation
+sudo -E /opt/pyenv/bin/pyenv install 3.4.2
