@@ -3,228 +3,228 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="sampleqgis220150216134156506" name="sampleqgis2">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="empriseDeclarationQgis20150218180524017" name="empriseDeclaration">
-      <customproperties/>
-    </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="case4600200a320150217165914976" name="case4600200a3">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="case460020020150216135921736" name="case4600200">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="case460020020150216135921736" name="case4600200">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Nouveau">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Reseaux">
       <customproperties/>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Eau">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eau">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_borne_fontaine20150217175403857" name="eau_borne_fontaine">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_borne_fontaine20150217175403857" name="eau_borne_fontaine">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_branchement20150217175403948" name="eau_branchement">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_branchement20150217175403948" name="eau_branchement">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_conduite20150217175403983" name="eau_conduite">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_conduite20150217175403983" name="eau_conduite">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_forage20150217175404061" name="eau_forage">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_forage20150217175404061" name="eau_forage">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_poteau_incendie20150217175404090" name="eau_poteau_incendie">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_poteau_incendie20150217175404090" name="eau_poteau_incendie">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_reducteur_pression20150217175404177" name="eau_reducteur_pression">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_reducteur_pression20150217175404177" name="eau_reducteur_pression">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_vanne20150217175404196" name="eau_vanne">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_vanne20150217175404196" name="eau_vanne">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_ventouse20150217175404255" name="eau_ventouse">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_ventouse20150217175404255" name="eau_ventouse">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="eau_vidange20150217175404275" name="eau_vidange">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_vidange20150217175404275" name="eau_vidange">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Fiop">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fiop">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="fo_chambre20150217175714561" name="fo_chambre">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="fo_chambre20150217175714561" name="fo_chambre">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="17_numerique20150217175714652" name="17_numerique">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="17_numerique20150217175714652" name="17_numerique">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="fo_faisceau20150217175714747" name="fo_faisceau">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="fo_faisceau20150217175714747" name="fo_faisceau">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Feux">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Feux">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="slt_armoire20150217175839863" name="slt_armoire">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_armoire20150217175839863" name="slt_armoire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="slt_boucle20150217175839945" name="slt_boucle">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_boucle20150217175839945" name="slt_boucle">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="slt_cable20150217175839967" name="slt_cable">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_cable20150217175839967" name="slt_cable">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="slt_regard20150217175839982" name="slt_regard">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_regard20150217175839982" name="slt_regard">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="slt_support_feu20150217175840000" name="slt_support_feu">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_support_feu20150217175840000" name="slt_support_feu">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Assep">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Assep">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_bassin_orage20150217171304632" name="ep_bassin_orage">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_bassin_orage20150217171304632" name="ep_bassin_orage">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_branchement20150217171304701" name="ep_branchement">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_branchement20150217171304701" name="ep_branchement">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_ouvrage_collecte20150217171304781" name="ep_ouvrage_collecte">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_ouvrage_collecte20150217171304781" name="ep_ouvrage_collecte">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="ep_ouvrage_engouffrement20150217171304860" name="ep_ouvrage_engouffrement">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ep_ouvrage_engouffrement20150217171304860" name="ep_ouvrage_engouffrement">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_ouvrage_fonctionnel20150217171304923" name="ep_ouvrage_fonctionnel">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_ouvrage_fonctionnel20150217171304923" name="ep_ouvrage_fonctionnel">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Checked" id="ep_regard_pluvial20150217171304968" name="ep_regard_pluvial">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ep_regard_pluvial20150217171304968" name="ep_regard_pluvial">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_sortie_fosse20150217171305063" name="ep_sortie_fosse">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_sortie_fosse20150217171305063" name="ep_sortie_fosse">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Checked" name="Eclai">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eclai">
         <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_depart_souterrain20150216135803312" name="ep_depart_souterrain">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_souterrain20150216135803312" name="ep_depart_souterrain">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_depart_torsade20150216135803393" name="ep_depart_torsade">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_torsade20150216135803393" name="ep_depart_torsade">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_point_eclairage20150216135803419" name="ep_point_eclairage">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_point_eclairage20150216135803419" name="ep_point_eclairage">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_depart_nu20150216135803490" name="ep_depart_nu">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_nu20150216135803490" name="ep_depart_nu">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_reseau_facade20150216135803551" name="ep_reseau_facade">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_reseau_facade20150216135803551" name="ep_reseau_facade">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_depart_ht20150216135803515" name="ep_depart_ht">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_ht20150216135803515" name="ep_depart_ht">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_regard20150216135803534" name="ep_regard">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_regard20150216135803534" name="ep_regard">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_coffret_intermediaire20150216135803577" name="ep_coffret_intermediaire">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_coffret_intermediaire20150216135803577" name="ep_coffret_intermediaire">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_poste20150216135803602" name="ep_poste">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poste20150216135803602" name="ep_poste">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_poteau_beton20150216135803660" name="ep_poteau_beton">
-          <customproperties/>
-        </layer-tree-layer>
-      </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Cadastre">
-        <customproperties/>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Unités_foncières__étiquettes_20150218175022001" name="Unités foncières (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Unités_foncières20150218175020836" name="Unités foncières">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Établissements_publics20150218175019634" name="Établissements publics">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Numéros_de_voie20150218175018432" name="Numéros de voie">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_linéaires__étiquettes_20150218175017383" name="Objets linéaires (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_linéaires20150218175016267" name="Objets linéaires">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_ponctuels__étiquettes_20150218175015188" name="Objets ponctuels (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_ponctuels20150218175014106" name="Objets ponctuels">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Surfaces__étiquettes_20150218175012963" name="Surfaces (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Surfaces20150218175011842" name="Surfaces">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cours_d_eau__étiquettes_20150218175010724" name="Cours d'eau (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cours_d_eau20150218175009636" name="Cours d'eau">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Murs__fossés__clotûres20150218175008502" name="Murs, fossés, clotûres">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Repères_géodésiques20150218175007335" name="Repères géodésiques">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Croix20150218175006170" name="Croix">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Bornes20150218175004952" name="Bornes">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Sections__étiquettes_20150218175003663" name="Sections (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Sections20150218175002429" name="Sections">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Lieux_dits___étiquettes_20150218175000886" name="Lieux-dits  (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Lieux_dits20150218174959430" name="Lieux-dits">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Parcelles__étiquettes_20150218174957922" name="Parcelles (étiquettes)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Parcelles20150218174956462" name="Parcelles">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Bâti20150218174954929" name="Bâti">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Subdivisions_fiscales__étiquette_20150218174953376" name="Subdivisions fiscales (étiquette)">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Subdivisions_fiscales20150218174951791" name="Subdivisions fiscales">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Secteurs20150218174950257" name="Secteurs">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Noms_de_voies20150218174948625" name="Noms de voies">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Voies__routes_et_chemins20150218174947000" name="Voies, routes et chemins">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Commune20150218174945304" name="Commune">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poteau_beton20150216135803660" name="ep_poteau_beton">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+      <customproperties/>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Unités_foncières__étiquettes_20150218175022001" name="Unités foncières (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Unités_foncières20150218175020836" name="Unités foncières">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Établissements_publics20150218175019634" name="Établissements publics">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Numéros_de_voie20150218175018432" name="Numéros de voie">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_linéaires__étiquettes_20150218175017383" name="Objets linéaires (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_linéaires20150218175016267" name="Objets linéaires">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_ponctuels__étiquettes_20150218175015188" name="Objets ponctuels (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_ponctuels20150218175014106" name="Objets ponctuels">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Surfaces__étiquettes_20150218175012963" name="Surfaces (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Surfaces20150218175011842" name="Surfaces">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Cours_d_eau__étiquettes_20150218175010724" name="Cours d'eau (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Cours_d_eau20150218175009636" name="Cours d'eau">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Murs__fossés__clotûres20150218175008502" name="Murs, fossés, clotûres">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Repères_géodésiques20150218175007335" name="Repères géodésiques">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Croix20150218175006170" name="Croix">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Bornes20150218175004952" name="Bornes">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Sections__étiquettes_20150218175003663" name="Sections (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Sections20150218175002429" name="Sections">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Lieux_dits___étiquettes_20150218175000886" name="Lieux-dits  (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Lieux_dits20150218174959430" name="Lieux-dits">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Parcelles__étiquettes_20150218174957922" name="Parcelles (étiquettes)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Parcelles20150218174956462" name="Parcelles">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Bâti20150218174954929" name="Bâti">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Subdivisions_fiscales__étiquette_20150218174953376" name="Subdivisions fiscales (étiquette)">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Subdivisions_fiscales20150218174951791" name="Subdivisions fiscales">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Secteurs20150218174950257" name="Secteurs">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Noms_de_voies20150218174948625" name="Noms de voies">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Voies__routes_et_chemins20150218174947000" name="Voies, routes et chemins">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Commune20150218174945304" name="Commune">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="empriseDeclarationQgis20150218180524017" name="empriseDeclaration">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="zonages20150219114327206" name="zonages">
+      <customproperties/>
+    </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ortho_lr_2010_maree_haute_l9320130320155501682" name="ortho_lr_2010_maree_haute_l93">
       <customproperties/>
     </layer-tree-layer>
@@ -236,10 +236,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1377305.08138612657785416</xmin>
-      <ymin>5227406.49561656825244427</ymin>
-      <xmax>1377641.35208925139158964</xmax>
-      <ymax>5227631.01514781825244427</ymax>
+      <xmin>1376365.82244638679549098</xmin>
+      <ymin>5225591.22418118268251419</ymin>
+      <xmax>1376422.62203411338850856</xmax>
+      <ymax>5225794.68876472860574722</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -273,6 +273,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20150216174225935"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits20150218174959430"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20150216135803551"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="zonages20150219114327206"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections20150218175002429"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130614151003229"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections__étiquettes_20150218175003663"/>
@@ -384,7 +385,6 @@
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>ortho_lr_2010_maree_haute_l9320130320155501682</item>
-      <item>sampleqgis220150216134156506</item>
       <item>ep_depart_souterrain20150216135803312</item>
       <item>ep_depart_torsade20150216135803393</item>
       <item>ep_point_eclairage20150216135803419</item>
@@ -452,358 +452,359 @@
       <item>Unités_foncières20150218175020836</item>
       <item>Unités_foncières__étiquettes_20150218175022001</item>
       <item>empriseDeclarationQgis20150218180524017</item>
+      <item>zonages20150219114327206</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="sampleqgis2" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="sampleqgis220150216134156506" visible="0"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="empriseDeclaration" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="empriseDeclarationQgis20150218180524017" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="case4600200a3" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="case4600200a320150217165914976" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="case4600200" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="case4600200" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="case460020020150216135921736" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="case460020020150216135921736" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Nouveau">
-      <legendgroup open="false" checked="Qt::Checked" name="Eau">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_borne_fontaine" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Reseaux">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Eau">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_borne_fontaine" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_borne_fontaine20150217175403857" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_borne_fontaine20150217175403857" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_branchement" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_branchement" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_branchement20150217175403948" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_branchement20150217175403948" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_conduite" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_conduite" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_conduite20150217175403983" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_conduite20150217175403983" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_forage" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_forage" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_forage20150217175404061" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_forage20150217175404061" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_poteau_incendie" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_poteau_incendie" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_poteau_incendie20150217175404090" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_poteau_incendie20150217175404090" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_reducteur_pression" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_reducteur_pression" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_reducteur_pression20150217175404177" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_reducteur_pression20150217175404177" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_vanne" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_vanne" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_vanne20150217175404196" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_vanne20150217175404196" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_ventouse" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_ventouse" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_ventouse20150217175404255" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_ventouse20150217175404255" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="eau_vidange" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_vidange" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="eau_vidange20150217175404275" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="eau_vidange20150217175404275" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Fiop">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="fo_chambre" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Fiop">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="fo_chambre" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="fo_chambre20150217175714561" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="fo_chambre20150217175714561" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="17_numerique" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="17_numerique" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="17_numerique20150217175714652" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="17_numerique20150217175714652" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="fo_faisceau" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="fo_faisceau" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="fo_faisceau20150217175714747" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="fo_faisceau20150217175714747" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Feux">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_armoire" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Feux">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_armoire" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_armoire20150217175839863" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="slt_armoire20150217175839863" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_boucle" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_boucle" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_boucle20150217175839945" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="slt_boucle20150217175839945" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_cable" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_cable" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_cable20150217175839967" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="slt_cable20150217175839967" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_regard" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_regard" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_regard20150217175839982" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="slt_regard20150217175839982" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_support_feu" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_support_feu" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_support_feu20150217175840000" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="slt_support_feu20150217175840000" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Assep">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_bassin_orage" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Assep">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_bassin_orage" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_bassin_orage20150217171304632" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_bassin_orage20150217171304632" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_branchement" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_branchement" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_branchement20150217171304701" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_branchement20150217171304701" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_ouvrage_collecte" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_ouvrage_collecte" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_collecte20150217171304781" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_collecte20150217171304781" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ep_ouvrage_engouffrement" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ep_ouvrage_engouffrement" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_engouffrement20150217171304860" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_engouffrement20150217171304860" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_ouvrage_fonctionnel" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_ouvrage_fonctionnel" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_fonctionnel20150217171304923" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_ouvrage_fonctionnel20150217171304923" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ep_regard_pluvial" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ep_regard_pluvial" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_regard_pluvial20150217171304968" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_regard_pluvial20150217171304968" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_sortie_fosse" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_sortie_fosse" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_sortie_fosse20150217171305063" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_sortie_fosse20150217171305063" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Checked" name="Eclai">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_depart_souterrain" showFeatureCount="0">
+      <legendgroup open="false" checked="Qt::Unchecked" name="Eclai">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_depart_souterrain" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_depart_souterrain20150216135803312" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_depart_souterrain20150216135803312" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_depart_torsade" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_depart_torsade" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_depart_torsade20150216135803393" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_depart_torsade20150216135803393" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_point_eclairage" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_point_eclairage" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20150216135803419" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20150216135803419" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_depart_nu" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_depart_nu" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_depart_nu20150216135803490" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_depart_nu20150216135803490" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_reseau_facade" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_reseau_facade" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_reseau_facade20150216135803551" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_reseau_facade20150216135803551" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_depart_ht" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_depart_ht" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_depart_ht20150216135803515" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_depart_ht20150216135803515" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_regard" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_regard" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_regard20150216135803534" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_regard20150216135803534" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_coffret_intermediaire" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_coffret_intermediaire" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_coffret_intermediaire20150216135803577" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_coffret_intermediaire20150216135803577" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_poste" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poste" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_poste20150216135803602" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_poste20150216135803602" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_poteau_beton" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poteau_beton" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_poteau_beton20150216135803660" visible="1"/>
-          </filegroup>
-        </legendlayer>
-      </legendgroup>
-      <legendgroup open="true" checked="Qt::Unchecked" name="Cadastre">
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Unités foncières (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Unités_foncières__étiquettes_20150218175022001" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Unités foncières" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Unités_foncières20150218175020836" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Établissements publics" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Établissements_publics20150218175019634" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Numéros de voie" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Numéros_de_voie20150218175018432" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets linéaires (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Objets_linéaires__étiquettes_20150218175017383" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets linéaires" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Objets_linéaires20150218175016267" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets ponctuels (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Objets_ponctuels__étiquettes_20150218175015188" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets ponctuels" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Objets_ponctuels20150218175014106" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Surfaces (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Surfaces__étiquettes_20150218175012963" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Surfaces" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Surfaces20150218175011842" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cours d'eau (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Cours_d_eau__étiquettes_20150218175010724" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cours d'eau" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Cours_d_eau20150218175009636" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Murs, fossés, clotûres" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Murs__fossés__clotûres20150218175008502" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Repères géodésiques" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Repères_géodésiques20150218175007335" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Croix" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Croix20150218175006170" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Bornes" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Bornes20150218175004952" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Sections (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Sections__étiquettes_20150218175003663" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Sections" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Sections20150218175002429" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lieux-dits  (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Lieux_dits___étiquettes_20150218175000886" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lieux-dits" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Lieux_dits20150218174959430" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Parcelles (étiquettes)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Parcelles__étiquettes_20150218174957922" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Parcelles" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Parcelles20150218174956462" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Bâti" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Bâti20150218174954929" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Subdivisions fiscales (étiquette)" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales__étiquette_20150218174953376" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Subdivisions fiscales" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales20150218174951791" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Secteurs" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Secteurs20150218174950257" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Noms de voies" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Noms_de_voies20150218174948625" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Voies, routes et chemins" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Voies__routes_et_chemins20150218174947000" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Commune" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="Commune20150218174945304" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="ep_poteau_beton20150216135803660" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
     </legendgroup>
+    <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Unités foncières (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Unités_foncières__étiquettes_20150218175022001" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Unités foncières" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Unités_foncières20150218175020836" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Établissements publics" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Établissements_publics20150218175019634" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Numéros de voie" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Numéros_de_voie20150218175018432" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets linéaires (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Objets_linéaires__étiquettes_20150218175017383" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets linéaires" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Objets_linéaires20150218175016267" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets ponctuels (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels__étiquettes_20150218175015188" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets ponctuels" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels20150218175014106" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Surfaces (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Surfaces__étiquettes_20150218175012963" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Surfaces" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Surfaces20150218175011842" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cours d'eau (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Cours_d_eau__étiquettes_20150218175010724" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cours d'eau" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Cours_d_eau20150218175009636" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Murs, fossés, clotûres" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Murs__fossés__clotûres20150218175008502" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Repères géodésiques" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Repères_géodésiques20150218175007335" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Croix" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Croix20150218175006170" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Bornes" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Bornes20150218175004952" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sections (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Sections__étiquettes_20150218175003663" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sections" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Sections20150218175002429" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lieux-dits  (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Lieux_dits___étiquettes_20150218175000886" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lieux-dits" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Lieux_dits20150218174959430" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Parcelles (étiquettes)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Parcelles__étiquettes_20150218174957922" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Parcelles" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Parcelles20150218174956462" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Bâti" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Bâti20150218174954929" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Subdivisions fiscales (étiquette)" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales__étiquette_20150218174953376" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Subdivisions fiscales" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales20150218174951791" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Secteurs" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Secteurs20150218174950257" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Noms de voies" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Noms_de_voies20150218174948625" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Voies, routes et chemins" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Voies__routes_et_chemins20150218174947000" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Commune" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="Commune20150218174945304" visible="1"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="empriseDeclaration" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="empriseDeclarationQgis20150218180524017" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="zonages" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="zonages20150219114327206" visible="1"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ortho_lr_2010_maree_haute_l93" showFeatureCount="0">
       <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="ortho_lr_2010_maree_haute_l9320130320155501682" visible="0"/>
@@ -1159,7 +1160,6 @@
       <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5227519.73128267657011747" xmin="1377543.62254823953844607" ymax="5227619.73128277901560068" xmax="1377683.62254838249646127"/>
         <LayerSet>
-          <Layer>sampleqgis220150216134156506</Layer>
           <Layer>ep_depart_souterrain20150216135803312</Layer>
           <Layer>ep_depart_torsade20150216135803393</Layer>
           <Layer>ep_point_eclairage20150216135803419</Layer>
@@ -1332,7 +1332,6 @@
         <Extent ymin="5227195.8735630800947547" xmin="1377143.73643994121812284" ymax="5227695.87356358952820301" xmax="1377843.73644065507687628"/>
         <LayerSet>
           <Layer>case460020020150216135921736</Layer>
-          <Layer>sampleqgis220150216134156506</Layer>
           <Layer>scan_25_1720150216171355707</Layer>
         </LayerSet>
         <Grid/>
@@ -1399,7 +1398,7 @@
             </layer>
           </symbol>
         </ComposerMapOverview>
-        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <AtlasMap scalingMode="0" atlasDriven="0" margin="0.10000000000000001"/>
         <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="180.5" y="12" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{487e8f59-5bfa-4ef6-9ec9-1283359f6b95}" height="100" itemRotation="0" frame="false" pagex="180.5">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -1409,7 +1408,6 @@
         <Extent ymin="5226195.87356206309050322" xmin="1375743.73643851303495467" ymax="5228695.87356461305171251" xmax="1379243.73644208326004446"/>
         <LayerSet>
           <Layer>case460020020150216135921736</Layer>
-          <Layer>sampleqgis220150216134156506</Layer>
           <Layer>scan_25_1720150216171355707</Layer>
         </LayerSet>
         <Grid/>
@@ -1476,7 +1474,7 @@
             </layer>
           </symbol>
         </ComposerMapOverview>
-        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <AtlasMap scalingMode="0" atlasDriven="0" margin="0.10000000000000001"/>
         <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="20" y="12" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{6d396245-07f8-40b5-9efc-68b805a3769e}" height="100" itemRotation="0" frame="false" pagex="20">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -1571,7 +1569,7 @@
             </layer-tree-group>
           </layer-tree-group>
         </layer-tree-group>
-        <ComposerItem pagey="192" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="730.5" y="192" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="57.8844" outlineWidth="0.3" excludeFromExports="0" uuid="{ca47de2f-6b0a-48df-a750-778634889a8c}" height="206.2" itemRotation="0" frame="false" pagex="730.5">
+        <ComposerItem pagey="192" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="730.5" y="192" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="57.8844" outlineWidth="0.3" excludeFromExports="0" uuid="{ca47de2f-6b0a-48df-a750-778634889a8c}" height="207.7" itemRotation="0" frame="false" pagex="730.5">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1679,17 +1677,16 @@
             <geographicflag>false</geographicflag>
           </spatialrefsys>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="1" atlasDriven="1" margin="0.10000000000000001"/>
+        <AtlasMap scalingMode="1" atlasDriven="0" margin="0.10000000000000001"/>
         <ComposerItem pagey="132.75" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="21.25" y="132.75" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="560" outlineWidth="1.5" excludeFromExports="0" uuid="{971cb77a-3808-40ff-b4fc-1744d81582ba}" height="400" itemRotation="0" frame="true" pagex="21.25">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="sampleqgis220150216134156506" singleFile="false" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="false" sortFeatures="false"/>
   </Composer>
   <Composer title="folio_erdf_A3_200" visible="0">
-    <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+    <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
@@ -1706,18 +1703,18 @@
         </layer>
       </symbol>
       <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[% attribute(  $currentfeature ,'id')%]" htmlState="0" halign="1">
-        <LabelFont description="Ubuntu,18,-1,5,63,0,0,0,0,0"/>
+        <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="3.5" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="20" y="3.5" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90" outlineWidth="0.3" excludeFromExports="0" uuid="{2d840c54-db1c-4e98-ade5-71b0e3b3e5d5}" height="10" itemRotation="0" frame="false" pagex="20">
+        <ComposerItem pagey="3.5" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15" y="3.5" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="87.1782" outlineWidth="0.3" excludeFromExports="0" uuid="{2d840c54-db1c-4e98-ade5-71b0e3b3e5d5}" height="10" itemRotation="0" frame="false" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5227545.2214040020480752" xmin="1377578.62254827539436519" ymax="5227595.22140405420213938" xmax="1377648.62254834664054215"/>
+        <Extent ymin="5227542.27476505190134048" xmin="1377574.62254827120341361" ymax="5227596.27476510684937239" xmax="1377652.62254835083149374"/>
         <LayerSet/>
         <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,63,0,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="25" gridFrameSideFlags="15" intervalY="25" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
           <lineStyle>
             <symbol alpha="1" type="line" name="">
               <layer pass="0" class="SimpleLine" locked="0">
@@ -1764,13 +1761,13 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="13.5" page="1" id="" lastValidViewScaleFactor="1.38412" positionMode="0" positionLock="false" x="17" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="350" outlineWidth="0.3" excludeFromExports="0" uuid="{d404977b-c996-4842-a3d5-64148027a93e}" height="250" itemRotation="0" frame="false" pagex="17">
+        <ComposerItem pagey="13.5" page="1" id="" lastValidViewScaleFactor="2.48069" positionMode="0" positionLock="false" x="15" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="390" outlineWidth="0.3" excludeFromExports="0" uuid="{d404977b-c996-4842-a3d5-64148027a93e}" height="270" itemRotation="0" frame="true" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
     </Composition>
-    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case4600200a320150217165914976" singleFile="false" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="false"/>
+    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case4600200a320150217165914976" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
   </Composer>
   <projectlayers layercount="69">
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -12468,7 +12465,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>case4600200a320150217165914976</id>
       <datasource>dbname='patrimoine' host=debian.mairie.fr port=5432 user='contrib' password='alambic' sslmode=disable key='ogc_fid' srid=3946 type=POLYGON table="cadastre_travail"."case4600200a3" (wkb_geometry_3946) sql=</datasource>
       <title></title>
@@ -12507,26 +12504,43 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
+      <renderer-v2 symbollevels="0" type="RuleRenderer">
+        <rules key="{586f1220-188f-45ce-98fe-f24a5d8ae49a}">
+          <rule filter="$id&lt;>$atlasfeatureid" key="{06155e49-6195-4855-8372-a66476fcca4b}" symbol="0" label="atlasfeature"/>
+          <rule key="{c4bde459-af35-427d-9090-f336e68b802b}" symbol="1"/>
+        </rules>
         <symbols>
           <symbol alpha="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="128,128,128,127"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,128,128,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0.002"/>
               <prop k="color" v="0,0,0,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="23,197,0,255"/>
+              <prop k="outline_color" v="128,128,128,255"/>
               <prop k="outline_style" v="dot"/>
-              <prop k="outline_width" v="0.5"/>
+              <prop k="outline_width" v="0.2"/>
               <prop k="outline_width_unit" v="MapUnit"/>
               <prop k="style" v="solid"/>
             </layer>
           </symbol>
         </symbols>
-        <rotation/>
-        <sizescale scalemethod="area"/>
       </renderer-v2>
       <customproperties>
         <property key="labeling" value="pal"/>
@@ -12543,7 +12557,7 @@
         <property key="labeling/bufferNoFill" value="false"/>
         <property key="labeling/bufferSize" value="1.5"/>
         <property key="labeling/bufferSizeInMapUnits" value="true"/>
-        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0.0008"/>
         <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
@@ -12566,7 +12580,7 @@
         <property key="labeling/fontMinPixelSize" value="3"/>
         <property key="labeling/fontSize" value="4"/>
         <property key="labeling/fontSizeInMapUnits" value="true"/>
-        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0.0008"/>
         <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
@@ -12593,7 +12607,7 @@
         <property key="labeling/placement" value="1"/>
         <property key="labeling/placementFlags" value="0"/>
         <property key="labeling/plussign" value="false"/>
-        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/preserveRotation" value="false"/>
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="10"/>
         <property key="labeling/quadOffset" value="4"/>
@@ -12603,9 +12617,9 @@
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/scaleMax" value="2500"/>
+        <property key="labeling/scaleMin" value="250"/>
+        <property key="labeling/scaleVisibility" value="true"/>
         <property key="labeling/shadowBlendMode" value="6"/>
         <property key="labeling/shadowColorB" value="0"/>
         <property key="labeling/shadowColorG" value="0"/>
@@ -12662,9 +12676,9 @@
         <property key="labeling/shapeTransparency" value="0"/>
         <property key="labeling/shapeType" value="0"/>
         <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="197"/>
-        <property key="labeling/textColorR" value="23"/>
+        <property key="labeling/textColorB" value="128"/>
+        <property key="labeling/textColorG" value="128"/>
+        <property key="labeling/textColorR" value="128"/>
         <property key="labeling/textTransp" value="0"/>
         <property key="labeling/upsidedownLabels" value="0"/>
         <property key="labeling/wrapChar" value=""/>
@@ -21658,248 +21672,6 @@
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>sampleqgis220150216134156506</id>
-      <datasource>/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/sampleqgis2.gml</datasource>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>sampleqgis2</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
-          <srsid>3307</srsid>
-          <srid>4171</srid>
-          <authid>EPSG:4171</authid>
-          <description>RGF93</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="UTF-8">ogr</provider>
-      <previewExpression>COALESCE( "fid", '&lt;NULL>' )</previewExpression>
-      <vectorjoins/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
-        <symbols>
-          <symbol alpha="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="186,221,105,100"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,152,72,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="area"/>
-      </renderer-v2>
-      <customproperties>
-        <property key="labeling" value="pal"/>
-        <property key="labeling/addDirectionSymbol" value="false"/>
-        <property key="labeling/angleOffset" value="0"/>
-        <property key="labeling/blendMode" value="0"/>
-        <property key="labeling/bufferBlendMode" value="0"/>
-        <property key="labeling/bufferColorA" value="255"/>
-        <property key="labeling/bufferColorB" value="255"/>
-        <property key="labeling/bufferColorG" value="255"/>
-        <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
-        <property key="labeling/bufferJoinStyle" value="64"/>
-        <property key="labeling/bufferNoFill" value="false"/>
-        <property key="labeling/bufferSize" value="1"/>
-        <property key="labeling/bufferSizeInMapUnits" value="false"/>
-        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/bufferTransp" value="0"/>
-        <property key="labeling/centroidInside" value="false"/>
-        <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/decimals" value="3"/>
-        <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
-        <property key="labeling/distMapUnitMaxScale" value="0"/>
-        <property key="labeling/distMapUnitMinScale" value="0"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value=""/>
-        <property key="labeling/fontBold" value="true"/>
-        <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Ubuntu"/>
-        <property key="labeling/fontItalic" value="false"/>
-        <property key="labeling/fontLetterSpacing" value="0"/>
-        <property key="labeling/fontLimitPixelSize" value="false"/>
-        <property key="labeling/fontMaxPixelSize" value="10000"/>
-        <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="11"/>
-        <property key="labeling/fontSizeInMapUnits" value="false"/>
-        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/fontStrikeout" value="false"/>
-        <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="63"/>
-        <property key="labeling/fontWordSpacing" value="0"/>
-        <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
-        <property key="labeling/labelOffsetInMapUnits" value="true"/>
-        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/labelPerPart" value="false"/>
-        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-        <property key="labeling/limitNumLabels" value="false"/>
-        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-        <property key="labeling/maxNumLabels" value="2000"/>
-        <property key="labeling/mergeLines" value="false"/>
-        <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="0"/>
-        <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Medium"/>
-        <property key="labeling/obstacle" value="true"/>
-        <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="1"/>
-        <property key="labeling/placementFlags" value="0"/>
-        <property key="labeling/plussign" value="false"/>
-        <property key="labeling/preserveRotation" value="true"/>
-        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-        <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
-        <property key="labeling/reverseDirectionSymbol" value="false"/>
-        <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
-        <property key="labeling/shadowBlendMode" value="6"/>
-        <property key="labeling/shadowColorB" value="0"/>
-        <property key="labeling/shadowColorG" value="0"/>
-        <property key="labeling/shadowColorR" value="0"/>
-        <property key="labeling/shadowDraw" value="false"/>
-        <property key="labeling/shadowOffsetAngle" value="135"/>
-        <property key="labeling/shadowOffsetDist" value="1"/>
-        <property key="labeling/shadowOffsetGlobal" value="true"/>
-        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowOffsetUnits" value="1"/>
-        <property key="labeling/shadowRadius" value="1.5"/>
-        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowRadiusUnits" value="1"/>
-        <property key="labeling/shadowScale" value="100"/>
-        <property key="labeling/shadowTransparency" value="30"/>
-        <property key="labeling/shadowUnder" value="0"/>
-        <property key="labeling/shapeBlendMode" value="0"/>
-        <property key="labeling/shapeBorderColorA" value="255"/>
-        <property key="labeling/shapeBorderColorB" value="128"/>
-        <property key="labeling/shapeBorderColorG" value="128"/>
-        <property key="labeling/shapeBorderColorR" value="128"/>
-        <property key="labeling/shapeBorderWidth" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeBorderWidthUnits" value="1"/>
-        <property key="labeling/shapeDraw" value="false"/>
-        <property key="labeling/shapeFillColorA" value="255"/>
-        <property key="labeling/shapeFillColorB" value="255"/>
-        <property key="labeling/shapeFillColorG" value="255"/>
-        <property key="labeling/shapeFillColorR" value="255"/>
-        <property key="labeling/shapeJoinStyle" value="64"/>
-        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeOffsetUnits" value="1"/>
-        <property key="labeling/shapeOffsetX" value="0"/>
-        <property key="labeling/shapeOffsetY" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeRadiiUnits" value="1"/>
-        <property key="labeling/shapeRadiiX" value="0"/>
-        <property key="labeling/shapeRadiiY" value="0"/>
-        <property key="labeling/shapeRotation" value="0"/>
-        <property key="labeling/shapeRotationType" value="0"/>
-        <property key="labeling/shapeSVGFile" value=""/>
-        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeSizeType" value="0"/>
-        <property key="labeling/shapeSizeUnits" value="1"/>
-        <property key="labeling/shapeSizeX" value="0"/>
-        <property key="labeling/shapeSizeY" value="0"/>
-        <property key="labeling/shapeTransparency" value="0"/>
-        <property key="labeling/shapeType" value="0"/>
-        <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="0"/>
-        <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
-        <property key="labeling/upsidedownLabels" value="0"/>
-        <property key="labeling/wrapChar" value=""/>
-        <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
-      </customproperties>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>fid</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Étiquette"/>
-        <family fieldname="" name="Ubuntu"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <editform></editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
-      <editorlayout>generatedlayout</editorlayout>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <id>scan_25_1720150216171355707</id>
       <datasource>/home/fred/k/sig_donnees/raster/scan/scan_ign/scan_ign_25000/ecw/scan_25_17.ecw</datasource>
@@ -23253,6 +23025,142 @@
         </edittype>
       </edittypes>
     </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>zonages20150219114327206</id>
+      <datasource>/home/fred/geodata/vecteur/si17/zonage_topo/zonage_topo/zonages.shp</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>zonages</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="insee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="niveau_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="typevoie">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nomvoie">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="numrec">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="longeur">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 symbollevels="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="55,129,6,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="area"/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>gid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <editform></editform>
+      <editforminit/>
+      <featformsuppress>0</featformsuppress>
+      <annotationform></annotationform>
+      <editorlayout>generatedlayout</editorlayout>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions/>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="insee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="niveau_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="typevoie">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nomvoie">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="numrec">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="longeur">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+      </edittypes>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="2500" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Établissements_publics20150218175019634</id>
       <datasource>dbname='cadlr' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tid' table="sig"."geo_label" (geom) sql="ogr_obj_lnk_layer" = 'VOIEP_id'</datasource>
@@ -23617,6 +23525,29 @@
     <Paths>
       <Absolute type="bool">true</Absolute>
     </Paths>
+    <Scales>
+      <ScalesList type="QStringList">
+        <value>1:100</value>
+        <value>1:150</value>
+        <value>1:200</value>
+        <value>1:250</value>
+        <value>1:500</value>
+        <value>1:750</value>
+        <value>1:1000</value>
+        <value>1:1250</value>
+        <value>1:1500</value>
+        <value>1:2000</value>
+        <value>1:2500</value>
+        <value>1:5000</value>
+        <value>1:7500</value>
+        <value>1:10000</value>
+        <value>1:12500</value>
+        <value>1:15000</value>
+        <value>1:20000</value>
+        <value>1:25000</value>
+      </ScalesList>
+      <useProjectScales type="bool">true</useProjectScales>
+    </Scales>
     <WMSServiceTitle type="QString"></WMSServiceTitle>
     <WFSLayers type="QStringList"/>
     <WMSContactMail type="QString"></WMSContactMail>
@@ -23626,8 +23557,8 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
@@ -23691,6 +23622,7 @@
         <value>eau_vanne20150217175404196</value>
         <value>eau_ventouse20150217175404255</value>
         <value>eau_vidange20150217175404275</value>
+        <value>empriseDeclarationQgis20150218180524017</value>
         <value>ep_bassin_orage20150217171304632</value>
         <value>ep_branchement20150217171304701</value>
         <value>ep_coffret_intermediaire20150216135803577</value>
@@ -23710,14 +23642,13 @@
         <value>ep_sortie_fosse20150217171305063</value>
         <value>fo_chambre20150217175714561</value>
         <value>fo_faisceau20150217175714747</value>
-        <value>sampleqgis220150216134156506</value>
         <value>slt_armoire20150217175839863</value>
         <value>slt_boucle20150217175839945</value>
         <value>slt_cable20150217175839967</value>
         <value>slt_regard20150217175839982</value>
         <value>slt_support_feu20150217175840000</value>
         <value>Établissements_publics20150218175019634</value>
-        <value>empriseDeclarationQgis20150218180524017</value>
+        <value>zonages20150219114327206</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>enabled</value>
@@ -23971,7 +23902,7 @@
         <value>2.000000</value>
         <value>2.000000</value>
         <value>2.000000</value>
-        <value>2.000000</value>
+        <value>0.000000</value>
         <value>2.000000</value>
         <value>2.000000</value>
         <value>2.000000</value>
@@ -24000,6 +23931,17 @@
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
+    <PAL>
+      <SearchMethod type="int">3</SearchMethod>
+      <ShowingShadowRects type="bool">false</ShowingShadowRects>
+      <CandidatesPolygon type="int">8</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesLine type="int">8</CandidatesLine>
+      <CandidatesPoint type="int">8</CandidatesPoint>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+    </PAL>
     <Identify>
       <disabledLayers type="QStringList"/>
     </Identify>
