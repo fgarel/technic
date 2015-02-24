@@ -4,7 +4,7 @@
 function init1(){
     # Premières variables
     # par defaut
-    HOST='10.2.10.56'
+    HOST='debian.mairie.fr'
     PORT='5432'
     DBNAME='dbmapnik'
     USER='contrib'

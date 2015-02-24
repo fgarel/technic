@@ -62,6 +62,6 @@
 
 # une fois que les données ont été intégrées, il faut les visualiser avec qgis...
 
-psql -h 10.2.10.56 -d dbmapnik -U contrib -c '--select count(*) from releve_complementaire_rue_kaestler;   -- 55925'
-psql -h 10.2.10.56 -d dbmapnik -U contrib -c 'select count(*) from "999_02_00047_00026_13_b_18_fp2";     -- 326'
-psql -h 10.2.10.56 -d dbmapnik -U contrib -c '--select count(*) from "103046_6";                           -- 26994'
+psql -h debian.mairie.fr -d dbmapnik -U contrib -c '--select count(*) from releve_complementaire_rue_kaestler;   -- 55925'
+psql -h debian.mairie.fr -d dbmapnik -U contrib -c 'select count(*) from "999_02_00047_00026_13_b_18_fp2";     -- 326'
+psql -h debian.mairie.fr -d dbmapnik -U contrib -c '--select count(*) from "103046_6";                           -- 26994'
