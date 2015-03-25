@@ -1,0 +1,15 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>empriseDeclaration</Name>
+    <ElementPath>empriseDeclaration</ElementPath>
+    <GeometryType>-2147483645</GeometryType>
+    <SRSName>EPSG:4171</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>1</FeatureCount>
+      <ExtentXMin>0.00000</ExtentXMin>
+      <ExtentXMax>0.00000</ExtentXMax>
+      <ExtentYMin>1.20620</ExtentYMin>
+      <ExtentYMax>4326.00000</ExtentYMax>
+    </DatasetSpecificInfo>
+  </GMLFeatureClass>
+</GMLFeatureClassList>
