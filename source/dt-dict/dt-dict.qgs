@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.7.0-Master">
+<qgis projectname="" version="2.8.1-Wien">
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
@@ -219,7 +219,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="empriseDeclarationQgis20150218180524017" name="empriseDeclaration">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="empriseDeclarationQgis20150218180524017" name="empriseDeclaration">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="zonages20150219114327206" name="zonages">
@@ -236,10 +236,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1376365.82244638679549098</xmin>
-      <ymin>5225591.22418118268251419</ymin>
-      <xmax>1376422.62203411338850856</xmax>
-      <ymax>5225794.68876472860574722</ymax>
+      <xmin>1377392.14136654022149742</xmin>
+      <ymin>5227512.70970747992396355</ymin>
+      <xmax>1377563.44214995135553181</xmax>
+      <ymax>5227561.22037777863442898</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -795,8 +795,8 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="empriseDeclaration" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="empriseDeclaration" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="empriseDeclarationQgis20150218180524017" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -816,7 +816,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="Composeur 1" visible="0">
+  <Composer title="Composeur 1" visible="1">
     <Composition gridVisible="0" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="5" snapGridOffsetY="0" alignmentSnap="1" snapping="1" snapTolerancePixels="10" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1132,7 +1132,7 @@
       </ComposerMap>
     </Composition>
   </Composer>
-  <Composer title="folio_erdf_A1_200" visible="0">
+  <Composer title="folio_erdf_A1_200" visible="1">
     <Composition gridVisible="1" printResolution="300" paperWidth="841" snapGridOffsetX="0.5" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="2" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="594" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1225,7 +1225,7 @@
         </ComposerItem>
       </ComposerMap>
     </Composition>
-    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'sampleqgis2','fid' ,'sampleqgis2.0' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case460020020150216135921736" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="false"/>
+    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case460020020150216135921736" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="false"/>
   </Composer>
   <Composer title="folio_erdf_A3_500" visible="0">
     <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
@@ -23522,9 +23522,6 @@
       <value></value>
     </WMSKeywordList>
     <WFSUrl type="QString"></WFSUrl>
-    <Paths>
-      <Absolute type="bool">true</Absolute>
-    </Paths>
     <Scales>
       <ScalesList type="QStringList">
         <value>1:100</value>
@@ -23548,6 +23545,9 @@
       </ScalesList>
       <useProjectScales type="bool">true</useProjectScales>
     </Scales>
+    <Paths>
+      <Absolute type="bool">true</Absolute>
+    </Paths>
     <WMSServiceTitle type="QString"></WMSServiceTitle>
     <WFSLayers type="QStringList"/>
     <WMSContactMail type="QString"></WMSContactMail>
@@ -23557,8 +23557,8 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
