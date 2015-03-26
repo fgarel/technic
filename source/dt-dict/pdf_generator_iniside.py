@@ -26,11 +26,11 @@ gui_flag = True
 # Probably you want to tweak this
 #project_path = 'project.qgs'
 project_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/test_gml4326.qgs'
-project_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/dt-dict.qgs'
+#project_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/dt-dict.qgs'
 
 # and this
 #template_path = 'template.qpt'
-template_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/templateComposition.qpt'
+#template_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/templateComposition.qpt'
 template_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/folio_A3_200.qpt'
 
 
@@ -59,8 +59,24 @@ composition = QgsComposition(canvas.mapSettings())
 #    'DATE_TIME_END': 'bar'}
 #composition.loadFromTemplate(document, substitution_map)
 composition.loadFromTemplate(document)
+#debug
+composition.paperHeight()
+composition.paperWidth()
+composition.printResolution()
+
+
 atlasComposition = QgsAtlasComposition(composition)
 
+#debug
+atlasComposition.composerMap().displayName()
+atlasComposition.hideCoverage()
+atlasComposition.enabled()
+atlasComposition.coverageLayer().metadata()
+atlasComposition.filenamePattern()
+atlasComposition.setEnabled(True)
+atlasComposition.enabled()
+QgsProject.instance().layerTreeRoot().findLayerIds()
+QgsProject.instance().layerTreeRoot().findLayerIds()[0]
 
 # You must set the id in the template
 map_item = composition.getComposerItemById('map')
