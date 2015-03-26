@@ -2,14 +2,14 @@
   <GMLFeatureClass>
     <Name>empriseDeclaration</Name>
     <ElementPath>empriseDeclaration</ElementPath>
-    <GeometryType>-2147483645</GeometryType>
-    <SRSName>EPSG:4171</SRSName>
+    <GeometryType>3</GeometryType>
+    <SRSName>EPSG:4326</SRSName>
     <DatasetSpecificInfo>
       <FeatureCount>1</FeatureCount>
-      <ExtentXMin>0.00000</ExtentXMin>
-      <ExtentXMax>0.00000</ExtentXMax>
-      <ExtentYMin>1.20620</ExtentYMin>
-      <ExtentYMax>4326.00000</ExtentYMax>
+      <ExtentXMin>-1.21881</ExtentXMin>
+      <ExtentXMax>-1.21153</ExtentXMax>
+      <ExtentYMin>46.16306</ExtentYMin>
+      <ExtentYMax>46.16826</ExtentYMax>
     </DatasetSpecificInfo>
   </GMLFeatureClass>
 </GMLFeatureClassList>

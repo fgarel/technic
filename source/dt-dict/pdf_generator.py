@@ -25,11 +25,16 @@ app.initQgis()
 
 # Probably you want to tweak this
 project_path = 'project.qgs'
-project_path = 'test_gml4326.qgs'
+project_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/test_gml4326.qgs'
+project_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/dt-dict.qgs'
+
 
 # and this
 template_path = 'template.qpt'
-template_path = 'templateComposition.qpt'
+template_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/templateComposition.qpt'
+template_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/folio_A3_200.qpt'
+
+report_path = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/report.pdf'
 
 def make_pdf():
     canvas = QgsMapCanvas()
@@ -57,10 +62,10 @@ def make_pdf():
     map_item.setMapCanvas(canvas)
     map_item.zoomToExtent(canvas.extent())
     # You must set the id in the template
-    legend_item = composition.getComposerItemById('legend')
-    legend_item.updateLegend()
+    #legend_item = composition.getComposerItemById('legend')
+    #legend_item.updateLegend()
     composition.refreshItems()
-    composition.exportAsPDF('report.pdf')
+    composition.exportAsPDF(report_path)
     QgsProject.instance().clear()
 
 

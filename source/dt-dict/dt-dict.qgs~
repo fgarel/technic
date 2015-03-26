@@ -307,10 +307,10 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bornes20150218175004952"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_bati_leger20130604163751140"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires__étiquettes_20150216174228060"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320150326171927446"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150216174226161"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20150217171304860"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150216174228166"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320150326171927446"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_armoire20150217175839863"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels20150218175014106"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20130605090645298"/>
@@ -818,156 +818,6 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <mapcanvas>
-    <units>meters</units>
-    <extent>
-      <xmin>1374323.03800302161835134</xmin>
-      <ymin>5226734.15537573210895061</ymin>
-      <xmax>1374942.96733040199615061</xmax>
-      <ymax>5227312.43244277313351631</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <projections>1</projections>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>1765</srsid>
-        <srid>3946</srid>
-        <authid>EPSG:3946</authid>
-        <description>RGF93 / CC46</description>
-        <projectionacronym>lcc</projectionacronym>
-        <ellipsoidacronym>GRS80</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces__étiquettes_20150216174227647"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20150217171304968"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections__étiquettes_20150216174226939"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles__étiquettes_20150216174226534"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Croix20150216174227138"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Murs__fossés__clotûres20150218175008502"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces20150216174227566"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150218175018432"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20150218175020836"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits___étiquettes_20150218175000886"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau__étiquettes_20150218175010724"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces__étiquettes_20150218175012963"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires20150218175016267"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20130605090644706"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20150216174225935"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits20150218174959430"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20150216135803551"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="zonages20150219114327206"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections20150218175002429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130614151003229"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections__étiquettes_20150218175003663"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales__étiquette_20150216174226223"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_parcelle20130604163751240"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvage_collecte20130614151001316"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_cable20150217175839967"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20130605090645429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles20150216174226429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Secteurs20150218174950257"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits___étiquettes_20150216174226729"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires20150216174227981"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Repères_géodésiques20150216174227212"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho_lr_2010_maree_haute_l9320130320155501682"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Établissements_publics20150216174228269"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau__étiquettes_20150216174227458"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20150217175404275"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20150216135803419"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150218174951791"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20130605090644971"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20150217175404196"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Établissements_publics20150218175019634"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections20150216174226859"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20130605090645342"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4171" srcDatumTransform="-1" destDatumTransform="-1" layerid="empriseDeclarationQgis20150218180524017"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20130605090645214"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130605090645367"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau20150218175009636"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20150218174948625"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130614140701130"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bornes20150218175004952"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_bati_leger20130604163751140"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires__étiquettes_20150216174228060"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320150326171927446"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150216174226161"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20150217171304860"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150216174228166"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_armoire20150217175839863"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels20150218175014106"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20130605090645298"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20150217175403983"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières__étiquettes_20150218175022001"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20150216135803490"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_chambre20150217175714561"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20130605090644861"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20130605090644564"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20130614150959044"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Murs__fossés__clotûres20150216174227303"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="17_numerique20150217175714652"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20150217175403948"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_faisceau20150217175714747"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels__étiquettes_20150216174227860"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires__étiquettes_20150218175017383"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse20150217171305063"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvage_engouffrement20130614151002448"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau20150216174227389"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="empriseDeclarationQgis394620150326170348137"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces20150218175011842"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières__étiquettes_20150216174228466"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_forage20150217175404061"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20150216135803312"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales__étiquette_20150218174953376"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_coffret_intermediaire20150216135803577"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage20150217171304632"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20150216135803534"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20150216135803515"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles__étiquettes_20150218174957922"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Secteurs20150216174226051"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20150216135803602"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles20150218174956462"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20130605090645165"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_boucle20150217175839945"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20150216135803660"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Repères_géodésiques20150218175007335"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="scan_25_1720150216171355707"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels20150216174227775"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits20150216174226653"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_reducteur_pression20150217175404177"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_bati_dur20130604163750847"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="case460020020150216135921736"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20130605090644663"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Croix20150218175006170"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_support_feu20150217175840000"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20150216174228369"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_fonctionnel20150217171304923"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_borne_fontaine20150217175403857"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20130605135836517"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bâti20150218174954929"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20130605090645013"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Commune20150218174945304"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4171" srcDatumTransform="-1" destDatumTransform="-1" layerid="sampleqgis220150216134156506"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voies__routes_et_chemins20150218174947000"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="case4600200a320150217165914976"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20150217171304781"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_ventouse20150217175404255"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voies__routes_et_chemins20150216174225858"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20130605090644935"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bornes20150216174227064"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_regard20150217175839982"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_torsade20130605090645056"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bâti20150216174226337"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20150217175404090"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20150217171304701"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels__étiquettes_20150218175015188"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Commune20150216174225729"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_torsade20150216135803393"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20130605090645104"/>
-    </layer_coordinate_transform_info>
-  </mapcanvas>
   <Composer title="Composeur 1" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="5" snapGridOffsetY="0" alignmentSnap="1" snapping="1" snapTolerancePixels="10" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
