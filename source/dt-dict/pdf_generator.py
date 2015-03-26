@@ -16,7 +16,9 @@ from PyQt4.QtXml import QDomDocument
 
 
 gui_flag = True
+#app = QgsApplication(sys.argv, gui_flag)
 app = QgsApplication(sys.argv, gui_flag)
+
 
 # Make sure QGIS_PREFIX_PATH is set in your env if needed!
 app.initQgis()
