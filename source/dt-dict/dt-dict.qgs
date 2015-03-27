@@ -6,13 +6,13 @@
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="empriseDeclarationQgis394620150326170348137" name="empriseDeclarationQgis3946">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="case4600200a320150217165914976" name="case4600200a3">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="case4600200a320150217165914976" name="case4600200a3">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="case460020020150216135921736" name="case4600200">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Reseaux">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Reseaux">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eau">
         <customproperties/>
@@ -132,103 +132,100 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Cadastre">
       <customproperties/>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Unités_foncières__étiquettes_20150218175022001" name="Unités foncières (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Unités_foncières__étiquettes_20150218175022001" name="Unités foncières (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Unités_foncières20150218175020836" name="Unités foncières">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Unités_foncières20150218175020836" name="Unités foncières">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Établissements_publics20150218175019634" name="Établissements publics">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Établissements_publics20150218175019634" name="Établissements publics">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Numéros_de_voie20150218175018432" name="Numéros de voie">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Numéros_de_voie20150218175018432" name="Numéros de voie">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_linéaires__étiquettes_20150218175017383" name="Objets linéaires (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_linéaires__étiquettes_20150218175017383" name="Objets linéaires (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_linéaires20150218175016267" name="Objets linéaires">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_linéaires20150218175016267" name="Objets linéaires">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_ponctuels__étiquettes_20150218175015188" name="Objets ponctuels (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_ponctuels__étiquettes_20150218175015188" name="Objets ponctuels (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Objets_ponctuels20150218175014106" name="Objets ponctuels">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Objets_ponctuels20150218175014106" name="Objets ponctuels">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Surfaces__étiquettes_20150218175012963" name="Surfaces (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Surfaces__étiquettes_20150218175012963" name="Surfaces (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Surfaces20150218175011842" name="Surfaces">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Surfaces20150218175011842" name="Surfaces">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Cours_d_eau__étiquettes_20150218175010724" name="Cours d'eau (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cours_d_eau__étiquettes_20150218175010724" name="Cours d'eau (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Cours_d_eau20150218175009636" name="Cours d'eau">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Cours_d_eau20150218175009636" name="Cours d'eau">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Murs__fossés__clotûres20150218175008502" name="Murs, fossés, clotûres">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Murs__fossés__clotûres20150218175008502" name="Murs, fossés, clotûres">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Repères_géodésiques20150218175007335" name="Repères géodésiques">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Repères_géodésiques20150218175007335" name="Repères géodésiques">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Croix20150218175006170" name="Croix">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Croix20150218175006170" name="Croix">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Bornes20150218175004952" name="Bornes">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Bornes20150218175004952" name="Bornes">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Sections__étiquettes_20150218175003663" name="Sections (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Sections__étiquettes_20150218175003663" name="Sections (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Sections20150218175002429" name="Sections">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Sections20150218175002429" name="Sections">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Lieux_dits___étiquettes_20150218175000886" name="Lieux-dits  (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Lieux_dits___étiquettes_20150218175000886" name="Lieux-dits  (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Lieux_dits20150218174959430" name="Lieux-dits">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Lieux_dits20150218174959430" name="Lieux-dits">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Parcelles__étiquettes_20150218174957922" name="Parcelles (étiquettes)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Parcelles__étiquettes_20150218174957922" name="Parcelles (étiquettes)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Parcelles20150218174956462" name="Parcelles">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Parcelles20150218174956462" name="Parcelles">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Bâti20150218174954929" name="Bâti">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Bâti20150218174954929" name="Bâti">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Subdivisions_fiscales__étiquette_20150218174953376" name="Subdivisions fiscales (étiquette)">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Subdivisions_fiscales__étiquette_20150218174953376" name="Subdivisions fiscales (étiquette)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Subdivisions_fiscales20150218174951791" name="Subdivisions fiscales">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Subdivisions_fiscales20150218174951791" name="Subdivisions fiscales">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Secteurs20150218174950257" name="Secteurs">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Secteurs20150218174950257" name="Secteurs">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Noms_de_voies20150218174948625" name="Noms de voies">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Noms_de_voies20150218174948625" name="Noms de voies">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Voies__routes_et_chemins20150218174947000" name="Voies, routes et chemins">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Voies__routes_et_chemins20150218174947000" name="Voies, routes et chemins">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="Commune20150218174945304" name="Commune">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="Commune20150218174945304" name="Commune">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="empriseDeclarationQgis20150218180524017" name="empriseDeclaration">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho201320150326171927446" name="ortho2013">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="zonages20150219114327206" name="zonages">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho201320150326171927446" name="ortho2013">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="scan2520150327142925958" name="scan25">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -236,10 +233,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1374323.03800302161835134</xmin>
-      <ymin>5226734.15537573210895061</ymin>
-      <xmax>1374942.96733040199615061</xmax>
-      <ymax>5227312.43244277313351631</ymax>
+      <xmin>1374086.79726851126179099</xmin>
+      <ymin>5226506.66667887382209301</ymin>
+      <xmax>1375326.65592327108606696</xmax>
+      <ymax>5227663.22081294469535351</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -265,6 +262,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces20150216174227566"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150218175018432"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20150218175020836"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320150327144245891"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits___étiquettes_20150218175000886"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau__étiquettes_20150218175010724"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces__étiquettes_20150218175012963"/>
@@ -293,6 +291,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20150217175404275"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20150216135803419"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150218174951791"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho200320150327143224691"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20130605090644971"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20150217175404196"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Établissements_publics20150218175019634"/>
@@ -344,6 +343,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Secteurs20150216174226051"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20150216135803602"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles20150218174956462"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="scan2520150327142925958"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20130605090645165"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_boucle20150217175839945"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20150216135803660"/>
@@ -451,10 +451,9 @@
       <item>Établissements_publics20150218175019634</item>
       <item>Unités_foncières20150218175020836</item>
       <item>Unités_foncières__étiquettes_20150218175022001</item>
-      <item>empriseDeclarationQgis20150218180524017</item>
-      <item>zonages20150219114327206</item>
       <item>empriseDeclarationQgis394620150326170348137</item>
       <item>ortho201320150326171927446</item>
+      <item>scan2520150327142925958</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -463,9 +462,9 @@
         <legendlayerfile isInOverview="0" layerid="empriseDeclarationQgis394620150326170348137" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="case4600200a3" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="case4600200a3" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="case4600200a320150217165914976" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="case4600200a320150217165914976" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="case4600200" showFeatureCount="0">
@@ -473,7 +472,7 @@
         <legendlayerfile isInOverview="0" layerid="case460020020150216135921736" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Reseaux">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Reseaux">
       <legendgroup open="false" checked="Qt::Unchecked" name="Eau">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="eau_borne_fontaine" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -655,319 +654,164 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Unités foncières (étiquettes)" showFeatureCount="0">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Cadastre">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Unités foncières (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Unités_foncières__étiquettes_20150218175022001" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Unités_foncières__étiquettes_20150218175022001" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Unités foncières" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Unités foncières" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Unités_foncières20150218175020836" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Unités_foncières20150218175020836" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Établissements publics" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Établissements publics" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Établissements_publics20150218175019634" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Établissements_publics20150218175019634" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Numéros de voie" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Numéros de voie" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Numéros_de_voie20150218175018432" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Numéros_de_voie20150218175018432" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets linéaires (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets linéaires (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Objets_linéaires__étiquettes_20150218175017383" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Objets_linéaires__étiquettes_20150218175017383" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets linéaires" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets linéaires" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Objets_linéaires20150218175016267" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Objets_linéaires20150218175016267" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets ponctuels (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets ponctuels (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels__étiquettes_20150218175015188" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels__étiquettes_20150218175015188" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Objets ponctuels" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Objets ponctuels" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels20150218175014106" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Objets_ponctuels20150218175014106" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Surfaces (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Surfaces (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Surfaces__étiquettes_20150218175012963" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Surfaces__étiquettes_20150218175012963" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Surfaces" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Surfaces" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Surfaces20150218175011842" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Surfaces20150218175011842" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cours d'eau (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cours d'eau (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Cours_d_eau__étiquettes_20150218175010724" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Cours_d_eau__étiquettes_20150218175010724" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Cours d'eau" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Cours d'eau" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Cours_d_eau20150218175009636" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Cours_d_eau20150218175009636" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Murs, fossés, clotûres" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Murs, fossés, clotûres" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Murs__fossés__clotûres20150218175008502" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Murs__fossés__clotûres20150218175008502" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Repères géodésiques" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Repères géodésiques" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Repères_géodésiques20150218175007335" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Repères_géodésiques20150218175007335" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Croix" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Croix" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Croix20150218175006170" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Croix20150218175006170" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Bornes" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Bornes" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Bornes20150218175004952" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Bornes20150218175004952" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sections (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Sections (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Sections__étiquettes_20150218175003663" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Sections__étiquettes_20150218175003663" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Sections" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Sections" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Sections20150218175002429" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Sections20150218175002429" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lieux-dits  (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lieux-dits  (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Lieux_dits___étiquettes_20150218175000886" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Lieux_dits___étiquettes_20150218175000886" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Lieux-dits" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Lieux-dits" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Lieux_dits20150218174959430" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Lieux_dits20150218174959430" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Parcelles (étiquettes)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Parcelles (étiquettes)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Parcelles__étiquettes_20150218174957922" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Parcelles__étiquettes_20150218174957922" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Parcelles" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Parcelles" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Parcelles20150218174956462" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Parcelles20150218174956462" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Bâti" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Bâti" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Bâti20150218174954929" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Bâti20150218174954929" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Subdivisions fiscales (étiquette)" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Subdivisions fiscales (étiquette)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales__étiquette_20150218174953376" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales__étiquette_20150218174953376" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Subdivisions fiscales" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Subdivisions fiscales" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales20150218174951791" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Subdivisions_fiscales20150218174951791" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Secteurs" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Secteurs" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Secteurs20150218174950257" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Secteurs20150218174950257" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Noms de voies" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Noms de voies" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Noms_de_voies20150218174948625" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Noms_de_voies20150218174948625" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Voies, routes et chemins" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Voies, routes et chemins" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Voies__routes_et_chemins20150218174947000" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Voies__routes_et_chemins20150218174947000" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Commune" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="Commune" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="Commune20150218174945304" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="Commune20150218174945304" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="empriseDeclaration" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="empriseDeclarationQgis20150218180524017" visible="1"/>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2013" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ortho201320150326171927446" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="zonages" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="scan25" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="zonages20150219114327206" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2013" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho201320150326171927446" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="scan2520150327142925958" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
-  <mapcanvas>
-    <units>meters</units>
-    <extent>
-      <xmin>1374323.03800302161835134</xmin>
-      <ymin>5226734.15537573210895061</ymin>
-      <xmax>1374942.96733040199615061</xmax>
-      <ymax>5227312.43244277313351631</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <projections>1</projections>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>1765</srsid>
-        <srid>3946</srid>
-        <authid>EPSG:3946</authid>
-        <description>RGF93 / CC46</description>
-        <projectionacronym>lcc</projectionacronym>
-        <ellipsoidacronym>GRS80</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces__étiquettes_20150216174227647"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20150217171304968"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections__étiquettes_20150216174226939"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles__étiquettes_20150216174226534"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Croix20150216174227138"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Murs__fossés__clotûres20150218175008502"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces20150216174227566"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150218175018432"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20150218175020836"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits___étiquettes_20150218175000886"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau__étiquettes_20150218175010724"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces__étiquettes_20150218175012963"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires20150218175016267"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20130605090644706"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20150216174225935"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits20150218174959430"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20150216135803551"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="zonages20150219114327206"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections20150218175002429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130614151003229"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections__étiquettes_20150218175003663"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales__étiquette_20150216174226223"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_parcelle20130604163751240"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvage_collecte20130614151001316"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_cable20150217175839967"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20130605090645429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles20150216174226429"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Secteurs20150218174950257"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits___étiquettes_20150216174226729"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires20150216174227981"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Repères_géodésiques20150216174227212"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho_lr_2010_maree_haute_l9320130320155501682"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Établissements_publics20150216174228269"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau__étiquettes_20150216174227458"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20150217175404275"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20150216135803419"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150218174951791"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20130605090644971"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20150217175404196"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Établissements_publics20150218175019634"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Sections20150216174226859"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20130605090645342"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4171" srcDatumTransform="-1" destDatumTransform="-1" layerid="empriseDeclarationQgis20150218180524017"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20130605090645214"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130605090645367"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau20150218175009636"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20150218174948625"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20130614140701130"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bornes20150218175004952"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_bati_leger20130604163751140"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires__étiquettes_20150216174228060"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320150326171927446"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales20150216174226161"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20150217171304860"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Numéros_de_voie20150216174228166"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_armoire20150217175839863"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels20150218175014106"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20130605090645298"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20150217175403983"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières__étiquettes_20150218175022001"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20150216135803490"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_chambre20150217175714561"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20130605090644861"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20130605090644564"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20130614150959044"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Murs__fossés__clotûres20150216174227303"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="17_numerique20150217175714652"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20150217175403948"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_faisceau20150217175714747"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels__étiquettes_20150216174227860"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_linéaires__étiquettes_20150218175017383"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse20150217171305063"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvage_engouffrement20130614151002448"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau20150216174227389"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="empriseDeclarationQgis394620150326170348137"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Surfaces20150218175011842"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières__étiquettes_20150216174228466"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_forage20150217175404061"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20150216135803312"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Subdivisions_fiscales__étiquette_20150218174953376"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_coffret_intermediaire20150216135803577"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage20150217171304632"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20150216135803534"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20150216135803515"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles__étiquettes_20150218174957922"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Secteurs20150216174226051"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20150216135803602"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Parcelles20150218174956462"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20130605090645165"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_boucle20150217175839945"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20150216135803660"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Repères_géodésiques20150218175007335"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="scan_25_1720150216171355707"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels20150216174227775"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Lieux_dits20150216174226653"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_reducteur_pression20150217175404177"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="cad_bati_dur20130604163750847"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="case460020020150216135921736"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20130605090644663"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Croix20150218175006170"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_support_feu20150217175840000"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20150216174228369"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_fonctionnel20150217171304923"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_borne_fontaine20150217175403857"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20130605135836517"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bâti20150218174954929"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20130605090645013"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Commune20150218174945304"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4171" srcDatumTransform="-1" destDatumTransform="-1" layerid="sampleqgis220150216134156506"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voies__routes_et_chemins20150218174947000"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="case4600200a320150217165914976"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20150217171304781"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_ventouse20150217175404255"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voies__routes_et_chemins20150216174225858"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20130605090644935"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bornes20150216174227064"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_regard20150217175839982"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_torsade20130605090645056"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bâti20150216174226337"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20150217175404090"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20150217171304701"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels__étiquettes_20150218175015188"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Commune20150216174225729"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_torsade20150216135803393"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20130605090645104"/>
-    </layer_coordinate_transform_info>
-  </mapcanvas>
   <Composer title="Composeur 1" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="5" snapGridOffsetY="0" alignmentSnap="1" snapping="1" snapTolerancePixels="10" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
@@ -1092,7 +936,7 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="50.15" page="1" id="" lastValidViewScaleFactor="1.2618" positionMode="0" positionLock="false" x="330.15" y="50.15" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="80" outlineWidth="0.3" excludeFromExports="0" uuid="{43d24c4f-bf5f-4b32-bc0e-041f28102437}" height="66" itemRotation="0" frame="true" pagex="330.15">
+        <ComposerItem pagey="50.15" page="1" id="" lastValidViewScaleFactor="1.2382" positionMode="0" positionLock="false" x="330.15" y="50.15" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="80" outlineWidth="0.3" excludeFromExports="0" uuid="{43d24c4f-bf5f-4b32-bc0e-041f28102437}" height="66" itemRotation="0" frame="true" pagex="330.15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1277,7 +1121,7 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="4" page="1" id="" lastValidViewScaleFactor="1.2618" positionMode="0" positionLock="false" x="5" y="4" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="280" outlineWidth="0.3" excludeFromExports="0" uuid="{fc133343-b886-48fc-a516-4147402e8972}" height="200" itemRotation="0" frame="true" pagex="5">
+        <ComposerItem pagey="4" page="1" id="" lastValidViewScaleFactor="1.2382" positionMode="0" positionLock="false" x="5" y="4" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="280" outlineWidth="0.3" excludeFromExports="0" uuid="{fc133343-b886-48fc-a516-4147402e8972}" height="200" itemRotation="0" frame="true" pagex="5">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1371,7 +1215,7 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="42" page="1" id="" lastValidViewScaleFactor="0.645786" positionMode="0" positionLock="false" x="20.5" y="42" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="700" outlineWidth="0.3" excludeFromExports="0" uuid="{ba8ae7e1-b883-461c-a96d-a679413f1fcf}" height="500" itemRotation="0" frame="false" pagex="20.5">
+        <ComposerItem pagey="42" page="1" id="" lastValidViewScaleFactor="0.741578" positionMode="0" positionLock="false" x="20.5" y="42" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="700" outlineWidth="0.3" excludeFromExports="0" uuid="{ba8ae7e1-b883-461c-a96d-a679413f1fcf}" height="500" itemRotation="0" frame="false" pagex="20.5">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1379,7 +1223,7 @@
     </Composition>
     <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case460020020150216135921736" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="false"/>
   </Composer>
-  <Composer title="folio_erdf_A3_500" visible="0">
+  <Composer title="folio_erdf_A3_500" visible="1">
     <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1455,7 +1299,7 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="13.5" page="1" id="" lastValidViewScaleFactor="1.77897" positionMode="0" positionLock="false" x="17" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="300" outlineWidth="0.3" excludeFromExports="0" uuid="{007d1832-a5ab-4d12-937f-5ccaa589cf00}" height="220" itemRotation="0" frame="false" pagex="17">
+        <ComposerItem pagey="13.5" page="1" id="" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="17" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="300" outlineWidth="0.3" excludeFromExports="0" uuid="{007d1832-a5ab-4d12-937f-5ccaa589cf00}" height="220" itemRotation="0" frame="false" pagex="17">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1463,7 +1307,7 @@
     </Composition>
     <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'sampleqgis2','fid' ,'sampleqgis2.0' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case460020020150216135921736" singleFile="false" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="false"/>
   </Composer>
-  <Composer title="folio_erdf_A1_200_assemblage" visible="0">
+  <Composer title="folio_erdf_A1_200_assemblage" visible="1">
     <Composition gridVisible="1" printResolution="300" paperWidth="841" snapGridOffsetX="0.5" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="2" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="594" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1480,11 +1324,10 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Render" drawCanvasItems="true">
         <Extent ymin="5227195.8735630800947547" xmin="1377143.73643994121812284" ymax="5227695.87356358952820301" xmax="1377843.73644065507687628"/>
         <LayerSet>
           <Layer>case460020020150216135921736</Layer>
-          <Layer>scan_25_1720150216171355707</Layer>
         </LayerSet>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{fa7fe864-c3c9-47c2-bb8c-76d39da3cd60}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -1551,16 +1394,15 @@
           </symbol>
         </ComposerMapOverview>
         <AtlasMap scalingMode="0" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="180.5" y="12" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{487e8f59-5bfa-4ef6-9ec9-1283359f6b95}" height="100" itemRotation="0" frame="false" pagex="180.5">
+        <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.741578" positionMode="0" positionLock="false" x="180.5" y="12" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{487e8f59-5bfa-4ef6-9ec9-1283359f6b95}" height="100" itemRotation="0" frame="false" pagex="180.5">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Render" drawCanvasItems="true">
         <Extent ymin="5226195.87356206309050322" xmin="1375743.73643851303495467" ymax="5228695.87356461305171251" xmax="1379243.73644208326004446"/>
         <LayerSet>
           <Layer>case460020020150216135921736</Layer>
-          <Layer>scan_25_1720150216171355707</Layer>
         </LayerSet>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6692d61e-02df-4a46-858a-57712e776ec7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -1627,7 +1469,7 @@
           </symbol>
         </ComposerMapOverview>
         <AtlasMap scalingMode="0" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="20" y="12" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{6d396245-07f8-40b5-9efc-68b805a3769e}" height="100" itemRotation="0" frame="false" pagex="20">
+        <ComposerItem pagey="12" page="1" id="" lastValidViewScaleFactor="0.741578" positionMode="0" positionLock="false" x="20" y="12" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="140" outlineWidth="0.3" excludeFromExports="0" uuid="{6d396245-07f8-40b5-9efc-68b805a3769e}" height="100" itemRotation="0" frame="false" pagex="20">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
@@ -1769,7 +1611,7 @@
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Render" drawCanvasItems="true">
         <Extent ymin="5227519.73128267657011747" xmin="1377543.62254823953844607" ymax="5227619.73128277901560068" xmax="1377683.62254838249646127"/>
         <LayerSet/>
         <Grid/>
@@ -1829,15 +1671,16 @@
             <geographicflag>false</geographicflag>
           </spatialrefsys>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="1" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="132.75" page="1" id="" lastValidViewScaleFactor="0.781401" positionMode="0" positionLock="false" x="21.25" y="132.75" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="560" outlineWidth="1.5" excludeFromExports="0" uuid="{971cb77a-3808-40ff-b4fc-1744d81582ba}" height="400" itemRotation="0" frame="true" pagex="21.25">
+        <AtlasMap scalingMode="1" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="132.75" page="1" id="" lastValidViewScaleFactor="0.741578" positionMode="0" positionLock="false" x="21.25" y="132.75" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="560" outlineWidth="1.5" excludeFromExports="0" uuid="{971cb77a-3808-40ff-b4fc-1744d81582ba}" height="400" itemRotation="0" frame="true" pagex="21.25">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
     </Composition>
+    <Atlas hideCoverage="false" coverageLayer="empriseDeclarationQgis394620150326170348137" singleFile="false" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="false" sortFeatures="false"/>
   </Composer>
-  <Composer title="folio_erdf_A3_200" visible="0">
+  <Composer title="folio_A3_200" visible="1">
     <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1913,15 +1756,761 @@
           </markerStyle>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="13.5" page="1" id="map" lastValidViewScaleFactor="1.15451" positionMode="0" positionLock="false" x="15" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="390" outlineWidth="0.3" excludeFromExports="0" uuid="{d404977b-c996-4842-a3d5-64148027a93e}" height="270" itemRotation="0" frame="true" pagex="15">
+        <ComposerItem pagey="13.5" page="1" id="map" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="15" y="13.5" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="390" outlineWidth="0.3" excludeFromExports="0" uuid="{d404977b-c996-4842-a3d5-64148027a93e}" height="270" itemRotation="0" frame="true" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerMap>
     </Composition>
-    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))" coverageLayer="case4600200a320150217165914976" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
+    <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;--intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))&#xa;intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" coverageLayer="case4600200a320150217165914976" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
   </Composer>
-  <projectlayers layercount="69">
+  <Composer title="folio_A4_2000_Assemblage" visible="0">
+    <Composition gridVisible="0" printResolution="300" paperWidth="297" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="210" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+      <symbol alpha="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[%concat( 'Numéro du Patrimoine = ',  &quot;Name&quot;,  '\n', &quot;descriptio&quot;,'\n')%]" htmlState="0" halign="1">
+        <LabelFont description="Ubuntu,14,-1,5,63,0,0,0,0,0"/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="4.23981" page="1" id="Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="3.5" y="4.23981" visibility="1" zValue="13" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{b061ed02-d60f-45ad-8591-4fb626b2f730}" height="19.4312" itemRotation="0" frame="false" pagex="3.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[%concat( 'Quartier = ', &quot;Quartier¤&quot; ,'\n','Marché = ',    &quot;SchemaDir2&quot;  ,'\n', 'Fonction = ',&quot;SchemaDire&quot; )%]" htmlState="0" halign="1">
+        <LabelFont description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="20" page="1" id="Sous-Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="3.5" y="20" visibility="1" zValue="12" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{10447012-a03e-49c6-a0e1-334a057d70b0}" height="18.7049" itemRotation="0" frame="false" pagex="3.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="35" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5801458.96714438404887915" xmin="-138227.44738175367820077" ymax="5811396.50836510118097067" xmax="-123427.44736665768141393"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{7072d984-85a0-4d01-9f63-0705eb3de3f3}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <ComposerMapOverview frameMap="12" centered="0" inverted="1" uuid="{0b7418c5-e45f-4f14-9df4-aea8761abc95}" name="Aperçu 1" show="1" blendMode="3">
+          <symbol alpha="1" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="128,128,128,127"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,128,128,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="35.3435" page="1" id="mapScan3" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="3.5" y="35.3435" visibility="1" zValue="11" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="74.4651" outlineWidth="0.3" excludeFromExports="0" uuid="{23b8ab93-e6a8-4b74-b413-141b70c98fe6}" height="50" itemRotation="0" frame="false" pagex="3.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="12" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5806160.00011719949543476" xmin="-129521.96866093465359882" ymax="5810160.00012127961963415" xmax="-125521.96865685464581475"/>
+        <LayerSet>
+          <Layer>scan_ign_100000_l9320150209180634575</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{c95e6ac9-a246-4b40-8b23-86ff3bcf29d6}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <ComposerMapOverview frameMap="39" centered="0" inverted="1" uuid="{ae202a13-31ec-4a8f-80d4-85731d56e3ed}" name="Aperçu 1" show="1" blendMode="0">
+          <symbol alpha="1" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="128,128,128,127"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,128,128,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="40" page="1" id="mapScan2" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="88.55" y="40" visibility="1" zValue="10" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{1caf81bf-ecce-4456-aa7e-d75fc41a3e52}" height="40" itemRotation="0" frame="false" pagex="88.55">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="7" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5815575.00725283566862345" xmin="-124463.42857974871003535" ymax="5816575.00725385546684265" xmax="-123463.42857872870808933"/>
+        <LayerSet>
+          <Layer>scan_25_1720150209180704229</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{8b433d57-e3c9-482e-92d0-b18cdfc7cc74}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="40" page="1" id="mapScan1" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="133.5" y="40" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{88cacaf0-c8f3-4f0c-ac90-77f07e15a510}" height="40" itemRotation="0" frame="false" pagex="133.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="39" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5225090.51280158571898937" xmin="1378522.99442161084152758" ymax="5227090.51280362531542778" xmax="1380522.99442365090362728"/>
+        <LayerSet>
+          <Layer>population_comite_quartier20150204113459733</Layer>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>10718_RVB_complete_ECW_cc4620150209180609593</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{72c00d9e-41a4-4689-97af-537a2852bd71}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <ComposerMapOverview frameMap="7" centered="1" inverted="1" uuid="{a0c3e09c-b016-485e-bab3-4b0d48b99dc0}" name="Aperçu 1" show="1" blendMode="0">
+          <symbol alpha="1" type="fill" name="">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
+              <prop k="color" v="128,128,128,127"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="128,128,128,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </ComposerMapOverview>
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <ComposerItem pagey="85.3435" page="1" id="mapQuartier" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="3.5" y="85.3435" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{95fa64ce-45c3-4e81-98f1-e73eb206c93b}" height="40" itemRotation="0" frame="false" pagex="3.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="42" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5806025.0160184483975172" xmin="-128763.63943484230549075" ymax="5807025.01601946819573641" xmax="-127763.63943382230354473"/>
+        <LayerSet>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>Unités_foncières__étiquettes_20150213165414480</Layer>
+          <Layer>Unités_foncières20150213165412345</Layer>
+          <Layer>Établissements_publics20150213165410293</Layer>
+          <Layer>Numéros_de_voie20150213165408185</Layer>
+          <Layer>Objets_linéaires__étiquettes_20150213165406014</Layer>
+          <Layer>Objets_linéaires20150213165403899</Layer>
+          <Layer>Objets_ponctuels__étiquettes_20150213165401695</Layer>
+          <Layer>Objets_ponctuels20150213165359429</Layer>
+          <Layer>Surfaces__étiquettes_20150213165357189</Layer>
+          <Layer>Surfaces20150213165354894</Layer>
+          <Layer>Cours_d_eau__étiquettes_20150213165352464</Layer>
+          <Layer>Cours_d_eau20150213165349987</Layer>
+          <Layer>Murs__fossés__clotûres20150213165347487</Layer>
+          <Layer>Repères_géodésiques20150213165344965</Layer>
+          <Layer>Croix20150213165342497</Layer>
+          <Layer>Bornes20150213165339989</Layer>
+          <Layer>Lieux_dits___étiquettes_20150213165332287</Layer>
+          <Layer>Parcelles__étiquettes_20150213165327176</Layer>
+          <Layer>Parcelles20150213165324629</Layer>
+          <Layer>Bâti20150213165321973</Layer>
+          <Layer>Subdivisions_fiscales__étiquette_20150213165319199</Layer>
+          <Layer>Subdivisions_fiscales20150213165316475</Layer>
+          <Layer>Noms_de_voies20150213165311141</Layer>
+          <Layer>Voies__routes_et_chemins20150213165308618</Layer>
+          <Layer>parcelle_bf20150213163606118</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{31414437-9890-4215-bbd2-543c333a9dde}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="85" page="1" id="mapCadastre4" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="46.7008" y="85" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{35a496ed-1c14-42b1-aa37-f2ad9218f9f2}" height="40" itemRotation="0" frame="false" pagex="46.7008">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="41" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5806225.01601865328848362" xmin="-128563.63943463830219116" ymax="5806825.01601926516741514" xmax="-127963.63943402630684432"/>
+        <LayerSet>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>Unités_foncières__étiquettes_20150213165414480</Layer>
+          <Layer>Unités_foncières20150213165412345</Layer>
+          <Layer>Établissements_publics20150213165410293</Layer>
+          <Layer>Numéros_de_voie20150213165408185</Layer>
+          <Layer>Objets_linéaires__étiquettes_20150213165406014</Layer>
+          <Layer>Objets_linéaires20150213165403899</Layer>
+          <Layer>Objets_ponctuels__étiquettes_20150213165401695</Layer>
+          <Layer>Objets_ponctuels20150213165359429</Layer>
+          <Layer>Surfaces__étiquettes_20150213165357189</Layer>
+          <Layer>Surfaces20150213165354894</Layer>
+          <Layer>Cours_d_eau__étiquettes_20150213165352464</Layer>
+          <Layer>Cours_d_eau20150213165349987</Layer>
+          <Layer>Murs__fossés__clotûres20150213165347487</Layer>
+          <Layer>Repères_géodésiques20150213165344965</Layer>
+          <Layer>Croix20150213165342497</Layer>
+          <Layer>Bornes20150213165339989</Layer>
+          <Layer>Lieux_dits___étiquettes_20150213165332287</Layer>
+          <Layer>Parcelles__étiquettes_20150213165327176</Layer>
+          <Layer>Parcelles20150213165324629</Layer>
+          <Layer>Bâti20150213165321973</Layer>
+          <Layer>Subdivisions_fiscales__étiquette_20150213165319199</Layer>
+          <Layer>Subdivisions_fiscales20150213165316475</Layer>
+          <Layer>Noms_de_voies20150213165311141</Layer>
+          <Layer>Voies__routes_et_chemins20150213165308618</Layer>
+          <Layer>parcelle_bf20150213163606118</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{31414437-9890-4215-bbd2-543c333a9dde}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="85" page="1" id="mapCadastre3" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="88.55" y="85" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{a3d2bc21-fa86-4993-be71-0063a99a785d}" height="40" itemRotation="0" frame="false" pagex="88.55">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="17" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5806325.01602574158459902" xmin="-128463.63943453630781732" ymax="5806725.0160261495038867" xmax="-128063.63943412830121815"/>
+        <LayerSet>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>Unités_foncières__étiquettes_20150213165414480</Layer>
+          <Layer>Unités_foncières20150213165412345</Layer>
+          <Layer>Établissements_publics20150213165410293</Layer>
+          <Layer>Numéros_de_voie20150213165408185</Layer>
+          <Layer>Objets_linéaires__étiquettes_20150213165406014</Layer>
+          <Layer>Objets_linéaires20150213165403899</Layer>
+          <Layer>Objets_ponctuels__étiquettes_20150213165401695</Layer>
+          <Layer>Objets_ponctuels20150213165359429</Layer>
+          <Layer>Surfaces__étiquettes_20150213165357189</Layer>
+          <Layer>Surfaces20150213165354894</Layer>
+          <Layer>Cours_d_eau__étiquettes_20150213165352464</Layer>
+          <Layer>Cours_d_eau20150213165349987</Layer>
+          <Layer>Murs__fossés__clotûres20150213165347487</Layer>
+          <Layer>Repères_géodésiques20150213165344965</Layer>
+          <Layer>Croix20150213165342497</Layer>
+          <Layer>Bornes20150213165339989</Layer>
+          <Layer>Lieux_dits___étiquettes_20150213165332287</Layer>
+          <Layer>Parcelles__étiquettes_20150213165327176</Layer>
+          <Layer>Parcelles20150213165324629</Layer>
+          <Layer>Bâti20150213165321973</Layer>
+          <Layer>Subdivisions_fiscales__étiquette_20150213165319199</Layer>
+          <Layer>Subdivisions_fiscales20150213165316475</Layer>
+          <Layer>Noms_de_voies20150213165311141</Layer>
+          <Layer>Voies__routes_et_chemins20150213165308618</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{31414437-9890-4215-bbd2-543c333a9dde}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="85.3435" page="1" id="mapCadastre2" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="133.5" y="85.3435" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="40" outlineWidth="0.3" excludeFromExports="0" uuid="{56a94089-d9d8-47e6-8ff5-bed26688777f}" height="40" itemRotation="0" frame="false" pagex="133.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="40" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5806425.01602584309875965" xmin="-128363.63943443429889157" ymax="5806625.01602604705840349" xmax="-128163.6394342303101439"/>
+        <LayerSet>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>Unités_foncières__étiquettes_20150213165414480</Layer>
+          <Layer>Unités_foncières20150213165412345</Layer>
+          <Layer>Établissements_publics20150213165410293</Layer>
+          <Layer>Numéros_de_voie20150213165408185</Layer>
+          <Layer>Objets_linéaires__étiquettes_20150213165406014</Layer>
+          <Layer>Objets_linéaires20150213165403899</Layer>
+          <Layer>Objets_ponctuels__étiquettes_20150213165401695</Layer>
+          <Layer>Objets_ponctuels20150213165359429</Layer>
+          <Layer>Surfaces__étiquettes_20150213165357189</Layer>
+          <Layer>Surfaces20150213165354894</Layer>
+          <Layer>Cours_d_eau__étiquettes_20150213165352464</Layer>
+          <Layer>Cours_d_eau20150213165349987</Layer>
+          <Layer>Murs__fossés__clotûres20150213165347487</Layer>
+          <Layer>Repères_géodésiques20150213165344965</Layer>
+          <Layer>Croix20150213165342497</Layer>
+          <Layer>Bornes20150213165339989</Layer>
+          <Layer>Lieux_dits___étiquettes_20150213165332287</Layer>
+          <Layer>Parcelles__étiquettes_20150213165327176</Layer>
+          <Layer>Parcelles20150213165324629</Layer>
+          <Layer>Bâti20150213165321973</Layer>
+          <Layer>Subdivisions_fiscales__étiquette_20150213165319199</Layer>
+          <Layer>Subdivisions_fiscales20150213165316475</Layer>
+          <Layer>Noms_de_voies20150213165311141</Layer>
+          <Layer>Voies__routes_et_chemins20150213165308618</Layer>
+          <Layer>parcelle_bf20150213163606118</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{31414437-9890-4215-bbd2-543c333a9dde}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="3.77816" page="1" id="mapCadastre1" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="193.5" y="3.77816" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="100" outlineWidth="0.3" excludeFromExports="0" uuid="{2b347b0f-d383-47a1-af85-3875b6b90f6a}" height="100" itemRotation="0" frame="false" pagex="193.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerLegend symbolWidth="7" title="Légende" boxSpace="2" splitLayer="0" equalColumnWidth="0" map="40" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" legendFilterByMap="1" columnCount="1">
+        <styles>
+          <style marginBottom="2" name="title" font="Ubuntu,16,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="group" font="Ubuntu,14,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="subgroup" font="Ubuntu,12,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" name="symbol" font="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <style marginTop="2" marginLeft="2" name="symbolLabel" font="Ubuntu,12,-1,5,50,0,0,0,0,0"/>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-layer expanded="1" checked="Qt::Checked" id="parcelle_bf20150213163606118" name="parcelle_bf">
+            <customproperties>
+              <property key="legend/label-1" value="Physique55"/>
+              <property key="legend/title-style" value="hidden"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+        <ComposerItem pagey="4.76881" page="1" id="legendMapCadastre1" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="153.5" y="4.76881" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="26.9422" outlineWidth="0.3" excludeFromExports="0" uuid="{1a140db5-e099-4ebf-a68f-646e063379d6}" height="13.8" itemRotation="0" frame="false" pagex="153.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="13" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5808135.00011921301484108" xmin="-127621.96865899664408062" ymax="5808335.00011941697448492" xmax="-127421.96865879265533295"/>
+        <LayerSet>
+          <Layer>Synthese_copier20150205083715609</Layer>
+          <Layer>10718_RVB_complete_ECW_cc4620150209180609593</Layer>
+        </LayerSet>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{be4c3ebb-e995-4217-90ac-fa9dda25a5c3}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="area"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="106.869" page="1" id="mapOrtho1" lastValidViewScaleFactor="1.74478" positionMode="0" positionLock="false" x="193.5" y="106.869" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="100" outlineWidth="0.3" excludeFromExports="0" uuid="{9fcebb19-3d3e-4b7f-b505-36e570eaaafb}" height="100" itemRotation="0" frame="false" pagex="193.5">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" contentFont="Ubuntu,10,-1,5,50,0,0,0,0,0" resizeMode="0" filterFeatures="false" featureFilter="" emptyTableMode="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="1" vectorLayer="17_numerique20150217175714652" composerMap="17" headerHAlignment="0" headerFont="Ubuntu,12,-1,5,75,0,0,0,0,0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="0.6" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.2" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+        <displayColumns>
+          <column width="0" attribute="Name" sortByRank="0" hAlignment="1" heading="Name" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" attribute="descriptio" sortByRank="0" hAlignment="1" heading="descriptio" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+        </displayColumns>
+        <ComposerFrame sectionWidth="34.8375" sectionHeight="49.9778" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="130" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="3.5" y="130" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="34.8375" outlineWidth="0.3" excludeFromExports="0" uuid="{5e3260e0-63f3-413d-ad6e-d5cb6cdfb326}" height="49.9778" itemRotation="0" frame="false" pagex="3.5">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          </ComposerItem>
+        </ComposerFrame>
+      </ComposerAttributeTableV2>
+    </Composition>
+  </Composer>
+  <projectlayers layercount="68">
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>17_numerique20150217175714652</id>
       <datasource>dbname='fibreoptique' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' srid=2154 type=LINESTRING table="sig"."17_numerique" (wkb_geometry) sql=</datasource>
@@ -11438,7 +12027,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1100" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1100" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Unités_foncières20150218175020836</id>
       <datasource>dbname='cadlr' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' table="sig"."geo_parcelle" (geom_uf) sql=</datasource>
       <title></title>
@@ -11539,7 +12128,7 @@
               <prop k="offset_map_unit_scale" v="0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="200,200,200,255"/>
-              <prop k="outline_style" v="dash"/>
+              <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.7"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="no"/>
@@ -11564,12 +12153,17 @@
         <property key="labeling/bufferNoFill" value="false"/>
         <property key="labeling/bufferSize" value="1"/>
         <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
         <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="false"/>
         <property key="labeling/dist" value="0"/>
         <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
         <property key="labeling/enabled" value="false"/>
         <property key="labeling/fieldName" value=""/>
         <property key="labeling/fontBold" value="true"/>
@@ -11582,13 +12176,17 @@
         <property key="labeling/fontMinPixelSize" value="3"/>
         <property key="labeling/fontSize" value="11"/>
         <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
         <property key="labeling/fontWeight" value="75"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
         <property key="labeling/labelPerPart" value="false"/>
         <property key="labeling/leftDirectionSymbol" value="&lt;"/>
         <property key="labeling/limitNumLabels" value="false"/>
@@ -11609,6 +12207,10 @@
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
         <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceUnit" value="2"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
         <property key="labeling/scaleMax" value="10000000"/>
@@ -11622,9 +12224,13 @@
         <property key="labeling/shadowOffsetAngle" value="135"/>
         <property key="labeling/shadowOffsetDist" value="1"/>
         <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
         <property key="labeling/shadowOffsetUnits" value="1"/>
         <property key="labeling/shadowRadius" value="1.5"/>
         <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
         <property key="labeling/shadowRadiusUnits" value="1"/>
         <property key="labeling/shadowScale" value="100"/>
         <property key="labeling/shadowTransparency" value="30"/>
@@ -11635,6 +12241,8 @@
         <property key="labeling/shapeBorderColorG" value="128"/>
         <property key="labeling/shapeBorderColorR" value="128"/>
         <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
         <property key="labeling/shapeBorderWidthUnits" value="1"/>
         <property key="labeling/shapeDraw" value="false"/>
         <property key="labeling/shapeFillColorA" value="255"/>
@@ -11642,15 +12250,21 @@
         <property key="labeling/shapeFillColorG" value="255"/>
         <property key="labeling/shapeFillColorR" value="255"/>
         <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
         <property key="labeling/shapeOffsetUnits" value="1"/>
         <property key="labeling/shapeOffsetX" value="0"/>
         <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
         <property key="labeling/shapeRadiiUnits" value="1"/>
         <property key="labeling/shapeRadiiX" value="0"/>
         <property key="labeling/shapeRadiiY" value="0"/>
         <property key="labeling/shapeRotation" value="0"/>
         <property key="labeling/shapeRotationType" value="0"/>
         <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
         <property key="labeling/shapeSizeType" value="0"/>
         <property key="labeling/shapeSizeUnits" value="1"/>
         <property key="labeling/shapeSizeX" value="0"/>
@@ -15656,101 +16270,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>empriseDeclarationQgis20150218180524017</id>
-      <datasource>/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/empriseDeclarationQgis.gml</datasource>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>empriseDeclaration</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs</proj4>
-          <srsid>3307</srsid>
-          <srid>4171</srid>
-          <authid>EPSG:4171</authid>
-          <description>RGF93</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="UTF-8">ogr</provider>
-      <previewExpression>COALESCE( "fid", '&lt;NULL>' )</previewExpression>
-      <vectorjoins/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
-        <symbols>
-          <symbol alpha="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="206,80,212,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="area"/>
-      </renderer-v2>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>fid</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Étiquette"/>
-        <family fieldname="" name="Ubuntu"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <editform></editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
-      <editorlayout>generatedlayout</editorlayout>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-    </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>empriseDeclarationQgis394620150326170348137</id>
       <datasource>/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/empriseDeclarationQgis3946.shp</datasource>
       <title></title>
@@ -15772,7 +16292,7 @@
         </spatialrefsys>
       </srs>
       <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "fid", '&lt;NULL>' )</previewExpression>
       <vectorjoins/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -15785,26 +16305,168 @@
       </edittypes>
       <renderer-v2 symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" type="fill" name="0">
+          <symbol alpha="0.294118" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="244,125,171,255"/>
+              <prop k="color" v="195,2,253,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+              <prop k="outline_color" v="255,0,0,255"/>
+              <prop k="outline_style" v="dash"/>
+              <prop k="outline_width" v="2"/>
+              <prop k="outline_width_unit" v="MapUnit"/>
+              <prop k="style" v="dense4"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
         <sizescale scalemethod="area"/>
       </renderer-v2>
-      <customproperties/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value="fid"/>
+        <property key="labeling/fontBold" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Medium"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="0"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceUnit" value="2"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+      </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
@@ -21904,6 +22566,47 @@
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <id>scan2520150327142925958</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=scan25&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/scan25</datasource>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>scan25</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>slt_armoire20150217175839863</id>
       <datasource>dbname='feuxtricolores' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='id_armoire' srid=2154 type=POINT table="sig"."slt_armoire" (wkb_geometry) sql=</datasource>
@@ -23214,142 +23917,6 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>zonages20150219114327206</id>
-      <datasource>/home/fred/geodata/vecteur/si17/zonage_topo/zonage_topo/zonages.shp</datasource>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>zonages</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>1765</srsid>
-          <srid>3946</srid>
-          <authid>EPSG:3946</authid>
-          <description>RGF93 / CC46</description>
-          <projectionacronym>lcc</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">ogr</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="insee">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="niveau_">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="typevoie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="nomvoie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="numrec">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="longeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="gid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 symbollevels="0" type="singleSymbol">
-        <symbols>
-          <symbol alpha="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="55,129,6,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="area"/>
-      </renderer-v2>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>gid</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Étiquette"/>
-        <family fieldname="" name="Ubuntu"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <editform></editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
-      <editorlayout>generatedlayout</editorlayout>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions/>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="insee">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="niveau_">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="typevoie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="nomvoie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="numrec">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="longeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="gid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-    </maplayer>
     <maplayer minimumScale="0" maximumScale="2500" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Établissements_publics20150218175019634</id>
       <datasource>dbname='cadlr' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tid' table="sig"."geo_label" (geom) sql="ogr_obj_lnk_layer" = 'VOIEP_id'</datasource>
@@ -23811,7 +24378,6 @@
         <value>eau_vanne20150217175404196</value>
         <value>eau_ventouse20150217175404255</value>
         <value>eau_vidange20150217175404275</value>
-        <value>empriseDeclarationQgis20150218180524017</value>
         <value>empriseDeclarationQgis394620150326170348137</value>
         <value>ep_bassin_orage20150217171304632</value>
         <value>ep_branchement20150217171304701</value>
@@ -23837,7 +24403,6 @@
         <value>slt_cable20150217175839967</value>
         <value>slt_regard20150217175839982</value>
         <value>slt_support_feu20150217175840000</value>
-        <value>zonages20150219114327206</value>
         <value>Établissements_publics20150218175019634</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
@@ -23901,20 +24466,16 @@
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">all_layers</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <LayerSnappingToleranceUnitList type="QStringList">
-        <value>2</value>
-        <value>2</value>
         <value>2</value>
         <value>2</value>
         <value>2</value>
@@ -24043,14 +24604,12 @@
         <value>to_vertex</value>
         <value>to_vertex</value>
         <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
-        <value>to_vertex</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">2</DefaultSnapTolerance>
@@ -24096,31 +24655,29 @@
         <value>2.000000</value>
         <value>2.000000</value>
         <value>0.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
+        <value>2.000000</value>
         <value>0.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
-        <value>2.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
       </LayerSnappingToleranceList>
