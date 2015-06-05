@@ -2,30 +2,21 @@
 Introduction
 ************
 
-Chaque DICT contient un polygone d'emprise au format gml.
+Les dt-dict sont des documents qui sont échangés entre différents acteurs.
+L'automatisation des echanges doit être étudié.
+Cette automatisation sera particulierement importante pour la génération de plan.
 
-Ce polygone d'emprise va nous servir pour l'automatisation de la réponse.
+Les echanges entre acteurs
+==========================
+La compréhension de ces différents echanges entre acteurs peut être vu au chapitre 1 :
+les différents diagrammes d'activités y sont détaillés
 
-#. Copier/coller ce code xml dans un fichier que l'on appelle sample.gml
-#. Modifier ce fichier sample.gml de façon a ce qu'il fonctionne avec ogr
-#. Utiliser cette emprise pour la génération d'un plan
-
-Modification du fichier gml
+L'automatisation des taches
 ===========================
+Tout ce qui doit être automatisé le sera. Cette partie sera detaillé au chapitre 2, notamment avec http://activiti.org/ et alfresco
 
-Le fichier qui contient le presse-papier a ete enregistré sous sample.gml
+L'automatisation de la génération de plan
+=========================================
+Cette automatisation est explique au chapitre 3
 
-Sa syntaxe brute est la suivante :
-Il contient des "scories" (retour chariot) et sa syntaxe n'est pas reconnu par ogr2ogr
 
-Les fichiers qui sont reconnu par ogr sont :
-sampleqgis.gml
-sampleqgis.xsd
-
-le fichier xsd définit une featurecollection, une entité "emprise" et une geometryProperty
-
-Il faut donc passer du fichier sample.gml au fichier sampleqgis.gml
-
-.. code::
-  
-  ogrinfo sampleqgis.gml emprise
