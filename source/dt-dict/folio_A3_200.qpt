@@ -1,4 +1,4 @@
-<Composer title="folio_A3_0200" visible="1">
+<Composer title="folio_A3_200" visible="1">
  <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
   <symbol alpha="1" clip_to_extent="1" type="fill" name="">
    <layer pass="0" class="SimpleFill" locked="0">
@@ -24,24 +24,24 @@
    </layer>
   </symbol>
   <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="14.416" file="/home/fred/geodata/autres/qgisModele/Logo ville.jpg" pictureHeight="15.0027" mapId="-1" anchorPoint="0">
-   <ComposerItem pagey="-0.003" page="1" id="logo" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="405" y="-0.003" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="14.416" outlineWidth="0.3" excludeFromExports="0" uuid="{92623832-24f6-47b2-baa3-aabeafc587e2}" height="15.003" itemRotation="0" frame="false" pagex="405">
+   <ComposerItem pagey="-0.003" page="1" id="logo" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="405" y="-0.003" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="14.416" outlineWidth="0.3" excludeFromExports="0" uuid="{6190b776-bb76-4d3a-a3e3-f7aaca4271bf}" height="15.003" itemRotation="0" frame="false" pagex="405">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
     <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
    </ComposerItem>
   </ComposerPicture>
   <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[% concat('Plan édité le ',format_date(  now() ,'dd/MM/yyyy'))%]" htmlState="0" halign="2">
-   <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0"/>
+   <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0" style=""/>
    <FontColor red="0" blue="0" green="0"/>
-   <ComposerItem pagey="3" page="1" id="date" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="359.416" y="3" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45.584" outlineWidth="0.3" excludeFromExports="0" uuid="{22098a56-03f3-41e7-b19c-17918e32f819}" height="7" itemRotation="0" frame="false" pagex="359.416">
+   <ComposerItem pagey="3" page="1" id="date" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="359.416" y="3" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45.584" outlineWidth="0.3" excludeFromExports="0" uuid="{8ca06303-c351-4546-8b1a-815573477db8}" height="7" itemRotation="0" frame="false" pagex="359.416">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerLabel>
   <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[%concat('case : ', 'id')&#xa;-- % concat('case : ', attribute(  $currentfeature ,'id'))%%]" htmlState="0" halign="1">
-   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
+   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0" style=""/>
    <FontColor red="0" blue="0" green="0"/>
-   <ComposerItem pagey="1" page="1" id="titre" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="15" y="1" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="87.178" outlineWidth="0.3" excludeFromExports="0" uuid="{2d840c54-db1c-4e98-ade5-71b0e3b3e5d5}" height="9" itemRotation="0" frame="false" pagex="15">
+   <ComposerItem pagey="1" page="1" id="titre" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="15" y="1" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="87.178" outlineWidth="0.3" excludeFromExports="0" uuid="{4e540359-72f5-4103-973b-31593d29dc99}" height="9" itemRotation="0" frame="false" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
@@ -82,7 +82,7 @@
     <Layer>Commune20150218174945304</Layer>
    </LayerSet>
    <Grid/>
-   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
     <lineStyle>
      <symbol alpha="1" clip_to_extent="1" type="line" name="">
       <layer pass="0" class="SimpleLine" locked="0">
@@ -143,8 +143,9 @@
       </layer>
      </symbol>
     </markerStyle>
+    <annotationFontProperties description="Ubuntu,9,-1,5,75,1,0,0,0,0" style=""/>
    </ComposerMapGrid>
-   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
     <lineStyle>
      <symbol alpha="1" clip_to_extent="1" type="line" name="">
       <layer pass="0" class="SimpleLine" locked="0">
@@ -205,33 +206,36 @@
       </layer>
      </symbol>
     </markerStyle>
+    <annotationFontProperties description="Ubuntu,9,-1,5,75,1,0,0,0,0" style=""/>
    </ComposerMapGrid>
    <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-   <ComposerItem pagey="13.5" page="1" id="map" lastValidViewScaleFactor="2.60008" positionMode="0" positionLock="false" x="15" y="13.5" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="390" outlineWidth="0.3" excludeFromExports="0" uuid="{d404977b-c996-4842-a3d5-64148027a93e}" height="270" itemRotation="0" frame="true" pagex="15">
+   <ComposerItem pagey="13.5" page="1" id="map" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="15" y="13.5" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="390" outlineWidth="0.3" excludeFromExports="0" uuid="{2aac1221-f7e2-4ba8-83d1-7686e03791a6}" height="270" itemRotation="0" frame="true" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerMap>
-  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,9,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
+   <scaleBarFont description="Ubuntu,9,-1,5,63,0,0,0,0,0" style=""/>
    <fillColor alpha="255" red="0" blue="0" green="0"/>
    <fillColor2 alpha="255" red="255" blue="255" green="255"/>
    <strokeColor alpha="255" red="0" blue="0" green="0"/>
    <textColor alpha="255" red="0" blue="0" green="0"/>
-   <ComposerItem pagey="285.5" page="1" id="echelleNumerique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15" y="285.5" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0.3" excludeFromExports="0" uuid="{60a9b2c5-1063-4b5c-879a-cb14f41ae234}" height="8" itemRotation="0" frame="false" pagex="15">
+   <ComposerItem pagey="285.5" page="1" id="echelleNumerique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15" y="285.5" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0.3" excludeFromExports="0" uuid="{a4ec6628-63f9-41c7-aba8-0e04d8693575}" height="8" itemRotation="0" frame="false" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerScaleBar>
-  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,8,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
+  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
+   <scaleBarFont description="Ubuntu,8,-1,5,63,0,0,0,0,0" style=""/>
    <fillColor alpha="255" red="0" blue="0" green="0"/>
    <fillColor2 alpha="255" red="255" blue="255" green="255"/>
    <strokeColor alpha="255" red="0" blue="0" green="0"/>
    <textColor alpha="255" red="0" blue="0" green="0"/>
-   <ComposerItem pagey="285.5" page="1" id="echelleGraphique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="35" y="285.5" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="208.492" outlineWidth="0.3" excludeFromExports="0" uuid="{72788ad5-da14-43f1-84b0-cce15117967f}" height="8" itemRotation="0" frame="false" pagex="35">
+   <ComposerItem pagey="285.5" page="1" id="echelleGraphique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="35" y="285.5" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="208.492" outlineWidth="0.3" excludeFromExports="0" uuid="{6e2b9fee-1311-4ae1-ac0a-9b5d163a0dc4}" height="8" itemRotation="0" frame="false" pagex="35">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerScaleBar>
  </Composition>
- <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;--intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))&#xa;intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" coverageLayer="" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
+ <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;--intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))&#xa;intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" coverageLayer="empriseDeclarationQgis394620150326170348137" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
 </Composer>
