@@ -1,0 +1,244 @@
+<Composer title="A4_00200" visible="1">
+ <Composition gridVisible="1" printResolution="300" paperWidth="297" snapGridOffsetX="3.5" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="210" smartGuides="1" printAsRaster="1" generateWorldFile="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+    <effect enabled="0" type="effectStack">
+     <effect type="drawSource">
+      <prop k="blend_mode" v="0"/>
+      <prop k="draw_mode" v="2"/>
+      <prop k="enabled" v="1"/>
+      <prop k="transparency" v="0"/>
+     </effect>
+    </effect>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[%concat('case : ', 'id')&#xa;-- % concat('case : ', attribute(  $currentfeature ,'id'))%%]" htmlState="0" halign="1">
+   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="8" page="1" id="titre" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="23.5" y="8" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90" outlineWidth="0.3" excludeFromExports="0" uuid="{23b6f61f-1f1a-46d2-b1e6-8e5e4bbd70dd}" height="9" itemRotation="0" frame="false" pagex="23.5">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[% concat( 'Folio : ', $feature ,' / ', $numfeatures )%]" htmlState="0" halign="1">
+   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="8" page="1" id="page" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="113.5" y="8" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90" outlineWidth="0.3" excludeFromExports="0" uuid="{feb90918-b7a1-424f-8364-a7e17221499b}" height="9" itemRotation="0" frame="false" pagex="113.5">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="5227551.79476506169885397" xmin="1377588.62254828540608287" ymax="5227585.79476509615778923" xmax="1377638.62254833662882447"/>
+   <LayerSet>
+    <Layer>empriseDeclarationQgis394620150326170348137</Layer>
+    <Layer>Unités_foncières__étiquettes_20150218175022001</Layer>
+    <Layer>Unités_foncières20150218175020836</Layer>
+    <Layer>Établissements_publics20150218175019634</Layer>
+    <Layer>Numéros_de_voie20150218175018432</Layer>
+    <Layer>Objets_linéaires__étiquettes_20150218175017383</Layer>
+    <Layer>Objets_linéaires20150218175016267</Layer>
+    <Layer>Objets_ponctuels__étiquettes_20150218175015188</Layer>
+    <Layer>Objets_ponctuels20150218175014106</Layer>
+    <Layer>Surfaces__étiquettes_20150218175012963</Layer>
+    <Layer>Surfaces20150218175011842</Layer>
+    <Layer>Cours_d_eau__étiquettes_20150218175010724</Layer>
+    <Layer>Cours_d_eau20150218175009636</Layer>
+    <Layer>Murs__fossés__clotûres20150218175008502</Layer>
+    <Layer>Repères_géodésiques20150218175007335</Layer>
+    <Layer>Croix20150218175006170</Layer>
+    <Layer>Bornes20150218175004952</Layer>
+    <Layer>Sections__étiquettes_20150218175003663</Layer>
+    <Layer>Sections20150218175002429</Layer>
+    <Layer>Lieux_dits___étiquettes_20150218175000886</Layer>
+    <Layer>Lieux_dits20150218174959430</Layer>
+    <Layer>Parcelles__étiquettes_20150218174957922</Layer>
+    <Layer>Parcelles20150218174956462</Layer>
+    <Layer>Bâti20150218174954929</Layer>
+    <Layer>Subdivisions_fiscales__étiquette_20150218174953376</Layer>
+    <Layer>Subdivisions_fiscales20150218174951791</Layer>
+    <Layer>Secteurs20150218174950257</Layer>
+    <Layer>Noms_de_voies20150218174948625</Layer>
+    <Layer>Voies__routes_et_chemins20150218174947000</Layer>
+    <Layer>Commune20150218174945304</Layer>
+   </LayerSet>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+   <ComposerItem pagey="25" page="1" id="map" lastValidViewScaleFactor="2.01693" positionMode="0" positionLock="false" x="23.5" y="25" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{5a365629-fb31-4ca2-8563-30d922e70f60}" height="170" itemRotation="0" frame="true" pagex="23.5">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="49.996" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,11,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="197" page="1" id="echelleNumerique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="23.5" y="197" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0.3" excludeFromExports="0" uuid="{9bf17f09-a909-44eb-a63e-848cc20377b2}" height="8" itemRotation="0" frame="false" pagex="23.5">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="49.996" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,8,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="197" page="1" id="echelleGraphique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="43.5" y="197" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="208.492" outlineWidth="0.3" excludeFromExports="0" uuid="{08935db0-894e-404f-8274-c17784be94ac}" height="8" itemRotation="0" frame="false" pagex="43.5">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[% concat('Plan édité le ',format_date(  now() ,'dd/MM/yyyy'))%]" htmlState="0" halign="2">
+   <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="10" page="1" id="date" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="211.416" y="10" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45.584" outlineWidth="0.3" excludeFromExports="0" uuid="{9837116a-a480-412f-bbd3-d2f423e2565c}" height="7" itemRotation="0" frame="false" pagex="211.416">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="14.416" file="/home/fred/geodata/autres/qgisModele/Logo ville.jpg" pictureHeight="15.0027" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="4.997" page="1" id="logo" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="259.084" y="4.997" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="14.416" outlineWidth="0.3" excludeFromExports="0" uuid="{0da0366a-0223-44b9-983d-9f713c7dc864}" height="15.003" itemRotation="0" frame="false" pagex="259.084">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+   </ComposerItem>
+  </ComposerPicture>
+ </Composition>
+ <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;--intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))&#xa;intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" coverageLayer="" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
+</Composer>

@@ -1,0 +1,875 @@
+<Composer title="A3_00200" visible="1">
+ <Composition gridVisible="1" printResolution="300" paperWidth="420" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="1" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
+  <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+   <layer pass="0" class="SimpleFill" locked="0">
+    <prop k="border_width_map_unit_scale" v="0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="0,0,0,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+    <effect enabled="0" type="effectStack">
+     <effect type="drawSource">
+      <prop k="blend_mode" v="0"/>
+      <prop k="draw_mode" v="2"/>
+      <prop k="enabled" v="1"/>
+      <prop k="transparency" v="0"/>
+     </effect>
+    </effect>
+   </layer>
+  </symbol>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="[%concat('case : ', 'id')&#xa;-- % concat('case : ', attribute(  $currentfeature ,'id'))%%]" htmlState="0" halign="4">
+   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="13" page="1" id="titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="25" y="13" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90" outlineWidth="0.3" excludeFromExports="0" uuid="{dda90423-fe1a-4623-a257-4464c564e6d1}" height="9" itemRotation="0" frame="false" pagex="25">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerLabel valign="128" marginX="1" marginY="1" labelText="[% concat( 'Folio : ', $feature ,' / ', $numfeatures )%]" htmlState="0" halign="4">
+   <LabelFont description="Ubuntu,16,-1,5,63,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="24" page="1" id="page" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="25" y="24" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="90" outlineWidth="0.3" excludeFromExports="0" uuid="{5d7f33ef-3cac-4075-8f27-9e5a93174b75}" height="9" itemRotation="0" frame="false" pagex="25">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="5227542.27476505190134048" xmin="1377574.62254827120341361" ymax="5227591.91112873889505863" xmax="1377652.62254835083149374"/>
+   <LayerSet>
+    <Layer>empriseDeclarationQgis394620150326170348137</Layer>
+    <Layer>Unités_foncières__étiquettes_20150218175022001</Layer>
+    <Layer>Unités_foncières20150218175020836</Layer>
+    <Layer>Établissements_publics20150218175019634</Layer>
+    <Layer>Numéros_de_voie20150218175018432</Layer>
+    <Layer>Objets_linéaires__étiquettes_20150218175017383</Layer>
+    <Layer>Objets_linéaires20150218175016267</Layer>
+    <Layer>Objets_ponctuels__étiquettes_20150218175015188</Layer>
+    <Layer>Objets_ponctuels20150218175014106</Layer>
+    <Layer>Surfaces__étiquettes_20150218175012963</Layer>
+    <Layer>Surfaces20150218175011842</Layer>
+    <Layer>Cours_d_eau__étiquettes_20150218175010724</Layer>
+    <Layer>Cours_d_eau20150218175009636</Layer>
+    <Layer>Murs__fossés__clotûres20150218175008502</Layer>
+    <Layer>Repères_géodésiques20150218175007335</Layer>
+    <Layer>Croix20150218175006170</Layer>
+    <Layer>Bornes20150218175004952</Layer>
+    <Layer>Sections__étiquettes_20150218175003663</Layer>
+    <Layer>Sections20150218175002429</Layer>
+    <Layer>Lieux_dits___étiquettes_20150218175000886</Layer>
+    <Layer>Lieux_dits20150218174959430</Layer>
+    <Layer>Parcelles__étiquettes_20150218174957922</Layer>
+    <Layer>Parcelles20150218174956462</Layer>
+    <Layer>Bâti20150218174954929</Layer>
+    <Layer>Subdivisions_fiscales__étiquette_20150218174953376</Layer>
+    <Layer>Subdivisions_fiscales20150218174951791</Layer>
+    <Layer>Secteurs20150218174950257</Layer>
+    <Layer>Noms_de_voies20150218174948625</Layer>
+    <Layer>Voies__routes_et_chemins20150218174947000</Layer>
+    <Layer>Commune20150218174945304</Layer>
+   </LayerSet>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+   <ComposerItem pagey="43" page="1" id="mapSituation1" lastValidViewScaleFactor="2.74152" positionMode="0" positionLock="false" x="15" y="43" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{8901503c-0e30-4615-9560-3022c1c91957}" height="70" itemRotation="0" frame="true" pagex="15">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="5227542.27476505190134048" xmin="1377574.62254827120341361" ymax="5227591.91112873889505863" xmax="1377652.62254835083149374"/>
+   <LayerSet>
+    <Layer>empriseDeclarationQgis394620150326170348137</Layer>
+    <Layer>Unités_foncières__étiquettes_20150218175022001</Layer>
+    <Layer>Unités_foncières20150218175020836</Layer>
+    <Layer>Établissements_publics20150218175019634</Layer>
+    <Layer>Numéros_de_voie20150218175018432</Layer>
+    <Layer>Objets_linéaires__étiquettes_20150218175017383</Layer>
+    <Layer>Objets_linéaires20150218175016267</Layer>
+    <Layer>Objets_ponctuels__étiquettes_20150218175015188</Layer>
+    <Layer>Objets_ponctuels20150218175014106</Layer>
+    <Layer>Surfaces__étiquettes_20150218175012963</Layer>
+    <Layer>Surfaces20150218175011842</Layer>
+    <Layer>Cours_d_eau__étiquettes_20150218175010724</Layer>
+    <Layer>Cours_d_eau20150218175009636</Layer>
+    <Layer>Murs__fossés__clotûres20150218175008502</Layer>
+    <Layer>Repères_géodésiques20150218175007335</Layer>
+    <Layer>Croix20150218175006170</Layer>
+    <Layer>Bornes20150218175004952</Layer>
+    <Layer>Sections__étiquettes_20150218175003663</Layer>
+    <Layer>Sections20150218175002429</Layer>
+    <Layer>Lieux_dits___étiquettes_20150218175000886</Layer>
+    <Layer>Lieux_dits20150218174959430</Layer>
+    <Layer>Parcelles__étiquettes_20150218174957922</Layer>
+    <Layer>Parcelles20150218174956462</Layer>
+    <Layer>Bâti20150218174954929</Layer>
+    <Layer>Subdivisions_fiscales__étiquette_20150218174953376</Layer>
+    <Layer>Subdivisions_fiscales20150218174951791</Layer>
+    <Layer>Secteurs20150218174950257</Layer>
+    <Layer>Noms_de_voies20150218174948625</Layer>
+    <Layer>Voies__routes_et_chemins20150218174947000</Layer>
+    <Layer>Commune20150218174945304</Layer>
+   </LayerSet>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+   <ComposerItem pagey="128" page="1" id="mapSituation2" lastValidViewScaleFactor="2.74152" positionMode="0" positionLock="false" x="15" y="128" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{eb161430-d871-4508-9af2-710dc86334e1}" height="70" itemRotation="0" frame="true" pagex="15">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerMap mapRotation="0" keepLayerSet="true" id="3" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="5227542.27476505190134048" xmin="1377574.62254827120341361" ymax="5227591.91112873889505863" xmax="1377652.62254835083149374"/>
+   <LayerSet>
+    <Layer>empriseDeclarationQgis394620150326170348137</Layer>
+    <Layer>Unités_foncières__étiquettes_20150218175022001</Layer>
+    <Layer>Unités_foncières20150218175020836</Layer>
+    <Layer>Établissements_publics20150218175019634</Layer>
+    <Layer>Numéros_de_voie20150218175018432</Layer>
+    <Layer>Objets_linéaires__étiquettes_20150218175017383</Layer>
+    <Layer>Objets_linéaires20150218175016267</Layer>
+    <Layer>Objets_ponctuels__étiquettes_20150218175015188</Layer>
+    <Layer>Objets_ponctuels20150218175014106</Layer>
+    <Layer>Surfaces__étiquettes_20150218175012963</Layer>
+    <Layer>Surfaces20150218175011842</Layer>
+    <Layer>Cours_d_eau__étiquettes_20150218175010724</Layer>
+    <Layer>Cours_d_eau20150218175009636</Layer>
+    <Layer>Murs__fossés__clotûres20150218175008502</Layer>
+    <Layer>Repères_géodésiques20150218175007335</Layer>
+    <Layer>Croix20150218175006170</Layer>
+    <Layer>Bornes20150218175004952</Layer>
+    <Layer>Sections__étiquettes_20150218175003663</Layer>
+    <Layer>Sections20150218175002429</Layer>
+    <Layer>Lieux_dits___étiquettes_20150218175000886</Layer>
+    <Layer>Lieux_dits20150218174959430</Layer>
+    <Layer>Parcelles__étiquettes_20150218174957922</Layer>
+    <Layer>Parcelles20150218174956462</Layer>
+    <Layer>Bâti20150218174954929</Layer>
+    <Layer>Subdivisions_fiscales__étiquette_20150218174953376</Layer>
+    <Layer>Subdivisions_fiscales20150218174951791</Layer>
+    <Layer>Secteurs20150218174950257</Layer>
+    <Layer>Noms_de_voies20150218174948625</Layer>
+    <Layer>Voies__routes_et_chemins20150218174947000</Layer>
+    <Layer>Commune20150218174945304</Layer>
+   </LayerSet>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+   <ComposerItem pagey="213" page="1" id="mapSituation3" lastValidViewScaleFactor="2.74152" positionMode="0" positionLock="false" x="15" y="213" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{f38e881d-89f2-4dd7-9232-b740b4bbfa02}" height="70" itemRotation="0" frame="true" pagex="15">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Render" drawCanvasItems="true">
+   <Extent ymin="5227542.27476505190134048" xmin="1377574.62254827120341361" ymax="5227595.31476510595530272" xmax="1377652.62254835083149374"/>
+   <LayerSet>
+    <Layer>empriseDeclarationQgis394620150326170348137</Layer>
+    <Layer>Unités_foncières__étiquettes_20150218175022001</Layer>
+    <Layer>Unités_foncières20150218175020836</Layer>
+    <Layer>Établissements_publics20150218175019634</Layer>
+    <Layer>Numéros_de_voie20150218175018432</Layer>
+    <Layer>Objets_linéaires__étiquettes_20150218175017383</Layer>
+    <Layer>Objets_linéaires20150218175016267</Layer>
+    <Layer>Objets_ponctuels__étiquettes_20150218175015188</Layer>
+    <Layer>Objets_ponctuels20150218175014106</Layer>
+    <Layer>Surfaces__étiquettes_20150218175012963</Layer>
+    <Layer>Surfaces20150218175011842</Layer>
+    <Layer>Cours_d_eau__étiquettes_20150218175010724</Layer>
+    <Layer>Cours_d_eau20150218175009636</Layer>
+    <Layer>Murs__fossés__clotûres20150218175008502</Layer>
+    <Layer>Repères_géodésiques20150218175007335</Layer>
+    <Layer>Croix20150218175006170</Layer>
+    <Layer>Bornes20150218175004952</Layer>
+    <Layer>Sections__étiquettes_20150218175003663</Layer>
+    <Layer>Sections20150218175002429</Layer>
+    <Layer>Lieux_dits___étiquettes_20150218175000886</Layer>
+    <Layer>Lieux_dits20150218174959430</Layer>
+    <Layer>Parcelles__étiquettes_20150218174957922</Layer>
+    <Layer>Parcelles20150218174956462</Layer>
+    <Layer>Bâti20150218174954929</Layer>
+    <Layer>Subdivisions_fiscales__étiquette_20150218174953376</Layer>
+    <Layer>Subdivisions_fiscales20150218174951791</Layer>
+    <Layer>Secteurs20150218174950257</Layer>
+    <Layer>Noms_de_voies20150218174948625</Layer>
+    <Layer>Voies__routes_et_chemins20150218174947000</Layer>
+    <Layer>Commune20150218174945304</Layer>
+   </LayerSet>
+   <Grid/>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{03d13fba-fc6c-4fa2-aec9-8305a1e1c043}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="20" gridFrameSideFlags="15" intervalY="20" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0200" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="square"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationFont="Ubuntu,9,-1,5,75,1,0,0,0,0" annotationPrecision="0" showAnnotation="1" topFrameDivisions="0" uuid="{e102b1df-9bd8-48bc-b758-f96aae7e064d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="1" annotationFontColor="0,0,0,255" intervalX="50" gridFrameSideFlags="15" intervalY="50" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="2" rightAnnotationPosition="1" gridFrameWidth="2" name="Carroyage_0500" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+    <lineStyle>
+     <symbol alpha="1" clip_to_extent="1" type="line" name="">
+      <layer pass="0" class="SimpleLine" locked="0">
+       <prop k="capstyle" v="flat"/>
+       <prop k="customdash" v="5;2"/>
+       <prop k="customdash_map_unit_scale" v="0,0"/>
+       <prop k="customdash_unit" v="MM"/>
+       <prop k="draw_inside_polygon" v="0"/>
+       <prop k="joinstyle" v="bevel"/>
+       <prop k="line_color" v="0,0,0,255"/>
+       <prop k="line_style" v="solid"/>
+       <prop k="line_width" v="0.3"/>
+       <prop k="line_width_unit" v="MM"/>
+       <prop k="offset" v="0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="use_custom_dash" v="0"/>
+       <prop k="width_map_unit_scale" v="0,0"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </lineStyle>
+    <markerStyle>
+     <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+      <layer pass="0" class="SimpleMarker" locked="0">
+       <prop k="angle" v="0"/>
+       <prop k="color" v="0,0,0,255"/>
+       <prop k="horizontal_anchor_point" v="1"/>
+       <prop k="name" v="circle"/>
+       <prop k="offset" v="0,0"/>
+       <prop k="offset_map_unit_scale" v="0,0"/>
+       <prop k="offset_unit" v="MM"/>
+       <prop k="outline_color" v="0,0,0,255"/>
+       <prop k="outline_style" v="solid"/>
+       <prop k="outline_width" v="0"/>
+       <prop k="outline_width_map_unit_scale" v="0,0"/>
+       <prop k="outline_width_unit" v="MM"/>
+       <prop k="scale_method" v="area"/>
+       <prop k="size" v="2"/>
+       <prop k="size_map_unit_scale" v="0,0"/>
+       <prop k="size_unit" v="MM"/>
+       <prop k="vertical_anchor_point" v="1"/>
+       <effect enabled="0" type="effectStack">
+        <effect type="drawSource">
+         <prop k="blend_mode" v="0"/>
+         <prop k="draw_mode" v="2"/>
+         <prop k="enabled" v="1"/>
+         <prop k="transparency" v="0"/>
+        </effect>
+       </effect>
+      </layer>
+     </symbol>
+    </markerStyle>
+   </ComposerMapGrid>
+   <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+   <ComposerItem pagey="13" page="1" id="map" lastValidViewScaleFactor="2.74152" positionMode="0" positionLock="false" x="150" y="13" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{5fcc9e36-f227-4ea7-a50d-7cace00c2618}" height="170" itemRotation="0" frame="true" pagex="150">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerMap>
+  <ComposerLegend symbolWidth="7" title="Légende" boxSpace="1" splitLayer="1" equalColumnWidth="1" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="1" wmsLegendWidth="50" columnCount="5">
+   <styles>
+    <style marginBottom="2" name="title" font="Ubuntu,10,-1,5,63,0,0,0,0,0"/>
+    <style marginTop="1" name="group" font="Ubuntu,14,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="1" name="subgroup" font="Ubuntu,12,-1,5,63,0,0,0,0,0"/>
+    <style marginTop="1" name="symbol" font="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+    <style marginTop="1" marginLeft="2" name="symbolLabel" font="Ubuntu,9,-1,5,63,0,0,0,0,0"/>
+   </styles>
+   <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+    <customproperties/>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Reseaux">
+     <customproperties/>
+     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Eau">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_borne_fontaine20150217175403857" name="eau_borne_fontaine">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_branchement20150217175403948" name="eau_branchement">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_conduite20150217175403983" name="eau_conduite">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_forage20150217175404061" name="eau_forage">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_poteau_incendie20150217175404090" name="eau_poteau_incendie">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_reducteur_pression20150217175404177" name="eau_reducteur_pression">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_vanne20150217175404196" name="eau_vanne">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_ventouse20150217175404255" name="eau_ventouse">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="eau_vidange20150217175404275" name="eau_vidange">
+       <customproperties/>
+      </layer-tree-layer>
+     </layer-tree-group>
+     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fiop">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="fo_chambre20150217175714561" name="fo_chambre">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="17_numerique20150217175714652" name="17_numerique">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="fo_faisceau20150217175714747" name="fo_faisceau">
+       <customproperties/>
+      </layer-tree-layer>
+     </layer-tree-group>
+     <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Feux">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_armoire20150217175839863" name="slt_armoire">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_boucle20150217175839945" name="slt_boucle">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_cable20150217175839967" name="slt_cable">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_regard20150217175839982" name="slt_regard">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_support_feu20150217175840000" name="slt_support_feu">
+       <customproperties/>
+      </layer-tree-layer>
+     </layer-tree-group>
+     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Assep">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_bassin_orage20150217171304632" name="ep_bassin_orage">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_branchement20150217171304701" name="ep_branchement">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_ouvrage_collecte20150217171304781" name="ep_ouvrage_collecte">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ep_ouvrage_engouffrement20150217171304860" name="ep_ouvrage_engouffrement">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_ouvrage_fonctionnel20150217171304923" name="ep_ouvrage_fonctionnel">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ep_regard_pluvial20150217171304968" name="ep_regard_pluvial">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_sortie_fosse20150217171305063" name="ep_sortie_fosse">
+       <customproperties/>
+      </layer-tree-layer>
+     </layer-tree-group>
+     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Eclai">
+      <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_souterrain20150216135803312" name="ep_depart_souterrain">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_torsade20150216135803393" name="ep_depart_torsade">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_point_eclairage20150216135803419" name="ep_point_eclairage">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_nu20150216135803490" name="ep_depart_nu">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_reseau_facade20150216135803551" name="ep_reseau_facade">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_ht20150216135803515" name="ep_depart_ht">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_regard20150216135803534" name="ep_regard">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_coffret_intermediaire20150216135803577" name="ep_coffret_intermediaire">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poste20150216135803602" name="ep_poste">
+       <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poteau_beton20150216135803660" name="ep_poteau_beton">
+       <customproperties/>
+      </layer-tree-layer>
+     </layer-tree-group>
+    </layer-tree-group>
+   </layer-tree-group>
+   <ComposerItem pagey="198" page="1" id="legende" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="140" y="198" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="272.833" outlineWidth="0.3" excludeFromExports="0" uuid="{989a8a39-57a1-4944-8645-fb54560a96de}" height="74.9" itemRotation="0" frame="false" pagex="140">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLegend>
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="32.0487" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,11,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="185" page="1" id="echelleNumerique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="150" y="185" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0.3" excludeFromExports="0" uuid="{71a0c2e8-481a-4848-903a-74052c494dac}" height="8" itemRotation="0" frame="false" pagex="150">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="32.0487" lineJoinStyle="miter" minBarWidth="50" font="Ubuntu,8,-1,5,63,0,0,0,0,0" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
+   <fillColor alpha="255" red="0" blue="0" green="0"/>
+   <fillColor2 alpha="255" red="255" blue="255" green="255"/>
+   <strokeColor alpha="255" red="0" blue="0" green="0"/>
+   <textColor alpha="255" red="0" blue="0" green="0"/>
+   <ComposerItem pagey="185" page="1" id="echelleGraphique" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="170" y="185" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="136.703" outlineWidth="0.3" excludeFromExports="0" uuid="{8bc62cc1-2bda-4328-a66f-b62fc8cdc7e6}" height="8" itemRotation="0" frame="false" pagex="170">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerScaleBar>
+  <ComposerLabel valign="64" marginX="1" marginY="1" labelText="[% concat('Plan édité le ',format_date(  now() ,'dd/MM/yyyy'))%]" htmlState="0" halign="2">
+   <LabelFont description="Ubuntu,10,-1,5,50,0,0,0,0,0"/>
+   <FontColor red="0" blue="0" green="0"/>
+   <ComposerItem pagey="286.048" page="1" id="date" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="347.581" y="286.048" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="45.584" outlineWidth="0.3" excludeFromExports="0" uuid="{4162995e-ad7c-44f8-a063-ea0555984c5d}" height="7" itemRotation="0" frame="false" pagex="347.581">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+   </ComposerItem>
+  </ComposerLabel>
+  <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="22.1995" file="/home/fred/geodata/autres/qgisModele/Logo ville.jpg" pictureHeight="23.103" mapId="-1" anchorPoint="0">
+   <ComposerItem pagey="270.897" page="1" id="logo" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="394.31" y="270.897" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="23.69" outlineWidth="0.3" excludeFromExports="0" uuid="{f68a94c6-0f93-46a5-a5db-30651e807d81}" height="23.103" itemRotation="0" frame="false" pagex="394.31">
+    <FrameColor alpha="255" red="0" blue="0" green="0"/>
+    <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+    <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+   </ComposerItem>
+  </ComposerPicture>
+ </Composition>
+ <Atlas hideCoverage="false" featureFilter=" --attribute( $currentfeature, 'id' )&#xa; --attribute(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' ), 'id')&#xa;-- geomToWKT( geometry(  getFeature( 'case4600200','id' ,'VLR-46-00196-01044-06-C-20' )))&#xa;--intersects( $geometry, transform(geometry(  getFeature( 'empriseDeclaration','fid' ,'emprise' )),'EPSG:4171','EPSG:3946'))&#xa;intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" coverageLayer="" singleFile="true" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="" sortAscending="true"/>
+</Composer>
