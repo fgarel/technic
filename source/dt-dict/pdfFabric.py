@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 u"""
-Script permetitant de générer, de fabriquer des plans au format PDF.
+Script permettant de générer, de fabriquer des plans au format PDF.
 
 Les fichiers nécessaires au fonctionnement de ce script sont :
     - des fichiers template Qgis
@@ -11,6 +11,7 @@ Les fichiers nécessaires au fonctionnement de ce script sont :
 
 """
 
+import getopt
 #import csv
 #import model
 #import sqlalchemy.orm
@@ -33,8 +34,9 @@ class PdfFabric(object):
     u"""
     Classe d'objet dont l'objectif principal est la génération de pdf.
 
-    En argument, on done un nom de fichier.
-
+    Le script a besoin d'arguments (utilisation de getopt).
+    Le détail est dans la fonction main().
+    
     """
 
     def __init__(self, path):
@@ -54,14 +56,36 @@ class PdfFabric(object):
         self.list_format = ['A4', 'A3', 'A2', 'A1', 'A0']
         self.list_echelle = ['00200', '00500', '01000']
         self.list_format_echelle = []
-        #self.file_case = ''
-        #self.file_situation = ''
-        #self.file_all = ''
         self.setFilename()
         #print self.list_situation
         self.gui_flag = True
         self.myQgisApplication = QgsApplication(sys.argv, self.gui_flag)
         self.myQgisApplication.initQgis()
+        self.canvas = None
+        self.bridge = None
+
+    def prepare_before_make(self):
+        u"""
+        Méthode pour la préparation avant la fabrication de pdf.
+
+        """
+        # http://qgis.org/api/classQgsMapCanvas.html
+        # Map canvas is a class for displaying all GIS data types on a canvas.
+        self.canvas = QgsMapCanvas()
+        #print "template_filename = " + template_filename
+        # chargement du projet qgis
+        # http://qgis.org/api/classQgsProject.html
+        # Reads and writes project states.
+        QgsProject.instance().read(QFileInfo(self.qgis_project_file))
+        #print "report_filename = " + report_filename
+        # creation d'un pont entre la hierarchie des niveaux du canvas
+        # et la hierarchie des niveaux du projet qgis
+        # http://qgis.org/api/classQgsLayerTreeMapCanvasBridge.html
+        # The QgsLayerTreeMapCanvasBridge class takes care of updates of
+        # layer set for QgsMapCanvas from a layer tree.
+        self.bridge = QgsLayerTreeMapCanvasBridge(
+            QgsProject.instance().layerTreeRoot(), self.canvas)
+        self.bridge.setCanvasLayers()
 
     def make_pdf(self, template_filename, report_filename):
         u"""
@@ -72,23 +96,8 @@ class PdfFabric(object):
         En sortie, un seul fichier pdf.
 
         """
-        # http://qgis.org/api/classQgsMapCanvas.html
-        # Map canvas is a class for displaying all GIS data types on a canvas.
-        canvas = QgsMapCanvas()
-        print "template_filename = " + template_filename
-        # chargement du projet qgis
-        # http://qgis.org/api/classQgsProject.html
-        # Reads and writes project states.
-        QgsProject.instance().read(QFileInfo(self.qgis_project_file))
-        print "report_filename = " + report_filename
-        # creation d'un pont entre la hierarchie des niveaux du canvas
-        # et la hierarchie des niveaux du projet qgis
-        # http://qgis.org/api/classQgsLayerTreeMapCanvasBridge.html
-        # The QgsLayerTreeMapCanvasBridge class takes care of updates of
-        # layer set for QgsMapCanvas from a layer tree.
-        bridge = QgsLayerTreeMapCanvasBridge(
-            QgsProject.instance().layerTreeRoot(), canvas)
-        bridge.setCanvasLayers()
+        #print "template_filename = " + template_filename
+        #print "report_filename = " + report_filename
 
         template_file = file(template_filename)
         template_content = template_file.read()
@@ -98,18 +107,20 @@ class PdfFabric(object):
         document.setContent(template_content)
         # http://qgis.org/api/classQgsComposition.html
         # Graphics scene for map printing.
-        composition = QgsComposition(canvas.mapSettings())
+        composition = QgsComposition(self.canvas.mapSettings())
+        # You can use this to replace any string like this [key]
+        # in the template with a new value. e.g. to replace
+        # [date] pass a map like this {'date': '1 Jan 2012'}
+        substitution_map = {
+            'DATE_TIME_START': 'foo',
+            'DATE_TIME_END': 'bar'}
+        composition.loadFromTemplate(document, substitution_map)
         # chargement de l'objet 'map' défini dans le template de composition
         # You must set the id in the template
         map_item = composition.getComposerItemById('map')
-        map_item.setMapCanvas(canvas)
-        map_item.zoomToExtent(canvas.extent())
-        print "atlasMode = ", composition.atlasMode()
-        #composition.setAtlasMode(QgsComposition.AtlasMode.PreviewAtlas)
-        #composition.setAtlasMode(QgsComposition.AtlasMode['PreviewAtlas'])
-        #print "QgsComposition ", type(QgsComposition.AtlasMode)
-        print "atlasMode = ", composition.atlasMode()
-        #composition_atlas = composition.atlasComposition()
+        map_item.setMapCanvas(self.canvas)
+        map_item.zoomToExtent(self.canvas.extent())
+
         # You must set the id in the template
         #legend_item = composition.getComposerItemById('legend')
         #legend_item.updateLegend()
@@ -117,30 +128,10 @@ class PdfFabric(object):
         composition.exportAsPDF(report_filename + '.pdf')
         QgsProject.instance().clear()
 
-    def file2table(self, file_ini, table_fin):
-        u"""
-        Import d'un fichier dans une table.
-
-        En argument, le nom du fichier à importer et le nom de la table
-        dans la base de données qui recevra les informations.
-
-        """
-        #__file_ini = self.path_ini + '/' + file_ini
-        #with open(__file_ini, 'r') as csvinputfile:
-        #    csvreader = csv.reader(csvinputfile, delimiter=';', quotechar='"')
-        #    #with open('data/dataout.txt', 'w') as csvoutputfile:
-        #    #    csvwriter = csv.writer(csvoutputfile, delimiter='-', \
-        #    #    lineterminator='\n')
-        #    for row in csvreader:
-        #        #print mon_point
-        #        self.session.add(mon_point)
-        #        self.session.commit()
-        #        #self.cur.execute("select * from point;")
-        #        #print(self.cur.fetchone())
-        #        #csvwriter.writerow(row)
-        pass
-
-    def make_atlas_pdf(self, template_filename, report_filename):
+    def make_atlas_pdf(self,
+                       template_filename,
+                       report_filename,
+                       do_or_simulate):
         u"""
         Méthode pour fabriquer plusieurs pdf.
 
@@ -150,19 +141,8 @@ class PdfFabric(object):
         différents folios.
 
         """
-        # http://qgis.org/api/classQgsMapCanvas.html
-        # Map canvas is a class for displaying all GIS data types on a canvas.
-        canvas = QgsMapCanvas()
-        # Load our project
-        # http://qgis.org/api/classQgsProject.html
-        # Reads and writes project states.
-        QgsProject.instance().read(QFileInfo(self.qgis_project_file))
-        # http://qgis.org/api/classQgsLayerTreeMapCanvasBridge.html
-        # The QgsLayerTreeMapCanvasBridge class takes care of updates of
-        # layer set for QgsMapCanvas from a layer tree.
-        bridge = QgsLayerTreeMapCanvasBridge(
-            QgsProject.instance().layerTreeRoot(), canvas)
-        bridge.setCanvasLayers()
+        #print "template_filename = " + template_filename
+        #print "report_filename = " + report_filename
 
         template_file = file(template_filename)
         template_content = template_file.read()
@@ -172,7 +152,7 @@ class PdfFabric(object):
         document.setContent(template_content)
         # http://qgis.org/api/classQgsComposition.html
         # Graphics scene for map printing.
-        composition = QgsComposition(canvas.mapSettings())
+        composition = QgsComposition(self.canvas.mapSettings())
         # You can use this to replace any string like this [key]
         # in the template with a new value. e.g. to replace
         # [date] pass a map like this {'date': '1 Jan 2012'}
@@ -180,65 +160,36 @@ class PdfFabric(object):
             'DATE_TIME_START': 'foo',
             'DATE_TIME_END': 'bar'}
         composition.loadFromTemplate(document, substitution_map)
-        # You must set the id in the template
-        # chargement de l'objet 'map' défini dans le template de composition
-        ##map_item = composition.getComposerItemById('map')
-        ##map_item.setMapCanvas(canvas)
-        ##map_item.zoomToExtent(canvas.extent())
-        #print "atlasMode = ", composition.atlasMode()
-        #composition.setAtlasMode(QgsComposition.AtlasMode.PreviewAtlas)
         # on passe en mode PreviewAtlas
         composition.setAtlasMode(1)
         composition.setAtlasMode(2)
-        #print "QgsComposition ", type(QgsComposition.AtlasMode)
-        #print "atlasMode = ", composition.atlasMode()
         composition_atlas = composition.atlasComposition()
         # You must set the id in the template
         #legend_item = composition.getComposerItemById('legend')
         #legend_item.updateLegend()
-        #print "coverageLayer() = ", composition_atlas.coverageLayer()
-        #print "coverageLayer() = ", \
-        #        composition_atlas.coverageLayer().metadata()
         num_features = composition_atlas.numFeatures()
-        #print "numFeatures() = ", composition_atlas.numFeatures()
-        composition_atlas.setSingleFile(True)
-        #print "singleFile() = ", composition_atlas.singleFile()
-        #print "renderBegun()", composition_atlas.renderBegun(), " ; \
-        #        renderEnded() = ", composition_atlas.renderEnded()
-        composition_atlas.firstFeature()
-        #print "renderBegun()", composition_atlas.renderBegun(), " ; \
-        #        renderEnded() = ", composition_atlas.renderEnded()
-        composition_atlas.beginRender()
-        #print "renderBegun()", composition_atlas.renderBegun(), " ; \
-        #        renderEnded() = ", composition_atlas.renderEnded()
-        report_filename_generic = report_filename + '_' + '*' + ".pdf"
-        report_filename_final = report_filename + ".pdf"
-        #print "report_filename_generic = ", report_filename_generic
-        #print "report_filename_final = ", report_filename_final
-        subprocess.call("rm " + report_filename_generic, shell=True)
-        for i in range(0, num_features):
-            #print "i = ", i
-            #print "renderBegun()", composition_atlas.renderBegun(), " ; \
-            #        renderEnded() = ", composition_atlas.renderEnded()
-            composition_atlas.prepareForFeature(i, True)
-            # le nom du pdf change à chaque folio
-            report_filename_feature = report_filename + '_' + \
-                '{0:0>3}'.format(i) + '.pdf'
-            #print "i = " + i + " ; report_filename = " +\
-            #      report_filename + "_" + i + ".pdf"
-            composition.exportAsPDF(report_filename_feature)
-            #print "i = ", i, \
-            #      " ; report_filename_feature = ", report_filename_feature
-        #composition_atlas.beginRender()
-        #print "renderBegun()", composition_atlas.renderBegun(), " ; \
-        #        renderEnded() = ", composition_atlas.renderEnded()
-        #composition.refreshItems()
-        #composition.exportAsPDF(self.report_filename + '_'+)
-        subprocess.call(["pdftk " + report_filename_generic +
-                         " cat output " + report_filename_final],
-                        shell=True)
-        subprocess.call("rm " + report_filename_generic, shell=True)
-        QgsProject.instance().clear()
+        if do_or_simulate is False:
+            return num_features
+        else:
+            composition_atlas.setSingleFile(True)
+            composition_atlas.firstFeature()
+            composition_atlas.beginRender()
+            report_filename_generic = report_filename + '_' + '*' + ".pdf"
+            report_filename_final = report_filename + ".pdf"
+            subprocess.call("rm " + report_filename_generic, shell=True)
+            for i in range(0, num_features):
+                composition_atlas.prepareForFeature(i, True)
+                # le nom du pdf change à chaque folio
+                report_filename_feature = report_filename + '_' + \
+                    '{0:0>3}'.format(i) + '.pdf'
+                composition.exportAsPDF(report_filename_feature)
+
+            subprocess.call(["pdftk " + report_filename_generic +
+                             " cat output " + report_filename_final],
+                            shell=True)
+            subprocess.call("rm " + report_filename_generic, shell=True)
+            QgsProject.instance().clear()
+            return 0
 
     def setFilename(self):
         u"""
@@ -257,12 +208,7 @@ class PdfFabric(object):
         for fformat in self.list_format:
             for eechelle in self.list_echelle:
                 self.list_format_echelle.append(fformat + '_' + eechelle)
-        #print self.list_format_echelle
-        #self.list_format_echelle = ['A0_01000', 'A0_00500', 'A0_00200',
-        #                            'A1_01000', 'A1_00500', 'A1_00200',
-        #                            'A2_01000', 'A2_00500', 'A2_00200',
-        #                            'A3_01000', 'A3_00500', 'A3_00200',
-        #                            'A4_01000', 'A4_00500', 'A4_00200']
+
         for fe in self.list_format_echelle:
             self.list_situation.update({'template_file_' + fe:
                                         fe + '_situation.qpt',
@@ -276,54 +222,62 @@ class PdfFabric(object):
                                   fe + '.qpt',
                                   'report_file_' + fe:
                                   fe + ''})
-        #print self.list_situation
-        #print self.list_case
-        #print self.list_all
-        #self.qgis_template_list = \
-        #    '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/' \
-        #    'A1_00200_case.qpt'
-        #self.qgis_report_list = \
-        #    '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/' \
-        #    'report.pdf'
-        #self.file_case = ''
-        #self.file_situation = ''
-        #self.file_all = ''
-        #print self.setFilename('A5_00999')[0]
-        #self.file_case = format_echelle + '_case'
-        #self.file_situation = format_echelle + '_situation'
-        #self.file_all = format_echelle + ''
-        #print format_echelle
-        #return [self.file_case, self.file_situation, self.file_all]
-        #pass
 
 
-def main():
+def main(argv):
     u"""
     Programme principal.
 
     """
-    # On instancie un objet de la classe pdfFabric
-    # en argument, on passe le chemin du repertoire contenant
-    # les infos initiales
+    fformat = ''
+    eechelle = ''
+    ttype = ''
+    simulate = True
+    try:
+        opts, args = getopt.getopt(argv, "hf:e:t:s",
+                                   ["format=", "echelle=", "type="])
+    except getopt.GetoptError as err:
+        print "pdfFabric.py -h"
+        print 'pdfFabric.py -f <format> -e <echelle> -t <type> -s'
+        print 'pdfFabric.py -f <format> -e <echelle> -t <type>'
+        print str(err)
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print "pdfFabric.py -h"
+            print 'pdfFabric.py -f <format> -e <echelle> -t <type> -s'
+            print 'pdfFabric.py -f <format> -e <echelle> -t <type>'
+            sys.exit()
+        if opt == '-s':
+            simulate = False
+        elif opt in ("-f", "--format"):
+            fformat = arg
+        elif opt in ("-e", "--echelle"):
+            eechelle = arg
+        elif opt in ("-t", "--type"):
+            ttype = arg
+    #print 'format = ', fformat
+    #print 'echelle = ', eechelle
+    #print 'type = ', ttype
+    #print 'simulate = ', simulate
+
     __myPdfFabric = PdfFabric('.')
-    #print "qgis_project_file = " + __myPdfFabric.qgis_project_file
-    #print __myPdfFabric.list_case
-    #for fe in self.list_format_echelle:
-    #    template_file =
-    #__myPdfFabric.make_pdf('A3_00200.qpt', 'A3_00200')
-    #__myPdfFabric.make_atlas_pdf('A3_00200_case.qpt', 'A3_00200_case')
-    __myPdfFabric.make_atlas_pdf('A3_00200_case.qpt', 'A3_00200_case')
-    #print "project_path = " + __myPdfFabric.project_path
-    # On liste les impressions qui seront générées
-    #liste = __myPdfFabric.setFilename('A1_00200')
-    #print liste[0]
+    __myPdfFabric.prepare_before_make()
 
+    # les noms des fichiers sont fabriques à partir des arguments
+    report_file = fformat + '_' + '{0:0>5}'.format(eechelle) + '_' + ttype
+    template_file = report_file + '.qpt'
+    print "template_file = " + template_file
+    if simulate is True:
+        retour = __myPdfFabric.make_atlas_pdf(template_file,
+                                              report_file,
+                                              True)
+    else:
+        retour = __myPdfFabric.make_atlas_pdf(template_file,
+                                              report_file,
+                                              False)
 
-    #__myPdfFabric.dropAndCreateTable()
-    #__myPdfFabric.file2table('point_profondeur.csv', 'point_profondeur')
-    #__myPdfFabric.file2table('ep_point_eclairage.csv', 'ep_point_eclairage')
-    #__myPdfFabric.addPoint()
-
+    sys.exit(retour)
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])

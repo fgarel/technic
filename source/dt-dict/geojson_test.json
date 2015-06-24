@@ -1,0 +1,9 @@
+    { "type": "Polygon",
+        "coordinates": [
+              [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0], [100.0, 1.0], [100.0, 0.0] ]
+                    ]
+    }, "crs": {
+        "type": "OGC",
+
+        "properties": {
+            "urn": "urn:ogc:def:crs:EPSG::3946"}}
