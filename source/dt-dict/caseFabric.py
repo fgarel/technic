@@ -218,10 +218,10 @@ class CaseFabric(object):
         """
 
         minMaxBBox = self.getMinMaxFromBBox(largeur, hauteur)
-        x_ini = int(minMaxBBox[0])
-        x_fin = int(minMaxBBox[2])
-        y_ini = int(minMaxBBox[1])
-        y_fin = int(minMaxBBox[3])
+        x_ini = int(minMaxBBox[0]) - largeur
+        x_fin = int(minMaxBBox[2]) + largeur
+        y_ini = int(minMaxBBox[1]) - hauteur
+        y_fin = int(minMaxBBox[3]) + hauteur
         #print "x_ini = " + str(x_ini)
         #print "x_fin = " + str(x_fin)
         #print "y_ini = " + str(y_ini)

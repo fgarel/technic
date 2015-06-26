@@ -13,9 +13,10 @@
   </edittypes>
   <renderer-v2 symbollevels="0" type="RuleRenderer">
     <rules key="{586f1220-188f-45ce-98fe-f24a5d8ae49a}">
-      <rule filter="$id&lt;>$atlasfeatureid" key="{06155e49-6195-4855-8372-a66476fcca4b}" symbol="0" label="atlasfeature"/>
-      <rule key="{c4bde459-af35-427d-9090-f336e68b802b}" symbol="1"/>
-      <rule filter=" NOT intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" key="{4fbdd3d1-5601-4bba-b21e-58b6279feda2}" symbol="2" label="atlasfeatureother"/>
+      <rule checkstate="0" filter="$id&lt;>$atlasfeatureid" key="{06155e49-6195-4855-8372-a66476fcca4b}" symbol="0" label="not_current_case"/>
+      <rule key="{c4bde459-af35-427d-9090-f336e68b802b}" symbol="1" label="current_case"/>
+      <rule checkstate="0" filter=" NOT intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" key="{4fbdd3d1-5601-4bba-b21e-58b6279feda2}" symbol="2" label="case_not_intersects_emprise"/>
+      <rule filter="intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))" key="{d01a0089-f98a-420c-a45d-e938fe3e27e2}" symbol="3" label="case_intersects_emprise"/>
     </rules>
     <symbols>
       <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
@@ -67,7 +68,84 @@
       <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
-          <prop k="color" v="255,128,255,127"/>
+          <prop k="color" v="128,128,128,127"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="190,190,190,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+          <effect enabled="0" type="effectStack">
+            <effect type="dropShadow">
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="outerGlow">
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0.5"/>
+            </effect>
+            <effect type="drawSource">
+              <prop k="blend_mode" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="1"/>
+              <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="innerShadow">
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="innerGlow">
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0.5"/>
+            </effect>
+          </effect>
+        </layer>
+      </symbol>
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0"/>
+          <prop k="color" v="0,0,0,0"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -76,13 +154,67 @@
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.5"/>
           <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="b_diagonal"/>
+          <prop k="style" v="solid"/>
           <effect enabled="0" type="effectStack">
+            <effect type="dropShadow">
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="outerGlow">
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0.5"/>
+            </effect>
             <effect type="drawSource">
               <prop k="blend_mode" v="0"/>
               <prop k="draw_mode" v="2"/>
               <prop k="enabled" v="1"/>
               <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="innerShadow">
+              <prop k="blend_mode" v="13"/>
+              <prop k="blur_level" v="10"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="offset_angle" v="135"/>
+              <prop k="offset_distance" v="2"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="offset_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0"/>
+            </effect>
+            <effect type="innerGlow">
+              <prop k="blend_mode" v="0"/>
+              <prop k="blur_level" v="3"/>
+              <prop k="color1" v="0,0,255,255"/>
+              <prop k="color2" v="0,255,0,255"/>
+              <prop k="color_type" v="0"/>
+              <prop k="discrete" v="0"/>
+              <prop k="draw_mode" v="2"/>
+              <prop k="enabled" v="0"/>
+              <prop k="single_color" v="255,255,255,255"/>
+              <prop k="spread" v="2"/>
+              <prop k="spread_unit" v="MM"/>
+              <prop k="spread_unit_scale" v="0,0"/>
+              <prop k="transparency" v="0.5"/>
             </effect>
           </effect>
         </layer>
@@ -124,7 +256,7 @@
     <property key="labeling/distMapUnitMaxScale" value="0"/>
     <property key="labeling/distMapUnitMinScale" value="0"/>
     <property key="labeling/enabled" value="true"/>
-    <property key="labeling/fieldName" value=" case&#xa;   when (NOT intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))) then ''&#xa;   else  &quot;id&quot; &#xa;end"/>
+    <property key="labeling/fieldName" value=" case&#xa;   when (NOT intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))) then ''&#xa;   when ($id=$atlasfeatureid) then ''&#xa;   else  concat(substr(&quot;id&quot;, 16, 4), '_',substr(&quot;id&quot;, 24, 4))&#xa;end"/>
     <property key="labeling/fontBold" value="true"/>
     <property key="labeling/fontCapitals" value="0"/>
     <property key="labeling/fontFamily" value="Ubuntu"/>
@@ -133,7 +265,7 @@
     <property key="labeling/fontLimitPixelSize" value="false"/>
     <property key="labeling/fontMaxPixelSize" value="10000"/>
     <property key="labeling/fontMinPixelSize" value="3"/>
-    <property key="labeling/fontSize" value="4"/>
+    <property key="labeling/fontSize" value="5"/>
     <property key="labeling/fontSizeInMapUnits" value="true"/>
     <property key="labeling/fontSizeMapUnitMaxScale" value="0.0008"/>
     <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
@@ -172,9 +304,9 @@
     <property key="labeling/repeatDistanceUnit" value="2"/>
     <property key="labeling/reverseDirectionSymbol" value="false"/>
     <property key="labeling/rightDirectionSymbol" value=">"/>
-    <property key="labeling/scaleMax" value="2500"/>
-    <property key="labeling/scaleMin" value="250"/>
-    <property key="labeling/scaleVisibility" value="true"/>
+    <property key="labeling/scaleMax" value="3500"/>
+    <property key="labeling/scaleMin" value="199"/>
+    <property key="labeling/scaleVisibility" value="false"/>
     <property key="labeling/shadowBlendMode" value="6"/>
     <property key="labeling/shadowColorB" value="0"/>
     <property key="labeling/shadowColorG" value="0"/>

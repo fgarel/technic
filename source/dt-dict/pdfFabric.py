@@ -175,6 +175,7 @@ class PdfFabric(object):
             composition_atlas.firstFeature()
             composition_atlas.beginRender()
             report_filename_generic = report_filename + '_' + '*' + ".pdf"
+            #print "report_filename_generic = " + report_filename_generic
             report_filename_final = report_filename + ".pdf"
             subprocess.call("rm " + report_filename_generic, shell=True)
             for i in range(0, num_features):
@@ -187,6 +188,7 @@ class PdfFabric(object):
             subprocess.call(["pdftk " + report_filename_generic +
                              " cat output " + report_filename_final],
                             shell=True)
+            #print "report_filename_generic = " + report_filename_generic
             subprocess.call("rm " + report_filename_generic, shell=True)
             QgsProject.instance().clear()
             return 0
@@ -265,9 +267,14 @@ def main(argv):
     __myPdfFabric.prepare_before_make()
 
     # les noms des fichiers sont fabriques à partir des arguments
-    report_file = fformat + '_' + '{0:0>5}'.format(eechelle) + '_' + ttype
-    template_file = report_file + '.qpt'
-    print "template_file = " + template_file
+    if ttype == 'all':
+        report_file = fformat + '_' + '{0:0>5}'.format(eechelle)
+        template_file = report_file + '.qpt'
+        report_file +=  '_' + ttype
+    else:
+        report_file = fformat + '_' + '{0:0>5}'.format(eechelle) + '_' + ttype
+        template_file = report_file + '.qpt'
+
     if simulate is True:
         retour = __myPdfFabric.make_atlas_pdf(template_file,
                                               report_file,

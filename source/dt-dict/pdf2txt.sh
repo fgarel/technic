@@ -21,8 +21,8 @@ cat document1.pdf |  grep EPSG | sed -E -e 's/[^\()]*\(//' -e 's/\)[^\()]*\(//g'
 # 3ème étape : covertir ce fichier txt en un vrai fichier lisible par ogr
 
 # 3.A. conversion d'un gml codé en 4171
-rm empriseDeclarationQgis4171.gml
-rm empriseDeclarationQgis4171.gfs
+#rm empriseDeclarationQgis4171.gml
+#rm empriseDeclarationQgis4171.gfs
 #cat header4171.gml > empriseDeclarationQgis4171.gml
 #cat empriseDeclaration4171.gml | sed -E -e 's/\r$//g' -e 's/<.*>/\n/' | sed -e '/^$/d' | sed '$!N;s/\n/ /g' | sed '$!N;s/\n/ /g' | sed -E -e 's/(\S*) (\S*) /\1,\2\n/g' | sed -E -e 's/(\S*) (\S*)/\1,\2/g' >> empriseDeclarationQgis4171.gml
 #cat footer4171.gml >> empriseDeclarationQgis4171.gml
