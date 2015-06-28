@@ -16,8 +16,8 @@ qpdf --qdf --object-streams=disable document.pdf document1.pdf
 
 # 2ème étape : extraire l'information geographique
 rm empriseDeclaration4326.gml
-cat document1.pdf |  grep EPSG | sed -E -e 's/[^\()]*\(//' -e 's/\)[^\()]*\(//g' -e 's/\)[^\()]*//g' > empriseDeclaration4326.gml
-
+cat document1.pdf | grep EPSG | sed -E -e 's/[^\()]*\(//' -e 's/\)[^\()]*\(//g' -e 's/\)[^\()]*//g' > empriseDeclaration4326.gml
+cat document1.pdf | grep -E -e '\(.*\t46.*\)'
 # 3ème étape : covertir ce fichier txt en un vrai fichier lisible par ogr
 
 # 3.A. conversion d'un gml codé en 4171
