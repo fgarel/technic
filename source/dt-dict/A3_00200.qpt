@@ -40,7 +40,7 @@
    </ComposerItem>
   </ComposerLabel>
   <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Render" drawCanvasItems="true">
-   <Extent ymin="5226692.09294600412249565" xmin="1376238.6225469084456563" ymax="5228442.09294778853654861" xmax="1378988.62254971358925104"/>
+   <Extent ymin="5226692.09294600412249565" xmin="1376238.6225469084456563" ymax="5228442.09294778946787119" xmax="1378988.62254971358925104"/>
    <LayerSet>
     <Layer>scan2520150327142925958</Layer>
    </LayerSet>
@@ -339,13 +339,13 @@
     </symbol>
    </ComposerMapOverview>
    <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-   <ComposerItem pagey="43" page="1" id="mapSituation1" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="15" y="43" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{8901503c-0e30-4615-9560-3022c1c91957}" height="70" itemRotation="0" frame="true" pagex="15">
+   <ComposerItem pagey="43" page="1" id="mapSituation1" lastValidViewScaleFactor="1.43133" positionMode="0" positionLock="false" x="15" y="43" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{8901503c-0e30-4615-9560-3022c1c91957}" height="70" itemRotation="0" frame="true" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerMap>
   <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Render" drawCanvasItems="true">
-   <Extent ymin="5227514.59294684231281281" xmin="1377531.12254822696559131" ymax="5227619.59294694848358631" xmax="1377696.12254839506931603"/>
+   <Extent ymin="5227514.59294684231281281" xmin="1377531.12254822696559131" ymax="5227619.59294694941490889" xmax="1377696.12254839506931603"/>
    <LayerSet>
     <Layer>empriseDeclarationQgis394620150326170348137</Layer>
     <Layer>00042x0003020150624181413895</Layer>
@@ -1218,7 +1218,7 @@
     </symbol>
    </ComposerMapOverview>
    <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-   <ComposerItem pagey="128" page="1" id="mapSituation2" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="15" y="128" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{eb161430-d871-4508-9af2-710dc86334e1}" height="70" itemRotation="0" frame="true" pagex="15">
+   <ComposerItem pagey="128" page="1" id="mapSituation2" lastValidViewScaleFactor="1.43133" positionMode="0" positionLock="false" x="15" y="128" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{eb161430-d871-4508-9af2-710dc86334e1}" height="70" itemRotation="0" frame="true" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
@@ -9990,7 +9990,7 @@
     </symbol>
    </ComposerMapOverview>
    <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-   <ComposerItem pagey="213" page="1" id="mapSituation3" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="15" y="213" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{f38e881d-89f2-4dd7-9232-b740b4bbfa02}" height="70" itemRotation="0" frame="true" pagex="15">
+   <ComposerItem pagey="213" page="1" id="mapSituation3" lastValidViewScaleFactor="1.43133" positionMode="0" positionLock="false" x="15" y="213" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="110" outlineWidth="0.3" excludeFromExports="0" uuid="{f38e881d-89f2-4dd7-9232-b740b4bbfa02}" height="70" itemRotation="0" frame="true" pagex="15">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
@@ -27959,7 +27959,7 @@
     <annotationFontProperties description="Ubuntu,9,-1,5,75,1,0,0,0,0" style=""/>
    </ComposerMapGrid>
    <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-   <ComposerItem pagey="13" page="1" id="map" lastValidViewScaleFactor="1.51288" positionMode="0" positionLock="false" x="150" y="13" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{5fcc9e36-f227-4ea7-a50d-7cace00c2618}" height="170" itemRotation="0" frame="true" pagex="150">
+   <ComposerItem pagey="13" page="1" id="map" lastValidViewScaleFactor="1.43133" positionMode="0" positionLock="false" x="150" y="13" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{5fcc9e36-f227-4ea7-a50d-7cace00c2618}" height="170" itemRotation="0" frame="true" pagex="150">
     <FrameColor alpha="255" red="0" blue="0" green="0"/>
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
@@ -28110,7 +28110,7 @@
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerLegend>
-  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="49.996" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
+  <ComposerScaleBar lineCapStyle="square" style="Numeric" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="1" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="2" mapId="0" unitLabel=" m">
    <scaleBarFont description="Ubuntu,11,-1,5,63,0,0,0,0,0" style=""/>
    <fillColor alpha="255" red="0" blue="0" green="0"/>
    <fillColor2 alpha="255" red="255" blue="255" green="255"/>
@@ -28121,7 +28121,7 @@
     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
    </ComposerItem>
   </ComposerScaleBar>
-  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="49.996" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
+  <ComposerScaleBar lineCapStyle="square" style="Single Box" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="4" segmentMillimeters="49.9959" lineJoinStyle="miter" minBarWidth="50" numUnitsPerSegment="10" units="1" labelBarSpace="1" outlineWidth="0.2" numSegmentsLeft="0" maxBarWidth="150" height="2" boxContentSpace="1" mapId="0" unitLabel=" m">
    <scaleBarFont description="Ubuntu,8,-1,5,63,0,0,0,0,0" style=""/>
    <fillColor alpha="255" red="0" blue="0" green="0"/>
    <fillColor2 alpha="255" red="255" blue="255" green="255"/>

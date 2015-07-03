@@ -62,23 +62,24 @@ class PdfFabricAll(object):
         Méthode pour generer les plans.
 
         """
-        
+
         split_fe_choisi = self.fe_choisi.split('_')
         fformat_choisi = split_fe_choisi[0]
-        eechelle_choisi = split_fe_choisi[1] 
+        eechelle_choisi = split_fe_choisi[1]
         #print "fformat_choisi  = " + fformat_choisi
         #print "eechelle_choisi = " + eechelle_choisi
+        
         print "Generation du plan de situation"
         ligne_commande = "./pdfFabric.py -f " + fformat_choisi + \
-            " -e " + eechelle_choisi  + \
-            " -t situation 2> /dev/null"
+            " -e " + eechelle_choisi + " -t situation 2> /dev/null"
+        #print 'command = ' + ligne_commande
         subprocess.call(
             ligne_commande,
             shell=True)
+            
         print "Generation des différents folios 1/2"
         ligne_commande = "./pdfFabric.py -f " + fformat_choisi + \
-            " -e " + eechelle_choisi  + \
-            " -t case 2> /dev/null"
+            " -e " + eechelle_choisi + " -t case 2> /dev/null"
         subprocess.call(
             ligne_commande,
             shell=True)
@@ -90,14 +91,45 @@ class PdfFabricAll(object):
         subprocess.call(["pdftk " + self.fe_choisi + "_situation.pdf " +
                          self.fe_choisi + "_case.pdf" +
                          " cat output " + self.fe_choisi + ".pdf"],
-                         shell=True)
+                        shell=True)
+        """                
         print "Generation des différents folios 2/2"
-        ligne_commande = "./pdfFabric.py -f " + fformat_choisi + \
-            " -e " + eechelle_choisi  + \
-            " -t 'all' 2> /dev/null"
-        subprocess.call(
-            ligne_commande,
-            shell=True)
+        if fformat_choisi == 'A4':
+            ligne_commande = "./pdfFabric.py -f " + fformat_choisi + \
+                " -e " + eechelle_choisi + \
+                " -t 'all' 2> /dev/null"
+            subprocess.call(
+                ligne_commande,
+                shell=True)
+            ligne_commande = "./pdfFabric.py -f " + 'A3' + \
+                " -e " + eechelle_choisi + \
+                " -t 'all' 2> /dev/null"
+            subprocess.call(
+                ligne_commande,
+                shell=True)
+        if fformat_choisi == 'A3':
+            print "A3->A2 ?"
+            ligne_commande = "./pdfFabric.py -f " + 'A2' + \
+                " -e " + eechelle_choisi + \
+                " -t 'all' 2> /dev/null"
+            subprocess.call(
+                ligne_commande,
+                shell=True)
+        if fformat_choisi == 'A2':
+            ligne_commande = "./pdfFabric.py -f " + 'A1' + \
+                " -e " + eechelle_choisi + \
+                " -t 'all' 2> /dev/null"
+            subprocess.call(
+                ligne_commande,
+                shell=True)
+        if fformat_choisi == 'A1':
+            ligne_commande = "./pdfFabric.py -f " + 'A0' + \
+                " -e " + eechelle_choisi + \
+                " -t 'all' 2> /dev/null"
+            subprocess.call(
+                ligne_commande,
+                shell=True)
+        """
 
     def choose(self):
         u"""
@@ -113,7 +145,7 @@ class PdfFabricAll(object):
             self.nb_folio_A4_00200_case = subprocess.call(
                 "./pdfFabric.py -f A4 -e 200 -t case -s 2> /dev/null",
                 shell=True)
-            #print "A4_00200_case : " + str(self.nb_folio_A4_00200_case)
+            print "A4_00200_case : " + str(self.nb_folio_A4_00200_case)
 
         if self.fformat_min == 'A3':
             self.fe_choisi = 'A3_00200'
@@ -167,7 +199,8 @@ class PdfFabricAll(object):
                     self.nb_folio_A3_00200_case = subprocess.call(
                         "./pdfFabric.py -f A3 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A3_00200_case : " + str(self.nb_folio_A3_00200_case)
+                    #print "A3_00200_case : " + \
+                    #        str(self.nb_folio_A3_00200_case)
             if self.nb_folio_A3_00200_case > self.nb_case_max:
                 self.fe_choisi = 'A3_00500'
                 self.nb_folio_A3_00500_case = subprocess.call(
@@ -185,18 +218,21 @@ class PdfFabricAll(object):
                     self.nb_folio_A3_00200_case = subprocess.call(
                         "./pdfFabric.py -f A3 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A3_00200_case : " + str(self.nb_folio_A3_00200_case)
+                    #print "A3_00200_case : " + \
+                    #        str(self.nb_folio_A3_00200_case)
             if self.fformat_min == 'A3' or self.fformat_min == 'A4':
                 #print "2 fformat_min = " + self.fformat_min
                 #print "2 fformat_max = " + self.fformat_max
                 #print "2 nb_case_max = " + self.nb_case_max
-                #print "2 nb_folio_A3_00200_case = " + str(self.nb_folio_A3_00200_case)
+                #print "2 nb_folio_A3_00200_case = " + \
+                #        str(self.nb_folio_A3_00200_case)
                 if self.nb_folio_A3_00200_case > self.nb_case_max:
                     self.fe_choisi = 'A2_00200'
                     self.nb_folio_A2_00200_case = subprocess.call(
                         "./pdfFabric.py -f A2 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A2_00200_case : " + str(self.nb_folio_A2_00200_case)
+                    #print "A2_00200_case : " + \
+                    #        str(self.nb_folio_A2_00200_case)
             if self.nb_folio_A2_00200_case > self.nb_case_max:
                 self.fe_choisi = 'A2_00500'
                 self.nb_folio_A2_00500_case = subprocess.call(
@@ -214,14 +250,16 @@ class PdfFabricAll(object):
                     self.nb_folio_A3_00200_case = subprocess.call(
                         "./pdfFabric.py -f A3 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A3_00200_case : " + str(self.nb_folio_A3_00200_case)
+                    #print "A3_00200_case : " + \
+                    #        str(self.nb_folio_A3_00200_case)
             if self.fformat_min == 'A3' or self.fformat_min == 'A4':
                 if self.nb_folio_A3_00200_case > self.nb_case_max:
                     self.fe_choisi = 'A2_00200'
                     self.nb_folio_A2_00200_case = subprocess.call(
                         "./pdfFabric.py -f A2 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A2_00200_case : " + str(self.nb_folio_A2_00200_case)
+                    #print "A2_00200_case : " + \
+                    #        str(self.nb_folio_A2_00200_case)
             if self.fformat_min == 'A2' or \
                self.fformat_min == 'A3' or \
                self.fformat_min == 'A4':
@@ -230,7 +268,8 @@ class PdfFabricAll(object):
                     self.nb_folio_A1_00200_case = subprocess.call(
                         "./pdfFabric.py -f A1 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A1_00200_case : " + str(self.nb_folio_A1_00200_case)
+                    #print "A1_00200_case : " + \
+                    #        str(self.nb_folio_A1_00200_case)
             if self.nb_folio_A1_00200_case > self.nb_case_max:
                 self.fe_choisi = 'A1_00500'
                 self.nb_folio_A1_00500_case = subprocess.call(
@@ -248,14 +287,16 @@ class PdfFabricAll(object):
                     self.nb_folio_A3_00200_case = subprocess.call(
                         "./pdfFabric.py -f A3 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A3_00200_case : " + str(self.nb_folio_A3_00200_case)
+                    #print "A3_00200_case : " + \
+                    #        str(self.nb_folio_A3_00200_case)
             if self.fformat_min == 'A3' or self.fformat_min == 'A4':
                 if self.nb_folio_A3_00200_case > self.nb_case_max:
                     self.fe_choisi = 'A2_00200'
                     self.nb_folio_A2_00200_case = subprocess.call(
                         "./pdfFabric.py -f A2 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A2_00200_case : " + str(self.nb_folio_A2_00200_case)
+                    #print "A2_00200_case : " + \
+                    #        str(self.nb_folio_A2_00200_case)
             if self.fformat_min == 'A2' or \
                self.fformat_min == 'A3' or \
                self.fformat_min == 'A4':
@@ -264,7 +305,8 @@ class PdfFabricAll(object):
                     self.nb_folio_A1_00200_case = subprocess.call(
                         "./pdfFabric.py -f A1 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A1_00200_case : " + str(self.nb_folio_A1_00200_case)
+                    #print "A1_00200_case : " + \
+                    #        str(self.nb_folio_A1_00200_case)
             if self.fformat_min == 'A1' or \
                self.fformat_min == 'A2' or \
                self.fformat_min == 'A3' or \
@@ -274,7 +316,8 @@ class PdfFabricAll(object):
                     self.nb_folio_A0_00200_case = subprocess.call(
                         "./pdfFabric.py -f A0 -e 200 -t case -s 2> /dev/null",
                         shell=True)
-                    #print "A0_00200_case : " + str(self.nb_folio_A0_00200_case)
+                    #print "A0_00200_case : " + \
+                    #        str(self.nb_folio_A0_00200_case)
             if self.nb_folio_A0_00200_case > self.nb_case_max:
                 self.fe_choisi = 'A0_00500'
                 self.nb_folio_A0_00500_case = subprocess.call(
@@ -300,13 +343,15 @@ def main(argv):
             ["formatMin=", "FormatMax=", "nombreCaseMax="])
     except getopt.GetoptError as err:
         print "pdfFabricAll.py -h"
-        print 'pdfFabricAll.py -f <formatMin> -F <FormatMax> -n <nombreCaseMax>'
+        print 'pdfFabricAll.py -f <formatMin> ' + \
+            '-F <FormatMax> -n <nombreCaseMax>'
         print str(err)
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
             print "pdfFabricAll.py -h"
-            print 'pdfFabricAll.py -f <formatMin> -F <FormatMax> -n <nombreCaseMax>'
+            print 'pdfFabricAll.py -f <formatMin> ' + \
+                '-F <FormatMax> -n <nombreCaseMax>'
             sys.exit()
         if opt in ("-f", "--formatMin"):
             fformat_min = arg
@@ -322,7 +367,7 @@ def main(argv):
     __myPdfFabricAll = PdfFabricAll(fformat_min, fformat_max, nb_case_max)
     #__myPdfFabricAll.simulate('A4', '200')
     __myPdfFabricAll.choose()
-    #print 'fe_choisi = ' + __myPdfFabricAll.fe_choisi
+    print 'fe_choisi = ' + __myPdfFabricAll.fe_choisi
     __myPdfFabricAll.doMap()
 
     sys.exit(0)

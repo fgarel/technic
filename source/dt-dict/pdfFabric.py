@@ -36,7 +36,7 @@ class PdfFabric(object):
 
     Le script a besoin d'arguments (utilisation de getopt).
     Le détail est dans la fonction main().
-    
+
     """
 
     def __init__(self, path):
@@ -183,6 +183,7 @@ class PdfFabric(object):
                 # le nom du pdf change à chaque folio
                 report_filename_feature = report_filename + '_' + \
                     '{0:0>3}'.format(i) + '.pdf'
+                #print "report_filename_feature = " + report_filename_feature
                 composition.exportAsPDF(report_filename_feature)
 
             subprocess.call(["pdftk " + report_filename_generic +
@@ -235,6 +236,7 @@ def main(argv):
     eechelle = ''
     ttype = ''
     simulate = True
+
     try:
         opts, args = getopt.getopt(argv, "hf:e:t:s",
                                    ["format=", "echelle=", "type="])
@@ -270,7 +272,7 @@ def main(argv):
     if ttype == 'all':
         report_file = fformat + '_' + '{0:0>5}'.format(eechelle)
         template_file = report_file + '.qpt'
-        report_file +=  '_' + ttype
+        report_file += '_' + ttype
     else:
         report_file = fformat + '_' + '{0:0>5}'.format(eechelle) + '_' + ttype
         template_file = report_file + '.qpt'

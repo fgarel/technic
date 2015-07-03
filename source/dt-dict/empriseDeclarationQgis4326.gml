@@ -13,11 +13,8 @@
 	  <gml:outerBoundaryIs>
 	    <gml:LinearRing>
       	      <gml:coordinates>
--1.143804806221008,46.17916670925454
--1.1436975178604125,46.17915556619468
--1.1437243399505614,46.17903670674909
--1.1438745436553954,46.17906642163457
--1.143804806221008,46.17916670925454
+Coordonnées de l'emprise du chantier : \n<gml:MultiPolygon srsName="EPSG:4326"><gml:polygon<gml:MultiSurface srsName="EPSG: 4171">                              <gml:surfaceMember>                                 <gml:Polygon><gml:exterior><gml:LinearRing>                                     <gml:posList srsDimension="2">                                       3.449398 49.691127 3.451249 49.69153 3.452472                                       49.69077 3.451393 49.690246 3.449398 49.691127                                   </gml:posList></gml:LinearRing></gml:exterior> </gml:Polygon>                             </gml:surfaceMember>                  </gml:MultiSurface>
+<gml:MultiSurface srsName="EPSG: 4171">                               <gml:surfaceMember>                                 <gml:Polygon><gml:exterior><gml:LinearRing>                                     <gml:posList srsDimension="2">                                       3.449398 49.691127 3.451249 49.69153 3.452472                                       49.69077 3.451393 49.690246 3.449398 49.691127                                   </gml:posList></gml:LinearRing></gml:exterior> </gml:Polygon>                             </gml:surfaceMember>                  </gml:MultiSurface>
 	      </gml:coordinates>
 	    </gml:LinearRing>
 	  </gml:outerBoundaryIs>

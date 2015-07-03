@@ -16,6 +16,7 @@ import getopt
 import sys
 import subprocess
 import re
+import math
 #from decimal import Decimal
 
 
@@ -28,7 +29,7 @@ class CaseFabric(object):
 
     """
 
-    def __init__(self, fileName):
+    def __init__(self, fileName, typePosition):
         u"""
         Méthode pour initialiser l'objet.
 
@@ -36,6 +37,12 @@ class CaseFabric(object):
 
         """
         self.fileName = fileName
+        # Fixed or Floating
+        # Fixed = la grille est fixe, cad accroché au point origine
+        # Floating = la grille se cale par rapport
+        #            au point central de l'emprise
+        self.typePosition = typePosition
+
         self.bbox_emprise = []
 
         self.listeTable = ['00042x00030',
@@ -109,9 +116,9 @@ class CaseFabric(object):
         bbox = [xBG, yBG, xHD, yHD]
         return bbox
 
-    def getMinMaxFromBBox(self, largeur, hauteur):
+    def getMinMaxFixedCaseFromBBox(self, largeur, hauteur):
         u"""
-        Renvoie les Coordonnées minimum et maximum des Cases englobantes.
+        Renvoie les Coordonnées minimum et maximum des Cases fixes englobantes.
 
         Fournit la bounding box (finale) des cases qui contiennent
         la bbox (initiale).
@@ -132,6 +139,58 @@ class CaseFabric(object):
         bbox = [mybbox_BG[0], mybbox_BG[1], mybbox_HD[2], mybbox_HD[3]]
         return bbox
 
+    def getMinMaxFloatingCaseFromBBox(self, largeur, hauteur):
+        u"""
+        Renvoie les Coordonnées min et max des Cases flottantes englobantes.
+
+        Fournit la bounding box (finale) des cases qui contiennent
+        la bbox (initiale).
+        La bounding box finale est accrochée à la grille dont les pas
+        sont donnés en paramètre.
+
+        """
+
+        largeurEmprise = float(self.bbox_emprise[2]) - \
+            float(self.bbox_emprise[0])
+        hauteurEmprise = float(self.bbox_emprise[3]) - \
+            float(self.bbox_emprise[1])
+        kx = largeurEmprise / largeur
+        ky = hauteurEmprise / hauteur
+        largeurGrille = largeur * math.ceil(kx)
+        hauteurGrille = hauteur * math.ceil(ky)
+        resteEnLargeurGrille = largeurGrille - largeurEmprise
+        resteEnHauteurGrille = hauteurGrille - hauteurEmprise
+        xMinGrille = float(self.bbox_emprise[0]) - resteEnLargeurGrille / 2
+        yMinGrille = float(self.bbox_emprise[1]) - resteEnHauteurGrille / 2
+        xMaxGrille = xMinGrille + largeurGrille
+        yMaxGrille = yMinGrille + hauteurGrille
+        #print "largeurEmprise = " + str(largeurEmprise) + \
+        #    " ; largeur = " + str(largeur) + \
+        #    " ; kx = " + str(kx) + \
+        #    " ; KX = " + str(math.ceil(kx)) + \
+        #    " ; largeurGrille = " + str(largeurGrille)
+
+        #print "resteEnLargeurGrille = " + str(resteEnLargeurGrille) + \
+        #    " ; xMinGrille = " + str(xMinGrille) + \
+        #    " ; xMinEmprise = " + str(self.bbox_emprise[0]) + \
+        #    " ; xMaxEmprise = " + str(self.bbox_emprise[2]) + \
+        #    " ; xMaxGrille = " + str(xMaxGrille)
+
+        #print "hauteurEmprise = " + str(hauteurEmprise) + \
+        #    " ; hauteur = " + str(hauteur) + \
+        #    " ; ky = " + str(ky) + \
+        #    " ; KY = " + str(math.ceil(ky)) + \
+        #    " ; hauteurGrille = " + str(hauteurGrille)
+
+        #print "resteEnHauteurGrille = " + str(resteEnHauteurGrille) + \
+        #    " ; yMinGrille = " + str(yMinGrille) + \
+        #    " ; yMinEmprise = " + str(self.bbox_emprise[1]) + \
+        #    " ; yMaxEmprise = " + str(self.bbox_emprise[3]) + \
+        #    " ; yMaxGrille = " + str(yMaxGrille)
+
+        bbox = [xMinGrille, yMinGrille, xMaxGrille, yMaxGrille]
+        return bbox
+
     def generate2CreateTable(self, filename):
         u"""
         Genere le fichier sql pour les différentes tables.
@@ -141,8 +200,8 @@ class CaseFabric(object):
         """
         ffile = open(filename, "w")
         for table in self.listeTable:
-            x = int(re.sub(r'x.*', '', table))
-            y = int(re.sub(r'.*x', '', table))
+            #x = int(re.sub(r'x.*', '', table))
+            #y = int(re.sub(r'.*x', '', table))
             #ligne_a_ecrire = str(x) + "_" + str(y) + '\n'
             ffile.write('-- ----------------\n')
             ffile.write('--\n')
@@ -202,7 +261,7 @@ class CaseFabric(object):
 
         ffile.close()
 
-    def getListCaseFromBBox(self, largeur, hauteur):
+    def getCaseFromBBox(self, largeur, hauteur):
         u"""
         Liste des cases formant la grille couvrant l'emprise.
 
@@ -211,13 +270,16 @@ class CaseFabric(object):
         qui contiennent la bbox (initiale).
         La bounding box finale est accrochée à la grille dont les pas
         sont donnés en paramètre.
-        
+
         La chaine retournée contient les instructions sql qui
         permettent d'importer les cases sous postgis.
 
         """
 
-        minMaxBBox = self.getMinMaxFromBBox(largeur, hauteur)
+        if self.typePosition == 'Fixed':
+            minMaxBBox = self.getMinMaxFixedCaseFromBBox(largeur, hauteur)
+        if self.typePosition == 'Floating':
+            minMaxBBox = self.getMinMaxFloatingCaseFromBBox(largeur, hauteur)
         x_ini = int(minMaxBBox[0]) - largeur
         x_fin = int(minMaxBBox[2]) + largeur
         y_ini = int(minMaxBBox[1]) - hauteur
@@ -232,7 +294,7 @@ class CaseFabric(object):
         y_max = y_ini
         table = str(largeur) + 'x' + str(hauteur)
         table = '{0:0>5}'.format(largeur) + 'x' + '{0:0>5}'.format(hauteur)
-        
+
         result = ''
 
         for x in range(x_ini, x_fin, largeur):
@@ -273,10 +335,11 @@ class CaseFabric(object):
             x = int(re.sub(r'x.*', '', table))
             y = int(re.sub(r'.*x', '', table))
             #ligne_a_ecrire = str(x) + "_" + str(y) + '\n'
-            ligne_a_ecrire = self.getListCaseFromBBox(x, y)
+            ligne_a_ecrire = self.getCaseFromBBox(x, y)
             ffile.write(ligne_a_ecrire)
 
         ffile.close()
+
 
 def main(argv):
     u"""
@@ -285,28 +348,32 @@ def main(argv):
     """
 
     ffile = ''
+    ttype = ''
     try:
-        opts, args = getopt.getopt(argv, "hf:",
-                                   ["file="])
+        opts, args = getopt.getopt(argv, "hf:t:",
+                                   ["file=", 'type='])
     except getopt.GetoptError as err:
         print "pdfFabric.py -h"
-        print 'pdfFabric.py -f <file>'
+        print 'pdfFabric.py -f <file> -t <type>'
         print str(err)
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
             print "pdfFabric.py -h"
-            print 'pdfFabric.py -f <file>'
+            print 'pdfFabric.py -f <file> -t <type>'
             sys.exit()
         if opt in ("-f", "--file"):
             ffile = arg
+        elif opt in ("-t", "--type"):
+            ttype = arg
 
     #print 'file = ', ffile
+    #print 'type = ', ttype
 
-    __myCaseFabric = CaseFabric(ffile)
+    __myCaseFabric = CaseFabric(ffile, ttype)
     mybbox_emprise = __myCaseFabric.getBboxEmprise()
     #print "emprise   = ", mybbox_emprise
-   
+
     # on genere le sql qui sert à supprimer et creer des tables
     # postgis pour accueillir la geométrie des cases
     __myCaseFabric.generate2CreateTable("sql/caseFabricPgsql2_createTable.sql")
@@ -314,7 +381,7 @@ def main(argv):
     # on genere le sql qui sert à importer les données
     # dans les tables que l'on a précédemment créées
     __myCaseFabric.generate3Import("sql/caseFabricPgsql3_import.sql")
-    
+
     # execution des fichiers sql
     result = subprocess.call(
         "./caseFabricPgsql0.sh 1> /dev/null 2> /dev/null",
