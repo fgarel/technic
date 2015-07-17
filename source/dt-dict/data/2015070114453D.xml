@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gu21:dossierConsultation xmlns:gu21="http://www.reseaux-et-canalisations.gouv.fr/schema-teleservice/2.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ie="http://xml.insee.fr/schema" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gss="http://www.isotc211.org/2005/gss">
+    <gu21:DICT>
+        <gu21:noConsultationDuTeleservice>2015070114453D</gu21:noConsultationDuTeleservice>
+        <gu21:noAffaireDeLexecutantDesTravaux>3064.AKI1317098</gu21:noAffaireDeLexecutantDesTravaux>
+        <gu21:dateDeLaDeclaration>2015-07-01T18:11:07.796+02:00</gu21:dateDeLaDeclaration>
+        <gu21:natureDeLaDeclaration>INITIAL</gu21:natureDeLaDeclaration>
+        <gu21:executantDesTravaux>
+            <gu21:denomination>EUROVIA LA ROCHELLE</gu21:denomination>
+            <gu21:complementService>7, rue Ampère</gu21:complementService>
+            <gu21:voie>ZA La Corne Neuve</gu21:voie>
+            <gu21:codePostal>17139</gu21:codePostal>
+            <gu21:commune>DOMPIERRE SUR MER</gu21:commune>
+            <gu21:pays>FRANCE</gu21:pays>
+            <gu21:nomDeLaPersonneAContacter>KOROSKI Alain</gu21:nomDeLaPersonneAContacter>
+            <gu21:tel>0546354444</gu21:tel>
+            <gu21:fax>0546353331</gu21:fax>
+            <gu21:courriel>alain.koroski@eurovia.com</gu21:courriel>
+        </gu21:executantDesTravaux>
+        <gu21:emplacementDesTravaux>
+            <gu21:adresse>AVENUE DES GRANDES GUIARDES</gu21:adresse>
+            <gu21:CP>17000</gu21:CP>
+            <gu21:communePrincipale>LA ROCHELLE</gu21:communePrincipale>
+            <gu21:codeINSEE>17300</gu21:codeINSEE>
+            <gu21:nombreDeCommunes>1</gu21:nombreDeCommunes>
+            <gu21:listeDesEmplacementsDesCommunesConcernees>
+                <gu21:emplacementDeLaCommuneConcernee>
+                    <gu21:nomDeLaCommune>LA ROCHELLE</gu21:nomDeLaCommune>
+                    <gu21:codeCommune>17000</gu21:codeCommune>
+                    <gu21:codeINSEE>17300</gu21:codeINSEE>
+                </gu21:emplacementDeLaCommuneConcernee>
+            </gu21:listeDesEmplacementsDesCommunesConcernees>
+        </gu21:emplacementDesTravaux>
+        <gu21:emprise>
+            <gu21:geometrie srsName="urn:ogc:def:crs:EPSG::4326" srsDimension="2" gml:id="DICTsurface0">
+                <gml:surfaceMembers>
+                    <gml:Polygon gml:id="DICTpol0">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.1870567860223584,46.16972415832765 -1.186954845060186,46.1697278739386 -1.186895826608402,46.16951979933934 -1.1867563284496399,46.16951979933934 -1.186788520332431,46.16941576174453 -1.1870406900809625,46.1694269086391 -1.1870567860223584,46.16972415832765</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMembers>
+            </gu21:geometrie>
+            <gu21:surface>452.13202851472465</gu21:surface>
+        </gu21:emprise>
+        <gu21:souhaitsPourLeRecepisse>
+            <gu21:modeReceptionElectronique>
+                <gu21:tailleDesPlans>A4</gu21:tailleDesPlans>
+                <gu21:couleurDesPlans>false</gu21:couleurDesPlans>
+                <gu21:souhaitDePlansVectoriels>false</gu21:souhaitDePlansVectoriels>
+            </gu21:modeReceptionElectronique>
+        </gu21:souhaitsPourLeRecepisse>
+        <gu21:travauxEtLeurCalendrier>
+            <gu21:natureDesTravaux>DEC</gu21:natureDesTravaux>
+            <gu21:natureDesTravaux>OTR</gu21:natureDesTravaux>
+            <gu21:decrivezLesTravaux>REFECTION DE BORDURES ET TROTTOIRS ET POSE DE COUSSINS BERLINOIS</gu21:decrivezLesTravaux>
+            <gu21:techniquesUtilisees>VIB</gu21:techniquesUtilisees>
+            <gu21:techniquesUtilisees>MAN</gu21:techniquesUtilisees>
+            <gu21:techniquesUtilisees>PEL</gu21:techniquesUtilisees>
+            <gu21:techniquesUtilisees>ENG</gu21:techniquesUtilisees>
+            <gu21:profondeurMaxDExcavation>40</gu21:profondeurMaxDExcavation>
+            <gu21:modificationProfilTerrain>false</gu21:modificationProfilTerrain>
+            <gu21:communicationResultatsInvestigations>false</gu21:communicationResultatsInvestigations>
+            <gu21:distanceMinimaleEntreLesTravauxEtLaLigneElectrique>0.0</gu21:distanceMinimaleEntreLesTravauxEtLaLigneElectrique>
+            <gu21:souhaitLesPlansDesReseauxElectriqueAeriens>false</gu21:souhaitLesPlansDesReseauxElectriqueAeriens>
+            <gu21:datePrevuePourLeCommencementDesTravaux>2015-07-15+02:00</gu21:datePrevuePourLeCommencementDesTravaux>
+            <gu21:dureeDuChantierEnJours>7</gu21:dureeDuChantierEnJours>
+        </gu21:travauxEtLeurCalendrier>
+        <gu21:signatureDeLExecutantDesTravauxOuDeSonRepresentant>
+            <gu21:nomDuSignataire>Alain KOROSKI</gu21:nomDuSignataire>
+            <gu21:nombrePagesJointes>1</gu21:nombrePagesJointes>
+        </gu21:signatureDeLExecutantDesTravauxOuDeSonRepresentant>
+    </gu21:DICT>
+    <gu21:listeDesOuvrages>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>FAVREAU</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Mathieu</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Dalkia France</gu21:societe>
+                <gu21:agence>DALKIA - Centre Poitou Charente</gu21:agence>
+                <gu21:numero>3</gu21:numero>
+                <gu21:voie>,rue de la Garenne</gu21:voie>
+                <gu21:codePostal>86001</gu21:codePostal>
+                <gu21:commune>POITIERS</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546457368</gu21:fax>
+                <gu21:courriel>gu-4-1704C-mireuil@dalkia.fr</gu21:courriel>
+                <gu21:telephone>'0549523373</gu21:telephone>
+                <gu21:telephoneUrgence>0825885635’</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0811900012’</gu21:faxUrgence>
+                <gu21:mailUrgence>demande-intervention@dalkia.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0825885635’</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</gu21:classeOuvrage>
+            <gu21:codeOuvrage>FRG000732N</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>RESEAU DE CHALEUR LA ROCHELLE ZUP DE MIREUIL</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>Cassegrain</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Thierry</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Communauté d’Agglomération de La Rochelle</gu21:societe>
+                <gu21:agence>Service Assainissement</gu21:agence>
+                <gu21:numero>16</gu21:numero>
+                <gu21:voie>rue de Vaucanson</gu21:voie>
+                <gu21:lieuDitBP>CS 30001</gu21:lieuDitBP>
+                <gu21:codePostal>17183</gu21:codePostal>
+                <gu21:commune>PERIGNY Cedex</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546684271</gu21:fax>
+                <gu21:courriel>reseauxass@agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546684264</gu21:telephone>
+                <gu21:telephoneUrgence>0546303400</gu21:telephoneUrgence>
+                <gu21:telEndommagement>0546684264</gu21:telEndommagement>
+                <gu21:site>www.agglo-larochelle.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>REU</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Réseaux Eaux Usées</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>true</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>Legras</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Johann</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Communauté d’Agglomération de La Rochelle</gu21:societe>
+                <gu21:agence>Eaux Pluviales Primaires</gu21:agence>
+                <gu21:numero>16</gu21:numero>
+                <gu21:voie>rue de Vaucanson</gu21:voie>
+                <gu21:lieuDitBP>CS 30001</gu21:lieuDitBP>
+                <gu21:codePostal>17183</gu21:codePostal>
+                <gu21:commune>PERIGNY Cedex</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546303539</gu21:fax>
+                <gu21:courriel>secretariat.eauass@agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546303548</gu21:telephone>
+                <gu21:telephoneUrgence>0546303400</gu21:telephoneUrgence>
+                <gu21:telEndommagement>0546303548</gu21:telEndommagement>
+                <gu21:site>www.agglo-larochelle.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>EPP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Eaux Pluviales Primaires</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>Rebillard</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Jean-Philippe</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Communauté d’Agglomération de La Rochelle</gu21:societe>
+                <gu21:agence>Direction des Systèmes et Technologies de L’Information</gu21:agence>
+                <gu21:numero>16</gu21:numero>
+                <gu21:voie>rue de Vaucanson</gu21:voie>
+                <gu21:lieuDitBP>CS 30001</gu21:lieuDitBP>
+                <gu21:codePostal>17183</gu21:codePostal>
+                <gu21:commune>PERIGNY Cedex</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546303429</gu21:fax>
+                <gu21:courriel>dsti@agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546303433</gu21:telephone>
+                <gu21:telephoneUrgence>0546303400</gu21:telephoneUrgence>
+                <gu21:telEndommagement>0546303433</gu21:telEndommagement>
+                <gu21:site>www.agglo-larochelle.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RFO</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Réseaux Fibres Optiques</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>RESE RESEAU LITTORAL</gu21:societe>
+                <gu21:agence>Service Travaux DT-DICT</gu21:agence>
+                <gu21:numero>131</gu21:numero>
+                <gu21:voie>Cours Genet</gu21:voie>
+                <gu21:lieuDitBP>BP30551</gu21:lieuDitBP>
+                <gu21:codePostal>17119</gu21:codePostal>
+                <gu21:commune>SAINTES</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546923999</gu21:fax>
+                <gu21:courriel>dr-dict@rese17.fr</gu21:courriel>
+                <gu21:telephone>0546900505</gu21:telephone>
+                <gu21:telephoneUrgence>0546931919</gu21:telephoneUrgence>
+                <gu21:telEndommagement>0546931919</gu21:telEndommagement>
+                <gu21:site>WWW.RESE17</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAU_POTABLE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>FEEDER</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>FEEDER RESEAU LITTORAL</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>Bertrand</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Serge</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Communauté d’Agglomération de La Rochelle</gu21:societe>
+                <gu21:agence>Service Aménagement et Patrimoine</gu21:agence>
+                <gu21:numero>25</gu21:numero>
+                <gu21:voie>quai maubec</gu21:voie>
+                <gu21:codePostal>17000</gu21:codePostal>
+                <gu21:commune>La Rochelle</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546303579</gu21:fax>
+                <gu21:courriel>serge.bertrand@agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546303579</gu21:telephone>
+                <gu21:telephoneUrgence>0546303737</gu21:telephoneUrgence>
+                <gu21:telEndommagement>0546303737</gu21:telEndommagement>
+                <gu21:site>www.agglo-larochelle.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>REP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Réseaux Eaux Pluviales</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>VILLE DE LA ROCHELLE</gu21:societe>
+                <gu21:voie>HOTEL DE VILLE</gu21:voie>
+                <gu21:codePostal>17086</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE CEDEX 1</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546377111</gu21:fax>
+                <gu21:courriel>dt.dict@ville-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546511433</gu21:telephone>
+                <gu21:telEndommagement>0546515151</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>FO_001</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>fibre optique 001</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>VILLE DE LA ROCHELLE</gu21:societe>
+                <gu21:voie>HOTEL DE VILLE</gu21:voie>
+                <gu21:codePostal>17086</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE CEDEX 1</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546377111</gu21:fax>
+                <gu21:courriel>dt.dict@ville-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546511433</gu21:telephone>
+                <gu21:telEndommagement>0546515151</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>ASSPL01</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>ASSAINISSEMENT PLUVIAL</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>VILLE DE LA ROCHELLE</gu21:societe>
+                <gu21:voie>HOTEL DE VILLE</gu21:voie>
+                <gu21:codePostal>17086</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE CEDEX 1</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546377111</gu21:fax>
+                <gu21:courriel>dt.dict@ville-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546511433</gu21:telephone>
+                <gu21:telEndommagement>0546515151</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAU_POTABLE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>EAUPOT01</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>EAU POTABLE</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>true</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>FRERY</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Philippe</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>COFELY SUD OUEST agence PERIGORD ATLANTIQUE</gu21:societe>
+                <gu21:agence>Responsable Technique</gu21:agence>
+                <gu21:numero>11</gu21:numero>
+                <gu21:voie>, ZA les brandeaux</gu21:voie>
+                <gu21:codePostal>16400</gu21:codePostal>
+                <gu21:commune>PUYMOYEN</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0545248962</gu21:fax>
+                <gu21:courriel>technique.perigordatlantique@cofely-gdfsuez.com</gu21:courriel>
+                <gu21:telephone>0545248960</gu21:telephone>
+                <gu21:telephoneUrgence>0811203097</gu21:telephoneUrgence>
+                <gu21:faxUrgence>9999999999</gu21:faxUrgence>
+                <gu21:mailUrgence>salines.dict@cofely-gdfsuez.com</gu21:mailUrgence>
+                <gu21:telEndommagement>0811203097</gu21:telEndommagement>
+                <gu21:consigne>Numéro d'installation à communiquer en cas d'urgence ou endommagement: 25782000GU</gu21:consigne>
+                <gu21:site>Armando De Barros</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</gu21:classeOuvrage>
+            <gu21:codeOuvrage>ZUP VILLENEUVE LES SALINES</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>ZUP VILLENEUVE LES SALINES / LA ROCHELLE</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>VILLE DE LA ROCHELLE</gu21:societe>
+                <gu21:voie>HOTEL DE VILLE</gu21:voie>
+                <gu21:codePostal>17086</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE CEDEX 1</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546377111</gu21:fax>
+                <gu21:courriel>dt.dict@ville-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546511433</gu21:telephone>
+                <gu21:telephoneUrgence>0546515151</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546515086</gu21:faxUrgence>
+                <gu21:telEndommagement>0546515151</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>ECL01</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Réseau d'éclairage public</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>GRTGAZ RCA RPCL ZONE DE SURGERES</gu21:societe>
+                <gu21:agence>SERVICE DT-DICT</gu21:agence>
+                <gu21:voie>ZI RABION</gu21:voie>
+                <gu21:lieuDitBP>62 RUE DE LA BRIGADE RAC</gu21:lieuDitBP>
+                <gu21:codePostal>16023</gu21:codePostal>
+                <gu21:commune>ANGOULEME  CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0545242426</gu21:fax>
+                <gu21:courriel>6232256.GRTGAZ@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0545242429</gu21:telephone>
+                <gu21:telephoneUrgence>0800022981</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0146356784</gu21:faxUrgence>
+                <gu21:telEndommagement>0800022981</gu21:telEndommagement>
+                <gu21:consigne>- En vertu de l article R.554-26 du Code de l Environnement, les informations relatives a la localisation des ouvrages GRTgaz et aux dispositions de securite doivent obligatoirement faire l objet d’un rendez-vous sur site avec GRTgaz.&#xD;
+&#xD;
+- Privilegiez l'envoi par email pour un traitement plus rapide de votre demande.&#xD;
+&#xD;
+&#xD;
+Pour que votre email soit recevable, veuillez joindre uniquement les 3 fichiers suivants :&#xD;
+- Le fichier « xxxxxxxxxxxxxTxx_description.xml » (uniquement celui sans « signature ») disponible dans le dossier « xxxxxxxxxxxxxTxx_description.zip » de votre declaration.&#xD;
+- 2 fichiers PDF : la declaration « xxxxxxxxxxxxxTxx_DX_X.pdf » adressee à GRTgaz et le PDF du dessin d emprise « xxxxxxxxxxxxxTxx_emprise.pdf ».&#xD;
+&#xD;
+&#xD;
+Remarque : &#xD;
+Pas besoin d ajouter du texte dans votre email car il ne pourra pas etre pris en compte par nos equipes.&#xD;
+</gu21:consigne>
+                <gu21:referenceInterne>_|GRTGAZ$6232256|_</gu21:referenceInterne>
+                <gu21:site>www.grtgaz.com</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_GAZ_COMBUSTIBLES</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RCA</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>RESEAU_RCA</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>DESCAMPS</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>Laurent</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>Société du Dépôt de La Pallice</gu21:societe>
+                <gu21:numero>8</gu21:numero>
+                <gu21:voie>, rue de Béthencourt</gu21:voie>
+                <gu21:lieuDitBP>BP 2016</gu21:lieuDitBP>
+                <gu21:codePostal>17009</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546679068</gu21:fax>
+                <gu21:courriel>dict@sdlp.fr</gu21:courriel>
+                <gu21:telephone>0546426646</gu21:telephone>
+                <gu21:telephoneUrgence>0546426646</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546679068</gu21:faxUrgence>
+                <gu21:mailUrgence>l.descamps@sdlp.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0546426646</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_HYDROCARBURES_LIQUIDES</gu21:classeOuvrage>
+            <gu21:codeOuvrage>PIPE_SDLP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>pile line</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>INSTALLATIONS_DE_TRANSPORT_GUIDE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RFP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>réseau ferroviaire</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>EP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>assainissement pluvial</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>EU</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Assainissement Eaux Usées</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NSFS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAU_POTABLE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>INCENDIE</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Eaux incendie</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>ELECTRICITE/ECLAIRAGE</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Réseau électrique et éclairage</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>Port Atlantique La Rochelle</gu21:societe>
+                <gu21:voie>BP 70394</gu21:voie>
+                <gu21:codePostal>17001</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546077595</gu21:fax>
+                <gu21:courriel>dict@larochelle.port.fr</gu21:courriel>
+                <gu21:telephone>0546077588</gu21:telephone>
+                <gu21:telephoneUrgence>0546005630</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546423188</gu21:faxUrgence>
+                <gu21:telEndommagement>0546077588</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>FO</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>Fibre Optique</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>RINALDI</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>MARIO</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>SISP</gu21:societe>
+                <gu21:voie>QUAI MODERE LOMBARD</gu21:voie>
+                <gu21:lieuDitBP>CEDEX 1</gu21:lieuDitBP>
+                <gu21:codePostal>17026</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546676560</gu21:fax>
+                <gu21:courriel>m.rinaldi@sisp-liquides.com</gu21:courriel>
+                <gu21:telephone>0618860111</gu21:telephone>
+                <gu21:telephoneUrgence>0603172479</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546676560</gu21:faxUrgence>
+                <gu21:telEndommagement>0603172479</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_PRODUITS_CHIMIQUES_LIQUIDES_OU_GAZEUX</gu21:classeOuvrage>
+            <gu21:codeOuvrage>PQL_01</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>PIPE 8 P QUAI LB_D1</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>lefranc</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>pascal</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>OPH de la CDA de la ROCHELLE</gu21:societe>
+                <gu21:numero>2</gu21:numero>
+                <gu21:voie>avenue de varsovie</gu21:voie>
+                <gu21:codePostal>17023</gu21:codePostal>
+                <gu21:commune>la rochelle</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546004995</gu21:fax>
+                <gu21:courriel>palefranc@office-agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546004994</gu21:telephone>
+                <gu21:telephoneUrgence>0622194963</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546004995</gu21:faxUrgence>
+                <gu21:mailUrgence>palefranc@office-agglo-larochelle.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0546004994</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RES CH 001</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>reseau chauffage Mireuil</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>lefranc</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>pascal</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>OPH de la CDA de la ROCHELLE</gu21:societe>
+                <gu21:numero>2</gu21:numero>
+                <gu21:voie>avenue de varsovie</gu21:voie>
+                <gu21:codePostal>17023</gu21:codePostal>
+                <gu21:commune>la rochelle</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546004995</gu21:fax>
+                <gu21:courriel>palefranc@office-agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546004994</gu21:telephone>
+                <gu21:telephoneUrgence>0622194963</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546004995</gu21:faxUrgence>
+                <gu21:mailUrgence>palefranc@office-agglo-larochelle.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0546004994</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAU_POTABLE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RES EF 003</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>reseau eau froide PORT NEUF</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>lefranc</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>pascal</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>OPH de la CDA de la ROCHELLE</gu21:societe>
+                <gu21:numero>2</gu21:numero>
+                <gu21:voie>avenue de varsovie</gu21:voie>
+                <gu21:codePostal>17023</gu21:codePostal>
+                <gu21:commune>la rochelle</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546004995</gu21:fax>
+                <gu21:courriel>palefranc@office-agglo-larochelle.fr</gu21:courriel>
+                <gu21:telephone>0546004994</gu21:telephone>
+                <gu21:telephoneUrgence>0622194963</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546004995</gu21:faxUrgence>
+                <gu21:mailUrgence>palefranc@office-agglo-larochelle.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0546004994</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</gu21:classeOuvrage>
+            <gu21:codeOuvrage>RES CH 002</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>reseau chauffage port neuf</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>BOURDUT</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>OLIVIER</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>PICOTY SA</gu21:societe>
+                <gu21:numero>6</gu21:numero>
+                <gu21:voie>- 22 RUE DE BETHENCOURT</gu21:voie>
+                <gu21:codePostal>17000</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546005506</gu21:fax>
+                <gu21:courriel>larochelle.maintenance@picoty.fr</gu21:courriel>
+                <gu21:telephone>0546005505</gu21:telephone>
+                <gu21:telephoneUrgence>0546005505</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546005506</gu21:faxUrgence>
+                <gu21:mailUrgence>larochelle.maintenance@picoty.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0546005505</gu21:telEndommagement>
+                <gu21:consigne>Informer impérativement la société PICOTY Tél 05 46 35 43 15 ou 05 46 00 55 05</gu21:consigne>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>false</gu21:gereLesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_HYDROCARBURES_LIQUIDES</gu21:classeOuvrage>
+            <gu21:codeOuvrage>PICOTY</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>PIPELINES PICOTY</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>DITTLO</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>MARTINE</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>17 NUMERIQUE</gu21:societe>
+                <gu21:agence>Gestion DT-DICT chez AXIONE</gu21:agence>
+                <gu21:numero>132</gu21:numero>
+                <gu21:voie>, boulevard CAMELINAT</gu21:voie>
+                <gu21:codePostal>92240</gu21:codePostal>
+                <gu21:commune>MALAKOFF</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0172258081</gu21:fax>
+                <gu21:courriel>17.numerique.dict@axionesi.net</gu21:courriel>
+                <gu21:telephone>0178160080</gu21:telephone>
+                <gu21:telephoneUrgence>0811650519</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0172258081</gu21:faxUrgence>
+                <gu21:mailUrgence>17.numerique.dict@axionesi.net</gu21:mailUrgence>
+                <gu21:telEndommagement>0611126884</gu21:telEndommagement>
+                <gu21:site>http://17numerique.olm.fr/</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>1095_56190_46251</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>AXIONE - 17 NUMERIQUE - CMA_17</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>ORANGE DT DICT</gu21:societe>
+                <gu21:agence>UI AQUITAINE POLE MDM DICTP0</gu21:agence>
+                <gu21:voie>TSA 50010</gu21:voie>
+                <gu21:codePostal>64210</gu21:codePostal>
+                <gu21:commune>BIDART cedex</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0140874137</gu21:fax>
+                <gu21:courriel>FT40P0.FTO@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0558055959</gu21:telephone>
+                <gu21:telephoneUrgence>0558055959</gu21:telephoneUrgence>
+                <gu21:mailUrgence>FT40P0.FTO@demat.protys.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0810300111</gu21:telEndommagement>
+                <gu21:referenceInterne>_|FTO$FT40P0|_</gu21:referenceInterne>
+                <gu21:site>www.protys.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:positionnementOuvrage>AERIEN</gu21:positionnementOuvrage>
+            <gu21:codeOuvrage>FTO-17</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>RESEAUX DE TELECOMMUNICATION FTO DEPARTEMENT 17</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>true</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>GRDF UNITÉ RÉSEAU GAZ PDL PC</gu21:societe>
+                <gu21:agence>C2T PDLPC</gu21:agence>
+                <gu21:numero>363</gu21:numero>
+                <gu21:voie>BD MARCEL PAUL</gu21:voie>
+                <gu21:lieuDitBP>TSA 30604</gu21:lieuDitBP>
+                <gu21:codePostal>44804</gu21:codePostal>
+                <gu21:commune>ST HERBLAIN CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0228034655</gu21:fax>
+                <gu21:courriel>14600433C.GRDF@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0228034630</gu21:telephone>
+                <gu21:telephoneUrgence>0810300360</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0228034601</gu21:faxUrgence>
+                <gu21:mailUrgence>14600433C.GRDF@demat.protys.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0800473333</gu21:telEndommagement>
+                <gu21:referenceInterne>_|GRDF$14600433C|_</gu21:referenceInterne>
+                <gu21:site>www.protys.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_GAZ_COMBUSTIBLES</gu21:classeOuvrage>
+            <gu21:codeOuvrage>GRDFPDLP</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>RESEAU_DISTRIBUTION_GRDF</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>true</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>RINALDI</ie:NomFamille>
+                </gu21:nom>
+                <gu21:prenom>
+                    <ie:Prenom>MARIO</ie:Prenom>
+                </gu21:prenom>
+                <gu21:societe>SISP</gu21:societe>
+                <gu21:voie>RUE MARCEL DEFLANDRE</gu21:voie>
+                <gu21:codePostal>17000</gu21:codePostal>
+                <gu21:commune>LA ROCHELLE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0546676560</gu21:fax>
+                <gu21:courriel>m.rinaldi@sisp-liquides.com</gu21:courriel>
+                <gu21:telephone>0618860111</gu21:telephone>
+                <gu21:telephoneUrgence>0603172479</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0546676560</gu21:faxUrgence>
+                <gu21:mailUrgence>m.rinaldi@sisp-liquides.com</gu21:mailUrgence>
+                <gu21:telEndommagement>0603172479</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_HYDROCARBURES_LIQUIDES</gu21:classeOuvrage>
+            <gu21:codeOuvrage>PAP_02</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>PIPE 10 P APPT</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>SNCF</gu21:societe>
+                <gu21:agence>Accueil DT-DICT-ATL</gu21:agence>
+                <gu21:numero>14 bis</gu21:numero>
+                <gu21:voie>terrasse Bellini</gu21:voie>
+                <gu21:codePostal>92807</gu21:codePostal>
+                <gu21:commune>PUTEAUX CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0142916728</gu21:fax>
+                <gu21:courriel>accueil-dt-dict-atl@sncf.fr</gu21:courriel>
+                <gu21:telephone>0142916750</gu21:telephone>
+                <gu21:telephoneUrgence>0547471129</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0142916728</gu21:faxUrgence>
+                <gu21:mailUrgence>accueil-dt-dict-atl@sncf.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0547471129</gu21:telEndommagement>
+                <gu21:referenceInterne>_|D110687$5|_</gu21:referenceInterne>
+                <gu21:site>p/gu.php?e=D110687$5</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>INSTALLATIONS_DE_TRANSPORT_GUIDE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>SNCF RÉSEAU (ANCIEN RFF)</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>SNCF Réseau (ancien RFF)</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:nom>
+                    <ie:NomFamille>MME GERME</ie:NomFamille>
+                </gu21:nom>
+                <gu21:societe>SFR</gu21:societe>
+                <gu21:agence>SFR - SERVICE DICT</gu21:agence>
+                <gu21:numero>10</gu21:numero>
+                <gu21:voie>RUE ALBERT EINSTEIN</gu21:voie>
+                <gu21:lieuDitBP>CS 50507 CHAMPS SUR MARNE</gu21:lieuDitBP>
+                <gu21:codePostal>77447</gu21:codePostal>
+                <gu21:commune>MARNE LA VALLEE CEDEX 02</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0000000000</gu21:fax>
+                <gu21:courriel>dictsfr@ncnumericable.com</gu21:courriel>
+                <gu21:telephone>0170014625</gu21:telephone>
+                <gu21:telephoneUrgence>0805200410</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0000000000</gu21:faxUrgence>
+                <gu21:mailUrgence>dictsfr@ncnumericable.com</gu21:mailUrgence>
+                <gu21:telEndommagement>0805200410</gu21:telEndommagement>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:positionnementOuvrage>AERIEN</gu21:positionnementOuvrage>
+            <gu21:codeOuvrage>SFR_REGIONS_2</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>SFR - SERVICE DICT</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>ERDF DR POITOU-CHARENTES</gu21:societe>
+                <gu21:numero>2</gu21:numero>
+                <gu21:voie>Boulevard Aristide BRIAND</gu21:voie>
+                <gu21:lieuDitBP>CS 50250</gu21:lieuDitBP>
+                <gu21:codePostal>17305</gu21:codePostal>
+                <gu21:commune>ROCHEFORT CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0344625435</gu21:fax>
+                <gu21:courriel>0000000000405rwy.ERDFNAT@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0546883423</gu21:telephone>
+                <gu21:telephoneUrgence>0181624701</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0344625435</gu21:faxUrgence>
+                <gu21:mailUrgence>0000000000405rwy.ERDFNAT@demat.protys.fr</gu21:mailUrgence>
+                <gu21:telEndommagement>0176614701</gu21:telEndommagement>
+                <gu21:referenceInterne>_|ERDFNAT$0000000000405rwy|_</gu21:referenceInterne>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>ERDF</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>RESEAUX ERDF HTA ET BT AERIEN ET SOUTERRAIN</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>true</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>RTE GMR POITOU CHARENTES</gu21:societe>
+                <gu21:agence>Pole Environnement</gu21:agence>
+                <gu21:numero>13</gu21:numero>
+                <gu21:voie>RUE ARISTIDE BERGES</gu21:voie>
+                <gu21:codePostal>17187</gu21:codePostal>
+                <gu21:commune>PERIGNY CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0547551352</gu21:fax>
+                <gu21:courriel>6060966.RTE@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0546514300</gu21:telephone>
+                <gu21:telephoneUrgence>0669690307</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0547551352</gu21:faxUrgence>
+                <gu21:telEndommagement>0669690307</gu21:telEndommagement>
+                <gu21:referenceInterne>_|RTE$6060966|_</gu21:referenceInterne>
+                <gu21:site>www.protys.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>OA_LA</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>OA_LA</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>RTE GMR POITOU CHARENTES</gu21:societe>
+                <gu21:agence>Pole Environnement</gu21:agence>
+                <gu21:numero>13</gu21:numero>
+                <gu21:voie>RUE ARISTIDE BERGES</gu21:voie>
+                <gu21:codePostal>17187</gu21:codePostal>
+                <gu21:commune>PERIGNY CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0547551352</gu21:fax>
+                <gu21:courriel>6060966.RTE@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0546514300</gu21:telephone>
+                <gu21:telephoneUrgence>0669690307</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0547551352</gu21:faxUrgence>
+                <gu21:telEndommagement>0669690307</gu21:telEndommagement>
+                <gu21:referenceInterne>_|RTE$6060966|_</gu21:referenceInterne>
+                <gu21:site>www.protys.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>S</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>OA_LS</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>OA_LS</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>RTE GMR POITOU CHARENTES</gu21:societe>
+                <gu21:agence>Pole Environnement</gu21:agence>
+                <gu21:numero>13</gu21:numero>
+                <gu21:voie>RUE ARISTIDE BERGES</gu21:voie>
+                <gu21:codePostal>17187</gu21:codePostal>
+                <gu21:commune>PERIGNY CEDEX</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0547551352</gu21:fax>
+                <gu21:courriel>6060966.RTE@demat.protys.fr</gu21:courriel>
+                <gu21:telephone>0546514300</gu21:telephone>
+                <gu21:telephoneUrgence>0669690307</gu21:telephoneUrgence>
+                <gu21:faxUrgence>0547551352</gu21:faxUrgence>
+                <gu21:telEndommagement>0669690307</gu21:telEndommagement>
+                <gu21:referenceInterne>_|RTE$6060966|_</gu21:referenceInterne>
+                <gu21:site>www.protys.fr</gu21:site>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NSFS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</gu21:classeOuvrage>
+            <gu21:codeOuvrage>OA_LT</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>OA_LT</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+        <gu21:ouvrage>
+            <gu21:contact>
+                <gu21:societe>SAUR SUD OUEST</gu21:societe>
+                <gu21:agence>Service DICT (ATLANTIQUE)</gu21:agence>
+                <gu21:voie>GREEN PARK 2</gu21:voie>
+                <gu21:lieuDitBP>298 ALLEE DU LAC</gu21:lieuDitBP>
+                <gu21:codePostal>31670</gu21:codePostal>
+                <gu21:commune>LABEGE</gu21:commune>
+                <gu21:codePays>FR</gu21:codePays>
+                <gu21:fax>0534407611</gu21:fax>
+                <gu21:courriel>saur_so_atlantique@in.sogelink.fr</gu21:courriel>
+                <gu21:telephone>0562573131</gu21:telephone>
+                <gu21:faxUrgence>0534407611</gu21:faxUrgence>
+                <gu21:telEndommagement>0581913503</gu21:telEndommagement>
+                <gu21:referenceInterne>!_$D|V5|264174$_!+c89c6fe8</gu21:referenceInterne>
+                <gu21:gestionDesFichiersDematerialises>
+                    <gu21:gereLesFichiersDematerialises>true</gu21:gereLesFichiersDematerialises>
+                    <gu21:formatDesFichiersDematerialises>XML_PDF</gu21:formatDesFichiersDematerialises>
+                </gu21:gestionDesFichiersDematerialises>
+            </gu21:contact>
+            <gu21:categorieOuvrage>NS</gu21:categorieOuvrage>
+            <gu21:classeOuvrage>CANALISATIONS_EAU_POTABLE</gu21:classeOuvrage>
+            <gu21:codeOuvrage>1036_55990_264170</gu21:codeOuvrage>
+            <gu21:denominationOuvrage>SAUR SUD OUEST Service DICT – Eau Potable (Zonage)</gu21:denominationOuvrage>
+            <gu21:statut>ACTIF</gu21:statut>
+            <gu21:dateCreation>2015-06-28+02:00</gu21:dateCreation>
+            <gu21:polygoneConcerne>false</gu21:polygoneConcerne>
+        </gu21:ouvrage>
+    </gu21:listeDesOuvrages>
+</gu21:dossierConsultation>
