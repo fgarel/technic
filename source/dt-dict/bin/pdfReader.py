@@ -221,7 +221,7 @@ class PdfReader(object):
         #print "chaine = " + chaine
         #print "derniere ligne = " + splitchaine[-1]
         self.numeroDict = splitchaine[-1]
-        print "Numéro de la DT/DICT = " + self.numeroDict
+        ##print "Numéro de la DT/DICT = " + self.numeroDict
 
         # 3ème étape suite : capacite d'impression
         # cat document1.pdf | \
@@ -243,7 +243,7 @@ class PdfReader(object):
         # p3.communicate renvoit un tuple : on ne prend que le 1er element
         # et en plus, on supprime le dernier caractère
         self.capaciteImpression = p3.communicate()[0][:-1]
-        print "Capacité d'impression = " + self.capaciteImpression
+        ##print "Capacité d'impression = " + self.capaciteImpression
 
         # 3ème étape suite : mail du responsable
         # cat document1.pdf | \
@@ -265,7 +265,7 @@ class PdfReader(object):
         # p3.communicate renvoit un tuple : on ne prend que le 1er element
         # et en plus, on supprime le dernier caractère
         self.mailResponsable = p3.communicate()[0][:-1]
-        print "Courriel du responsable du projet = " + self.mailResponsable
+        ##print "Courriel du responsable du projet = " + self.mailResponsable
 
         # 3ème étape suite : Nom de l'Exploitant
         # le nom de l'exploitant est contenu dans le premier
@@ -297,7 +297,7 @@ class PdfReader(object):
         # p4.communicate renvoit un tuple : on ne prend que le 1er element
         # et en plus, on supprime le dernier caractère
         self.nomExploitant = p4.communicate()[0][:-1]
-        print "Nom de l'Exploitant = " + self.nomExploitant
+        ##print "Nom de l'Exploitant = " + self.nomExploitant
 
 
         ffile = open(self.metadata_filename, "a")
@@ -306,7 +306,7 @@ class PdfReader(object):
                     self.mailResponsable + ";" +
                     self.nomExploitant + "\n")
         ffile.close()
-
+        return self.nomExploitant
 
     def ddict(self):
         u"""
