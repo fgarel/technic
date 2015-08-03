@@ -85,7 +85,7 @@ class MonHandler(FileSystemEventHandler):
         # mail de l'expediteur du message
         self.sender = 'dt-dict@ville-larochelle.fr'
         # mail de la personne qui recevra une copie du message
-        self.receivers = 'fred@VLR6180.mairie.fr'
+        #self.receivers = 'fred@VLR6180.mairie.fr'
         self.receivers = 'frederic.garel@gmail.com'
         # corps du message
         text = \
@@ -184,7 +184,9 @@ class MonHandler(FileSystemEventHandler):
         ##print "filename = " + f.filename
         repertoiretemporaire = re.sub(r'\.zip', '', f.filename)
         #print "repertoiretemporaire = " + repertoiretemporaire
-        repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
+        ## on remonte la fhs d'un niveau
+        ##repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
+        repertoiretemporaire = re.sub(r'dt-dict\/', '', repertoiretemporaire)
         ##print "repertoiretemporaire = " + repertoiretemporaire
         self.numero_dtdict = re.sub(r'.*/', '', repertoiretemporaire)
         ##print "numero_dtdict = " + self.numero_dtdict
@@ -275,13 +277,22 @@ class MonHandler(FileSystemEventHandler):
 
         # réinitialisation des courriels pour les tests
         for key, value in self.dico_exploitant_nomPdf.iteritems():
-            self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            if key == 'ERDF DR POITOU-CHARENTES':
+                self.dico_exploitant_courriel[key] = 'pierre.combres@ville-larochelle.fr'
+            elif key == 'VILLE DE LA ROCHELLE':
+                self.dico_exploitant_courriel[key] = 'francois.chagneau@ville-larochelle.fr'
+            elif key == 'ORANGE DT DICT':
+                self.dico_exploitant_courriel[key] = 'michel.ricchiuto@ville-larochelle.fr'			
+            elif key == 'OPH de la CDA de LA ROCHELLE':
+                self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            else:
+                self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
 
         ##print '' * 2 + '-' * 50
         for key, value in self.dico_exploitant_nomPdf.iteritems():
             ##print key, value, self.dico_exploitant_courriel[key]
-            #self.send_one_mail([self.dico_exploitant_courriel[key],'frederic.garel@gmail.com'], value)
             self.send_one_mail([self.dico_exploitant_courriel[key]], value)
+            #pass
         ##print '' * 2 + '-' * 50
 
 
@@ -372,7 +383,9 @@ class MonHandler(FileSystemEventHandler):
         ##print "filename = " + f.filename
         repertoiretemporaire = re.sub(r'\.zip', '', f.filename)
         #print "repertoiretemporaire = " + repertoiretemporaire
-        repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
+        ## on remonte la fhs d'un niveau
+        ##repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
+        repertoiretemporaire = re.sub(r'dt-dict\/', '', repertoiretemporaire)
         #print "repertoiretemporaire = " + repertoiretemporaire
         try:
             shutil.rmtree(repertoiretemporaire)
@@ -397,7 +410,8 @@ def main():
     # Surveiller récursivement tous les événements du dossier /tmp
     # et appeler les méthodes de MonHandler quand quelque chose
     # se produit
-    observer.schedule(MonHandler(), path='../data/in', recursive=True)
+    ##observer.schedule(MonHandler(), path='../data/in', recursive=True)
+    observer.schedule(MonHandler(), path='/home/fred/h/cartographie/dt-dict', recursive=True)
 
     u"""
     On démarre tout ça :
