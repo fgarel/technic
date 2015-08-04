@@ -14,6 +14,8 @@ http://sametmax.com/reagir-a-un-changement-sur-un-fichier-avec-watchdog/
 et dont le tire est :
 Réagir à un changement sur un fichier avec watchdog.
 
+Reprise des explications de cette page :
+
 Il y a des tas de choses qu’on peut vouloir faire au
 moment où un fichier change :
 
@@ -87,6 +89,7 @@ class MonHandler(FileSystemEventHandler):
         # mail de la personne qui recevra une copie du message
         #self.receivers = 'fred@VLR6180.mairie.fr'
         self.receivers = 'frederic.garel@gmail.com'
+        self.receivers = 'cartographie@ville-larochelle.fr'
         # corps du message
         text = \
             "Bonjour,\n" + \
@@ -189,7 +192,7 @@ class MonHandler(FileSystemEventHandler):
         repertoiretemporaire = re.sub(r'dt-dict\/', '', repertoiretemporaire)
         ##print "repertoiretemporaire = " + repertoiretemporaire
         self.numero_dtdict = re.sub(r'.*/', '', repertoiretemporaire)
-        ##print "numero_dtdict = " + self.numero_dtdict
+        print "numero_dtdict = " + self.numero_dtdict
         try:
             os.mkdir(repertoiretemporaire)
         except:
@@ -209,12 +212,12 @@ class MonHandler(FileSystemEventHandler):
                         ffile
                     ##print self.dico_exploitant_nomPdf
                 elif re.search(r'.*_emprise\.', ffile):
-                    # le fichier est du type *_DT_?.pdf
+                    # le fichier est du type *_emprise.pdf
                     ##print "pdf_1 : " + ffile
                     self.pdfemprise_to_join = ffile
                     ##print "pdfemprise_to_join = " + self.pdfemprise_to_join
                 else:
-                    # le fichier est du type *_emprise.pdf
+                    # le fichier est du type *resume.pdf, ou *notice.pdf
                     ##print "pdf_2 : " + ffile
                     #__myPdfReader = pdfReader.PdfReader(ffile, 'metadata.txt')
                     #__typePdf = __myPdfReader.simplify()
@@ -277,16 +280,17 @@ class MonHandler(FileSystemEventHandler):
 
         # réinitialisation des courriels pour les tests
         for key, value in self.dico_exploitant_nomPdf.iteritems():
-            if key == 'ERDF DR POITOU-CHARENTES':
-                self.dico_exploitant_courriel[key] = 'pierre.combres@ville-larochelle.fr'
-            elif key == 'VILLE DE LA ROCHELLE':
-                self.dico_exploitant_courriel[key] = 'francois.chagneau@ville-larochelle.fr'
-            elif key == 'ORANGE DT DICT':
-                self.dico_exploitant_courriel[key] = 'michel.ricchiuto@ville-larochelle.fr'			
-            elif key == 'OPH de la CDA de LA ROCHELLE':
-                self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
-            else:
-                self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            #if key == 'ERDF DR POITOU-CHARENTES':
+            #    self.dico_exploitant_courriel[key] = 'pierre.combres@ville-larochelle.fr'
+            #elif key == 'VILLE DE LA ROCHELLE':
+            #    self.dico_exploitant_courriel[key] = 'francois.chagneau@ville-larochelle.fr'
+            #elif key == 'ORANGE DT DICT':
+            #    self.dico_exploitant_courriel[key] = 'michel.ricchiuto@ville-larochelle.fr'			
+            #elif key == 'OPH de la CDA de LA ROCHELLE':
+            #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            #else:
+            #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
 
         ##print '' * 2 + '-' * 50
         for key, value in self.dico_exploitant_nomPdf.iteritems():
@@ -395,6 +399,9 @@ class MonHandler(FileSystemEventHandler):
             os.remove(zipfilename)
         except:
             print 'Le fichier n a pas pu etre supprimé'
+        # remise à zero des deux dictionnaires
+        self.dico_exploitant_nomPdf = {}
+        self.dico_exploitant_courriel = {}
 
         
 def main():
