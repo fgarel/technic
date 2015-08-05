@@ -271,13 +271,14 @@ class PdfReader(object):
         # le nom de l'exploitant est contenu dans le premier
         # champ BMC
         # cat document1.pdf | \
-        #     grep -E -e 'BMC.*\(.*\)' | \
+        #     grep -E -e 'BMC.*\(.*' | \
         #     head -1 | \
-        #     sed -E -e 's/.*\(//g' -e 's/\).*//g'    
+        #     sed -E -e 's/.*\(//g' -e 's/\).*//g' | \
+        #     iconv -f latin1 -t utf-8 -
         p1 = subprocess.Popen(['cat', 'document1.pdf'],
                               stdout=subprocess.PIPE)
         p2 = subprocess.Popen(["grep", "-E",
-                               "-e", r'BMC.*\(.*\)'],
+                               "-e", r'BMC.*\(.*'],
                               stdin=p1.stdout,
                               stdout=subprocess.PIPE)
         #p1.stdout.close()
@@ -293,10 +294,18 @@ class PdfReader(object):
                               stdin=p3.stdout,
                               stdout=subprocess.PIPE)
         p3.stdout.close()
-        #print p4.communicate()[0][:-1]
-        # p4.communicate renvoit un tuple : on ne prend que le 1er element
+        #print p4.communicate()
+        p5 = subprocess.Popen(['iconv',
+                               '-f', r'CP1250',
+                               '-t', r'utf-8',
+                               '-'],
+                              stdin=p4.stdout,
+                              stdout=subprocess.PIPE)
+        p4.stdout.close()
+        #print p5.communicate()[0][:-1]
+        # p5.communicate renvoit un tuple : on ne prend que le 1er element
         # et en plus, on supprime le dernier caractère
-        self.nomExploitant = p4.communicate()[0][:-1]
+        self.nomExploitant = p5.communicate()[0][:-1]
         ##print "Nom de l'Exploitant = " + self.nomExploitant
 
 

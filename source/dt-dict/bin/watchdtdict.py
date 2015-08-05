@@ -85,10 +85,10 @@ class MonHandler(FileSystemEventHandler):
         self.dico_exploitant_nomPdf = {}
         self.dico_exploitant_courriel = {}
         # mail de l'expediteur du message
-        self.sender = 'dt-dict@ville-larochelle.fr'
+        self.sender = 'dt.dict@ville-larochelle.fr'
         # mail de la personne qui recevra une copie du message
         #self.receivers = 'fred@VLR6180.mairie.fr'
-        self.receivers = 'frederic.garel@gmail.com'
+        #self.receivers = 'frederic.garel@gmail.com'
         self.receivers = 'cartographie@ville-larochelle.fr'
         # corps du message
         text = \
@@ -102,6 +102,7 @@ class MonHandler(FileSystemEventHandler):
         self.bodytext = text.decode('utf-8')
         #print self.bodytext
         self.zipfile_to_join = ''
+        self.xmlfile_to_join = ''
         self.pdfemprise_to_join = ''
         self.numero_dtdict = ''
 
@@ -210,6 +211,7 @@ class MonHandler(FileSystemEventHandler):
                     __myPdfReader.simplify()
                     self.dico_exploitant_nomPdf[__myPdfReader.teleservice()] = \
                         ffile
+                    ##print __myPdfReader.teleservice()                        
                     ##print self.dico_exploitant_nomPdf
                 elif re.search(r'.*_emprise\.', ffile):
                     # le fichier est du type *_emprise.pdf
@@ -248,6 +250,8 @@ class MonHandler(FileSystemEventHandler):
                     else:
                         # le fichier est du type *_description.xml
                         ##print "xml_2 : " + ffilexml
+                        self.xmlfile_to_join = ffilexml
+                        ##print self.xmlfile_to_join
                         rootNode = xmlReader.parse(ffilexml)
                         ##print 'numero = ' + rootNode.DT.noConsultationDuTeleserviceSeize
                         ##print 'taille des plans = ' + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans
@@ -259,7 +263,9 @@ class MonHandler(FileSystemEventHandler):
                             #print '  rootNode.listeDesOuvrages.ouvrage.contact.courriel :'
                             ##print '  courriel = ' + rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
                             ##print ' ' * 2 + '-' * 50
-                            self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
+                            ##print "societe = " + rootNode.listeDesOuvrages.ouvrage[i].contact.societe.encode("utf-8")
+                            #self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
+                            self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe.encode("utf-8")] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
 
 
     def send_x_mails(self):
@@ -273,13 +279,18 @@ class MonHandler(FileSystemEventHandler):
         bref, on prépare les messages destinées aux exploitants.
 
         """
+        
         ##print '' * 2 + '-' * 50
         ##for key, value in self.dico_exploitant_nomPdf.iteritems():
-        ##    print key, value, self.dico_exploitant_courriel[key]
+            ##print  "societe, pdf, courriel = " + key, value, self.dico_exploitant_courriel[key]
         ##print '' * 2 + '-' * 50
-
+        
+        ##for key, value in self.dico_exploitant_courriel.iteritems():
+            ##print "societe, courriel, pdf = " + key, value, self.dico_exploitant_nomPdf[key]
+        ##print '' * 2 + '-' * 50
+        
         # réinitialisation des courriels pour les tests
-        for key, value in self.dico_exploitant_nomPdf.iteritems():
+        ##for key, value in self.dico_exploitant_nomPdf.iteritems():
             #if key == 'ERDF DR POITOU-CHARENTES':
             #    self.dico_exploitant_courriel[key] = 'pierre.combres@ville-larochelle.fr'
             #elif key == 'VILLE DE LA ROCHELLE':
@@ -290,7 +301,7 @@ class MonHandler(FileSystemEventHandler):
             #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
             #else:
             #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
-            self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
+            ##self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
 
         ##print '' * 2 + '-' * 50
         for key, value in self.dico_exploitant_nomPdf.iteritems():
@@ -328,13 +339,22 @@ class MonHandler(FileSystemEventHandler):
         #print msg['Subject']
         msg.preamble = 'Veuillez trouver ci joint la déclaration %s' % self.numero_dtdict
         # attachement du fichier zip
-        zipFile = open(self.zipfile_to_join, 'rb')
-        msgZip = MIMEBase('application', 'zip')
-        msgZip.set_payload(zipFile.read())
-        encoders.encode_base64(msgZip)
-        msgZip.add_header('Content-Disposition',
-                          'attachment; filename="{0}"'.format(os.path.basename(self.zipfile_to_join)))
-        msg.attach(msgZip)
+        #zipFile = open(self.zipfile_to_join, 'rb')
+        #msgZip = MIMEBase('application', 'zip')
+        #msgZip.set_payload(zipFile.read())
+        #encoders.encode_base64(msgZip)
+        #msgZip.add_header('Content-Disposition',
+        #                  'attachment; filename="{0}"'.format(os.path.basename(self.zipfile_to_join)))
+        #msg.attach(msgZip)
+
+        # attachement du fichier xml
+        xmlFile = open(self.xmlfile_to_join, 'rb')
+        msgXml = MIMEBase('application', 'xml')
+        msgXml.set_payload(xmlFile.read())
+        encoders.encode_base64(msgXml)
+        msgXml.add_header('Content-Disposition',
+                          'attachment; filename="{0}"'.format(os.path.basename(self.xmlfile_to_join)))
+        msg.attach(msgXml)
 
         # attachement du fichier declaration pdf
         pdfDeclarationFile = open(pdffile_to_join, 'rb')
@@ -366,7 +386,7 @@ class MonHandler(FileSystemEventHandler):
 
         #print msg
         try:
-            smtpObj = smtplib.SMTP('localhost')
+            #smtpObj = smtplib.SMTP('localhost')
             smtpObj = smtplib.SMTP('mail.ville-larochelle.fr')
             smtpObj.sendmail(self.sender, \
                              to_person, \
