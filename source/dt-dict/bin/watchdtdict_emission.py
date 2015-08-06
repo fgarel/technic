@@ -79,32 +79,82 @@ class MonHandler(FileSystemEventHandler):
         u"""
         Méthode pour initialiser l'objet.
 
-        Lorque l'objet est instancié, c'est cette méthode qui est executée.
+        Lorque la classe est instanciée (pour créer un objet),
+        c'est cette méthode qui est executée.
+        
+        Deux dictionnaires sont initialisés,
+        les répertoires sont définis ici.
+        Les mails pour les exploitants ainsi que le mail de notification
+        pour l'émetteur sont définis dans cette méthode __init__().
 
         """
         self.dico_exploitant_nomPdf = {}
         self.dico_exploitant_courriel = {}
-        # mail de l'expediteur du message
-        self.sender = 'dt.dict@ville-larochelle.fr'
-        # mail de la personne qui recevra une copie du message
-        #self.receivers = 'fred@VLR6180.mairie.fr'
-        #self.receivers = 'frederic.garel@gmail.com'
-        self.receivers = 'cartographie@ville-larochelle.fr'
-        # corps du message
-        text = \
-            "Bonjour,\n" + \
-            "Veuillez trouver ci-joint " + \
-            "notre déclaration.\n" + \
-            "Cordialement\n\n" + \
-            "--\nLe service Cartographie " + \
-            "de la Ville de La Rochelle\n" + \
-            ""
-        self.bodytext = text.decode('utf-8')
-        #print self.bodytext
-        self.zipfile_to_join = ''
+        self.numero_dtdict = ''
+        
+        # sous-repertoire des données initiales
+        self.initpath = 'dt-dict'
+        # sous-repertoire ou sera stocké les dt-dict émises après traitement
+        self.savpath = '/home/fred/f/CARTOGRAPHIE/DT DICT EMISES'
+        
+        #self.zipfile_to_join = ''
         self.xmlfile_to_join = ''
         self.pdfemprise_to_join = ''
-        self.numero_dtdict = ''
+        
+        # mail de l'expediteur du message
+        self.mail_sender = 'dt.dict@ville-larochelle.fr'
+        
+        # mail de la personne qui recevra une copie des messages
+        #self.mail_receivers = 'fred@VLR6180.mairie.fr'
+        #self.mail_receivers = 'frederic.garel@gmail.com'
+        #self.mail_receivers = 'cartographie@ville-larochelle.fr'
+        self.mail_receivers = ''
+           
+        # sujet du message
+        self.mail_subject = \
+            u"Déclaration préalable aux travaux, Numéro "
+
+        # preambule du message (?)
+        self.mail_preamble = \
+            u"Veuillez trouver ci joint la déclaration préalable aux travaux "
+     
+        # corps du message
+        self.mail_body_text1 = \
+            u"Bonjour,\n\n" + \
+            u"Veuillez trouver ci-joint " + \
+            u"la déclaration préalable aux travaux " + \
+            u"portant le numéro de consultation "
+
+        self.mail_body_text2 = \
+            u", accompagnée du fichier " + \
+            u"XML correspondant.\n\n" + \
+            u"Important : Ne répondez pas à cet email.\n" + \
+            u"Pour répondre à l'émetteur, utilisez les coordonnées " + \
+            u"présentes dans le document.\n\n" + \
+            u"Cordialement,\n\n" + \
+            u"--\nLe service Cartographie " + \
+            u"de la Ville de La Rochelle\n" + \
+            u""
+
+        # mail de la personne qui recevra une notification indiquant
+        #   que l'émission a bien eté réalisée
+        self.mail_notif_receivers = ''
+
+        # corps du message
+        self.mail_notif_body_text1 = \
+            u"Bonjour,\n\n" + \
+            u"" + \
+            u"La déclaration préalable aux travaux " + \
+            u"portant le numéro de consultation "
+
+        self.mail_notif_body_text2 = \
+            u" a été transmises aux exploitants.\n\n" + \
+            u"Important : Ne répondez pas à cet email.\n\n" + \
+            u"Cordialement,\n\n" + \
+            u"--\nLe service Cartographie " + \
+            u"de la Ville de La Rochelle\n" + \
+            u""
+
 
     def on_modified(self, event):
         u"""
@@ -160,12 +210,6 @@ class MonHandler(FileSystemEventHandler):
         """
         print("Le fichier %s a été créé" % event.src_path)
         self.analyse_fichier_zip_initial(event.src_path)
-        #print '' * 2 + '-' * 50
-        #print 'dico_exploitant_nomPdf'
-        #print self.dico_exploitant_nomPdf
-        #print 'dico_exploitant_courriel'
-        #print self.dico_exploitant_courriel
-        #print '' * 2 + '-' * 50
         self.send_x_mails()
         self.nettoyage(event.src_path)
 
@@ -181,17 +225,20 @@ class MonHandler(FileSystemEventHandler):
           - un second dictionnaire qui fait la relation entre :
             - le nom de l'exploitant
             - son courriel
-        .
+        
+        La première étape consiste à déziper le fichier zip initial
+        cette décompression doit se faire dans un répertoire parent
+        (sinon les nouveaux fichiers formeraient à leur tour une cible
+        potentiele pour notre observer....)
+        
+        Un traitement est ensuite effectué en fonction du type
+        de fichier.
 
         """
         f = zipfile.ZipFile(zipfilename)
-        ##print "filename = " + f.filename
         repertoiretemporaire = re.sub(r'\.zip', '', f.filename)
-        #print "repertoiretemporaire = " + repertoiretemporaire
-        ## on remonte la fhs d'un niveau
-        ##repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
-        repertoiretemporaire = re.sub(r'dt-dict\/', '', repertoiretemporaire)
-        ##print "repertoiretemporaire = " + repertoiretemporaire
+        # on remonte la fhs d'un niveau
+        repertoiretemporaire = re.sub(self.initpath, '', repertoiretemporaire)
         self.numero_dtdict = re.sub(r'.*/', '', repertoiretemporaire)
         print "numero_dtdict = " + self.numero_dtdict
         try:
@@ -205,35 +252,23 @@ class MonHandler(FileSystemEventHandler):
             if extension == 'pdf':
                 if re.search(r'_.*_.*\.', ffile):
                     # le fichier est du type *_DT_?.pdf
-                    ##print "pdf_1 : " + ffile
                     __myPdfReader = pdfReader.PdfReader(ffile, 'metadata.txt')
-                    #__typePdf = __myPdfReader.simplify()
                     __myPdfReader.simplify()
                     self.dico_exploitant_nomPdf[__myPdfReader.teleservice()] = \
                         ffile
-                    ##print __myPdfReader.teleservice()                        
-                    ##print self.dico_exploitant_nomPdf
                 elif re.search(r'.*_emprise\.', ffile):
                     # le fichier est du type *_emprise.pdf
-                    ##print "pdf_1 : " + ffile
                     self.pdfemprise_to_join = ffile
-                    ##print "pdfemprise_to_join = " + self.pdfemprise_to_join
                 else:
                     # le fichier est du type *resume.pdf, ou *notice.pdf
-                    ##print "pdf_2 : " + ffile
-                    #__myPdfReader = pdfReader.PdfReader(ffile, 'metadata.txt')
-                    #__typePdf = __myPdfReader.simplify()
-                    #__myPdfReader.teleservice()
                     pass
 
             if extension == 'zip':
+				# deux fichiers xml sont contenus dans un zip
                 fxmlzip = zipfile.ZipFile(ffile)
-                ##print "fxmlzip = " + fxmlzip.filename
-                self.zipfile_to_join = fxmlzip.filename
                 repertoiretemporairexml = re.sub(r'\.zip',
                                                  '',
                                                  fxmlzip.filename)
-                #print "repertoiretemporairexml = " + repertoiretemporairexml
                 try:
                     os.mkdir(repertoiretemporairexml)
                 except:
@@ -242,29 +277,42 @@ class MonHandler(FileSystemEventHandler):
                 fxmlzip.extractall(repertoiretemporairexml)
                 for ffilexml in fxmlzip.namelist():
                     ffilexml = repertoiretemporairexml + '/' + ffilexml
-                    #print "filexml : " + ffilexml
                     if re.search(r'Signature_.*\.', ffilexml):
                         # le fichier est du type Signature_*_description.xml
-                        ##print "xml_1 : " + ffilexml
                         pass
                     else:
                         # le fichier est du type *_description.xml
-                        ##print "xml_2 : " + ffilexml
                         self.xmlfile_to_join = ffilexml
-                        ##print self.xmlfile_to_join
                         rootNode = xmlReader.parse(ffilexml)
-                        ##print 'numero = ' + rootNode.DT.noConsultationDuTeleserviceSeize
-                        ##print 'taille des plans = ' + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans
-                        ##print 'souhaitLesPlansDesReseauxElectriqueAeriens = ' + str(rootNode.DT.projetEtSonCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens)
+                        
+                        # récupération du mail du redacteur/emetteur
+                        #   de la déclaration
+                        #   attention : le chemin xml dépend 
+                        #   du type de la déclaration                     
+                        try:
+                            self.mail_notif_receivers = rootNode.DT.representantDuResponsableDeProjet.courriel
+                            ##print 'taille des plans = ' + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans
+                            ##print 'souhaitLesPlansDesReseauxElectriqueAeriens = ' + str(rootNode.DT.projetEtSonCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens)
+                        except:
+                            pass
+                        try:
+                            self.mail_notif_receivers = rootNode.DICT.executantDesTravaux.courriel
+                        except:
+                            pass
+                        try:
+                            self.mail_notif_receivers = rootNode.dtDictConjointes.partieDICT.executantDesTravaux.courriel
+                        except:
+                            pass
+                        try:
+                            self.mail_notif_receivers = rootNode.ATU.personneOrdonnantLesTravauxUrgents.courriel
+                        except:
+                            pass
+
                         for i, val in enumerate(rootNode.listeDesOuvrages.ouvrage):
-                            #print '  rootNode.listeDesOuvrages.ouvrage.contact.societe :'
-                            ##print '  societe  = ' + rootNode.listeDesOuvrages.ouvrage[i].contact.societe
-                            #print ' ' * 2 + '-' * 50
-                            #print '  rootNode.listeDesOuvrages.ouvrage.contact.courriel :'
-                            ##print '  courriel = ' + rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
-                            ##print ' ' * 2 + '-' * 50
-                            ##print "societe = " + rootNode.listeDesOuvrages.ouvrage[i].contact.societe.encode("utf-8")
-                            #self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
+                            # contrairement aux fichiers pdf qui utilise
+                            # l'encodage "CP1250" (windows)
+                            # ici, dans le xml, il faut utiliser
+                            # l'encodage "utf-8"
                             self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe.encode("utf-8")] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
 
 
@@ -317,35 +365,23 @@ class MonHandler(FileSystemEventHandler):
 
         Utilisation de la librairie smtplib
         pour envoyer un message.
+        
+        Attentino, to_person doit être une liste [crochet].
 
         """
-        #print "from_person = "
-        #print self.sender
-        #print "to_person = "
-        #print to_person
-        to_person.append(self.receivers)
-        #print "to_person = "
-        #print to_person
-        #print "pdffile_to_join = " + pdffile_to_join
-        #print "zipfile_to_join = " + self.zipfile_to_join
+        
+        # on ajoute un destinataire supplémentaire
+        to_person.append(self.mail_receivers)
 
         msg = MIMEMultipart()
 
-        msg['From'] = self.sender
+        msg['From'] = self.mail_sender
         msg['To'] = COMMASPACE.join(to_person)
         msg['Date'] = formatdate(localtime=True)
-        msg['Subject'] = u"Déclaration " + self.numero_dtdict
+        msg['Subject'] = self.mail_subject + self.numero_dtdict
 
-        #print msg['Subject']
         msg.preamble = 'Veuillez trouver ci joint la déclaration %s' % self.numero_dtdict
-        # attachement du fichier zip
-        #zipFile = open(self.zipfile_to_join, 'rb')
-        #msgZip = MIMEBase('application', 'zip')
-        #msgZip.set_payload(zipFile.read())
-        #encoders.encode_base64(msgZip)
-        #msgZip.add_header('Content-Disposition',
-        #                  'attachment; filename="{0}"'.format(os.path.basename(self.zipfile_to_join)))
-        #msg.attach(msgZip)
+        #msg.preamble = self.mail_preamble + self.numero_dtdict
 
         # attachement du fichier xml
         xmlFile = open(self.xmlfile_to_join, 'rb')
@@ -376,53 +412,83 @@ class MonHandler(FileSystemEventHandler):
 
         # corps du message
         # Create the body of the message (a plain-text).
-        #text = u"Bonjour,\nVeuillez trouver ci-joint notre déclaration.\nCordialement\n"
-
-        # Record the MIME types the part - text/plain.
-        part1 = MIMEText(self.bodytext, 'plain', 'utf-8')
-
+        mail_body_text = self.mail_body_text1 + self.numero_dtdict + self.mail_body_text2
+        # pour avoir les caractères accentuées, utilisation de l'utf-8.
+        part1 = MIMEText(mail_body_text, 'plain', 'utf-8')
         # Attach parts into message container.
         msg.attach(part1)
-
-        #print msg
+        
         try:
             #smtpObj = smtplib.SMTP('localhost')
             smtpObj = smtplib.SMTP('mail.ville-larochelle.fr')
-            smtpObj.sendmail(self.sender, \
+            smtpObj.sendmail(self.mail_sender, \
                              to_person, \
                              msg.as_string())
-            print "Successfully sent email"
+            print "Successfully sent email to " + to_person.__str__()
         except smtplib.SMTPException:
-            print "Error: unable to send email"
+            print "Error: unable to send email to " + to_person
 
 
     def nettoyage(self, zipfilename):
         u"""
-        Méthode nettoyer les fichiers.
+        Méthode pour nettoyer et ranger à la fin du traitement.
 
-        Suppression des fichiers après traitement.
+        Suppression ou sauveagarde des fichiers après traitement.
+        
+        Les fichiers temporaires sont supprimés.
+        (on parle ici des fichiers résultant de la décompression
+        du fichier initial dans un sous-repertoire temporaire)
+        
+        Le fichier zip initial est déplacé vers le repertoire
+        self.savpath
+        
+        Envoi d'un mail de notification à l'emetteur
+        
+        Certaines variables sont réinitialisées.
 
         """
         f = zipfile.ZipFile(zipfilename)
-        ##print "filename = " + f.filename
+        destfilename = self.savpath + "/" + re.sub(r'^.*\/', '', zipfilename)
         repertoiretemporaire = re.sub(r'\.zip', '', f.filename)
-        #print "repertoiretemporaire = " + repertoiretemporaire
         ## on remonte la fhs d'un niveau
-        ##repertoiretemporaire = re.sub(r'in\/', '', repertoiretemporaire)
-        repertoiretemporaire = re.sub(r'dt-dict\/', '', repertoiretemporaire)
-        #print "repertoiretemporaire = " + repertoiretemporaire
+        repertoiretemporaire = re.sub(self.initpath, '', repertoiretemporaire)
+
         try:
             shutil.rmtree(repertoiretemporaire)
         except:
             print 'Le répertoire n a pas pu etre supprimé'
         try:
-            os.remove(zipfilename)
+            shutil.move(zipfilename, destfilename)
+            #os.remove(zipfilename)
         except:
-            print 'Le fichier n a pas pu etre supprimé'
+            print 'Le fichier n a pas pu etre sauvegardé'
+
+        # envoi d'un mail de notification à l'emetteur
+        msg = MIMEMultipart()
+        msg['From'] = self.mail_sender
+        msg['To'] = self.mail_notif_receivers
+        msg['Date'] = formatdate(localtime=True)
+        msg['Subject'] = self.mail_subject + self.numero_dtdict
+
+        mail_notif_body_text = self.mail_notif_body_text1 + self.numero_dtdict + self.mail_notif_body_text2
+        part1 = MIMEText(mail_notif_body_text, 'plain', 'utf-8')
+        msg.attach(part1)
+
+        try:
+            #smtpObj = smtplib.SMTP('localhost')
+            smtpObj = smtplib.SMTP('mail.ville-larochelle.fr')
+            smtpObj.sendmail(self.mail_sender, \
+                             self.mail_notif_receivers, \
+                             msg.as_string())
+            print "Successfully sent notification email to " + self.mail_notif_receivers
+        except smtplib.SMTPException:
+            print "Error: unable to send notification email to " + self.mail_notif_receivers
+            
         # remise à zero des deux dictionnaires
         self.dico_exploitant_nomPdf = {}
         self.dico_exploitant_courriel = {}
-
+        # et remise à zéro du mail de l'auteur/émetteur de la demande
+        self.mail_notif_receivers = ''
         
 def main():
     u"""
@@ -434,10 +500,11 @@ def main():
 
     """
     observer = Observer()
-    # Surveiller récursivement tous les événements du dossier /tmp
-    # et appeler les méthodes de MonHandler quand quelque chose
+    
+    # Surveille récursivement tous les événements du dossier 
+    # /home/fred/h/cartographie/dt-dict
+    # et appele les méthodes de MonHandler quand quelque chose
     # se produit
-    ##observer.schedule(MonHandler(), path='../data/in', recursive=True)
     observer.schedule(MonHandler(), path='/home/fred/h/cartographie/dt-dict', recursive=True)
 
     u"""
@@ -446,9 +513,7 @@ def main():
     observer.start()
 
     # L'observer travaille dans un thread séparé donc on fait une
-    # boucle infinie pour maintenir le thread principal
-    # actif dans cette démo mais dans un vrai programme,
-    # vous mettez votre taff ici.
+    # boucle infinie pour maintenir le thread principal actif
     try:
         while True:
             time.sleep(1)
