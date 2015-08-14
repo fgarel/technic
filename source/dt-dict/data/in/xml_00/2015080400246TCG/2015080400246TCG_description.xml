@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<t:dossierConsultation xmlns:ie="http://xml.insee.fr/schema" xmlns:t="http://www.reseaux-et-canalisations.gouv.fr/schema-teleservice/2.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmd="http://www.isotc211.org/2005/gmd">
+    <t:DT>
+        <t:noConsultationDuTeleserviceSeize>2015080400246TCG</t:noConsultationDuTeleserviceSeize>
+        <t:noAffaireDuResponsableDuProjet>Projet Ultra Secret</t:noAffaireDuResponsableDuProjet>
+        <t:dateDeLaDeclaration>2015-08-04T10:04:49.664+02:00</t:dateDeLaDeclaration>
+        <t:typeEntite>PERSONNE_PHYSIQUE</t:typeEntite>
+        <t:declarationConjointeDTDICT>false</t:declarationConjointeDTDICT>
+        <t:responsableDuProjet>
+            <t:denomination>Garel Frédéric</t:denomination>
+            <t:pays>France</t:pays>
+        </t:responsableDuProjet>
+        <t:representantDuResponsableDeProjet>
+            <t:denomination>Garel Frédéric</t:denomination>
+            <t:numero>8</t:numero>
+            <t:voie>Place Jean Baptiste Marcet</t:voie>
+            <t:codePostal>17000</t:codePostal>
+            <t:commune>La Rochelle</t:commune>
+            <t:personneAcontacter>Garel Frédéric</t:personneAcontacter>
+            <t:tel>0546515323</t:tel>
+            <t:courriel>frederic.garel@ville-larochelle.fr</t:courriel>
+        </t:representantDuResponsableDeProjet>
+        <t:emplacementDuProjet>
+            <t:adresse>Place Jean Baptiste Marcet</t:adresse>
+            <t:CP>17000</t:CP>
+            <t:communePrincipale>LA ROCHELLE</t:communePrincipale>
+            <t:codeINSEE>17300</t:codeINSEE>
+            <t:nombreDeCommunes>1</t:nombreDeCommunes>
+            <t:listeDesEmplacementsDesCommunesConcernees>
+                <t:emplacementDeLaCommuneConcernee>
+                    <t:nomDeLaCommune>LA ROCHELLE</t:nomDeLaCommune>
+                    <t:codeCommune>17000</t:codeCommune>
+                    <t:codeINSEE>17300</t:codeINSEE>
+                </t:emplacementDeLaCommuneConcernee>
+            </t:listeDesEmplacementsDesCommunesConcernees>
+        </t:emplacementDuProjet>
+        <t:emprise>
+            <t:geometrie srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4171" gml:id="dtemprise0">
+                <gml:surfaceMembers>
+                    <gml:Polygon gml:id="dt0">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.149113156712048,46.1607101107928 -1.1471068636414592,46.16039056819149 -1.1474394576798996,46.15952853703432 -1.14938137771079,46.15985551595963 -1.149220445111545,46.16030882443724 -1.149113156712048,46.1607101107928</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <gml:Polygon gml:id="dt1">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.1482333918361751,46.16066552356452 -1.148126103436678,46.16083644107681 -1.1479007977977351,46.160814147518344 -1.148018815037182,46.16064322993679 -1.1482333918361751,46.16066552356452</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                    <gml:Polygon gml:id="dt2">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.1472570674007552,46.160516899209206 -1.147128321321359,46.160739835591606 -1.1469137445223654,46.16072497319422 -1.146999575241963,46.16046488058997 -1.1472570674007552,46.160516899209206</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMembers>
+            </t:geometrie>
+            <t:surface>16147.072491348721</t:surface>
+            <t:referenceDelaCarte>Photographies aériennes: Géoportail Numérique 2010; Carte: 2012; Limites administratives: 2011</t:referenceDelaCarte>
+        </t:emprise>
+        <t:souhaitsPourLeRecepisse>
+            <t:modeReceptionElectronique>
+                <t:tailleDesPlans>A1</t:tailleDesPlans>
+                <t:couleurDesPlans>true</t:couleurDesPlans>
+                <t:souhaitDePlansVectoriels>true</t:souhaitDePlansVectoriels>
+                <t:formatDesPlansVectoriels>SHAPE</t:formatDesPlansVectoriels>
+            </t:modeReceptionElectronique>
+        </t:souhaitsPourLeRecepisse>
+        <t:projetEtSonCalendrier>
+            <t:natureDesTravaux>DEM</t:natureDesTravaux>
+            <t:natureDesTravaux>TER</t:natureDesTravaux>
+            <t:natureDesTravaux>CNS</t:natureDesTravaux>
+            <t:decrivezLeProjet>Démolition des batiments, Construction d'un piste d'aeroport</t:decrivezLeProjet>
+            <t:emploiDeTechniquesSansTranchees>false</t:emploiDeTechniquesSansTranchees>
+            <t:distanceMinimaleEntreLesTravauxEtLaLigneElectrique>5.00</t:distanceMinimaleEntreLesTravauxEtLaLigneElectrique>
+            <t:souhaitLesPlansDesReseauxElectriqueAeriens>true</t:souhaitLesPlansDesReseauxElectriqueAeriens>
+            <t:datePrevuePourLeCommencementDesTravaux>2016-04-01+02:00</t:datePrevuePourLeCommencementDesTravaux>
+            <t:dureeDuChantierEnJours>100</t:dureeDuChantierEnJours>
+        </t:projetEtSonCalendrier>
+        <t:investigationsComplementaires>
+            <t:realisationDInvestigationsComplementaires>false</t:realisationDInvestigationsComplementaires>
+            <t:motifDeRealisationOuNonDInvestigation>CARTOA</t:motifDeRealisationOuNonDInvestigation>
+            <t:InvestigationsSusceptibleDeNecessiterUneDICT>true</t:InvestigationsSusceptibleDeNecessiterUneDICT>
+            <t:envoiDesResultatsAuxExploitantsDOuvragesEtAuxEntreprises>false</t:envoiDesResultatsAuxExploitantsDOuvragesEtAuxEntreprises>
+        </t:investigationsComplementaires>
+        <t:signatureDuResponsableDuProjetOuDeSonRepresentant>
+            <t:nomDuSignataire>Garel Frédéric</t:nomDuSignataire>
+        </t:signatureDuResponsableDuProjetOuDeSonRepresentant>
+    </t:DT>
+    <t:listeDesOuvrages>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>ORANGE DT DICT</t:societe>
+                <t:agence>UI AQUITAINE POLE MDM DICTP0</t:agence>
+                <t:voie>TSA 50010</t:voie>
+                <t:codePostal>64210</t:codePostal>
+                <t:commune>BIDART cedex</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0140874137</t:fax>
+                <t:courriel>FT40P0.FTO@demat.protys.fr</t:courriel>
+                <t:telephone>0558055959</t:telephone>
+                <t:telephoneUrgence>0558055959</t:telephoneUrgence>
+                <t:mailUrgence>FT40P0.FTO@demat.protys.fr</t:mailUrgence>
+                <t:telEndommagement>0810300111</t:telEndommagement>
+                <t:site>www.protys.fr</t:site>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>true</t:gereLesFichiersDematerialises>
+                    <t:formatDesFichiersDematerialises>XML_PDF</t:formatDesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</t:classeOuvrage>
+            <t:codeOuvrage>FTO-17</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2015-03-22+01:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>GRDF UNITÉ RÉSEAU GAZ PDL PC</t:societe>
+                <t:agence>C2T PDLPC</t:agence>
+                <t:complement>TSA 30604</t:complement>
+                <t:numero>363</t:numero>
+                <t:voie>BD MARCEL PAUL</t:voie>
+                <t:codePostal>44804</t:codePostal>
+                <t:commune>ST HERBLAIN CEDEX</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0228034655</t:fax>
+                <t:courriel>14600433C.GRDF@demat.protys.fr</t:courriel>
+                <t:telephone>0228034630</t:telephone>
+                <t:telephoneUrgence>0810300360</t:telephoneUrgence>
+                <t:faxUrgence>0228034601</t:faxUrgence>
+                <t:mailUrgence>14600433C.GRDF@demat.protys.fr</t:mailUrgence>
+                <t:telEndommagement>0800473333</t:telEndommagement>
+                <t:site>www.protys.fr</t:site>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>true</t:gereLesFichiersDematerialises>
+                    <t:formatDesFichiersDematerialises>XML_PDF</t:formatDesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>S</t:categorieOuvrage>
+            <t:classeOuvrage>CANALISATIONS_GAZ_COMBUSTIBLES</t:classeOuvrage>
+            <t:codeOuvrage>GRDFPDLP</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2015-08-02+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:nom>
+                    <ie:NomFamille>lefranc</ie:NomFamille>
+                </t:nom>
+                <t:prenom>
+                    <ie:Prenom>pascal</ie:Prenom>
+                </t:prenom>
+                <t:societe>OPH de la CDA de la ROCHELLE</t:societe>
+                <t:numero>2</t:numero>
+                <t:voie>avenue de varsovie</t:voie>
+                <t:codePostal>17023</t:codePostal>
+                <t:commune>la rochelle</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546004995</t:fax>
+                <t:courriel>palefranc@office-agglo-larochelle.fr</t:courriel>
+                <t:telephone>0546004994</t:telephone>
+                <t:telephoneUrgence>0622194963</t:telephoneUrgence>
+                <t:faxUrgence>0546004995</t:faxUrgence>
+                <t:mailUrgence>palefranc@office-agglo-larochelle.fr</t:mailUrgence>
+                <t:telEndommagement>0546004994</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>S</t:categorieOuvrage>
+            <t:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</t:classeOuvrage>
+            <t:positionnementOuvrage>SOUTERRAIN</t:positionnementOuvrage>
+            <t:codeOuvrage>RES CH 001</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2013-03-03+01:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:nom>
+                    <ie:NomFamille>Cassegrain</ie:NomFamille>
+                </t:nom>
+                <t:prenom>
+                    <ie:Prenom>Thierry</ie:Prenom>
+                </t:prenom>
+                <t:societe>Communauté d’Agglomération de La Rochelle</t:societe>
+                <t:agence>Service Assainissement</t:agence>
+                <t:complement>CS 30001</t:complement>
+                <t:numero>16</t:numero>
+                <t:voie>rue de Vaucanson</t:voie>
+                <t:codePostal>17183</t:codePostal>
+                <t:commune>PERIGNY Cedex</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546684271</t:fax>
+                <t:courriel>reseauxass@agglo-larochelle.fr</t:courriel>
+                <t:telephone>0546684264</t:telephone>
+                <t:telephoneUrgence>0546303400</t:telephoneUrgence>
+                <t:telEndommagement>0546684264</t:telEndommagement>
+                <t:site>www.agglo-larochelle.fr</t:site>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</t:classeOuvrage>
+            <t:codeOuvrage>REU</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2014-07-20+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>ERDF DR POITOU-CHARENTES</t:societe>
+                <t:complement>CS 50250</t:complement>
+                <t:numero>2</t:numero>
+                <t:voie>Boulevard Aristide BRIAND</t:voie>
+                <t:codePostal>17305</t:codePostal>
+                <t:commune>ROCHEFORT CEDEX</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0344625435</t:fax>
+                <t:courriel>0000000000405rwy.ERDFNAT@demat.protys.fr</t:courriel>
+                <t:telephone>0546883423</t:telephone>
+                <t:telephoneUrgence>0181624701</t:telephoneUrgence>
+                <t:faxUrgence>0344625435</t:faxUrgence>
+                <t:mailUrgence>0000000000405rwy.ERDFNAT@demat.protys.fr</t:mailUrgence>
+                <t:telEndommagement>0176614701</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>true</t:gereLesFichiersDematerialises>
+                    <t:formatDesFichiersDematerialises>XML_PDF</t:formatDesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>S</t:categorieOuvrage>
+            <t:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</t:classeOuvrage>
+            <t:codeOuvrage>ERDF</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2015-07-26+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>VILLE DE LA ROCHELLE</t:societe>
+                <t:voie>HOTEL DE VILLE</t:voie>
+                <t:codePostal>17086</t:codePostal>
+                <t:commune>LA ROCHELLE CEDEX 1</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546377111</t:fax>
+                <t:courriel>dt.dict@ville-larochelle.fr</t:courriel>
+                <t:telephone>0546511433</t:telephone>
+                <t:telephoneUrgence>0546515151</t:telephoneUrgence>
+                <t:faxUrgence>0546515086</t:faxUrgence>
+                <t:telEndommagement>0546515151</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>S</t:categorieOuvrage>
+            <t:classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</t:classeOuvrage>
+            <t:codeOuvrage>ECL01</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2012-10-07+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>VILLE DE LA ROCHELLE</t:societe>
+                <t:voie>HOTEL DE VILLE</t:voie>
+                <t:codePostal>17086</t:codePostal>
+                <t:commune>LA ROCHELLE CEDEX 1</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546377111</t:fax>
+                <t:courriel>dt.dict@ville-larochelle.fr</t:courriel>
+                <t:telephone>0546511433</t:telephone>
+                <t:telEndommagement>0546515151</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>CANALISATIONS_EAU_POTABLE</t:classeOuvrage>
+            <t:codeOuvrage>EAUPOT01</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2012-10-07+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:nom>
+                    <ie:NomFamille>LEFRANC</ie:NomFamille>
+                </t:nom>
+                <t:prenom>
+                    <ie:Prenom>Pascal</ie:Prenom>
+                </t:prenom>
+                <t:societe>OPH de la CDA de la ROCHELLE</t:societe>
+                <t:numero>2</t:numero>
+                <t:voie>avenue de varsovie</t:voie>
+                <t:codePostal>17023</t:codePostal>
+                <t:commune>LA ROCHELLE</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546004995</t:fax>
+                <t:courriel>palefranc@office-agglo-larochelle.fr</t:courriel>
+                <t:telephone>0546004994</t:telephone>
+                <t:telephoneUrgence>0622194963</t:telephoneUrgence>
+                <t:faxUrgence>0546004995</t:faxUrgence>
+                <t:mailUrgence>palefranc@office-agglo-larochelle.fr</t:mailUrgence>
+                <t:telEndommagement>0546004994</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>S</t:categorieOuvrage>
+            <t:classeOuvrage>RESEAUX_DE_CHALEUR_OU_DE_FROID</t:classeOuvrage>
+            <t:positionnementOuvrage>SOUTERRAIN</t:positionnementOuvrage>
+            <t:codeOuvrage>RES CH 002</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2013-03-03+01:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:nom>
+                    <ie:NomFamille>LEFRANC</ie:NomFamille>
+                </t:nom>
+                <t:prenom>
+                    <ie:Prenom>Pascal</ie:Prenom>
+                </t:prenom>
+                <t:societe>OPH de la CDA de LA ROCHELLE</t:societe>
+                <t:numero>2</t:numero>
+                <t:voie>avenue de varsovie</t:voie>
+                <t:codePostal>17023</t:codePostal>
+                <t:commune>LA ROCHELLE</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546004995</t:fax>
+                <t:courriel>palefranc@office-agglo-larochelle.fr</t:courriel>
+                <t:telephone>0546004994</t:telephone>
+                <t:telephoneUrgence>0622194963</t:telephoneUrgence>
+                <t:faxUrgence>0546004995</t:faxUrgence>
+                <t:mailUrgence>palefranc@office-agglo-larochelle.fr</t:mailUrgence>
+                <t:telEndommagement>0546004994</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>CANALISATIONS_EAU_POTABLE</t:classeOuvrage>
+            <t:positionnementOuvrage>SOUTERRAIN</t:positionnementOuvrage>
+            <t:codeOuvrage>RES EF 003</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2013-03-03+01:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>VILLE DE LA ROCHELLE</t:societe>
+                <t:voie>HOTEL DE VILLE</t:voie>
+                <t:codePostal>17086</t:codePostal>
+                <t:commune>LA ROCHELLE CEDEX 1</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546377111</t:fax>
+                <t:courriel>dt.dict@ville-larochelle.fr</t:courriel>
+                <t:telephone>0546511433</t:telephone>
+                <t:telEndommagement>0546515151</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</t:classeOuvrage>
+            <t:codeOuvrage>FO_001</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2012-10-07+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:nom>
+                    <ie:NomFamille>Rebillard</ie:NomFamille>
+                </t:nom>
+                <t:prenom>
+                    <ie:Prenom>Jean-Philippe</ie:Prenom>
+                </t:prenom>
+                <t:societe>Communauté d’Agglomération de La Rochelle</t:societe>
+                <t:agence>Direction des Systèmes et Technologies de L’Information</t:agence>
+                <t:complement>CS 30001</t:complement>
+                <t:numero>16</t:numero>
+                <t:voie>rue de Vaucanson</t:voie>
+                <t:codePostal>17183</t:codePostal>
+                <t:commune>PERIGNY Cedex</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546303429</t:fax>
+                <t:courriel>dsti@agglo-larochelle.fr</t:courriel>
+                <t:telephone>0546303433</t:telephone>
+                <t:telephoneUrgence>0546303400</t:telephoneUrgence>
+                <t:telEndommagement>0546303433</t:telEndommagement>
+                <t:site>www.agglo-larochelle.fr</t:site>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</t:classeOuvrage>
+            <t:codeOuvrage>RFO</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2012-09-02+02:00</t:dateCreation>
+        </t:ouvrage>
+        <t:ouvrage>
+            <t:contact>
+                <t:societe>VILLE DE LA ROCHELLE</t:societe>
+                <t:voie>HOTEL DE VILLE</t:voie>
+                <t:codePostal>17086</t:codePostal>
+                <t:commune>LA ROCHELLE CEDEX 1</t:commune>
+                <t:codePays>FR</t:codePays>
+                <t:fax>0546377111</t:fax>
+                <t:courriel>dt.dict@ville-larochelle.fr</t:courriel>
+                <t:telephone>0546511433</t:telephone>
+                <t:telEndommagement>0546515151</t:telEndommagement>
+                <t:gestionDesFichiersDematerialises>
+                    <t:gereLesFichiersDematerialises>false</t:gereLesFichiersDematerialises>
+                </t:gestionDesFichiersDematerialises>
+            </t:contact>
+            <t:categorieOuvrage>NS</t:categorieOuvrage>
+            <t:classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</t:classeOuvrage>
+            <t:codeOuvrage>ASSPL01</t:codeOuvrage>
+            <t:statut>ACTIF</t:statut>
+            <t:dateCreation>2012-10-07+02:00</t:dateCreation>
+        </t:ouvrage>
+    </t:listeDesOuvrages>
+</t:dossierConsultation>
