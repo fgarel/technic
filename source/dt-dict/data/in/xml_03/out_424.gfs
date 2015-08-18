@@ -1,0 +1,22 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>Polygon</Name>
+    <ElementPath>Polygon</ElementPath>
+    <GeometryType>100</GeometryType>
+    <DatasetSpecificInfo>
+      <FeatureCount>1</FeatureCount>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>gml_id</Name>
+      <ElementPath>gml_id</ElementPath>
+      <Type>String</Type>
+      <Width>5</Width>
+    </PropertyDefn>
+    <PropertyDefn>
+      <Name>coordinates</Name>
+      <ElementPath>coordinates</ElementPath>
+      <Type>String</Type>
+      <Width>222</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

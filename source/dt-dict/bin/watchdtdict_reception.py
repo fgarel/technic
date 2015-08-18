@@ -505,8 +505,9 @@ def main():
     # /home/fred/h/cartographie/dt-dict
     # et appele les méthodes de MonHandler quand quelque chose
     # se produit
-    observer.schedule(MonHandler(), path='/home/fred/h/cartographie/tmp', recursive=True)
-
+    #observer.schedule(MonHandler(), path='/home/fred/h/cartographie/tmp', recursive=True)
+    observer.schedule(MonHandler(), path='/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/data/in/xml', recursive=True)
+    
     u"""
     On démarre tout ça :
     """

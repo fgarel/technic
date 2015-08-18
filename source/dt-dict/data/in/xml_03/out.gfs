@@ -1,0 +1,21 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>Polygon</Name>
+    <ElementPath>Polygon</ElementPath>
+    <GeometryType>3</GeometryType>
+    <SRSName>EPSG:4326</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>3</FeatureCount>
+      <ExtentXMin>-1.14938</ExtentXMin>
+      <ExtentXMax>-1.14691</ExtentXMax>
+      <ExtentYMin>46.15953</ExtentYMin>
+      <ExtentYMax>46.16084</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>id</Name>
+      <ElementPath>id</ElementPath>
+      <Type>String</Type>
+      <Width>3</Width>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>
