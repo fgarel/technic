@@ -40,19 +40,7 @@ import zipfile
 import re
 import os
 import shutil
-import pdfReader
 import dtdict_appli1 as xmlReader
-# Import smtplib for the actual sending function
-import smtplib
-# Import the email modules we'll need
-from email import encoders
-#from email.message import Message
-from email.mime.base import MIMEBase
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.utils import COMMASPACE, formatdate
-#from email.mime.text import MIMEText
-
 
 u"""
 D’abord, on créer un handler, une classe qui va contenir le code à
@@ -81,79 +69,25 @@ class MonHandler(FileSystemEventHandler):
 
         Lorque la classe est instanciée (pour créer un objet),
         c'est cette méthode qui est executée.
-
-        Deux dictionnaires sont initialisés,
-        les répertoires sont définis ici.
-        Les mails pour les exploitants ainsi que le mail de notification
-        pour l'émetteur sont définis dans cette méthode __init__().
+        
+        Les répertoires sont définis ici.
+        Le fichier défini par la variable self.generalGml
+        contiendra toutes les emprises de toutes les dict
 
         """
-        self.dico_exploitant_nomPdf = {}
-        self.dico_exploitant_courriel = {}
+
         self.numero_dtdict = ''
 
         # sous-repertoire des données initiales
-        self.initpath = 'dt-dict'
+        self.initpath = 'xml'
         # sous-repertoire ou sera stocké les dt-dict émises après traitement
-        self.savpath = '/home/fred/f/CARTOGRAPHIE/DT DICT EMISES'
-
-        #self.zipfile_to_join = ''
-        self.xmlfile_to_join = ''
-        self.pdfemprise_to_join = ''
-
-        # mail de l'expediteur du message
-        self.mail_sender = 'dt.dict@ville-larochelle.fr'
-
-        # mail de la personne qui recevra une copie des messages
-        #self.mail_receivers = 'fred@VLR6180.mairie.fr'
-        #self.mail_receivers = 'frederic.garel@gmail.com'
-        #self.mail_receivers = 'cartographie@ville-larochelle.fr'
-        self.mail_receivers = ''
-
-        # sujet du message
-        self.mail_subject = \
-            u"Déclaration préalable aux travaux, Numéro "
-
-        # preambule du message (?)
-        self.mail_preamble = \
-            u"Veuillez trouver ci joint la déclaration préalable aux travaux "
-
-        # corps du message
-        self.mail_body_text1 = \
-            u"Bonjour,\n\n" + \
-            u"Veuillez trouver ci-joint " + \
-            u"la déclaration préalable aux travaux " + \
-            u"portant le numéro de consultation "
-
-        self.mail_body_text2 = \
-            u", accompagnée du fichier " + \
-            u"XML correspondant.\n\n" + \
-            u"Important : Ne répondez pas à cet email.\n" + \
-            u"Pour répondre à l'émetteur, utilisez les coordonnées " + \
-            u"présentes dans le document.\n\n" + \
-            u"Cordialement,\n\n" + \
-            u"--\nLe service Cartographie " + \
-            u"de la Ville de La Rochelle\n" + \
-            u""
-
-        # mail de la personne qui recevra une notification indiquant
-        #   que l'émission a bien eté réalisée
-        self.mail_notif_receivers = ''
-
-        # corps du message
-        self.mail_notif_body_text1 = \
-            u"Bonjour,\n\n" + \
-            u"" + \
-            u"La déclaration préalable aux travaux " + \
-            u"portant le numéro de consultation "
-
-        self.mail_notif_body_text2 = \
-            u" a été transmises aux exploitants.\n\n" + \
-            u"Important : Ne répondez pas à cet email.\n\n" + \
-            u"Cordialement,\n\n" + \
-            u"--\nLe service Cartographie " + \
-            u"de la Ville de La Rochelle\n" + \
-            u""
+        self.savpath = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/data/out/xml'
+        # chaine de caractères, qui sera ecrite dans le fichier gml
+        # avant les coordonnées des emprises
+        self.beforeCoordinates = ''
+        self.headerGml = 'header.gml'
+        self.footerGml = 'footer.gml'
+        self.generalGml = '/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/data/out/xml/dtdict.gml'
 
 
     def on_modified(self, event):
@@ -175,7 +109,10 @@ class MonHandler(FileSystemEventHandler):
         est renommé.
 
         """
-        print("Ah, le fichier %s a été renommé" % event.src_path)
+        #print "Oh ! le fichier : {0}\n a été renommé en : {1}".format(
+        #    event.src_path,
+        #    event.dest_path)
+        self.analyse_fichier_xml_initial(event.dest_path)
         #pass
 
     def on_deleted(self, event):
@@ -186,8 +123,8 @@ class MonHandler(FileSystemEventHandler):
         est supprimé.
 
         """
-        print("AAAAGGhhhh, le fichier %s a été supprimé" % event.src_path)
-        #pass
+        #print("AAAAGGhhhh ! le fichier %s a été supprimé" % event.src_path)
+        pass
 
     def on_any_event(self, event):
         u"""
@@ -208,228 +145,424 @@ class MonHandler(FileSystemEventHandler):
         est créé.
 
         """
-        print("Le fichier %s a été créé" % event.src_path)
-        #self.analyse_fichier_zip_initial(event.src_path)
-        #self.send_x_mails()
+        #print "Hi ! Le fichier : {0} a été créé".format(event.src_path)
+        self.beforeCoordinates = ''
+        self.analyse_fichier_xml_initial(event.src_path)
         #self.nettoyage(event.src_path)
 
-    def analyse_fichier_zip_initial(self, zipfilename):
+    def analyse_fichier_xml_initial(self, xmlfilename):
         u"""
-        Cette analyse a pour objectif de completer deux dictionnaires.
+        Cette analyse a pour objectif de stocker les informations.
 
-        La lecture de chacun des pdf va permettre de fabriquer
-          - un premier dictionnaire qui fait la relation entre :
-            - le nom de l'exploitant
-            - le nom du pdf qui doit lui etre transmis
-        La lecture du fichier xml permet de fabriquer
-          - un second dictionnaire qui fait la relation entre :
-            - le nom de l'exploitant
-            - son courriel
-
-        La première étape consiste à déziper le fichier zip initial
-        cette décompression doit se faire dans un répertoire parent
-        (sinon les nouveaux fichiers formeraient à leur tour une cible
-        potentiele pour notre observer....)
-
-        Un traitement est ensuite effectué en fonction du type
-        de fichier.
+        le fichier xml sera transformé en fichier gml :
+         - la geometrie est récupérée grace à l'utilisation
+           d'expressions régulières
+         - mais les informations non géométriques sont récupérées
+           plus simplement en parsant le xml.
+           la seule contrainte, c'est la différence de syntaxe entre
+           les 4 types de dt-dict
 
         """
-        f = zipfile.ZipFile(zipfilename)
-        repertoiretemporaire = re.sub(r'\.zip', '', f.filename)
-        # on remonte la fhs d'un niveau
-        repertoiretemporaire = re.sub(self.initpath, '', repertoiretemporaire)
-        self.numero_dtdict = re.sub(r'.*/', '', repertoiretemporaire)
-        print "numero_dtdict = " + self.numero_dtdict
-        try:
-            os.mkdir(repertoiretemporaire)
-        except:
-            print 'Le répertoire existe déjà....'
-        f.extractall(repertoiretemporaire)
-        for ffile in f.namelist():
-            extension = re.sub(r'(.*)\.', '', ffile)
-            ffile = repertoiretemporaire + '/' + ffile
-            if extension == 'pdf':
-                if re.search(r'_.*_.*\.', ffile):
-                    # le fichier est du type *_DT_?.pdf
-                    __myPdfReader = pdfReader.PdfReader(ffile, 'metadata.txt')
-                    __myPdfReader.simplify()
-                    self.dico_exploitant_nomPdf[__myPdfReader.teleservice()] = \
-                        ffile
-                elif re.search(r'.*_emprise\.', ffile):
-                    # le fichier est du type *_emprise.pdf
-                    self.pdfemprise_to_join = ffile
+        extension = re.sub(r'(.*)\.', '', xmlfilename)
+        path = re.sub(r'[^/]*$', '', xmlfilename)
+        basenameextension = re.sub(r'.*/', '', xmlfilename)
+        if extension == 'xml':
+            u"""
+            On lit le fichier xml dans le but de
+            recueillir les informations que l'on va
+            ensuite réécrire dans le fichier gml.
+            La variable beforeCoordinates contiendra les
+            lignes qu'il faudra ensuite injecter dans le gml.
+            """
+
+            # chargement du xml et lecture des infos
+            rootNode = xmlReader.parse(xmlfilename)
+            try:
+                u"""
+                Tentative de lecture d'un xml :
+                 - OK si c'est une DT
+                 - KO sinon
+                """
+
+                self.beforeCoordinates += \
+                    "<ogr:DtNoConsultationDuTeleservice>" \
+                    + rootNode.DT.noConsultationDuTeleserviceSeize \
+                    + "</ogr:DtNoConsultationDuTeleservice>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:DtDateDeLaDeclaration>" \
+                    + str(rootNode.DT.dateDeLaDeclaration) \
+                    + "</ogr:DtDateDeLaDeclaration>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:responsableDuProjet>" \
+                    + rootNode.DT.responsableDuProjet.denomination \
+                    + "</ogr:responsableDuProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:representantDuResponsableDeProjet>" \
+                    + rootNode.DT.representantDuResponsableDeProjet.denomination \
+                    + "</ogr:representantDuResponsableDeProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:courriel>" \
+                    + rootNode.DT.representantDuResponsableDeProjet.courriel \
+                    + "</ogr:courriel>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:tailleDesPlans>" \
+                    + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans \
+                    + "</ogr:tailleDesPlans>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitDePlansVectoriels>" \
+                    + str(rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.souhaitDePlansVectoriels) \
+                    + "</ogr:souhaitDePlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:formatDesPlansVectoriels>" \
+                    + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.formatDesPlansVectoriels \
+                    + "</ogr:formatDesPlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:decrivezLeProjet>" \
+                    + rootNode.DT.projetEtSonCalendrier.decrivezLeProjet \
+                    + "</ogr:decrivezLeProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" \
+                    + str(rootNode.DT.projetEtSonCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens) \
+                    + "</ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:datePrevuePourLeCommencementDesTravaux>" \
+                    + str(rootNode.DT.projetEtSonCalendrier.datePrevuePourLeCommencementDesTravaux) \
+                    + "</ogr:datePrevuePourLeCommencementDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:dureeDuChantierEnJours>" \
+                    + str(rootNode.DT.projetEtSonCalendrier.dureeDuChantierEnJours) \
+                    + "</ogr:dureeDuChantierEnJours>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:TypeDeclaration>" \
+                    + 'DT' \
+                    + "</ogr:TypeDeclaration>" + '\n'
+            except:
+                pass
+
+            try:
+                u"""
+                Tentative de lecture d'un xml :
+                 - OK si c'est une DICT
+                 - KO sinon
+                """
+
+                self.beforeCoordinates += \
+                    "<ogr:DictNoConsultationDuTeleservice>" \
+                    + rootNode.DICT.noConsultationDuTeleservice \
+                    + "</ogr:DictNoConsultationDuTeleservice>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:DictDateDeLaDeclaration>" \
+                    + str(rootNode.DICT.dateDeLaDeclaration) \
+                    + "</ogr:DictDateDeLaDeclaration>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:executantDesTravaux>" \
+                    + rootNode.DICT.executantDesTravaux.denomination \
+                    + "</ogr:executantDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:courriel>" \
+                    + rootNode.DICT.executantDesTravaux.courriel \
+                    + "</ogr:courriel>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:tailleDesPlans>" \
+                    + rootNode.DICT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans \
+                    + "</ogr:tailleDesPlans>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitDePlansVectoriels>" \
+                    + str(rootNode.DICT.souhaitsPourLeRecepisse.modeReceptionElectronique.souhaitDePlansVectoriels) \
+                    + "</ogr:souhaitDePlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:formatDesPlansVectoriels>" \
+                    + rootNode.DICT.souhaitsPourLeRecepisse.modeReceptionElectronique.formatDesPlansVectoriels \
+                    + "</ogr:formatDesPlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:decrivezLesTravaux>" \
+                    + rootNode.DICT.travauxEtLeurCalendrier.decrivezLesTravaux \
+                    + "</ogr:decrivezLesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" \
+                    + str(rootNode.DICT.travauxEtLeurCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens) \
+                    + "</ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:datePrevuePourLeCommencementDesTravaux>" \
+                    + str(rootNode.DICT.travauxEtLeurCalendrier.datePrevuePourLeCommencementDesTravaux) \
+                    + "</ogr:datePrevuePourLeCommencementDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:dureeDuChantierEnJours>" \
+                    + str(rootNode.DICT.travauxEtLeurCalendrier.dureeDuChantierEnJours) \
+                    + "</ogr:dureeDuChantierEnJours>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:DtNoConsultationDuTeleservice>" \
+                    + str(rootNode.DICT.DtLiee.noConsultationDuTeleserviceSeize) \
+                    + "</ogr:DtNoConsultationDuTeleservice>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:DtDateDeLaDeclaration>" \
+                    + str(rootNode.DICT.DtLiee.dateDeLaDeclaration) \
+                    + "</ogr:DtDateDeLaDeclaration>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:responsableDuProjet>" \
+                    + rootNode.DICT.DtLiee.responsableDuProjet.denomination \
+                    + "</ogr:responsableDuProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:representantDuResponsableDeProjet>" \
+                    + rootNode.DICT.DtLiee.representantDuResponsableDeProjet.denomination \
+                    + "</ogr:representantDuResponsableDeProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:TypeDeclaration>" \
+                    + 'DICT' \
+                    + "</ogr:TypeDeclaration>" + '\n'
+            except:
+                pass
+
+            try:
+                u"""
+                Tentative de lecture d'un xml :
+                 - OK si c'est une DT-DICT Conjointe
+                 - KO sinon
+                """
+
+                self.beforeCoordinates += \
+                    "<ogr:DictNoConsultationDuTeleservice>" \
+                    + rootNode.dtDictConjointes.partieDICT.noConsultationDuTeleservice \
+                    + "</ogr:DictNoConsultationDuTeleservice>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:DictDateDeLaDeclaration>" \
+                    + str(rootNode.dtDictConjointes.partieDICT.dateDeLaDeclaration) \
+                    + "</ogr:DictDateDeLaDeclaration>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:responsableDuProjet>" \
+                    + rootNode.dtDictConjointes.partieDT.responsableDuProjet.denomination \
+                    + "</ogr:responsableDuProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:representantDuResponsableDeProjet>" \
+                    + rootNode.dtDictConjointes.partieDT.representantDuResponsableDeProjet.denomination \
+                    + "</ogr:representantDuResponsableDeProjet>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:executantDesTravaux>" \
+                    + rootNode.dtDictConjointes.partieDICT.executantDesTravaux.denomination \
+                    + "</ogr:executantDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:courriel>" \
+                    + rootNode.dtDictConjointes.partieDICT.executantDesTravaux.courriel \
+                    + "</ogr:courriel>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:tailleDesPlans>" \
+                    + rootNode.dtDictConjointes.partieDICT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans \
+                    + "</ogr:tailleDesPlans>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitDePlansVectoriels>" \
+                    + str(rootNode.dtDictConjointes.partieDICT.souhaitsPourLeRecepisse.modeReceptionElectronique.souhaitDePlansVectoriels) \
+                    + "</ogr:souhaitDePlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:formatDesPlansVectoriels>" \
+                    + rootNode.dtDictConjointes.partieDICT.souhaitsPourLeRecepisse.modeReceptionElectronique.formatDesPlansVectoriels \
+                    + "</ogr:formatDesPlansVectoriels>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:decrivezLesTravaux>" \
+                    + rootNode.dtDictConjointes.partieDICT.travauxEtLeurCalendrier.decrivezLesTravaux \
+                    + "</ogr:decrivezLesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" \
+                    + str(rootNode.dtDictConjointes.partieDICT.travauxEtLeurCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens) \
+                    + "</ogr:souhaitLesPlansDesReseauxElectriqueAeriens>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:datePrevuePourLeCommencementDesTravaux>" \
+                    + str(rootNode.dtDictConjointes.partieDICT.travauxEtLeurCalendrier.datePrevuePourLeCommencementDesTravaux) \
+                    + "</ogr:datePrevuePourLeCommencementDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:dureeDuChantierEnJours>" \
+                    + str(rootNode.dtDictConjointes.partieDICT.travauxEtLeurCalendrier.dureeDuChantierEnJours) \
+                    + "</ogr:dureeDuChantierEnJours>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:TypeDeclaration>" \
+                    + 'DT-DICT' \
+                    + "</ogr:TypeDeclaration>" + '\n'
+            except:
+                pass
+
+            try:
+                u"""
+                Tentative de lecture d'un xml :
+                 - OK si c'est un ATU
+                 - KO sinon
+                """
+
+                self.beforeCoordinates += \
+                    "<ogr:AtuNoConsultationDuTeleservice>" \
+                    + rootNode.ATU.noConsultationDuTeleservice \
+                    + "</ogr:AtuNoConsultationDuTeleservice>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:AtuDate>" \
+                    + str(rootNode.ATU.date) \
+                    + "</ogr:AtuDate>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:pasDeReponseAFournirChantierTermine>" \
+                    + str(rootNode.ATU.chantierTermineOuChantierAVenir.pasDeReponseAFournirChantierTermine) \
+                    + "</ogr:pasDeReponseAFournirChantierTermine>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:reponseAttendueChantierAVenir>" \
+                    + str(rootNode.ATU.chantierTermineOuChantierAVenir.reponseAttendueChantierAVenir) \
+                    + "</ogr:reponseAttendueChantierAVenir>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:personneOrdonnantLesTravauxUrgents>" \
+                    + rootNode.ATU.personneOrdonnantLesTravauxUrgents.nom \
+                    + "</ogr:personneOrdonnantLesTravauxUrgents>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:courriel>" \
+                    + rootNode.ATU.personneOrdonnantLesTravauxUrgents.courriel \
+                    + "</ogr:courriel>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:entrepriseChargeeDeLExecutionDesTravaux>" \
+                    + rootNode.ATU.entrepriseChargeeDeLExecutionDesTravaux.nom \
+                    + "</ogr:entrepriseChargeeDeLExecutionDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:travauxEtMoyensMisEnOeuvre>" \
+                    + rootNode.ATU.travauxEmplacementDureeDescription.travauxEtMoyensMisEnOeuvre \
+                    + "</ogr:travauxEtMoyensMisEnOeuvre>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:dateDebutDesTravaux>" \
+                    + str(rootNode.ATU.travauxEmplacementDureeDescription.dateDebutDesTravaux) \
+                    + "</ogr:dateDebutDesTravaux>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:dureeTravauxDemiJournees>" \
+                    + str(rootNode.ATU.travauxEmplacementDureeDescription.dureeTravauxDemiJournees) \
+                    + "</ogr:dureeTravauxDemiJournees>" + '\n'
+                self.beforeCoordinates += \
+                    "<ogr:TypeDeclaration>" \
+                    + 'ATU' \
+                    + "</ogr:TypeDeclaration>" + '\n'
+            except:
+                pass
+
+            # on renomme le fichier xml en tmp
+            self.numero_dtdict = re.sub(r'\_description.xml',
+                                        '',
+                                        basenameextension)
+            tmpfilename = path + self.numero_dtdict + '.tmp1'
+            try:
+                shutil.move(xmlfilename, tmpfilename)
+            except:
+                print 'Le fichier n a pas pu etre sauvegardé'
+
+
+        elif extension == 'tmp1':
+            # on lit le fichier .tmp1
+            self.numero_dtdict = re.sub(r'\.tmp1', '', basenameextension)
+            tmpfilename = path + self.numero_dtdict + '.tmp2'
+            finput = open(xmlfilename, 'r')
+            fheader = open(self.headerGml, 'r')
+            ffooter = open(self.footerGml, 'r')
+            #et on ecrit dans les fichiers tmp2, qui deviendra gml
+            #et le fichier general.gml
+            foutput = open(tmpfilename, 'w')
+            foutputG = open(self.generalGml, 'r+')
+            
+            # ecriture de l'entete
+            for line in fheader:
+                foutput.write(line)
+            fheader.close()
+            foutput.write('\n')
+
+            # On positionne le pointeur du fichier general.gml une ligne avant la fin
+            # la chaine "</ogr:FeatureCollection>" fait 25 caracteres
+            foutputG.seek(-25, 2);
+
+		    # ecriture du corps
+            for line in finput:
+                if re.search(r'</t:emprise>', line):
+                    break
+                elif re.search(r'<t:.*>', line) \
+                    or re.search(r'</t:.*>', line):
+                    pass
+                elif re.search(r'<ie:.*>', line):
+                    pass
+                elif re.search(r'<\?xml.*>', line):
+                    pass
+                elif re.search(r'<gml:surfaceMembers>', line):
+                    foutput.write('<gml:featureMember>\n')
+                    foutputG.write('<gml:featureMember>\n')
+                elif re.search(r'</gml:surfaceMembers>', line):
+                    foutput.write('</gml:featureMember>\n')
+                    foutputG.write('</gml:featureMember>\n')
+                elif re.search(r'<gml:Polygon', line):
+                    partial = re.sub(r'<gml:Polygon gml:id="', \
+                        '', \
+                        line)
+                    partial = re.sub(r'">', \
+                        '', \
+                        partial)
+                    partial = re.sub(r' *', \
+                        '', \
+                        partial)
+                    partial = re.sub(r'\n', \
+                        '', \
+                        partial)
+                    foutput.write('<ogr:DTDICT>\n')
+                    foutputG.write('<ogr:DTDICT>\n')
+                    foutput.write('<ogr:gml_id>' + partial + '</ogr:gml_id>\n')
+                    foutputG.write('<ogr:gml_id>' + partial + '</ogr:gml_id>\n')
+                    foutput.write(self.beforeCoordinates.encode("utf-8"))
+                    foutputG.write(self.beforeCoordinates.encode("utf-8"))
+                elif re.search(r'</gml:Polygon>', line):
+                    foutput.write('</ogr:DTDICT>\n')
+                    foutputG.write('</ogr:DTDICT>\n')
+                elif re.search(r'<gml:exterior>', line):
+                    foutput.write('<ogr:geometryProperty>\n')
+                    foutputG.write('<ogr:geometryProperty>\n')
+                    foutput.write('<gml:Polygon srsName="EPSG:4326">\n')
+                    foutputG.write('<gml:Polygon srsName="EPSG:4326">\n')
+                    foutput.write('<gml:outerBoundaryIs>\n')
+                    foutputG.write('<gml:outerBoundaryIs>\n')
+                elif re.search(r'</gml:exterior>', line):
+                    foutput.write('</gml:outerBoundaryIs>\n')
+                    foutputG.write('</gml:outerBoundaryIs>\n')
+                    foutput.write('</gml:Polygon>\n')
+                    foutputG.write('</gml:Polygon>\n')
+                    foutput.write('</ogr:geometryProperty>\n')
+                    foutputG.write('</ogr:geometryProperty>\n')
                 else:
-                    # le fichier est du type *resume.pdf, ou *notice.pdf
-                    pass
+                    foutput.write(line)
+                    foutputG.write(line)
+            #foutputG.write('top\n')
+            finput.close()
+            # ecriture du pied
+            for line in ffooter:
+				foutput.write(line)
+				foutputG.write(line)
+            ffooter.close()
+            foutput.close()
+            foutputG.close()
+            
+            # puis on renomme le fichier tmp2 en gml
+            #self.numero_dtdict = re.sub(r'\.tmp1', '', basenameextension)
 
-            if extension == 'zip':
-				# deux fichiers xml sont contenus dans un zip
-                fxmlzip = zipfile.ZipFile(ffile)
-                repertoiretemporairexml = re.sub(r'\.zip',
-                                                 '',
-                                                 fxmlzip.filename)
-                try:
-                    os.mkdir(repertoiretemporairexml)
-                except:
-                    #print 'Le répertoire existe déjà....'
-                    pass
-                fxmlzip.extractall(repertoiretemporairexml)
-                for ffilexml in fxmlzip.namelist():
-                    ffilexml = repertoiretemporairexml + '/' + ffilexml
-                    if re.search(r'Signature_.*\.', ffilexml):
-                        # le fichier est du type Signature_*_description.xml
-                        pass
-                    else:
-                        # le fichier est du type *_description.xml
-                        self.xmlfile_to_join = ffilexml
-                        rootNode = xmlReader.parse(ffilexml)
+            gmlfilename = path + self.numero_dtdict + '.gml'
+            try:
+                shutil.move(tmpfilename, gmlfilename)
+            except:
+                print 'Le fichier n a pas pu etre sauvegardé'
 
-                        # récupération du mail du redacteur/emetteur
-                        #   de la déclaration
-                        #   attention : le chemin xml dépend
-                        #   du type de la déclaration
-                        try:
-                            self.mail_notif_receivers = rootNode.DT.representantDuResponsableDeProjet.courriel
-                            ##print 'taille des plans = ' + rootNode.DT.souhaitsPourLeRecepisse.modeReceptionElectronique.tailleDesPlans
-                            ##print 'souhaitLesPlansDesReseauxElectriqueAeriens = ' + str(rootNode.DT.projetEtSonCalendrier.souhaitLesPlansDesReseauxElectriqueAeriens)
-                        except:
-                            pass
-                        try:
-                            self.mail_notif_receivers = rootNode.DICT.executantDesTravaux.courriel
-                        except:
-                            pass
-                        try:
-                            self.mail_notif_receivers = rootNode.dtDictConjointes.partieDICT.executantDesTravaux.courriel
-                        except:
-                            pass
-                        try:
-                            self.mail_notif_receivers = rootNode.ATU.personneOrdonnantLesTravauxUrgents.courriel
-                        except:
-                            pass
+            # et enfin on supprime le fichier tmp1
+            try:
+                os.remove(xmlfilename)
+            except:
+                print 'Le fichier n a pas pu etre supprimé'
 
-                        for i, val in enumerate(rootNode.listeDesOuvrages.ouvrage):
-                            # contrairement aux fichiers pdf qui utilise
-                            # l'encodage "CP1250" (windows)
-                            # ici, dans le xml, il faut utiliser
-                            # l'encodage "utf-8"
-                            self.dico_exploitant_courriel[rootNode.listeDesOuvrages.ouvrage[i].contact.societe.encode("utf-8")] = rootNode.listeDesOuvrages.ouvrage[i].contact.courriel
+        elif extension == 'gml':
+            # on fait un traitement sur le fichier gml
+            #print "gml = \n---\n" + self.beforeCoordinates
+            self.numero_dtdict = re.sub(r'\.gml', '', basenameextension)
+            destfilename = self.savpath + "/" + self.numero_dtdict + '.gml'
+            try:
+                shutil.move(xmlfilename, destfilename)
+            except:
+                print 'Le fichier n a pas pu etre sauvegardé'
+
+        else:
+            pass
 
 
-    def send_x_mails(self):
-        u"""
-        Méthode pour générer les x mails (1 par exploitant).
 
-        Après analyse des pdf et du xml,
-        on peut faire la correspondance entre un exploitant et :
-         - le pdf qui lui est destiné (pièce jointe)
-         - son adresse de destination (courriel)
-        bref, on prépare les messages destinées aux exploitants.
-
-        """
-
-        ##print '' * 2 + '-' * 50
-        ##for key, value in self.dico_exploitant_nomPdf.iteritems():
-            ##print  "societe, pdf, courriel = " + key, value, self.dico_exploitant_courriel[key]
-        ##print '' * 2 + '-' * 50
-
-        ##for key, value in self.dico_exploitant_courriel.iteritems():
-            ##print "societe, courriel, pdf = " + key, value, self.dico_exploitant_nomPdf[key]
-        ##print '' * 2 + '-' * 50
-
-        # réinitialisation des courriels pour les tests
-        ##for key, value in self.dico_exploitant_nomPdf.iteritems():
-            #if key == 'ERDF DR POITOU-CHARENTES':
-            #    self.dico_exploitant_courriel[key] = 'pierre.combres@ville-larochelle.fr'
-            #elif key == 'VILLE DE LA ROCHELLE':
-            #    self.dico_exploitant_courriel[key] = 'francois.chagneau@ville-larochelle.fr'
-            #elif key == 'ORANGE DT DICT':
-            #    self.dico_exploitant_courriel[key] = 'michel.ricchiuto@ville-larochelle.fr'
-            #elif key == 'OPH de la CDA de LA ROCHELLE':
-            #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
-            #else:
-            #    self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
-            ##self.dico_exploitant_courriel[key] = 'frederic.garel@ville-larochelle.fr'
-
-        ##print '' * 2 + '-' * 50
-        for key, value in self.dico_exploitant_nomPdf.iteritems():
-            ##print key, value, self.dico_exploitant_courriel[key]
-            self.send_one_mail([self.dico_exploitant_courriel[key]], value)
-            #pass
-        ##print '' * 2 + '-' * 50
-
-
-    def send_one_mail(self, to_person, pdffile_to_join):
-        u"""
-        Méthode pour envoyer 1 mail.
-
-        Utilisation de la librairie smtplib
-        pour envoyer un message.
-
-        Attentino, to_person doit être une liste [crochet].
-
-        """
-
-        # on ajoute un destinataire supplémentaire
-        to_person.append(self.mail_receivers)
-
-        msg = MIMEMultipart()
-
-        msg['From'] = self.mail_sender
-        msg['To'] = COMMASPACE.join(to_person)
-        msg['Date'] = formatdate(localtime=True)
-        msg['Subject'] = self.mail_subject + self.numero_dtdict
-
-        msg.preamble = 'Veuillez trouver ci joint la déclaration %s' % self.numero_dtdict
-        #msg.preamble = self.mail_preamble + self.numero_dtdict
-
-        # attachement du fichier xml
-        xmlFile = open(self.xmlfile_to_join, 'rb')
-        msgXml = MIMEBase('application', 'xml')
-        msgXml.set_payload(xmlFile.read())
-        encoders.encode_base64(msgXml)
-        msgXml.add_header('Content-Disposition',
-                          'attachment; filename="{0}"'.format(os.path.basename(self.xmlfile_to_join)))
-        msg.attach(msgXml)
-
-        # attachement du fichier declaration pdf
-        pdfDeclarationFile = open(pdffile_to_join, 'rb')
-        msgPdfDeclaration = MIMEBase('application', 'pdf')
-        msgPdfDeclaration.set_payload(pdfDeclarationFile.read())
-        encoders.encode_base64(msgPdfDeclaration)
-        msgPdfDeclaration.add_header('Content-Disposition',
-                          'attachment; filename="{0}"'.format(os.path.basename(pdffile_to_join)))
-        msg.attach(msgPdfDeclaration)
-
-        # attachement du fichier emprise pdf
-        pdfEmpriseFile = open(self.pdfemprise_to_join, 'rb')
-        msgPdfEmprise = MIMEBase('application', 'pdf')
-        msgPdfEmprise.set_payload(pdfEmpriseFile.read())
-        encoders.encode_base64(msgPdfEmprise)
-        msgPdfEmprise.add_header('Content-Disposition',
-                          'attachment; filename="{0}"'.format(os.path.basename(self.pdfemprise_to_join)))
-        msg.attach(msgPdfEmprise)
-
-        # corps du message
-        # Create the body of the message (a plain-text).
-        mail_body_text = self.mail_body_text1 + self.numero_dtdict + self.mail_body_text2
-        # pour avoir les caractères accentuées, utilisation de l'utf-8.
-        part1 = MIMEText(mail_body_text, 'plain', 'utf-8')
-        # Attach parts into message container.
-        msg.attach(part1)
-
-        try:
-            #smtpObj = smtplib.SMTP('localhost')
-            smtpObj = smtplib.SMTP('mail.ville-larochelle.fr')
-            smtpObj.sendmail(self.mail_sender, \
-                             to_person, \
-                             msg.as_string())
-            print "Successfully sent email to " + to_person.__str__()
-        except smtplib.SMTPException:
-            print "Error: unable to send email to " + to_person
-
-
-    def nettoyage(self, zipfilename):
+    def nettoyage(self, gmlfilename):
         u"""
         Méthode pour nettoyer et ranger à la fin du traitement.
 
@@ -439,10 +572,8 @@ class MonHandler(FileSystemEventHandler):
         (on parle ici des fichiers résultant de la décompression
         du fichier initial dans un sous-repertoire temporaire)
 
-        Le fichier zip initial est déplacé vers le repertoire
+        Le fichier gml final est déplacé vers le repertoire
         self.savpath
-
-        Envoi d'un mail de notification à l'emetteur
 
         Certaines variables sont réinitialisées.
 
@@ -462,27 +593,6 @@ class MonHandler(FileSystemEventHandler):
             #os.remove(zipfilename)
         except:
             print 'Le fichier n a pas pu etre sauvegardé'
-
-        # envoi d'un mail de notification à l'emetteur
-        msg = MIMEMultipart()
-        msg['From'] = self.mail_sender
-        msg['To'] = self.mail_notif_receivers
-        msg['Date'] = formatdate(localtime=True)
-        msg['Subject'] = self.mail_subject + self.numero_dtdict
-
-        mail_notif_body_text = self.mail_notif_body_text1 + self.numero_dtdict + self.mail_notif_body_text2
-        part1 = MIMEText(mail_notif_body_text, 'plain', 'utf-8')
-        msg.attach(part1)
-
-        try:
-            #smtpObj = smtplib.SMTP('localhost')
-            smtpObj = smtplib.SMTP('mail.ville-larochelle.fr')
-            smtpObj.sendmail(self.mail_sender, \
-                             self.mail_notif_receivers, \
-                             msg.as_string())
-            print "Successfully sent notification email to " + self.mail_notif_receivers
-        except smtplib.SMTPException:
-            print "Error: unable to send notification email to " + self.mail_notif_receivers
 
         # remise à zero des deux dictionnaires
         self.dico_exploitant_nomPdf = {}
@@ -507,7 +617,7 @@ def main():
     # se produit
     #observer.schedule(MonHandler(), path='/home/fred/h/cartographie/tmp', recursive=True)
     observer.schedule(MonHandler(), path='/home/fred/Travail/ecriture_sphinx/technic/source/dt-dict/data/in/xml', recursive=True)
-    
+
     u"""
     On démarre tout ça :
     """
