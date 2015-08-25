@@ -1,0 +1,16 @@
+
+        <t:emprise>
+            <t:geometrie srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4171" gml:id="atuemprise0">
+                <gml:surfaceMembers>
+                    <gml:Polygon gml:id="atu0">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.154177169168295,46.15582016278957 -1.1533081331323718,46.15582016278957 -1.1533081331323718,46.15575327598975 -1.1541664403283458,46.155760707860416 -1.154177169168295,46.15582016278957</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMembers>
+            </t:geometrie>
+            <t:surface>467.412107789889</t:surface>
+            <t:referenceDelaCarte>Photographies aériennes: Géoportail Numérique 2010; Carte: 2012; Limites administratives: 2011</t:referenceDelaCarte>
+        </t:emprise>

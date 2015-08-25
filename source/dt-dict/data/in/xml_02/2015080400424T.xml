@@ -1,0 +1,16 @@
+
+        <t:emprise>
+            <t:geometrie srsDimension="2" srsName="urn:ogc:def:crs:EPSG::4171" gml:id="dictemprise0">
+                <gml:surfaceMembers>
+                    <gml:Polygon gml:id="dict0">
+                        <gml:exterior>
+                            <gml:LinearRing>
+<gml:coordinates>-1.148984410632652,46.16071754199403 -1.147063948281661,46.160368274452374 -1.147299982760554,46.15949138021529 -1.149413564230639,46.1598778099065 -1.1490165971525015,46.16059121143704 -1.148984410632652,46.16071754199403</gml:coordinates>
+                            </gml:LinearRing>
+                        </gml:exterior>
+                    </gml:Polygon>
+                </gml:surfaceMembers>
+            </t:geometrie>
+            <t:surface>15767.882097787224</t:surface>
+            <t:referenceDelaCarte>Photographies aériennes: Géoportail Numérique 2010; Carte: 2012; Limites administratives: 2011</t:referenceDelaCarte>
+        </t:emprise>

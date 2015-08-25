@@ -1,0 +1,20 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>qgis2gml</Name>
+    <ElementPath>qgis2gml</ElementPath>
+    <GeometryType>3</GeometryType>
+    <SRSName>EPSG:4326</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>2</FeatureCount>
+      <ExtentXMin>-1.15329</ExtentXMin>
+      <ExtentXMax>-1.15162</ExtentXMax>
+      <ExtentYMin>46.15797</ExtentYMin>
+      <ExtentYMax>46.15839</ExtentYMax>
+    </DatasetSpecificInfo>
+    <PropertyDefn>
+      <Name>id</Name>
+      <ElementPath>id</ElementPath>
+      <Type>Integer</Type>
+    </PropertyDefn>
+  </GMLFeatureClass>
+</GMLFeatureClassList>
