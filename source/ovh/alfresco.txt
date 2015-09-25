@@ -183,6 +183,14 @@ http://localhost:8080/share/page/
 
 Utilisation d'alfresco
 
+lancement du service
+
+sudo service tomcat7 stop
+sudo service alfresco stop
+sudo service alfresco start postgresql
+sudo servcie alfresco start tomcat
+sudo service alfresco start
+
 Ajout d'utilisateurs
 ajout de groupes
 "DGA et l'écologie urbaine et des services techniques"
@@ -205,5 +213,6 @@ ajout de groupes
       Claire Ballage-Chervier
     "Urbanisme"
       Alain Goux
+
 
 
