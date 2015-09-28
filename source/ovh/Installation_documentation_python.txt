@@ -1,0 +1,13 @@
+Python Continuous Documentation
+
+https://github.com/icgood/continuous-docs
+
+
+$ deactivate
+$ rmvirtualenv ecriture_sphinx
+$ mkvirtualenv ecriture_sphinx
+
+workon ecriture_sphinx
+
+pip install sphinx
+

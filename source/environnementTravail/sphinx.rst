@@ -11,6 +11,22 @@ Sphinx
 #. Creation de deux projets sphinx
 #. Installation des extensions (plugins) et paramètrage des extensions dans les projets
 
+Gestion de nos documents source, et utilisation conjointe d'un environnement python et de git
+=============================================================================================
+Les documents que nous écrivons sont regroupés par projet.
+
+Par exemple, un projet travail regroupe les documents liés aux trucs et astuces concernant le boulot.
+le sous repertoire perso regroupe les documents liés aux informations personnelles
+le sous repertoire report regroupe les documents correspondant aux présentations.
+
+Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
+
+Sphinx est un outil qui permet de séparer un projet en deux sous-dossiers :
+un sous-dossier source et un sous-dossier build
+
+Avec git, nous allons faire la gestion des versions de fichiers uniquement sur le sous-repertoire source.
+
+
 Environnement virtuel python avec l'outil sphinx
 ================================================
 
@@ -68,7 +84,7 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
                         texlive-fonts-recommended
 
   sudo aptitude install texlive-font-utils
-  sudo aptitude install libxlst-dev
+  sudo aptitude install libxslt-dev
 
 2d niveau
 
@@ -148,6 +164,30 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
   aafig_format = dict(latex='pdf', html='svg', text=None)
   aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)
 
+Complément d'installation
+-------------------------
+.. code::
+
+  pip install sphinx
+  pip install sphinxcontrib-plantuml
+  pip install aafigure
+  pip install sphinxcontrib-aafig
+  pip install hieroglyph
+
+Attention, il semble qu'il y ait une erreur dans le fihcier aafig.py
+En effet, quand on cherche à compiler un document pdf avec l'installation par defaut, on a cette erreur :
+
+.. Code::
+  Class AafigDirective(directives.images.Image):
+  AttributeError: 'module' object has no attribute 'images'
+
+Une correction semble avoir été faite (cf https://github.com/sphinx-doc/sphinx/issues/1595 ;
+https://bitbucket.org/birkenfeld/sphinx-contrib/commits/f41632b346a569e2a6bcd0194ea491c2550ecf4d)
+
+.. code::
+  cdvirtualenv
+  cd lib/python2.7/site-package/sphinxcontrib/
+  wgets://bitbucket.org/birkenfeld/sphinx-contrib/raw/e3e989af7748e83bfb3833bd9a66c8ceb3e33408/aafig/sphinxcontrib/aafig.py
 
 Configuration du second projet
 ------------------------------
