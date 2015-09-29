@@ -13,27 +13,61 @@ Sphinx
 
 Gestion de nos documents source, et utilisation conjointe d'un environnement python et de git
 =============================================================================================
-Les documents que nous écrivons sont regroupés par projet.
+Les documents que nous écrivons sont regroupés par projet (c'est à dire par sous-repertoire). Par exemple, 
 
-Par exemple, un projet travail regroupe les documents liés aux trucs et astuces concernant le boulot.
-le sous repertoire perso regroupe les documents liés aux informations personnelles
-le sous repertoire report regroupe les documents correspondant aux présentations.
+ - le sous-repertoire "technic" regroupe les documents liés aux trucs et astuces concernant le boulot.
+ - le sous repertoire "perso" regroupe les documents liés aux informations personnelles
+ - le sous repertoire "report" regroupe les documents correspondant aux présentations.
 
-Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
+Ces projets (ou sous-repertoire) sont créés à l'aide d'une commande de sphinx : sphinx-quickstart.
 
-Sphinx est un outil qui permet de séparer un projet en deux sous-dossiers :
+En choisissant la bonne option, Sphinx permet de séparer un projet en deux sous-dossiers :
 un sous-dossier source et un sous-dossier build
 
 Avec git, nous allons faire la gestion des versions de fichiers uniquement sur le sous-repertoire source.
 
+La racine de tout cet environnement est 
+
+.. code::
+  ~/Travail/ecriture_sphinx
+
+Voici donc l'arborescence que nous allons obtenir
+
+.. code::
+
+  ~/Travail/ecriture_sphinx
+                           /technic
+                                   /build
+                                   /.git
+                                   /Makefile
+                                   /README.md
+                                   /source
+                                          /conf.py
+                           /perso
+                                   /build
+                                   /.git
+                                   /Makefile
+                                   /README.md
+                                   /source
+                                          /conf.py
+                           /projet_00
+                                   /build
+                                   /.git
+                                   /Makefile
+                                   /README.md
+                                   /source
+                                          /conf.py
+
 
 Environnement virtuel python avec l'outil sphinx
 ================================================
+Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
 
 Environnement virtuel python
 ----------------------------
-ecriture_sphinx
-
+pour créer cet environnement virtuel, à la place de virtualenvwrapper, on
+pourra utiliser pew
+http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/
 
 Creation d'un environnement python
 ----------------------------------
@@ -49,16 +83,22 @@ Utilisation de cet environnement
   workon ecriture_sphinx
 
 
-Deux projets sphinx
-===================
+Plusieurs projets sphinx
+========================
+
 Se positionner dans le bon répertoire
+
+.. code::
+
+  cd ~/Travail/ecriture_sphinx/
+
 et executer la commande
 
 .. code::
 
   sphinx-quickstart
 
-Les deux projets sont
+Les deux premiers projets sont
 
  * ~/travail/ecriture_sphinx/report/
  * ~/travail/ecriture_sphinx/technic/
