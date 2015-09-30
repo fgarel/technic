@@ -1,6 +1,6 @@
-********************
-shell, python et vim
-********************
+**********************
+shell, byobu et python
+**********************
 
 Un environnement de travail qui va bien
 
@@ -44,10 +44,5 @@ L'installation et la configuration sont sur ces pages
 https://powerline.readthedocs.org/en/latest/installation/linux.html#installation-linux
 https://powerline.readthedocs.org/en/latest/overview.html
 
-
-vim
-===
-Utilisation de spf13-vim
-https://github.com/spf13/spf13-vim
 
 

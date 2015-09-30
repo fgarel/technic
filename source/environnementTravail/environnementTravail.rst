@@ -2,11 +2,13 @@
 Environnement de travail
 ########################
 
-*************************************************
-Présentation rapide de l'environnement de Travail
-*************************************************
+************
+Introduction
+************
 
 L'idée est de créer et d'utiliser un environnment qui permet d'ecrire de la documentation.
+
+https://github.com/icgood/continuous-docs
 
 Objectifs
 =========
@@ -29,9 +31,12 @@ Dans les paragraphes suivants, nous présentons les différentes briques.
 #) Versionning avec git
 #) Exemple de présentation
 
-.. include:: environnementTravail/plantuml.rst
-.. include:: environnementTravail/sphinx.rst
-.. include:: environnementTravail/git.rst
-.. include:: environnementTravail/presentation.rst
+.. include:: environnementTravail/Chapter01_presentationEnvironnement.rst
+.. include:: environnementTravail/Chapter02_shell_python.rst
+.. include:: environnementTravail/Chapter03_vim_plantuml.rst
+.. include:: environnementTravail/Chapter04_git.rst
+.. include:: environnementTravail/Chpater05_sphinx.rst
+.. include:: environnementTravail/Chpater06_exemplePresentation.rst
+
 
 
