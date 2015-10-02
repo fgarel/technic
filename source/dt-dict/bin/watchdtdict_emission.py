@@ -148,7 +148,7 @@ class MonHandler(FileSystemEventHandler):
             u"portant le numéro de consultation "
 
         self.mail_notif_body_text2 = \
-            u" a été transmises aux exploitants.\n\n" + \
+            u" a été transmise aux exploitants.\n\n" + \
             u"Important : Ne répondez pas à cet email.\n\n" + \
             u"Cordialement,\n\n" + \
             u"--\nLe service Cartographie " + \

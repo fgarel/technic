@@ -51,6 +51,15 @@ et executer la commande
 
   sphinx-quickstart
 
+> Separate source and build directories (y/N) [n]: y
+> Project name: yourproject
+> Author name(s): Your Name
+> Project version: 1.2.3
+> autodoc: automatically insert docstrings from modules (y/N) [n]: y
+> intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+
+
+
 Les deux premiers projets sont
 
  * ~/travail/ecriture_sphinx/report/
