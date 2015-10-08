@@ -1,0 +1,6 @@
+DEB;FIN;LGR;NAT;NOM;DESCRIPTION;OBSERVATION
+1;2;2;X;ccode;code département;
+3;3;1;X;ccodir;code direction;
+4;6;3;X;ccocom;code commune INSEE;
+7;16;10;X;filler01;;
+17;60;44;X;libcom;libelle de la commune;

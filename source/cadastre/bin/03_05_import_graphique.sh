@@ -1,6 +1,7 @@
 #!/bin/sh
 
-HOST=10.2.10.56
+#HOST=10.2.10.56
+HOST=debian.mairie.fr
 #HOST=192.168.0.21
 
 # script pour le transfert des fichiers cadastraux 
@@ -10,7 +11,7 @@ HOST=10.2.10.56
 # le premier PG est la destination
 # le second est la source
 
-psql -h $HOST -U contrib -d patrimoine -c "ALTER ROLE contrib SET seach_path TO cadastre_travail, cadastre_majic, cadastre_public, public;"
+psql -h $HOST -U contrib -d patrimoine -c "ALTER ROLE contrib SET search_path TO cadastre_travail, cadastre_majic, cadastre_public, public;"
 
 # transfert de la couche parcelle
 ogr2ogr -skipfailures \

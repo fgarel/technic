@@ -27,8 +27,7 @@ CREATE TABLE fanr_article_voie (
 "typvoie" CHARACTER VARYING(1) NOT NULL,
 "clieudit" CHARACTER VARYING(1) NOT NULL,
 "filler07" CHARACTER VARYING(2) NOT NULL,
-"motdir" CHARACTER VARYING(8) NOT NULL,
-"filler08" CHARACTER VARYING(30) NOT NULL);
+"motdir" CHARACTER VARYING(8) NOT NULL);
 -- Ajout des commentaires pour la table fanr_article_voie
 COMMENT ON COLUMN fanr_article_voie."ccode" IS 'code département';
 COMMENT ON COLUMN fanr_article_voie."ccodir" IS 'code direction';
@@ -56,4 +55,3 @@ COMMENT ON COLUMN fanr_article_voie."typvoie" IS 'Type de voie';
 COMMENT ON COLUMN fanr_article_voie."clieudit" IS 'caractère du lieu-dit';
 COMMENT ON COLUMN fanr_article_voie."filler07" IS '';
 COMMENT ON COLUMN fanr_article_voie."motdir" IS 'dernier mot entierement alphabetique du libelle de la voie';
-COMMENT ON COLUMN fanr_article_voie."filler08" IS '';

@@ -1,13 +1,15 @@
 #!/bin/sh
 
-HOST=10.2.10.56
+#HOST=10.2.10.56
+HOST=debian.mairie.fr
+#echo "HOST = "$HOST
 #HOST=192.168.0.21
 
 # Suppression et creation des tables
 #===================================
 #psql -h 10.2.10.2 -U contrib -d patrimoine -f droptable.sql
 #psql -h 10.2.10.2 -U contrib -d patrimoine -f createtable.sql
-psql -h $HOST -U contrib -d patrimoine -f sql/droptable.sql
+#psql -h $HOST -U contrib -d patrimoine -f sql/droptable.sql
 
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/bati_article_direction_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/bati_article_00_create.sql
@@ -22,20 +24,21 @@ psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/bati_article_99_crea
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/fanr_article_direction_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/fanr_article_commune_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/fanr_article_voie_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/lloc_article_direction_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/lloc_article_lotlocal_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_direction_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_10_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_21_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_30_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_36_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/nbat_article_99_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdl_article_direction_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdl_article_10_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdl_article_20_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdl_article_30_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdll_article_direction_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdll_article_10_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdll_article_20_create.sql
+psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/pdll_article_30_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/prop_article_direction_create.sql
 psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/prop_article_courant_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/revdi_article_direction_create.sql
-psql -h $HOST -U contrib -d patrimoine -f ../data1/head/sql/revdi_article_lotlocal_create.sql
+
 
 
 #LISTE='ccoaff ccodem'
