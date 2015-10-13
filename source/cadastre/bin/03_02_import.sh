@@ -1,6 +1,7 @@
 #!/bin/sh
 
-HOST=10.2.10.56
+#HOST=10.2.10.56
+HOST=debian.mairie.fr
 #HOST=192.168.0.21
 
 #-- import des bati à partir d'un fichier csv
@@ -31,6 +32,11 @@ psql -d patrimoine -U contrib -h $HOST -c "copy fanr_article_direction from stdi
     < ../data1/foot/fanr_article_direction.txt
 psql -d patrimoine -U contrib -h $HOST -c "copy fanr_article_voie from stdin delimiter ';';" \
     < ../data1/foot/fanr_article_voie.txt
+#-- import des lloc à partir d'un fichier csv
+psql -d patrimoine -U contrib -h $HOST -c "copy lloc_article_direction from stdin delimiter ';';" \
+    < ../data1/foot/lloc_article_direction.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy lloc_article_lotlocal from stdin delimiter ';';" \
+    < ../data1/foot/lloc_article_lotlocal.txt
 #-- import des nbat à partir d'un fichier csv
 psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_direction from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_direction.txt
@@ -45,24 +51,20 @@ psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_36 from stdin delim
 psql -d patrimoine -U contrib -h $HOST -c "copy nbat_article_99 from stdin delimiter ';';" \
     < ../data1/foot/nbat_article_99.txt
 #-- import des pdl à partir d'un fichier csv
-psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_direction from stdin delimiter ';';" \
-    < ../data1/foot/pdl_article_direction.txt
-psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_10 from stdin delimiter ';';" \
-    < ../data1/foot/pdl_article_10.txt
-psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_20 from stdin delimiter ';';" \
-    < ../data1/foot/pdl_article_20.txt
-psql -d patrimoine -U contrib -h $HOST -c "copy pdl_article_30 from stdin delimiter ';';" \
-    < ../data1/foot/pdl_article_30.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy pdll_article_direction from stdin delimiter ';';" \
+    < ../data1/foot/pdll_article_direction.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy pdll_article_10 from stdin delimiter ';';" \
+    < ../data1/foot/pdll_article_10.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy pdll_article_20 from stdin delimiter ';';" \
+    < ../data1/foot/pdll_article_20.txt
+psql -d patrimoine -U contrib -h $HOST -c "copy pdll_article_30 from stdin delimiter ';';" \
+    < ../data1/foot/pdll_article_30.txt
 #-- import des proprietaires à partir d'un fichier csv
 psql -d patrimoine -U contrib -h $HOST -c "copy prop_article_direction from stdin delimiter ';';" \
     < ../data1/foot/prop_article_direction.txt
 psql -d patrimoine -U contrib -h $HOST -c "copy prop_article_courant from stdin delimiter ';';" \
     < ../data1/foot/prop_article_courant.txt
-#-- import des revdi à partir d'un fichier csv
-psql -d patrimoine -U contrib -h $HOST -c "copy revdi_article_direction from stdin delimiter ';';" \
-    < ../data1/foot/revdi_article_direction.txt
-psql -d patrimoine -U contrib -h $HOST -c "copy revdi_article_lotlocal from stdin delimiter ';';" \
-    < ../data1/foot/revdi_article_lotlocal.txt
+
 
 
 

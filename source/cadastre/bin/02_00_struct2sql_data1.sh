@@ -15,21 +15,23 @@
 ./02_02_fanr.sh
 
 #============
-# tables nbat
+# tables lloc
 #============
-./02_03_nbat.sh
+./02_03_lloc.sh
 
 #============
-# tables pdl
+# tables nbat
 #============
-./02_04_pdl.sh
+./02_04_nbat.sh
+
+#============
+# tables pdll
+#============
+./02_05_pdll.sh
 
 #============
 # tables prop
 #============
-./02_05_prop.sh
+./02_06_prop.sh
 
-#============
-# tables revdi
-#============
-./02_06_revdi.sh
+

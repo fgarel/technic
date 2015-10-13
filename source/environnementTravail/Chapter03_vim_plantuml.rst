@@ -1,6 +1,18 @@
-********
-Plantuml
-********
+
+
+
+
+***************
+Vim et Plantuml
+***************
+
+
+vim
+===
+Utilisation de spf13-vim
+https://github.com/spf13/spf13-vim
+
+
 
 Plantuml est un outil permettant de dessiner des diagrammes UML
 

@@ -1,0 +1,218 @@
+Alfresco
+========
+
+installation d'alfresco community
+
+téléchargement
+cd ~/install
+mkdir alfresco
+cd alfresco
+wget http://dl.alfresco.com/release/community/5.0.d-build-00002/alfresco-community-5.0.d-installer-linux-x64.bin
+chmod +x alfresco-community-5.0.d-installer-linux-x64.bin
+
+l'installation est détaillé ici
+http://docs.alfresco.com/community/concepts/download-community.html
+
+puis là, (il faut suivre la doc)
+http://docs.alfresco.com/community/tasks/simpleinstall-community-lin-text.html
+
+en installatant alfresco en tant que root, on peux alors 
+
+1. Run the following file:
+alfresco-community-5.0.d-installer-linux-x64.bin --mode text
+
+Follow the prompts on the screen to complete the install.
+
+
+2. Choose a language for the installation steps. Enter the number that relates to your chosen language.
+[2] French - Français
+
+
+----------------------------------------------------------------------------
+Bienvenue dans l'assistant d'installation de Alfresco Community
+
+----------------------------------------------------------------------------
+3. Type d'installation
+
+[1] Facile - Installe les serveurs avec la configuration par défaut
+[2] Avancé - Configure les ports du serveur et les propriétés du service.: Choisissez également les composants optionnels à installer.
+Merci de choisi une option. [1] : 1
+
+
+----------------------------------------------------------------------------
+4. Dossier d'installation
+
+Veuillez sélectionner un dossier d'installation de Alfresco Community
+
+Sélectionner un dossier [/opt/alfresco-5.0.d]:
+
+
+----------------------------------------------------------------------------
+5. Paramètres du serveur de base de données
+Veuillez saisir le port de votre serveur de base de données.
+
+Port du serveur de base de données [5432]:
+
+Attention: Il semble que vous ne disposez pas des permissions suffisantes pour
+établir une liaison avec le port, ou que le port est déjà occupé par une autre
+application. Veuillez en sélectionner un autre.
+Pressez [Entrée] pour continuer
+
+
+----------------------------------------------------------------------------
+6. Paramètres du serveur de base de données
+
+Veuillez saisir le port de votre serveur de base de données.
+
+Port du serveur de base de données [5432]: 5435
+
+
+----------------------------------------------------------------------------
+7. Mot de passe admin
+
+Veuillez définir le mot de passe administrateur Alfresco.
+
+Mot de passe admin :
+
+
+----------------------------------------------------------------------------
+8. Répéter le mot de passe :
+
+
+----------------------------------------------------------------------------
+9. Installer en tant que service
+
+Si vous le souhaitez, vous pouvez enregistrer Alfresco Community en tant que
+service. Ainsi, le démarrage s'exécutera automatiquement à chaque démarrage de
+la machine.
+
+Installer Alfresco Community en tant que service ? [Y/n]:
+
+
+
+----------------------------------------------------------------------------
+10. Avertissement !
+
+Cet environnement n'est pas configuré pour fonctionner de manière optimale avec
+Alfresco. Lisez attentivement cette liste avant de continuer.
+
+Bien que ces problèmes n'empêcheront pas le fonctionnement d'Alfresco, certaines
+
+fonctionnalités du produit risquent de ne pas être disponibles ou le système
+risque de ne pas fonctionner de manière optimale.
+
+Ports TCP CIFS en cours d'utilisation:  139 445
+Port TCP SMTP en cours d'utilisation: 25
+
+Pressez [Entrée] pour continuer
+
+
+----------------------------------------------------------------------------
+11. L'assistant d'installation est maintenant prêt à démarrer l'installation de
+Alfresco Community sur votre ordinateur.
+
+Voulez-vous continuer ? [Y/n]:
+
+
+----------------------------------------------------------------------------
+12. Merci de patienter durant l'installation de Alfresco Community sur votre
+ordinateur.
+
+ Installation en cours
+ 0% ______________ 50% ______________ 100%
+ #############
+
+
+----------------------------------------------------------------------------
+13. Problème
+Attention: Un problème est survenu lors de l'exécution de l'étape
+de post installation
+
+L'installation peut avoir échoué
+ Erreur dans l'exécution de /opt/alfresco-5.0.d/postgresql/bin/createuser -p
+5435 -U postgres --no-superuser --no-createdb --no-createrole alfresco :
+createuser.bin: could not connect to database postgres: FATAL:  password
+authentication failed for user "postgres"
+Pressez [Entrée] pour continuer
+
+
+----------------------------------------------------------------------------
+14. L'assistant vient de finir l'installation de Alfresco Community sur votre
+ordinateur.
+
+Voir le fichier Lisezmoi [Y/n]:
+
+
+----------------------------------------------------------------------------
+15. Lancement
+
+Lancer Alfresco Community Share [Y/n]: y
+
+waiting for server to start....README
+Alfresco Community 5.0.d
+======================
+
+For Enterprise subscribers, refer to http://support.alfresco.com for release
+notes and detailed information on this release.
+
+For Community members, refer to the Alfresco wiki for more information on this
+release.
+
+
+
+Pressez [Entrée] pour continuer done
+server started
+/opt/alfresco-5.0.d/postgresql/scripts/ctl.sh : postgresql  started at port 5435
+Using CATALINA_BASE:   /opt/alfresco-5.0.d/tomcat
+Using CATALINA_HOME:   /opt/alfresco-5.0.d/tomcat
+Using CATALINA_TMPDIR: /opt/alfresco-5.0.d/tomcat/temp
+Using JRE_HOME:        /opt/alfresco-5.0.d/java
+Using CLASSPATH:       /opt/alfresco-5.0.d/tomcat/bin/bootstrap.jar:/opt/alfresco-5.0.d/tomcat/bin/tomcat-juli.jar
+Using CATALINA_PID:    /opt/alfresco-5.0.d/tomcat/temp/catalina.pid
+Tomcat started.
+/opt/alfresco-5.0.d/tomcat/scripts/ctl.sh : tomcat started
+
+
+When you have finished, start the server and login using the user admin and the password you entered in step 4.
+Use the URL http://127.0.0.1:8080/share on this machine to verify that Alfresco is running successfully. This is not an externally addressable URL, which means that it's not possible for users on other machines to access this URL. To make sure that other users can access the machine where Alfresco is installed, you need to define and create a publicly addressable name.
+
+http://localhost:8080/share/page/
+
+
+
+
+Utilisation d'alfresco
+
+lancement du service
+
+sudo service tomcat7 stop
+sudo service alfresco stop
+sudo service alfresco start postgresql
+sudo servcie alfresco start tomcat
+sudo service alfresco start
+
+Ajout d'utilisateurs
+ajout de groupes
+"DGA et l'écologie urbaine et des services techniques"
+  Emilie Bout
+  "Batiment et énergie"
+    "Affaires immobilieres et foncières"
+      Brigitte Rabu-Delanoe
+    "Gestion du patrimoine bâti"
+      Eric Villette
+      Olivier Tuilliere
+      Flavie Vayre
+  "Direction de la gestion de l'espace public"
+    Patrice Giret
+    "Cartographie"
+      Pierre Combres
+      Frédéric Garel
+  "Urbanisme et aménagement"
+    "Aménagement et construction"
+      Sandrine Voyard
+      Claire Ballage-Chervier
+    "Urbanisme"
+      Alain Goux
+
+
+

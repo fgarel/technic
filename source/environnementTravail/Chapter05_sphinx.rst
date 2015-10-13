@@ -11,13 +11,16 @@ Sphinx
 #. Creation de deux projets sphinx
 #. Installation des extensions (plugins) et paramètrage des extensions dans les projets
 
+
 Environnement virtuel python avec l'outil sphinx
 ================================================
+Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
 
 Environnement virtuel python
 ----------------------------
-ecriture_sphinx
-
+pour créer cet environnement virtuel, à la place de virtualenvwrapper, on
+pourra utiliser pew
+http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/
 
 Creation d'un environnement python
 ----------------------------------
@@ -33,16 +36,31 @@ Utilisation de cet environnement
   workon ecriture_sphinx
 
 
-Deux projets sphinx
-===================
+Plusieurs projets sphinx
+========================
+
 Se positionner dans le bon répertoire
+
+.. code::
+
+  cd ~/Travail/ecriture_sphinx/
+
 et executer la commande
 
 .. code::
 
   sphinx-quickstart
 
-Les deux projets sont
+> Separate source and build directories (y/N) [n]: y
+> Project name: yourproject
+> Author name(s): Your Name
+> Project version: 1.2.3
+> autodoc: automatically insert docstrings from modules (y/N) [n]: y
+> intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+
+
+
+Les deux premiers projets sont
 
  * ~/travail/ecriture_sphinx/report/
  * ~/travail/ecriture_sphinx/technic/
@@ -68,7 +86,7 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
                         texlive-fonts-recommended
 
   sudo aptitude install texlive-font-utils
-  sudo aptitude install libxlst-dev
+  sudo aptitude install libxslt-dev
 
 2d niveau
 
@@ -148,6 +166,30 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
   aafig_format = dict(latex='pdf', html='svg', text=None)
   aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)
 
+Complément d'installation
+-------------------------
+.. code::
+
+  pip install sphinx
+  pip install sphinxcontrib-plantuml
+  pip install aafigure
+  pip install sphinxcontrib-aafig
+  pip install hieroglyph
+
+Attention, il semble qu'il y ait une erreur dans le fihcier aafig.py
+En effet, quand on cherche à compiler un document pdf avec l'installation par defaut, on a cette erreur :
+
+.. Code::
+  Class AafigDirective(directives.images.Image):
+  AttributeError: 'module' object has no attribute 'images'
+
+Une correction semble avoir été faite (cf https://github.com/sphinx-doc/sphinx/issues/1595 ;
+https://bitbucket.org/birkenfeld/sphinx-contrib/commits/f41632b346a569e2a6bcd0194ea491c2550ecf4d)
+
+.. code::
+  cdvirtualenv
+  cd lib/python2.7/site-package/sphinxcontrib/
+  wgets://bitbucket.org/birkenfeld/sphinx-contrib/raw/e3e989af7748e83bfb3833bd9a66c8ceb3e33408/aafig/sphinxcontrib/aafig.py
 
 Configuration du second projet
 ------------------------------

@@ -1,10 +1,12 @@
 #!/bin/sh
 
-HOST=10.2.10.56
+#HOST=10.2.10.56
+HOST=debian.mairie.fr
 #HOST=192.168.0.21
 
 # affichage d'une info : ajout d'une ligne à .pgpass
-echo "echo \"10.2.10.56:5432:*:contrib:alambic\" >> ~/.pgpass"
+#echo "echo \"10.2.10.56:5432:*:contrib:alambic\" >> ~/.pgpass"
+echo "echo \"debian.mairie.fr:5432:*:contrib:alambic\" >> ~/.pgpass"
 
 
 # Suppression et creation d'une base de donnees

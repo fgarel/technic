@@ -18,8 +18,7 @@ CREATE TABLE fanr_article_commune (
 "popul3" CHARACTER VARYING(7) NOT NULL,
 "cannul" CHARACTER VARYING(1) NOT NULL,
 "datannul" CHARACTER VARYING(7) NOT NULL,
-"datcreat" CHARACTER VARYING(7) NOT NULL,
-"filler04" CHARACTER VARYING(42) NOT NULL);
+"datcreat" CHARACTER VARYING(7) NOT NULL);
 -- Ajout des commentaires pour la table fanr_article_commune
 COMMENT ON COLUMN fanr_article_commune."ccode" IS 'code département';
 COMMENT ON COLUMN fanr_article_commune."ccodir" IS 'code direction';
@@ -38,4 +37,3 @@ COMMENT ON COLUMN fanr_article_commune."popul3" IS 'population fictive';
 COMMENT ON COLUMN fanr_article_commune."cannul" IS 'caractère d annulation';
 COMMENT ON COLUMN fanr_article_commune."datannul" IS 'date d annulation';
 COMMENT ON COLUMN fanr_article_commune."datcreat" IS 'date de creation de l article';
-COMMENT ON COLUMN fanr_article_commune."filler04" IS '';

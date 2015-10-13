@@ -21,6 +21,10 @@ INSERT INTO comptage VALUES ((select count(1) FROM fanr_article_commune), 'fanr_
 INSERT INTO comptage VALUES ((select count(1) FROM fanr_article_direction), 'fanr_article_direction');
 INSERT INTO comptage VALUES ((select count(1) FROM fanr_article_voie), 'fanr_article_voie');
 
+INSERT INTO comptage VALUES ((select count(1) FROM lloc_article_direction), 'lloc_article_direction');
+INSERT INTO comptage VALUES ((select count(1) FROM lloc_article_direction), 'lloc_article_commune');
+INSERT INTO comptage VALUES ((select count(1) FROM lloc_article_lotlocal), 'lloc_article_lotlocal');
+
 INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_direction), 'nbat_article_direction');
 INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_10), 'nbat_article_10');
 INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_21), 'nbat_article_21');
@@ -28,16 +32,14 @@ INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_30), 'nbat_artic
 INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_36), 'nbat_article_36');
 INSERT INTO comptage VALUES ((select count(1) FROM nbat_article_99), 'nbat_article_99');
 
-INSERT INTO comptage VALUES ((select count(1) FROM pdl_article_direction), 'pdl_article_direction');
-INSERT INTO comptage VALUES ((select count(1) FROM pdl_article_10), 'pdl_article_10');
-INSERT INTO comptage VALUES ((select count(1) FROM pdl_article_20), 'pdl_article_20');
-INSERT INTO comptage VALUES ((select count(1) FROM pdl_article_30), 'pdl_article_30');
+INSERT INTO comptage VALUES ((select count(1) FROM pdll_article_direction), 'pdll_article_direction');
+INSERT INTO comptage VALUES ((select count(1) FROM pdll_article_10), 'pdll_article_10');
+INSERT INTO comptage VALUES ((select count(1) FROM pdll_article_20), 'pdll_article_20');
+INSERT INTO comptage VALUES ((select count(1) FROM pdll_article_30), 'pdll_article_30');
 
 INSERT INTO comptage VALUES ((select count(1) FROM prop_article_direction), 'prop_article_direction');
 INSERT INTO comptage VALUES ((select count(1) FROM prop_article_courant), 'prop_article_courant');
 
-INSERT INTO comptage VALUES ((select count(1) FROM revdi_article_direction), 'revdi_article_direction');
-INSERT INTO comptage VALUES ((select count(1) FROM revdi_article_lotlocal), 'revdi_article_lotlocal');
 
 
 -- -------------------------------
@@ -1050,6 +1052,19 @@ order by
   pbi_porte
 ;
 
+-- selection des batiments de la rochelle
+drop table if exists cadastre_travail.vlr_dgfip_batiment cascade;
+CREATE table cadastre_travail.vlr_dgfip_batiment AS
+select
+  dgfip_batiment.*--,
+  --vlr_dgfip_compte_communal_membre.proprietaire
+from dgfip_batiment
+  inner join vlr_dgfip_compte_communal_membre on vlr_dgfip_compte_communal_membre.numero_communal = dgfip_batiment.numero_communal
+order by
+  pbd_section,
+  pbd_numero
+;
+
 
 DROP TABLE if exists cadastre_travail.dgfip_invar;
 CREATE table cadastre_travail.dgfip_invar AS
@@ -1082,6 +1097,21 @@ order by
   invar
 ;
 
+-- selection des invar de la rochelle
+drop table if exists cadastre_travail.vlr_dgfip_invar cascade;
+CREATE table cadastre_travail.vlr_dgfip_invar AS
+select
+  dgfip_invar.*--,
+  --vlr_dgfip_compte_communal_membre.proprietaire
+from dgfip_invar
+  inner join vlr_dgfip_compte_communal_membre on vlr_dgfip_compte_communal_membre.numero_communal = dgfip_invar.numero_communal
+order by
+  pbd_section,
+  pbd_numero
+;
+
+
+
 DROP TABLE if exists cadastre_travail.dgfip_pev;
 CREATE table cadastre_travail.dgfip_pev AS
 select distinct
@@ -1113,6 +1143,20 @@ order by
   pbi_porte,
   invar,
   pbe_pev
+;
+
+
+-- selection des pev de la rochelle
+drop table if exists cadastre_travail.vlr_dgfip_pev cascade;
+CREATE table cadastre_travail.vlr_dgfip_pev AS
+select
+  dgfip_pev.*--,
+  --vlr_dgfip_compte_communal_membre.proprietaire
+from dgfip_pev
+  inner join vlr_dgfip_compte_communal_membre on vlr_dgfip_compte_communal_membre.numero_communal = dgfip_pev.numero_communal
+order by
+  pbd_section,
+  pbd_numero
 ;
 
 
@@ -1161,6 +1205,18 @@ order by
 --left join nbat_article_10 on (bati_article_00.ccosec = nbat_article_10.ccosec and bati_article_00.dnupla = nbat_article_10.dnupla);
 
 
+-- selection des desc de la rochelle
+drop table if exists cadastre_travail.vlr_dgfip_desc cascade;
+CREATE table cadastre_travail.vlr_dgfip_desc AS
+select
+  dgfip_desc.*--,
+  --vlr_dgfip_compte_communal_membre.proprietaire
+from dgfip_desc
+  inner join vlr_dgfip_compte_communal_membre on vlr_dgfip_compte_communal_membre.numero_communal = dgfip_desc.numero_communal
+order by
+  pbd_section,
+  pbd_numero
+;
 
 
 

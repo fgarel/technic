@@ -3,8 +3,8 @@
 
 
 # pdl_article_10
-cp ../data1/foot/pdl_article_10.txt \
-   ../data1/foot/pdl_article_10.sav
+cp ../data1/foot/pdll_article_10.txt \
+   ../data1/foot/pdll_article_10.sav
 # ici, on ne fait pas un simple copie
 # on en profite pour convertir du latin1 vers de l'utf-8
 #iconv -f latin1 -t utf-8 \
@@ -13,18 +13,18 @@ cp ../data1/foot/pdl_article_10.txt \
 
 ./01_07_ajoute_champs.awk \
    -v NBCHAMP=18 \
-   ../data1/foot/pdl_article_10.sav \
-   > ../data1/foot/pdl_article_10.txt 
+   ../data1/foot/pdll_article_10.sav \
+   > ../data1/foot/pdll_article_10.txt 
 
 
 # pdl_article_20
-cp ../data1/foot/pdl_article_20.txt \
-   ../data1/foot/pdl_article_20.sav
+cp ../data1/foot/pdll_article_20.txt \
+   ../data1/foot/pdll_article_20.sav
 
 ./01_07_ajoute_champs.awk \
    -v NBCHAMP=15 \
-   ../data1/foot/pdl_article_20.sav \
-   > ../data1/foot/pdl_article_20.txt 
+   ../data1/foot/pdll_article_20.sav \
+   > ../data1/foot/pdll_article_20.txt 
 
 
 # pdl_article_30
@@ -49,10 +49,10 @@ cp ../data1/foot/pdl_article_20.txt \
 #     afin de différencier l'article 99 de l'article 36
 #     sed 's/\x00/ /g'
 
-sed -E -e 's/\x00/ /g' ../data1/foot/pdl_article_30.txt \
-    > ../data1/foot/pdl_article_30.sav
+sed -E -e 's/\x00/ /g' ../data1/foot/pdll_article_30.txt \
+    > ../data1/foot/pdll_article_30.sav
 
 ./01_07_ajoute_champs.awk \
    -v NBCHAMP=20 \
-   ../data1/foot/pdl_article_30.sav \
-   > ../data1/foot/pdl_article_30.txt 
+   ../data1/foot/pdll_article_30.sav \
+   > ../data1/foot/pdll_article_30.txt 
