@@ -40,18 +40,19 @@
 ..   :maxdepth: 2
 
 
-.. include:: environnementTravail/environnementTravail.rst
-.. include:: latex/latex.rst
-.. include:: latexbd/latexbd.rst
+.. .. include:: environnementTravail/environnementTravail.rst
+.. .. include:: latex/latex.rst
+.. .. include:: latexbd/latexbd.rst
+.. .. include:: geogit/geogit.rst
+.. .. include:: dt-dict/dt-dict.rst
+.. .. include:: gnss/gnss.rst
+.. .. include:: geopy/geopy.rst
+.. .. include:: cadastre/cadastre.rst
+.. .. include:: qgis/qgis.rst
+.. .. include:: mapnik/mapnik.rst
+.. .. include:: patrimoine/patrimoine.rst
+.. .. include:: csvpython/csvpython.rst
 .. include:: geogit/geogit.rst
-.. include:: dt-dict/dt-dict.rst
-.. include:: gnss/gnss.rst
-.. include:: geopy/geopy.rst
-.. include:: cadastre/cadastre.rst
-.. include:: qgis/qgis.rst
-.. include:: mapnik/mapnik.rst
-.. include:: patrimoine/patrimoine.rst
-.. include:: csvpython/csvpython.rst
 
 
 .. .. Indices and tables
