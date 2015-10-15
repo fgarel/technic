@@ -62,3 +62,22 @@ https://github.com/zserge/mucks
 ou de dvtm
 http://zserge.com/blog/mucks2.html
 http://www.brain-dump.org/projects/dvtm/
+
+Python3, pip et pew
+===================
+sudo aptitude install python3-pip
+
+sudo pip3 install pew
+
+python3 --version
+
+pew install 3.4.2
+
+pew list_pythons
+
+pew new ecriture_sphinx
+
+pip3 freeze
+
+pip3 install Sphinx
+
