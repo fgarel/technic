@@ -505,6 +505,7 @@ def main():
     # /home/fred/h/cartographie/dt-dict
     # et appele les méthodes de MonHandler quand quelque chose
     # se produit
+    
     observer.schedule(MonHandler(), path='/home/fred/h/cartographie/dt-dict', recursive=True)
 
     u"""
