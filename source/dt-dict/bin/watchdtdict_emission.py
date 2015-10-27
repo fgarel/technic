@@ -250,17 +250,20 @@ class MonHandler(FileSystemEventHandler):
             extension = re.sub(r'(.*)\.', '', ffile)
             ffile = repertoiretemporaire + '/' + ffile
             if extension == 'pdf':
-                if re.search(r'_.*_.*\.', ffile):
-                    # le fichier est du type *_DT_?.pdf
+                if re.search(r'.*_resume\.', ffile):
+                    # le fichier est du type *_resume.pdf
+                    pass
+                elif re.search(r'.*_emprise\.', ffile):
+                    # le fichier est du type *_emprise.pdf
+                    self.pdfemprise_to_join = ffile
+                elif re.search(r'_.*_[0-9]*\.', ffile):
+                    # le fichier est du type *_DT_3.pdf
                     __myPdfReader = pdfReader.PdfReader(ffile, 'metadata.txt')
                     __myPdfReader.simplify()
                     self.dico_exploitant_nomPdf[__myPdfReader.teleservice()] = \
                         ffile
-                elif re.search(r'.*_emprise\.', ffile):
-                    # le fichier est du type *_emprise.pdf
-                    self.pdfemprise_to_join = ffile
                 else:
-                    # le fichier est du type *resume.pdf, ou *notice.pdf
+                    # le fichier est du type *notice.pdf
                     pass
 
             if extension == 'zip':
@@ -330,11 +333,13 @@ class MonHandler(FileSystemEventHandler):
         
         ##print '' * 2 + '-' * 50
         ##for key, value in self.dico_exploitant_nomPdf.iteritems():
-            ##print  "societe, pdf, courriel = " + key, value, self.dico_exploitant_courriel[key]
+			##print  "societe, pdf = " + key, value
+            ###print  "societe, pdf, courriel = " + key, value, self.dico_exploitant_courriel[key]
         ##print '' * 2 + '-' * 50
         
         ##for key, value in self.dico_exploitant_courriel.iteritems():
-            ##print "societe, courriel, pdf = " + key, value, self.dico_exploitant_nomPdf[key]
+            ##print "societe, courriel = " + key, value
+            ###print "societe, courriel, pdf = " + key, value, self.dico_exploitant_nomPdf[key]
         ##print '' * 2 + '-' * 50
         
         # réinitialisation des courriels pour les tests
