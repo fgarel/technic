@@ -1,4 +1,4 @@
-.. Patrimoine documentation master file, created by
+.. Sphinx documentation master file, created by
    sphinx-quickstart on Tue Nov 12 16:21:02 2013.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -11,73 +11,47 @@ Sphinx
 #. Creation de deux projets sphinx
 #. Installation des extensions (plugins) et paramètrage des extensions dans les projets
 
+Introduction
+============
 
-Environnement virtuel python avec l'outil sphinx
-================================================
-Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
-
-Environnement virtuel python
-----------------------------
-pour créer cet environnement virtuel, à la place de virtualenvwrapper, on
-pourra utiliser pew
-http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/
-
-Creation d'un environnement python
-----------------------------------
-.. code::
-
-  mkvirtualenv ecriture_sphinx
-  pip install sphinx
-
-Utilisation de cet environnement
---------------------------------
-.. code::
-
-  workon ecriture_sphinx
+Dans ce chapitre nous allons détailler l'installation de sphinx dans un environnement
+virtuel python, puis comment utiliser cet outil pour documenter plusieurs projets.
 
 
-Plusieurs projets sphinx
-========================
+Plusieurs depots git = plusieurs projets sphinx
+-----------------------------------------------
 
-Se positionner dans le bon répertoire
+A chacun des depots git, nous allons faire correspondre un projet sphinx
+
+ - install
+ - perso
+ - report
+ - technic
+
+Le répertoire racine de ces 4 dépots est
 
 .. code::
 
-  cd ~/Travail/ecriture_sphinx/
+  cd ~/Documents/
 
-et executer la commande
+Les projets sphinx seront :
 
-.. code::
-
-  sphinx-quickstart
-
-> Separate source and build directories (y/N) [n]: y
-> Project name: yourproject
-> Author name(s): Your Name
-> Project version: 1.2.3
-> autodoc: automatically insert docstrings from modules (y/N) [n]: y
-> intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+ * ~/Documents/install/
+ * ~/Documents/perso/
+ * ~/Documents/report/
+ * ~/Documents/technic/
 
 
+L'installation et la configuration est détaillée dans les paragraphes suivants.
 
-Les deux premiers projets sont
-
- * ~/travail/ecriture_sphinx/report/
- * ~/travail/ecriture_sphinx/technic/
-
-Configuration d'un premier projet
----------------------------------
-C'est le projet technic qui sera configuré en premier
-
-La configuration est détaillée dans les paragraphes suivants.
-
-Il est rappelé ici que la mise en place de l'environnement de travail sphinx se joue sur 4 niveaux :
+Il est rappelé ici que la mise en place de l'environnement de travail se joue sur 4 niveaux :
  - le système : l'installation est à faire une fois pour toute
- - l'environnement python : celui-ci est commun aux deux projets sphinx, donc pour le second projet, il n'y a pas besoin de refaire un pip install
+ - l'environnement python : celui-ci est commun aux projets sphinx, donc à partir du second projet, il n'y a pas besoin de refaire un pip install
  - le fichier Makefile : il y a un fichier makefile par projet sphinx
  - le fichier conf.py : ce fichier doit donc finir par ces lignes :
 
-1er niveau
+1er niveau : Installation des paquets debian
+============================================
 
 .. code::
 
@@ -88,8 +62,39 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
   sudo aptitude install texlive-font-utils
   sudo aptitude install libxslt-dev
 
-2d niveau
+2d niveau : Environnement virtuel python avec l'outil sphinx
+============================================================
+Création d'un environnement python ecriture_sphinx, qui sera commun aux différents projets
 
+Nous allons installer sphinx et quelques extensions dans un environnement virtuel python.
+
+Environnement virtuel python
+----------------------------
+Pour créer cet environnement virtuel, à la place de virtualenvwrapper, on
+pourra utiliser pew
+http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/
+
+Creation d'un environnement python
+----------------------------------
+.. code::
+
+  pew new ecriture_sphinx
+  #mkvirtualenv ecriture_sphinx
+  #pip install sphinx
+
+Installation de sphinx dans cet environnement
+---------------------------------------------
+.. code::
+
+  pew workon ecriture_sphinx
+  #workon ecriture_sphinx
+  pip freeze
+  pip search sphinx
+  pip install sphinx
+
+
+Installation des extensions sphinx
+----------------------------------
 .. code::
 
   pip install sphinxcontrib-plantuml
@@ -106,7 +111,41 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
   pip install sphinxcontrib-aafig
   pip install reportlab
 
-3eme niveau
+3eme niveau : Pour chacun des depots, création d'un projet sphinx
+=================================================================
+
+On se place dans le bon répertoire
+
+.. code::
+
+  cd ~/Documents/insatall
+
+et eventuellement dans la bonne branche
+
+.. code::
+
+  gcd
+  gcm
+
+On active l'environnement virtuel python
+
+.. code::
+
+  pew workon ecriture_sphinx
+
+Et enfin on execute la commande
+
+.. code::
+
+  sphinx-quickstart
+
+> Separate source and build directories (y/N) [n]: y
+> Project name: yourproject
+> Author name(s): Your Name
+> Project version: 1.2.3
+> autodoc: automatically insert docstrings from modules (y/N) [n]: y
+> intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+
 
 .. code::
 
@@ -134,6 +173,7 @@ Il est rappelé ici que la mise en place de l'environnement de travail sphinx se
 
 
 4ème niveau
+===================
 
 .. code::
 
