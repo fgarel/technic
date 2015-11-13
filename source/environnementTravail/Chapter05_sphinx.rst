@@ -7,16 +7,17 @@
 Sphinx
 ******
 
-#. Installation
-#. Creation de deux projets sphinx
-#. Installation des extensions (plugins) et paramètrage des extensions dans les projets
-
 Introduction
 ============
 
 Dans ce chapitre nous allons détailler l'installation de sphinx dans un environnement
 virtuel python, puis comment utiliser cet outil pour documenter plusieurs projets.
 
+Ainsi, plusieurs aspects de l'outil seront abordés :
+
+#. Installation
+#. Gestion plusieurs projets sphinx
+#. Installation des extensions (plugins) et paramètrage des extensions dans les projets
 
 Plusieurs depots git = plusieurs projets sphinx
 -----------------------------------------------
@@ -41,17 +42,32 @@ Les projets sphinx seront :
  * ~/Documents/report/
  * ~/Documents/technic/
 
+ Pour chacun de ces projets sphinx, nous allons avoir :
+ 
+  - deux sous-repertoires :
+    - source, qui contiendra les fichiers editables (.rst, .py, jupyter) et à suivre avec git
+    - build, qui contiendra les fichiers non-editables (.pdf, ...) et non suivis avec git (.gitignore)
+ - un fichier conf.py
+ - un fichier makefile
 
 L'installation et la configuration est détaillée dans les paragraphes suivants.
 
-Il est rappelé ici que la mise en place de l'environnement de travail se joue sur 4 niveaux :
+Il est rappelé ici que la mise en place de l'environnement de travail se réalise en plusieurs étapes :
  - le système : l'installation est à faire une fois pour toute
- - l'environnement python : celui-ci est commun aux projets sphinx, donc à partir du second projet, il n'y a pas besoin de refaire un pip install
- - le fichier Makefile : il y a un fichier makefile par projet sphinx
- - le fichier conf.py : ce fichier doit donc finir par ces lignes :
+ - l'environnement python : celui-ci est commun aux projets sphinx.
+   Dans un environnement virtuel, grace à `pip`, on va installer sphinx et ses extensions
+ - création d'un fichier `Makefile` et d'un ficher `source/conf.py` pour le premier projet
+   On va paramétrer un premier projet, grace à `sphinx-quickstart`.
+   Puis on va modifier légèrement les fichiers `Makefile` et `source/conf.py`
+ - recopie des fichiers `Makefile` et `source/conf.py` vers les autres projets sphinx
+   Il faudra faire quelques modifications (nom de projet), mais les fichiers
+   sont quasi-identiques d'un projet à l'autre
 
-1er niveau : Installation des paquets debian
+1ere étape : Installation des paquets debian
 ============================================
+
+Pour info, libxslt1-dev fourni l'utilitaire xslt-config qui est necessaire pour hovercraft
+Et python3-dev est aussi nécessaire pour construire lxml qui est utilisé par hovercraft
 
 .. code::
 
@@ -60,9 +76,10 @@ Il est rappelé ici que la mise en place de l'environnement de travail se joue s
                         texlive-fonts-recommended
 
   sudo aptitude install texlive-font-utils
-  sudo aptitude install libxslt-dev
+  sudo aptitude install libxslt1-dev
+  sudo aptitude install python3-dev
 
-2d niveau : Environnement virtuel python avec l'outil sphinx
+2de étape : Environnement virtuel python avec l'outil sphinx
 ============================================================
 Création d'un environnement python ecriture_sphinx, qui sera commun aux différents projets
 
@@ -76,14 +93,36 @@ http://sametmax.com/mieux-que-python-virtualenvwrapper-pew/
 
 Creation d'un environnement python
 ----------------------------------
+
+Attention, nous allons créer un environnement avec une version spécifique de python.
+En, effet, nous verrons que pour une question de dépendance, on ne peut pas utiliser
+n'importe quelle version.
+En particulier, pour pouvoir faire une installation d'hovercraft,
+et donc une installation de lxml,
+il faut que la version de python de l'environnement corresponde à celle de python3-dev
+
 .. code::
 
-  pew new ecriture_sphinx
-  #mkvirtualenv ecriture_sphinx
-  #pip install sphinx
+  aptitude show python3-dev
+
+On peut lire que la verison de python est 3.4.3
+
+.. code::
+
+  pew new -p $(pythonz locate 3.4.3) ecriture_sphinx
+  #pew new ecriture_sphinx
 
 Installation de sphinx dans cet environnement
 ---------------------------------------------
+
+On peut d'abordi vérifier que l'on peut construire hovercraft dans l'envionnement
+
+.. code::
+  pew workon ecriture_sphinx
+  pip wheel lxml
+
+et si tout fonctionne, alors rulez....
+
 .. code::
 
   pew workon ecriture_sphinx
@@ -95,37 +134,52 @@ Installation de sphinx dans cet environnement
 
 Installation des extensions sphinx
 ----------------------------------
+
+Pour info, hovercraft est pour python3, tandis que hieroglyph est pour python2 et 3
+https://pypi.python.org/pypi/hovercraft
+https://pypi.python.org/pypi/hieroglyph
+
 .. code::
 
   pip install sphinxcontrib-plantuml
   pip install hieroglyph
   pip install hovercraft
-  pip install sphinxcontrib-googlemaps
-
-  cdvirtualenv
-  vi lib/python2.7/site-packages/sphinxcontrib/googlemaps.py
-  lang = 'fr'
-  baseurl = "http://maps.google.fr/maps?"
-
   pip install aafigure
   pip install sphinxcontrib-aafig
   pip install reportlab
+  pip install sphinxcontrib-googlemaps
 
-3eme niveau : Pour chacun des depots, création d'un projet sphinx
-=================================================================
+Pour sphinxcontrib-googlemaps, il y a une petite manipulation à faire en plus...
+(pour passer du japonais au francais...)
+
+.. code::
+
+  cd $(pew sitepackages_dir)
+  vi ~/.local/share/virtualenvs/ecriture_sphinx/lib/python3.4/site-packages/sphinxcontrib/googlemaps.py
+
+  lang = 'fr'
+  baseurl = "http://maps.google.fr/maps?"
+
+
+3ème étape : Pour le premier répertoire, création d'un projet sphinx
+====================================================================
+Pour le premier de nos projets parmi install, perso, report et technic,
+nous allons initialiser le projet avec `sphinx-quickstart`.
+
+Puis, nous allons modifier le fichier `makefile` et `source/conf.py`
 
 On se place dans le bon répertoire
 
 .. code::
 
-  cd ~/Documents/insatall
+  cd ~/Documents/install
 
-et eventuellement dans la bonne branche
+et eventuellement dans la bonne branche git
 
 .. code::
 
-  gcd
-  gcm
+  gcd # git checkout develop
+  gcm # git checkout master
 
 On active l'environnement virtuel python
 
@@ -133,27 +187,112 @@ On active l'environnement virtuel python
 
   pew workon ecriture_sphinx
 
-Et enfin on execute la commande
+Et enfin on execute la commande interactive `sphinx-quickstart`
+qui va générer 3 fichiers :
+
+  ./source/conf.py
+  ./source/index.rst
+  ./Makefile
 
 .. code::
 
   sphinx-quickstart
 
-> Separate source and build directories (y/N) [n]: y
-> Project name: yourproject
-> Author name(s): Your Name
-> Project version: 1.2.3
-> autodoc: automatically insert docstrings from modules (y/N) [n]: y
-> intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+Voici les réponses à donner :
+.. code::
 
+  Welcome tu the Sphinx 1.3.1 quickstart utility.
+
+  ...
+
+  Enter the root path for documentation.
+  > Root path for documentation [.]:
+
+  You have two options for placing the build directory for Sphinx output.
+  Either, you use a directory "_build" within the root path, or you separate
+  "source" and "build" directories within the root path.
+  > Separate source and build directories (y/N) [n]: y
+
+  Inside the root directory, two more directories will be created; "_templates"
+  for custom HTML templates and "_static" for custom stylesheets and other static
+  files. You can enter another prefix (such as ".") to replace the underscore.
+  > Name prefix for templates and static dir [_]:
+
+  The project name will occur in several places in the built documentation.
+  > Project name: yourproject
+  > Author name(s): Your Name
+
+  Sphinx has the notion of a "version" and a "release" for the
+  software. Each version can have multiple releases. For example, for
+  Python the version is something like 2.5 or 3.0, while the release is
+  something like 2.5.1 or 3.0a1.  If you don't need this dual structure,
+  just set both to the same value.
+  > Project version: 0.1
+  > Project release [0.1]:
+
+  If the documents are to be written in a language other than English,
+  you can select a language here by its language code. Sphinx will then
+  translate text that it generates into that language.
+
+  For a list of supported codes, see
+  http://sphinx-doc.org/config.html#confval-language
+  > Project Language [en]: fr
+
+  The file name suffix for source files. Commonly, this is either ".txt"
+  or ".rst".  Only files with this suffix are considered documents.
+  > Source file suffix [.rst]:
+
+  One document is special in that it is considered the top node of the
+  "contents tree", that is, it is the root of the hierarchical structure
+  of the documents. Normally, this is "index", but if your "index"
+  document is a custom template, you can also set this to another filename.
+  > Name of your master document (without suffix) [index]:
+
+  Sphinx can also add configuration for epub output:
+  > Do you want to use the epub builder (y/n) [n]:
+
+  Please indicate if you want to use one of the following Sphinx extensions:
+  > autodoc: automatically insert docstrings from modules (y/N) [n]: y
+  > doctest: automatically insert test code snippets in doctest blocks (y/n) [n]: y
+  > intersphinx: link between Sphinx documentation of different projects (y/N) [n]: y
+  > todo: write "todo" enties that can be shown or hidden on build (y/n) [n]: y
+  > coverage: checks for documentation coverage (y/n) [n]: y
+  > pngmath:include math, rendered as PNG images (y/n) [n]:
+  > mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y
+  > ifconfig: conditional inclusion of content based on config values (y/n) [n]: y
+  > viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+
+  A Makefile and a Windows command file can be generated for you so that you
+  only have to run e.g. `make html` instead of invoking sphinx-build
+  directly.
+  > Create Makefile? (y/n) [y]:
+  > Create Windows command file? (y/n) [y]: n
+
+  creating file ./source/conf.py
+  creating file ./source/index.rst
+  creating file ./Makefile
+
+  Finished: An initial directory structure has been created.
+
+  You should now populate your master file ./source/index.rst and create other documentation
+  source files. Use the Makefile to build the docs, like so:
+     make builder
+  where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
+Nous allons modifier le fichier `Makefile` qui vient d'être fabriqué,
+afin de rajouter des directives supplémentaires
+afin de rajouter les fonctionnalités apportés par les extensions.
 
 .. code::
 
-  vi makefile
+  vi Makefile
+
+.. code::
 
   help:
       @echo "  latexpdf   to make LaTeX files and run them through pdflatex"
-      @echo "  slides     to make slides (hieroglyph)"
+      @echo "  slideshie  to make slides (hieroglyph)"
+      @echo "  slideshov  to make slides (hovercraft)"
       @echo "  text       to make text files" 
 
   latexpdf:
@@ -162,7 +301,11 @@ Et enfin on execute la commande
       $(MAKE) -C $(BUILDDIR)/latex all-pdf
       @echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
 
-  slides:
+  slideshie:
+      $(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
+      @echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
+
+  slideshov:
       $(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
       @echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
 
@@ -174,6 +317,9 @@ Et enfin on execute la commande
 
 4ème niveau
 ===================
+
+Nous allons ausso modifier le fichier `source/Makefile` qui vient d'être fabriqué,
+afin de rajouter les fonctionnalités apportés par les extensions.
 
 .. code::
 
@@ -231,10 +377,17 @@ https://bitbucket.org/birkenfeld/sphinx-contrib/commits/f41632b346a569e2a6bcd019
   cd lib/python2.7/site-package/sphinxcontrib/
   wgets://bitbucket.org/birkenfeld/sphinx-contrib/raw/e3e989af7748e83bfb3833bd9a66c8ceb3e33408/aafig/sphinxcontrib/aafig.py
 
-Configuration du second projet
-------------------------------
+4ème étape : configuration du second projet sphinx
+==================================================
 
-Il suffit de faire les modifications dans le fichier Makefile et dans le fichier conf.py
+Il faut recopier les fichiers `Makefile` et `source/conf.py` vers le second projet
+
+.. code::
+
+  cp ~/Documents/install/Makefile ~/Documents/technic/Makefile
+  cp ~/Documents/install/source/conf.py ~/Documents/technic/source/conf.py
+
+Puis faire les modifications dans le fichier Makefile et dans le fichier conf.py
 
 Génération des builds à partir des sources
 ==========================================
@@ -248,7 +401,61 @@ Les principales commandes qui seront utilisées seront
   make slides
   make latexpdf
 
-Nous le verrons ci-après, pour que la génération de slides fonctionne, il faut avoir installé un plugin à sphinx (hieroglyph)
+Premier essai d'un build
+------------------------
+
+On va lancer la commande la premiere fois
+
+.. code::
+
+  cd ~/Documents/install
+  make html
+
+Automatiquement, le sous-repertoire ~/Documents/install/build va être créé.
+
+.. code::
+
+  gst
+
+.. code::
+  Fichiers non suivis:
+    (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+         build/
+
+Pour que ce sous-répertoire soit exclu du suivi git, il faut penser à créer un fichier .gitignore
+
+.. code::
+
+  cd ~/Documents/install
+  vi .gitignore
+
+et le contenu de ce fichier est tout simplement
+
+.. code::
+
+  build/
+
+Alors, on ajoute le fichier .gitignore à git
+
+.. code::
+
+  git add .gitignore
+
+et, dorénavant, la commande git status fait apparaitre que le répoertoire build n'est plus suivi
+
+.. code::
+
+  gst
+
+.. code::
+
+  ....
+
+Des règlages à faire pour certains builds
+-----------------------------------------
+Nous le verrons ci-après, pour que la génération de slides fonctionne,
+il faut avoir installé un plugin à sphinx (hieroglyph)
 
 De même, pour que la génération de pdf fonctionne, il faut avoir installé quelques paquets supplémentaires
 

@@ -2,7 +2,7 @@
 Utilisation de geogig pour la gestion du PCRS
 ***********************************
 
-Dans ce chapitre, nous allons mettre en oeuvre l'outil geogig
+Mise en oeuvre de l'outil geogig
 pour gerer la constitution et la mise à jour du Plan de Corps de Rue Simplifié (PCRS).
 
 
