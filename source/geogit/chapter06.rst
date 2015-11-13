@@ -2,213 +2,57 @@
 Utilisation de geogig pour la gestion du PCRS
 ***********************************
 
-Dans ce chapitre, nous allons mettre en oeuvre l'outil geogig
-pour gerer la constitution et la mise à jour du Plan de Corps de Rue Simplifié (PCRS).
 
 
-Après avoir présenté les acteurs, c'est à dire les personnes concernées par ce projet,
-nous proposerons un modèle de branches, puis nous verrons l'utilisation de ces concepts.
+Creation de données exemples
+============================
+le premier fichier sample.ods permet de montrer
+l'évolution des emprises geographiques de 4 utilisateurs.
+
+Le deuxième fichier, sample2.ods, permet de fabriquer le fichier sql
+qui correspond aux 25 cases de l'emprise totale
+
+A partir de ce deuxième fichier sample2.ods, nous allons fabriquer
+3 fichiers sql :
+
+  - create_sample.sql
+  - insert_sample.sql
+  - update_sample.sql
+
+En executant ces trois fichiers, on obtient notre base exemple.
+L'installation de Postgresql est détaillée dans le fichier
+
+.. code::
+  ~/Documents/install/source/environnementTravail/installPostgresql.sh
+
+.. code::
+
+  psql -h localhost -d gis -U fred -f create_sample.sql
+  psql -h localhost -d gis -U fred -f insert_sample.sql
+  psql -h localhost -d gis -U fred -f update_sample.sql
+
+Utilisation du script
+
+.. code::
+  ./Documents/install/source/geogig/installGeogigSample.sh
 
 
-Définition des acteurs
+Installation de geogig
 ======================
 
-Nous pouvons concevoir deux voire trois niveaux d'acteurs.
+L'installation est automatisée et détaillée
+via l'execution du script
 
-Les acteurs "départementaux" (niveau 1) sont les personnes qui vont échanger les informations
-et dont ces échanges devront être quantifiées (comptabilisées)
-(Combien de "cases" ont été apportées par l'acteur A, combien de cases ont été exploitées par l'acteur B, ...)
+.. code::
 
-Les acteurs "locaux" (niveau 2) sont les personnes travaillant sur le PCRS à un niveau qui,
-vu de l'extérieur, peuvent être regroupées en 1 seul acteur de niveau 1.
+  ~/Documents/install/source/geogig/installGeogig.sh
 
-Git est un système de gestion de versions distribué.
-Dans les systèmes distribués, il n'est pas nécessaire d'avoir un dépot central.
-Chaque intervenant dispose d'une copie complète du dépot avec tout l'historique et
-peut effectuer autant de changements locaux qu'il le souhaite, sans devoir en référer au "serveur".
-En pratique, on conserve des dépots entraux pour faciliter les échanges et servir de référence commune.
-Mais les développeurs sont maitres de ce qu'ils envoient sur ces dépots, car le partage des changements
-est une opération totalement découplée de leur enregistrement.
+Creation de 5 depots geogig
+===========================
 
-Nous allons donc inserer un acteur qui sera charger de gérer le dépot central.
+Cette mise en place est assurée par le script 
 
-Les acteurs départementaux du PCRS (niveau 1)
----------------------------------------------
+.. code::
 
-Définissons la liste des acteurs pouvant jouer un role dans la consitution, la mise à jour et l'utilisation du PCRS.
+  ~/Documents/install/source/geogig/installationGeogig2.sh
 
-- dep17 ERDF                            = Groupe des partenaires "GT reseaux"
-- dep17 CDA La Rochelle                 = Groupe des partenaires "GT reseaux"
-- dep17 Ville de La Rochelle            = Groupe des partenaires "GT reseaux"
-- dep17 SDEER                           = Groupe des partenaires "GT reseaux"
-- dep17 SDE                             = Groupe des partenaires "GT reseaux"
-- dep17 SI                              = Groupe des partenaires "GT reseaux"
-- dep17 Département                     = Groupe des partenaires "GT reseaux"
-
-Chaque acteur est propriétaire (gestionnaire) d'au moins un dépot PCRS_public.
-
-C'est dans ce dépot, qu'il mettra ses données en lecture pour les partenaires du groupement.
-
-Un dépot public et éventuellement un dépot privé
-................................................
-Un acteur n'est pas contraint de partager l'ensemble de son patrimoine numérique :
-il ne doit mettre dans son depot PCRS_public que les données (cases)
-qu'il souhaite mettre à disposition des autres partenaires.
-
-Si l'acteur décide d'utiliser geogig en interne pour controler son depot privé,
-il pourra créer un deuxième dépot qui ne sera pas accessible aux partenaires.
-
-Une procédure particulière doit permettre a cet acteur de passer un extrait de plan topo
-(une case) du dépot private vers le depot public.
-
-Si l'acteur n'utilise pas geogig en interne, il partagera ses données
-via un simple glisser-deposer dans le depot PCRS_public
-
-Pour ERDF, les deux dépots pourraient être :
-
-https://github.com/dep17erdf/PCRS_public sera un depot qui pourra être lu par tous les partenaires
-https://git.erdf.fr/AgenceCartoPoitouCharentes/PoleCharenteMaritime/PCRS_private sera un depot qui servira aux acteurs de niveau 2 d'erdf (usage interne uniquement)
-
-Deux dépots sont gérés par le service cartographie de la Ville de La Rochelle :
-le premier est à usage départemantale, le second est à usage interne.
-
-https://github.com/dep17vlr/PCRS_public
-https://git.ville-larochelle.fr/Carto/PCRS_private
-
-Si l'acteur n'utilise pas geogig en interne, il partagera ses données
-via un simple glisser-deposer dans le depot PCRS_public
-
-Au final, les depots publics de chacun des partenaires seront donc :
-
-https://github.com/dep17erdf/PCRS_public
-https://github.com/dep17cda/PCRS_public
-https://github.com/dep17vlr/PCRS_public
-https://github.com/dep17sdeer/PCRS_public
-https://github.com/dep17sde/PCRS_public
-https://github.com/dep17si/PCRS_public
-https://github.com/dep17departement/PCRS_public
-
-
-Les acteurs locaux (niveau 2)
------------------------------
-
-Au sein de la Ville de La Rochelle, il est possible aussi de définir une liste d'acteurs de niveau 2.
-C'est le service Cartographie qui assure la gestion du PCRS au niveau de la Ville vis à vis des partenaires extérieurs.
-
-- VLR AC    = Aménagement et Construction = Service interne de la Ville de La Rochelle
-- VLR Carto = Cartographie                = Service interne de la Ville de La Rochelle
-- VLR DSI   = DSI                         = Service interne de la Ville de La Rochelle
-- VLR EAU   = Eau                         = Service interne de la Ville de La Rochelle
-- VLR ECL   = Eclairage                   = Service interne de la Ville de La Rochelle
-- VLR Geom  = Géomètres                   = Groupement des géomètres titulaire du Marché de prestations topographiques Ville de La Rochelle
-- VLR P     = Pluviales                   = Service interne de la Ville de La Rochelle
-- VLR TP1   = Entreprise TP 1             = Entreprise de TP réalisant une prestation pour la Ville de La Rochelle
-- VLR TP2   = Entreprise TP 2             = Entreprise de TP réalisant une prestation pour la Ville de La Rochelle
-- VLR U     = Urbanisme                   = Service interne de le Ville de La Rochelle
-- VLR V     = Voirie                      = Service interne de la Ville de La Rochelle
-
-Deux dépots sont gérés par le service carto : le premier est à usage départemantale, le second est à usage interne.
-https://github.com/dep17vlr/PCRS_public
-https://git.ville-larochelle.fr/Carto/PCRS_private
-
-Le geometre exterieur à la ville de geometre a aussi son ou ses dépots :
-https://github.com/dep17VlrGeom/PCRS_public
-https://git.geometre.fr/SocieteA/PCRS_private
-
-Des services de la Ville ont laissé la gestion de leur dépot au service cartographie
-
-Définition des branches
-=======================
-
-Ce n'est pas obligatoire, mais un depot peut avoir ces différentes branches :
-
-- PlanTopoControle    = Plan Topo dont la géométrie des objets a été validée par une personne qui veille à un niveau de qualité et qui garantit une certaine précision
-- Controle            = Plan contenant des objets dont la position sert à valider un plan topo
-- PlanTopoNonControle = Plan de Recolement (après travaux) ou Plan Topo, mais non controlé
-- PlanExecution       = Plan d'Execution (avant Travaux)
-- PlanProjetA         = Plan Projet Variante A
-
-
-Gestion des branches et des acteurs
-===================================
-
-Gestion au niveau du département (niveau 1)
--------------------------------------------
-
-Chaque acteur est propriétaire d'un dépot "PCRS_public", qui compte une branche appelée PlanTopoControle
-La Ville de La Rochelle est propriétaire de son dépot PCRS_public avec la branche "PlanTopoControle"
-
-https://github.com/dep17vlr/PCRS_public PlanTopoControle
-
-Non Obligatoire : Chaque acteur peut avoir un dépot PCRS_private, avec différentes branches
-
-https://git.ville-larochelle.fr/Carto/PCRS_private PlanTopoControle
-https://git.ville-larochelle.fr/Carto/PCRS_private Controle
-https://git.ville-larochelle.fr/Carto/PCRS_private PlanTopoNonControle
-https://git.ville-larochelle.fr/Carto/PCRS_private PlanExecution
-https://git.ville-larochelle.fr/Carto/PCRS_private PlanProjetA
-
-Gestion au niveau local (niveau 2)
-----------------------------------
-
-Point de vue du service Cartographie
-
-- Le propriétaire du dépot est "VLR Carto" (le service cartographie)
-- Les collaborateurs sont "VLR AC" et "VLR Eau"
-- les autres sont des contributeurs
-
-Point de vue du service Aménagement et Construction
-
-- Le propriétaire est "VLR AC" (le service Aménagement et Construction)
-- Les collaborateurs sont "VLR Carto" et "VLR Eau"
-- les autres sont des contributeurs
-
-Cas d'utilisation
-=================
-
-Au niveau départemental
------------------------
-
-La Ville de La Rochelle initialise son depot PCRS_public
-
-Combien d'objets (combien de cases) sont présent dans le depot PCRS_public
-de la Ville de La Rochelle, branche PlanTopoControle ?
-git log
-git blame
-git diff
-
-ERDF initialise son depot PCRS_public
-
-Combien d'objets (combien de cases) sont présent dans le depot PCRS_public
-d'ERDF, branche PlanTopoControle ?
-
-Quelles sont les différences entre les deux dépots ?
-
-Comment la Ville de La Rochelle peut récuperer les plans (cases) qui sont disponibles dans le dépot d'Erdf ?
-
-git merge
-
-Comment ERDF peut récupérer les plans de la Ville de La Rochelle ?
-git merge
-
-Des modifications sont apportés par un acteur : il modifie son dépot.
-Quelle est la procédure à suivre par le partenaire pour récupérer cette modification ?
-(partage et publication)
-
-Au niveau local
----------------
-
-Le service Aménagement et Construction est missionné pour conduire un projet sur une zone couvrant
-un carrfour et deux voies perpendiculaires
-
-Le service carto ne dispose d'aucun plan topographique.
-
-ErDF dispose d'un plan avec une voie et une partie du carrefour
-La CDA dispose d'un plan avec une partie de l'autre voie et du carrefour en entier
-
-User Story 
-
-
-Point de vue du service Carto
-
-- 
