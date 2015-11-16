@@ -1,0 +1,30 @@
+@startuml
+title Utilisation de \n<b>Geogit</b>
+
+left to right direction
+
+actor "Agent du\nService X" as X
+actor "Agent du\nService Gestionnaire Y" as Y
+actor "Agent du\nService\nCartographie" as Carto #red
+actor "Prestataire\nGéomètre" as GE
+
+usecase "Constitution\nde la base" as UC1
+usecase "Mise à Jour\nde la base" as UC2  
+usecase "Interrogation,\nLecture\nde la base" as UC3
+
+' Constitution\nde la base
+Carto --> UC1
+GE --> UC1
+
+' Mise à Jour\nde la base
+Y --> UC2
+Carto --> UC2
+GE --> UC2
+
+' Interrogation,\nLecture\nde la base
+X --> UC3
+Y --> UC3
+Carto --> UC3
+GE --> UC3
+
+@enduml

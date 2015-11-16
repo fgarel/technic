@@ -1,0 +1,23 @@
+@startuml
+actor "Service X"  #green
+actor "Service Cartographie" #red
+actor "Titulaire Marchés"
+
+"Service X" -> "Service Cartographie": Besoin d'une prestation
+"Service Cartographie" --> "Service Cartographie": Vérification de l'existence\nde la réponse
+"Service X" <-> "Titulaire Marchés" : En commun : Définition précise de la demande
+"Service Cartographie" --> "Titulaire Marchés": Demande de devis
+"Service Cartographie" <-- "Titulaire Marchés": Devis
+"Service Cartographie" -> "Titulaire Marchés": Bon de commande
+"Titulaire Marchés" --> "Titulaire Marchés": Réalisation de la prestation :\nObservations terrain
+'"Service Cartographie" <-- "Titulaire Marchés":  1ère Livraison
+'"Service Cartographie" -> "Titulaire Marchés": Paiement acompte
+'"Service X" <-- "Service Cartographie": Mise à disposition\navant vérification
+"Service Cartographie" -[#FFFFFF]-> "Service Cartographie": Contrôle géométrie et\nStructuration informatique
+'"Service Cartographie" --> "Titulaire Marchés": Si nécessaire,\ndemande de corrections
+"Titulaire Marchés" --> "Titulaire Marchés": Corrections éventuelles
+"Service Cartographie" <- "Titulaire Marchés": Validation
+'"Service Cartographie" --> "Service Cartographie": 2d Contrôle :\nStructuration informatique
+"Service X" <- "Service Cartographie": Mise à disposition
+"Service Cartographie" -> "Titulaire Marchés": Liquidation de la Facture
+@enduml

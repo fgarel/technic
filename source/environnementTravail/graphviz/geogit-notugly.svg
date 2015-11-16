@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" height="568px" style="width:357px;height:568px;" version="1.1" viewBox="0 0 357 568" width="357px">
+  <defs>
+    <linearGradient id="white" x1="0%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="aquamarine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(127,255,212);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="azure" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(240,255,255);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="blueviolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(138,43,226);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="brown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(165,42,42);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cadetblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(95,158,160);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="chocolate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(210,105,30);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cornflowerblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(100,149,237);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="crimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(220,20,60);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(0,255,255);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="darkgreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(0,100,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="darkorange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,140,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,215,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="gray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(192,192,192);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="greenyellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(173,255,47);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(0,255,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="grey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(192,192,192);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hotpink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,105,180);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="indianred" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(205,92,92);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(75,0,130);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lavender" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(230,230,250);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lightblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(173,216,230);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lightgray" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(211,211,211);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lightgrey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(211,211,211);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="magenta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,0,255);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="maroon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(176,48,96);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="mediumblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(0,0,205);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="mediumpurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(147,112,219);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,165,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,192,203);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(160,32,240);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="steelblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(70,130,180);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(238,130,238);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="none" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <defs>
+    <filter height="300%" id="f1" width="300%" x="-1" y="-1">
+      <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+      <feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+      <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+      <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+    </filter>
+  </defs>
+  <g>
+    <polygon fill="#A80036" points="249.595,471.7755,243.7491,463.8492,245.2487,469.3037,239.7942,470.8033,249.595,471.7755" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="228.501,500.0782,219.0211,497.4076,223.5525,500.7939,220.1662,505.3252,228.501,500.0782" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="254.667,356.2723,249.661,347.7905,250.5958,353.3696,245.0167,354.3044,254.667,356.2723" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="230.845,377.9063,221.845,373.9063,225.845,377.9063,221.845,381.9063,230.845,377.9063" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="254.851,399.4093,245.2007,401.3771,250.7798,402.3119,249.845,407.891,254.851,399.4093" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="247.938,228.7002,243.3463,219.9873,244.0113,225.6049,238.3937,226.27,247.938,228.7002" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="222.054,250.6853,213.5687,245.6853,217.0866,250.1152,212.6567,253.6331,222.054,250.6853" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="241.234,284.1003,231.4572,285.2892,236.9435,286.6677,235.5651,292.154,241.234,284.1003" style="stroke: #A80036; stroke-width: 1.0;"/>
+    <polygon fill="#A80036" points="255.206,289.8893,246.2942,294.0821,251.9362,293.6719,252.3465,299.3138,255.206,289.8893" style="stroke: #A80036; stroke-width: 1.0;"/>
+  </g>
+</svg>

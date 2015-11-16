@@ -69,6 +69,9 @@ Il est rappelé ici que la mise en place de l'environnement de travail se réali
 Pour info, libxslt1-dev fourni l'utilitaire xslt-config qui est necessaire pour hovercraft
 Et python3-dev est aussi nécessaire pour construire lxml qui est utilisé par hovercraft
 
+Les paquets texlive-* fournissent des utilitaires tels que pdflatex, qui
+est utilisé lorsque l'on fait un build pour générer un pdf :`make pdflatex`
+
 .. code::
 
   sudo aptitude install texlive-latex-recommended \
@@ -115,7 +118,7 @@ On peut lire que la verison de python est 3.4.3
 Installation de sphinx dans cet environnement
 ---------------------------------------------
 
-On peut d'abordi vérifier que l'on peut construire hovercraft dans l'envionnement
+On peut d'abord vérifier que l'on peut construire hovercraft dans l'envionnement
 
 .. code::
   pew workon ecriture_sphinx
