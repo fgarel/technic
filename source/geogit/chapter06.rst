@@ -47,6 +47,36 @@ via l'execution du script
 
   ~/Documents/install/source/geogig/installGeogig.sh
 
+Installation d'utilitaires divers
+=================================
+ petl
+ https://pypi.python.org/pypi/petl
+ https://petl.readthedocs.org/en/latest/index.html
+ https://github.com/alimanfoo/petlx
+ http://petlx.readthedocs.org/en/latest/index.html
+
+ setl
+ https://stetl.readthedocs.org/en/latest/
+ https://github.com/justb4/stetl
+ http://fr.slideshare.net/justb4/stetl-foss4g20131024v1
+
+ manipulation de fichier svg et graphviz
+ https://www.npmjs.com/package/rsvg
+ http://www.hokstad.com/making-graphviz-output-pretty-with-xsl-updated
+ http://www.hokstad.com/making-graphviz-output-pretty-with-xsl
+ https://github.com/vidarh/diagram-tools
+ http://www.hokstad.com/graphviz
+ 
+ plantuml
+ http://fr.plantuml.com/usecase.html#Skinparam
+ http://plantuml.com/sequence.html
+
+ aafig
+ https://pythonhosted.org/sphinxcontrib-aafig/
+ https://github.com/thewtex/sphinx-contrib/tree/master/aafig
+
+
+
 Creation de 5 depots geogig
 ===========================
 
@@ -55,4 +85,5 @@ Cette mise en place est assurée par le script
 .. code::
 
   ~/Documents/install/source/geogig/installationGeogig2.sh
+
 

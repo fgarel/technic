@@ -401,7 +401,8 @@ Les principales commandes qui seront utilisées seront
 .. code::
 
   make html
-  make slides
+  make slideshie
+  make slideshov
   make latexpdf
 
 Premier essai d'un build
@@ -482,6 +483,8 @@ Pour générer une présentation (slides), on utilise soit hieroglyph, soit hove
 Extension sphinxcontrib-plantuml
 --------------------------------
 Comme cela a été évoqué au paragraphe plantuml, ci-dessous la suite de l'installation et de la configuration de sphinxcontrib-plantuml
+
+https://pypi.python.org/pypi/sphinxcontrib-plantuml
 
 Ajout de sphinxcontrib-plantuml dans l'environnement python
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
