@@ -79,12 +79,35 @@ Installation d'utilitaires divers
 
 Creation de 5 depots geogig
 ===========================
+Il y a 1 dépot git par acteur plus un dépot git central.
 
 Cette mise en place est assurée par le script 
 
 .. code::
 
   ~/Documents/install/source/geogig/installationGeogig2.sh
+
+Scénario proposé
+================
+L'acteur A
+Format privilégié : DXF
+Emprise : Case
+Liste des objets levés : commun, puis à partir d'une certaine date, Arbre + Haie
+
+L'acteur B
+Format : Postgis
+Emprise : Case
+Liste des objets levés : commun, puis à partir d'une certaine date, Arbre + AffleurantSymbole
+
+L'acteur C
+Format : ShapeFile
+Emprise : Polygone irrégulier
+Liste des objets levés : commun, puis à partir d'une certaine date, Haie + PointCanevas
+
+L'acteur D
+Format : Spatialite
+Emprise : Polygone irrégulier
+Liste des objets levés : commun, puis à partir d'une certaine date, PointCanevas + AffleurantSymbole
 
 
 Les différentes étapes
