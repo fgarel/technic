@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 #
 
+from math import ceil
+
 class FileReader:
     """
     Lecture des fichiers initaux
@@ -62,6 +64,7 @@ class Delaunay:
             pass
         for arc in self.arcs:
             pass
+
     def triInitial(self):
         # tri des points dans lordre des y croissant
         nodesTriesEnY = sorted(self.nodes, key=lambda point: point.y)
@@ -73,6 +76,29 @@ class Delaunay:
         #for point in sorted(self.nodes, key=lambda point: point.x):
         #    print(point)
         #return sorted(self.nodes, key=lambda point: point.x)
+
+    def divide(self, liste):
+        # l'algorithme s'appele divide and conquer
+        subsets = []
+        longueur_subsets = ceil(len(liste)/2)
+        if longueur_subsets>3:
+            print("B1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            subsets.append(self.divide(liste[0:longueur_subsets]))
+        else:
+            print("F1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            subsets.append(liste[0:longueur_subsets])
+        if (len(liste)-longueur_subsets)>3:
+            print("B2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            #print("branche 1 = ",subsets)
+            subsets.append(self.divide(liste[longueur_subsets:]))
+            #print("branche 2 = ",subsets)
+        else:
+            print("F2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            subsets.append(liste[longueur_subsets:])
+            #print("feuille 2 = ",subsets)
+        return subsets
+
+
 
 class Triangle:
     """
@@ -95,6 +121,12 @@ if __name__=='__main__':
     fileini="points.csv"
     points = FileReader(fileini).parser()
     # lancement de la triangulation de delaunay
-    graph_points = Delaunay(nodes = points, arcs = []).triInitial()
+    graph_points = Delaunay(nodes=points, arcs=[]).triInitial()
     for point in graph_points:
-        print(point)
+        #print(point)
+        pass
+    x = range(20,40)
+    print(x)
+    liste = Delaunay(nodes=points, arcs=[]).divide(x)
+
+    print(liste)
