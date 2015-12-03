@@ -82,20 +82,21 @@ class Delaunay:
         subsets = []
         longueur_subsets = ceil(len(liste)/2)
         if longueur_subsets>3:
-            print("B1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            #print("B1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
             subsets.append(self.divide(liste[0:longueur_subsets]))
         else:
-            print("F1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            #print("F1 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
             subsets.append(liste[0:longueur_subsets])
+            print("triangule =",liste[0:longueur_subsets])
         if (len(liste)-longueur_subsets)>3:
-            print("B2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
-            #print("branche 1 = ",subsets)
+            #print("B2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
             subsets.append(self.divide(liste[longueur_subsets:]))
-            #print("branche 2 = ",subsets)
+            print("merge", )
         else:
-            print("F2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
+            #print("F2 longueur_subsets = ", longueur_subsets, " ; len_liste = ", len(liste))
             subsets.append(liste[longueur_subsets:])
-            #print("feuille 2 = ",subsets)
+            print("triangule =",liste[longueur_subsets:])
+            print("merge = ",liste[0:longueur_subsets],liste[longueur_subsets:])
         return subsets
 
 
