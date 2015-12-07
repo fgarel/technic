@@ -1,0 +1,6 @@
+installation d'un environnement python networkx pour installation de networkx et de pyyaml
+
+pew new -p $(pythonz locate 3.4.3) networkx
+pip install jupyter
+pip install networkx
+pip install pyyaml
