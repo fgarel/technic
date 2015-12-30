@@ -18443,7 +18443,7 @@
     </Composition>
     <Atlas hideCoverage="false" featureFilter="--intersects( $geometry, geometry(  getFeature( 'empriseDeclarationQgis3946','fid' ,'emprise' )))&#xa;&#xa;-- selection des emprises dont l'attribut CodeGroupeAtlas est fixé&#xa; &quot;CodGrpAtl&quot; = 4&#xa; and&#xa; &quot;CodAtl&quot; = 0&#xa;" coverageLayer="template_atlas_emprise20151126181439597" singleFile="false" filenamePattern="'output_'||$feature" enabled="true" filterFeatures="true" sortFeatures="true" sortKey="CodGA" sortAscending="true"/>
   </Composer>
-  <Composer title="A4_case_portrait" visible="1">
+  <Composer title="A4_case_portrait" visible="0">
     <Composition gridVisible="1" printResolution="300" paperWidth="210" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="3.5" alignmentSnap="1" snapping="1" snapTolerancePixels="5" numPages="2" paperHeight="297" smartGuides="1" printAsRaster="1" generateWorldFile="0">
       <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -18477,7 +18477,7 @@
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="70" file="." pictureHeight="52.5" mapId="-1" anchorPoint="4">
+      <ComposerPicture resizeMode="0" pictureRotation="0" pictureWidth="52.6851" file="." pictureHeight="53.0083" mapId="-1" anchorPoint="4">
         <ComposerItem pagey="123.5" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="123.5" visibility="1" zValue="12" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="70" outlineWidth="0.3" excludeFromExports="0" uuid="{e5d1f365-bc80-4fce-bb8e-6eb1159ec601}" height="53.0083" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -19990,8 +19990,8 @@
             <backgroundColor alpha="0" red="0" blue="0" green="0"/>
           </column>
         </displayColumns>
-        <ComposerFrame sectionWidth="218.681" sectionHeight="57.7436" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="198.008" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="198.008" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="218.681" outlineWidth="0.3" excludeFromExports="0" uuid="{186595ca-057b-49f6-90ae-1e3344d11536}" height="57.7436" itemRotation="0" frame="false" pagex="10">
+        <ComposerFrame sectionWidth="123.047" sectionHeight="57.7436" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="198.008" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="198.008" visibility="1" zValue="11" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="123.047" outlineWidth="0.3" excludeFromExports="0" uuid="{186595ca-057b-49f6-90ae-1e3344d11536}" height="57.7436" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           </ComposerItem>
@@ -32242,8 +32242,8 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
