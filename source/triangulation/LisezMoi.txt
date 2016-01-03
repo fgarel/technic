@@ -4,3 +4,6 @@ pew new -p $(pythonz locate 3.4.3) networkx
 pip install jupyter
 pip install networkx
 pip install pyyaml
+
+aptitude install triangle-bin
+triangle -engB test.node

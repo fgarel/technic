@@ -17,7 +17,7 @@
 # f/CARTOGRAPHIE/Fred/atlas/
 #
 # Chaque sous-repertoire de ce dossier sera considéré comme un atlas
-# chaque sous/sous-repertorie sera une page
+# chaque sous/sous-repertorie sera une page / un folio
 # chaque fichier dans ces sous/sous-repertoire sera une image a placer sur la page
 #
 # Sous Qgis, nous ajouterons cette couche de données de type CSV
@@ -36,6 +36,12 @@ find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxdepth 1 -type d | sort -t ';' -
 # liste des atlas
 #find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | cat -n > listOfAtl.txt
 find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | sort -t ';' -k 1 | cat -n > listOfAtl.txt
+
+for s in $( find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxpepth 1 -type d | sort  ) ;
+do ( find "f/CARTOGRAPHIE/Fred/Atlas/"$s -mindepth 1 -maxdepth 1 -type d | sort | cat -n  ) ;
+done \
+    cat -n \
+    > listOfAtlnew.txt
 
 # liste des photos
 # parcours du repertoire ~/f/CARTOGRAPHIE/Fred/atlas/
