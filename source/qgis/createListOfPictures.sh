@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Cet utilitaire doit permettre de creer un fichier csv contenant une liste de fichier
 #
@@ -37,20 +37,19 @@ find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxdepth 1 -type d | sort -t ';' -
 #find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | cat -n > listOfAtl.txt
 find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | sort -t ';' -k 1 | cat -n > listOfAtl.txt
 
-
-echo "-->" $IFS "<--"
-echo $SHELL
-
-IFS='\n'
-echo "-->" $IFS "<--"
-#set IFS=$''
-for s in $( find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxdepth 1 -type d | sort  ) ; \
-    do ( find $s -mindepth 1 -maxdepth 1 -type d | sort | cat -n  ) ; \
-        echo "-->" $IFS "<--"; \
+# Liste des atlas / folios avec en plus un décompte de folios par atlas
+# cf http://unix.stackexchange.com/questions/28854/list-elements-with-spaces-in-zsh
+# "${(@)$()}"
+# on met le tout entre parenthese pour avoir un tableau
+find_1=("${(@f)$(find "f/CARTOGRAPHIE/Fred/atlas/" -mindepth 1 -maxdepth 1 -type d | sort -t ';' -k 1)}")
+# on parcourt chaque element du tableau
+for s in $find_1[@] ; \
+    do #echo $s ; \
+        find_2=$(find $s -mindepth 1 -maxdepth 1 -type d | sort -t ';' -k 1 | cat -n) ; \
+        echo $find_2 ; \
     done | \
     cat -n \
     > listOfAtlnew.txt
-IFS=$' \t\n'
 
 # liste des photos
 # parcours du repertoire ~/f/CARTOGRAPHIE/Fred/atlas/
@@ -71,6 +70,7 @@ find "f/CARTOGRAPHIE/Fred/atlas/" -type f | grep -v Thumbs.db | grep -v ZbThumbn
 sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/(.*)|\1;\2|' listOfGrpAtl.txt
 # sur les Atl, nous allons faire une correpondance TitAtl;CodAtl On ajoute le TitGrpAtl
 sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\2;\1;\3|' listOfAtl.txt
+sed -r 's|[  ]+([0-9]+)[  |\t]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\3;\1;\2;\4|' listOfAtlnew.txt > listOfAtlnew2.txt
 # sur les Pictures, nous allons faire une correspondance TitPic;CodPic On ajoute TitAtl et TitGrpAtl
 sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/([^/]+)/(.*)|\2;\3;\1;\4;f/CARTOGRAPHIE/Fred/atlas/\2/\3/\4|' listOfPic.txt
 
