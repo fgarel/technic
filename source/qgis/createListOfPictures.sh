@@ -37,11 +37,20 @@ find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxdepth 1 -type d | sort -t ';' -
 #find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | cat -n > listOfAtl.txt
 find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 2 -maxdepth 2 -type d | sort -t ';' -k 1 | cat -n > listOfAtl.txt
 
-for s in $( find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxpepth 1 -type d | sort  ) ;
-do ( find "f/CARTOGRAPHIE/Fred/Atlas/"$s -mindepth 1 -maxdepth 1 -type d | sort | cat -n  ) ;
-done \
+
+echo "-->" $IFS "<--"
+echo $SHELL
+
+IFS='\n'
+echo "-->" $IFS "<--"
+#set IFS=$''
+for s in $( find "f/CARTOGRAPHIE/Fred/atlas" -mindepth 1 -maxdepth 1 -type d | sort  ) ; \
+    do ( find $s -mindepth 1 -maxdepth 1 -type d | sort | cat -n  ) ; \
+        echo "-->" $IFS "<--"; \
+    done | \
     cat -n \
     > listOfAtlnew.txt
+IFS=$' \t\n'
 
 # liste des photos
 # parcours du repertoire ~/f/CARTOGRAPHIE/Fred/atlas/
