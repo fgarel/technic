@@ -49,7 +49,7 @@ for s in $find_1[@] ; \
         echo $find_2 ; \
     done | \
     cat -n \
-    > listOfAtlnew.txt
+    > listOfAtl.txt
 
 # liste des photos
 # parcours du repertoire ~/f/CARTOGRAPHIE/Fred/atlas/
@@ -69,8 +69,8 @@ find "f/CARTOGRAPHIE/Fred/atlas/" -type f | grep -v Thumbs.db | grep -v ZbThumbn
 # sur les GrpAtl, nous allons faire une correpondance TitGrpAtl;CodGrpAtl
 sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/(.*)|\1;\2|' listOfGrpAtl.txt
 # sur les Atl, nous allons faire une correpondance TitAtl;CodAtl On ajoute le TitGrpAtl
-sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\2;\1;\3|' listOfAtl.txt
-sed -r 's|[  ]+([0-9]+)[  |\t]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\3;\1;\2;\4|' listOfAtlnew.txt > listOfAtlnew2.txt
+#sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\2;\1;\3|' listOfAtl.txt
+sed -i -r 's|[  ]+([0-9]+)[  |\t]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/(.*)|\3;\1;\2;\4|' listOfAtl.txt
 # sur les Pictures, nous allons faire une correspondance TitPic;CodPic On ajoute TitAtl et TitGrpAtl
 sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/([^/]+)/(.*)|\2;\3;\1;\4;f/CARTOGRAPHIE/Fred/atlas/\2/\3/\4|' listOfPic.txt
 
@@ -80,6 +80,7 @@ sed -i -r 's|[  ]+([0-9]+).+f/CARTOGRAPHIE/Fred/atlas/([^/]+)/([^/]+)/(.*)|\2;\3
 # http://code.snipcademy.com/tutorials/linux-command-line/text-processing/cut-paste-join
 # 
 # join entre GrpAtl et Atl
+#join -t ';' -a 2 -1 2 -2 1 listOfGrpAtl.txt listOfAtl.txt > listOfAtl2.txt
 join -t ';' -a 2 -1 2 -2 1 listOfGrpAtl.txt listOfAtl.txt > listOfAtl2.txt
 rm listOfAtl.txt
 sed -i -r 's|([^;]+);([^;]+);([^;]+);([^;])|\2;\1;\3;\4|' listOfAtl2.txt
@@ -87,7 +88,7 @@ sed -i -r 's|([^;]+);([^;]+);([^;]+);([^;])|\2;\1;\3;\4|' listOfAtl2.txt
 # join entre GrpAtl, Atl et Pic
 # 
 join -t ';' -a 2 -1 4 -2 2 listOfAtl2.txt listOfPic.txt > listOfPic2.txt
-rm listOfPic.txt
+ ####rm listOfPic.txt
 # on en profite pour calculer des colonnes
 # - CodGA = CodGrpAtl + "_" + CodAtl
 # - CodGAP = CodGrpAtl + "_" + CodAtl + "_" + CodPic

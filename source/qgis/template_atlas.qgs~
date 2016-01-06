@@ -165,10 +165,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379978.14938449091278017</xmin>
-      <ymin>5224881.46844952739775181</ymin>
-      <xmax>1380146.14938449091278017</xmax>
-      <ymax>5225116.66844952665269375</ymax>
+      <xmin>1378355.14664476620964706</xmin>
+      <ymin>5222806.55338103789836168</ymin>
+      <xmax>1381043.14664476620964706</xmax>
+      <ymax>5226569.75338102597743273</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -31474,7 +31474,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>template_atlas_emprise20151126181439597</id>
       <datasource>./template_atlas_emprise.shp</datasource>
       <title></title>
@@ -31541,13 +31541,12 @@
       </edittypes>
       <renderer-v2 symbollevels="0" type="RuleRenderer">
         <rules key="{09516173-8f7e-4a4a-b3bc-8729ef210482}">
-          <rule filter="-- Emprise du groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa; &quot;CodGrpAtl&quot;  =  grpAtl(0)&#xa; and &quot;CodAtl&quot; = 0&#xa;" key="{13cff594-7d7b-40ae-b6a1-0a4e59eff06b}" symbol="0" label="Emprise du groupe n"/>
-          <rule filter="-- Autres cases &#xa;-- que la case courante du groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa;-- et non concernées par l'emprise => &#xa; &quot;CodGrpAtl&quot;  =  grpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id&lt;>$atlasfeatureid&#xa; and NOT intersects($geometry, geometry(getFeature('template_atlas_emprise', 'CodGA',  concat( &quot;CodGrpAtl&quot;, '_', '0'))))" key="{2608834a-ee2b-4325-a1f9-8c4932f5c658}" symbol="1" label="Autres cases du groupe n, hors emprise"/>
-          <rule filter="-- Case courante du groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa; &quot;CodGrpAtl&quot;  = grpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id=$atlasfeatureid" key="{18507ea7-09bd-4b3d-8cc7-b701e5449e2b}" symbol="2" label="Case courante dans l'emprise du groupe n"/>
-          <rule filter="-- Case courante du groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa; &quot;CodGrpAtl&quot;  = grpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id=$atlasfeatureid" key="{346e8cff-ee32-4879-a8db-42ba6e882925}" symbol="3" label="Case courante dans l'emprise du groupe n"/>
-          <rule filter="-- Autres cases &#xa;-- que la case courante du groupe dont le numéro est défini dans la variable d'environnement GrpAtl &#xa;-- et concernées par l'emprise => &#xa; &quot;CodGrpAtl&quot;  = grpAtl(0)&#xa;and &quot;CodAtl&quot; &lt;> 0&#xa;and $id&lt;>$atlasfeatureid&#xa;and intersects($geometry, geometry(getFeature('template_atlas_emprise', 'CodGA',  concat( &quot;CodGrpAtl&quot;, '_', '0'))))" key="{eb62b61c-d2c2-4e94-87cf-6bedd87d10e4}" symbol="4" label="Autres cases du groupe n, dans l'emprise"/>
-          <rule filter="-- Case des autres groupes que le groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa; &quot;CodGrpAtl&quot;  &lt;> grpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0" key="{6158d122-90ee-4026-8ba0-0321c7327f19}" symbol="5" label="Cases des autres groupes"/>
-          <rule checkstate="0" filter="-- Case des autres groupes que le groupe dont le numéro est défini dans la variable d'environnement GrpAtl => &#xa;&quot;CodGrpAtl&quot;  &lt;> grpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0" key="{9ff23e45-70ee-49ed-8348-37b2c3898025}" symbol="6" label="Cases des autres groupes"/>
+          <rule filter="-- Emprise du groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl => &#xa; &quot;CodGrpAtl&quot;  =  CodGrpAtl(0)&#xa; and &quot;CodAtl&quot; = 0&#xa;" key="{13cff594-7d7b-40ae-b6a1-0a4e59eff06b}" symbol="0" label="Emprise du groupe n"/>
+          <rule filter="-- Autres cases &#xa;-- que la case courante du groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl => &#xa;-- et non concernées par l'emprise => &#xa; &quot;CodGrpAtl&quot;  =  CodGrpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id&lt;>$atlasfeatureid&#xa; and NOT intersects($geometry, geometry(getFeature('template_atlas_emprise', 'CodGA',  concat( &quot;CodGrpAtl&quot;, '_', '0'))))" key="{2608834a-ee2b-4325-a1f9-8c4932f5c658}" symbol="1" label="Autres cases du groupe n, hors emprise"/>
+          <rule filter="-- Case courante du groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl => &#xa; &quot;CodGrpAtl&quot;  = CodGrpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id=$atlasfeatureid" key="{18507ea7-09bd-4b3d-8cc7-b701e5449e2b}" symbol="2" label="Case courante dans l'emprise du groupe n"/>
+          <rule filter="-- Case courante du groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl => &#xa; &quot;CodGrpAtl&quot;  = CodGrpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0&#xa; and $id=$atlasfeatureid" key="{346e8cff-ee32-4879-a8db-42ba6e882925}" symbol="3" label="Case courante dans l'emprise du groupe n"/>
+          <rule filter="-- Autres cases &#xa;-- que la case courante du groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl &#xa;-- et concernées par l'emprise => &#xa; &quot;CodGrpAtl&quot;  = CodGrpAtl(0)&#xa;and &quot;CodAtl&quot; &lt;> 0&#xa;and $id&lt;>$atlasfeatureid&#xa;and intersects($geometry, geometry(getFeature('template_atlas_emprise', 'CodGA',  concat( &quot;CodGrpAtl&quot;, '_', '0'))))" key="{eb62b61c-d2c2-4e94-87cf-6bedd87d10e4}" symbol="4" label="Autres cases du groupe n, dans l'emprise"/>
+          <rule filter="-- Case des autres groupes que le groupe dont le numéro est défini dans la variable d'environnement CodGrpAtl => &#xa; &quot;CodGrpAtl&quot;  &lt;> CodGrpAtl(0)&#xa; and &quot;CodAtl&quot; &lt;> 0" key="{6158d122-90ee-4026-8ba0-0321c7327f19}" symbol="5" label="Cases des autres groupes"/>
         </rules>
         <symbols>
           <symbol alpha="1" type="fill" name="0">
@@ -31626,21 +31625,6 @@
             </layer>
           </symbol>
           <symbol alpha="1" type="fill" name="5">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="0,0,0,0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="227,26,28,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="10"/>
-              <prop k="outline_width_unit" v="MapUnit"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" type="fill" name="6">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0"/>
               <prop k="color" v="0,0,0,0"/>
