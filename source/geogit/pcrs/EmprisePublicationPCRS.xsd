@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 (x64) (http://www.altova.com) by Cypher (Ru-Board) -->
+<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://localhost/pcrs" targetNamespace="http://localhost/pcrs">
+	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+	<xs:include schemaLocation="CalendrierPCRS.xsd"/>
+	<xs:element name="FeatureCollection">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gml:boundedBy"/>
+				<xs:element name="featureMember" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EmprisePublicationPCRS">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="gml:boundedBy"/>
+										<xs:element name="geometrie">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element ref="gml:Polygon"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="idEmprise" type="xs:string"/>
+										<xs:element name="gestionnaire" type="xs:string"/>
+										<xs:element name="calendrier" type="CalendrierPCRS" minOccurs="0"/>
+										<xs:element name="datePublication" type="xs:date"/>
+										<xs:element name="raster" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="localId" type="xs:string"/>
+													<xs:element name="namespace" type="xs:string"/>
+													<xs:element name="versionId" type="xs:string" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="gabaritPrecision" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="typeObjet" type="xs:string"/>
+													<xs:element name="nombreEcartsToleres" type="xs:integer">
+														<xs:annotation>
+															<xs:documentation>sur 100 échantillons, nombre d'écarts tolérés qui peuvent dépasser le seuil correspondant (respectivement 1mm, 2mm...)
+NOTE permet directement d'exprimer le niveau de confiance du levé topographique pour le seuil correspondant
+exemple: si le seuil est à 2mm avec un nombre d'écarts tolérés de 5, alors le levé topographique est à 95% des points sont levés avec un écart inférieur à 2mm</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="seuil" type="xs:integer">
+														<xs:annotation>
+															<xs:documentation>seuil en mm de l'écart maximal entre un point mesuré et un point contrôlé pour le type d'objet considéré</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute ref="gml:id" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
