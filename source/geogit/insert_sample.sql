@@ -1,12 +1,13 @@
 ﻿INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M11',
     'SRID=3946;POLYGON((1379500 5226300,1379640 5226300,1379640 5226200,1379500 5226200,1379500 5226300))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -16,7 +17,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -26,7 +27,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -36,7 +37,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -46,7 +47,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -56,7 +57,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -66,7 +67,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -76,7 +77,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -86,7 +87,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -94,7 +95,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -102,7 +103,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -110,7 +111,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -118,7 +119,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -126,7 +127,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -134,7 +135,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -142,7 +143,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -150,14 +151,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300,1379500 5226300)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M12',
     'SRID=3946;POLYGON((1379640 5226300,1379780 5226300,1379780 5226200,1379640 5226200,1379640 5226300))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -167,7 +169,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -177,7 +179,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -187,7 +189,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -197,7 +199,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -207,7 +209,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -217,7 +219,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -227,7 +229,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -237,7 +239,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -245,7 +247,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -253,7 +255,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -261,7 +263,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -269,7 +271,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -277,7 +279,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -285,7 +287,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -293,7 +295,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -301,14 +303,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300,1379640 5226300)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M13',
     'SRID=3946;POLYGON((1379780 5226300,1379920 5226300,1379920 5226200,1379780 5226200,1379780 5226300))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -318,7 +321,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -328,7 +331,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -338,7 +341,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -348,7 +351,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -358,7 +361,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -368,7 +371,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -378,7 +381,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -388,7 +391,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -396,7 +399,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -404,7 +407,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -412,7 +415,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -420,7 +423,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -428,7 +431,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -436,7 +439,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -444,7 +447,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -452,14 +455,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300,1379780 5226300)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M14',
     'SRID=3946;POLYGON((1379920 5226300,1380060 5226300,1380060 5226200,1379920 5226200,1379920 5226300))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -469,7 +473,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -479,7 +483,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -489,7 +493,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -499,7 +503,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -509,7 +513,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -519,7 +523,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -529,7 +533,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -539,7 +543,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -547,7 +551,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -555,7 +559,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -563,7 +567,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -571,7 +575,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -579,7 +583,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -587,7 +591,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -595,7 +599,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -603,14 +607,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300,1379920 5226300)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M15',
     'SRID=3946;POLYGON((1380060 5226300,1380200 5226300,1380200 5226200,1380060 5226200,1380060 5226300))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -620,7 +625,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -630,7 +635,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -640,7 +645,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -650,7 +655,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -660,7 +665,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -670,7 +675,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -680,7 +685,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -690,7 +695,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -698,7 +703,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -706,7 +711,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -714,7 +719,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -722,7 +727,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -730,7 +735,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -738,7 +743,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -746,7 +751,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -754,14 +759,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300,1380060 5226300)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M21',
     'SRID=3946;POLYGON((1379500 5226200,1379640 5226200,1379640 5226100,1379500 5226100,1379500 5226200))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -771,7 +777,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -781,7 +787,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -791,7 +797,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -801,7 +807,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -811,7 +817,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -821,7 +827,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -831,7 +837,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -841,7 +847,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -849,7 +855,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -857,7 +863,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -865,7 +871,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -873,7 +879,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -881,7 +887,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -889,7 +895,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -897,7 +903,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -905,14 +911,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200,1379500 5226200)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M22',
     'SRID=3946;POLYGON((1379640 5226200,1379780 5226200,1379780 5226100,1379640 5226100,1379640 5226200))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -922,7 +929,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -932,7 +939,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -942,7 +949,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -952,7 +959,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -962,7 +969,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -972,7 +979,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -982,7 +989,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -992,7 +999,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1000,7 +1007,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1008,7 +1015,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1016,7 +1023,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1024,7 +1031,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1032,7 +1039,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1040,7 +1047,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1048,7 +1055,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1056,14 +1063,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200,1379640 5226200)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M23',
     'SRID=3946;POLYGON((1379780 5226200,1379920 5226200,1379920 5226100,1379780 5226100,1379780 5226200))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1073,7 +1081,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1083,7 +1091,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1093,7 +1101,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1103,7 +1111,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1113,7 +1121,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1123,7 +1131,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1133,7 +1141,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1143,7 +1151,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1151,7 +1159,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1159,7 +1167,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1167,7 +1175,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1175,7 +1183,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1183,7 +1191,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1191,7 +1199,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1199,7 +1207,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1207,14 +1215,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200,1379780 5226200)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M24',
     'SRID=3946;POLYGON((1379920 5226200,1380060 5226200,1380060 5226100,1379920 5226100,1379920 5226200))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1224,7 +1233,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1234,7 +1243,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1244,7 +1253,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1254,7 +1263,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1264,7 +1273,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1274,7 +1283,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1284,7 +1293,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1294,7 +1303,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1302,7 +1311,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1310,7 +1319,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1318,7 +1327,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1326,7 +1335,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1334,7 +1343,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1342,7 +1351,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1350,7 +1359,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1358,14 +1367,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200,1379920 5226200)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M25',
     'SRID=3946;POLYGON((1380060 5226200,1380200 5226200,1380200 5226100,1380060 5226100,1380060 5226200))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1375,7 +1385,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1385,7 +1395,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1395,7 +1405,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1405,7 +1415,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1415,7 +1425,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1425,7 +1435,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1435,7 +1445,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1445,7 +1455,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1453,7 +1463,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1461,7 +1471,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1469,7 +1479,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1477,7 +1487,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1485,7 +1495,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1493,7 +1503,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1501,7 +1511,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1509,14 +1519,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200,1380060 5226200)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M31',
     'SRID=3946;POLYGON((1379500 5226100,1379640 5226100,1379640 5226000,1379500 5226000,1379500 5226100))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1526,7 +1537,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1536,7 +1547,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1546,7 +1557,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1556,7 +1567,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1566,7 +1577,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1576,7 +1587,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1586,7 +1597,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1596,7 +1607,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1604,7 +1615,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1612,7 +1623,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1620,7 +1631,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1628,7 +1639,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1636,7 +1647,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1644,7 +1655,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1652,7 +1663,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1660,14 +1671,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100,1379500 5226100)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M32',
     'SRID=3946;POLYGON((1379640 5226100,1379780 5226100,1379780 5226000,1379640 5226000,1379640 5226100))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1677,7 +1689,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1687,7 +1699,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1697,7 +1709,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1707,7 +1719,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1717,7 +1729,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1727,7 +1739,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1737,7 +1749,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1747,7 +1759,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1755,7 +1767,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1763,7 +1775,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1771,7 +1783,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1779,7 +1791,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1787,7 +1799,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1795,7 +1807,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1803,7 +1815,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1811,14 +1823,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100,1379640 5226100)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M33',
     'SRID=3946;POLYGON((1379780 5226100,1379920 5226100,1379920 5226000,1379780 5226000,1379780 5226100))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1828,7 +1841,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1838,7 +1851,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1848,7 +1861,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1858,7 +1871,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1868,7 +1881,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1878,7 +1891,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1888,7 +1901,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -1898,7 +1911,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1906,7 +1919,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1914,7 +1927,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1922,7 +1935,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1930,7 +1943,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1938,7 +1951,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1946,7 +1959,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1954,7 +1967,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -1962,14 +1975,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100,1379780 5226100)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M34',
     'SRID=3946;POLYGON((1379920 5226100,1380060 5226100,1380060 5226000,1379920 5226000,1379920 5226100))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1979,7 +1993,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1989,7 +2003,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -1999,7 +2013,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2009,7 +2023,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2019,7 +2033,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2029,7 +2043,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2039,7 +2053,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2049,7 +2063,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2057,7 +2071,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2065,7 +2079,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2073,7 +2087,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2081,7 +2095,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2089,7 +2103,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2097,7 +2111,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2105,7 +2119,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2113,14 +2127,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100,1379920 5226100)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M35',
     'SRID=3946;POLYGON((1380060 5226100,1380200 5226100,1380200 5226000,1380060 5226000,1380060 5226100))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2130,7 +2145,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2140,7 +2155,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2150,7 +2165,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2160,7 +2175,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2170,7 +2185,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2180,7 +2195,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2190,7 +2205,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2200,7 +2215,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2208,7 +2223,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2216,7 +2231,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2224,7 +2239,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2232,7 +2247,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2240,7 +2255,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2248,7 +2263,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2256,7 +2271,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2264,14 +2279,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100,1380060 5226100)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M41',
     'SRID=3946;POLYGON((1379500 5226000,1379640 5226000,1379640 5225900,1379500 5225900,1379500 5226000))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2281,7 +2297,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2291,7 +2307,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2301,7 +2317,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2311,7 +2327,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2321,7 +2337,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2331,7 +2347,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2341,7 +2357,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2351,7 +2367,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2359,7 +2375,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2367,7 +2383,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2375,7 +2391,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2383,7 +2399,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2391,7 +2407,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2399,7 +2415,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2407,7 +2423,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2415,14 +2431,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000,1379500 5226000)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M42',
     'SRID=3946;POLYGON((1379640 5226000,1379780 5226000,1379780 5225900,1379640 5225900,1379640 5226000))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2432,7 +2449,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2442,7 +2459,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2452,7 +2469,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2462,7 +2479,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2472,7 +2489,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2482,7 +2499,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2492,7 +2509,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2502,7 +2519,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2510,7 +2527,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2518,7 +2535,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2526,7 +2543,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2534,7 +2551,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2542,7 +2559,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2550,7 +2567,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2558,7 +2575,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2566,14 +2583,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000,1379640 5226000)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M43',
     'SRID=3946;POLYGON((1379780 5226000,1379920 5226000,1379920 5225900,1379780 5225900,1379780 5226000))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2583,7 +2601,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2593,7 +2611,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2603,7 +2621,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2613,7 +2631,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2623,7 +2641,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2633,7 +2651,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2643,7 +2661,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2653,7 +2671,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2661,7 +2679,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2669,7 +2687,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2677,7 +2695,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2685,7 +2703,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2693,7 +2711,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2701,7 +2719,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2709,7 +2727,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2717,14 +2735,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000,1379780 5226000)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M44',
     'SRID=3946;POLYGON((1379920 5226000,1380060 5226000,1380060 5225900,1379920 5225900,1379920 5226000))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2734,7 +2753,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2744,7 +2763,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2754,7 +2773,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2764,7 +2783,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2774,7 +2793,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2784,7 +2803,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2794,7 +2813,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2804,7 +2823,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2812,7 +2831,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2820,7 +2839,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2828,7 +2847,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2836,7 +2855,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2844,7 +2863,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2852,7 +2871,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2860,7 +2879,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2868,14 +2887,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000,1379920 5226000)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M45',
     'SRID=3946;POLYGON((1380060 5226000,1380200 5226000,1380200 5225900,1380060 5225900,1380060 5226000))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2885,7 +2905,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2895,7 +2915,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2905,7 +2925,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -2915,7 +2935,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2925,7 +2945,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2935,7 +2955,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2945,7 +2965,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -2955,7 +2975,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2963,7 +2983,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2971,7 +2991,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2979,7 +2999,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2987,7 +3007,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -2995,7 +3015,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3003,7 +3023,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3011,7 +3031,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3019,14 +3039,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000,1380060 5226000)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M51',
     'SRID=3946;POLYGON((1379500 5225900,1379640 5225900,1379640 5225800,1379500 5225800,1379500 5225900))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3036,7 +3057,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3046,7 +3067,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3056,7 +3077,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3066,7 +3087,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3076,7 +3097,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3086,7 +3107,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3096,7 +3117,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3106,7 +3127,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3114,7 +3135,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3122,7 +3143,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3130,7 +3151,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3138,7 +3159,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3146,7 +3167,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3154,7 +3175,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3162,7 +3183,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3170,14 +3191,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900,1379500 5225900)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M52',
     'SRID=3946;POLYGON((1379640 5225900,1379780 5225900,1379780 5225800,1379640 5225800,1379640 5225900))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3187,7 +3209,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3197,7 +3219,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3207,7 +3229,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3217,7 +3239,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3227,7 +3249,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3237,7 +3259,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3247,7 +3269,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3257,7 +3279,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3265,7 +3287,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3273,7 +3295,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3281,7 +3303,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3289,7 +3311,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3297,7 +3319,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3305,7 +3327,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3313,7 +3335,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3321,14 +3343,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900,1379640 5225900)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M53',
     'SRID=3946;POLYGON((1379780 5225900,1379920 5225900,1379920 5225800,1379780 5225800,1379780 5225900))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3338,7 +3361,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3348,7 +3371,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3358,7 +3381,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3368,7 +3391,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3378,7 +3401,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3388,7 +3411,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3398,7 +3421,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3408,7 +3431,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3416,7 +3439,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3424,7 +3447,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3432,7 +3455,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3440,7 +3463,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3448,7 +3471,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3456,7 +3479,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3464,7 +3487,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3472,14 +3495,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900,1379780 5225900)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M54',
     'SRID=3946;POLYGON((1379920 5225900,1380060 5225900,1380060 5225800,1379920 5225800,1379920 5225900))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3489,7 +3513,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3499,7 +3523,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3509,7 +3533,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3519,7 +3543,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3529,7 +3553,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3539,7 +3563,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3549,7 +3573,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3559,7 +3583,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3567,7 +3591,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3575,7 +3599,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3583,7 +3607,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3591,7 +3615,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3599,7 +3623,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3607,7 +3631,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3615,7 +3639,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3623,14 +3647,15 @@ INSERT INTO
     'SRID=3946;LINESTRING(1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900,1379920 5225900)');
 
 INSERT INTO 
-  case_00140_00100 (
+  "Case_00140_00100" (
     id,
     geometry_asewkt)
   VALUES (
     'M55',
     'SRID=3946;POLYGON((1380060 5225900,1380200 5225900,1380200 5225800,1380060 5225800,1380060 5225900))');
+
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3640,7 +3665,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3650,7 +3675,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3660,7 +3685,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  AffleurantSymbole (
+  "AffleurantSymbole" (
     id,
     geometry_asewkt,
     orientation)
@@ -3670,7 +3695,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3680,7 +3705,7 @@ INSERT INTO
     180);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3690,7 +3715,7 @@ INSERT INTO
     270);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3700,7 +3725,7 @@ INSERT INTO
     90);
 
 INSERT INTO 
-  Arbre (
+  "Arbre" (
     id,
     geometry_asewkt,
     orientation)
@@ -3710,7 +3735,7 @@ INSERT INTO
     0);
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3718,7 +3743,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3726,7 +3751,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900,1380060 5225900,1380060 5225900,1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3734,7 +3759,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3742,7 +3767,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3750,7 +3775,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900,1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3758,7 +3783,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
@@ -3766,7 +3791,7 @@ INSERT INTO
     'SRID=3946;LINESTRING(1380060 5225900,1380060 5225900,1380060 5225900)');
 
 INSERT INTO 
-  Bordure (
+  "Bordure" (
     id,
     geometry_asewkt)
   VALUES (
