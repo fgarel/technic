@@ -50,7 +50,7 @@ CREATE TABLE "Facade"
 (
   id character varying(80),
   geometry_asewkt character varying(255),
-  wkb_geometry geometry(Polygon,3946)
+  wkb_geometry geometry(Linestring,3946)
 );
 
 CREATE TABLE "Haie"
