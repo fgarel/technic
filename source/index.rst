@@ -52,7 +52,7 @@
 .. .. include:: mapnik/mapnik.rst
 .. .. include:: patrimoine/patrimoine.rst
 .. .. include:: csvpython/csvpython.rst
-.. include:: geogit/geogit.rst
+.. include:: geogig/geogig.rst
 
 
 .. .. Indices and tables

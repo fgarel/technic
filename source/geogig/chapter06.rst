@@ -1,5 +1,5 @@
 ***********************************
-Utilisation de geogig pour la gestion du PCRS
+Procédures et scénarii de l'exemple
 ***********************************
 
 

@@ -1,6 +1,6 @@
-***********************************
-Utilisation de geogig pour la gestion du PCRS
-***********************************
+**************************************************
+Organisation envisagée pour la gouvernance du PCRS
+**************************************************
 
 Mise en oeuvre de l'outil geogig
 pour gerer la constitution et la mise à jour du Plan de Corps de Rue Simplifié (PCRS).

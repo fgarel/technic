@@ -1,14 +1,16 @@
-****************
-Le Manuel Geogit
-****************
+*************************
+La documentation officiel
+*************************
 
-Récupération du manuel sur le site geogit.org
+Dans cet annexe, nous décrivons où se trouve la documentation originelle.
+
+Le manuel geogig
+================
+
+Récupération du manuel sur le site geogig.org
 http://geogit.org/docs/
 
 Nous allons telecharger les pages, puis nous allons l'adpader
-
-Téléchargement du manuel
-========================
 
 Ligne de commande pour telecharger un site
 
@@ -28,6 +30,30 @@ Ligne de commande pour telecharger un site
 -p = grabs all required elements to view it correctly (css, images, etc)
 
 Traduction des pages
-====================
+--------------------
+
+Une fois que le manuel est téléchargé, nous avons aussi la possibilité de le traduire
+
+
+
+La documentation avancée
+========================
+
+
+La documentation avancée, avec diagramme uml (cas d'utilisation) est ici.
+https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+Le plus simple est de cloner le wiki
+
+.. code::
+
+  #wget -N -k -p https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+  git clone https://github.com/boundlessgeo/GeoGit.wiki.git
+
+
+Le pcrs
+=======
+
+la documentation sur le pcrs est ici
+
 
 
