@@ -2,15 +2,35 @@
 Installation des outils
 ***********************
 
+Postgresql / Postgis
+====================
+
+Pour chacun des acteurs, nous allons attribuer deux bases de données.
+
+L'installation et le paramétrage des bases de données sont réalisés via le script :
+
+.. code::
+  
+  ~/Documents/install/source/environnementTravail/installPostgresqlGeogigGTReseaux.sh
+
+
+
 Geogig
 ======
 
-L'installation est détaillé dans les fichiers
+En ce qui concerne l'outil geogig, il faut distinguer deux choses :
 
-~/Documents/install/source/geogig/installGeogig.sh
+ - l'installation du logiciel
+ - la création des commits initiaux
+
+L'installation est détaillé dans le fichier :
+
+.. code::
+
+  ~/Documents/install/source/geogig/installGeogig.sh
 
 
-
+La création des commits initiaux et l'utilisation de git avec des données exemples est détaillé dans l'annexe 2.
 
 Coté serveur
 ============
