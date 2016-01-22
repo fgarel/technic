@@ -32,6 +32,27 @@ L'installation est détaillé dans le fichier :
 
 La création des commits initiaux et l'utilisation de git avec des données exemples est détaillé dans l'annexe 2.
 
+
+
+Package GeoSHAPE
+================
+
+GeoSHAPE is the integration of a geospatial portal (GeoNode), a web mapping client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial server and database components (The OpenGeo Suite)
+
+http://geoshape.org/
+
+https://docs.google.com/document/d/1KMpk6dXuqvwfEi0pfRpaGY62j6ikoYtpYUPU0sJQAmk/edit
+
+https://github.com/ROGUE-JCTD/rogue_geonode
+
+https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action
+
+http://boundlessgeo.com/2014/03/geogit-and-openstreetmap-for-yolanda/
+
+gestion des conflits
+http://garnertb.io/geonode-summit-2014/template#11
+
+
 Coté serveur
 ============
 
@@ -43,7 +64,6 @@ A GeoServer extension is available to allow GeoServer to interact with a GeoGig 
 http://dev.boundlessgeo.com/~groldan/geogig-user-manual/interaction/geoserver_ui.html
 
 
-
 Geonode
 -------
 
@@ -53,7 +73,9 @@ http://geonode.org/
 
 https://github.com/GeoNode/geonode
 
+Mais poour le moment, on est en version 2.4....
 
+la version 2.5 promet l'intégration de geogig
 
 
 Geogig et geonode 2.5
@@ -77,18 +99,4 @@ https://github.com/ROGUE-JCTD/MapLoom
 https://vimeo.com/106852747
 
 
-Package GeoSHAPE
-================
 
-GeoSHAPE is the integration of a geospatial portal (GeoNode), a web mapping client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial server and database components (The OpenGeo Suite)
-
-http://geoshape.org/
-
-https://docs.google.com/document/d/1KMpk6dXuqvwfEi0pfRpaGY62j6ikoYtpYUPU0sJQAmk/edit
-
-https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action
-
-http://boundlessgeo.com/2014/03/geogit-and-openstreetmap-for-yolanda/
-
-gestion des conflits
-http://garnertb.io/geonode-summit-2014/template#11

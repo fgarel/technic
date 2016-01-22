@@ -5,6 +5,35 @@ Comment communiquer entre le monde de la DAO, ou le format DXF est roi, et la mo
 
 La première des étapes pour répondre à cette question consiste déja à trouver la procédure permettant de passer les données d'un monde à l'autre.
 
+Conversion du dwg vers dxf
+==========================
+La conversion du dwg vers le format dxf peut être réalisé via un utilitaire appelé
+
+.. code::
+
+  TeighaFileConverter
+
+Cet utilitaire a été trouvé sur cette page
+
+.. code::
+
+  https://www.opendesign.com/guestfiles/TeighaFileConverter
+  https://download.opendesign.com/guestfiles/TeighaFileConverter/TeighaFileConverter_QT5_lnxX86_4.7dll.deb
+
+Une fois que cet utilitaire est installé grace à la commande :
+
+.. code::
+
+  dpkg -i TeighaFileConverter_QT5_lnxX86_4.7dll.deb
+
+Il est alors possible de lancer l'utilitaire grace à la commande
+
+.. code::
+
+  /usr/bin/TeighaFileConverter
+
+Conversion du dxf vers postgis
+==============================
 L'utilitaire ogr2ogr est maintenant capable de lire et écrire du dxf.
 
 Nous allons donc essayer cet outil dans le cas d'un import de données du DXF vers PostGIS, puis nous allons tester ce même outil pour exporter les données de PostGIS vers le format DXF.
