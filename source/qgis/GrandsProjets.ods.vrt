@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="GrandsProjets">
+        <SrcDataSource relativeToVRT="1">GrandsProjets.ods</SrcDataSource>
+        <!--Header=True-->
+        <SrcSql dialect="sqlite">SELECT * FROM 'Feuille1' LIMIT 57 OFFSET 1</SrcSql>
+        <Field name="Fiche_Projet" src="Field1" type="String"/>
+        <Field name="EluPilote" src="Field2" type="String"/>
+        <Field name="ElusAssocies" src="Field3" type="String"/>
+        <Field name="ServicePilote_Agent" src="Field4" type="String"/>
+        <Field name="ServicesAssocies_Partenaires" src="Field5" type="String"/>
+        <Field name="EnjeuxDuProjet" src="Field6" type="String"/>
+        <Field name="GouvernanceCopil" src="Field7" type="String"/>
+        <Field name="GouvernanceCotech" src="Field8" type="String"/>
+        <Field name="Calendrier_2016_S1" src="Field9" type="String"/>
+        <Field name="Calendrier_2016_S2" src="Field10" type="String"/>
+        <Field name="Calendrier_2017_S1" src="Field11" type="String"/>
+        <Field name="Calendrier_2017_S2" src="Field12" type="String"/>
+        <Field name="Calendrier_2018_S1" src="Field13" type="String"/>
+        <Field name="Calendrier_2018_S2" src="Field14" type="String"/>
+        <Field name="Calendrier_2019_S1" src="Field15" type="String"/>
+        <Field name="Calendrier_2019_S2" src="Field16" type="String"/>
+        <Field name="Calendrier_2020_S1" src="Field17" type="String"/>
+        <Field name="Calendrier_2020_S2" src="Field18" type="String"/>
+        <Field name="Calendrier_2021_S1" src="Field19" type="String"/>
+        <Field name="Calendrier_2021_S2" src="Field20" type="String"/>
+        <Field name="Calendrier_2022_S1" src="Field21" type="String"/>
+        <Field name="Calendrier_2022_S2" src="Field22" type="String"/>
+        <Field name="JalonsDecisionnel" src="Field23" type="String"/>
+        <Field name="ImpactSurLesAutresProjectsDuMandat" src="Field24" type="String"/>
+        <Field name="Depenses" src="Field25" type="String"/>
+        <Field name="Recettes" src="Field26" type="String"/>
+        <Field name="Risques" src="Field27" type="String"/>
+        <Field name="ValidationActeesEnInstance" src="Field28" type="String"/>
+        <Field name="Visuel_Plan1" src="Field29" type="String"/>
+        <Field name="Visuel_Plan2" src="Field30" type="String"/>
+        <Field name="Visuel1" src="Field31" type="String"/>
+        <Field name="Visuel2" src="Field32" type="String"/>
+        <Field name="Observations" src="Field33" type="String"/>
+        <Field name="Field34" src="Field34" type="String"/>
+        <Field name="Field35" src="Field35" type="String"/>
+        <Field name="Field36" src="Field36" type="String"/>
+        <Field name="Field37" src="Field37" type="String"/>
+        <Field name="Field38" src="Field38" type="String"/>
+        <Field name="Field39" src="Field39" type="String"/>
+        <Field name="Field40" src="Field40" type="String"/>
+        <Field name="Field41" src="Field41" type="String"/>
+        <Field name="EluPilote" src="Field42" type="String"/>
+        <Field name="ElusAssocies" src="Field43" type="String"/>
+        <Field name="ServicePilote_Agent" src="Field44" type="String"/>
+        <Field name="ServicesAssocies_Partenaires" src="Field45" type="String"/>
+        <Field name="EnjeuxDuProjet" src="Field46" type="String"/>
+        <Field name="GouvernanceCopil" src="Field47" type="String"/>
+        <Field name="GouvernanceCotech" src="Field48" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

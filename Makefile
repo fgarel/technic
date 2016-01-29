@@ -152,8 +152,8 @@ slideshov:
 	# index ( attention  à la directive include )
 	#$(HOVERCRAFT) source/index.rst $(BUILDDIR)/slideshov
 	# geogig_hovercraft
-	$(HOVERCRAFT) source/geogig/geogig_hovercraft.rst $(BUILDDIR)/slideshov
-	cp $(BUILDDIR)/slideshov/index.html $(BUILDDIR)/slideshov/geogig_hovercraft.html
+	$(HOVERCRAFT) source/geogig/geogig_hov.rst $(BUILDDIR)/slideshov
+	cp $(BUILDDIR)/slideshov/index.html $(BUILDDIR)/slideshov/geogig_hov.html
 	@echo "slides finished. The HTML slides are in $(BUILDDIR)/slideshov."
 
 text:
