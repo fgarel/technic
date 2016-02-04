@@ -3,7 +3,7 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="GrandsProjets">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="GrandsProjets">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="GrandsProjets20160129162047687" name="GrandsProjets">
         <customproperties/>
@@ -11,11 +11,8 @@
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="GrandsProjets20160129151246674" name="GrandsProjets">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="GrandsProjets20160129142852393" name="GrandsProjets">
-        <customproperties/>
-      </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Fdp">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Fdp">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho201320160129141302997" name="ortho2013">
         <customproperties/>
@@ -65,13 +62,12 @@
     <custom-order enabled="0">
       <item>scan2520160129141241597</item>
       <item>ortho201320160129141302997</item>
-      <item>GrandsProjets20160129142852393</item>
       <item>GrandsProjets20160129151246674</item>
       <item>GrandsProjets20160129162047687</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="GrandsProjets">
+    <legendgroup open="true" checked="Qt::Checked" name="GrandsProjets">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="GrandsProjets" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="GrandsProjets20160129162047687" visible="1"/>
@@ -82,13 +78,8 @@
           <legendlayerfile isInOverview="0" layerid="GrandsProjets20160129151246674" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="GrandsProjets" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="GrandsProjets20160129142852393" visible="0"/>
-        </filegroup>
-      </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Fdp">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fdp">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2013" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="ortho201320160129141302997" visible="1"/>
@@ -101,298 +92,418 @@
       </legendlayer>
     </legendgroup>
   </legend>
-  <projectlayers layercount="5">
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>GrandsProjets20160129142852393</id>
-      <datasource>dbname='origine' host=VLR6180X port=5432 user='Fred' password='Fred' sslmode=disable key='id' srid=2154 type=MultiPolygon table="public"."GrandsProjets" (geom) sql=</datasource>
-      <title></title>
-      <abstract></abstract>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>GrandsProjets</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>145</srsid>
-          <srid>2154</srid>
-          <authid>EPSG:2154</authid>
-          <description>RGF93 / Lambert-93</description>
-          <projectionacronym>lcc</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="System">postgres</provider>
-      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
-      <vectorjoins/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="attribute4">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="id1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cout">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="date_trava">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="55,164,161,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties>
-        <property key="labeling" value="pal"/>
-        <property key="labeling/addDirectionSymbol" value="false"/>
-        <property key="labeling/angleOffset" value="0"/>
-        <property key="labeling/blendMode" value="0"/>
-        <property key="labeling/bufferBlendMode" value="0"/>
-        <property key="labeling/bufferColorA" value="255"/>
-        <property key="labeling/bufferColorB" value="255"/>
-        <property key="labeling/bufferColorG" value="255"/>
-        <property key="labeling/bufferColorR" value="255"/>
-        <property key="labeling/bufferDraw" value="false"/>
-        <property key="labeling/bufferJoinStyle" value="64"/>
-        <property key="labeling/bufferNoFill" value="false"/>
-        <property key="labeling/bufferSize" value="1"/>
-        <property key="labeling/bufferSizeInMapUnits" value="false"/>
-        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/bufferTransp" value="0"/>
-        <property key="labeling/centroidInside" value="false"/>
-        <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/decimals" value="3"/>
-        <property key="labeling/displayAll" value="false"/>
-        <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
-        <property key="labeling/distMapUnitMaxScale" value="0"/>
-        <property key="labeling/distMapUnitMinScale" value="0"/>
-        <property key="labeling/drawLabels" value="true"/>
-        <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value=" concat( &quot;travaux&quot;,'\n', &quot;cout&quot; ,'\n', &quot;date_trava&quot; )"/>
-        <property key="labeling/fitInPolygonOnly" value="false"/>
-        <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Tinos for Powerline"/>
-        <property key="labeling/fontItalic" value="false"/>
-        <property key="labeling/fontLetterSpacing" value="0"/>
-        <property key="labeling/fontLimitPixelSize" value="false"/>
-        <property key="labeling/fontMaxPixelSize" value="10000"/>
-        <property key="labeling/fontMinPixelSize" value="3"/>
-        <property key="labeling/fontSize" value="11"/>
-        <property key="labeling/fontSizeInMapUnits" value="true"/>
-        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/fontStrikeout" value="false"/>
-        <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="50"/>
-        <property key="labeling/fontWordSpacing" value="0"/>
-        <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
-        <property key="labeling/labelOffsetInMapUnits" value="true"/>
-        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/labelPerPart" value="false"/>
-        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
-        <property key="labeling/limitNumLabels" value="false"/>
-        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
-        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
-        <property key="labeling/maxNumLabels" value="2000"/>
-        <property key="labeling/mergeLines" value="false"/>
-        <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="1"/>
-        <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
-        <property key="labeling/obstacle" value="true"/>
-        <property key="labeling/obstacleFactor" value="1"/>
-        <property key="labeling/obstacleType" value="0"/>
-        <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="1"/>
-        <property key="labeling/placementFlags" value="10"/>
-        <property key="labeling/plussign" value="false"/>
-        <property key="labeling/preserveRotation" value="true"/>
-        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
-        <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
-        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-        <property key="labeling/repeatDistanceUnit" value="1"/>
-        <property key="labeling/reverseDirectionSymbol" value="false"/>
-        <property key="labeling/rightDirectionSymbol" value=">"/>
-        <property key="labeling/scaleMax" value="10000000"/>
-        <property key="labeling/scaleMin" value="1"/>
-        <property key="labeling/scaleVisibility" value="false"/>
-        <property key="labeling/shadowBlendMode" value="6"/>
-        <property key="labeling/shadowColorB" value="0"/>
-        <property key="labeling/shadowColorG" value="0"/>
-        <property key="labeling/shadowColorR" value="0"/>
-        <property key="labeling/shadowDraw" value="false"/>
-        <property key="labeling/shadowOffsetAngle" value="135"/>
-        <property key="labeling/shadowOffsetDist" value="1"/>
-        <property key="labeling/shadowOffsetGlobal" value="true"/>
-        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowOffsetUnits" value="1"/>
-        <property key="labeling/shadowRadius" value="1.5"/>
-        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
-        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
-        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-        <property key="labeling/shadowRadiusUnits" value="1"/>
-        <property key="labeling/shadowScale" value="100"/>
-        <property key="labeling/shadowTransparency" value="30"/>
-        <property key="labeling/shadowUnder" value="0"/>
-        <property key="labeling/shapeBlendMode" value="0"/>
-        <property key="labeling/shapeBorderColorA" value="255"/>
-        <property key="labeling/shapeBorderColorB" value="128"/>
-        <property key="labeling/shapeBorderColorG" value="128"/>
-        <property key="labeling/shapeBorderColorR" value="128"/>
-        <property key="labeling/shapeBorderWidth" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeBorderWidthUnits" value="2"/>
-        <property key="labeling/shapeDraw" value="true"/>
-        <property key="labeling/shapeFillColorA" value="255"/>
-        <property key="labeling/shapeFillColorB" value="255"/>
-        <property key="labeling/shapeFillColorG" value="255"/>
-        <property key="labeling/shapeFillColorR" value="255"/>
-        <property key="labeling/shapeJoinStyle" value="64"/>
-        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeOffsetUnits" value="2"/>
-        <property key="labeling/shapeOffsetX" value="0"/>
-        <property key="labeling/shapeOffsetY" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeRadiiUnits" value="1"/>
-        <property key="labeling/shapeRadiiX" value="0"/>
-        <property key="labeling/shapeRadiiY" value="0"/>
-        <property key="labeling/shapeRotation" value="0"/>
-        <property key="labeling/shapeRotationType" value="0"/>
-        <property key="labeling/shapeSVGFile" value=""/>
-        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
-        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-        <property key="labeling/shapeSizeType" value="0"/>
-        <property key="labeling/shapeSizeUnits" value="2"/>
-        <property key="labeling/shapeSizeX" value="0"/>
-        <property key="labeling/shapeSizeY" value="0"/>
-        <property key="labeling/shapeTransparency" value="6"/>
-        <property key="labeling/shapeType" value="2"/>
-        <property key="labeling/textColorA" value="255"/>
-        <property key="labeling/textColorB" value="0"/>
-        <property key="labeling/textColorG" value="0"/>
-        <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
-        <property key="labeling/upsidedownLabels" value="0"/>
-        <property key="labeling/wrapChar" value=""/>
-        <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
-      </customproperties>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>[%concat( '&lt;h3>',"travaux",'&lt;/h3>', "cout" ,'\n', "date_trava" )%]</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Étiquette"/>
-        <family fieldname="" name="Ubuntu"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
-          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" color="#000000" label=""/>
-        </DiagramCategory>
-      </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform>.</editform>
-      <editforminit/>
-      <featformsuppress>0</featformsuppress>
-      <annotationform>.</annotationform>
-      <editorlayout>generatedlayout</editorlayout>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions>
-        <actionsetting action="echo &quot;[% &quot;MY_FIELD&quot; %]&quot;" icon="" capture="1" type="0" name="Affiche la valeur de l'attribut"/>
-        <actionsetting action="ogr2ogr -f &quot;ESRI Shapefile&quot; &quot;[% &quot;OUTPUT_PATH&quot; %]&quot; &quot;[% &quot;INPUT_FILE&quot; %]&quot;" icon="" capture="1" type="0" name="Lancer une application"/>
-        <actionsetting action="QtGui.QMessageBox.information(None, &quot;Feature id&quot;, &quot;feature id is [% $id %]&quot;)" icon="" capture="0" type="1" name="Récupère l'id de l'entité"/>
-        <actionsetting action="QtGui.QMessageBox.information(None, &quot;Current field's value&quot;, &quot;[% $currentfield %]&quot;)" icon="" capture="0" type="1" name="Valeur du champ sélectionné (Outil d'identification des entités) "/>
-        <actionsetting action="QtGui.QMessageBox.information(None, &quot;Clicked coords&quot;, &quot;layer: [% $layerid %]\ncoords: ([% $clickx %],[% $clicky %])&quot;)" icon="" capture="0" type="1" name="Coordonées du clic (outil d'exécution d'action sur entité) "/>
-        <actionsetting action="[% &quot;PATH&quot; %]" icon="" capture="0" type="5" name="Ouvrir fichier"/>
-        <actionsetting action="http://www.google.com/search?q=[% &quot;ATTRIBUTE&quot; %]" icon="" capture="0" type="5" name="Recherche web basée sur la valeur de l'attribut"/>
-      </attributeactions>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="attribute4">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="id1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="cout">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="date_trava">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-      </edittypes>
-    </maplayer>
+  <Composer title="A4_Portrait" visible="1">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5224661.14223942998796701" xmin="1378592.27340794401243329" ymax="5226661.14224146958440542" xmax="1380592.27340998407453299"/>
+        <LayerSet>
+          <Layer>GrandsProjets20160129162047687</Layer>
+          <Layer>scan2520160129141241597</Layer>
+        </LayerSet>
+        <LayerStyles>
+          <LayerStyle layerid="GrandsProjets20160129162047687">
+            <qgis version="2.12.3-Lyon" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+              <edittypes>
+                <edittype widgetv2type="TextEdit" name="Fiche_Projet">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="EluPilote">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ElusAssocies">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ServicePilote_Agent">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ServicesAssocies_Partenaires">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="EnjeuxDuProjet">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="GouvernanceCopil">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="GouvernanceCotech">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2016_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2016_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2017_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2017_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2018_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2018_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2019_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2019_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2020_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2020_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2021_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2021_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2022_S1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Calendrier_2022_S2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="JalonsDecisionnel">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ImpactSurLesAutresProjectsDuMandat">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Depenses">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Recettes">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Risques">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ValidationActeesEnInstance">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Visuel_Plan1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Visuel_Plan2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Visuel1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Visuel2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Observations">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field34">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field35">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field36">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field37">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field38">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field39">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field40">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Field41">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="EluPilote_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ElusAssocies_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ServicePilote_Agent_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ServicesAssocies_Partenaires_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="EnjeuxDuProjet_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="GouvernanceCopil_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="GouvernanceCotech_1">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+              </edittypes>
+              <editform/>
+              <editforminit/>
+              <featformsuppress>0</featformsuppress>
+              <annotationform/>
+              <editorlayout>generatedlayout</editorlayout>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <attributeactions/>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle layerid="scan2520160129141241597">
+            <qgis version="2.12.3-Lyon" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
+              <pipe>
+                <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+                  <rasterTransparency/>
+                </rasterrenderer>
+                <brightnesscontrast brightness="0" contrast="0"/>
+                <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+                <rasterresampler maxOversampling="2"/>
+              </pipe>
+              <blendMode>0</blendMode>
+            </qgis>
+          </LayerStyle>
+        </LayerStyles>
+        <Grid/>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.85062" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="80" outlineWidth="0.3" excludeFromExports="0" uuid="{be8b0a91-72d4-4167-913c-d7f17c0f8e5e}" height="80" itemRotation="0" frame="false" pagex="10">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5225461.09070337750017643" xmin="1379392.2734087600838393" ymax="5225861.09070378541946411" xmax="1379792.27340916800312698"/>
+        <LayerSet>
+          <Layer>GrandsProjets20160129162047687</Layer>
+          <Layer>GrandsProjets20160129151246674</Layer>
+          <Layer>ortho201320160129141302997</Layer>
+        </LayerSet>
+        <Grid/>
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.85062" positionMode="0" positionLock="false" x="100" y="10" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="80" outlineWidth="0.3" excludeFromExports="0" uuid="{efe2d6cb-8d9d-475d-b623-d77ecb548c30}" height="80" itemRotation="0" frame="false" pagex="100">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="false" featureFilter="" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="GrandsProjets20160129151246674" composerMap="-1" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+        <headerFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        <displayColumns>
+          <column width="0" vAlignment="128" attribute="id" sortByRank="0" hAlignment="1" heading="id" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="attribute4" sortByRank="0" hAlignment="1" heading="attribute4" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="id1" sortByRank="0" hAlignment="1" heading="id1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="travaux" sortByRank="0" hAlignment="1" heading="travaux" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="cout" sortByRank="0" hAlignment="1" heading="cout" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="date_trava" sortByRank="0" hAlignment="1" heading="date_trava" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_EluPilote" sortByRank="0" hAlignment="1" heading="GrandsProjets_EluPilote" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ElusAssocies" sortByRank="0" hAlignment="1" heading="GrandsProjets_ElusAssocies" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ServicePilote_Agent" sortByRank="0" hAlignment="1" heading="GrandsProjets_ServicePilote_Agent" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ServicesAssocies_Partenaires" sortByRank="0" hAlignment="1" heading="GrandsProjets_ServicesAssocies_Partenaires" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_EnjeuxDuProjet" sortByRank="0" hAlignment="1" heading="GrandsProjets_EnjeuxDuProjet" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_GouvernanceCopil" sortByRank="0" hAlignment="1" heading="GrandsProjets_GouvernanceCopil" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_GouvernanceCotech" sortByRank="0" hAlignment="1" heading="GrandsProjets_GouvernanceCotech" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2016_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2016_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2016_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2016_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2017_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2017_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2017_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2017_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2018_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2018_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2018_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2018_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2019_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2019_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2019_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2019_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2020_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2020_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2020_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2020_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2021_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2021_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2021_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2021_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2022_S1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2022_S1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Calendrier_2022_S2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Calendrier_2022_S2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_JalonsDecisionnel" sortByRank="0" hAlignment="1" heading="GrandsProjets_JalonsDecisionnel" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" sortByRank="0" hAlignment="1" heading="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Depenses" sortByRank="0" hAlignment="1" heading="GrandsProjets_Depenses" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Recettes" sortByRank="0" hAlignment="1" heading="GrandsProjets_Recettes" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Risques" sortByRank="0" hAlignment="1" heading="GrandsProjets_Risques" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ValidationActeesEnInstance" sortByRank="0" hAlignment="1" heading="GrandsProjets_ValidationActeesEnInstance" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Visuel_Plan1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Visuel_Plan1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Visuel_Plan2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Visuel_Plan2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Visuel1" sortByRank="0" hAlignment="1" heading="GrandsProjets_Visuel1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Visuel2" sortByRank="0" hAlignment="1" heading="GrandsProjets_Visuel2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Observations" sortByRank="0" hAlignment="1" heading="GrandsProjets_Observations" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field34" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field34" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field35" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field35" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field36" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field36" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field37" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field37" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field38" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field38" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field39" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field39" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field40" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field40" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_Field41" sortByRank="0" hAlignment="1" heading="GrandsProjets_Field41" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_EluPilote_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_EluPilote_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ElusAssocies_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_ElusAssocies_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ServicePilote_Agent_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_ServicePilote_Agent_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_ServicesAssocies_Partenaires_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_ServicesAssocies_Partenaires_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_EnjeuxDuProjet_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_EnjeuxDuProjet_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_GouvernanceCopil_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_GouvernanceCopil_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandsProjets_GouvernanceCotech_1" sortByRank="0" hAlignment="1" heading="GrandsProjets_GouvernanceCotech_1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+        </displayColumns>
+        <cellStyles>
+          <oddColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <oddRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <headerRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+        </cellStyles>
+        <ComposerFrame sectionWidth="3352.78" sectionHeight="79.9732" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="97.2647" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="8.10539" y="97.2647" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="3352.78" outlineWidth="0.3" excludeFromExports="0" uuid="{9be4a54f-e501-42bf-b82c-4b0fcc73e801}" height="79.9732" itemRotation="0" frame="false" pagex="8.10539">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <customproperties/>
+      </ComposerAttributeTableV2>
+      <customproperties/>
+    </Composition>
+    <Atlas hideCoverage="false" coverageLayer="GrandsProjets20160129151246674" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="travaux"/>
+  </Composer>
+  <projectlayers layercount="4">
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>GrandsProjets20160129151246674</id>
       <datasource>dbname='origine' host=VLR6180X port=5432 user='Fred' password='Fred' sslmode=disable key='id' srid=2154 type=MultiPolygon table="public"."GrandsProjets" (geom) sql=</datasource>
@@ -743,7 +854,7 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -1098,10 +1209,10 @@
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1388,27 +1499,22 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>GrandsProjets20160129142852393</value>
         <value>GrandsProjets20160129151246674</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
         <value>disabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>2</value>
-        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
-        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
-        <value>0.000000</value>
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
