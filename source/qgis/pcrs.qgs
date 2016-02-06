@@ -3,7 +3,7 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="dxf_multilinestring20160203181447809" name="dxf_multilinestring">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="dxf_multilinestring20160203181447809" name="dxf_multilinestring">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="dxf_multipolygon20160203181447841" name="dxf_multipolygon">
@@ -17,10 +17,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1375325.85503261187113822</xmin>
-      <ymin>5226693.61556977685540915</ymin>
-      <xmax>1375348.18086269893683493</xmax>
-      <ymax>5226712.23947102483361959</ymax>
+      <xmin>1375172.91034974460490048</xmin>
+      <ymin>5226741.44429941009730101</ymin>
+      <xmax>1375262.21357240085490048</xmax>
+      <ymax>5226838.10054941009730101</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -54,8 +54,8 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dxf_multilinestring" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="dxf_multilinestring" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="dxf_multilinestring20160203181447809" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -1131,8 +1131,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1313,13 +1311,14 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1559,8 +1558,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1741,13 +1738,14 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1885,14 +1883,17 @@
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/dataDefined/Family" value="0~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')~~"/>
+        <property key="labeling/dataDefined/Family" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
+        <property key="labeling/dataDefined/FontLetterSpacing" value="1~~1~~-- l'espace entre lettre est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') * 0.05~~"/>
         <property key="labeling/dataDefined/FontSizeUnit" value="0~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
+        <property key="labeling/dataDefined/FontWordSpacing" value="1~~1~~regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') * 0.05~~"/>
+        <property key="labeling/dataDefined/OffsetXY" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.5&#xa;--regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.25&#xa;&#xa;-- le décalage est basé sur s:&#xa;to_real( regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') * -0.05) || ',' || to_real( regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *0.30)&#xa;--to_real( regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5) || ',' || to_real( regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5)&#xa;--'1.5,1.47'&#xa;-- regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5 )&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
         <property key="labeling/dataDefined/Rotation" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
-        <property key="labeling/dataDefined/Size" value="1~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.25&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
+        <property key="labeling/dataDefined/Size" value="1~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.33&#xa;--regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.25&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="false"/>
         <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distInMapUnits" value="true"/>
         <property key="labeling/distMapUnitMaxScale" value="0"/>
         <property key="labeling/distMapUnitMinScale" value="0"/>
         <property key="labeling/drawLabels" value="true"/>
@@ -1900,7 +1901,7 @@
         <property key="labeling/fieldName" value="text"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Inconsolata for Powerline"/>
+        <property key="labeling/fontFamily" value="Arial"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -1912,7 +1913,7 @@
         <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
-        <property key="labeling/fontWeight" value="63"/>
+        <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
         <property key="labeling/isExpression" value="false"/>
@@ -1927,20 +1928,20 @@
         <property key="labeling/maxNumLabels" value="2000"/>
         <property key="labeling/mergeLines" value="false"/>
         <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="1"/>
+        <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Medium"/>
+        <property key="labeling/namedStyle" value="Regular"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placement" value="1"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/preserveRotation" value="true"/>
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/quadOffset" value="2"/>
         <property key="labeling/repeatDistance" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
@@ -2045,13 +2046,14 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2113,8 +2115,8 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>

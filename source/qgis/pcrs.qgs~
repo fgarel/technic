@@ -6,7 +6,7 @@
     <layer-tree-layer expanded="0" checked="Qt::Checked" id="dxf_multilinestring20160203181447809" name="dxf_multilinestring">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="dxf_multipolygon20160203181447841" name="dxf_multipolygon">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="dxf_multipolygon20160203181447841" name="dxf_multipolygon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Checked" id="dxf_point20160203181447852" name="dxf_point">
@@ -17,10 +17,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1375199.64404643792659044</xmin>
-      <ymin>5226740.28497097734361887</ymin>
-      <xmax>1375244.29570661205798388</xmax>
-      <ymax>5226777.53277347330003977</ymax>
+      <xmin>1375243.79582963534630835</xmin>
+      <ymin>5226663.86148489639163017</ymin>
+      <xmax>1375288.44744096347130835</xmax>
+      <ymax>5226712.18960989639163017</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -59,8 +59,8 @@
         <legendlayerfile isInOverview="0" layerid="dxf_multilinestring20160203181447809" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dxf_multipolygon" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="dxf_multipolygon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="dxf_multipolygon20160203181447841" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -186,7 +186,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="87,95,207,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -205,7 +205,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="111,150,240,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -224,7 +224,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="191,203,109,255"/>
+              <prop k="line_color" v="40,120,184,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -243,7 +243,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="86,221,66,255"/>
+              <prop k="line_color" v="40,120,184,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -262,7 +262,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="95,202,211,255"/>
+              <prop k="line_color" v="194,6,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -281,7 +281,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="17,57,233,255"/>
+              <prop k="line_color" v="194,6,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -319,7 +319,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="179,100,215,255"/>
+              <prop k="line_color" v="51,160,44,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -338,7 +338,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="173,239,58,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -357,7 +357,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="187,108,206,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -376,7 +376,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="146,208,123,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -395,7 +395,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="209,68,219,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -414,7 +414,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="57,202,125,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -433,7 +433,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="201,18,171,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -452,7 +452,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="17,236,200,255"/>
+              <prop k="line_color" v="51,160,44,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -471,7 +471,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="51,200,66,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -490,7 +490,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="93,230,175,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -509,7 +509,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="202,20,14,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -528,7 +528,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="218,162,65,255"/>
+              <prop k="line_color" v="255,203,129,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -547,7 +547,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="206,117,58,255"/>
+              <prop k="line_color" v="255,203,129,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -566,7 +566,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="64,160,207,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -585,7 +585,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="65,32,211,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -604,7 +604,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="178,109,230,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -623,7 +623,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="162,217,106,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -642,7 +642,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="210,103,64,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -661,7 +661,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="151,94,226,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -680,7 +680,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="52,236,230,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -699,7 +699,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="18,111,233,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -718,7 +718,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="202,235,102,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -737,7 +737,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="214,214,57,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -756,7 +756,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="203,105,151,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -775,7 +775,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="240,143,39,255"/>
+              <prop k="line_color" v="160,160,160,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -794,7 +794,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="117,213,115,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -813,7 +813,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="128,122,214,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -832,7 +832,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="213,41,59,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -851,7 +851,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="103,194,216,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -870,7 +870,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="136,192,238,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -889,7 +889,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="84,25,220,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -908,7 +908,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="215,120,175,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -927,7 +927,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="95,209,23,255"/>
+              <prop k="line_color" v="186,229,189,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -946,7 +946,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="212,79,55,255"/>
+              <prop k="line_color" v="186,229,189,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -965,7 +965,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="208,16,199,255"/>
+              <prop k="line_color" v="198,198,198,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -984,7 +984,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="221,28,93,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1022,7 +1022,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="230,109,135,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1041,7 +1041,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="72,230,186,255"/>
+              <prop k="line_color" v="203,93,45,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1060,7 +1060,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="217,92,180,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1079,7 +1079,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="89,201,128,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1098,7 +1098,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="56,206,91,255"/>
+              <prop k="line_color" v="40,120,184,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -1131,8 +1131,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1313,13 +1311,14 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1424,7 +1423,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="177,214,101,255"/>
+              <prop k="color" v="255,203,129,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1439,7 +1438,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="59,207,180,255"/>
+              <prop k="color" v="142,223,136,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1499,7 +1498,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="5">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="125,88,205,255"/>
+              <prop k="color" v="145,242,138,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1514,7 +1513,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="6">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="104,227,112,255"/>
+              <prop k="color" v="198,198,198,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1559,8 +1558,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1741,13 +1738,14 @@
       <SingleCategoryDiagramRenderer diagramType="Pie">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -1783,7 +1781,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>dxf_point20160203181447852</id>
       <datasource>dbname='origine' host=localhost port=5432 user='Fred' password='Fred' sslmode=disable key='ogc_fid' srid=3946 type=Point table="public"."dxf_point" (wkb_geometry) sql=</datasource>
       <title></title>
@@ -1842,7 +1840,7 @@
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="63,138,13,255"/>
+              <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
@@ -1854,7 +1852,7 @@
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="Pixel"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="0.1"/>
+              <prop k="size" v="1.1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="Pixel"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -1885,14 +1883,16 @@
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/dataDefined/Family" value="0~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')~~"/>
+        <property key="labeling/dataDefined/Family" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
+        <property key="labeling/dataDefined/FontLetterSpacing" value="1~~1~~-- l'espace entre lettre est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') * 0.05~~"/>
         <property key="labeling/dataDefined/FontSizeUnit" value="0~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
-        <property key="labeling/dataDefined/Rotation" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
-        <property key="labeling/dataDefined/Size" value="1~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.5&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.([0-9]+))')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
+        <property key="labeling/dataDefined/OffsetXY" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.5&#xa;--regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.25&#xa;&#xa;-- le décalage est basé sur s:&#xa;to_real( regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') * -0.05) || ',' || to_real( regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *0.30)&#xa;--to_real( regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5) || ',' || to_real( regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5)&#xa;--'1.5,1.47'&#xa;-- regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.5 )&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
+        <property key="labeling/dataDefined/Rotation" value="1~~1~~-- la taille est s:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))')&#xa;&#xa;-- la rotation est a:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)')~~"/>
+        <property key="labeling/dataDefined/Size" value="1~~1~~-- la taille est s:&#xa;regexp_substr(  &quot;ogr_style&quot; ,'s:([0-9]+.([0-9]+))') *1.33&#xa;--regexp_substr(  'LABEL(f:&quot;Arial&quot;,t:&quot;PLAN TOPOGRAPHIQUE&quot;,a:2.57,s:1.47g,c:#000000)' ,'s:([0-9]+.([0-9]+))') *1.25&#xa;&#xa;-- la rotation est a:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'a:([0-9]+.?[0-9]+),')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'a:([0-9]+.?[0-9]+),')&#xa;&#xa;-- la couleur est c:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'c:(#[0-9]+.([0-9]+))')&#xa;&#xa;-- la fonte est f:&#xa;--regexp_substr(  &quot;ogr_style&quot; ,'f:&quot;([a-zA-Z]+)&quot;')&#xa;--regexp_substr('LABEL(f:&quot;Arial&quot;,t:&quot;1375.&quot;,a:90.2,s:0.4g,c:#000000)', 'f:&quot;([a-zA-Z]+)&quot;')~~"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="false"/>
         <property key="labeling/dist" value="0"/>
-        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distInMapUnits" value="true"/>
         <property key="labeling/distMapUnitMaxScale" value="0"/>
         <property key="labeling/distMapUnitMinScale" value="0"/>
         <property key="labeling/drawLabels" value="true"/>
@@ -1900,7 +1900,7 @@
         <property key="labeling/fieldName" value="text"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Hack"/>
+        <property key="labeling/fontFamily" value="Arial"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -1927,20 +1927,20 @@
         <property key="labeling/maxNumLabels" value="2000"/>
         <property key="labeling/mergeLines" value="false"/>
         <property key="labeling/minFeatureSize" value="0"/>
-        <property key="labeling/multilineAlign" value="1"/>
+        <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Bold"/>
+        <property key="labeling/namedStyle" value="Regular"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placement" value="1"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/preserveRotation" value="true"/>
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/quadOffset" value="2"/>
         <property key="labeling/repeatDistance" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
@@ -2043,15 +2043,16 @@
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" showAll="1"/>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2113,8 +2114,8 @@
       <DegreeFormat type="QString">D</DegreeFormat>
     </PositionPrecision>
     <WCSUrl type="QString"></WCSUrl>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <Measure>
