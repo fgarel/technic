@@ -1,0 +1,31 @@
+environnement de Travail
+
+1er Terminal
+~/Documents/install/source/geogig/
+
+utilitaire pour convertir dxf en postgis
+
+2d terminal
+~/Documents/technic/source/geogig/
+
+
+3ème terminal : documentation
+se mettre dans l'environemment virtuel ecriture_sphinx
+pew workon_ecriture_sphinx
+edition
+cd ~/Documents/technic/source/geogig/
+vi chapter01_hov.rst
+
+build
+cd ~/Documents/technic
+make slideshie
+make slideshov
+make html
+
+Visualitation du resultat
+file:///home/fred/Documents/technic/build/html/geogit/geogit.html
+file:///home/fred/Documents/technic/build/slideshie/geogit/geogig.html
+file:///home/fred/Documents/technic/build/slideshov/geogig_hov.html
+
+
+

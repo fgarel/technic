@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="Parcelles">
+        <SrcDataSource relativeToVRT="1">Parcelles.ods</SrcDataSource>
+        <!--Header=True-->
+        <SrcSql dialect="sqlite">SELECT * FROM 'Feuille1' LIMIT 4 OFFSET 1</SrcSql>
+        <Field name="Nom" src="Field1" type="String"/>
+        <Field name="Parcelle" src="Field2" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
