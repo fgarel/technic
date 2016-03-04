@@ -56,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Install'
-copyright = '2015, Frédéric Garel'
+project = 'Documentation Technique'
+copyright = '2016, Frédéric Garel'
 author = 'Frédéric Garel'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -210,13 +210,14 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Installdoc'
+htmlhelp_basename = 'DocTechnique'
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
@@ -232,7 +233,9 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Install.tex', 'Install Documentation',
+  (master_doc, 'documentationTechnique.tex', 'Documentation Technique',
+   'Frédéric Garel', 'manual'),
+  ('geogig/geogig', 'geogig.tex', 'Utilisation de geogig',
    'Frédéric Garel', 'manual'),
 ]
 
@@ -276,8 +279,11 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Install', 'Install Documentation',
-   author, 'Install', 'One line description of project.',
+  (master_doc, 'DocTechnique', 'Documentation Technique',
+   author, 'DocTechnique', 'One line description of project.',
+   'Miscellaneous'),
+  ('geogig/geogig', 'GeoGig', 'Documentation sur Geogig',
+   author, 'GeoGig', 'One line description of project.',
    'Miscellaneous'),
 ]
 

@@ -3,7 +3,7 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Cadastre">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="Cadastre">
       <customproperties/>
       <layer-tree-layer expanded="0" checked="Qt::Checked" id="Unités_foncières20160229181843888" name="Unités foncières">
         <customproperties/>
@@ -96,7 +96,10 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Parcelles20160301115738314" name="Parcelles">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ParcellesV20160302092907732" name="ParcellesV">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ParcellesExtrait20160302092616534" name="ParcellesExtrait">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho201320160301114812273" name="ortho2013">
@@ -110,10 +113,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1381691.39118654630146921</xmin>
-      <ymin>5226569.09727370738983154</ymin>
-      <xmax>1381847.54118654620833695</xmax>
-      <ymax>5226697.87727370858192444</ymax>
+      <xmin>1381484.64858654676936567</xmin>
+      <ymin>5226226.91642370633780956</ymin>
+      <xmax>1381796.94858654658310115</xmax>
+      <ymax>5226484.47642370872199535</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -142,6 +145,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Objets_ponctuels__étiquettes_20160229181843685"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Noms_de_voies20160229181842696"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Tronçons_de_route__étiquettes_20160229181843511"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ParcellesV20160302092907732"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Unités_foncières20160229181843888"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Voies__routes_et_chemins20160229181842653"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="Cours_d_eau20160229181843400"/>
@@ -198,12 +202,13 @@
       <item>Établissements_publics20160229181843843</item>
       <item>Unités_foncières20160229181843888</item>
       <item>ortho201320160301114812273</item>
-      <item>Parcelles20160301115738314</item>
       <item>scan2520160301120507257</item>
+      <item>ParcellesExtrait20160302092616534</item>
+      <item>ParcellesV20160302092907732</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="Cadastre">
+    <legendgroup open="false" checked="Qt::Checked" name="Cadastre">
       <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Unités foncières" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="Unités_foncières20160229181843888" visible="1"/>
@@ -355,9 +360,14 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Parcelles" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ParcellesV" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Parcelles20160301115738314" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ParcellesV20160302092907732" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ParcellesExtrait" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ParcellesExtrait20160302092616534" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2013" showFeatureCount="0">
@@ -388,7 +398,7 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="[% &quot;travaux&quot; %]" htmlState="0" halign="1">
+      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="[% attribute(  $currentfeature ,'idu')%]" htmlState="0" halign="1">
         <LabelFont description="Ubuntu,12,-1,5,63,1,0,0,0,0" style=""/>
         <FontColor red="0" blue="0" green="0"/>
         <ComposerItem pagey="10" page="1" id="Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="11" y="10" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="275" outlineWidth="0.3" excludeFromExports="0" uuid="{d0a37e34-548d-44c5-a28b-7da4a18a16da}" height="10" itemRotation="0" frame="false" pagex="11">
@@ -400,145 +410,9 @@
       <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5224848.64223962090909481" xmin="1378779.77340813539922237" ymax="5226473.64224127866327763" xmax="1380404.7734097926877439"/>
         <LayerSet>
-          <Layer>Parcelles20160301115738314</Layer>
           <Layer>scan2520160301120507257</Layer>
         </LayerSet>
         <LayerStyles>
-          <LayerStyle layerid="Parcelles20160301115738314">
-            <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
-              <edittypes>
-                <edittype widgetv2type="TextEdit" name="Nom">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-                <edittype widgetv2type="TextEdit" name="Parcelle">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-              </edittypes>
-              <annotationform>.</annotationform>
-              <excludeAttributesWMS/>
-              <excludeAttributesWFS/>
-              <attributeactions/>
-              <editform>.</editform>
-              <editforminit/>
-              <editforminitcodesource>0</editforminitcodesource>
-              <editforminitfilepath>.</editforminitfilepath>
-              <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
-
-Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
-
-Entrez le nom de la fonction dans le champ
-"Fonction d'initialisation Python"
-Voici un exemple à suivre:
-"""
-from PyQt4.QtGui import QWidget
-
-def my_form_open(dialog, layer, feature):
-⇥geom = feature.geometry()
-⇥control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-              <featformsuppress>0</featformsuppress>
-              <editorlayout>generatedlayout</editorlayout>
-              <widgets>
-                <widget name="Parcelles_annee">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_coar">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_codm">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_creat_date">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_indp">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_parcelle">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_section">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_subdsect">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_lot">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_object_rid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_ogc_fid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_supf">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex2">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_update_dat">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-              </widgets>
-              <conditionalstyles>
-                <rowstyles/>
-                <fieldstyles/>
-              </conditionalstyles>
-              <layerGeometryType>4</layerGeometryType>
-            </qgis>
-          </LayerStyle>
           <LayerStyle layerid="scan2520160301120507257">
             <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
               <pipe>
@@ -639,145 +513,9 @@ def my_form_open(dialog, layer, feature):
       <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225336.09070324990898371" xmin="1379267.27340863249264657" ymax="5225986.09070391301065683" xmax="1379917.2734092955943197"/>
         <LayerSet>
-          <Layer>Parcelles20160301115738314</Layer>
           <Layer>ortho201320160301114812273</Layer>
         </LayerSet>
         <LayerStyles>
-          <LayerStyle layerid="Parcelles20160301115738314">
-            <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
-              <edittypes>
-                <edittype widgetv2type="TextEdit" name="Nom">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-                <edittype widgetv2type="TextEdit" name="Parcelle">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-              </edittypes>
-              <annotationform>.</annotationform>
-              <excludeAttributesWMS/>
-              <excludeAttributesWFS/>
-              <attributeactions/>
-              <editform>.</editform>
-              <editforminit/>
-              <editforminitcodesource>0</editforminitcodesource>
-              <editforminitfilepath>.</editforminitfilepath>
-              <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
-
-Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
-
-Entrez le nom de la fonction dans le champ
-"Fonction d'initialisation Python"
-Voici un exemple à suivre:
-"""
-from PyQt4.QtGui import QWidget
-
-def my_form_open(dialog, layer, feature):
-⇥geom = feature.geometry()
-⇥control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-              <featformsuppress>0</featformsuppress>
-              <editorlayout>generatedlayout</editorlayout>
-              <widgets>
-                <widget name="Parcelles_annee">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_coar">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_codm">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_creat_date">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_indp">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_parcelle">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_section">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_subdsect">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_lot">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_object_rid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_ogc_fid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_supf">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex2">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_update_dat">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-              </widgets>
-              <conditionalstyles>
-                <rowstyles/>
-                <fieldstyles/>
-              </conditionalstyles>
-              <layerGeometryType>4</layerGeometryType>
-            </qgis>
-          </LayerStyle>
           <LayerStyle layerid="ortho201320160301114812273">
             <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
               <pipe>
@@ -898,7 +636,6 @@ def my_form_open(dialog, layer, feature):
           <Layer>Noms_de_voies20160229181842696</Layer>
           <Layer>Voies__routes_et_chemins20160229181842653</Layer>
           <Layer>Commune20160229181842542</Layer>
-          <Layer>Parcelles20160301115738314</Layer>
         </LayerSet>
         <LayerStyles>
           <LayerStyle layerid="Bornes20160229181843225">
@@ -5772,141 +5509,6 @@ def my_form_open(dialog, layer, feature):
                 <fieldstyles/>
               </conditionalstyles>
               <layerGeometryType>2</layerGeometryType>
-            </qgis>
-          </LayerStyle>
-          <LayerStyle layerid="Parcelles20160301115738314">
-            <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
-              <edittypes>
-                <edittype widgetv2type="TextEdit" name="Nom">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-                <edittype widgetv2type="TextEdit" name="Parcelle">
-                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-                </edittype>
-              </edittypes>
-              <annotationform>.</annotationform>
-              <excludeAttributesWMS/>
-              <excludeAttributesWFS/>
-              <attributeactions/>
-              <editform>.</editform>
-              <editforminit/>
-              <editforminitcodesource>0</editforminitcodesource>
-              <editforminitfilepath>.</editforminitfilepath>
-              <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
-
-Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
-
-Entrez le nom de la fonction dans le champ
-"Fonction d'initialisation Python"
-Voici un exemple à suivre:
-"""
-from PyQt4.QtGui import QWidget
-
-def my_form_open(dialog, layer, feature):
-⇥geom = feature.geometry()
-⇥control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-              <featformsuppress>0</featformsuppress>
-              <editorlayout>generatedlayout</editorlayout>
-              <widgets>
-                <widget name="Parcelles_annee">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_coar">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_codm">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_creat_date">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_indp">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_parcelle">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_section">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_subdsect">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_lot">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_object_rid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_ogc_fid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_supf">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex2">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_update_dat">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-              </widgets>
-              <conditionalstyles>
-                <rowstyles/>
-                <fieldstyles/>
-              </conditionalstyles>
-              <layerGeometryType>4</layerGeometryType>
             </qgis>
           </LayerStyle>
           <LayerStyle layerid="Parcelles__étiquettes_20160229181842999">
@@ -10135,7 +9737,8 @@ def my_form_open(dialog, layer, feature):
           <Layer>Noms_de_voies20160229181842696</Layer>
           <Layer>Voies__routes_et_chemins20160229181842653</Layer>
           <Layer>Commune20160229181842542</Layer>
-          <Layer>Parcelles20160301115738314</Layer>
+          <Layer>ParcellesV20160302092907732</Layer>
+          <Layer>ParcellesExtrait20160302092616534</Layer>
         </LayerSet>
         <LayerStyles>
           <LayerStyle layerid="Bornes20160229181843225">
@@ -14765,9 +14368,6 @@ def my_form_open(dialog, layer, feature):
                 <edittype widgetv2type="TextEdit" name="ogc_fid">
                   <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
-                <edittype widgetv2type="TextEdit" name="Parcelles_Nom">
-                  <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
-                </edittype>
               </edittypes>
               <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
                 <symbols>
@@ -15003,7 +14603,14 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
               <featformsuppress>0</featformsuppress>
               <editorlayout>generatedlayout</editorlayout>
-              <widgets/>
+              <widgets>
+                <widget name="Parcelles_Nom">
+                  <config>
+                    <option key="IsMultiline" value="false"/>
+                    <option key="UseHtml" value="false"/>
+                  </config>
+                </widget>
+              </widgets>
               <conditionalstyles>
                 <rowstyles/>
                 <fieldstyles/>
@@ -15011,7 +14618,7 @@ def my_form_open(dialog, layer, feature):
               <layerGeometryType>2</layerGeometryType>
             </qgis>
           </LayerStyle>
-          <LayerStyle layerid="Parcelles20160301115738314">
+          <LayerStyle layerid="ParcellesExtrait20160302092616534">
             <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" hasScaleBasedVisibilityFlag="0">
               <edittypes>
                 <edittype widgetv2type="TextEdit" name="Nom">
@@ -15021,14 +14628,312 @@ def my_form_open(dialog, layer, feature):
                   <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
                 </edittype>
               </edittypes>
-              <annotationform>.</annotationform>
+              <annotationform/>
               <excludeAttributesWMS/>
               <excludeAttributesWFS/>
               <attributeactions/>
-              <editform>.</editform>
+              <editform/>
               <editforminit/>
               <editforminitcodesource>0</editforminitcodesource>
-              <editforminitfilepath>.</editforminitfilepath>
+              <editforminitfilepath/>
+              <editforminitcode><![CDATA[]]></editforminitcode>
+              <featformsuppress>0</featformsuppress>
+              <editorlayout>generatedlayout</editorlayout>
+              <widgets/>
+              <conditionalstyles>
+                <rowstyles/>
+                <fieldstyles/>
+              </conditionalstyles>
+              <layerGeometryType>4</layerGeometryType>
+            </qgis>
+          </LayerStyle>
+          <LayerStyle layerid="ParcellesV20160302092907732">
+            <qgis version="2.14.0-Essen" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+              <edittypes>
+                <edittype widgetv2type="TextEdit" name="geo_parcelle">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="annee">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="object_rid">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="idu">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="geo_section">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="geo_subdsect">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="supf">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="geo_indp">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="coar">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="tex">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="tex2">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="codm">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="creat_date">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="update_dat">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="lot">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="ogc_fid">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Nom">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype widgetv2type="TextEdit" name="Parcelle">
+                  <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+              </edittypes>
+              <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+                <rules key="{4c28ecdd-091c-4f21-bbf7-1488f78b6b03}">
+                  <rule filter=" $id &lt;> $atlasfeatureid" key="{0bb16d62-6f65-4970-af79-e2071fa04923}" symbol="0" label="autres parcelle"/>
+                  <rule filter=" $id = $atlasfeatureid" key="{d64f0c96-9b28-42c4-8442-0c095637dbc8}" symbol="1" label="parcelle courante"/>
+                </rules>
+                <symbols>
+                  <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+                    <layer pass="0" class="SimpleFill" locked="0">
+                      <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                      <prop k="color" v="227,26,28,255"/>
+                      <prop k="joinstyle" v="bevel"/>
+                      <prop k="offset" v="0,0"/>
+                      <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                      <prop k="offset_unit" v="MM"/>
+                      <prop k="outline_color" v="227,26,28,255"/>
+                      <prop k="outline_style" v="solid"/>
+                      <prop k="outline_width" v="0.26"/>
+                      <prop k="outline_width_unit" v="MM"/>
+                      <prop k="style" v="solid"/>
+                    </layer>
+                  </symbol>
+                  <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+                    <layer pass="0" class="SimpleFill" locked="0">
+                      <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                      <prop k="color" v="58,21,194,255"/>
+                      <prop k="joinstyle" v="bevel"/>
+                      <prop k="offset" v="0,0"/>
+                      <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                      <prop k="offset_unit" v="MM"/>
+                      <prop k="outline_color" v="0,0,0,255"/>
+                      <prop k="outline_style" v="solid"/>
+                      <prop k="outline_width" v="0.26"/>
+                      <prop k="outline_width_unit" v="MM"/>
+                      <prop k="style" v="solid"/>
+                    </layer>
+                  </symbol>
+                </symbols>
+              </renderer-v2>
+              <labeling type="simple"/>
+              <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/angleOffset" value="0"/>
+                <property key="labeling/blendMode" value="0"/>
+                <property key="labeling/bufferBlendMode" value="0"/>
+                <property key="labeling/bufferColorA" value="255"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferDraw" value="false"/>
+                <property key="labeling/bufferJoinStyle" value="64"/>
+                <property key="labeling/bufferNoFill" value="false"/>
+                <property key="labeling/bufferSize" value="1"/>
+                <property key="labeling/bufferSizeInMapUnits" value="false"/>
+                <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+                <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+                <property key="labeling/bufferTransp" value="0"/>
+                <property key="labeling/centroidInside" value="false"/>
+                <property key="labeling/centroidWhole" value="false"/>
+                <property key="labeling/decimals" value="3"/>
+                <property key="labeling/displayAll" value="false"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/distMapUnitMaxScale" value="0"/>
+                <property key="labeling/distMapUnitMinScale" value="0"/>
+                <property key="labeling/drawLabels" value="false"/>
+                <property key="labeling/enabled" value="false"/>
+                <property key="labeling/fieldName" value=""/>
+                <property key="labeling/fitInPolygonOnly" value="false"/>
+                <property key="labeling/fontCapitals" value="0"/>
+                <property key="labeling/fontFamily" value="Ubuntu"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontLetterSpacing" value="0"/>
+                <property key="labeling/fontLimitPixelSize" value="false"/>
+                <property key="labeling/fontMaxPixelSize" value="10000"/>
+                <property key="labeling/fontMinPixelSize" value="3"/>
+                <property key="labeling/fontSize" value="11"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+                <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/fontWordSpacing" value="0"/>
+                <property key="labeling/formatNumbers" value="false"/>
+                <property key="labeling/isExpression" value="true"/>
+                <property key="labeling/labelOffsetInMapUnits" value="true"/>
+                <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+                <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+                <property key="labeling/limitNumLabels" value="false"/>
+                <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+                <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+                <property key="labeling/maxNumLabels" value="2000"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="0"/>
+                <property key="labeling/multilineAlign" value="0"/>
+                <property key="labeling/multilineHeight" value="1"/>
+                <property key="labeling/namedStyle" value="Medium Italic"/>
+                <property key="labeling/obstacle" value="true"/>
+                <property key="labeling/obstacleFactor" value="1"/>
+                <property key="labeling/obstacleType" value="0"/>
+                <property key="labeling/offsetType" value="0"/>
+                <property key="labeling/placeDirectionSymbol" value="0"/>
+                <property key="labeling/placement" value="1"/>
+                <property key="labeling/placementFlags" value="10"/>
+                <property key="labeling/plussign" value="false"/>
+                <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+                <property key="labeling/preserveRotation" value="true"/>
+                <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/quadOffset" value="4"/>
+                <property key="labeling/repeatDistance" value="0"/>
+                <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+                <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+                <property key="labeling/repeatDistanceUnit" value="1"/>
+                <property key="labeling/reverseDirectionSymbol" value="false"/>
+                <property key="labeling/rightDirectionSymbol" value=">"/>
+                <property key="labeling/scaleMax" value="10000000"/>
+                <property key="labeling/scaleMin" value="1"/>
+                <property key="labeling/scaleVisibility" value="false"/>
+                <property key="labeling/shadowBlendMode" value="6"/>
+                <property key="labeling/shadowColorB" value="0"/>
+                <property key="labeling/shadowColorG" value="0"/>
+                <property key="labeling/shadowColorR" value="0"/>
+                <property key="labeling/shadowDraw" value="false"/>
+                <property key="labeling/shadowOffsetAngle" value="135"/>
+                <property key="labeling/shadowOffsetDist" value="1"/>
+                <property key="labeling/shadowOffsetGlobal" value="true"/>
+                <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+                <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+                <property key="labeling/shadowOffsetUnits" value="1"/>
+                <property key="labeling/shadowRadius" value="1.5"/>
+                <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+                <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+                <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+                <property key="labeling/shadowRadiusUnits" value="1"/>
+                <property key="labeling/shadowScale" value="100"/>
+                <property key="labeling/shadowTransparency" value="30"/>
+                <property key="labeling/shadowUnder" value="0"/>
+                <property key="labeling/shapeBlendMode" value="0"/>
+                <property key="labeling/shapeBorderColorA" value="255"/>
+                <property key="labeling/shapeBorderColorB" value="128"/>
+                <property key="labeling/shapeBorderColorG" value="128"/>
+                <property key="labeling/shapeBorderColorR" value="128"/>
+                <property key="labeling/shapeBorderWidth" value="0"/>
+                <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+                <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+                <property key="labeling/shapeBorderWidthUnits" value="1"/>
+                <property key="labeling/shapeDraw" value="false"/>
+                <property key="labeling/shapeFillColorA" value="255"/>
+                <property key="labeling/shapeFillColorB" value="255"/>
+                <property key="labeling/shapeFillColorG" value="255"/>
+                <property key="labeling/shapeFillColorR" value="255"/>
+                <property key="labeling/shapeJoinStyle" value="64"/>
+                <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+                <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+                <property key="labeling/shapeOffsetUnits" value="1"/>
+                <property key="labeling/shapeOffsetX" value="0"/>
+                <property key="labeling/shapeOffsetY" value="0"/>
+                <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+                <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+                <property key="labeling/shapeRadiiUnits" value="1"/>
+                <property key="labeling/shapeRadiiX" value="0"/>
+                <property key="labeling/shapeRadiiY" value="0"/>
+                <property key="labeling/shapeRotation" value="0"/>
+                <property key="labeling/shapeRotationType" value="0"/>
+                <property key="labeling/shapeSVGFile" value=""/>
+                <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+                <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+                <property key="labeling/shapeSizeType" value="0"/>
+                <property key="labeling/shapeSizeUnits" value="1"/>
+                <property key="labeling/shapeSizeX" value="0"/>
+                <property key="labeling/shapeSizeY" value="0"/>
+                <property key="labeling/shapeTransparency" value="0"/>
+                <property key="labeling/shapeType" value="0"/>
+                <property key="labeling/textColorA" value="255"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+                <property key="labeling/textTransp" value="0"/>
+                <property key="labeling/upsidedownLabels" value="0"/>
+                <property key="labeling/wrapChar" value=""/>
+                <property key="labeling/xOffset" value="0"/>
+                <property key="labeling/yOffset" value="0"/>
+                <property key="labeling/zIndex" value="0"/>
+                <property key="variableNames" value="_fields_"/>
+                <property key="variableValues" value=""/>
+              </customproperties>
+              <blendMode>0</blendMode>
+              <featureBlendMode>0</featureBlendMode>
+              <layerTransparency>0</layerTransparency>
+              <displayfield>object_rid</displayfield>
+              <label>0</label>
+              <labelattributes>
+                <label fieldname="" text="Étiquette"/>
+                <family fieldname="" name="Ubuntu"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+              </labelattributes>
+              <SingleCategoryDiagramRenderer diagramType="Pie">
+                <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+                  <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+                </DiagramCategory>
+              </SingleCategoryDiagramRenderer>
+              <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+              <annotationform/>
+              <excludeAttributesWMS/>
+              <excludeAttributesWFS/>
+              <attributeactions/>
+              <editform/>
+              <editforminit/>
+              <editforminitcodesource>0</editforminitcodesource>
+              <editforminitfilepath/>
               <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -15047,103 +14952,12 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
               <featformsuppress>0</featformsuppress>
               <editorlayout>generatedlayout</editorlayout>
-              <widgets>
-                <widget name="Parcelles_annee">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_coar">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_codm">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_creat_date">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_indp">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_parcelle">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_section">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_geo_subdsect">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_lot">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_object_rid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_ogc_fid">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_supf">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_tex2">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-                <widget name="Parcelles_update_dat">
-                  <config>
-                    <option key="IsMultiline" value="false"/>
-                    <option key="UseHtml" value="false"/>
-                  </config>
-                </widget>
-              </widgets>
+              <widgets/>
               <conditionalstyles>
                 <rowstyles/>
                 <fieldstyles/>
               </conditionalstyles>
-              <layerGeometryType>4</layerGeometryType>
+              <layerGeometryType>2</layerGeometryType>
             </qgis>
           </LayerStyle>
           <LayerStyle layerid="Parcelles__étiquettes_20160229181842999">
@@ -19332,14 +19146,14 @@ def my_form_open(dialog, layer, feature):
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="30" page="1" id="Carte D1" lastValidViewScaleFactor="3.19927" positionMode="0" positionLock="false" x="221" y="30" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0.3" excludeFromExports="0" uuid="{6f85788c-589b-4db4-a5c7-055baa501742}" height="65" itemRotation="0" frame="false" pagex="221">
+        <ComposerItem pagey="30" page="1" id="Carte D1" lastValidViewScaleFactor="3.19927" positionMode="0" positionLock="false" x="81" y="30" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0.3" excludeFromExports="0" uuid="{6f85788c-589b-4db4-a5c7-055baa501742}" height="65" itemRotation="0" frame="false" pagex="81">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedPositionX expr="CASE&#xa;  -- très petite zone, affichage des cartes A B C et D&#xa;  WHEN (round( $perimeter ) &lt; 500)&#xa;    THEN '221'&#xa;  -- petite zone, affichage des cartes A B et D&#xa;  WHEN (round( $perimeter ) > 500) and (round( $perimeter ) &lt; 1150)&#xa;    THEN '151'&#xa;  -- grande zone, affichage des cartes A et D&#xa;  WHEN (round( $perimeter ) > 1150) and (round( $perimeter ) &lt; 2750)&#xa;    THEN '81'&#xa;  -- très grande zone, affichage des cartes A et D&#xa;  WHEN round( $perimeter ) > 2750&#xa;    THEN '81'&#xa;END" field="" active="true" useExpr="true"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="$id=$atlasfeatureid" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="Bornes20160229181843225" composerMap="-1" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="1" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="$id=$atlasfeatureid" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="Bornes20160229181843225" composerMap="-1" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
         <headerFontProperties description="Ubuntu,10,-1,5,75,1,0,0,0,0" style=""/>
         <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         <displayColumns>
@@ -19391,37 +19205,6 @@ def my_form_open(dialog, layer, feature):
         </ComposerFrame>
         <customproperties/>
       </ComposerAttributeTableV2>
-      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="false" featureFilter="" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="Parcelles20160229181842955" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="1" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
-        <headerFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-        <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-        <displayColumns>
-          <column width="0" vAlignment="128" attribute="idu" sortByRank="0" hAlignment="1" heading="idu" sortOrder="0">
-            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
-          </column>
-          <column width="0" vAlignment="128" attribute="Parcelles_Nom" sortByRank="0" hAlignment="1" heading="Parcelles_Nom" sortOrder="0">
-            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
-          </column>
-        </displayColumns>
-        <cellStyles>
-          <oddColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <evenColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <oddRows enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <evenRows enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <firstColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <lastColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <headerRow enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
-          <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
-        </cellStyles>
-        <ComposerFrame sectionWidth="58.8234" sectionHeight="52.9016" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="153.415" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="14.8124" y="153.415" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="58.8234" outlineWidth="0.3" excludeFromExports="0" uuid="{1a3fead8-0f50-4864-b4aa-f4352b2b8951}" height="52.9016" itemRotation="0" frame="false" pagex="14.8124">
-            <FrameColor alpha="255" red="0" blue="0" green="0"/>
-            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-            <customproperties/>
-          </ComposerItem>
-        </ComposerFrame>
-        <customproperties/>
-      </ComposerAttributeTableV2>
       <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="$id=$atlasfeatureid" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="Bornes20160229181843225" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
         <headerFontProperties description="Ubuntu,10,-1,5,75,1,0,0,0,0" style=""/>
         <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
@@ -19456,9 +19239,43 @@ def my_form_open(dialog, layer, feature):
         </ComposerFrame>
         <customproperties/>
       </ComposerAttributeTableV2>
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="false" featureFilter="" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="ParcellesV20160302092907732" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+        <headerFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        <displayColumns>
+          <column width="0" vAlignment="128" attribute="idu" sortByRank="0" hAlignment="1" heading="idu" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="supf" sortByRank="0" hAlignment="1" heading="supf" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Nom" sortByRank="0" hAlignment="1" heading="Nom" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+        </displayColumns>
+        <cellStyles>
+          <oddColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <oddRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <headerRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+        </cellStyles>
+        <ComposerFrame sectionWidth="143.866" sectionHeight="52.9016" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="153.415" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="14.8124" y="153.415" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="143.866" outlineWidth="0.3" excludeFromExports="0" uuid="{1a3fead8-0f50-4864-b4aa-f4352b2b8951}" height="52.9016" itemRotation="0" frame="false" pagex="14.8124">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <customproperties/>
+      </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" featureFilter="  length( &quot;Parcelles_Nom&quot;)  > 1" coverageLayer="Parcelles20160229181842955" singleFile="true" filenamePattern="&quot;travaux&quot; " enabled="true" filterFeatures="true" sortFeatures="true" pageNameExpression="Parcelles_Nom" sortKey="Parcelles_Nom" sortAscending="true"/>
+    <Atlas hideCoverage="false" coverageLayer="ParcellesV20160302092907732" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="idu"/>
   </Composer>
   <projectlayers>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1800" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -24451,9 +24268,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <provider encoding="System">postgres</provider>
       <previewExpression>COALESCE( "object_rid", '&lt;NULL>' )</previewExpression>
-      <vectorjoins>
-        <join joinFieldName="Parcelle" targetFieldName="idu" memoryCache="1" joinLayerId="Parcelles20160301115738314"/>
-      </vectorjoins>
+      <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
       <map-layer-style-manager current="">
@@ -24507,9 +24322,6 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="TextEdit" name="ogc_fid">
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="Parcelles_Nom">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -24746,22 +24558,29 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="Parcelles_Nom">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>Parcelles20160301115738314</id>
-      <datasource>./Parcelles.ods.vrt</datasource>
-      <shortname>Parcelles</shortname>
+      <id>ParcellesExtrait20160302092616534</id>
+      <datasource>./ParcellesExtrait.ods.vrt</datasource>
+      <shortname>ParcellesExtrait</shortname>
       <title></title>
       <abstract></abstract>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Parcelles</layername>
+      <layername>ParcellesExtrait</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
@@ -24774,12 +24593,9 @@ def my_form_open(dialog, layer, feature):
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
-      </customproperties>
+      <customproperties/>
       <provider encoding="UTF-8">ogr</provider>
-      <previewExpression>COALESCE("Nom", '&lt;NULL>')||', '||COALESCE("Parcelle", '&lt;NULL>')||', '||COALESCE("Parcelles_geo_parcelle", '&lt;NULL>')||', '||COALESCE("Parcelles_annee", '&lt;NULL>')||', '||COALESCE("Parcelles_object_rid", '&lt;NULL>')||', '||COALESCE("Parcelles_geo_section", '&lt;NULL>')||', '||COALESCE("Parcelles_geo_subdsect", '&lt;NULL>')||', '||COALESCE("Parcelles_supf", '&lt;NULL>')||', '||COALESCE("Parcelles_geo_indp", '&lt;NULL>')||', '||COALESCE("Parcelles_coar", '&lt;NULL>')||', '||COALESCE("Parcelles_tex", '&lt;NULL>')||', '||COALESCE("Parcelles_tex2", '&lt;NULL>')||', '||COALESCE("Parcelles_codm", '&lt;NULL>')||', '||COALESCE("Parcelles_creat_date", '&lt;NULL>')||', '||COALESCE("Parcelles_update_dat", '&lt;NULL>')||', '||COALESCE("Parcelles_lot", '&lt;NULL>')||', '||COALESCE("Parcelles_ogc_fid", '&lt;NULL>')</previewExpression>
+      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -24794,6 +24610,331 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
+      <annotationform>.</annotationform>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions/>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>ParcellesV20160302092907732</id>
+      <datasource>?layer=postgres:dbname%3D%27cadastre%27%20host%3DVLR6180X%20port%3D5432%20user%3D%27Fred%27%20password%3D%27Fred%27%20sslmode%3Ddisable%20key%3D%27ogc_fid%27%20table%3D%22public%22.%22geo_parcelle%22%20%28geom%29%20sql%3D:Parcelles:System&amp;layer=ogr:%2Fhome%2Ffred%2FDocuments%2Ftechnic%2Fsource%2Fqgis%2FParcellesExtrait.ods.vrt:ParcellesExtrait:UTF-8&amp;query=select%20*%20from%20Parcelles%20join%20ParcellesExtrait%20on%20Parcelles.idu%3DParcellesExtrait.Parcelle</datasource>
+      <shortname>ParcellesV</shortname>
+      <title></title>
+      <abstract></abstract>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ParcellesV</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">virtual</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="geo_parcelle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="annee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="object_rid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="idu">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geo_section">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geo_subdsect">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="supf">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geo_indp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="coar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tex">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tex2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="codm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="creat_date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="update_dat">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lot">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ogc_fid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Nom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Parcelle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{4c28ecdd-091c-4f21-bbf7-1488f78b6b03}">
+          <rule filter=" &quot;idu&quot;  &lt;> attribute(  @atlas_feature  ,'idu')" key="{0bb16d62-6f65-4970-af79-e2071fa04923}" symbol="0" label="autres parcelle"/>
+          <rule filter=" &quot;idu&quot;  = attribute(  @atlas_feature  ,'idu')" key="{d64f0c96-9b28-42c4-8442-0c095637dbc8}" symbol="1" label="parcelle courante"/>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="58,21,194,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Medium Italic"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames" value="_fields_"/>
+        <property key="variableValues" value=""/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>object_rid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Pie">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="0">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -24820,98 +24961,7 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets>
-        <widget name="Parcelles_annee">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_coar">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_codm">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_creat_date">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_geo_indp">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_geo_parcelle">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_geo_section">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_geo_subdsect">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_lot">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_object_rid">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_ogc_fid">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_supf">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_tex">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_tex2">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-        <widget name="Parcelles_update_dat">
-          <config>
-            <option key="IsMultiline" value="false"/>
-            <option key="UseHtml" value="false"/>
-          </config>
-        </widget>
-      </widgets>
+      <widgets/>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
