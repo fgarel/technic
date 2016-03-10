@@ -1,6 +1,6 @@
-*************************************
+=====================================
 Le Plan Corps de Rue Simplifié (PCRS)
-*************************************
+=====================================
 
 Les données du PCRS sont dans le repertoire
 technic/source/geogig/pcrs

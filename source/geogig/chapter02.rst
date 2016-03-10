@@ -1,6 +1,6 @@
-*******************************************
+===========================================
 Le Référentiel à Très Grande Echelle (RTGE)
-*******************************************
+===========================================
 
 Le **Référentiel à très Grande Echelle (RTGE)** est aussi un plan topographique.
 

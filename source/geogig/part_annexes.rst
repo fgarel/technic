@@ -15,3 +15,4 @@ Annexes
 .. include:: ./chapter_annexe05.rst
 .. include:: ./chapter_annexe06.rst
 .. include:: ./chapter_annexe07.rst
+.. include:: ./chapter_annexe08.rst

@@ -1,102 +1,89 @@
-***********************
-Installation des outils
-***********************
 
-Postgresql / Postgis
-====================
+========================
+Environnement de travail
+========================
 
-Pour chacun des acteurs, nous allons attribuer deux bases de données.
+Description de l'environnement de Travail pour ce travail sur les plans topos
 
-L'installation et le paramétrage des bases de données sont réalisés via le script :
+Nous allons utiliser byobu pour le mode console
 
-.. code::
-  
-  ~/Documents/install/source/environnementTravail/installPostgresqlGeogigGTReseaux.sh
+Nous allons utiliser sphinx et hovercraft pour la rédaction de la documentation
 
+Utilisation de Byobu pour le mode console
+=========================================
 
-
-Geogig
-======
-
-En ce qui concerne l'outil geogig, il faut distinguer deux choses :
-
- - l'installation du logiciel
- - la création des commits initiaux
-
-L'installation est détaillé dans le fichier :
+1er Terminal : Pour l'administration
+------------------------------------
+Le premier ecran est destiné au repertoire
 
 .. code::
+  ~/Documents/install source
 
-  ~/Documents/install/source/geogig/installGeogig.sh
+L'ecran peut-etre divisé en deux :
 
+En haut, acces au sous-repentoire
+.. code::
+  ~/Documents/install/source/environnementTravail/
 
-La création des commits initiaux et l'utilisation de git avec des données exemples est détaillé dans l'annexe 2.
+pour modifier les fichiers de type
+.. code::
+  ./installPostgresqlGeogig*.sh
 
+En bas, accès au sous-repertoire
+.. code::
+  /Documents/install/source/geogig/
 
+pour modifier les fichiers de type
+.. code::
+  ./installGeogig.sh
+  ./dxfToPostgis.sh # utilitaire pour convertir dxf en postgis
 
-Package GeoSHAPE
-================
-
-GeoSHAPE is the integration of a geospatial portal (GeoNode), a web mapping client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial server and database components (The OpenGeo Suite)
-
-http://geoshape.org/
-
-https://docs.google.com/document/d/1KMpk6dXuqvwfEi0pfRpaGY62j6ikoYtpYUPU0sJQAmk/edit
-
-https://github.com/ROGUE-JCTD/rogue_geonode
-
-https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action
-
-http://boundlessgeo.com/2014/03/geogit-and-openstreetmap-for-yolanda/
-
-gestion des conflits
-http://garnertb.io/geonode-summit-2014/template#11
-
-
-Coté serveur
-============
-
-Geogig et geoserver
--------------------
-
-A GeoServer extension is available to allow GeoServer to interact with a GeoGig repository and use it as data store. It enables a GeoGig repository to be exposed as a remote for cloning, pushing and pulling as well as via OGC services (WMS/WFS/WMTS etc). Each top level tree in a GeoGig repository corresponds to a GeoServer layer. GeoServer treats a GeoGig repository as a store in much the same way as it does a database.
-
-http://dev.boundlessgeo.com/~groldan/geogig-user-manual/interaction/geoserver_ui.html
+2d Terminal : Pour l'utilisation
+--------------------------------
+Le second écran est destiné au repertoire
+.. code::
+  ~/Documents/technic/source/geogig/
 
 
-Geonode
--------
+3ème Terminal : Pour la rédaction de la documentation
+-----------------------------------------------------
+Le troisième écran est dédié à la documentation
+Cet écran peut lui aussi etre divisé en plusieurs frames :
 
-GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data. http://geonode.org/
+En haut (Edition), acces au sous-repertoire
+.. code::
+  ~/Documents/technic/source/geogig
+  cd ~/Documents/technic/source/geogig/
+pour modifier les fichiers rst
+.. code::
+  vi chapter01_hov.rst
 
-http://geonode.org/
-
-https://github.com/GeoNode/geonode
-
-Mais poour le moment, on est en version 2.4....
-
-la version 2.5 promet l'intégration de geogig
-
-
-Geogig et geonode 2.5
-.....................
-
-On y parle aussi d'OSM...
-
-https://github.com/GeoNode/geonode/issues/1931
+En bas (Compilation), acces au sous-repertoire
+.. code::
+  ~/Documents/technic
+  cd ~/Documents/technic
+pour compiler la documentation.
+Avant, il faut se mettre dans l'environemment virtuel ecriture_sphinx
+.. code::
+  pew workon_ecriture_sphinx
+  ./build.sh ; ./visualize.sh
 
 
-Coté client
-===========
+Utilisation de Sphinx et hovercraft pour générer la documentation
+=================================================================
 
-MapLoom
--------
+Conventions de syntaxe pour les fichiers restructured text
 
-MapLoom is a web mapping client based on OpenLayers 3. It provides full-featured editing capabilities for data stores in GeoServer - including PostGIS and GeoGig. For GeoGig layers, it lets you view history, and sync with other GeoGig repositories 
+geogig.rst :
+     ### : pour le nom du projet
+part01.rst :
+     *** : pour les parties
+chapter01.rst :
+     === : pour les chapitres
 
-https://github.com/ROGUE-JCTD/MapLoom
+Outils pour faciliter la génération de cette documentation
+==========================================================
 
-https://vimeo.com/106852747
-
+Transformation du fichier /chapter_annexe05.rst en fichier _hov.rst
 
 

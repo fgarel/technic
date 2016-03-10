@@ -2,15 +2,13 @@
 :title: Mise à jour du PCRS
 :css: geogig_hovercraft.css
 
-----
-
 ##############################################################################
 Constitution et Mise à Jour des plans topographiques : un travail collaboratif
 ##############################################################################
 
-----
 
-.. include:: ./chapter_introduction.rst
+
+.. include:: ./part_introduction.rst
 .. .. include:: source/geogig/chapter_introduction_hov.rst
 .. include:: ./part01.rst
 .. include:: ./part02.rst
@@ -30,7 +28,7 @@ Constitution et Mise à Jour des plans topographiques : un travail collaboratif
 .. .. include:: source/geogig/chapter06_hov.rst
 .. .. include:: ./chapter07.rst
 .. .. include:: source/geogig/chapter07_hov.rst
-.. include:: ./chapter_conclusion.rst
+.. include:: ./part_conclusion.rst
 .. .. include:: source/geogig/chapter_conclusion_hov.rst
 .. include:: ./part_annexes.rst
 .. .. include:: ./chapter_annexe01.rst

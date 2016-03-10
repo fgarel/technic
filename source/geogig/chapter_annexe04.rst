@@ -1,34 +1,65 @@
-***********************
-Les actions du GTResaux
-***********************
+=========================
+La documentation officiel
+=========================
 
-Dans cet annexe, nous décrivons les actions menées au niveu du Groupe de Travail Reseaux.
+Dans cet annexe, nous décrivons où se trouve la documentation originelle.
 
-Les réunions passées et à venir
-===============================
+Le manuel geogig
+================
 
-2016 Janvier 13 : présence de Riallant
-2016 Janvier 27 : Point intermédiaire avec CDA
-2016 Février 10 : GTReseaux
-2016 Mars 2     : Point intermédiaire avec CDA
-2016 Mars 16    : GTReseaux
-2016 Mars 30    : Point intermédiaire avec CDA
-2016 Avril 13   : GTReseaux
-2016 Mai 4      : Point intermédiaire avec CDA
-2016 Mai 11     : GTReseaux
+Récupération du manuel sur le site geogig.org
+http://geogit.org/docs/
+
+Nous allons telecharger les pages, puis nous allons l'adpader
+
+Ligne de commande pour telecharger un site
+
+.. code::
+  rm -r geogit.org
+  wget -H -N -k -p http://geogit.org/docs/
+  wget -N -k -p http://geogit.org/docs/
+
+  rm -r geogit.org ; wget -N -k -p http://geogit.org/docs/ ; wget -x -r http://geogit.org/docs/img/
+
+-H = Allows wget to go to span a foreign host. Required since tumblr does not have its images on the front page on the same address, they are using secure.assets.tumblr.com see note on excluding domains
+
+-N = will grab only files that are newer that what you currently have, in case you are downloading the same page again over time
+
+-k = convert your links to view it offline properly
+
+-p = grabs all required elements to view it correctly (css, images, etc)
+
+Traduction des pages
+--------------------
+
+Une fois que le manuel est téléchargé, nous avons aussi la possibilité de le traduire
 
 
 
-TODO list
-=========
+La documentation avancée
+========================
 
-création du jeu test :
 
-  creation des bases de données
+La documentation avancée, avec diagramme uml (cas d'utilisation) est ici.
+https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+Le plus simple est de cloner le wiki
 
-  chargement du jeu test dans les bases de données
+.. code::
 
-création des slides, de la documentation
+  #wget -N -k -p https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+  git clone https://github.com/boundlessgeo/GeoGit.wiki.git
 
-creation de l'outil de conversion PCRS <-> RTGE
+
+Le pcrs
+=======
+
+la documentation sur le pcrs est ici :
+
+PCRS accompagnement
+http://cnig.gouv.fr/?page_id=1444
+
+PCRS ressources
+http://cnig.gouv.fr/?page_id=11745
+
+
 

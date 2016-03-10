@@ -1,60 +1,36 @@
-**********************************
-Création du jeu de données exemple
-**********************************
+==========================================
+Vue d'ensemble sur le stockage des données
+==========================================
 
-Dans l'annexe 1 nous avons détaillé l'installation de postgresql et geogig.
+Les données sont sous forme de fichiers ou stockées dans des bases de données.
 
-Nous allons maintenant utiliser ces outils.
+Descriptif des bases de données utilisées
 
-Dans une première partie, nous allons faire des manipulations afin de créer un jeu de données exemples.
+Descriptif des fichiers utilisés
 
-Dans une seconde partie, nous allons manipuler ces données à l'aide de l'outil geogig.
 
-Une base de données "origine"
-=============================
+Postgresql / Postgis
+====================
 
-Une première base de données, que l'on va appeler "origine", va nous servir pour faire nos traitements qui ne sont pas liés à geogig.
+Le serveur est VLR6180Y
 
-Dans cette base de données, nous allons créer des tables qui vont accueillir des données brutes :
+La base de données est origine
 
- - le jeu exemple qui est fabriqué au départ sous libre office "calc" (!!) est transformé en sql, puis est injecté dans cette base origine
- - le pcrs exemple, récupéré sur le site du cnig, est lui aussi injecté dans cette base.
 
-Injecter des données dans cette base
-------------------------------------
+Les fichiers
+============
 
-Le transfert des données du jeu exemple, de libre office "calc" vers la base origine est détaillé dans le fichier :
+Le dxf de départ est ici
 
 .. code::
 
-  ~/Documents/install/source/geogig/installGeogigSample.sh
-  
-La conversion des fichiers pcrs, récupérés sur le site du cnig, au format gml, vers la base postgreSQL est réalisé via le script :
+  ~/Documents/technic/source/geogig/....
+
+Le pcrs au format gml rdt ici :
 
 .. code::
 
-  ~/Documents/install/source/geogig/gmlToPostgis.sh
+  ~/Documents/technic/source/geogig/....
 
-
-Manipuler les données, les extraire
------------------------------------
-
-Un certain nombres de scripts sql vont ensuite être joué afin de sélectionner, en sortie, des données qui seront utilisées dans la deuxième partie de notre procédure de test.
-
-La manipulation des données et l'extraction se fait grace au script :
-
-.. code::
-
-  TODO
-
-
-Utilisation de geogig
-=====================
-
-La création des des dépots initiaux se fait grace au script :
-
-.. code::
-
-  ~/Documents/install/source/geogig/installGeogig2.sh
 
 
