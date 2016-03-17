@@ -1,10 +1,8 @@
-----
 
 *******************************************************************
 Partie 1 : Présentation des données manipulées : le PCRS et le RTGE
 *******************************************************************
 
-----
 
 
 .. .. include:: source/geogig/chapter_introduction_hov.rst

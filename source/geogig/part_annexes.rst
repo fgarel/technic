@@ -1,10 +1,8 @@
-----
 
 *******
 Annexes
 *******
 
-----
 
 .. include:: ./chapter_annexe01.rst
 .. .. include:: source/geogig/chapter05_hov.rst

@@ -105,7 +105,7 @@ Neuvième Diapo
 
 Une image dessinée à la volée
 
-.. aafig::
+.. .. aafig::
 
-   DD o--->
+..   DD o--->
 

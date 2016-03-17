@@ -1,10 +1,8 @@
-----
 
 **********************************************************************
 Partie 3 : Cas Concret : Utilisation de geogig pour la gestion du PCRS
 **********************************************************************
 
-----
 
 .. include:: ./chapter05.rst
 .. .. include:: source/geogig/chapter05_hov.rst

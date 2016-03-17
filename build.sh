@@ -10,13 +10,13 @@ echo "make slideshov"
       make slideshov
 echo "make html"
       make html
-echo "make latexpdf"
-      make latexpdf
+#echo "make latexpdf"
+#      make latexpdf
 
 
-sphinx-build -b latex \
-    -b latex \
-    -d build/doctrees \
-    -D latex-paper-size=a4 \
-    source \
-    build/latex
+#sphinx-build -b latex \
+#    -b latex \
+#    -d build/doctrees \
+#    -D latex-paper-size=a4 \
+#    source \
+#    build/latex

@@ -1,10 +1,8 @@
-----
 
 *******************
 Bilan et conclusion
 *******************
 
-----
 
 
 .. .. include:: source/geogig/chapter_introduction_hov.rst

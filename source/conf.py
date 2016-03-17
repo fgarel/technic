@@ -326,5 +326,6 @@ plantuml_latex_output_format = 'pdf'
 plantuml_epstopdf = 'epstopdf'
 
 # -- Options for aafig ---------------------------------------------------------
+#extensions += ['sphinxcontrib.aafig', ]
 aafig_format = dict(latex='pdf', html='svg', text=None)
 aafig_default_options = dict(scale=1.5, aspect=0.5, proportional=True)

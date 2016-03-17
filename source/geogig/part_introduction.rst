@@ -1,10 +1,7 @@
-----
 
 **********************************************************************
 Introduction : Des données topographiques et des outils pour les gérer
 **********************************************************************
-
-----
 
 
 .. .. include:: source/geogig/chapter_introduction_hov.rst

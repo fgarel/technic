@@ -7,6 +7,7 @@ L'environnement de travail pour l'administrateur, c'est le 1er écran byobu.
 C'est à dire, que l'administrateur travaille par defaut dans le repertoire
 
 .. code::
+
   ~/Documents/install/source/geogig/
 
 Création du jeu de données exemple
@@ -42,7 +43,7 @@ Dans cette base de données, nous allons créer des tables qui vont accueillir d
  - le pcrs exemple, récupéré sur le site du cnig, est lui aussi injecté dans cette base.
 
 Injecter des données dans cette base
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+....................................
 
 Le transfert des données du jeu exemple, de libre office "calc" vers la base origine est détaillé dans le fichier :
 
@@ -58,7 +59,8 @@ La conversion des fichiers pcrs, récupérés sur le site du cnig, au format gml
 
 
 Manipuler les données, les extraire
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...................................
+
 
 Un certain nombres de scripts sql vont ensuite être joué afin de sélectionner, en sortie, des données qui seront utilisées dans la deuxième partie de notre procédure de test.
 

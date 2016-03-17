@@ -15,6 +15,7 @@ Nous allons telecharger les pages, puis nous allons l'adpader
 Ligne de commande pour telecharger un site
 
 .. code::
+
   rm -r geogit.org
   wget -H -N -k -p http://geogit.org/docs/
   wget -N -k -p http://geogit.org/docs/
