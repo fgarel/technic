@@ -3,7 +3,7 @@ Patrimoine
 ##########
 
 
-.. include:: patrimoine/introduction.rst
-.. include:: patrimoine/chapter01.rst
-.. include:: patrimoine/chapter02.rst
-.. include:: patrimoine/appendix01.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst
+.. include:: chapter02.rst
+.. include:: appendix01.rst

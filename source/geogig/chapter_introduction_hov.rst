@@ -1,11 +1,10 @@
-************
+============
 Introduction
-************
+============
 
-----
 
 Des données
------------
+===========
 Le **Plan Corps de Rue Simplifié (PCRS)** est un plan topographique.
 
 Il constitue le socle commun minimal de base décrivant à très grande échelle
@@ -18,14 +17,14 @@ Il correspond au PCRS, complété des objets qui n'appartiennent pas au socle co
 ----
 
 Des outils
-----------
+==========
 **GeoGig** is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
 http://geogig.org/
 
 ----
 
 La création et la mise à jour du PCRS
--------------------------------------
+=====================================
 Ce document a pour objectif de présenter les différents aspects techniques, organisationnels et financiers,
 relatifs à la manipulation des données topographiques, et plus particulièrement le PCRS, à l'aide de l'outil "geogig".
 

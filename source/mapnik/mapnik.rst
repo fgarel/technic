@@ -3,7 +3,7 @@ Mapnik
 ######
 
 
-.. include:: mapnik/introduction.rst
-.. include:: mapnik/chapter01.rst
-.. include:: mapnik/chapter02.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst
+.. include:: chapter02.rst
 

@@ -9,5 +9,5 @@ Intro
 blabla
 blabla
 
-.. include:: gnss/connexion.rst
+.. include:: connexion.rst
 

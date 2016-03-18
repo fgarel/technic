@@ -118,7 +118,9 @@ http://lists.osgeo.org/pipermail/qgis-developer/2012-October/022418.html
 http://lists.osgeo.org/pipermail/qgis-developer/2012-October/022428.html
 http://www.procrastinatio.org/posts/2012-10-14-various-was-to-use-geo.admin.ch-wmts-tiles.html
 
-<GDAL_WMS>
+.. code::
+
+  <GDAL_WMS>
     <Service name="TMS">
         <ServerUrl>file:///home/fred/public_html/orthocc46/${z}/${x}/${y}.png</ServerUrl>
     </Service>
@@ -137,7 +139,7 @@ http://www.procrastinatio.org/posts/2012-10-14-various-was-to-use-geo.admin.ch-w
     <BlockSizeY>256</BlockSizeY>
     <BandsCount>3</BandsCount>
     <Cache />
-</GDAL_WMS>
+  </GDAL_WMS>
 
 Sous qgis
 ---------

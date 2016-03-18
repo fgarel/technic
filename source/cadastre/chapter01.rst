@@ -41,7 +41,7 @@ Les utilitaires dos2unix et gawk doivent être installés sur la machine (avec g
 Un serveur de base de données postgresql est démarré et attend les connexions. Nous notons son adresse IP.
 
 Nous modifions le fichier 03_00_sql_data1.sh pour mettre à jour cette adresse IP.
-Ainsi que les fichiers 03_01_... 03_02_... 03_03_... et 03_04_...
+Ainsi que les fichiers 03_01... 03_02... 03_03... et 03_04...
 
 .. code::
 

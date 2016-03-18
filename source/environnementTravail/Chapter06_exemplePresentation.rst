@@ -89,14 +89,14 @@ Huitième Diapo
 
 .. code::
 
-  cd source/.static
+  cd source/_static
   convert logo: logo.png
 
 Une image existante
 
 .. .. image:: ../.static/logo.png
 
-.. image:: /.static/logo.png
+.. image:: ../_static/logo.png
    :height: 300px
    :scale: 50 %
 

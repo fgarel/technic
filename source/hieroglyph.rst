@@ -32,7 +32,7 @@ Show Bullets Incrementally
 Displaying Images
 =================
 
-.. figure:: /_static/paris-13-novembre-300x300.jpg
+.. figure:: ./_static/logo.png
    :class: fill
 
    CC BY-SA https://creativecommons.org/licenses/by-sa/3.0/

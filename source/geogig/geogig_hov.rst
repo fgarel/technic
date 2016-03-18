@@ -2,7 +2,6 @@
 :title: Mise à jour du PCRS
 :css: geogig_hov.css
 
-----
 
 ##############################################################################
 Constitution et Mise à Jour des plans topographiques : un travail collaboratif
@@ -10,13 +9,21 @@ Constitution et Mise à Jour des plans topographiques : un travail collaboratif
 
 ----
 
-.. .. include:: ./chapter_introduction.rst
-.. include:: source/geogig/chapter_introduction_hov.rst
+.. .. include:: part_introduction_hov.rst
+.. .. include:: ./part_introduction_hov.rst
+.. .. include:: geogig/part_introduction_hov.rst
+.. .. include:: ./geogig/part_introduction_hov.rst
+.. include:: source/geogig/part_introduction_hov.rst
+.. .. include:: ./source/geogig/part_introduction_hov.rst
+.. .. include:: chapter_introduction_hov.rst
 .. include:: source/geogig/part01_hov.rst
+.. include:: source/geogig/part02_hov.rst
+.. .. include:: part02_hov.rst
+.. .. include:: part03_hov.rst
 .. .. include:: ./chapter01.rst
-.. include:: source/geogig/chapter01_hov.rst
+.. .. include:: chapter01_hov.rst
 .. .. include:: ./chapter02.rst
-.. include:: source/geogig/chapter02_hov.rst
+.. .. include:: chapter02_hov.rst
 .. .. include:: ./chapter03.rst
 .. .. include:: source/geogig/chapter03_hov.rst
 .. .. include:: ./chapter04.rst
@@ -27,8 +34,10 @@ Constitution et Mise à Jour des plans topographiques : un travail collaboratif
 .. .. include:: source/geogig/chapter06_hov.rst
 .. .. include:: ./chapter07.rst
 .. .. include:: source/geogig/chapter07_hov.rst
+.. .. include:: part_conclusion_hov.rst
 .. .. include:: ./chapter_conclusion.rst
 .. .. include:: source/geogig/chapter_conclusion_hov.rst
+.. .. include:: part_annexes.rst
 .. .. include:: ./chapter_annexe01.rst
 .. .. include:: source/geogig/chapter_annexe01_hov.rst
 .. .. include:: ./chapter_annexe02.rst

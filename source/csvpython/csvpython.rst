@@ -3,5 +3,5 @@ CsvPython
 #########
 
 
-.. include:: csvpython/introduction.rst
-.. include:: csvpython/chapter01.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst

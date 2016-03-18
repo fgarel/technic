@@ -3,6 +3,6 @@ Cadastre
 ########
 
 
-.. include:: cadastre/introduction.rst
-.. include:: cadastre/chapter01.rst
-.. include:: cadastre/chapter02.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst
+.. include:: chapter02.rst

@@ -45,8 +45,10 @@ Les projets sphinx seront :
  Pour chacun de ces projets sphinx, nous allons avoir :
  
   - deux sous-repertoires :
+
     - source, qui contiendra les fichiers editables (.rst, .py, jupyter) et à suivre avec git
     - build, qui contiendra les fichiers non-editables (.pdf, ...) et non suivis avec git (.gitignore)
+
  - un fichier conf.py
  - un fichier makefile
 
@@ -121,6 +123,7 @@ Installation de sphinx dans cet environnement
 On peut d'abord vérifier que l'on peut construire hovercraft dans l'envionnement
 
 .. code::
+
   pew workon ecriture_sphinx
   pip wheel lxml
 
@@ -369,6 +372,7 @@ Attention, il semble qu'il y ait une erreur dans le fihcier aafig.py
 En effet, quand on cherche à compiler un document pdf avec l'installation par defaut, on a cette erreur :
 
 .. Code::
+
   Class AafigDirective(directives.images.Image):
   AttributeError: 'module' object has no attribute 'images'
 
@@ -376,6 +380,7 @@ Une correction semble avoir été faite (cf https://github.com/sphinx-doc/sphinx
 https://bitbucket.org/birkenfeld/sphinx-contrib/commits/f41632b346a569e2a6bcd0194ea491c2550ecf4d)
 
 .. code::
+
   cdvirtualenv
   cd lib/python2.7/site-package/sphinxcontrib/
   wgets://bitbucket.org/birkenfeld/sphinx-contrib/raw/e3e989af7748e83bfb3833bd9a66c8ceb3e33408/aafig/sphinxcontrib/aafig.py
@@ -422,6 +427,7 @@ Automatiquement, le sous-repertoire ~/Documents/install/build va être créé.
   gst
 
 .. code::
+
   Fichiers non suivis:
     (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
 

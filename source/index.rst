@@ -37,13 +37,13 @@
 .. .. contents:: Table des matières
 
 .. .. toctree::
-..   :maxdepth: 2
+..   :maxdepth: 3
 
 
 .. .. include:: environnementTravail/environnementTravail.rst
 .. .. include:: latex/latex.rst
 .. .. include:: latexbd/latexbd.rst
-.. .. include:: geogit/geogit.rst
+.. include:: geogig/geogig.rst
 .. .. include:: dt-dict/dt-dict.rst
 .. .. include:: gnss/gnss.rst
 .. .. include:: geopy/geopy.rst
@@ -52,11 +52,11 @@
 .. .. include:: mapnik/mapnik.rst
 .. .. include:: patrimoine/patrimoine.rst
 .. .. include:: csvpython/csvpython.rst
-.. include:: geogig/geogig.rst
+.. .. include:: geogig/geogig.rst
 
 
-.. .. Indices and tables
-.. ..   ==================
+.. Indices and tables
+.. ==================
 
 .. * :ref:`genindex`
 .. * :ref:`modindex`

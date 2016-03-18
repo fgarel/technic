@@ -3,7 +3,7 @@ Toolchain
 #########
 
 
-.. include:: toolchain/introduction.rst
-.. include:: toolchain/chapter01.rst
-.. include:: toolchain/chapter02.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst
+.. .. include:: chapter02.rst
 

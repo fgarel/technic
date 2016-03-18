@@ -95,8 +95,9 @@ Exporter des données de geomedia vers TerraSync
 
 Préparer les données, qui sont disponibles sous geomedia, et que l'on souhaite visualiser sur le terrain.
 Au final, on veut des fichiers :
- - portant l'extension .gis
- - et placés sur la tablette, dans le répertoire c:\My Documents\TerraSync\
+
+  - portant l'extension .gis
+  - et placés sur la tablette, dans le répertoire c:\My Documents\TerraSync\
 
 Gestion des arrrière-plans Raster
 ---------------------------------

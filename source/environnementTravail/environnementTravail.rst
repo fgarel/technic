@@ -48,12 +48,12 @@ le cas d'utilisation.
 
 Le dernier chapitre est un exemple de présentation utilisé avec sphinx.
 
-.. include:: environnementTravail/Chapter01_presentationEnvironnement.rst
-.. include:: environnementTravail/Chapter02_shell_python.rst
-.. include:: environnementTravail/Chapter03_vim_plantuml.rst
-.. include:: environnementTravail/Chapter04_git.rst
-.. include:: environnementTravail/Chpater05_sphinx.rst
-.. include:: environnementTravail/Chpater06_exemplePresentation.rst
+.. include:: Chapter01_presentationEnvironnement.rst
+.. include:: Chapter02_shell_python.rst
+.. include:: Chapter03_vim_plantuml.rst
+.. include:: Chapter04_git.rst
+.. include:: Chapter05_sphinx.rst
+.. include:: Chapter06_exemplePresentation.rst
 
 
 

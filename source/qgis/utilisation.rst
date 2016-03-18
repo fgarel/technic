@@ -2,8 +2,8 @@
 Utilisation de qgis
 *******************
 
-.. include:: qgis/tuile.rst
-.. include:: qgis/gnss.rst
-.. include:: qgis/calage.rst
+.. include:: tuile.rst
+.. include:: gnss.rst
+.. include:: calage.rst
 
 

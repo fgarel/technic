@@ -15,6 +15,7 @@ Téléchargement de la page modele
 Ligne de commande pour telecharger un site
 
 .. code::
+
   rm -r api.maps.yahoo.com maps.googleapis.com mc.bbbike.org
   wget -H -N -k -p http://mc.bbbike.org/mc/
   wget -N -k -p http://mc.bbbike.org/mc/

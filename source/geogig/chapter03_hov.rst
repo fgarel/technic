@@ -1,6 +1,6 @@
-******************************
+==============================
 Généralités sur l'outil geogig
-******************************
+==============================
 
 
 http://geogit.org/docs/start/tutorial.html
@@ -24,6 +24,9 @@ en introduisant les opérations suivantes:
 Ce tutoriel suppose aucune expérience préalable avec GeoGit.
 Plus de détails peuvent être trouvés dans les sections suivantes.
 
+Installation et Configuration
+=============================
+
 Installation
 ------------
 
@@ -39,6 +42,9 @@ en substituant votre nom et votre e-mail:
 
   geogit config --global user.name "Author"
   geogit config --global user.email "author@example.com"
+
+Utilisation
+===========
 
 Initialisation
 --------------

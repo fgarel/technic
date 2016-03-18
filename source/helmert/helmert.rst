@@ -3,10 +3,10 @@ Calage selon la méthode Helmert
 ###############################
 
 
-.. include:: helmert/introduction.rst
-.. include:: helmert/chapter01.rst
-.. include:: helmert/chapter02.rst
-.. include:: helmert/chapter03.rst
-.. include:: helmert/chapter04.rst
-.. include:: helmert/conclusion.rst
+.. include:: introduction.rst
+.. include:: chapter01.rst
+.. include:: chapter02.rst
+.. include:: chapter03.rst
+.. .. include:: chapter04.rst
+.. .. include:: conclusion.rst
 

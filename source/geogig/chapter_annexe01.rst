@@ -124,7 +124,7 @@ On va essayer d'organiser les fichiers de facons à ce que le niveau
 d'inclusion des fichiers correspondent au niveau de hierarchie dans le plan du document.
 
 =====================  ===========  =======================  ===============  =================
- Nom du Fichier         Niveau du            Titre            Décoration du        Niveau
+\  Nom du Fichier       Niveau du            Titre            Décoration du        Niveau
                          fichier           principal         titre principal    dans le plan
 =====================  ===========  =======================  ===============  =================
 geogig.rst                  0       Utilisation de geogig    surligné ######  titre du projet
@@ -137,13 +137,13 @@ chapter02.rst               2       Le RTGE                  surligné ======  2
 part02.rst                  1       Partie 2 : Des outils..  surligné ++++++  "chapitre 3"
 chapter03.rst               2       Généralités sur geogig   surligné ======  3.1. Geogig
 chapter04.rst               2       Quelques notions de ge   surligné ======  3.2. Notions
-                                    Les acteurs              \=\=\=\=         3.2.1. Acteurs
-                                    Les niveaux d'acteurs    \-\-\-\-         Les niveaux d'a
+\                           \       Les acteurs              \=\=\=\=         3.2.1. Acteurs
+\                           \       Les niveaux d'acteurs    \-\-\-\-         Les niveaux d'a
 part03.rst                  1       Partie 3 : Cas Concret   surligné ++++++  "chapitre 4"
 chapter05.rst               2       Organisation envisagée   surligné ======  4.1. Organisation
-                                    Définition des acteurs   \=\=\=\=         4.1.1. Acteurs
-                                    Les acteurs départeme..  \-\-\-\-         Les acteurs dép
-                                    Un dépot public et ...   \.\.\.\.         Un dépôt public
+\                           \       Définition des acteurs   \=\=\=\=         4.1.1. Acteurs
+\                           \       Les acteurs départeme..  \-\-\-\-         Les acteurs dép
+\                           \       Un dépot public et ...   \.\.\.\.         Un dépôt public
 =====================  ===========  =======================  ===============  =================
 
 Organisation pour l'edition

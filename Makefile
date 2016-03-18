@@ -154,8 +154,8 @@ slideshov:
 	# geogig_hovercraft
 	$(HOVERCRAFT) source/geogig/geogig_hov.rst $(BUILDDIR)/slideshov
 	cp $(BUILDDIR)/slideshov/index.html $(BUILDDIR)/slideshov/geogig_hov.html
-	$(HOVERCRAFT) source/geogig/geogig.rst $(BUILDDIR)/slideshov
-	cp $(BUILDDIR)/slideshov/index.html $(BUILDDIR)/slideshov/geogig.html
+	#$(HOVERCRAFT) source/geogig/geogig.rst $(BUILDDIR)/slideshov
+	#cp $(BUILDDIR)/slideshov/index.html $(BUILDDIR)/slideshov/geogig.html
 	@echo "slides finished. The HTML slides are in $(BUILDDIR)/slideshov."
 
 text:

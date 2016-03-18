@@ -20,7 +20,7 @@ import shlex
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
@@ -238,7 +238,14 @@ latex_documents = [
   ('geogig/geogig', 'geogig.tex', 'Utilisation de geogig',
    'Frédéric Garel', 'manual'),
 ]
-
+#latex_documents = [
+#  ('geogig/geogig', 'geogig.tex', 'Utilisation de geogig',
+#   'Frédéric Garel', 'manual'),
+#]
+#latex_documents = [
+#  (master_doc, 'documentationTechnique.tex', 'Documentation Technique',
+#   'Frédéric Garel', 'manual'),
+#]
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #latex_logo = None
@@ -281,9 +288,6 @@ man_pages = [
 texinfo_documents = [
   (master_doc, 'DocTechnique', 'Documentation Technique',
    author, 'DocTechnique', 'One line description of project.',
-   'Miscellaneous'),
-  ('geogig/geogig', 'GeoGig', 'Documentation sur Geogig',
-   author, 'GeoGig', 'One line description of project.',
    'Miscellaneous'),
 ]
 
