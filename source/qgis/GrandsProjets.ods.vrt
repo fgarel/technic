@@ -3,7 +3,7 @@
     <OGRVRTLayer name="GrandsProjets">
         <SrcDataSource relativeToVRT="1">GrandsProjets.ods</SrcDataSource>
         <!--Header=True-->
-        <SrcSql dialect="sqlite">SELECT * FROM 'Feuille1' LIMIT 64 OFFSET 1</SrcSql>
+        <SrcSql dialect="sqlite">SELECT * FROM 'Feuille1' LIMIT 65 OFFSET 1</SrcSql>
         <Field name="Fiche_Projet" src="Field1" type="String"/>
         <Field name="Depenses" src="Field2" type="String"/>
         <Field name="Recettes" src="Field3" type="String"/>

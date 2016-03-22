@@ -26,7 +26,7 @@ Le dxf de départ est ici
 
   ~/Documents/technic/source/geogig/....
 
-Le pcrs au format gml rdt ici :
+Le pcrs au format gml est ici :
 
 .. code::
 
