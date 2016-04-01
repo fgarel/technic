@@ -1,66 +1,98 @@
-=========================
-La documentation officiel
-=========================
+=================================================
+Coté administrateur : Mise en place d'un tutorial
+=================================================
 
-Dans cet annexe, nous décrivons où se trouve la documentation originelle.
+L'environnement de travail pour l'administrateur, c'est le 1er écran byobu.
 
-Le manuel geogig
-================
-
-Récupération du manuel sur le site geogig.org
-http://geogit.org/docs/
-
-Nous allons telecharger les pages, puis nous allons l'adpader
-
-Ligne de commande pour telecharger un site
+C'est à dire, que l'administrateur travaille par defaut dans le repertoire
 
 .. code::
 
-  rm -r geogit.org
-  wget -H -N -k -p http://geogit.org/docs/
-  wget -N -k -p http://geogit.org/docs/
-
-  rm -r geogit.org ; wget -N -k -p http://geogit.org/docs/ ; wget -x -r http://geogit.org/docs/img/
-
--H = Allows wget to go to span a foreign host. Required since tumblr does not have its images on the front page on the same address, they are using secure.assets.tumblr.com see note on excluding domains
-
--N = will grab only files that are newer that what you currently have, in case you are downloading the same page again over time
-
--k = convert your links to view it offline properly
-
--p = grabs all required elements to view it correctly (css, images, etc)
-
-Traduction des pages
---------------------
-
-Une fois que le manuel est téléchargé, nous avons aussi la possibilité de le traduire
+  ~/Documents/install/source/geogig/
 
 
+Création du jeu de données exemple
+==================================
 
-La documentation avancée
-========================
+Dans une première partie, nous allons faire des manipulations afin de
+créer un jeu de données exemples.
+
+Dans une seconde partie, nous allons manipuler ces données à
+l'aide de l'outil geogig.
 
 
-La documentation avancée, avec diagramme uml (cas d'utilisation) est ici.
-https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
-Le plus simple est de cloner le wiki
+Une base de données "origine"
+-----------------------------
+
+Une première base de données, que l'on va appeler "origine", va nous servir pour faire nos traitements qui ne sont pas liés à geogig.
+
+Dans cette base de données, nous allons créer des tables qui vont accueillir des données brutes :
+
+ - le jeu exemple qui est fabriqué au départ sous libre office "calc" (!!) est transformé en sql, puis est injecté dans cette base origine
+ - le pcrs exemple, récupéré sur le site du cnig, est lui aussi injecté dans cette base.
+
+le premier fichier sample.ods permet de montrer
+l'évolution des emprises geographiques de 4 utilisateurs.
+
+Le deuxième fichier, sample2.ods, permet de fabriquer le fichier sql
+qui correspond aux 25 cases de l'emprise totale
+
+A partir de ce deuxième fichier sample2.ods, nous allons fabriquer
+3 fichiers sql :
+
+ - create_sample.sql
+ - insert_sample.sql
+ - update_sample.sql
+
+En executant ces trois fichiers, on obtient notre base exemple.
 
 .. code::
 
-  #wget -N -k -p https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
-  git clone https://github.com/boundlessgeo/GeoGit.wiki.git
+ psql -h localhost -d gis -U fred -f create_sample.sql
+ psql -h localhost -d gis -U fred -f insert_sample.sql
+ psql -h localhost -d gis -U fred -f update_sample.sql
+
+Utilisation du script
+
+.. code::
+
+ ./Documents/install/source/geogig/installGeogigSample.sh
 
 
-Le pcrs
-=======
+Injecter des données dans cette base
+....................................
 
-la documentation sur le pcrs est ici :
+Le transfert des données du jeu exemple, de libre office "calc" vers la base origine est détaillé dans le fichier :
 
-PCRS accompagnement
-http://cnig.gouv.fr/?page_id=1444
+.. code::
 
-PCRS ressources
-http://cnig.gouv.fr/?page_id=11745
+  ~/Documents/install/source/geogig/installGeogigSample.sh
+
+La conversion des fichiers pcrs, récupérés sur le site du cnig, au format gml, vers la base postgreSQL est réalisé via le script :
+
+.. code::
+
+  ~/Documents/install/source/geogig/gmlToPostgis.sh
 
 
+Manipuler les données, les extraire
+...................................
 
+
+Un certain nombres de scripts sql vont ensuite être joué afin de sélectionner, en sortie, des données qui seront utilisées dans la deuxième partie de notre procédure de test.
+
+La manipulation des données et l'extraction se fait grace au script :
+
+.. code::
+
+  TODO
+
+
+Utilisation de geogig
+---------------------
+
+La création des des dépots initiaux se fait grace au script :
+
+.. code::
+
+  ~/Documents/install/source/geogig/installGeogig2.sh

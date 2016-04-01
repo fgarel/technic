@@ -1,89 +1,63 @@
 ===================================
-Procédures et scénarii de l'exemple
+Jeu de données "test", scenarios d'utilisation
 ===================================
 
 
+Cas d'utilisation
+=================
 
-Creation de données exemples
-============================
-le premier fichier sample.ods permet de montrer
-l'évolution des emprises geographiques de 4 utilisateurs.
+Au niveau départemental
+-----------------------
 
-Le deuxième fichier, sample2.ods, permet de fabriquer le fichier sql
-qui correspond aux 25 cases de l'emprise totale
+La Ville de La Rochelle initialise son depot PCRS_public
 
-A partir de ce deuxième fichier sample2.ods, nous allons fabriquer
-3 fichiers sql :
+Combien d'objets (combien de cases) sont présent dans le depot PCRS_public
+de la Ville de La Rochelle, branche PlanTopoControle ?
+git log
+git blame
+git diff
 
-  - create_sample.sql
-  - insert_sample.sql
-  - update_sample.sql
+ERDF initialise son depot PCRS_public
 
-En executant ces trois fichiers, on obtient notre base exemple.
-L'installation de Postgresql est détaillée dans le fichier
+Combien d'objets (combien de cases) sont présent dans le depot PCRS_public
+d'ERDF, branche PlanTopoControle ?
 
-.. code::
+Quelles sont les différences entre les deux dépots ?
 
-  ~/Documents/install/source/environnementTravail/installPostgresql.sh
+Comment la Ville de La Rochelle peut récuperer les plans (cases) qui sont disponibles dans le dépot d'Erdf ?
 
-.. code::
+git merge
 
-  psql -h localhost -d gis -U fred -f create_sample.sql
-  psql -h localhost -d gis -U fred -f insert_sample.sql
-  psql -h localhost -d gis -U fred -f update_sample.sql
+Comment ERDF peut récupérer les plans de la Ville de La Rochelle ?
+git merge
 
-Utilisation du script
+Des modifications sont apportés par un acteur : il modifie son dépot.
+Quelle est la procédure à suivre par le partenaire pour récupérer cette modification ?
+(partage et publication)
 
-.. code::
+Au niveau local
+---------------
 
-  ./Documents/install/source/geogig/installGeogigSample.sh
+Le service Aménagement et Construction est missionné pour conduire un projet sur une zone couvrant
+un carrfour et deux voies perpendiculaires
 
+Le service carto ne dispose d'aucun plan topographique.
 
-Installation de geogig
-======================
+ErDF dispose d'un plan avec une voie et une partie du carrefour
+La CDA dispose d'un plan avec une partie de l'autre voie et du carrefour en entier
 
-L'installation est automatisée et détaillée
-via l'execution du script
-
-.. code::
-
-  ~/Documents/install/source/geogig/installGeogig.sh
-
-Installation d'utilitaires divers
-=================================
- petl
- https://pypi.python.org/pypi/petl
- https://petl.readthedocs.org/en/latest/index.html
- https://github.com/alimanfoo/petlx
- http://petlx.readthedocs.org/en/latest/index.html
-
- setl
- https://stetl.readthedocs.org/en/latest/
- https://github.com/justb4/stetl
- http://fr.slideshare.net/justb4/stetl-foss4g20131024v1
-
- manipulation de fichier svg et graphviz
- https://www.npmjs.com/package/rsvg
- http://www.hokstad.com/making-graphviz-output-pretty-with-xsl-updated
- http://www.hokstad.com/making-graphviz-output-pretty-with-xsl
- https://github.com/vidarh/diagram-tools
- http://www.hokstad.com/graphviz
- 
- plantuml
- http://fr.plantuml.com/usecase.html#Skinparam
- http://plantuml.com/sequence.html
-
- aafig
- https://pythonhosted.org/sphinxcontrib-aafig/
- https://github.com/thewtex/sphinx-contrib/tree/master/aafig
+User Story
 
 
+Point de vue du service Carto
+
+-
 
 Creation de 5 depots geogig
 ===========================
 Il y a 1 dépot git par acteur plus un dépot git central.
 
-Cette mise en place est assurée par le script 
+Cette mise en place est assurée par le script
 
 .. code::
 
@@ -147,4 +121,4 @@ Versionning : Comment l'evolution temporelle de l'emprise géographique dans le 
 ----------
 Chaque acteur complète (enrichit) son levé avec des nouveaux objets
 
-Versionning : comment visualiser l'evolution de 
+Versionning : comment visualiser l'evolution de

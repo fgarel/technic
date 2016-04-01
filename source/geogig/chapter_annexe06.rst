@@ -1,83 +1,33 @@
-=================================================
-Coté administrateur : Mise en place d'un tutorial
-=================================================
+=======================
+Les actions du GTResaux
+=======================
 
-L'environnement de travail pour l'administrateur, c'est le 1er écran byobu.
+Dans cet annexe, nous décrivons les actions menées au niveu du Groupe de Travail Reseaux.
 
-C'est à dire, que l'administrateur travaille par defaut dans le repertoire
+Les réunions passées et à venir
+===============================
 
-.. code::
-
-  ~/Documents/install/source/geogig/
-
-Création du jeu de données exemple
-==================================
-
-Dans une des annexes, nous avons détaillé l'installation de postgresql et geogig.
-
-Nous allons maintenant utiliser ces outils.
-
-Dans une première partie, nous allons faire des manipulations afin de créer un jeu de données exemples.
-
-Dans une seconde partie, nous allons manipuler ces données à l'aide de l'outil geogig.
+2016 Janvier 13 : présence de Riallant
+2016 Janvier 27 : Point intermédiaire avec CDA
+2016 Février 10 : GTReseaux
+2016 Mars 2     : Point intermédiaire avec CDA
+2016 Mars 16    : GTReseaux
+2016 Mars 30    : Point intermédiaire avec CDA
+2016 Avril 13   : GTReseaux
+2016 Mai 4      : Point intermédiaire avec CDA
+2016 Mai 11     : GTReseaux
 
 
-Etat actuel
------------
 
-Actuellement, il y a plusieurs exemples :
-Emplacement du fichier qgis                Base de données  Commentaires
-/technic/source/geogig/pcrs/PCRS-GML.qgs                    fichiers gml de Strasbourg
-/technic/source/qgis/pcrs.qgs              origine          fichiers dxf de la rochelle
-/technic/source/geogig/sample.qgs          rtge_VLR         les données sont fabriquées à partir du fihcier calc
-/technic/source/geogig/pcrs.qgs            sandbox          Structuration Stricte
+TODO list
+=========
 
-Une base de données "origine"
------------------------------
+création du jeu test :
 
-Une première base de données, que l'on va appeler "origine", va nous servir pour faire nos traitements qui ne sont pas liés à geogig.
+  creation des bases de données
 
-Dans cette base de données, nous allons créer des tables qui vont accueillir des données brutes :
+  chargement du jeu test dans les bases de données
 
- - le jeu exemple qui est fabriqué au départ sous libre office "calc" (!!) est transformé en sql, puis est injecté dans cette base origine
- - le pcrs exemple, récupéré sur le site du cnig, est lui aussi injecté dans cette base.
+création des slides, de la documentation
 
-Injecter des données dans cette base
-....................................
-
-Le transfert des données du jeu exemple, de libre office "calc" vers la base origine est détaillé dans le fichier :
-
-.. code::
-
-  ~/Documents/install/source/geogig/installGeogigSample.sh
-  
-La conversion des fichiers pcrs, récupérés sur le site du cnig, au format gml, vers la base postgreSQL est réalisé via le script :
-
-.. code::
-
-  ~/Documents/install/source/geogig/gmlToPostgis.sh
-
-
-Manipuler les données, les extraire
-...................................
-
-
-Un certain nombres de scripts sql vont ensuite être joué afin de sélectionner, en sortie, des données qui seront utilisées dans la deuxième partie de notre procédure de test.
-
-La manipulation des données et l'extraction se fait grace au script :
-
-.. code::
-
-  TODO
-
-
-Utilisation de geogig
----------------------
-
-La création des des dépots initiaux se fait grace au script :
-
-.. code::
-
-  ~/Documents/install/source/geogig/installGeogig2.sh
-
-
+creation de l'outil de conversion PCRS <-> RTGE

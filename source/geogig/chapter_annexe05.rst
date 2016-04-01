@@ -16,8 +16,3 @@ Contenu de la présentation
 ==========================
 
 .. include:: ./chapter_sommaire_sanstitre.rst
-
-
-
-
-

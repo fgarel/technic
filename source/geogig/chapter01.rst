@@ -1,11 +1,26 @@
-=====================================
-Le Plan Corps de Rue Simplifié (PCRS)
-=====================================
+======================================
+Des données topographiques hétérogènes
+======================================
 
-Les données du PCRS sont dans le repertoire
-technic/source/geogig/pcrs
+Exemples visuels de plusieurs plans
+===================================
 
-Le **Plan Corps de Rue Simplifié (PCRS)** est un plan topographique.
 
-Il constitue le socle commun minimal de base décrivant à très grande échelle
-les limites apparentes de la voirie.
+Pourquoi ces différences ?
+==========================
+
+Des besoins différents
+----------------------
+plan pour positionner des réseaux
+plan pour des études sommaires
+plan précis et exhaustifs
+
+Des procédures d'acquisition différentes
+----------------------------------------
+levés traditionnels
+lévés scan, nuage de point
+raster
+
+Des formats et des structurations différentes
+---------------------------------------------
+des outils SIG différents
