@@ -1,18 +1,19 @@
 
-===================================
-Presentation de geogig : les slides
-===================================
+==========================
+Les slides de présentation
+==========================
 
 
-La présentation de geogig est aussi disponible sous la forme de slides.
+Ce document est disponible au format html, pdf, mais aussi sous la forme de slides.
 
-On peut la trouver à l'adresse suivante :
+On peut les trouver aux adresses suivantes :
 
 .. code::
 
-  https://kjkfdjkh
+  file:///home/fred/Documents/technic/build/slideshie/index.html
+  file:///home/fred/Documents/technic/build/slideshov/geogig_hov.html
 
-Contenu de la présentation
+Sommaire des présentations
 ==========================
 
 .. include:: ./chapter_sommaire_sanstitre.rst
