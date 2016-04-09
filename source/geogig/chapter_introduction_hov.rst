@@ -19,7 +19,15 @@ Il correspond au PCRS, complété des objets qui n'appartiennent pas au socle co
 Des outils
 ==========
 **GeoGig** is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
+
 http://geogig.org/
+
+
+.. image:: ../_static/geogig_workflow.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
 
 ----
 

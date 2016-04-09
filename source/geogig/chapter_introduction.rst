@@ -18,7 +18,7 @@ Des données
 Le **Plan Corps de Rue Simplifié (PCRS)** est un plan topographique.
 
 Il constitue le socle commun minimal de base décrivant à très grande échelle
-les limites apparentes de la voirie. 
+les limites apparentes de la voirie.
 
 Le **Référentiel à très Grande Echelle (RTGE)** est aussi un plan topographique.
 
@@ -30,8 +30,9 @@ Des outils
 **GeoGig** is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
 http://geogig.org/
 
+.. image:: ../_static/logo.png
+
 La gouvernance du PCRS
 ======================
 Ce document a pour objectif de présenter les différents aspects techniques, organisationnels et financiers,
 relatifs à la manipulation des données topographiques, et plus particulièrement le PCRS, à l'aide de l'outil "geogig".
-
