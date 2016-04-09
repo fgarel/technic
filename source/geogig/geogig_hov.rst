@@ -13,11 +13,16 @@ Constitution et Mise à Jour des plans topographiques : un travail collaboratif
 .. .. include:: ./part_introduction_hov.rst
 .. .. include:: geogig/part_introduction_hov.rst
 .. .. include:: ./geogig/part_introduction_hov.rst
+
 .. include:: source/geogig/part_introduction_hov.rst
+
 .. .. include:: ./source/geogig/part_introduction_hov.rst
 .. .. include:: chapter_introduction_hov.rst
+
 .. include:: source/geogig/part01_hov.rst
-.. include:: source/geogig/part02_hov.rst
+
+.. .. include:: source/geogig/part02_hov.rst
+
 .. .. include:: part02_hov.rst
 .. .. include:: part03_hov.rst
 .. .. include:: ./chapter01.rst

@@ -2,6 +2,9 @@
 Présentaton de 2 référentiels : RTGE et PCRS
 ============================================
 
+Le fait d'adopter une structuration et une définition communes
+est essentiel si les différents acteurs veulent échanger des plans
+topographiques à grande échelle.
 
 Le Référentiel à Très Grande Echelle (RTGE)
 ===========================================
@@ -33,15 +36,16 @@ les autres qualités attendues :
   -  la mise à jour
 
 Le PCRS se divise en 9 thématiques qui regroupent différents objets :
-  la topographie : les points de canevas, les points topo
-  le bati : les facades des batiments
-  la voirie : les bordures de voie
-  le ferroviaire : les rails
-  les clotures : les murs de clotures
-  le végétal : les arbres et les haies
-  les ouvrages d'art : les piles de pont
-  l'hydrographie
-  l'orographie
+
+  - la topographie : les points de canevas, les points topo
+  - le bati : les facades des batiments
+  - la voirie : les bordures de voie
+  - le ferroviaire : les rails
+  - les clotures : les murs de clotures
+  - le végétal : les arbres et les haies
+  - les ouvrages d'art : les piles de pont
+  - l'hydrographie
+  - l'orographie
 
 Des spécifications connues
 --------------------------
@@ -67,6 +71,7 @@ qui sera considéré comme conforme aux spécifications du PCRS.
 
 La creation de cette table de correspondance a été réalisé eu utilisant plusieurs
 outils :
+
   - un premier outil va lire le dxf et stocker les données dans des tables postgis
   - un second outil va lire ces tables brutes et va générer des tables de correspondance
     (ce deuxième outil est CreateTableCorrespondanceRTGE_PCRS.sql)

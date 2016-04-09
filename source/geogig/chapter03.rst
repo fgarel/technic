@@ -5,11 +5,106 @@ Présentation de l'outil geogig
 Geogig : un logiciel de gesion de versions
 ==========================================
 
-http://geogit.org/docs/start/tutorial.html
+http://geogig.org/docs/start/tutorial.html
 
-GeoGit est un système distribué de contrôle de version (DVCS) pour les données géospatiales.
+GeoGig est un système distribué de contrôle de version (DVCS) pour les données géospatiales.
 
-Ce document est une brève introduction aux principales idées de GeoGit.
+**GeoGig** is an open source tool that draws inspiration from Git, but adapts its core concepts to handle distributed versioning of geospatial data.
+http://geogig.org/
+
+Les fonctionnalités de git
+==========================
+
+Suivi de l'évolution dans le temps
+----------------------------------
+
+Git permet d'enregistrer l'évolution d'une arborescence de fichiers.
+
+.. image:: ../_static/git-ver.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+
+Branches
+--------
+Un dépot git peut gérer en parallèle plusieurs branches, et donc plusieurs historiques.
+
+.. image:: ../_static/repositorydiagram.png
+  :align: center
+
+.. image:: ../_static/Usp56l.jpg
+  :align: center
+
+.. image:: ../_static/smb_karihikram_git_workflow.png
+  :align: center
+
+.. image:: ../_static/aSuccessfulGitBranchingModel.png
+  :align: center
+  :target: https://www.occitech.fr/blog/2014/12/un-modele-de-branches-git-efficace/
+..  :height: 400px
+..  :width: 200px
+
+
+
+Depots distants
+---------------
+Chaque intervenant dispose d'une copie complète du dépot avec tout l'historique
+et peut effetuer autant de changements locaux qu'il le souhaite.
+Chacun est maitre de ce qu'il envoie sur le ou les dépots distants.
+
+.. image:: ../_static/git_remotes.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
+
+Plusieurs modes de fonctionnement
+
+.. image:: ../_static/gitversioncontrol.jpg
+  :align: center
+  :target: https://yakiloo.com/getting-started-git/
+
+.. image:: ../_static/gitversioncontroldistributed.jpg
+  :align: center
+  :target: https://yakiloo.com/getting-started-git/
+
+.. image:: ../_static/gitversioncontrolmultidistributed.jpg
+  :align: center
+  :target: https://yakiloo.com/getting-started-git/
+
+
+
+
+
+
+
+Repertoire de travail, Index, et Historique
+-------------------------------------------
+
+Contrairement à d'autres systèmes de gestion de versions,
+lorsque vous executez git commit, git n'enregistre pas les modifications
+depuis le repertoire de travail mais depuis l'index,
+une zone tampon servant à préparer le prochain commit.
+
+
+.. image:: ../_static/git-transport.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
+
+.. image:: ../_static/geogig_workflow.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
+
+.. image:: ../_static/geogig_workflow_remotes1.png
+  :align: center
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
+
+Ce document est une brève introduction aux principales idées de GeoGig.
 Il explique comment configurer et utiliser GeoGit pour le gestion des versions des données spatiales,
 en introduisant les opérations suivantes:
 

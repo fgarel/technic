@@ -3,7 +3,7 @@ Généralités sur l'outil geogig
 ==============================
 
 
-http://geogit.org/docs/start/tutorial.html
+http://geogig.org/docs/start/tutorial.html
 
 
 GeoGit est un système distribué de contrôle de version (DVCS) pour les données géospatiales.
@@ -33,7 +33,7 @@ Installation
 Configuration
 -------------
 (UC32 Configure Owner's Identity) https://github.com/boundlessgeo/GeoGit/wiki/uc32
-Avant de commencer à travailler avec des données géospatiales dans GeoGit, 
+Avant de commencer à travailler avec des données géospatiales dans GeoGit,
 vous devez fournir GeoGit avec un nom d'utilisateur et e-mail,
 en utilisant la commande de configuration,
 en substituant votre nom et votre e-mail:
@@ -80,7 +80,7 @@ Importer les données
 
 Ajouter des données
 -------------------
-( ? ) 
+( ? )
 
 Commiter les données
 --------------------
@@ -126,6 +126,3 @@ Synchroniser des répertoires
 (UC02 Clone Repository) https://github.com/boundlessgeo/GeoGit/wiki/uc02
 (UC03 Pull from remote) https://github.com/boundlessgeo/GeoGit/wiki/uc03
 (UC04 Push to remote) https://github.com/boundlessgeo/GeoGit/wiki/uc04
-
-
-
