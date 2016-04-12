@@ -16,9 +16,12 @@
 }
 
 .step {
-    width: 800px;
+    width: 1000px;
+    height: 800px;
+    font-size: 22pt;
+    font-weight:bold;
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
 }
-
 
 /* Help popup */
 
