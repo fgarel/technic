@@ -1,4 +1,3 @@
-
 ========================
 Environnement de travail
 ========================
@@ -62,14 +61,15 @@ Le troisième écran est dédié à la documentation
 
 Cet écran peut lui aussi etre divisé en plusieurs frames :
 
-En haut (Edition), acces au sous-repertoire
+En haut (Edition), accès au sous-repertoire
 
 .. code::
 
   ~/Documents/technic/source/geogig
   cd ~/Documents/technic/source/geogig/
 
-pour modifier les fichiers rst
+pour modifier les fichiers .rst
+
 .. code::
 
   vi chapter01_hov.rst
@@ -82,7 +82,7 @@ en trois panneaux verticaux.
   - à droite pour l'edition des fichiers de niveau 2, c'est à dire chapter*.rst
 
 
-En bas (Compilation), acces au sous-repertoire
+En bas (Compilation), accès au sous-repertoire
 
 .. code::
 
@@ -108,7 +108,8 @@ Conventions de syntaxe
 Il s'agit de prendre quelques conventions pour que
 les fichiers restructured text soient correctement formatés
 
-Le fichier "racine" est geogig.rst : part _introduction.rst
+Le fichier "racine" est geogig.rst.
+
 Il inclut quelques fichiers "fils" :
 
   - part_introduction.rst
@@ -147,7 +148,7 @@ chapter05.rst                   2           Organisation envisagée   surligné 
 
 Organisation pour l'edition
 ---------------------------
-Le troisième ecran sous byobu est donc séparé en deux :
+Le troisième écran sous byobu est donc séparé en deux :
 
   - en haut pour l'édition des fichiers rst
   - en bas pour la compilation (le build)
@@ -188,28 +189,33 @@ Le but est de transformer le fichier /chapter_annexe05.rst en fichier _hov.rst
 
 Installation d'utilitaires divers
 =================================
- petl
- https://pypi.python.org/pypi/petl
- https://petl.readthedocs.org/en/latest/index.html
- https://github.com/alimanfoo/petlx
- http://petlx.readthedocs.org/en/latest/index.html
+  * petl
 
- setl
- https://stetl.readthedocs.org/en/latest/
- https://github.com/justb4/stetl
- http://fr.slideshare.net/justb4/stetl-foss4g20131024v1
+    - https://pypi.python.org/pypi/petl
+    - https://petl.readthedocs.org/en/latest/index.html
+    - https://github.com/alimanfoo/petlx
+    - http://petlx.readthedocs.org/en/latest/index.html
 
- manipulation de fichier svg et graphviz
- https://www.npmjs.com/package/rsvg
- http://www.hokstad.com/making-graphviz-output-pretty-with-xsl-updated
- http://www.hokstad.com/making-graphviz-output-pretty-with-xsl
- https://github.com/vidarh/diagram-tools
- http://www.hokstad.com/graphviz
+  * setl
 
- plantuml
- http://fr.plantuml.com/usecase.html#Skinparam
- http://plantuml.com/sequence.html
+    - https://stetl.readthedocs.org/en/latest/
+    - https://github.com/justb4/stetl
+    - http://fr.slideshare.net/justb4/stetl-foss4g20131024v1
 
- aafig
- https://pythonhosted.org/sphinxcontrib-aafig/
- https://github.com/thewtex/sphinx-contrib/tree/master/aafig
+  * manipulation de fichier svg et graphviz
+
+    - https://www.npmjs.com/package/rsvg
+    - http://www.hokstad.com/making-graphviz-output-pretty-with-xsl-updated
+    - http://www.hokstad.com/making-graphviz-output-pretty-with-xsl
+    - https://github.com/vidarh/diagram-tools
+    - http://www.hokstad.com/graphviz
+
+  * plantuml
+
+    - http://fr.plantuml.com/usecase.html#Skinparam
+    - http://plantuml.com/sequence.html
+
+  * aafig
+
+    - https://pythonhosted.org/sphinxcontrib-aafig/
+    - https://github.com/thewtex/sphinx-contrib/tree/master/aafig

@@ -1,66 +1,93 @@
-*************************
-La documentation officiel
-*************************
+==================================================
+Les données initiales et l'installation des outils
+==================================================
 
-Dans cet annexe, nous décrivons où se trouve la documentation originelle.
+----
 
-Le manuel geogig
-================
+Les données sont sous forme de fichiers ou stockées dans des bases de données.
+Qgis va nous servir à visualiser ces données.
 
-Récupération du manuel sur le site geogig.org
-http://geogit.org/docs/
+Qgis
+====
 
-Nous allons telecharger les pages, puis nous allons l'adpader
+Actuellement, il y a plusieurs exemples :
 
-Ligne de commande pour telecharger un site
+=========================================  ===============  ====================================================
+Emplacement du fichier qgis                Base de données  Commentaires
+=========================================  ===============  ====================================================
+/technic/source/geogig/pcrs/PCRS-GML.qgs                    fichiers gml de Strasbourg
+/technic/source/qgis/pcrs.qgs              origine          fichiers dxf de la rochelle
+/technic/source/geogig/sample.qgs          rtge_VLR         les données sont fabriquées à partir du fihcier calc
+/technic/source/geogig/pcrs.qgs            sandbox          Structuration Stricte
+=========================================  ===============  ====================================================
+----
 
-.. code::
+Les données fichiers
+====================
 
-  rm -r geogit.org
-  wget -H -N -k -p http://geogit.org/docs/
-  wget -N -k -p http://geogit.org/docs/
+En ce qui concerne les fichiers, nous avons un lot de données pcrs
+sous la forme de plusieurs fichiers gml
 
-  rm -r geogit.org ; wget -N -k -p http://geogit.org/docs/ ; wget -x -r http://geogit.org/docs/img/
-
--H = Allows wget to go to span a foreign host. Required since tumblr does not have its images on the front page on the same address, they are using secure.assets.tumblr.com see note on excluding domains
-
--N = will grab only files that are newer that what you currently have, in case you are downloading the same page again over time
-
--k = convert your links to view it offline properly
-
--p = grabs all required elements to view it correctly (css, images, etc)
-
-Traduction des pages
---------------------
-
-Une fois que le manuel est téléchargé, nous avons aussi la possibilité de le traduire
-
-
-
-La documentation avancée
-========================
-
-
-La documentation avancée, avec diagramme uml (cas d'utilisation) est ici.
-https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
-Le plus simple est de cloner le wiki
+Le pcrs au format gml est ici :
 
 .. code::
 
-  #wget -N -k -p https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
-  git clone https://github.com/boundlessgeo/GeoGit.wiki.git
+  ~/Documents/technic/source/geogig/....
+
+----
+
+Les donnéees topographiques completes, c'est à dire les données RTGE au
+format Dxf sont ici :
+
+.. code::
+
+  ~/Documents/technic/source/geogig/....
+
+----
+
+Postgresql / Postgis
+====================
+
+Le serveur est VLR6180Y
+
+Pour chacun des acteurs, nous allons attribuer deux bases de données.
+
+La base origine contient les données tests qui ne sont pas partagées.
+
+C'est un peu la base privée de chacun des utilisateurs.
+
+La base sandbox est utilisée lors de la manipulation de geogig.
+
+----
+
+L'installation de Postgresql et le paramétrage des bases de données
+sont réalisés via les scripts :
+
+.. code::
+
+  ~/Documents/install/source/environnementTravail/installPostgresql.sh
+
+  ~/Documents/install/source/environnementTravail/installPostgresqlGeogigGTReseaux.sh
+
+----
+
+Geogig
+======
+
+En ce qui concerne l'outil geogig, il faut distinguer deux choses :
+
+ - l'installation du logiciel
+ - la création des commits initiaux
 
 
-Le pcrs
-=======
+Installation de geogig
+----------------------
 
-la documentation sur le pcrs est ici :
+L'installation est automatisée et détaillée
+via l'execution du script
 
-PCRS accompagnement
-http://cnig.gouv.fr/?page_id=1444
+.. code::
 
-PCRS ressources
-http://cnig.gouv.fr/?page_id=11745
+  ~/Documents/install/source/geogig/installGeogig.sh
 
-
-
+----

@@ -1,55 +1,145 @@
-==========================
-Quelques notions de geogig
-==========================
+=====================
+Les cas d'utilisation
+=====================
 
-Les acteurs
-===========
+http://geogig.org/docs/start/tutorial.html
 
-Les niveaux d'acteurs
----------------------
-extrait de la doc (https://github.com/boundlessgeo/GeoGit/wiki/requirements)
+Le tutorial de geogig,
+explique comment configurer et utiliser GeoGig
+pour le gestion des versions des données spatiales,
+en introduisant les opérations suivantes:
 
-Acteur
-Pour être en mesure d'identifier les principales exigences et les cas d'utilisation pour les fonctions de GeoGig et de l'environnement,
-il est nécessaire d'identifier les principaux «acteurs» ou types d'utilisateurs qui interagissent avec GeoGig sur une base régulière.
-Certains acteurs ont des rôles majeurs ou significatifs et devront interagir avec GeoGig sur une base fréquente.
-Les autres utilisateurs ou acteurs vont interagir avec GeoGig sur une base moins fréquente et / ou auront des capacités limitées
-avec les concepts opérationnels de GeoGig.
-Il existe trois principaux acteurs étant abordés dans les récits utilisateur décrits dans cette section.
-Ils sont : le propriétaire, le collaborateur et le contributeur.
-
-Propriétaire
-
-Lorsqu'un utilisateur crée son propre référentiel, cet utilisateur devient le «propriétaire» de ce référentiel.
-En tant que tel, un propriétaire peut créer et gérer des référentiels, les rendre disponibles en ligne pour le partage,
-et peut accorder l'accès à ce dépôt aux collaborateurs.
-Si besoin, les propriétaires ont également le pouvoir de révoquer l'accès aux collaborateurs.
-
-Collaborateur
-
-A collaborator is a person with read and write access to a repository who has been invited to contribute by the repository owner.
-
-Un collaborateur est un contributeur à un dépôt distant non détenu par lui-même,
-qui a l'autorisation de modifier directement le dépôt distant par le biais d'une opération «push».
-Les Opérations de "push" vers des dépôts distants sont utilisés pour appliquer de modifications à des branches 
-du référentiel local vers des branches des dépôts distants.
-Les opérations de "push" sont également utilisés pour télécharger de nouvelles branches et les étiquettes,
-et peuvent être utilisés pour supprimer des branches dans les dépôts distants.
-Notez que ces dépôts partagent une histoire commune pour que ces opérations soient applicables.
-
-Contributeur
-
-A contributor is someone who has contributed to a project by having a pull request merged but does not have collaborator access.
-
-Un contributeur est un propriétaire qui a accès en lecture seule à d'autres propriétaires de dépôts.
-En tant que tel, il peut cloner, "sparse-cloner", ou récupérer les données à partir des dépôts distants non détenues par lui.
-Un contributeur peut intégrer les autres modifications à son propre référentiel, c'est à dire, 
-les modifications effectuées par un collaborateur ou autre tiers autorisé à apporter des modifications aux données.
-En aucune façon, un contributeur n'est autorisé à modifier un dépôt distant qu'il ne possède pas.
-Un contributeur peut envoyer des correctifs au propriétaire du référentiel, et quand/si elle est appliquée,
-on désigne le contributeur comme "auteur", tandis que la personne qui fait le commit devient le "committer"".
+  - Importer des données spatiales non versionnés dans GeoGit
+  - Apporter des changements et stocker des instantanés ("commit")
+  - Maintenir des lignes indépendantes de modifications («de branche»)
+  - Intégrer les changements de branches distinctes («fusionner»)
+  - Résoudre les modifications contradictoires
+  - Synchroniser des données à travers un réseau («push» et «pull»)
+  - Marquer des versions spécifiques de données ("tag")
+  - Exporter des données de GeoGit vers un shapefile
 
 
-Les branches
-============
+Chacune de ces opérations est détaillée dans des documents techniques
+sous la forme de **cas d'utilisation**
 
+----
+
+La mise en route
+================
+
+Configuration
+-------------
+(UC32 Configure Owner's Identity) https://github.com/boundlessgeo/GeoGit/wiki/uc32
+
+Avant de commencer à travailler avec des données géospatiales,
+vous devez indiquer à GeoGig quelle identité sera enregistrée dans
+chaque commit.
+
+.. code::
+
+  geogit config --global user.name "Author"
+  geogit config --global user.email "author@example.com"
+
+----
+
+(UC01 Create Repository) https://github.com/boundlessgeo/GeoGit/wiki/uc01
+
+Tout d'abord, nous devons créer un nouveau dépot local.
+
+Créez un répertoire de travail,
+et initialiser GeoGig.
+
+.. code::
+
+  geogig init
+
+Maintenant, votre repertoire GeoGig est prêt à gérer le versionning
+de vos données géospatiales.
+
+Notez que le répertoire .geogig a été créé.
+
+----
+
+Les principaux cas d'utilisation
+================================
+
+Rappel du schéma récapitulatif
+
+.. image:: ../_static/geogig_workflow_remotes1.png
+  :align: center
+  :scale: 75%
+  :target: http://geogig.org/docs/start/intro.html
+..  :height: 400px
+..  :width: 200px
+
+----
+
+Importer les données
+--------------------
+
+  - (UC06 Import FeatureType) https://github.com/boundlessgeo/GeoGit/wiki/uc06
+  - (UC34 Check modification status) https://github.com/boundlessgeo/GeoGit/wiki/uc34
+
+
+Ajouter des données
+-------------------
+
+  - ( ? )
+
+Commiter les données
+--------------------
+
+  - (UC10 Commit Changes) https://github.com/boundlessgeo/GeoGit/wiki/uc10
+
+
+Faire des Modifications
+-----------------------
+
+  - (UC34 Check modification status) https://github.com/boundlessgeo/GeoGit/wiki/uc34
+  - ()
+  - (UC10 Commit Changes) https://github.com/boundlessgeo/GeoGit/wiki/uc10
+
+----
+
+Consulter l'historique
+----------------------
+
+  - (UC25 List changesets) https://github.com/boundlessgeo/GeoGit/wiki/uc25
+
+Créer une branche
+-----------------
+
+  - (UC16 Manage branches) https://github.com/boundlessgeo/GeoGit/wiki/uc16
+
+Fusionner deux branches
+-----------------------
+
+  - (UC20 Switch branch) https://github.com/boundlessgeo/GeoGit/wiki/uc20
+  - (UC17 Merge branch with no conflicts) https://github.com/boundlessgeo/GeoGit/wiki/uc17
+
+Résoudre les problèmes de fusion
+--------------------------------
+
+  - (UC11 Review Changeset) https://github.com/boundlessgeo/GeoGit/wiki/uc11
+  - (UC42 Resolve conflicts) https://github.com/boundlessgeo/GeoGit/wiki/uc42
+
+----
+
+Etiquetter une version
+----------------------
+
+  - (UC40 Create tag) https://github.com/boundlessgeo/GeoGit/wiki/uc40
+
+Exporter à partir d'un répertoire geogit
+----------------------------------------
+
+  - (UC07 Export FeatureType) https://github.com/boundlessgeo/GeoGit/wiki/uc07
+
+Synchroniser des répertoires
+----------------------------
+
+  - (UC02 Clone Repository) https://github.com/boundlessgeo/GeoGit/wiki/uc02
+  - (UC03 Pull from remote) https://github.com/boundlessgeo/GeoGit/wiki/uc03
+  - (UC04 Push to remote) https://github.com/boundlessgeo/GeoGit/wiki/uc04
+
+----

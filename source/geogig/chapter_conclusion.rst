@@ -3,13 +3,23 @@ Conclusion
 ==========
 
 Nous avons abordé la gestion des données topographiques à l'aide
-d'un outil tel que geogig.
+de l'outil geogig.
 
 Cet utilitaire permet d'apporter des fonctionnalités qui, aujourd'hui,
-font défaut :
+sont manquantes :
   -  gestion de l'historique,
   -  travail en équipe,
   -  ...
 
-La présentation qui a été réalisée dans ce document est orientée
-utilsateur avancée.
+Les premiers tests montrent que la gestion des données topographiques à l'aide de
+geogig est tout à fait envisageable.
+
+Il faut cependant faire des tests plus approfondis pour valider ce premier
+résultat.
+
+Et pourquoi pas sous la forme d'un atelier ?
+
+Cependant, en parallèle de ces tests plus approfondis, il faut peut-être aussi :
+
+  - Mettre en place un dépot central, accesible à tous les acteurs.
+  - Trouver une interface utilisateur alternative au mode console.

@@ -20,27 +20,26 @@ Partie 3 : Cas concret : Utilisation de geogig pour la gestion du PCRS
   Dans cette partie on quitte la documentation générale pour se consacrer à la mise en oeuvre
   de geogig pour les plans topographiques et plus particulièrement le PCRS.
 
-  Chapitre 5 : Organisation envisagée pour la gouvernance du PCRS
+  Chapitre 5 : Organisation envisagée pour la gestion du PCRS
 
-  Chapitre 6 : Jeu de données "test", scenarios d'utilisation
+  Chapitre 6 : Premiers Tests : Des débuts simples
 
-  Chapitre 7 : Tutorial
-
-----
-
-Annexes
-
-  Annexe 1 : Récupération des documentations "officielles"
-
-  Annexe 2 : Environnement de travail en mode CLI
-
-  Annexe 3 : Les données initiales et l'installation des outils
-
-  Annexe 4 : Création du jeu de données exemple
-
-  Annexe 5 : Slides de présentation
-
-  Annexe 6 : Actions menées au GTRéseaux.
-
+  Chapitre 7 : Tests avancées : Des conditions réelles (?)
 
 ----
+
+.. Annexes
+
+..   Annexe 1 : Récupération des documentations "officielles"
+
+..   Annexe 2 : Environnement de travail en mode CLI
+
+..   Annexe 3 : Les données initiales et l'installation des outils
+
+..   Annexe 4 : Création du jeu de données exemple
+
+..   Annexe 5 : Slides de présentation
+
+..   Annexe 6 : Actions menées au GTRéseaux.
+
+..   Annexe 7 : Gestion du PCRS en mode distribué

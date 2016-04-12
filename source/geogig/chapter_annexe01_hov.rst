@@ -1,102 +1,57 @@
-***********************
-Installation des outils
-***********************
+===========================
+La documentation officielle
+===========================
 
-Postgresql / Postgis
-====================
+----
 
-Pour chacun des acteurs, nous allons attribuer deux bases de données.
+Dans cette annexe, nous décrivons où se trouve la documentation en ligne.
 
-L'installation et le paramétrage des bases de données sont réalisés via le script :
-
-.. code::
-  
-  ~/Documents/install/source/environnementTravail/installPostgresqlGeogigGTReseaux.sh
-
-
-
-Geogig
-======
-
-En ce qui concerne l'outil geogig, il faut distinguer deux choses :
-
- - l'installation du logiciel
- - la création des commits initiaux
-
-L'installation est détaillé dans le fichier :
-
-.. code::
-
-  ~/Documents/install/source/geogig/installGeogig.sh
-
-
-La création des commits initiaux et l'utilisation de git avec des données exemples est détaillé dans l'annexe 2.
-
-
-
-Package GeoSHAPE
+Le manuel geogig
 ================
 
-GeoSHAPE is the integration of a geospatial portal (GeoNode), a web mapping client (MapLoom), and a mobile application (Arbiter), that leverages the infrastructure provided by a geospatial server and database components (The OpenGeo Suite)
+Récupération du manuel sur le site geogig.org
+http://geogit.org/docs/
 
-http://geoshape.org/
+Nous allons telecharger les pages, puis nous allons l'adpader
 
-https://docs.google.com/document/d/1KMpk6dXuqvwfEi0pfRpaGY62j6ikoYtpYUPU0sJQAmk/edit
+Ligne de commande pour telecharger un site
 
-https://github.com/ROGUE-JCTD/rogue_geonode
+.. code::
 
-https://speakerdeck.com/scottevil/distributed-versioned-editing-in-action
+  rm -r geogit.org
+  wget -H -N -k -p http://geogit.org/docs/
+  wget -N -k -p http://geogit.org/docs/
 
-http://boundlessgeo.com/2014/03/geogit-and-openstreetmap-for-yolanda/
+  rm -r geogit.org ; wget -N -k -p http://geogit.org/docs/ ; wget -x -r http://geogit.org/docs/img/
 
-gestion des conflits
-http://garnertb.io/geonode-summit-2014/template#11
+-H = Allows wget to go to span a foreign host. Required since tumblr does not have its images on the front page on the same address, they are using secure.assets.tumblr.com see note on excluding domains
 
+-N = will grab only files that are newer that what you currently have, in case you are downloading the same page again over time
 
-Coté serveur
-============
+-k = convert your links to view it offline properly
 
-Geogig et geoserver
--------------------
+-p = grabs all required elements to view it correctly (css, images, etc)
 
-A GeoServer extension is available to allow GeoServer to interact with a GeoGig repository and use it as data store. It enables a GeoGig repository to be exposed as a remote for cloning, pushing and pulling as well as via OGC services (WMS/WFS/WMTS etc). Each top level tree in a GeoGig repository corresponds to a GeoServer layer. GeoServer treats a GeoGig repository as a store in much the same way as it does a database.
+----
 
-http://dev.boundlessgeo.com/~groldan/geogig-user-manual/interaction/geoserver_ui.html
+Traduction des pages
+--------------------
 
+Une fois que le manuel est téléchargé, nous avons aussi la possibilité de le traduire
 
-Geonode
--------
+----
 
-GeoNode is an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data. http://geonode.org/
-
-http://geonode.org/
-
-https://github.com/GeoNode/geonode
-
-Mais poour le moment, on est en version 2.4....
-
-la version 2.5 promet l'intégration de geogig
+La documentation avancée
+========================
 
 
-Geogig et geonode 2.5
-.....................
+La documentation avancée, avec diagramme uml (cas d'utilisation) est ici.
+https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+Le plus simple est de cloner le wiki
 
-On y parle aussi d'OSM...
+.. code::
 
-https://github.com/GeoNode/geonode/issues/1931
+  #wget -N -k -p https://github.com/boundlessgeo/GeoGit/wiki/use-case-worksheet
+  git clone https://github.com/boundlessgeo/GeoGit.wiki.git
 
-
-Coté client
-===========
-
-MapLoom
--------
-
-MapLoom is a web mapping client based on OpenLayers 3. It provides full-featured editing capabilities for data stores in GeoServer - including PostGIS and GeoGig. For GeoGig layers, it lets you view history, and sync with other GeoGig repositories 
-
-https://github.com/ROGUE-JCTD/MapLoom
-
-https://vimeo.com/106852747
-
-
-
+----
