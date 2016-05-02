@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="ecole_elementaire_attributs">
+        <SrcDataSource relativeToVRT="1">ecole_elementaire_attributs.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuille1</SrcLayer>
+        <Field name="ee_id" src="ee_id" type="Integer"/>
+        <Field name="ee_theme" src="ee_theme" type="String"/>
+        <Field name="ee_type" src="ee_type" type="String"/>
+        <Field name="ee_libelle" src="ee_libelle" type="String"/>
+        <Field name="ee_secteur" src="ee_secteur" type="String"/>
+        <Field name="ee_lieu_restauration" src="ee_lieu_restauration" type="String"/>
+        <Field name="ee_cl_municipal" src="ee_cl_municipal" type="String"/>
+        <Field name="ee_cl_associatif" src="ee_cl_associatif" type="String"/>
+        <Field name="ee_nb_clnormal" src="ee_nb_clnormal" type="Integer"/>
+        <Field name="ee_nb_clis" src="ee_nb_clis" type="Integer"/>
+        <Field name="ee_nb_classe" src="ee_nb_classe" type="Integer"/>
+        <Field name="ee_eff_clnormal" src="ee_eff_clnormal" type="Integer"/>
+        <Field name="ee_eff_clis" src="ee_eff_clis" type="Integer"/>
+        <Field name="ee_effectif" src="ee_effectif" type="Integer"/>
+        <Field name="ee_capacite" src="ee_capacite" type="Integer"/>
+        <Field name="ee_effectif_par_classe" src="ee_effectif_par_classe" type="Real"/>
+        <Field name="ee_capacite_moins_effectif" src="ee_capacite_moins_effectif" type="Integer"/>
+        <Field name="ee_taille" src="ee_taille" type="Integer"/>
+        <Field name="ee_dx" src="ee_dx" type="Real"/>
+        <Field name="ee_dy" src="ee_dy" type="Real"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

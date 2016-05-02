@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="ecole_maternelle_attributs">
+        <SrcDataSource relativeToVRT="1">ecole_maternelle_attributs.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuille1</SrcLayer>
+        <Field name="em_id" src="em_id" type="Integer"/>
+        <Field name="em_theme" src="em_theme" type="String"/>
+        <Field name="em_type" src="em_type" type="String"/>
+        <Field name="em_libelle" src="em_libelle" type="String"/>
+        <Field name="em_secteur" src="em_secteur" type="String"/>
+        <Field name="em_lieu_restauration" src="em_lieu_restauration" type="String"/>
+        <Field name="em_cl_municipal" src="em_cl_municipal" type="String"/>
+        <Field name="em_cl_associatif" src="em_cl_associatif" type="String"/>
+        <Field name="em_nb_classe" src="em_nb_classe" type="Integer"/>
+        <Field name="em_eff_tps" src="em_eff_tps" type="Integer"/>
+        <Field name="em_eff_normal" src="em_eff_normal" type="Integer"/>
+        <Field name="em_effectif" src="em_effectif" type="Integer"/>
+        <Field name="em_capacite" src="em_capacite" type="Integer"/>
+        <Field name="em_effectif_par_classe" src="em_effectif_par_classe" type="Real"/>
+        <Field name="em_capacite_moins_effectif" src="em_capacite_moins_effectif" type="Integer"/>
+        <Field name="em_taille" src="em_taille" type="Integer"/>
+        <Field name="em_dx" src="em_dx" type="Integer"/>
+        <Field name="em_dy" src="em_dy" type="Integer"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

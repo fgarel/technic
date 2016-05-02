@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="centre_loisirs_attributs">
+        <SrcDataSource relativeToVRT="1">centre_loisirs_attributs.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuille1</SrcLayer>
+        <Field name="cl_id" src="cl_id" type="Integer"/>
+        <Field name="cl_theme" src="cl_theme" type="String"/>
+        <Field name="cl_type" src="cl_type" type="String"/>
+        <Field name="cl_libelle" src="cl_libelle" type="String"/>
+        <Field name="cl_adresse" src="cl_adresse" type="String"/>
+        <Field name="cl_secteur" src="cl_secteur" type="String"/>
+        <Field name="cl_eff_matin_maternelle" src="cl_eff_matin_maternelle" type="String"/>
+        <Field name="cl_eff_matin_elementaire" src="cl_eff_matin_elementaire" type="String"/>
+        <Field name="cl_eff_petitperiscolaire_maternelle" src="cl_eff_petitperiscolaire_maternelle" type="String"/>
+        <Field name="cl_eff_petitperiscolaire_elementaire" src="cl_eff_petitperiscolaire_elementaire" type="String"/>
+        <Field name="cl_eff_grandperiscolaire_maternelle" src="cl_eff_grandperiscolaire_maternelle" type="String"/>
+        <Field name="cl_eff_grandperiscolaire_elementaire" src="cl_eff_grandperiscolaire_elementaire" type="String"/>
+        <Field name="cl_effectif" src="cl_effectif" type="Integer"/>
+        <Field name="cl_capacite" src="cl_capacite" type="Integer"/>
+        <Field name="cl_capacite_moins_effectif" src="cl_capacite_moins_effectif" type="Integer"/>
+        <Field name="cl_taille" src="cl_taille" type="Integer"/>
+        <Field name="cl_dx" src="cl_dx" type="Real"/>
+        <Field name="cl_dy" src="cl_dy" type="Real"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
