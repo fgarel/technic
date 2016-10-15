@@ -13,7 +13,7 @@
 --  - champ automatique
 --  - champ manuel
 
--- Attention, pour pouvoir comparer deux textes plus facielement, 
+-- Attention, pour pouvoir comparer deux textes plus facielement,
 -- il faut ajouter à la base de données une extension "unaccent"
 -- cela est utile pour modifier les chaines de caractères accentués
 -- vu ici
@@ -64,9 +64,71 @@ select Addgeometrycolumn('table_02', 'geometry_original', 2154, 'GEOMETRY', 3);
 select Addgeometrycolumn('table_02', 'geometry_automatique', 3946, 'GEOMETRY', 2);
 select Addgeometrycolumn('table_02', 'geometry_manuel', 3946, 'GEOMETRY', 2);
 
+DROP TABLE if exists table_01_t cascade;
+CREATE TABLE table_01_t
+(
+  text_original text,
+  text_automatique text,
+  text_manuel text
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE table_01_t
+  OWNER TO "Fred";
+
+DROP TABLE if exists table_01_g cascade;
+CREATE TABLE table_01_g
+(
+  geometry_original geometry(Geometry,4326),
+  geometry_automatique geometry(Geometry,3946),
+  geometry_manuel geometry(Geometry,3946)
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE table_01_g
+  OWNER TO "Fred";
+
+DROP TABLE if exists table_02_t cascade;
+CREATE TABLE table_02_t
+(
+  text_original text,
+  text_automatique text,
+  text_manuel text
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE table_02_t
+  OWNER TO "Fred";
+
+DROP TABLE if exists table_02_g cascade;
+CREATE TABLE table_02_g
+(
+  geometry_original geometry(Geometry,4326),
+  geometry_automatique geometry(Geometry,3946),
+  geometry_manuel geometry(Geometry,3946)
+)
+WITH (
+  OIDS=TRUE
+);
+ALTER TABLE table_02_g
+  OWNER TO "Fred";
+
+select Dropgeometrycolumn('table_02', 'geometry_original');
+select Dropgeometrycolumn('table_02', 'geometry_automatique');
+select Dropgeometrycolumn('table_02', 'geometry_manuel');
+select Addgeometrycolumn('table_02', 'geometry_original', 2154, 'GEOMETRY', 3);
+select Addgeometrycolumn('table_02', 'geometry_automatique', 3946, 'GEOMETRY', 2);
+select Addgeometrycolumn('table_02', 'geometry_manuel', 3946, 'GEOMETRY', 2);
+
+
 DROP TABLE if exists comptage cascade;
 CREATE TABLE comptage
 (
+  "table_01" integer,
+  "table_02" integer,
   table_ito integer,
   table_ita integer,
   table_itm integer,
@@ -81,14 +143,19 @@ WITH (
   OIDS=TRUE
 );
 
-insert into comptage values (0,0,0,0,0,0,0,0,0);
+insert into comptage values (0,0,0,0,0,0,0,0,0,0,0);
+update comptage
+  set "table_01" = (select count(*) from "table_01");
+update comptage
+  set "table_02" = (select count(*) from "table_02");
+
 -- ---------------------------------------------------------------- --
 -- Remplissage des tables intermediaires avec les données d'origine --
 -- ---------------------------------------------------------------- --
 -- C'est ici qu'il faut adapter les fonctions pour passer
 -- du champ original au champ automatique
 -- Pour les textes, on passe aux majuscules sans accent
--- Pour la géométrie, on fait un buffer de 10 m
+-- Pour la géométrie, on fait un buffer de +/-5 m
 
 -- table_01 <- ListeVoie_From_Osm
 INSERT INTO table_01 (text_original, text_automatique, geometry_original)
@@ -104,9 +171,9 @@ where voie_libelle_osm LIKE 'Avenue%'
 );
 
 
-drop table if exists table_01_tmp;
-create table table_01_tmp as 
-select 
+--drop table if exists table_01_tmp;
+create table table_01_tmp as
+select
   text_original,
   st_buffer(
     st_linemerge(
@@ -123,7 +190,7 @@ select
       )
     ),
   5) as geometry_automatique
-from table_01 
+from table_01
 group by text_original;
 
 update table_01
@@ -150,5 +217,28 @@ where voie_libelle LIKE 'Avenue%'
 update table_02
 set geometry_automatique = st_buffer(st_transform(st_force2d(geometry_original), 3946),5);
 
+-- ----------------------------------------------- --
+-- Creation de 4 autres sous-tables intermeidaires --
+-- ----------------------------------------------- --
+-- A partir de ces deux tables intermediares, table_01 et table_02, --
+-- Creation de 4 autres tables :
+--   - table_01_t
+--   - table_01_g
+--   - table_02_t
+--   - table_02_g
+DROP TABLE if exists table_01_t cascade;
+create table table_01_t as
+select
+  oid,
+  text_original,
+  text_automatique,
+  text_manuel
+from table_01;
 
-  
+select count(*) from "table_01";
+select count(*) from table_01_t;
+
+
+DROP TABLE if exists table_01_g cascade;
+DROP TABLE if exists table_02_t cascade;
+DROP TABLE if exists table_02_g cascade;

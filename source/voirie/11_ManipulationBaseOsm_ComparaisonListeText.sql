@@ -13,7 +13,7 @@
 --  - champ automatique
 --  - champ manuel
 
--- Attention, pour pouvoir comparer deux textes plus facielement, 
+-- Attention, pour pouvoir comparer deux textes plus facielement,
 -- il faut ajouter à la base de données une extension "unaccent"
 -- cela est utile pour modifier les chaines de caractères accentués
 -- vu ici
@@ -41,8 +41,8 @@ select distinct
   --"table_02".geometry_original as table_02_geometry_original,
   --"table_02".geometry_automatique as table_02_geometry_automatique,
   --"table_02".geometry_manuel as table_02_geometry_manuel
-  
-from 
+
+from
   "table_01" inner join "table_02"
     on "table_01".text_original = "table_02".text_original
 order by text_original;
@@ -62,8 +62,8 @@ select distinct
   --"table_02".geometry_original as table_02_geometry_original,
   --"table_02".geometry_automatique as table_02_geometry_automatique,
   --"table_02".geometry_manuel as table_02_geometry_manuel
-  
-from 
+
+from
   "table_01" inner join "table_02"
     on "table_01".text_automatique = "table_02".text_automatique
 order by text_automatique;
@@ -83,8 +83,8 @@ select distinct
   --"table_02".geometry_original as table_02_geometry_original,
   --"table_02".geometry_automatique as table_02_geometry_automatique,
   --"table_02".geometry_manuel as table_02_geometry_manuel
-  
-from 
+
+from
   "table_01" inner join "table_02"
     on "table_01".text_manuel = "table_02".text_manuel
 order by text_manuel;
@@ -100,7 +100,7 @@ select distinct
   --"table_02".original as table_02_original,
   --"table_02".automatique as table_02_automatique,
   --"table_02".manuel as table_02_manuel
-from 
+from
   "table_01" left outer join "table_02"
   on "table_01".text_original = "table_02".text_original
 where "table_02".text_original is null
@@ -115,7 +115,7 @@ select distinct
   --"table_02".original as table_02_original,
   --"table_02".automatique as table_02_automatique,
   --"table_02".manuel as table_02_manuel
-from 
+from
   "table_01" left outer join "table_02"
   on "table_01".text_automatique = "table_02".text_automatique
 where "table_02".text_automatique is null
@@ -130,7 +130,7 @@ select distinct
   --"table_02".original as table_02_original,
   --"table_02".automatique as table_02_automatique,
   --"table_02".manuel as table_02_manuel
-from 
+from
   "table_01" left outer join "table_02"
   on "table_01".text_manuel = "table_02".text_manuel
 where "table_02".text_manuel is null
@@ -147,7 +147,7 @@ select distinct
   "table_02".text_original as table_02_text_original,
   "table_02".text_automatique as table_02_text_automatique,
   "table_02".text_manuel as table_02_text_manuel
-from 
+from
   "table_01" right outer join "table_02"
   on "table_01".text_original = "table_02".text_original
 where "table_01".text_original is null
@@ -162,7 +162,7 @@ select distinct
   "table_02".text_original as table_02_text_original,
   "table_02".text_automatique as table_02_text_automatique,
   "table_02".text_manuel as table_02_text_manuel
-from 
+from
   "table_01" right outer join "table_02"
   on "table_01".text_automatique = "table_02".text_automatique
 where "table_01".text_automatique is null
@@ -178,12 +178,16 @@ select distinct
   "table_02".text_original as table_02_text_original,
   "table_02".text_automatique as table_02_text_automatique,
   "table_02".text_manuel as table_02_text_manuel
-from 
+from
   "table_01" right outer join "table_02"
   on "table_01".text_manuel = "table_02".text_manuel
 where "table_01".text_manuel is null
 order by table_02_text_manuel;
 
+update comptage
+  set "table_01" = (select count(*) from "table_01");
+update comptage
+  set "table_02" = (select count(*) from "table_02");
 update comptage
   set table_ito = (select count(*) from table_ito);
 update comptage
@@ -205,14 +209,20 @@ update comptage
 
 
 
-select * from comptage;
+select
+  "table_01",
+  table_lta,
+  table_ita,
+  table_rta,
+  "table_02"
+from comptage;
 
 
 
 
 -------------------------------------------------
 -------------------------------------------------
-
+/*
 select
   oid,
   text_automatique
@@ -238,7 +248,7 @@ select distinct
   "table_02".geometry_original as table_02_geometry_original,
   "table_02".geometry_automatique as table_02_geometry_automatique,
   "table_02".geometry_manuel as table_02_geometry_manuel
-from 
+from
   table_ita inner join table_01
     on "table_ita".text_automatique = table_01.text_automatique
      inner join table_02
@@ -271,7 +281,4 @@ select count(*) from view_ita;
 
 select * from view_ita where
 table_01_text_automatique like '%PROU%';
-
-
-select 
-  
+*/
