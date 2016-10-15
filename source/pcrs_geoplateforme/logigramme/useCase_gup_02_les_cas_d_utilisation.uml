@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+skinparam packageStyle rect
+actor :Acteur 1\nAdministrateur\nGeoplateforme:
+actor :Acteur 2\nPartenaire:
+actor :Acteur 3\nContributeur\nTopographe:
+actor :Acteur 4\nVisionneur:
+
+rectangle PCRS {
+  :Acteur 1\nAdministrateur\nGeoplateforme: --> (Gere les droits\nSécurise les flux)
+  (Administre ses données\net métadonnées\nLecture/Ecriture) <-- :Acteur 2\nPartenaire:
+  (Visualise les données\net métadonnées\ndes autres partenaires\nLecture) <-- :Acteur 2\nPartenaire:
+  :Acteur 3\nContributeur\nTopographe: ..> (Bloque une emprise\nen prévision d'un ajout\nou d'une modification)
+  (Bloque une emprise\nen prévision d'un ajout\nou d'une modification) <-- :Acteur 2\nPartenaire:
+  :Acteur 3\nContributeur\nTopographe: ..> (Ajoute ou met à jour\nle PCRS)
+  (Ajoute ou met à jour\nle PCRS) <-- :Acteur 2\nPartenaire:
+  :Acteur 3\nContributeur\nTopographe: --> (Visualise le PCRS\nen étant connecté)
+  (Visualise le PCRS\nen étant connecté) <-- :Acteur 2\nPartenaire:
+  (Visualise le PCRS\nen étant connecté) <-- :Acteur 4\nVisionneur:
+  (Visualise le PCRS\nen mode anonyme) <-- :Acteur 4\nVisionneur:
+}
+@enduml

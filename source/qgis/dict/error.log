@@ -1,0 +1,197 @@
+[Wed Jun 22 18:20:23 2016].688131 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:20:23 2016].696058 msDrawMap(): WMS/WFS set-up and query, 0.008s
+[Wed Jun 22 18:20:23 2016].884429 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.188s
+[Wed Jun 22 18:20:24 2016].64333 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.180s
+[Wed Jun 22 18:20:24 2016].64509 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].64721 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].64905 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65089 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65112 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65290 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65468 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65635 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65793 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].65948 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66127 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66276 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66425 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66584 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66733 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:24 2016].66879 msDrawMap(): Drawing Label Cache, 0.003s
+[Wed Jun 22 18:20:24 2016].66889 msDrawMap() total time: 0.380s
+[Wed Jun 22 18:20:24 2016].88657 msSaveImage(test.png) total time: 0.022s
+[Wed Jun 22 18:20:48 2016].860224 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:20:48 2016].868483 msDrawMap(): WMS/WFS set-up and query, 0.008s
+[Wed Jun 22 18:20:49 2016].50853 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.182s
+[Wed Jun 22 18:20:49 2016].204382 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.153s
+[Wed Jun 22 18:20:49 2016].204581 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].204862 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205067 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205293 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205321 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205545 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205771 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].205972 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].206170 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].206385 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].206608 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].206795 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].206982 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].207184 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].207374 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:20:49 2016].207557 msDrawMap(): Drawing Label Cache, 0.003s
+[Wed Jun 22 18:20:49 2016].207570 msDrawMap() total time: 0.348s
+[Wed Jun 22 18:20:49 2016].233312 msSaveImage(test.png) total time: 0.026s
+[Wed Jun 22 18:20:49 2016].233536 msFreeMap(): freeing map at 0x2484b40.
+[Wed Jun 22 18:26:21 2016].448132 getSymbol(): Symbol definition error. Parsing error near (PNG):(line 109)
+[Wed Jun 22 18:26:21 2016].448178 msFreeMap(): freeing map at 0x1084b80.
+[Wed Jun 22 18:27:18 2016].128662 getSymbol(): Symbol definition error. Parsing error near (IMAGE):(line 109)
+[Wed Jun 22 18:27:18 2016].128697 msFreeMap(): freeing map at 0x107fb80.
+[Wed Jun 22 18:27:56 2016].994879 getSymbol(): Symbol definition error. Parsing error near (png):(line 109)
+[Wed Jun 22 18:27:56 2016].994919 msFreeMap(): freeing map at 0x2440c20.
+[Wed Jun 22 18:28:10 2016].712931 getSymbol(): Symbol definition error. Parsing error near (png):(line 109)
+[Wed Jun 22 18:28:10 2016].712968 msFreeMap(): freeing map at 0x95f950.
+[Wed Jun 22 18:28:25 2016].618340 getSymbol(): Symbol definition error. Parsing error near (PNG):(line 109)
+[Wed Jun 22 18:28:25 2016].618372 msFreeMap(): freeing map at 0x790b80.
+[Wed Jun 22 18:33:00 2016].545528 loadSymbol(): Symbol definition error. Symbol of type VECTOR or ELLIPSE has no point data.
+[Wed Jun 22 18:33:00 2016].545570 msFreeMap(): freeing map at 0x15a0b80.
+[Wed Jun 22 18:34:24 2016].991199 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:34:24 2016].997397 msDrawMap(): WMS/WFS set-up and query, 0.006s
+[Wed Jun 22 18:34:25 2016].227602 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.230s
+[Wed Jun 22 18:34:25 2016].383873 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.156s
+[Wed Jun 22 18:34:25 2016].384017 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384172 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384286 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384420 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384436 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384565 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384692 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384809 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].384940 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385055 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385185 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385292 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385400 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385515 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385624 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:34:25 2016].385728 msDrawMap(): Drawing Label Cache, 0.002s
+[Wed Jun 22 18:34:25 2016].385736 msDrawMap() total time: 0.395s
+[Wed Jun 22 18:34:25 2016].401638 msSaveImage(test.png) total time: 0.016s
+[Wed Jun 22 18:34:25 2016].401822 msFreeMap(): freeing map at 0xb63b40.
+[Wed Jun 22 18:35:05 2016].119348 loadSymbol(): Symbol definition error. Symbol of type VECTOR or ELLIPSE has no point data.
+[Wed Jun 22 18:35:05 2016].119393 msFreeMap(): freeing map at 0x1b48950.
+[Wed Jun 22 18:37:05 2016].78650 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:37:05 2016].85477 msDrawMap(): WMS/WFS set-up and query, 0.007s
+[Wed Jun 22 18:37:05 2016].287060 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.202s
+[Wed Jun 22 18:37:05 2016].477054 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.190s
+[Wed Jun 22 18:37:05 2016].477255 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].477529 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].477741 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].477983 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].478015 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].478253 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].478489 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].478702 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].478912 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].479119 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].479356 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].479552 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].479751 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].479964 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].480166 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:05 2016].480360 msDrawMap(): Drawing Label Cache, 0.003s
+[Wed Jun 22 18:37:05 2016].480373 msDrawMap() total time: 0.403s
+[Wed Jun 22 18:37:05 2016].508169 msSaveImage(test.png) total time: 0.028s
+[Wed Jun 22 18:37:05 2016].508390 msFreeMap(): freeing map at 0x1c71b80.
+[Wed Jun 22 18:37:37 2016].129986 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:37:37 2016].137206 msDrawMap(): WMS/WFS set-up and query, 0.007s
+[Wed Jun 22 18:37:37 2016].418390 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.281s
+[Wed Jun 22 18:37:37 2016].650862 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.232s
+[Wed Jun 22 18:37:37 2016].651052 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].651295 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].651480 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].651694 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].651721 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].651938 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].652148 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].652335 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].652523 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].652707 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].652936 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].653114 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].653297 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].653487 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].653672 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:37:37 2016].653841 msDrawMap(): Drawing Label Cache, 0.003s
+[Wed Jun 22 18:37:37 2016].653853 msDrawMap() total time: 0.525s
+[Wed Jun 22 18:37:37 2016].678161 msSaveImage(test.png) total time: 0.024s
+[Wed Jun 22 18:37:37 2016].678354 msFreeMap(): freeing map at 0x10e7950.
+[Wed Jun 22 18:38:18 2016].473722 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:38:18 2016].481632 msDrawMap(): WMS/WFS set-up and query, 0.008s
+[Wed Jun 22 18:38:18 2016].791217 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.310s
+[Wed Jun 22 18:38:19 2016].46766 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.256s
+[Wed Jun 22 18:38:19 2016].46966 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47205 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47329 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47498 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47526 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47750 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].47973 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].48176 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].48375 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].48572 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].48807 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].49011 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].49206 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].49407 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].49597 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:38:19 2016].49778 msDrawMap(): Drawing Label Cache, 0.003s
+[Wed Jun 22 18:38:19 2016].49791 msDrawMap() total time: 0.577s
+[Wed Jun 22 18:38:19 2016].76293 msSaveImage(test.png) total time: 0.026s
+[Wed Jun 22 18:38:19 2016].76514 msFreeMap(): freeing map at 0x1855b80.
+[Wed Jun 22 18:39:30 2016].924909 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:39:30 2016].932186 msDrawMap(): WMS/WFS set-up and query, 0.007s
+[Wed Jun 22 18:39:31 2016].121452 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.189s
+[Wed Jun 22 18:39:31 2016].256001 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.135s
+[Wed Jun 22 18:39:31 2016].256169 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].256394 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].256570 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].256770 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].256796 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].257103 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].257403 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].257671 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].257931 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].258193 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].258490 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].258731 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].258978 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].259243 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].259494 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:39:31 2016].259716 msDrawMap(): Drawing Label Cache, 0.004s
+[Wed Jun 22 18:39:31 2016].259744 msDrawMap() total time: 0.336s
+[Wed Jun 22 18:39:31 2016].293902 msSaveImage(test.png) total time: 0.034s
+[Wed Jun 22 18:39:31 2016].294158 msFreeMap(): freeing map at 0x2082b80.
+[Wed Jun 22 18:40:37 2016].364909 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:40:37 2016].373351 msDrawMap(): WMS/WFS set-up and query, 0.008s
+[Wed Jun 22 18:40:37 2016].558066 msDrawMap(): Layer 0 (ep_ouvrage_engouffrement), 0.185s
+[Wed Jun 22 18:40:37 2016].681751 msDrawMap(): Layer 1 (ep_ouvrage_collecte), 0.124s
+[Wed Jun 22 18:40:37 2016].681918 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682106 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682252 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682417 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682437 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682600 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682761 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].682908 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683058 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683204 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683368 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683502 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683638 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683786 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].683923 setting outlinewidth to 6 (1, 11, 2)
+[Wed Jun 22 18:40:37 2016].684056 msDrawMap(): Drawing Label Cache, 0.002s
+[Wed Jun 22 18:40:37 2016].684066 msDrawMap() total time: 0.320s
+[Wed Jun 22 18:40:37 2016].704833 msSaveImage(test.png) total time: 0.021s
+[Wed Jun 22 18:40:37 2016].705027 msFreeMap(): freeing map at 0x82fb80.

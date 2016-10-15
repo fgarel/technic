@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ville de La Rochelle | Demande de l'usager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Demande de l'usager</h1>
+</div>
+
+<!-- Contact with Map - START -->
+<!--formden.js communicates with FormDen server to validate fields and submit via AJAX -->
+<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+
+<!-- Special version of Bootstrap that is isolated to content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+    <form action="https://formden.com/post/sRHN9Mwr/" method="post">
+     <!-- <div class="form-group ">
+     <label class="control-label requiredField" for="Objet">
+       Objet
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="Objet" name="Objet" type="text"/>
+      <span class="help-block" id="hint_Objet">
+       Objet de votre demande
+      </span>
+     </div> -->
+
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       Cat&eacute;gorie de l'incident
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+     <!-- https://github.com/xavierfaucon/bootstrap-selectsplitter -->
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12" style="padding-top:10px;">
+            <select data-selectsplitter-selector>
+              <optgroup label="Voirie">
+                <option value="11">Dégradation de la chaussée</option>
+                <option value="12">Dégradation du trottoir</option>
+                <option value="13">Caniveau ou bordure endommagés</option>
+              </optgroup>
+              <optgroup label="Pluvial">
+                <option value="21">Débordement</option>
+                <option value="22">Infiltration</option>
+                <option value="23">Grille ou avaloirs bouchés</option>
+                <option value="24">Chutes d'objets dans une grille</option>
+                <option value="25">Plaque bruyante ou manquante</option>
+                <option value="26">Pollution</option>
+              </optgroup>
+              <optgroup label="Signalisation">
+                <option value="31">Panneau : défaut, manque ou insuffisant</option>
+                <option value="32">Marquage au sol  : manquant, défaut, insuffisant</option>
+              </optgroup>
+              <optgroup label="Stationnement et Circulation">
+                <option value="41">Vitesse excessive</option>
+                <option value="42">Trafic très important</option>
+                <option value="43">Défaut d'accessibilité (piéton, PMR)</option>
+                <option value="44">Stationnement gênant</option>
+                <option value="45">Cheminement cyclable</option>
+                <option value="46">Cheminement piéton</option>
+              </optgroup>
+              <optgroup label="Chantier en cours">
+                <option value="51">Défaut de signalisation</option>
+                <option value="52">Danger</option>
+                <option value="53">Problème d'accès riverains</option>
+                <option value="54">Malpropreté</option>
+                <option value="55">Reprise de voirie</option>
+                <option value="56">Autres</option>
+              </optgroup>
+              <optgroup label="Mobilier urbain endommagé (catégorie multiservice)">
+                <option value="61">Potelets, arceaux, borne, barrière</option>
+                <option value="62">Jeux, bancs, clôtures</option>
+              </optgroup>
+              <optgroup label="Eclairage public">
+                <option value="71">Lampadaire en panne</option>
+                <option value="72">Quartier ou rue sans éclairage</option>
+                <option value="73">Horaires d'élairage</option>
+                <option value="74">Lampadaire endommagé</option>
+                <option value="75">Autre défaut</option>
+              </optgroup>
+              <optgroup label="Eclairage Patrimonial">
+                <option value="81">Monument dans le noir</option>
+                <option value="82">Horaire d'allumage décalé</option>
+                <option value="83">Matériel endommagé ou déréglé</option>
+              </optgroup>
+              <optgroup label="Feux Tricolores">
+                <option value="91">Feu clignotant</option>
+                <option value="92">Feu dans le noir</option>
+                <option value="93">Feu bloqué au rouge</option>
+                <option value="94">Problème de détection 2 roues</option>
+                <option value="95">Matériel endommagé ou vandalisé</option>
+                <option value="96">Autre défaut</option>
+              </optgroup>
+
+
+
+
+            </select>
+         </div>
+       </div>
+     </div>
+
+     <script src="http://cdn.jsdelivr.net/bootstrap.selectsplitter/0.1.4/bootstrap-selectsplitter.min.js"></script>
+     <!-- <script src="bootstrap-selectsplitter.js"></script> -->
+     <script type="text/javascript">
+         jQuery(function ($) {
+             $('select[data-selectsplitter-selector]').selectsplitter();
+         });
+     </script>
+
+
+
+
+    <span class="help-block" id="hint_Categorie">
+    Cochez la cat&eacute;gorie et la (les) sous-catégorie(s) qui permettront &agrave; nos services de mieux instruire votre demande
+    </span>
+
+
+
+
+     <div class="form-group ">
+      <label class="control-label requiredField" for="Description">
+       Description
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <textarea class="form-control" cols="40" id="Description" name="Description" rows="10"></textarea>
+      <span class="help-block" id="hint_Description">
+       Indiquez ici une description de l'incident
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="Photo">
+       Photo(s)
+      </label>
+      <!-- <input class="form-control" id="Photo" name="Photo" type="text"/> -->
+
+      <!-- <form method="post" enctype="multipart/form-data"> -->
+          <input type="file" id="files" name="files" multiple="multiple" />
+          <!-- <p style="text-align: right; margin-top: 20px;">
+              <input type="submit" value="Charger vos photos" class="btn btn-lg btn-primary" />
+          </p> -->
+      <!-- </form> -->
+      <span class="help-block" id="hint_Photo">
+       D&eacute;posez ici une ou plusieurs photos pour illustrer votre d&eacute;claration
+      </span>
+
+
+
+      <!-- you need to include the ShieldUI CSS and JS assets in order for the Upload widget to work -->
+      <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+      <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+      <script type="text/javascript">
+          jQuery(function ($) {
+              $("#files").shieldUpload();
+          });
+      </script>
+
+
+
+
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="LocalisationCarte">
+       Localisation (carte)
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+
+      <div id="map1" class="map">
+      </div>
+
+      <!-- <textarea class="form-control" cols="40" id="LocalisationCarte" name="LocalisationCarte" rows="10"></textarea> -->
+      <span class="help-block" id="hint_LocalisationCarte">
+       Localisez l'incident constat&eacute; sur cette carte
+      </span>
+     </div>
+
+
+
+
+
+     <div class="form-group ">
+      <label class="control-label " for="LocalisationAdressePostale">
+       Localisation (adresse postale)
+      </label>
+      <textarea class="form-control" cols="40" id="LocalisationAdressePostale" name="LocalisationAdressePostale" rows="10"></textarea>
+      <span class="help-block" id="hint_LocalisationAdressePostale">
+       Si possible, indiquez ici l'adresse postale la plus proche
+      </span>
+     </div>
+     <div class="form-group ">
+      <label class="control-label requiredField" for="Date">
+       Date
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <input class="form-control" id="Date" name="Date" placeholder="MM/DD/YYYY" type="text"/>
+      <span class="help-block" id="hint_Date">
+       Enregistrement de la date et de l'heure de votre d&eacute;claration
+      </span>
+     </div>
+
+
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       Suivi de la Demande
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="Suivi" type="radio" value="Oui"/>
+         Oui
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="Suivi" type="radio" value="Non"/>
+         Non
+        </label>
+       </div>
+       <span class="help-block" id="hint_Suivi">
+        Si vous souhaitez suivre le traitement de votre demande, il faudra indiquer comment vous voulez &ecirc;tre notifi&eacute;.
+       </span>
+      </div>
+     </div>
+
+
+     <div class="form-group ">
+      <label class="control-label requiredField">
+       Urgence
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="Urgence" type="radio" value="Urgent"/>
+         Urgent
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="Urgence" type="radio" value="Semaine"/>
+         Dans la semaine
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="Urgence" type="radio" value="Mois"/>
+         Dans le mois
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="Urgence" type="radio" value="Non"/>
+         Plus tard
+        </label>
+       </div>
+       <span class="help-block" id="hint_Suivi">
+        Comment évaluez vous l'urgence de votre demande.
+       </span>
+      </div>
+     </div>
+
+     <div class="form-group">
+      <div>
+       <input name="_honey" style="display:none" type="text"/>
+       <button class="btn btn-primary " name="submit" type="submit">
+        Je soumets ma demande !
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        function init_map1() {
+            var myLocation = new google.maps.LatLng(46.1597, -1.1514);
+            var mapOptions = {
+                center: myLocation,
+                zoom: 16
+            };
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                title: "Property Location"
+            });
+            var map = new google.maps.Map(document.getElementById("map1"),
+                mapOptions);
+            marker.setMap(map);
+        }
+        init_map1();
+    });
+</script>
+
+<style>
+    .map {
+        min-width: 300px;
+        min-height: 300px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        background-color: #F5F5F5;
+        color: #36A0FF;
+        height: 70px;
+        font-size: 27px;
+        padding: 10px;
+    }
+</style>
+
+<!-- Contact with Map - END -->
+
+</div>
+
+</body>
+</html>

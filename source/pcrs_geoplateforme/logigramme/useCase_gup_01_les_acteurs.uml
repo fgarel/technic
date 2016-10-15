@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+
+:Acteur 4\nVisionneur:
+note right of :Acteur 4\nVisionneur: : Personne qui peut consulter le PCRS, par exemple,\n un responsable de projet qui réalise une DICT
+
+:Acteur 3\nContributeur\nTopographe:
+note right of :Acteur 3\nContributeur\nTopographe: : Personne qui peut modifier le PCRS
+
+:Acteur 2\nPartenaire:
+note right of :Acteur 2\nPartenaire: : Personne qui est titulaire de droits sur la données.\nIl peut déléguer la mise à jour des plans à un tiers (Acteur 3)\nIl possede des droits sur des données.\n\tSi les données sont consultées par un tiers,\n\tcela peut lui rapporter des crédits.\n\tSi les données sont modifiées ou mises à jour,\n\tles droits devront alors être partagés.\nIl possède aussi des crédits d'utilisation :\n\tIl peut transférer ses crédits à un autre acteur (acteur 4).
+
+:Acteur 1\nAdministrateur\nGeoplateforme:
+note right of :Acteur 1\nAdministrateur\nGeoplateforme: : Personne qui est en charge de l'integration,\nde la diffusion technique et de la gestion\nfinancière des échanges.
+@enduml

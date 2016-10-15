@@ -1,0 +1,111 @@
+@startuml
+title Diagramme des Flux
+
+' participant (machine) et actor (humain)
+' The only difference between actor
+' and participant is the drawing
+participant Prest as "Prestataires d'aide à la\nréalisation des DT/DICT\n<i>(ex : http://www.dictservices.fr</i>\n<i>http://www.protys.fr/</i>\n<i>http://www.sogelink.fr/dict)</i>" #LightGreen
+actor Decl as "Déclarants\n(Responsable de Projet ou\nExécutant des travaux)" #LightGoldenRodYellow
+participant Gunf as "Guichet Unique National\nServeurs du site internet\nFront-Office" #LightBlue
+participant Gunb as "Guichet Unique National\nServeurs de bases de données\net Back-Office" #LightSkyBlue
+participant Gul as "Guichet Unique Local\n<i>(Service commun Ville-CDA)</i>" #LightSteelBlue
+actor expl as "Service Exploitant" #LightGray
+
+== Enregistrement de l'exploitant\nau guichet unique ==
+
+note over Gunb, Gul #FFAAAA
+  Macro-Flux D
+  Mise à jour des données
+  des exploitants
+end note
+note over Gunb, Gul #FFFFAA
+  La mise à jour des données de zonage des ouvrages
+  et des coordonnées de services support peut se faire
+  de trois façons :
+end note
+note over Gunb, Gul
+  D.1 - Mise à jour manuelle des
+  données par l'exploitant
+end note
+Gunb <-> Gul : Identification /\nAuthentification mutuelle /\nTunnelisation
+Gunb <- Gul : Mise à jour de\ninformations sur\nl'interface web directe
+
+
+note over Gunb, Gul
+  D.2 - Mise à jour des données de
+  l'exploitant par upload de fichier
+end note
+Gunb <-> Gul : Identification /\nAuthentification mutuelle /\nTunnelisation
+Gunb <- Gul : Saisie, puis signature\ndu "manifeste" associé\naux données
+Gunb <- Gul : "Upload" horodaté des données
+
+note over Gunb, Gul
+  D.3 - Autre cas : Impossibilité de
+  mise à jour directe ou d'utiliser
+  le mode lot
+end note
+
+
+== DT-DICT ==
+
+note over Decl #FFFFAA
+  Le déclarant peut choisir
+  un prestataire ou bien
+  faire sa DT-DICT lui-même
+end note
+
+== Si le déclarant fait\nlui même sa DT-DICT ==
+
+note over Decl, Gunf #FFAAAA
+  Macro-Flux A
+  Flux entre le déclarant
+  et le téléservice
+end note
+note over Decl, Gunf
+  A.1 - Requête d'un déclarant
+end note
+
+Decl -> Gunf : Connexion / Inscription
+
+note over Gunf, Gunb #FFAAAA
+  Macro-Flux B
+  Echanges entre les serveurs web
+  et le service de base de données
+end note
+note over Gunf, Gunb
+  B.1 - Connexion aux services de
+  bases de données du guichet unique
+end note
+Gunf <-> Gunb : Identification /\nAuthentification mutuelle /\nTunnelisation
+
+note over Gunf, Gunb
+  B.2 - Echange d'information avec les
+  services de bases de données
+end note
+Decl <-> Gunf : Saisie directe de l'adresse\nou Tracé sur fond cartographique
+Gunf -> Gunb  : Requêtes
+Gunf <- Gunb  : Réponses
+Decl <- Gunf : Affichage ou impression de la\nliste des opérateurs concernés
+
+note over Decl, Gunf
+  A.2 - Téléchargement sécurisé de la
+  liste des exploitants signée et horodatée
+end note
+Decl <- Gunf : Téléchargement sécurisé des\ndocuments signés et horodatés
+
+note over Decl, Gul #FFAAAA
+  Macro-Flux E
+  Flux entre le déclarant
+  et le Guichet Unique Local
+end note
+
+Decl -> Gul : transmission par mail des documents signés et horodatés
+
+
+
+== Si le déclarant choisit\nun prestataire de service ==
+
+Decl --> Prest : Macro-Flux A'
+Prest <-> Gunb : Macro-Flux B'
+Prest --> Gul : Macro-Flux D'
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+|#LightCoral|Acteur 1|
+start
+:Signale un dysfonctionnement,\nun problème;
+|#LightSalmon|Acteur 2|
+:Traduit cette demande\nen intervention[s];
+|#LightBlue|Acteur 3|
+:Répare, Dépanne, Corrige;
+|Acteur 2|
+:Enregistre le dépannage,\nla correction;
+|Acteur 1|
+:Est éventuellement notifié\nde la réparation;
+stop
+@enduml

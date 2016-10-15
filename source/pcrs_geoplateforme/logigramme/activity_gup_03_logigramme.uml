@@ -1,0 +1,188 @@
+@startuml
+'actor :Acteur 1\nLe Demandeur:
+'actor :Acteur 2\nL'Instructeur\nLe Planificateur:
+'actor :Acteur 3\nL'Intervenant:
+'actor :Acteur 4\nLe Rapporteur\nL'Auditeur:
+
+start
+:Demande de l'acteur 1;
+
+'partition Préparation {
+
+if (La demande\nest spécifique\nà un service ?) then (oui)
+  :#Green:L'acteur 2 est le\nréférent du service.;
+  note
+    Par exemple,
+    des branches
+    sont tombées,
+    sur le bord de
+    la chaussée.
+    La catégorie est
+    « arbres et végétaux »
+    =====
+    Il n'y a qu'un seul destinataire
+    qui reçoit la demande.
+    C'est la catégorie ou
+    la sous-catégorie
+    qui définit l'acteur 2.
+    Ici, c'est le référent du
+    service "Nature et paysage"
+    La transmission de la demande
+    doit être automatique.
+  end note
+  :Examen\nde la demande par\nl'acteur 2,\nle référent du service;
+  if (Les renseignements\nfournis par\nl'acteur 1\nsont très précis ?) then (oui)
+    :L'acteur 2 estime\nqu'une investigation\ncomplémentaire\nn'est pas nécessaire;
+    note
+      Description précise
+      Localisation précise
+      Confiance « aveugle »
+      dans la demande
+      =====
+      Pas de déplacement
+      pour l'acteur 2
+    end note
+
+
+  else (non)
+    :Selon l'organisation\nenvisagée :;
+    note right
+      Par exemple, il n'y a
+      pas de photo pour
+      illustrer la demande,
+      ou il y a un doute sur
+      la localisation, ….
+      =====
+      Déplacement nécessaire
+      pour un agent
+    end note
+    fork
+      -> Scénario Silo;
+      #HotPink:Scénario Silo;
+      :L’acteur 2,\nréférent du service,\nse déplace sur le\nlieu de l'incident;
+    fork again
+      -> Scénario Territoire;
+      #HotPink:Scénario Territoire;
+      :L’acteur 2,\nréférent du service,\ntransmet la demande\nà l’acteur 2 bis,\nAPI territorial;
+      :#Green:L'acteur 2 bis\nest l'API Territorial'.;
+      note
+        C’est la localisation
+        de la demande
+        qui détermine
+        l’acteur 2 bis
+      end note
+      :L'acteur 2 bis,\nAPI territorial,\nse déplace sur le\nlieu de l'incident;
+    fork again
+      -> Scénario Hyper-Silo;
+      #HotPink:Scénario Hyper-Silo;
+      :L’acteur 2,\nréférent du service,\ntransmet la demande\nà l’acteur 2 bis,\nAPI central des\nservices techniques;
+      :#Green:L'acteur 2 bis\nest l'API Central'.;
+      :L’acteur 2 bis,\nAPI central des\nservices techniques\nse déplace sur le\nlieu de l'incident;
+    end fork
+
+  endif
+  :L’acteur 2 (ou 2 bis),\ncomplète la demande\n(matériel nécessaire,\ntemps estimé,\nhabilitations requises)\net planifie l'intervention\n(en revoyant le\nniveau d’urgence);
+  partition Intervention {
+    :Transmission de la\nfiche d'intervention\nà l'agent;
+    #Green:L'acteur 3 est\nun agent du service;
+    :Réparation;
+    ':Clôture de la demande.;
+  }
+
+else (non)
+  :La demande est\ntransmise\n(automatiquement)\nà un ou plusieurs\ndestinataires, selon,\n1,\nles catégories renseignés\npar l'acteur 1 ;\nmais aussi,\nselon,\n2.\nl'organisation\nenvisagée :;
+
+  note
+    La demande concerne
+    plusieurs services car
+    l'acteur 1 a coché
+    plusieurs catégories et
+    sous-catégories ou
+    bien parce qu'il a
+    coché la catégorie
+    "divers"
+    =====
+    Par exemple, un arbre
+    d'une propriété privée
+    est tombé sur l'espace
+    public, endommageant
+    un candélabre et un
+    poteau incendie,
+    provoquant une
+    inondation...
+    =====
+    Le renseignement fourni
+    par l'acteur 1 est
+    obligatoirement à
+    compléter.
+    La demande peut
+    déclencher plusieurs
+    interventions
+  end note
+
+  fork
+    -> Scénario Silo;
+    #HotPink:Scénario Silo;
+    :Transmission de\nla demande aux\nservices\nen fonction\ndes catégories\nde la demande;
+    :#Green:Les acteurs 2, sont les\nréférents des services\nimpliqués/concernés.;
+    :Les acteurs 2,\nréférents de service,\ns'ils sont concernés\nse déplacent sur le lieu\nde l'incident;
+    note
+      Déplacement de
+      plusieurs agents,
+      référents de
+      service, pour évaluer
+      et requalifier la
+      demande
+    end note
+  fork again
+    -> Scénario Territoire;
+    #HotPink:Scénario Territoire;
+    :Transmission de\nla demande à\nl'API territorial;
+    :#Green:L'acteur 2 est\nl'API territorial.;
+    note
+      C’est la localisation
+      de la demande
+      qui détermine
+      le destinataire
+    end note
+    :Déplacement d'un
+    seul agent, qui,
+    de surcoît, est
+    plus proche du lieu
+    de l'incident;
+  fork again
+    -> Scénario Hyper-Silo;
+    #HotPink:Scénario Hyper-Silo;
+    :Transmission de\nla demande à\nl'API central des\nservices techniques;
+    :#Green:L'acteur 2 bis\nest l'API Central'.;
+    :Déplacement d'un
+    seul agent, qui,
+    n'est pas forcement
+    le plus proche du
+    lieu de l'incident;
+  end fork
+  :L’acteur 2 (ou les acteurs),\ncomplète(nt) la demande\n(matériel nécessaire,\ntemps estimé,\nhabilitations requises)\net planifie(nt) les interventions;
+  partition Multi-Interventions {
+  :Transmission des\nfiches d'interventions\nà tous les agents\nde terrain concernés;
+  :#Green:Les acteurs 3, sont les\nagents des services\nimpliqués/concernés.;
+  fork
+    #Green:Acteur 3 du service A;
+    :Réparation;
+  fork again
+    #Green:Acteur 3 du service B;
+    :Réparation;
+  fork again
+    -> Scénario Hyper-Silo;
+    #Green:Acteur 3 du service C;
+    :Réparation;
+  end fork
+  :Synthèse des\ninterventions.;
+  ':Clôture de la demande.;
+
+  }
+endif
+'}
+
+:Clôture de la demande.;
+stop
+@enduml

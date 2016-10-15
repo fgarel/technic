@@ -1,0 +1,13 @@
+@startuml
+actor "Responsable de Projet\nou Executant des Travaux"
+actor "Service Cartographie" #red
+actor "Service X"
+
+"Responsable de Projet\nou Executant des Travaux" -> "Service Cartographie": Envoi Avis de Travaux Urgents (ATU)
+"Service Cartographie" --> "Service Cartographie": Enregistrement, Préparation de la Réponse
+"Responsable de Projet\nou Executant des Travaux" <-- "Service Cartographie": Réponse à l'ATU
+"Service Cartographie" --> "Service X": Transmission pour avis
+"Service Cartographie" <-- "Service X": Avis du service
+"Service Cartographie" --> "Service Cartographie": Intégration des remarques des services
+"Responsable de Projet\nou Executant des Travaux" <-- "Service Cartographie": Réponse à l'ATU
+@enduml

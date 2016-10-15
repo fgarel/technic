@@ -1,0 +1,623 @@
+MAP
+  EXTENT 1373888.75 5223378.5 1382746.25 5228289
+  IMAGETYPE "png"
+  NAME "eauxpluviales4"
+  SIZE 600 600
+  STATUS ON
+  UNITS METERS
+  CONFIG "MS_ERRORFILE" "error.log"
+  DEBUG 6
+  CONFIG "ON_MISSING_DATA" "LOG"
+  CONFIG "PROJ_DEBUG" "ON"
+
+  OUTPUTFORMAT
+    NAME "png"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE RGB
+    TRANSPARENT FALSE
+  END # OUTPUTFORMAT
+
+  SYMBOL
+    NAME "circle_MOMR03HFOT"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_E93F4SW3XC"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_QWLHOYASZK"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_CILRIPH439"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_AH5RVLU4MC"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_L24CS9TC33"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_A5X27ENPUU"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_NL3LZGBO0K"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_6MZI5CRKT5"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_5B7ZQKCNQU"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "svg_33NQWLK9XU"
+    TYPE PIXMAP
+    IMAGE "/mnt/dsifichiers02/services2/CARTOGRAPHIE/Qgis/symbole/pluviales/GrilleCarre.png"
+    #POINTS
+    #  1 1
+    #END
+  END
+
+  SYMBOL
+    NAME "circle_5GR5TDQM1D"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_K7VSSQ4OOO"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_9WB6IE7ZPW"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_VOWI146UG4"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_4NQ8KCW6FU"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_DONMB95AMJ"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_88XOTHSS11"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_W4L9W3UGVQ"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_E8C6PU4FYS"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_FTCM4SPUU1"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_NAMC4WNAMG"
+    TYPE ELLIPSE
+    FILLED TRUE
+    POINTS
+      1 1
+    END
+  END
+
+  SYMBOL
+    NAME "circle_F2LJIETNT0"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+  END
+
+  PROJECTION
+    "proj=lcc"
+    "lat_1=45.25"
+    "lat_2=46.75"
+    "lat_0=46"
+    "lon_0=3"
+    "x_0=1700000"
+    "y_0=5200000"
+    "ellps=GRS80"
+    "towgs84=0,0,0,0,0,0,0"
+    "units=m"
+    "no_defs"
+  END # PROJECTION
+  LEGEND
+    KEYSIZE 20 20
+    KEYSPACING 5 5
+    LABEL
+      SIZE 10
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+    END # LABEL
+    STATUS OFF
+  END # LEGEND
+
+  QUERYMAP
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END # QUERYMAP
+
+  SCALEBAR
+    INTERVALS 4
+    LABEL
+      SIZE 10
+      OFFSET 0 0
+      SHADOWSIZE 1 1
+    END # LABEL
+    SIZE 200 3
+    STATUS OFF
+    UNITS MILES
+  END # SCALEBAR
+
+  WEB
+    FOOTER ""
+    HEADER ""
+    TEMPPATH ""
+    METADATA
+      "ows_onlineresource"	"http://localhost/cgi-bin/mapserv?map=/home/fred/Documents/technic/source/qgis/dict/dict.map"
+      "ows_enable_request"	"*"
+      "wfs_encoding"	"UTF-8"
+      "ows_title"	"eauxpluviales4"
+    END # METADATA
+    TEMPLATE "[templatepath]"
+  END # WEB
+
+  LAYER
+    CONNECTION "dbname='sig' host=portail-sig.ville-larochelle.fr port=5432 user='sig_cda' password='Mie3cda' sslmode=disable"
+    CONNECTIONTYPE POSTGIS
+    DATA 'geometry FROM "eaupluviale"."ep_ouvrage_engouffrement" USING UNIQUE oe_id USING srid=3946'
+    EXTENT 1373898.375 5223379 1382746.125 5228247.5
+    METADATA
+      "ows_include_items"	"all"
+      "gml_featureid"	"oe_id"
+      "ows_extent"	"1373898.375 5223379.0 1382746.125 5228247.5"
+      "ows_srs"	"EPSG:3946"
+      "ows_title"	"ep_ouvrage_engouffrement"
+      "wms_getfeatureinfo_formatlist"	"OGRGML"
+      "wms_bbox_extended"	"true"
+      "gml_include_items"	"all"
+    END # METADATA
+    NAME "ep_ouvrage_engouffrement"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=45.25"
+      "lat_2=46.75"
+      "lat_0=46"
+      "lon_0=3"
+      "x_0=1700000"
+      "y_0=5200000"
+      "ellps=GRS80"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TILEITEM "location"
+    TYPE POINT
+    UNITS METERS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_0"
+      EXPRESSION ("[oe_nature]" = "NULL")
+      STYLE
+        COLOR 247 251 255
+        SIZE 7.55906
+        SYMBOL "circle_MOMR03HFOT"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_E93F4SW3XC"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_1"
+      EXPRESSION ("[oe_nature]" = "Bouche à avaloir")
+      STYLE
+        COLOR 229 239 249
+        SIZE 7.55906
+        SYMBOL "circle_QWLHOYASZK"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_CILRIPH439"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_2"
+      EXPRESSION ("[oe_nature]" = "Bouche avaloir")
+      STYLE
+        COLOR 212 228 243
+        SIZE 7.55906
+        SYMBOL "circle_AH5RVLU4MC"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_L24CS9TC33"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_3"
+      EXPRESSION ("[oe_nature]" = "Caniveau à grille")
+      STYLE
+        COLOR 194 217 237
+        SIZE 7.55906
+        SYMBOL "circle_A5X27ENPUU"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_NL3LZGBO0K"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_4"
+      EXPRESSION ("[oe_nature]" = "Caniveau grille")
+      STYLE
+        COLOR 166 205 227
+        SIZE 7.55906
+        SYMBOL "circle_6MZI5CRKT5"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_5B7ZQKCNQU"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_5"
+      EXPRESSION ("[oe_nature]" = "Grille")
+      STYLE
+        SIZE 20
+        SYMBOL "svg_33NQWLK9XU"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_6"
+      EXPRESSION ("[oe_nature]" = "Grille avaloir")
+      STYLE
+        COLOR 98 168 210
+        SIZE 7.55906
+        SYMBOL "circle_5GR5TDQM1D"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_K7VSSQ4OOO"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_7"
+      EXPRESSION ("[oe_nature]" = "Grille avalor")
+      STYLE
+        COLOR 70 148 199
+        SIZE 7.55906
+        SYMBOL "circle_9WB6IE7ZPW"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_VOWI146UG4"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_8"
+      EXPRESSION ("[oe_nature]" = "Prise de fossé")
+      STYLE
+        COLOR 46 126 187
+        SIZE 7.55906
+        SYMBOL "circle_4NQ8KCW6FU"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_DONMB95AMJ"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_9"
+      EXPRESSION ("[oe_nature]" = "Regard")
+      STYLE
+        COLOR 25 102 173
+        SIZE 7.55906
+        SYMBOL "circle_88XOTHSS11"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_W4L9W3UGVQ"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_10"
+      EXPRESSION ("[oe_nature]" = "Regard de visite")
+      STYLE
+        COLOR 8 78 151
+        SIZE 7.55906
+        SYMBOL "circle_E8C6PU4FYS"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_FTCM4SPUU1"
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_engouffrement_11"
+      EXPRESSION ("[oe_nature]" = "Tampon grille")
+      STYLE
+        COLOR 8 48 107
+        SIZE 7.55906
+        SYMBOL "circle_NAMC4WNAMG"
+      END # STYLE
+      STYLE
+        COLOR 0 0 0
+        SIZE 7.55906
+        SYMBOL "circle_F2LJIETNT0"
+      END # STYLE
+    END # CLASS
+  END # LAYER
+
+  LAYER
+    CONNECTION "dbname='sig' host=portail-sig.ville-larochelle.fr port=5432 user='sig_cda' password='Mie3cda' sslmode=disable"
+    CONNECTIONTYPE POSTGIS
+    DATA 'geometry FROM "eaupluviale"."ep_ouvrage_collecte" USING UNIQUE oc_id USING srid=3946'
+    EXTENT 1373888.75 5223378.5 1382746.25 5228289
+    LABELITEM "oc_altitude_amont"
+    LABELMAXSCALEDENOM 1e+07
+    LABELMINSCALEDENOM 1
+    METADATA
+      "ows_include_items"	"all"
+      "gml_featureid"	"oc_id"
+      "ows_extent"	"1373888.75 5223378.5 1382746.25 5228289.0"
+      "ows_srs"	"EPSG:3946"
+      "ows_title"	"ep_ouvrage_collecte"
+      "wms_getfeatureinfo_formatlist"	"OGRGML"
+      "wms_bbox_extended"	"true"
+      "gml_include_items"	"all"
+    END # METADATA
+    NAME "ep_ouvrage_collecte"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=45.25"
+      "lat_2=46.75"
+      "lat_0=46"
+      "lon_0=3"
+      "x_0=1700000"
+      "y_0=5200000"
+      "ellps=GRS80"
+      "towgs84=0,0,0,0,0,0,0"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    SIZEUNITS METERS
+    STATUS ON
+    TILEITEM "location"
+    TYPE LINE
+    UNITS METERS
+    CLASS
+      NAME "ep_ouvrage_collecte_0"
+      EXPRESSION ("[oc_categorie]" = "NULL")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 247 251 255
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_collecte_1"
+      EXPRESSION ("[oc_categorie]" = "Collecte")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 209 226 242
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_collecte_2"
+      EXPRESSION ("[oc_categorie]" = "Collecteur")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 154 199 224
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_collecte_3"
+      EXPRESSION ("[oc_categorie]" = "Fossé")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 81 156 204
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_collecte_4"
+      EXPRESSION ("[oc_categorie]" = "Ouvrage")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 28 107 176
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+    CLASS
+      NAME "ep_ouvrage_collecte_5"
+      EXPRESSION ("[oc_categorie]" = "Souterrain")
+      LABEL
+        SIZE 2
+        BUFFER 3
+        ENCODING "utf-8"
+        OFFSET 0 0
+        POSITION CC
+        PRIORITY 5
+        SHADOWSIZE 1 1
+      END # LABEL
+      STYLE
+        COLOR 8 48 107
+        LINECAP SQUARE
+        LINEJOIN BEVEL
+        WIDTH 0.4
+      END # STYLE
+    END # CLASS
+  END # LAYER
+
+END # MAP

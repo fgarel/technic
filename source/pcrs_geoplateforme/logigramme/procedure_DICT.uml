@@ -1,0 +1,12 @@
+@startuml
+actor "Responsable de Projet\nou Executant des Travaux"
+actor "Service Cartographie" #red
+actor "Service X"
+
+"Responsable de Projet\nou Executant des Travaux" -> "Service Cartographie": Envoi DICT
+"Service Cartographie" --> "Service Cartographie": Enregistrement, Préparation de la Réponse
+"Service Cartographie" --> "Service X": Transmission pour avis
+"Service Cartographie" <-- "Service X": Avis du service
+"Service Cartographie" --> "Service Cartographie": Intégration des remarques des services
+"Responsable de Projet\nou Executant des Travaux" <-- "Service Cartographie": Réponse à la DICT
+@enduml

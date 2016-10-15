@@ -1,0 +1,58 @@
+Fichier Qgis
+------------
+
+pour la récupération des données osm avec l'extension (le plugin) "QuickOSM"
+
+Les bases de données
+--------------------
+
+
+recuperation à partir de osmosis
+
+base : osm
+schema : public
+tables : actions, nodes, relation_members, relations, schema_info, users, way_nodes, ways
+
+recuperation à partir du plugin qgis
+
+base : graphe
+schema : public
+tables : admin_level, amenity, boundary, building, craft, cuisine, cycleway, emergency, evacuation_center, highway, historic, junction, landuse, leisure, man_made, natural, office, place, power, public_transport, railway, route, shop, sport, tourism, waterway
+
+
+
+table ; attribut 
+cycleway ; name
+highway ; name
+junction ; name
+man_made ; name
+
+
+
+Manipulation des données osm directement avec le plugin QuickOSM
+----------------------------------------------------------------
+
+
+
+Manipulation de la base osm
+---------------------------
+
+-- Selection des rues et des places
+select *
+from ways
+where ( "tags" -> 'name' is not null
+    and "tags" -> 'amenity' = 'parking')
+  or (  "tags" -> 'name' is not null 
+    and "tags" -> 'highway' is not null)
+limit 100;
+
+
+
+-- Creation de l'objet composé "commune de La Rochelle"
+
+cf fichier sql
+ManipulationBaseOsm_CreationObjetCommune.sql
+
+
+
+Recherche des objets à l'interieur de cet objet commune

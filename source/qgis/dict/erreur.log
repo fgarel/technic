@@ -1,0 +1,72 @@
+[Wed Jun 22 17:42:48 2016].698299 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:42:48 2016].720865 msDrawMap(): WMS/WFS set-up and query, 0.023s
+[Wed Jun 22 17:42:48 2016].833303 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("g...
+               ^
+) executing query: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:42:48 2016].833343 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:42:48 2016].833410 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:45:57 2016].794149 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:45:57 2016].818030 msDrawMap(): WMS/WFS set-up and query, 0.024s
+[Wed Jun 22 17:45:57 2016].940839 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("g...
+               ^
+) executing query: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:45:57 2016].940871 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:45:57 2016].940930 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:46:12 2016].297024 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:46:12 2016].323503 msDrawMap(): WMS/WFS set-up and query, 0.026s
+[Wed Jun 22 17:46:12 2016].452693 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("g...
+               ^
+) executing query: select "","oc_gestionnaire",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:46:12 2016].452717 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:46:12 2016].452782 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:49:37 2016].370132 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:49:37 2016].395114 msDrawMap(): WMS/WFS set-up and query, 0.025s
+[Wed Jun 22 17:49:37 2016].527941 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geom...
+               ^
+) executing query: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:49:37 2016].527976 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:49:37 2016].528050 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:49:50 2016].510060 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:49:50 2016].538194 msDrawMap(): WMS/WFS set-up and query, 0.028s
+[Wed Jun 22 17:49:50 2016].714338 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geom...
+               ^
+) executing query: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:49:50 2016].714372 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:49:50 2016].714448 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:52:52 2016].70501 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:52:52 2016].74198 msDrawMap(): WMS/WFS set-up and query, 0.004s
+[Wed Jun 22 17:52:52 2016].200155 msPostGISLayerWhichShapes(): Error (ERREUR:  identifiant délimité de longueur nulle sur ou près de « "" »
+LINE 1: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geom...
+               ^
+) executing query: select "","oc_categorie",encode(ST_AsBinary(ST_Force2D("geometry"),'NDR'),'hex') as geom,"oc_id" from "eaupluviale"."ep_ouvrage_collecte" where geometry && ST_GeomFromText('POLYGON((1378031.1 5224077.55750938,1378031.1 5224173.44249061,1378159 5224173.44249061,1378159 5224077.55750938,1378031.1 5224077.55750938))',3946)
+[Wed Jun 22 17:52:52 2016].200178 msPostGISLayerWhichShapes(): Query error. Error executing query. Check server logs
+[Wed Jun 22 17:52:52 2016].200232 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 17:57:16 2016].773970 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 17:57:16 2016].777985 msDrawMap(): WMS/WFS set-up and query, 0.004s
+[Wed Jun 22 17:57:16 2016].879308 msPostGISParseData(): Query error. Error parsing PostGIS DATA variable. Must contain 'geometry from table' or 'geometry from (subselect) as foo'. 3
+[Wed Jun 22 17:57:16 2016].879399 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 18:01:54 2016].788019 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:01:54 2016].792032 msDrawMap(): WMS/WFS set-up and query, 0.004s
+[Wed Jun 22 18:01:54 2016].905204 msPostGISParseData(): Query error. Error parsing PostGIS DATA variable. Must contain 'geometry from table' or 'geometry from (subselect) as foo'. 3
+[Wed Jun 22 18:01:54 2016].905325 msDrawMap(): Image handling error. Failed to draw layer named 'ep_ouvrage_collecte'.
+[Wed Jun 22 18:02:04 2016].655867 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:02:04 2016].659711 msDrawMap(): WMS/WFS set-up and query, 0.004s
+[Wed Jun 22 18:02:04 2016].797597 msDrawMap(): Layer 0 (ep_ouvrage_collecte), 0.138s
+[Wed Jun 22 18:02:04 2016].797650 msDrawMap(): Drawing Label Cache, 0.000s
+[Wed Jun 22 18:02:04 2016].797662 msDrawMap() total time: 0.143s
+[Wed Jun 22 18:02:04 2016].825102 msSaveImage(test.png) total time: 0.027s
+[Wed Jun 22 18:04:58 2016].393089 msDrawMap(): rendering using outputformat named png (AGG/PNG).
+[Wed Jun 22 18:04:58 2016].396750 msDrawMap(): WMS/WFS set-up and query, 0.004s
+[Wed Jun 22 18:04:58 2016].553766 msDrawMap(): Layer 0 (ep_ouvrage_collecte), 0.157s
+[Wed Jun 22 18:04:58 2016].553961 setting outlinewidth to 6 (1, 106, 17)
+[Wed Jun 22 18:04:58 2016].555185 setting outlinewidth to 6 (1, 106, 17)
+[Wed Jun 22 18:04:58 2016].556203 setting outlinewidth to 6 (1, 106, 17)
+[Wed Jun 22 18:04:58 2016].556323 setting outlinewidth to 6 (1, 106, 17)
+[Wed Jun 22 18:04:58 2016].557548 msDrawMap(): Drawing Label Cache, 0.004s
+[Wed Jun 22 18:04:58 2016].557568 msDrawMap() total time: 0.165s
+[Wed Jun 22 18:04:58 2016].586036 msSaveImage(test.png) total time: 0.028s
