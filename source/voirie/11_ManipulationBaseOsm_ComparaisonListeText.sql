@@ -184,10 +184,18 @@ from
 where "table_01".text_manuel is null
 order by table_02_text_manuel;
 
-update comptage
-  set "table_01" = (select count(*) from "table_01");
-update comptage
-  set "table_02" = (select count(*) from "table_02");
+-- update comptage
+--   set "table_01" = (select count(*) from "table_01");
+-- update comptage
+--   set "table_01_t" = (select count(*) from "table_01_t");
+-- update comptage
+--   set "table_01_g" = (select count(*) from "table_01_g");
+-- update comptage
+--   set "table_02" = (select count(*) from "table_02");
+-- update comptage
+--   set "table_02_t" = (select count(*) from "table_02_t");
+-- update comptage
+--   set "table_02_g" = (select count(*) from "table_02_g");
 update comptage
   set table_ito = (select count(*) from table_ito);
 update comptage
@@ -206,17 +214,37 @@ update comptage
   set table_rta = (select count(*) from table_rta);
 update comptage
   set table_rtm = (select count(*) from table_rtm);
-
+-- update comptage
+--   set table_igo = (select count(*) from table_igo);
+-- update comptage
+--   set table_iga = (select count(*) from table_iga);
+-- update comptage
+--   set table_igm = (select count(*) from table_igm);
+-- update comptage
+--   set table_lgo = (select count(*) from table_lgo);
+-- update comptage
+--   set table_lga = (select count(*) from table_lga);
+-- update comptage
+--   set table_lgm = (select count(*) from table_lgm);
+-- update comptage
+--   set table_rgo = (select count(*) from table_rgo);
+-- update comptage
+--   set table_rga = (select count(*) from table_rga);
+-- update comptage
+--   set table_rgm = (select count(*) from table_rgm);
 
 
 select
   "table_01",
+  "table_01_t",
+  "table_01_g",
   table_lta,
   table_ita,
   table_rta,
+  "table_02_g",
+  "table_02_t",
   "table_02"
 from comptage;
-
 
 
 

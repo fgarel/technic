@@ -116,19 +116,23 @@ WITH (
 ALTER TABLE table_02_g
   OWNER TO "Fred";
 
-select Dropgeometrycolumn('table_02', 'geometry_original');
-select Dropgeometrycolumn('table_02', 'geometry_automatique');
-select Dropgeometrycolumn('table_02', 'geometry_manuel');
-select Addgeometrycolumn('table_02', 'geometry_original', 2154, 'GEOMETRY', 3);
-select Addgeometrycolumn('table_02', 'geometry_automatique', 3946, 'GEOMETRY', 2);
-select Addgeometrycolumn('table_02', 'geometry_manuel', 3946, 'GEOMETRY', 2);
+select Dropgeometrycolumn('table_02_g', 'geometry_original');
+select Dropgeometrycolumn('table_02_g', 'geometry_automatique');
+select Dropgeometrycolumn('table_02_g', 'geometry_manuel');
+select Addgeometrycolumn('table_02_g', 'geometry_original', 2154, 'GEOMETRY', 3);
+select Addgeometrycolumn('table_02_g', 'geometry_automatique', 3946, 'GEOMETRY', 2);
+select Addgeometrycolumn('table_02_g', 'geometry_manuel', 3946, 'GEOMETRY', 2);
 
 
 DROP TABLE if exists comptage cascade;
 CREATE TABLE comptage
 (
   "table_01" integer,
+  "table_01_t" integer,
+  "table_01_g" integer,
   "table_02" integer,
+  "table_02_t" integer,
+  "table_02_g" integer,
   table_ito integer,
   table_ita integer,
   table_itm integer,
@@ -137,17 +141,25 @@ CREATE TABLE comptage
   table_ltm integer,
   table_rto integer,
   table_rta integer,
-  table_rtm integer
+  table_rtm integer,
+  table_igo integer,
+  table_iga integer,
+  "table_iga_01" integer,
+  "table_iga_02" integer,
+  table_igm integer,
+  table_lgo integer,
+  table_lga integer,
+  table_lgm integer,
+  table_rgo integer,
+  table_rga integer,
+  table_rgm integer
 )
 WITH (
   OIDS=TRUE
 );
 
-insert into comptage values (0,0,0,0,0,0,0,0,0,0,0);
-update comptage
-  set "table_01" = (select count(*) from "table_01");
-update comptage
-  set "table_02" = (select count(*) from "table_02");
+insert into comptage values (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+
 
 -- ---------------------------------------------------------------- --
 -- Remplissage des tables intermediaires avec les données d'origine --
@@ -166,7 +178,7 @@ select
   linestring as geometry_original
 from "ListeVoie_From_Osm"
 -- ----
-where voie_libelle_osm LIKE 'Avenue%'
+--where voie_libelle_osm LIKE 'Avenue%'
 -- ----
 );
 
@@ -210,13 +222,18 @@ select
   wkb_geometry as geometry_original
 from "ListeVoie_From_VoieAdresse"
 -- ----
-where voie_libelle LIKE 'Avenue%'
+--where voie_libelle LIKE 'Avenue%'
 -- ----
 ;
 
 update table_02
 set geometry_automatique = st_buffer(st_transform(st_force2d(geometry_original), 3946),5);
 
+
+update comptage
+  set "table_01" = (select count(*) from "table_01");
+update comptage
+  set "table_02" = (select count(*) from "table_02");
 -- ----------------------------------------------- --
 -- Creation de 4 autres sous-tables intermeidaires --
 -- ----------------------------------------------- --
@@ -227,18 +244,64 @@ set geometry_automatique = st_buffer(st_transform(st_force2d(geometry_original),
 --   - table_02_t
 --   - table_02_g
 DROP TABLE if exists table_01_t cascade;
-create table table_01_t as
-select
-  oid,
+create table table_01_t with oids as
+select distinct
+  --oid,
   text_original,
   text_automatique,
   text_manuel
 from table_01;
 
-select count(*) from "table_01";
-select count(*) from table_01_t;
-
+update comptage
+  set "table_01_t" = (select count(*) from "table_01_t");
 
 DROP TABLE if exists table_01_g cascade;
+create table table_01_g with oids as
+select distinct
+  --oid,
+  text_original,
+  text_automatique,
+  text_manuel,
+  geometry_automatique
+from table_01;
+
+update comptage
+  set "table_01_g" = (select count(*) from "table_01_g");
+
 DROP TABLE if exists table_02_t cascade;
+create table table_02_t with oids as
+select distinct
+  --oid,
+  text_original,
+  text_automatique,
+  text_manuel
+from table_02;
+
+update comptage
+  set "table_02_t" = (select count(*) from "table_02_t");
+
 DROP TABLE if exists table_02_g cascade;
+create table table_02_g with oids as
+select distinct
+  --oid,
+  text_original,
+  text_automatique,
+  text_manuel,
+  geometry_automatique
+from table_02;
+
+update comptage
+  set "table_02_g" = (select count(*) from "table_02_g");
+
+
+select
+  "table_01",
+  "table_01_t",
+  "table_01_g",
+  table_lta,
+  table_ita,
+  table_rta,
+  "table_02_g",
+  "table_02_t",
+  "table_02"
+from comptage;
