@@ -246,18 +246,37 @@ drop table if exists "ListeVoie_From_Osm";
 create table "ListeVoie_From_Osm" as
 select distinct
   ("tags" -> 'name')::varchar(100) as voie_libelle_osm,
+  "tags" -> 'highway' as highway,
+  "tags" -> 'oneway' as oneway,
+  "tags" -> 'lanes' as lanes,
+  "tags" -> 'maxspeed' as maxspeed,
+  "tags" -> 'maxheight' as maxheight,
+  "tags" -> 'tunnel' as tunnel,
+  "tags" -> 'junction' as junction,
+  "tags" -> 'bicycle' as bicycle,
+  "tags" -> 'cycleway' as cycleway,
+  "tags" -> 'cycleway:left' as "cycleway:left",
+  "tags" -> 'oneway:bicycle' as "oneway:bicycle",
+  "tags" -> 'access' as access,
+  "tags" -> 'foot' as foot,
+  "tags" -> 'horse' as horse,
+  "tags" -> 'service' as service,
+  "tags" -> 'source' as source,
+  "tags" -> 'ref:FR:FANTOIR' as "ref:FR:FANTOIR",
+  --"tags"
   *
 from
   ways
 where
   (
   -- condition 1 : voie avec un nom
-      ("tags" -> 'name' is not null
-      and "tags" -> 'amenity' = 'parking'
-      )
-    or
-      ("tags" -> 'name' is not null
-      and "tags" -> 'highway' is not null
+      --("tags" -> 'name' is not null
+      --and "tags" -> 'amenity' = 'parking'
+      --)
+    --or
+      (--"tags" -> 'name' is not null
+      --and
+      "tags" -> 'highway' is not null
       )
   )
   and

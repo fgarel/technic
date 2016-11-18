@@ -169,7 +169,9 @@ insert into comptage values (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 -- Pour les textes, on passe aux majuscules sans accent
 -- Pour la géométrie, on fait un buffer de +/-5 m
 
--- table_01 <- ListeVoie_From_Osm
+-- ------------------------------ --
+-- table_01 <- ListeVoie_From_Osm --
+-- ------------------------------ --
 INSERT INTO table_01 (text_original, text_automatique, geometry_original)
 (
 select
@@ -183,6 +185,9 @@ from "ListeVoie_From_Osm"
 );
 
 
+-- dans les cas des voies qui portent un nom,
+-- on concatene d'abord les différents troncons
+-- avant de faire un buffer
 --drop table if exists table_01_tmp;
 create table table_01_tmp as
 select
@@ -214,7 +219,50 @@ where table_01.text_original = table_01_tmp.text_original;
 drop table if exists table_01_tmp;
 
 
--- table_02 <- ListeVoie_From_VoieAdresse
+-- dans les cas des voies qui ne portent pas de nom,
+-- il ne faut pas concatener
+-- avant de faire un buffer
+update table_01
+set geometry_automatique =  st_buffer(st_transform(geometry_original, 3946),5)
+where text_original is null;
+
+
+-- ----------------------------------------------------------- --
+-- table_01_tags : elle contient les données osm avec les tags --
+-- ----------------------------------------------------------- --
+
+DROP TABLE if exists public.table_01_tags cascade;
+create table public.table_01_tags as
+select
+ "ListeVoie_From_Osm".highway,
+ "ListeVoie_From_Osm".oneway,
+ "ListeVoie_From_Osm".lanes,
+ "ListeVoie_From_Osm".maxspeed,
+ "ListeVoie_From_Osm".maxheight,
+ "ListeVoie_From_Osm".tunnel,
+ "ListeVoie_From_Osm".junction,
+ "ListeVoie_From_Osm".bicycle,
+ "ListeVoie_From_Osm".cycleway,
+ "ListeVoie_From_Osm"."cycleway:left",
+ "ListeVoie_From_Osm"."oneway:bicycle",
+ "ListeVoie_From_Osm"."access",
+ "ListeVoie_From_Osm".foot,
+ "ListeVoie_From_Osm".horse,
+ "ListeVoie_From_Osm".service,
+ "ListeVoie_From_Osm".source,
+ "ListeVoie_From_Osm"."ref:FR:FANTOIR",
+ --"ListeVoie_From_Osm".tags,
+ table_01.*
+from "ListeVoie_From_Osm", table_01
+where"ListeVoie_From_Osm".linestring = table_01.geometry_original
+;
+
+
+
+
+-- -------------------------------------- --
+-- table_02 <- ListeVoie_From_VoieAdresse --
+-- -------------------------------------- --
 INSERT INTO table_02 (text_original, text_automatique, geometry_original)
 select
   distinct voie_libelle::text as original,
