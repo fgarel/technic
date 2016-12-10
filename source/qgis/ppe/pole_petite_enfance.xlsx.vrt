@@ -3,7 +3,7 @@
     <OGRVRTLayer name="pole_petite_enfance">
         <SrcDataSource relativeToVRT="1">pole_petite_enfance.xlsx</SrcDataSource>
         <!--Header=True-->
-        <SrcSql dialect="sqlite">SELECT * FROM 'site' LIMIT 0 OFFSET 1</SrcSql>
+        <SrcSql dialect="sqlite">SELECT * FROM 'site' LIMIT 22 OFFSET 1</SrcSql>
         <Field name="numero_site" src="Field1" type="String"/>
         <Field name="nom_site" src="Field2" type="String"/>
         <Field name="theme" src="Field3" type="String"/>

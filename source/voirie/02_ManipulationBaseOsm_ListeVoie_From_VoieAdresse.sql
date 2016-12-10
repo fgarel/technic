@@ -8,9 +8,9 @@ create table "ListeVoie_From_VoieAdresse" as
 
 SELECT *
 FROM dblink(
-   'dbname=voieadresse port=5432 
+   'dbname=voieadresse port=5432
    host=dsibdd09 user=sig password=Mie3Bhoutan',
-   
+
    '-- selection des voies de la base interne
     select distinct voie_libelle,
       voie_code_fantoir,

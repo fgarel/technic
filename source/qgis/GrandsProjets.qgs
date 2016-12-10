@@ -1,24 +1,25 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.15.0-Master">
+<qgis projectname="" version="2.18.1">
   <title></title>
   <autotransaction active="0"/>
-  <layer-tree-group expanded="1" checked="Qt::Unchecked" name="">
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="GrandsProjets">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="GrandsProjets">
       <customproperties/>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="GrandsProjets20160321150313239" name="GrandsProjets">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="GrandsProjets20160229093459034" name="GrandsProjets">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="GrandsProjets20160229093459034" name="GrandsProjets">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="GrandsProjets20160223174709016" name="GrandsProjets">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fdp">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Fdp">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho201320160129141302997" name="ortho2013">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho201320160129141302997" name="ortho2013">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="scan2520160129141241597" name="scan25">
@@ -75,15 +76,15 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Unchecked" name="GrandsProjets">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="GrandsProjets">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="GrandsProjets" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="GrandsProjets20160321150313239" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="GrandsProjets" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="GrandsProjets" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="GrandsProjets20160229093459034" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="GrandsProjets20160229093459034" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="GrandsProjets" showFeatureCount="0">
@@ -92,10 +93,10 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Fdp">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2013" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Fdp">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2013" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ortho201320160129141302997" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="ortho201320160129141302997" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="scan25" showFeatureCount="0">
@@ -131,7 +132,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5224848.64223962090909481" xmin="1378779.77340813539922237" ymax="5226473.64224127866327763" xmax="1380404.7734097926877439"/>
         <LayerSet>
           <Layer>scan2520160129141241597</Layer>
@@ -237,7 +238,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="1" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225336.09070324990898371" xmin="1379267.27340863249264657" ymax="5225986.09070391301065683" xmax="1379917.2734092955943197"/>
         <LayerSet>
           <Layer>ortho201320160129141302997</Layer>
@@ -331,7 +332,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="3" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="3" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225539.21570345759391785" xmin="1379470.39840883971191943" ymax="5225782.96570370625704527" xmax="1379714.14840908837504685"/>
         <LayerSet>
           <Layer>GrandsProjets20160223174709016</Layer>
@@ -860,7 +861,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="2" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225461.09070337750017643" xmin="1379392.2734087600838393" ymax="5225861.09070378541946411" xmax="1379792.27340916800312698"/>
         <LayerSet>
           <Layer>GrandsProjets20160223174709016</Layer>
@@ -1496,7 +1497,7 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="50.7829" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" file="./qgisModele/Logo ville.jpg" pictureHeight="52.8496" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="50.7829" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./qgisModele/Logo ville.jpg" northOffset="0" pictureHeight="52.8496" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="7.68721" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1122.33" y="7.68721" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="52.8496" outlineWidth="0.3" excludeFromExports="0" uuid="{73bb5b99-9d66-4c19-a33e-0a1d885e9c74}" height="52.8496" itemRotation="0" frame="false" pagex="1122.33">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -1513,7 +1514,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5224130.12517218012362719" xmin="1375880.32021419797092676" ymax="5228080.12517620902508497" xmax="1381680.32022011419758201"/>
         <LayerSet/>
         <Grid/>
@@ -1572,7 +1573,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="1" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225454.16421756893396378" xmin="1374491.82289806636981666" ymax="5227824.16421998664736748" xmax="1377971.82290161610580981"/>
         <LayerSet>
           <Layer>GrandsProjets20160223174709016</Layer>
@@ -2160,7 +2161,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="2" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="2" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5225589.46365379728376865" xmin="1378382.57652716897428036" ymax="5227959.46365621499717236" xmax="1381862.5765307187102735"/>
         <LayerSet>
           <Layer>GrandsProjets20160223174709016</Layer>
@@ -2748,7 +2749,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="3" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="" id="3" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5224043.54231763165444136" xmin="1378571.56621586834080517" ymax="5226413.54232004936784506" xmax="1382051.56621941854245961"/>
         <LayerSet>
           <Layer>GrandsProjets20160223174709016</Layer>
@@ -3390,7 +3391,7 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerLegend symbolWidth="7" title="Légende" boxSpace="2" rasterBorderWidth="0" splitLayer="0" equalColumnWidth="0" map="0" titleAlignment="1" rasterBorder="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1" rasterBorderColor="0,0,0,255">
+      <ComposerLegend symbolWidth="7" title="Légende" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
         <styles>
           <style marginBottom="2" name="title">
             <styleFont description="Ubuntu,16,-1,5,50,0,0,0,0,0" style=""/>
@@ -3423,7 +3424,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="50.7829" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" file="./qgisModele/Logo ville.jpg" pictureHeight="52.8496" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="50.7829" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./qgisModele/Logo ville.jpg" northOffset="0" pictureHeight="52.8496" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="10.5" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="777.15" y="10.5" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="52.8496" outlineWidth="0.3" excludeFromExports="0" uuid="{42a54e3e-31aa-4d02-92f5-70e6ca102bf7}" height="52.8496" itemRotation="0" frame="false" pagex="777.15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -3440,7 +3441,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5223251.02336289267987013" xmin="1372244.29317944892682135" ymax="5230126.02336990553885698" xmax="1382494.29318990395404398"/>
         <LayerSet/>
         <Grid/>
@@ -3534,7 +3535,7 @@
     </Composition>
   </Composer>
   <projectlayers>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>GrandsProjets20160223174709016</id>
       <datasource>dbname='dgaeust' host=VLR6180X port=5432 user='Fred' password='Fred' sslmode=disable key='id' srid=2154 type=MultiPolygon table="public"."GrandsProjets" (geom) sql=</datasource>
       <keywordList>
@@ -3560,204 +3561,271 @@
       </vectorjoins>
       <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="travaux" expression=""/>
+        <default field="cout" expression=""/>
+        <default field="date_trava" expression=""/>
+        <default field="ordre" expression=""/>
+        <default field="Localisable" expression=""/>
+        <default field="GrandsProjets_Depenses" expression=""/>
+        <default field="GrandsProjets_Recettes" expression=""/>
+        <default field="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" expression=""/>
+        <default field="GrandsProjets_2016Depenses" expression=""/>
+        <default field="GrandsProjets_2016Recettes" expression=""/>
+        <default field="GrandsProjets_2017Depenses" expression=""/>
+        <default field="GrandsProjets_2017Recettes" expression=""/>
+        <default field="GrandsProjets_2018Depenses" expression=""/>
+        <default field="GrandsProjets_2018Recettes" expression=""/>
+        <default field="GrandsProjets_2019Depenses" expression=""/>
+        <default field="GrandsProjets_2019Recettes" expression=""/>
+        <default field="GrandsProjets_2020Depenses" expression=""/>
+        <default field="GrandsProjets_2020Recettes" expression=""/>
+        <default field="GrandsProjets_2021Depenses" expression=""/>
+        <default field="GrandsProjets_2021Recettes" expression=""/>
+        <default field="GrandsProjets_2022Depenses" expression=""/>
+        <default field="GrandsProjets_2022Recettes" expression=""/>
+        <default field="GrandsProjets_Pluriannuel" expression=""/>
+        <default field="GrandsProjets_Cout" expression=""/>
+        <default field="GrandsProjets_Prog_ini" expression=""/>
+        <default field="GrandsProjets_Prog_fin" expression=""/>
+        <default field="GrandsProjets_Etudes_ini" expression=""/>
+        <default field="GrandsProjets_Etudes_fin" expression=""/>
+        <default field="GrandsProjets_Travaux_ini" expression=""/>
+        <default field="GrandsProjets_Travaux_fin" expression=""/>
+        <default field="GrandsProjets_AutresDates" expression=""/>
+        <default field="GrandsProjets_Prog" expression=""/>
+        <default field="GrandsProjets_Etudes" expression=""/>
+        <default field="GrandsProjets_Travaux" expression=""/>
+        <default field="GrandsProjets_Date" expression=""/>
+        <default field="GrandsProjets_EluPilote" expression=""/>
+        <default field="GrandsProjets_ElusAssocies" expression=""/>
+        <default field="GrandsProjets_ServicePilote_Agent" expression=""/>
+        <default field="GrandsProjets_ServicesAssocies_Partenaires" expression=""/>
+        <default field="GrandsProjets_EnjeuxDuProjet" expression=""/>
+        <default field="GrandsProjets_GouvernanceCopil" expression=""/>
+        <default field="GrandsProjets_GouvernanceCotech" expression=""/>
+        <default field="GrandsProjets_Calendrier_2016_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2016_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2017_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2017_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2018_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2018_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2019_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2019_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2020_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2020_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2021_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2021_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2022_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2022_S2" expression=""/>
+        <default field="GrandsProjets_JalonsDecisionnel" expression=""/>
+        <default field="GrandsProjets_Risques" expression=""/>
+        <default field="GrandsProjets_ValidationActeesEnInstance" expression=""/>
+        <default field="GrandsProjets_Visuel_Plan1" expression=""/>
+        <default field="GrandsProjets_Visuel_Plan2" expression=""/>
+        <default field="GrandsProjets_Visuel1" expression=""/>
+        <default field="GrandsProjets_Visuel2" expression=""/>
+        <default field="GrandsProjets_Observations" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="cout">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="date_trava">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ordre">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Localisable">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ImpactSurLesAutresProjectsDuMandat">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2016Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2016Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2017Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2017Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2018Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2018Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2019Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2019Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2020Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2020Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2021Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2021Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2022Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2022Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Pluriannuel">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Cout">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_AutresDates">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Date">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_EluPilote">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ElusAssocies">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ServicePilote_Agent">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ServicesAssocies_Partenaires">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_EnjeuxDuProjet">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_GouvernanceCopil">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_GouvernanceCotech">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2016_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2016_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2017_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2017_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2018_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2018_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2019_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2019_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2020_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2020_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2021_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2021_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2022_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2022_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_JalonsDecisionnel">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Risques">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ValidationActeesEnInstance">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel_Plan1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel_Plan2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Observations">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -3974,7 +4042,9 @@
         <rules key="{e0f3e9e1-a9f0-48ba-a54e-b4fcbaa8d1b6}">
           <rule filter=" &quot;Localisable&quot; ='oui'" active="0" key="{71a96600-289c-439c-9b30-83070401b871}">
             <settings>
-              <text-style fontItalic="0" fontFamily="Arial Black" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="13" fieldName="travaux" namedStyle="Regular" fontWordSpacing="0"/>
+              <text-style fontItalic="0" fontFamily="Arial Black" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="13" fieldName="travaux" namedStyle="Regular" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
               <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
@@ -3986,7 +4056,9 @@
           </rule>
           <rule active="0" key="{1690170d-b6e8-4bf9-a6c2-045e3c222914}">
             <settings>
-              <text-style fontItalic="0" fontFamily="Tinos for Powerline" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="cout" namedStyle="Regular" fontWordSpacing="0"/>
+              <text-style fontItalic="0" fontFamily="Tinos for Powerline" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="cout" namedStyle="Regular" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
               <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
@@ -3998,7 +4070,9 @@
           </rule>
           <rule active="0" key="{61e9d663-31c9-42c3-b41e-f18cb96112d6}">
             <settings>
-              <text-style fontItalic="0" fontFamily="Tinos for Powerline" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="date_trava" namedStyle="Regular" fontWordSpacing="0"/>
+              <text-style fontItalic="0" fontFamily="Tinos for Powerline" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="date_trava" namedStyle="Regular" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
               <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
@@ -4010,7 +4084,9 @@
           </rule>
           <rule filter="&quot;Localisable&quot;  = 'oui'" key="{cc679665-c915-499d-93d6-a375e6d41cfa}">
             <settings>
-              <text-style fontItalic="0" fontFamily="Arial Black" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" --concat( &quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;  )&#xa;  wordwrap( concat( '',&quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;,''  ),30,';')" namedStyle="Regular" fontWordSpacing="0"/>
+              <text-style fontItalic="0" fontFamily="Arial Black" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" --concat( &quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;  )&#xa;  wordwrap( concat( '',&quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;,''  ),30,';')" namedStyle="Regular" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
               <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
               <background shapeSizeUnits="1" shapeType="2" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="1" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
@@ -4081,9 +4157,79 @@
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="travaux" index="1" name=""/>
+        <alias field="cout" index="2" name=""/>
+        <alias field="date_trava" index="3" name=""/>
+        <alias field="ordre" index="4" name=""/>
+        <alias field="Localisable" index="5" name=""/>
+        <alias field="GrandsProjets_Depenses" index="6" name=""/>
+        <alias field="GrandsProjets_Recettes" index="7" name=""/>
+        <alias field="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" index="8" name=""/>
+        <alias field="GrandsProjets_2016Depenses" index="9" name=""/>
+        <alias field="GrandsProjets_2016Recettes" index="10" name=""/>
+        <alias field="GrandsProjets_2017Depenses" index="11" name=""/>
+        <alias field="GrandsProjets_2017Recettes" index="12" name=""/>
+        <alias field="GrandsProjets_2018Depenses" index="13" name=""/>
+        <alias field="GrandsProjets_2018Recettes" index="14" name=""/>
+        <alias field="GrandsProjets_2019Depenses" index="15" name=""/>
+        <alias field="GrandsProjets_2019Recettes" index="16" name=""/>
+        <alias field="GrandsProjets_2020Depenses" index="17" name=""/>
+        <alias field="GrandsProjets_2020Recettes" index="18" name=""/>
+        <alias field="GrandsProjets_2021Depenses" index="19" name=""/>
+        <alias field="GrandsProjets_2021Recettes" index="20" name=""/>
+        <alias field="GrandsProjets_2022Depenses" index="21" name=""/>
+        <alias field="GrandsProjets_2022Recettes" index="22" name=""/>
+        <alias field="GrandsProjets_Pluriannuel" index="23" name=""/>
+        <alias field="GrandsProjets_Cout" index="24" name=""/>
+        <alias field="GrandsProjets_Prog_ini" index="25" name=""/>
+        <alias field="GrandsProjets_Prog_fin" index="26" name=""/>
+        <alias field="GrandsProjets_Etudes_ini" index="27" name=""/>
+        <alias field="GrandsProjets_Etudes_fin" index="28" name=""/>
+        <alias field="GrandsProjets_Travaux_ini" index="29" name=""/>
+        <alias field="GrandsProjets_Travaux_fin" index="30" name=""/>
+        <alias field="GrandsProjets_AutresDates" index="31" name=""/>
+        <alias field="GrandsProjets_Prog" index="32" name=""/>
+        <alias field="GrandsProjets_Etudes" index="33" name=""/>
+        <alias field="GrandsProjets_Travaux" index="34" name=""/>
+        <alias field="GrandsProjets_Date" index="35" name=""/>
+        <alias field="GrandsProjets_EluPilote" index="36" name=""/>
+        <alias field="GrandsProjets_ElusAssocies" index="37" name=""/>
+        <alias field="GrandsProjets_ServicePilote_Agent" index="38" name=""/>
+        <alias field="GrandsProjets_ServicesAssocies_Partenaires" index="39" name=""/>
+        <alias field="GrandsProjets_EnjeuxDuProjet" index="40" name=""/>
+        <alias field="GrandsProjets_GouvernanceCopil" index="41" name=""/>
+        <alias field="GrandsProjets_GouvernanceCotech" index="42" name=""/>
+        <alias field="GrandsProjets_Calendrier_2016_S1" index="43" name=""/>
+        <alias field="GrandsProjets_Calendrier_2016_S2" index="44" name=""/>
+        <alias field="GrandsProjets_Calendrier_2017_S1" index="45" name=""/>
+        <alias field="GrandsProjets_Calendrier_2017_S2" index="46" name=""/>
+        <alias field="GrandsProjets_Calendrier_2018_S1" index="47" name=""/>
+        <alias field="GrandsProjets_Calendrier_2018_S2" index="48" name=""/>
+        <alias field="GrandsProjets_Calendrier_2019_S1" index="49" name=""/>
+        <alias field="GrandsProjets_Calendrier_2019_S2" index="50" name=""/>
+        <alias field="GrandsProjets_Calendrier_2020_S1" index="51" name=""/>
+        <alias field="GrandsProjets_Calendrier_2020_S2" index="52" name=""/>
+        <alias field="GrandsProjets_Calendrier_2021_S1" index="53" name=""/>
+        <alias field="GrandsProjets_Calendrier_2021_S2" index="54" name=""/>
+        <alias field="GrandsProjets_Calendrier_2022_S1" index="55" name=""/>
+        <alias field="GrandsProjets_Calendrier_2022_S2" index="56" name=""/>
+        <alias field="GrandsProjets_JalonsDecisionnel" index="57" name=""/>
+        <alias field="GrandsProjets_Risques" index="58" name=""/>
+        <alias field="GrandsProjets_ValidationActeesEnInstance" index="59" name=""/>
+        <alias field="GrandsProjets_Visuel_Plan1" index="60" name=""/>
+        <alias field="GrandsProjets_Visuel_Plan2" index="61" name=""/>
+        <alias field="GrandsProjets_Visuel1" index="62" name=""/>
+        <alias field="GrandsProjets_Visuel2" index="63" name=""/>
+        <alias field="GrandsProjets_Observations" index="64" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -4107,15 +4253,12 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
-      <attributetableconfig actionWidgetStyle="dropDown">
-        <columns/>
-      </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>374579.7572872830205597</xmin>
         <ymin>6568288.77494881954044104</ymin>
@@ -4148,204 +4291,271 @@ def my_form_open(dialog, layer, feature):
       </vectorjoins>
       <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="travaux" expression=""/>
+        <default field="cout" expression=""/>
+        <default field="date_trava" expression=""/>
+        <default field="ordre" expression=""/>
+        <default field="Localisable" expression=""/>
+        <default field="GrandsProjets_Depenses" expression=""/>
+        <default field="GrandsProjets_Recettes" expression=""/>
+        <default field="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" expression=""/>
+        <default field="GrandsProjets_2016Depenses" expression=""/>
+        <default field="GrandsProjets_2016Recettes" expression=""/>
+        <default field="GrandsProjets_2017Depenses" expression=""/>
+        <default field="GrandsProjets_2017Recettes" expression=""/>
+        <default field="GrandsProjets_2018Depenses" expression=""/>
+        <default field="GrandsProjets_2018Recettes" expression=""/>
+        <default field="GrandsProjets_2019Depenses" expression=""/>
+        <default field="GrandsProjets_2019Recettes" expression=""/>
+        <default field="GrandsProjets_2020Depenses" expression=""/>
+        <default field="GrandsProjets_2020Recettes" expression=""/>
+        <default field="GrandsProjets_2021Depenses" expression=""/>
+        <default field="GrandsProjets_2021Recettes" expression=""/>
+        <default field="GrandsProjets_2022Depenses" expression=""/>
+        <default field="GrandsProjets_2022Recettes" expression=""/>
+        <default field="GrandsProjets_Pluriannuel" expression=""/>
+        <default field="GrandsProjets_Cout" expression=""/>
+        <default field="GrandsProjets_Prog_ini" expression=""/>
+        <default field="GrandsProjets_Prog_fin" expression=""/>
+        <default field="GrandsProjets_Etudes_ini" expression=""/>
+        <default field="GrandsProjets_Etudes_fin" expression=""/>
+        <default field="GrandsProjets_Travaux_ini" expression=""/>
+        <default field="GrandsProjets_Travaux_fin" expression=""/>
+        <default field="GrandsProjets_AutresDates" expression=""/>
+        <default field="GrandsProjets_Prog" expression=""/>
+        <default field="GrandsProjets_Etudes" expression=""/>
+        <default field="GrandsProjets_Travaux" expression=""/>
+        <default field="GrandsProjets_Date" expression=""/>
+        <default field="GrandsProjets_EluPilote" expression=""/>
+        <default field="GrandsProjets_ElusAssocies" expression=""/>
+        <default field="GrandsProjets_ServicePilote_Agent" expression=""/>
+        <default field="GrandsProjets_ServicesAssocies_Partenaires" expression=""/>
+        <default field="GrandsProjets_EnjeuxDuProjet" expression=""/>
+        <default field="GrandsProjets_GouvernanceCopil" expression=""/>
+        <default field="GrandsProjets_GouvernanceCotech" expression=""/>
+        <default field="GrandsProjets_Calendrier_2016_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2016_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2017_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2017_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2018_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2018_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2019_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2019_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2020_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2020_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2021_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2021_S2" expression=""/>
+        <default field="GrandsProjets_Calendrier_2022_S1" expression=""/>
+        <default field="GrandsProjets_Calendrier_2022_S2" expression=""/>
+        <default field="GrandsProjets_JalonsDecisionnel" expression=""/>
+        <default field="GrandsProjets_Risques" expression=""/>
+        <default field="GrandsProjets_ValidationActeesEnInstance" expression=""/>
+        <default field="GrandsProjets_Visuel_Plan1" expression=""/>
+        <default field="GrandsProjets_Visuel_Plan2" expression=""/>
+        <default field="GrandsProjets_Visuel1" expression=""/>
+        <default field="GrandsProjets_Visuel2" expression=""/>
+        <default field="GrandsProjets_Observations" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="cout">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="date_trava">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ordre">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Localisable">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ImpactSurLesAutresProjectsDuMandat">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2016Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2016Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2017Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2017Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2018Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2018Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2019Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2019Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2020Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2020Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2021Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2021Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2022Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_2022Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Pluriannuel">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Cout">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_AutresDates">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Prog">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Etudes">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Date">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_EluPilote">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ElusAssocies">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ServicePilote_Agent">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ServicesAssocies_Partenaires">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_EnjeuxDuProjet">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_GouvernanceCopil">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_GouvernanceCotech">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2016_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2016_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2017_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2017_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2018_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2018_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2019_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2019_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2020_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2020_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2021_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2021_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2022_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Calendrier_2022_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_JalonsDecisionnel">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Risques">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_ValidationActeesEnInstance">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel_Plan1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel_Plan2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel1">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Visuel2">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GrandsProjets_Observations">
-          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 attr="--&quot;GrandsProjets_Depenses&quot; &#xa;-- substr( &quot;GrandsProjets_Depenses&quot; ,1, length( &quot;GrandsProjets_Depenses&quot;))&#xa;to_real( &quot;GrandsProjets_Depenses&quot;)" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
@@ -4482,7 +4692,9 @@ def my_form_open(dialog, layer, feature):
         <rules key="{08f0fffe-b390-4b46-9efc-ca37b4b5957f}">
           <rule key="{d6192e84-4a30-40b8-a746-b8a5cc09cc3c}">
             <settings>
-              <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="28" fieldName=" --concat( &quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;  )&#xa;  wordwrap( concat( '',&quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;,''  ),30,';')" namedStyle="Regular" fontWordSpacing="0"/>
+              <text-style fontItalic="0" fontFamily="Arial" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="1" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="28" fieldName=" --concat( &quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;  )&#xa;  wordwrap( concat( '',&quot;travaux&quot;,'\n',  &quot;GrandsProjets_Cout&quot; ,'\n',  &quot;GrandsProjets_Date&quot;,''  ),30,';')" namedStyle="Regular" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
               <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="1" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
@@ -4699,9 +4911,79 @@ def my_form_open(dialog, layer, feature):
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="travaux" index="1" name=""/>
+        <alias field="cout" index="2" name=""/>
+        <alias field="date_trava" index="3" name=""/>
+        <alias field="ordre" index="4" name=""/>
+        <alias field="Localisable" index="5" name=""/>
+        <alias field="GrandsProjets_Depenses" index="6" name=""/>
+        <alias field="GrandsProjets_Recettes" index="7" name=""/>
+        <alias field="GrandsProjets_ImpactSurLesAutresProjectsDuMandat" index="8" name=""/>
+        <alias field="GrandsProjets_2016Depenses" index="9" name=""/>
+        <alias field="GrandsProjets_2016Recettes" index="10" name=""/>
+        <alias field="GrandsProjets_2017Depenses" index="11" name=""/>
+        <alias field="GrandsProjets_2017Recettes" index="12" name=""/>
+        <alias field="GrandsProjets_2018Depenses" index="13" name=""/>
+        <alias field="GrandsProjets_2018Recettes" index="14" name=""/>
+        <alias field="GrandsProjets_2019Depenses" index="15" name=""/>
+        <alias field="GrandsProjets_2019Recettes" index="16" name=""/>
+        <alias field="GrandsProjets_2020Depenses" index="17" name=""/>
+        <alias field="GrandsProjets_2020Recettes" index="18" name=""/>
+        <alias field="GrandsProjets_2021Depenses" index="19" name=""/>
+        <alias field="GrandsProjets_2021Recettes" index="20" name=""/>
+        <alias field="GrandsProjets_2022Depenses" index="21" name=""/>
+        <alias field="GrandsProjets_2022Recettes" index="22" name=""/>
+        <alias field="GrandsProjets_Pluriannuel" index="23" name=""/>
+        <alias field="GrandsProjets_Cout" index="24" name=""/>
+        <alias field="GrandsProjets_Prog_ini" index="25" name=""/>
+        <alias field="GrandsProjets_Prog_fin" index="26" name=""/>
+        <alias field="GrandsProjets_Etudes_ini" index="27" name=""/>
+        <alias field="GrandsProjets_Etudes_fin" index="28" name=""/>
+        <alias field="GrandsProjets_Travaux_ini" index="29" name=""/>
+        <alias field="GrandsProjets_Travaux_fin" index="30" name=""/>
+        <alias field="GrandsProjets_AutresDates" index="31" name=""/>
+        <alias field="GrandsProjets_Prog" index="32" name=""/>
+        <alias field="GrandsProjets_Etudes" index="33" name=""/>
+        <alias field="GrandsProjets_Travaux" index="34" name=""/>
+        <alias field="GrandsProjets_Date" index="35" name=""/>
+        <alias field="GrandsProjets_EluPilote" index="36" name=""/>
+        <alias field="GrandsProjets_ElusAssocies" index="37" name=""/>
+        <alias field="GrandsProjets_ServicePilote_Agent" index="38" name=""/>
+        <alias field="GrandsProjets_ServicesAssocies_Partenaires" index="39" name=""/>
+        <alias field="GrandsProjets_EnjeuxDuProjet" index="40" name=""/>
+        <alias field="GrandsProjets_GouvernanceCopil" index="41" name=""/>
+        <alias field="GrandsProjets_GouvernanceCotech" index="42" name=""/>
+        <alias field="GrandsProjets_Calendrier_2016_S1" index="43" name=""/>
+        <alias field="GrandsProjets_Calendrier_2016_S2" index="44" name=""/>
+        <alias field="GrandsProjets_Calendrier_2017_S1" index="45" name=""/>
+        <alias field="GrandsProjets_Calendrier_2017_S2" index="46" name=""/>
+        <alias field="GrandsProjets_Calendrier_2018_S1" index="47" name=""/>
+        <alias field="GrandsProjets_Calendrier_2018_S2" index="48" name=""/>
+        <alias field="GrandsProjets_Calendrier_2019_S1" index="49" name=""/>
+        <alias field="GrandsProjets_Calendrier_2019_S2" index="50" name=""/>
+        <alias field="GrandsProjets_Calendrier_2020_S1" index="51" name=""/>
+        <alias field="GrandsProjets_Calendrier_2020_S2" index="52" name=""/>
+        <alias field="GrandsProjets_Calendrier_2021_S1" index="53" name=""/>
+        <alias field="GrandsProjets_Calendrier_2021_S2" index="54" name=""/>
+        <alias field="GrandsProjets_Calendrier_2022_S1" index="55" name=""/>
+        <alias field="GrandsProjets_Calendrier_2022_S2" index="56" name=""/>
+        <alias field="GrandsProjets_JalonsDecisionnel" index="57" name=""/>
+        <alias field="GrandsProjets_Risques" index="58" name=""/>
+        <alias field="GrandsProjets_ValidationActeesEnInstance" index="59" name=""/>
+        <alias field="GrandsProjets_Visuel_Plan1" index="60" name=""/>
+        <alias field="GrandsProjets_Visuel_Plan2" index="61" name=""/>
+        <alias field="GrandsProjets_Visuel1" index="62" name=""/>
+        <alias field="GrandsProjets_Visuel2" index="63" name=""/>
+        <alias field="GrandsProjets_Observations" index="64" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -4725,9 +5007,6 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
-      <attributetableconfig actionWidgetStyle="dropDown">
-        <columns/>
-      </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
@@ -4753,212 +5032,417 @@ def my_form_open(dialog, layer, feature):
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <provider encoding="UTF-8">ogr</provider>
       <previewExpression>COALESCE("Fiche_Projet", '&lt;NULL>')||', '||COALESCE("Depenses", '&lt;NULL>')||', '||COALESCE("Recettes", '&lt;NULL>')||', '||COALESCE("ImpactSurLesAutresProjectsDuMandat", '&lt;NULL>')||', '||COALESCE("2016Depenses", '&lt;NULL>')||', '||COALESCE("2016Recettes", '&lt;NULL>')||', '||COALESCE("2017Depenses", '&lt;NULL>')||', '||COALESCE("2017Recettes", '&lt;NULL>')||', '||COALESCE("2018Depenses", '&lt;NULL>')||', '||COALESCE("2018Recettes", '&lt;NULL>')||', '||COALESCE("2019Depenses", '&lt;NULL>')||', '||COALESCE("2019Recettes", '&lt;NULL>')||', '||COALESCE("2020Depenses", '&lt;NULL>')||', '||COALESCE("2020Recettes", '&lt;NULL>')||', '||COALESCE("2021Depenses", '&lt;NULL>')||', '||COALESCE("2021Recettes", '&lt;NULL>')||', '||COALESCE("2022Depenses", '&lt;NULL>')||', '||COALESCE("2022Recettes", '&lt;NULL>')||', '||COALESCE("Pluriannuel", '&lt;NULL>')||', '||COALESCE("Cout", '&lt;NULL>')||', '||COALESCE("Prog_ini", '&lt;NULL>')||', '||COALESCE("Prog_fin", '&lt;NULL>')||', '||COALESCE("Etudes_ini", '&lt;NULL>')||', '||COALESCE("Etudes_fin", '&lt;NULL>')||', '||COALESCE("Travaux_ini", '&lt;NULL>')||', '||COALESCE("Travaux_fin", '&lt;NULL>')||', '||COALESCE("AutresDates", '&lt;NULL>')||', '||COALESCE("Prog", '&lt;NULL>')||', '||COALESCE("Etudes", '&lt;NULL>')||', '||COALESCE("Travaux", '&lt;NULL>')||', '||COALESCE("Date", '&lt;NULL>')||', '||COALESCE("EluPilote", '&lt;NULL>')||', '||COALESCE("ElusAssocies", '&lt;NULL>')||', '||COALESCE("ServicePilote_Agent", '&lt;NULL>')||', '||COALESCE("ServicesAssocies_Partenaires", '&lt;NULL>')||', '||COALESCE("EnjeuxDuProjet", '&lt;NULL>')||', '||COALESCE("GouvernanceCopil", '&lt;NULL>')||', '||COALESCE("GouvernanceCotech", '&lt;NULL>')||', '||COALESCE("Calendrier_2016_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2016_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2017_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2017_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2018_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2018_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2019_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2019_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2020_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2020_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2021_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2021_S2", '&lt;NULL>')||', '||COALESCE("Calendrier_2022_S1", '&lt;NULL>')||', '||COALESCE("Calendrier_2022_S2", '&lt;NULL>')||', '||COALESCE("JalonsDecisionnel", '&lt;NULL>')||', '||COALESCE("Risques", '&lt;NULL>')||', '||COALESCE("ValidationActeesEnInstance", '&lt;NULL>')||', '||COALESCE("Visuel_Plan1", '&lt;NULL>')||', '||COALESCE("Visuel_Plan2", '&lt;NULL>')||', '||COALESCE("Visuel1", '&lt;NULL>')||', '||COALESCE("Visuel2", '&lt;NULL>')||', '||COALESCE("Observations", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
+      <defaults>
+        <default field="Fiche_Projet" expression=""/>
+        <default field="Depenses" expression=""/>
+        <default field="Recettes" expression=""/>
+        <default field="ImpactSurLesAutresProjectsDuMandat" expression=""/>
+        <default field="2016Depenses" expression=""/>
+        <default field="2016Recettes" expression=""/>
+        <default field="2017Depenses" expression=""/>
+        <default field="2017Recettes" expression=""/>
+        <default field="2018Depenses" expression=""/>
+        <default field="2018Recettes" expression=""/>
+        <default field="2019Depenses" expression=""/>
+        <default field="2019Recettes" expression=""/>
+        <default field="2020Depenses" expression=""/>
+        <default field="2020Recettes" expression=""/>
+        <default field="2021Depenses" expression=""/>
+        <default field="2021Recettes" expression=""/>
+        <default field="2022Depenses" expression=""/>
+        <default field="2022Recettes" expression=""/>
+        <default field="Pluriannuel" expression=""/>
+        <default field="Cout" expression=""/>
+        <default field="Prog_ini" expression=""/>
+        <default field="Prog_fin" expression=""/>
+        <default field="Etudes_ini" expression=""/>
+        <default field="Etudes_fin" expression=""/>
+        <default field="Travaux_ini" expression=""/>
+        <default field="Travaux_fin" expression=""/>
+        <default field="AutresDates" expression=""/>
+        <default field="Prog" expression=""/>
+        <default field="Etudes" expression=""/>
+        <default field="Travaux" expression=""/>
+        <default field="Date" expression=""/>
+        <default field="EluPilote" expression=""/>
+        <default field="ElusAssocies" expression=""/>
+        <default field="ServicePilote_Agent" expression=""/>
+        <default field="ServicesAssocies_Partenaires" expression=""/>
+        <default field="EnjeuxDuProjet" expression=""/>
+        <default field="GouvernanceCopil" expression=""/>
+        <default field="GouvernanceCotech" expression=""/>
+        <default field="Calendrier_2016_S1" expression=""/>
+        <default field="Calendrier_2016_S2" expression=""/>
+        <default field="Calendrier_2017_S1" expression=""/>
+        <default field="Calendrier_2017_S2" expression=""/>
+        <default field="Calendrier_2018_S1" expression=""/>
+        <default field="Calendrier_2018_S2" expression=""/>
+        <default field="Calendrier_2019_S1" expression=""/>
+        <default field="Calendrier_2019_S2" expression=""/>
+        <default field="Calendrier_2020_S1" expression=""/>
+        <default field="Calendrier_2020_S2" expression=""/>
+        <default field="Calendrier_2021_S1" expression=""/>
+        <default field="Calendrier_2021_S2" expression=""/>
+        <default field="Calendrier_2022_S1" expression=""/>
+        <default field="Calendrier_2022_S2" expression=""/>
+        <default field="JalonsDecisionnel" expression=""/>
+        <default field="Risques" expression=""/>
+        <default field="ValidationActeesEnInstance" expression=""/>
+        <default field="Visuel_Plan1" expression=""/>
+        <default field="Visuel_Plan2" expression=""/>
+        <default field="Visuel1" expression=""/>
+        <default field="Visuel2" expression=""/>
+        <default field="Observations" expression=""/>
+      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="Fiche_Projet">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ImpactSurLesAutresProjectsDuMandat">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2016Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2016Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2017Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2017Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2018Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2018Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2019Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2019Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2020Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2020Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2021Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2021Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2022Depenses">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="2022Recettes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Pluriannuel">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Cout">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Prog_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Prog_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Etudes_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Etudes_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Travaux_ini">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Travaux_fin">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="AutresDates">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Prog">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Etudes">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Travaux">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Date">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="EluPilote">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ElusAssocies">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ServicePilote_Agent">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ServicesAssocies_Partenaires">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="EnjeuxDuProjet">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GouvernanceCopil">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="GouvernanceCotech">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2016_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2016_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2017_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2017_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2018_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2018_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2019_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2019_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2020_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2020_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2021_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2021_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2022_S1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Calendrier_2022_S2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="JalonsDecisionnel">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Risques">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ValidationActeesEnInstance">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Visuel_Plan1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Visuel_Plan2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Visuel1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Visuel2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="Observations">
-          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
+      <aliases>
+        <alias field="Fiche_Projet" index="0" name=""/>
+        <alias field="Depenses" index="1" name=""/>
+        <alias field="Recettes" index="2" name=""/>
+        <alias field="ImpactSurLesAutresProjectsDuMandat" index="3" name=""/>
+        <alias field="2016Depenses" index="4" name=""/>
+        <alias field="2016Recettes" index="5" name=""/>
+        <alias field="2017Depenses" index="6" name=""/>
+        <alias field="2017Recettes" index="7" name=""/>
+        <alias field="2018Depenses" index="8" name=""/>
+        <alias field="2018Recettes" index="9" name=""/>
+        <alias field="2019Depenses" index="10" name=""/>
+        <alias field="2019Recettes" index="11" name=""/>
+        <alias field="2020Depenses" index="12" name=""/>
+        <alias field="2020Recettes" index="13" name=""/>
+        <alias field="2021Depenses" index="14" name=""/>
+        <alias field="2021Recettes" index="15" name=""/>
+        <alias field="2022Depenses" index="16" name=""/>
+        <alias field="2022Recettes" index="17" name=""/>
+        <alias field="Pluriannuel" index="18" name=""/>
+        <alias field="Cout" index="19" name=""/>
+        <alias field="Prog_ini" index="20" name=""/>
+        <alias field="Prog_fin" index="21" name=""/>
+        <alias field="Etudes_ini" index="22" name=""/>
+        <alias field="Etudes_fin" index="23" name=""/>
+        <alias field="Travaux_ini" index="24" name=""/>
+        <alias field="Travaux_fin" index="25" name=""/>
+        <alias field="AutresDates" index="26" name=""/>
+        <alias field="Prog" index="27" name=""/>
+        <alias field="Etudes" index="28" name=""/>
+        <alias field="Travaux" index="29" name=""/>
+        <alias field="Date" index="30" name=""/>
+        <alias field="EluPilote" index="31" name=""/>
+        <alias field="ElusAssocies" index="32" name=""/>
+        <alias field="ServicePilote_Agent" index="33" name=""/>
+        <alias field="ServicesAssocies_Partenaires" index="34" name=""/>
+        <alias field="EnjeuxDuProjet" index="35" name=""/>
+        <alias field="GouvernanceCopil" index="36" name=""/>
+        <alias field="GouvernanceCotech" index="37" name=""/>
+        <alias field="Calendrier_2016_S1" index="38" name=""/>
+        <alias field="Calendrier_2016_S2" index="39" name=""/>
+        <alias field="Calendrier_2017_S1" index="40" name=""/>
+        <alias field="Calendrier_2017_S2" index="41" name=""/>
+        <alias field="Calendrier_2018_S1" index="42" name=""/>
+        <alias field="Calendrier_2018_S2" index="43" name=""/>
+        <alias field="Calendrier_2019_S1" index="44" name=""/>
+        <alias field="Calendrier_2019_S2" index="45" name=""/>
+        <alias field="Calendrier_2020_S1" index="46" name=""/>
+        <alias field="Calendrier_2020_S2" index="47" name=""/>
+        <alias field="Calendrier_2021_S1" index="48" name=""/>
+        <alias field="Calendrier_2021_S2" index="49" name=""/>
+        <alias field="Calendrier_2022_S1" index="50" name=""/>
+        <alias field="Calendrier_2022_S2" index="51" name=""/>
+        <alias field="JalonsDecisionnel" index="52" name=""/>
+        <alias field="Risques" index="53" name=""/>
+        <alias field="ValidationActeesEnInstance" index="54" name=""/>
+        <alias field="Visuel_Plan1" index="55" name=""/>
+        <alias field="Visuel_Plan2" index="56" name=""/>
+        <alias field="Visuel1" index="57" name=""/>
+        <alias field="Visuel2" index="58" name=""/>
+        <alias field="Observations" index="59" name=""/>
+      </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="Fiche_Projet"/>
+          <column width="-1" hidden="0" type="field" name="Depenses"/>
+          <column width="-1" hidden="0" type="field" name="Recettes"/>
+          <column width="-1" hidden="0" type="field" name="ImpactSurLesAutresProjectsDuMandat"/>
+          <column width="-1" hidden="0" type="field" name="2016Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2016Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2017Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2017Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2018Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2018Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2019Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2019Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2020Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2020Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2021Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2021Recettes"/>
+          <column width="-1" hidden="0" type="field" name="2022Depenses"/>
+          <column width="-1" hidden="0" type="field" name="2022Recettes"/>
+          <column width="-1" hidden="0" type="field" name="Pluriannuel"/>
+          <column width="-1" hidden="0" type="field" name="Cout"/>
+          <column width="-1" hidden="0" type="field" name="Prog_ini"/>
+          <column width="-1" hidden="0" type="field" name="Prog_fin"/>
+          <column width="-1" hidden="0" type="field" name="Etudes_ini"/>
+          <column width="-1" hidden="0" type="field" name="Etudes_fin"/>
+          <column width="-1" hidden="0" type="field" name="Travaux_ini"/>
+          <column width="-1" hidden="0" type="field" name="Travaux_fin"/>
+          <column width="-1" hidden="0" type="field" name="AutresDates"/>
+          <column width="-1" hidden="0" type="field" name="Prog"/>
+          <column width="-1" hidden="0" type="field" name="Etudes"/>
+          <column width="-1" hidden="0" type="field" name="Travaux"/>
+          <column width="-1" hidden="0" type="field" name="Date"/>
+          <column width="-1" hidden="0" type="field" name="EluPilote"/>
+          <column width="-1" hidden="0" type="field" name="ElusAssocies"/>
+          <column width="-1" hidden="0" type="field" name="ServicePilote_Agent"/>
+          <column width="-1" hidden="0" type="field" name="ServicesAssocies_Partenaires"/>
+          <column width="-1" hidden="0" type="field" name="EnjeuxDuProjet"/>
+          <column width="-1" hidden="0" type="field" name="GouvernanceCopil"/>
+          <column width="-1" hidden="0" type="field" name="GouvernanceCotech"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2016_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2016_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2017_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2017_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2018_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2018_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2019_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2019_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2020_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2020_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2021_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2021_S2"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2022_S1"/>
+          <column width="-1" hidden="0" type="field" name="Calendrier_2022_S2"/>
+          <column width="-1" hidden="0" type="field" name="JalonsDecisionnel"/>
+          <column width="-1" hidden="0" type="field" name="Risques"/>
+          <column width="-1" hidden="0" type="field" name="ValidationActeesEnInstance"/>
+          <column width="-1" hidden="0" type="field" name="Visuel_Plan1"/>
+          <column width="-1" hidden="0" type="field" name="Visuel_Plan2"/>
+          <column width="-1" hidden="0" type="field" name="Visuel1"/>
+          <column width="-1" hidden="0" type="field" name="Visuel2"/>
+          <column width="-1" hidden="0" type="field" name="Observations"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
-      <attributetableconfig actionWidgetStyle="dropDown">
-        <columns/>
-      </attributetableconfig>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>

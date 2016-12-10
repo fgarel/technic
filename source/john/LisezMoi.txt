@@ -1,5 +1,58 @@
 
 
+# Utilisation de John The Ripper pour cracker un fichier zip ou un fichier office
+
+L'installation de john the ripper se fait dans le repertoire
+
+~/Install/john
+
+en fait, il faut installer la version community (jumbo), car elle contient
+des utilitaires qui ne sont pas présents dans la version officielle
+
+http://www.openwall.com/john/
+
+
+
+L'installation de john the ripper est détaillé dans cette page
+
+https://github.com/magnumripper/JohnTheRipper/blob/bleeding-jumbo/doc/INSTALL-UBUNTU
+
+Attention, il faut preferer l'installation par github, car la procedure consitant a 
+telecharger l'archive sur le site openwall ne fonctionne pas.
+
+Attention cette 'installation de john the ripper qui est  détaillé dans ce blog ne fonctionne pas
+
+http://www.bytebang.at/Blog/Crack+(ZIP)+passwords+with+John+the+Ripper
+
+```
+$ sudo apt-get install libssl-dev
+$ wget http://www.openwall.com/john/j/john-1.8.0-jumbo-1.tar.xz
+$ tar -xvf ./john-1.8.0-jumbo-1.tar.xz
+$ cd john-1.8.0-jumbo-1/src
+$ ./configure
+$ make
+```
+
+A "make install" is not necessary for JTR.
+
+If you start JTR without arguments then it prints its help and some configuration information:
+
+```
+./john-1.8.0-jumbo-1/run/john 
+```
+
+
+# cracker un fichier zip
+
+```
+zip2john francolinuscapensis.zip > francolinuscapensis.john
+john --incremental francolinuscapensis.john
+```
+
+
+
+# Cracker un fichier office
+
 Plusieurs éléments sont nécessaires pour cracker un document office
 
 # Documentation
