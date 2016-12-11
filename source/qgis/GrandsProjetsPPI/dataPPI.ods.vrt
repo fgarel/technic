@@ -2,17 +2,19 @@
 <OGRVRTDataSource>
     <OGRVRTLayer name="dataPPI">
         <SrcDataSource relativeToVRT="1">dataPPI.ods</SrcDataSource>
-        <!--Header=True-->
-        <SrcSql dialect="sqlite">SELECT * FROM 'DataPPI' LIMIT 134 OFFSET 1</SrcSql>
-        <Field name="NomProjet" src="Field1" type="String"/>
-        <Field name="Montant" src="Field2" type="Integer"/>
-        <Field name="Categorie" src="Field3" type="String"/>
-        <Field name="Axe1" src="Field4" type="String"/>
-        <Field name="Axe2" src="Field5" type="String"/>
-        <Field name="GrandProjet" src="Field6" type="String"/>
-        <Field name="ActionTransitionEnergetique" src="Field7" type="String"/>
-        <Field name="NumeroPPI" src="Field8" type="Integer"/>
-        <Field name="Localisable" src="Field9" type="String"/>
-        <Field name="Picto" src="Field10" type="String"/>
+        <!--Header=False-->
+        <SrcLayer>DataPPI</SrcLayer>
+        <Field name="NomProjet" src="NomProjet" type="String"/>
+        <Field name="Montant" src="Montant" type="Integer"/>
+        <Field name="Categorie" src="Categorie" type="String"/>
+        <Field name="Axe1" src="Axe1" type="String"/>
+        <Field name="Axe2" src="Axe2" type="String"/>
+        <Field name="GrandProjet" src="GrandProjet" type="String"/>
+        <Field name="ActionTransitionEnergetique" src="ActionTransitionEnergetique" type="String"/>
+        <Field name="Rappel" src="Rappel" type="String"/>
+        <Field name="NumeroPPI" src="NumeroPPI" type="Integer"/>
+        <Field name="Localisable" src="Localisable" type="String"/>
+        <Field name="Picto" src="Picto" type="String"/>
+        <Field name="Couleur" src="Couleur" type="String"/>
     </OGRVRTLayer>
 </OGRVRTDataSource>
