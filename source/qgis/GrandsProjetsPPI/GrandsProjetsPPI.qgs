@@ -7,6 +7,9 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="GrandsProjetsPPI">
       <customproperties/>
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="LocalisationPPI_Axe220161212064107609" name="LocalisationPPI_Axe2">
+        <customproperties/>
+      </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="dataPPI_Axe220161211231812114" name="dataPPI_Axe2">
         <customproperties/>
       </layer-tree-layer>
@@ -36,10 +39,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-131707.95458983961725608</xmin>
-      <ymin>5803952.16116257663816214</ymin>
-      <xmax>-126269.62236762192333117</xmax>
-      <ymax>5807649.05212541576474905</ymax>
+      <xmin>-129222.97274018359894399</xmin>
+      <ymin>5805666.2902246592566371</ymin>
+      <xmax>-127296.67810485618247185</xmax>
+      <ymax>5806569.97231960576027632</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -59,9 +62,16 @@
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI20161210144517256"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="GrandsProjets20160223174709016"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063244404"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063958749"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="GrandsProjets20160229093459034"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320160129141302997"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Mapnik20161210144014661"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063736743"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063921933"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212064107609"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063525849"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063629475"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -72,10 +82,16 @@
       <item>LocalisationPPI20161210144517256</item>
       <item>dataPPI20161211174038656</item>
       <item>dataPPI_Axe220161211231812114</item>
+      <item>LocalisationPPI_Axe220161212064107609</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Checked" name="GrandsProjetsPPI">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="LocalisationPPI_Axe2" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe220161212064107609" visible="1"/>
+        </filegroup>
+      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dataPPI_Axe2" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="dataPPI_Axe220161211231812114" visible="1"/>
@@ -1087,6 +1103,15 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[%attribute(@atlas_feature, 'Axe2')%]" htmlState="0" halign="1">
+        <LabelFont description="Noto Sans,12,-1,5,75,1,0,0,0,0" style="Bold Italic"/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="143.714" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="318.005" y="143.714" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="83.1706" outlineWidth="0.3" excludeFromExports="0" uuid="{ba434e64-7394-4ac3-942e-e7cb343996af}" height="30.5774" itemRotation="0" frame="false" pagex="318.005">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
         <Extent ymin="5803878.9142253277823329" xmin="-131504.49087529734242707" ymax="5807066.90207977499812841" xmax="-126066.15865300501172896"/>
         <LayerSet/>
@@ -1139,8 +1164,8 @@
           </markerStyle>
           <annotationFontProperties description="Noto Sans,9,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="25" page="1" id="" lastValidViewScaleFactor="1.36639" positionMode="0" positionLock="false" x="10" y="25" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="290" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="170" itemRotation="0" frame="false" pagex="10">
+        <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
+        <ComposerItem pagey="25" page="1" id="" lastValidViewScaleFactor="1.63519" positionMode="0" positionLock="false" x="10" y="25" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="290" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="170" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -1155,7 +1180,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="&#xa; attribute(  $currentfeature , 'Axe2')" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="LocalisationPPI20161210144517256" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="--&#xa;--attribute($currentfeature , 'dataPPI_Axe2') &lt;> attribute(@atlas_feature, 'Axe2')&#xa;&#xa;--&#xa;attribute(@atlas_feature, 'Axe2')" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="LocalisationPPI20161210144517256" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
         <headerFontProperties description="Ubuntu,10,-1,5,75,1,0,0,0,0" style=""/>
         <contentFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         <displayColumns>
@@ -1210,8 +1235,8 @@
           <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
-        <ComposerFrame sectionWidth="404.166" sectionHeight="74.3648" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="200" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="404.166" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
+        <ComposerFrame sectionWidth="503.522" sectionHeight="74.3648" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="200" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="503.522" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1221,7 +1246,7 @@
       </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="dataPPI_Axe220161211231812114" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;code&quot;"/>
+    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe220161212064107609" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe2&quot;"/>
   </Composer>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -1733,6 +1758,126 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>LocalisationPPI_Axe220161212064107609</id>
+      <datasource>?query=select%20dataPPI.Axe2,%20st_union(geometry)%20as%20geom%0Afrom%20LocalisationPPI,%20dataPPI,%20dataPPI_Axe2%0Awhere%20LocalisationPPI.NumeroPPI%20%3D%20dataPPI.NumeroPPI%0Aand%20dataPPI.Axe2%20%3D%20dataPPI_Axe2.code%0Agroup%20by%20dataPPI.Axe2</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>LocalisationPPI_Axe2</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">virtual</provider>
+      <previewExpression>COALESCE( "Axe2", '&lt;NULL>' )</previewExpression>
+      <vectorjoins/>
+      <layerDependencies>
+        <layer id="dataPPI_Axe220161211231812114"/>
+        <layer id="dataPPI20161211174038656"/>
+        <layer id="LocalisationPPI20161210144517256"/>
+      </layerDependencies>
+      <expressionfields/>
+      <defaults>
+        <default field="Axe2" expression=""/>
+      </defaults>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="Axe2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="170,160,231,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>Axe2</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Noto Sans"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="Axe2" index="0" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="2697012">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="Axe2"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="PyTiledLayer">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
@@ -1924,7 +2069,7 @@ def my_form_open(dialog, layer, feature):
       </srs>
       <customproperties/>
       <provider encoding="UTF-8">ogr</provider>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE("code", '&lt;NULL>')||', '||COALESCE("couleur", '&lt;NULL>')||', '||COALESCE("picto", '&lt;NULL>')||', '||COALESCE("libelle", '&lt;NULL>')||', '||COALESCE("code2", '&lt;NULL>')||', '||COALESCE("libelle2", '&lt;NULL>')</previewExpression>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -1959,7 +2104,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="code" index="0" name=""/>
         <alias field="couleur" index="1" name=""/>
@@ -1972,12 +2117,20 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-713103984">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="code"/>
+          <column width="-1" hidden="0" type="field" name="couleur"/>
+          <column width="190" hidden="0" type="field" name="picto"/>
+          <column width="196" hidden="0" type="field" name="libelle"/>
+          <column width="-1" hidden="0" type="field" name="code2"/>
+          <column width="-1" hidden="0" type="field" name="libelle2"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2127,21 +2280,26 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>LocalisationPPI20161210144517256</value>
+        <value>LocalisationPPI_Axe220161212064107609</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>disabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
