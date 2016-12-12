@@ -4,11 +4,13 @@
         <SrcDataSource relativeToVRT="1">dataPPI_Axe2.ods</SrcDataSource>
         <!--Header=False-->
         <SrcLayer>Axe2</SrcLayer>
-        <Field name="code" src="code" type="String"/>
-        <Field name="couleur" src="couleur" type="String"/>
-        <Field name="picto" src="picto" type="String"/>
-        <Field name="libelle" src="libelle" type="String"/>
-        <Field name="code2" src="code2" type="Integer"/>
-        <Field name="libelle2" src="libelle2" type="String"/>
+        <Field name="codeAxe2" src="codeAxe2" type="String"/>
+        <Field name="couleurAxe2" src="couleurAxe2" type="String"/>
+        <Field name="pictoAxe2" src="pictoAxe2" type="String"/>
+        <Field name="libelleAxe2" src="libelleAxe2" type="String"/>
+        <Field name="id" src="id" type="Integer"/>
+        <Field name="libelle2Axe2" src="libelle2Axe2" type="String"/>
+        <Field name="codeAxe1" src="codeAxe1" type="String"/>
+        <Field name="libelleAxe1" src="libelleAxe1" type="String"/>
     </OGRVRTLayer>
 </OGRVRTDataSource>

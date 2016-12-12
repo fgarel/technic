@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="dataPPI_Axe1">
+        <SrcDataSource relativeToVRT="1">dataPPI_Axe1.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Axe1</SrcLayer>
+        <Field name="codeAxe1" src="codeAxe1" type="String"/>
+        <Field name="couleurAxe1" src="couleurAxe1" type="String"/>
+        <Field name="libelleAxe1" src="libelleAxe1" type="String"/>
+        <Field name="id" src="id" type="Integer"/>
+        <Field name="libelle2Axe1" src="libelle2Axe1" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
