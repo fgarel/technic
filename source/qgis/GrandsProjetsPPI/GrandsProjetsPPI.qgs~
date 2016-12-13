@@ -7,10 +7,10 @@
     <customproperties/>
     <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="GrandsProjetsPPI">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="dataPPI_Axe120161212151732039" name="dataPPI_Axe1">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="dataPPI_Axe120161212151732039" name="dataPPI_Axe1">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="dataPPI_Axe220161212151302630" name="dataPPI_Axe2">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="dataPPI_Axe220161212151302630" name="dataPPI_Axe2">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Checked" id="dataPPI20161211174038656" name="dataPPI">
@@ -21,22 +21,28 @@
           <property key="showFeatureCount" value="0"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="LocalisationPPI_GrandsProjetsUniquement20161212180920818" name="LocalisationPPI_GrandsProjetsUniquement">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="LocalisationPPI_TousAvecNumero20161213102015333" name="LocalisationPPI_TousAvecNumero">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850" name="LocalisationPPI_Axe0_GrandsProjetsUniquement">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="LocalisationPPI_GrandsProjetsUniquement20161212180920818" name="LocalisationPPI_GrandsProjetsUniquement">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537" name="LocalisationPPI_Axe2_GrandsProjetsUniquement">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe020161213093018570" name="LocalisationPPI_Axe0">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="LocalisationPPI_Axe220161212154923298" name="LocalisationPPI_Axe2">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342" name="LocalisationPPI_Axe0_GrandsProjetsUniquement">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992" name="LocalisationPPI_Axe2_GrandsProjetsUniquement">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe220161213093006597" name="LocalisationPPI_Axe2">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910" name="LocalisationPPI_Axe1_GrandsProjetsUniquement">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe120161212152717623" name="LocalisationPPI_Axe1">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe120161213093043960" name="LocalisationPPI_Axe1">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -57,10 +63,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-133811.711387368675787</xmin>
-      <ymin>5802108.03093272354453802</ymin>
-      <xmax>-124372.7197074131690897</xmax>
-      <ymax>5811204.05425681825727224</ymax>
+      <xmin>-132196.65025303384754807</xmin>
+      <ymin>5801658.32353023998439312</ymin>
+      <xmax>-122757.6585730785591295</xmax>
+      <ymax>5810754.34685431234538555</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -79,9 +85,9 @@
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182555303"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe120161212152533158"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_copier20161212162312789"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212153812088"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154805567"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212151630339"/>
@@ -92,12 +98,15 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212145003543"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_GrandsProjetsUniquement20161212175202697"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212091653919"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe020161213093018570"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_TousAvecNumero20161213102015333"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154851627"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="scan2520160129141241597"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212144717083"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe120161212152717623"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063958749"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe120161213093043960"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_GrandsProjetsUniquement20161212180817789"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212153220373"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Mapnik20161210144014661"/>
@@ -105,13 +114,17 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212091944817"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212064107609"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212102125591"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182922573"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212153631633"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212103949349"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154649277"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="GrandsProjets20160223174709016"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="GrandsProjets20160229093459034"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho201320160129141302997"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063629475"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe020161212182856418"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154328492"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154923298"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063736743"/>
@@ -121,6 +134,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154532472"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212091740086"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212102951209"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161213093006597"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212063921933"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
@@ -133,24 +147,26 @@
       <item>dataPPI20161211174038656</item>
       <item>dataPPI_Axe220161212151302630</item>
       <item>dataPPI_Axe120161212151732039</item>
-      <item>LocalisationPPI_Axe120161212152717623</item>
-      <item>LocalisationPPI_Axe220161212154923298</item>
       <item>LocalisationPPI_GrandsProjetsUniquement20161212180920818</item>
-      <item>LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537</item>
       <item>LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910</item>
-      <item>LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850</item>
+      <item>LocalisationPPI_Axe220161213093006597</item>
+      <item>LocalisationPPI_Axe020161213093018570</item>
+      <item>LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342</item>
+      <item>LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992</item>
+      <item>LocalisationPPI_Axe120161213093043960</item>
+      <item>LocalisationPPI_TousAvecNumero20161213102015333</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="GrandsProjetsPPI">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dataPPI_Axe1" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="dataPPI_Axe1" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="dataPPI_Axe120161212151732039" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="dataPPI_Axe120161212151732039" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dataPPI_Axe2" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="dataPPI_Axe2" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="dataPPI_Axe220161212151302630" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="dataPPI_Axe220161212151302630" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="dataPPI" showFeatureCount="0">
@@ -163,24 +179,34 @@
           <legendlayerfile isInOverview="0" layerid="LocalisationPPI20161210144517256" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="LocalisationPPI_GrandsProjetsUniquement" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="LocalisationPPI_TousAvecNumero" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_TousAvecNumero20161213102015333" visible="1"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="LocalisationPPI_GrandsProjetsUniquement" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_GrandsProjetsUniquement20161212180920818" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_GrandsProjetsUniquement20161212180920818" visible="0"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe0" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe020161213093018570" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe0_GrandsProjetsUniquement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe2_GrandsProjetsUniquement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="LocalisationPPI_Axe2" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe220161212154923298" visible="0"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe2" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe220161213093006597" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe1_GrandsProjetsUniquement" showFeatureCount="0">
@@ -190,7 +216,7 @@
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe1" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe120161212152717623" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe120161213093043960" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -1012,7 +1038,7 @@
       <customproperties/>
     </Composition>
   </Composer>
-  <Composer title="A1_Paysage" visible="1">
+  <Composer title="A1_Paysage" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="841" gridVisible="1" snapGridOffsetX="4.5" smartGuides="1" snapGridOffsetY="0.5" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="594" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1062,7 +1088,7 @@
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
-      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Les Grands Projets du Mandat" htmlState="0" halign="1">
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Exrtrait du PPI 2016-2023" htmlState="0" halign="1">
         <LabelFont description="Arial Black,28,-1,5,50,0,0,0,0,0" style="Regular"/>
         <FontColor red="0" blue="0" green="0"/>
         <ComposerItem pagey="10.5" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="14.5" y="10.5" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="841.75" outlineWidth="0.3" excludeFromExports="0" uuid="{bbfb59fc-6f72-4e38-be00-b7ff797eefcf}" height="21.14" itemRotation="0" frame="false" pagex="14.5">
@@ -1080,7 +1106,7 @@
         </ComposerItem>
       </ComposerPicture>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5802890.10207912605255842" xmin="-133549.48473804356763139" ymax="5808390.10208473633974791" xmax="-125349.4847296795778675"/>
+        <Extent ymin="5802890.10207912605255842" xmin="-133549.48473804356763139" ymax="5808681.77866053860634565" xmax="-125349.4847296795778675"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{521e5c50-7257-45ec-8090-53779dfefaa2}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -1131,17 +1157,42 @@
           </markerStyle>
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="31.64" page="1" id="" lastValidViewScaleFactor="0.756619" positionMode="0" positionLock="false" x="9.9996" y="31.64" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="820" outlineWidth="0.3" excludeFromExports="0" uuid="{ded38afe-7697-4183-b484-fcc63ebc8102}" height="550" itemRotation="0" frame="false" pagex="9.9996">
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.05"/>
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.981238" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="841" outlineWidth="0.3" excludeFromExports="0" uuid="{ded38afe-7697-4183-b484-fcc63ebc8102}" height="594" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="--&#xa;-- Filtres pour la table attributaire&#xa;-- &#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--attribute($currentfeature , 'dataPPI_GrandProjet') = 'X'&#xa;--and &#xa;attribute($currentfeature , 'dataPPI_Localisable') is not Null&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" composerMap="0" headerHAlignment="2" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="--&#xa;-- Filtres pour la table attributaire&#xa;-- &#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien et Nouveau&#xa;attribute($currentfeature , 'GrandProjet') = 'X'&#xa;and attribute($currentfeature , 'Rappel') is null&#xa;--attribute(@atlas_feature, 'id')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--attribute($currentfeature , 'dataPPI_GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'dataPPI_Localisable') is not Null&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="dataPPI20161211174038656" composerMap="0" headerHAlignment="2" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
         <headerFontProperties description="Arial Black,16,-1,5,50,0,0,0,0,0" style="Regular"/>
         <contentFontProperties description="Arial,14,-1,5,50,0,0,0,0,0" style="Regular"/>
-        <displayColumns/>
+        <displayColumns>
+          <column width="0" vAlignment="128" attribute="NomProjet" sortByRank="0" hAlignment="1" heading="NomProjet" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Montant" sortByRank="0" hAlignment="2" heading="Montant" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Categorie" sortByRank="0" hAlignment="1" heading="Categorie" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Axe1" sortByRank="0" hAlignment="1" heading="Axe1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Axe2" sortByRank="0" hAlignment="1" heading="Axe2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandProjet" sortByRank="0" hAlignment="1" heading="GrandProjet" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="ActionTransitionEnergetique" sortByRank="0" hAlignment="1" heading="Cit' Energie" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Localisable" sortByRank="0" hAlignment="1" heading="Localisable" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+        </displayColumns>
         <cellStyles>
           <oddColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
           <evenColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
@@ -1153,8 +1204,8 @@
           <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
-        <ComposerFrame sectionWidth="716.642" sectionHeight="185.12" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="440.22" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="9.9996" y="440.22" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="716.642" outlineWidth="0.3" excludeFromExports="0" uuid="{928ce673-a522-4a3e-aa25-f2a5af1d0ce1}" height="185.12" itemRotation="0" frame="false" pagex="9.9996">
+        <ComposerFrame sectionWidth="435.434" sectionHeight="206.267" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="387.733" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="9.9996" y="387.733" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="435.434" outlineWidth="0.3" excludeFromExports="0" uuid="{928ce673-a522-4a3e-aa25-f2a5af1d0ce1}" height="206.267" itemRotation="0" frame="false" pagex="9.9996">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1164,9 +1215,8 @@
       </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;id&quot;"/>
   </Composer>
-  <Composer title="A3_Paysage" visible="1">
+  <Composer title="A3_Paysage_Atlas_Axe2" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1183,19 +1233,27 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="31.6653" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./Picto/VOILE VLR quadri.jpg" northOffset="0" pictureHeight="32.954" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="32.3009" outlineWidth="0.3" excludeFromExports="0" uuid="{136afb90-9ed7-4d40-a37f-25bf4d617ad5}" height="32.954" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
       <ComposerLabel valign="128" marginX="3" marginY="1" labelText="[%--&quot;Axe2&quot;&#xa;--get_feature( 'dataPPI_Axe2','code', &quot;Axe2&quot; )&#xa;&#xa;attribute(  get_feature( 'LocalisationPPI_Axe2','Axe2', &quot;Axe2&quot; ),'libelleAxe1')%]" htmlState="0" halign="2">
         <LabelFont description="Ubuntu,18,-1,5,63,1,0,0,0,0" style=""/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="0" page="1" id="Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="0" visibility="1" zValue="19" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="200" outlineWidth="0.3" excludeFromExports="0" uuid="{0e49f61b-d4b1-4679-81f5-332ffc74a8f4}" height="10" itemRotation="0" frame="false" pagex="10">
+        <ComposerItem pagey="0" page="1" id="Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="0" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="200" outlineWidth="0.3" excludeFromExports="0" uuid="{0e49f61b-d4b1-4679-81f5-332ffc74a8f4}" height="10" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
       <ComposerLabel valign="128" marginX="3" marginY="1" labelText="[%--&quot;Axe2&quot;&#xa;--get_feature( 'dataPPI_Axe2','code', &quot;Axe2&quot; )&#xa;&#xa;attribute(  get_feature( 'LocalisationPPI_Axe2','Axe2', &quot;Axe2&quot; ),'libelleAxe2')%]" htmlState="0" halign="1">
-        <LabelFont description="Ubuntu,18,-1,5,63,1,0,0,0,0" style="Medium Italic"/>
+        <LabelFont description="Ubuntu,18,-1,5,63,1,0,0,0,0" style=""/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="0" page="1" id="SousTitre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="210" y="0" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="200" outlineWidth="0.3" excludeFromExports="0" uuid="{ed416cf3-6081-44c7-a776-d77cc936a6f0}" height="10" itemRotation="0" frame="false" pagex="210">
+        <ComposerItem pagey="0" page="1" id="SousTitre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="210" y="0" visibility="1" zValue="3" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="200" outlineWidth="0.3" excludeFromExports="0" uuid="{ed416cf3-6081-44c7-a776-d77cc936a6f0}" height="10" itemRotation="0" frame="false" pagex="210">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -1254,7 +1312,7 @@
           <annotationFontProperties description="Noto Sans,9,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0.20000000000000001"/>
-        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="2.53863" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="190" itemRotation="0" frame="false" pagex="10">
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="2.53863" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="190" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapLayers expr="&quot;Axe2&quot;" field="" active="false" useExpr="true"/>
@@ -1263,9 +1321,12 @@
         </ComposerItem>
       </ComposerMap>
       <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="30" resizeMode="0" filterFeatures="true" featureFilter="--&#xa;-- Filtres pour la table attributaire&#xa;-- &#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'I'&#xa;--&#xa;-- Grands Projets --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'GrandProjet') = 'X'&#xa;--and attribute($currentfeature , 'Localisable') = 'Non'&#xa;--and attribute($currentfeature , 'Categorie') = 'II'" emptyTableMode="0" wrapString="" wrapBehaviour="1" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="dataPPI20161211174038656" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="1" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.2" gridColor="0,0,0,255" showUniqueRowsOnly="0">
-        <headerFontProperties description="Ubuntu,10,-1,5,75,0,0,0,0,0" style="Bold"/>
-        <contentFontProperties description="Ubuntu,9,-1,5,63,1,0,0,0,0" style="Medium Italic"/>
+        <headerFontProperties description="Ubuntu,10,-1,5,75,0,0,0,0,0" style=""/>
+        <contentFontProperties description="Ubuntu,9,-1,5,63,1,0,0,0,0" style=""/>
         <displayColumns>
+          <column width="0" vAlignment="128" attribute="NumeroPPI" sortByRank="0" hAlignment="2" heading="NumeroPPI" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
           <column width="0" vAlignment="128" attribute="NomProjet" sortByRank="0" hAlignment="1" heading="NomProjet" sortOrder="0">
             <backgroundColor alpha="0" red="0" blue="0" green="0"/>
           </column>
@@ -1305,8 +1366,8 @@
           <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
-        <ComposerFrame sectionWidth="285.656" sectionHeight="104.781" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="200" page="1" id="GPetPP_LOCetNONLOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="285.656" outlineWidth="0.3" excludeFromExports="0" uuid="{cc882646-fa19-4172-a685-3f8b10396f38}" height="104.781" itemRotation="0" frame="false" pagex="10">
+        <ComposerFrame sectionWidth="310.775" sectionHeight="104.781" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="200" page="1" id="GPetPP_LOCetNONLOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="310.775" outlineWidth="0.3" excludeFromExports="0" uuid="{cc882646-fa19-4172-a685-3f8b10396f38}" height="104.781" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1361,7 +1422,7 @@
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
         <ComposerFrame sectionWidth="300.734" sectionHeight="74.3648" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="214.575" page="1" id="GPetPP_LOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="214.575" visibility="0" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="300.734" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
+          <ComposerItem pagey="214.575" page="1" id="GPetPP_LOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="214.575" visibility="0" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="300.734" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1371,7 +1432,164 @@
       </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe220161212154923298" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe2&quot;"/>
+    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe220161213093006597" singleFile="true" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe2&quot;"/>
+  </Composer>
+  <Composer title="A3_Paysage_Atlas_Axe1" visible="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="2" snapGridResolution="10" resizeToContentsMarginBottom="0">
+      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+        <layer pass="0" class="SimpleFill" locked="0">
+          <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="color" v="255,255,255,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="0,0,0,255"/>
+          <prop k="outline_style" v="no"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+        </layer>
+      </symbol>
+      <ComposerLabel valign="128" marginX="3" marginY="1" labelText="[%--&quot;Axe2&quot;&#xa;--get_feature( 'dataPPI_Axe2','code', &quot;Axe2&quot; )&#xa;&#xa;--attribute(  get_feature( 'LocalisationPPI_Axe2','Axe2', &quot;Axe2&quot; ),'libelleAxe1')&#xa;&#xa;attribute(  get_feature( 'LocalisationPPI_Axe1','Axe1', &quot;Axe1&quot; ),'libelleAxe1')%]" htmlState="0" halign="4">
+        <LabelFont description="Ubuntu,18,-1,5,63,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="0" page="1" id="Titre" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="0" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{36ae9f0a-a6df-4c0c-83c6-80014522dbb8}" height="10" itemRotation="0" frame="false" pagex="10">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="31.6653" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./Picto/VOILE VLR quadri.jpg" northOffset="0" pictureHeight="32.954" mapId="-1" anchorPoint="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="32.3009" outlineWidth="0.3" excludeFromExports="0" uuid="{ac834009-7540-4740-be91-8641b9be751d}" height="32.954" itemRotation="0" frame="false" pagex="0">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedSource expr="" field="" active="false" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerPicture>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5803878.9142253277823329" xmin="-131504.49087529734242707" ymax="5807685.74678093194961548" xmax="-126066.15865300501172896"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2117d290-ac70-4266-abf2-e639b3f41686}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Noto Sans,9,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.20000000000000001"/>
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.22174" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{9c5d7b11-1307-48d9-9465-267327c95dc9}" height="280" itemRotation="0" frame="false" pagex="10">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <dataDefinedMapLayers expr="&quot;Axe2&quot;" field="" active="false" useExpr="true"/>
+          <dataDefinedMapStylePreset expr="&quot;Axe1&quot;" field="" active="true" useExpr="true"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerAttributeTableV2 source="0" showGrid="1" maxFeatures="60" resizeMode="0" filterFeatures="true" featureFilter="--&#xa;-- Filtres pour la table attributaire&#xa;-- &#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;attribute($currentfeature , 'Axe1') = attribute(@atlas_feature, 'Axe1')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'dataPPI_Categorie') = 'I'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--and attribute($currentfeature , 'dataPPI_Categorie') = 'II'&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets et Petits Projets  --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets  --  Localisable et non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Ancien&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets --  Localisable et non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien et Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets --  non Localisable --  Ancien&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')&#xa;--&#xa;-- Grands Projets --  non Localisable --  Nouveau&#xa;--attribute($currentfeature , 'dataPPI_Axe2') = attribute(@atlas_feature, 'Axe2')" emptyTableMode="0" wrapString="" wrapBehaviour="0" headerMode="0" backgroundColor="255,255,255,255" showEmptyRows="0" emptyTableMessage="" showOnlyVisibleFeatures="0" vectorLayer="dataPPI20161211174038656" composerMap="0" headerHAlignment="0" contentFontColor="0,0,0,255" headerFontColor="0,0,0,255" cellMargin="0.7" filterToAtlasIntersection="0" relationId="" gridStrokeWidth="0.5" gridColor="0,0,0,255" showUniqueRowsOnly="0">
+        <headerFontProperties description="Ubuntu,10,-1,5,75,1,0,0,0,0" style=""/>
+        <contentFontProperties description="Ubuntu,10,-1,5,63,1,0,0,0,0" style="Medium Italic"/>
+        <displayColumns>
+          <column width="0" vAlignment="128" attribute="NumeroPPI" sortByRank="0" hAlignment="1" heading="NumeroPPI" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="NomProjet" sortByRank="0" hAlignment="1" heading="NomProjet" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Montant" sortByRank="0" hAlignment="2" heading="Montant" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Categorie" sortByRank="0" hAlignment="1" heading="Categorie" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Axe1" sortByRank="0" hAlignment="1" heading="Axe1" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Axe2" sortByRank="0" hAlignment="1" heading="Axe2" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="GrandProjet" sortByRank="0" hAlignment="1" heading="GrandProjet" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="ActionTransitionEnergetique" sortByRank="0" hAlignment="1" heading="Cit'Energie" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Rappel" sortByRank="0" hAlignment="1" heading="Rappel" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="NumeroPPI" sortByRank="0" hAlignment="1" heading="NumeroPPI" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+          <column width="0" vAlignment="128" attribute="Localisable" sortByRank="0" hAlignment="1" heading="Localisable" sortOrder="0">
+            <backgroundColor alpha="0" red="0" blue="0" green="0"/>
+          </column>
+        </displayColumns>
+        <cellStyles>
+          <oddColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenColumns enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <oddRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <evenRows enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastColumn enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <headerRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+          <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
+        </cellStyles>
+        <ComposerFrame sectionWidth="307.269" sectionHeight="395.957" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="5.9197" page="2" id="GPetPP_LOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="312.92" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="307.269" outlineWidth="0.3" excludeFromExports="0" uuid="{79302520-65fb-49c8-85c3-e912487e7c68}" height="395.957" itemRotation="0" frame="false" pagex="10">
+            <FrameColor alpha="255" red="0" blue="0" green="0"/>
+            <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            <customproperties/>
+          </ComposerItem>
+        </ComposerFrame>
+        <customproperties/>
+      </ComposerAttributeTableV2>
+      <customproperties/>
+    </Composition>
+    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe120161213093043960" singleFile="true" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe1&quot;"/>
   </Composer>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
@@ -1467,14 +1685,14 @@
       </edittypes>
       <renderer-v2 attr="dataPPI_Axe2" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="A1" label="A1"/>
-          <category render="true" symbol="1" value="A2" label="A2"/>
-          <category render="true" symbol="2" value="A3" label="A3"/>
-          <category render="true" symbol="3" value="A4" label="A4"/>
-          <category render="true" symbol="4" value="A5" label="A5"/>
-          <category render="true" symbol="5" value="B1" label="B1"/>
+          <category render="false" symbol="0" value="A1" label="A1"/>
+          <category render="false" symbol="1" value="A2" label="A2"/>
+          <category render="false" symbol="2" value="A3" label="A3"/>
+          <category render="false" symbol="3" value="A4" label="A4"/>
+          <category render="false" symbol="4" value="A5" label="A5"/>
+          <category render="false" symbol="5" value="B1" label="B1"/>
           <category render="false" symbol="6" value="B2" label="B2"/>
-          <category render="true" symbol="7" value="B3" label="B3"/>
+          <category render="false" symbol="7" value="B3" label="B3"/>
           <category render="true" symbol="8" value="C1" label="C1"/>
           <category render="true" symbol="9" value="C2" label="C2"/>
           <category render="true" symbol="10" value="C3" label="C3"/>
@@ -1942,8 +2160,8 @@
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{f39498f4-c38f-4f3a-8142-d6075c08d41b}">
-          <rule scalemaxdenom="45000" description="petite echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{39d196c7-bb3f-4474-a333-6e3d27591908}" scalemindenom="10000">
+        <rules key="{db7f1c7f-4cc3-4fd3-b7a8-19bb2c73d606}">
+          <rule scalemaxdenom="45000" description="petite echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{f2945770-9270-461b-834f-7d090113f0c5}" scalemindenom="10000">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1959,7 +2177,23 @@
               </data-defined>
             </settings>
           </rule>
-          <rule scalemaxdenom="10000" description="moyenne echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{af43c3a7-b224-4016-aba1-5b53369a3700}" scalemindenom="7500">
+          <rule scalemaxdenom="45000" description="petite echelle et (moyens ou petits montants)" filter=" &quot;dataPPI_GrandProjet&quot; is null" key="{8d1dac53-c280-4732-bf21-2365e8c618c9}" scalemindenom="10000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="10" fieldName=" wordwrap(&quot;NumeroPPI&quot;,23)" namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="10000" description="moyenne echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{97cf2f62-1f9e-4e3f-82e1-318792227b25}" scalemindenom="7500">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1975,7 +2209,7 @@
               </data-defined>
             </settings>
           </rule>
-          <rule scalemaxdenom="10000" description="moyenne echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{0ecac66c-b1c8-4973-80d3-8c01be2e8c8e}" scalemindenom="7500">
+          <rule scalemaxdenom="10000" description="moyenne echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{2825ea9a-0d71-4b18-a3ce-75100694858e}" scalemindenom="7500">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1991,7 +2225,7 @@
               </data-defined>
             </settings>
           </rule>
-          <rule scalemaxdenom="7500" description="grande echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{d66284ad-70d4-4982-884f-fe1284a0ed83}" scalemindenom="1000">
+          <rule scalemaxdenom="7500" description="grande echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{e2cfbba1-b6b4-4930-8980-467c911385dd}" scalemindenom="1000">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -2007,7 +2241,7 @@
               </data-defined>
             </settings>
           </rule>
-          <rule scalemaxdenom="7500" description="grande echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{11f32fb5-738a-4601-88a2-1e8711d0ff3e}" scalemindenom="1000">
+          <rule scalemaxdenom="7500" description="grande echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{eff42ad8-b0e1-45df-9db8-395a2828d0ac}" scalemindenom="1000">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -2023,7 +2257,7 @@
               </data-defined>
             </settings>
           </rule>
-          <rule scalemaxdenom="7500" description="grande echelle et petits montants" filter="&quot;dataPPI_Montant&quot; &lt; 300000" key="{a9560ffd-36f5-4a71-a896-e6c7f7f71ffd}" scalemindenom="1000">
+          <rule scalemaxdenom="7500" description="grande echelle et petits montants" filter="&quot;dataPPI_Montant&quot; &lt; 300000" key="{61528c68-0cab-4eef-8e6c-3fcb05d1ad12}" scalemindenom="1000">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="10" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -2039,7 +2273,7 @@
               </data-defined>
             </settings>
           </rule>
-          <rule description="Tous" filter="&quot;dataPPI_Montant&quot; &lt; 300000 or  &quot;dataPPI_Montant&quot; >= 300000" active="0" key="{009f6baf-f85b-4f8d-b0cf-bf35ac24b71e}">
+          <rule description="Tous" filter="&quot;dataPPI_Montant&quot; &lt; 300000 or  &quot;dataPPI_Montant&quot; >= 300000" active="0" key="{70e4af65-d63b-4292-b20c-30472a912ebf}">
             <settings>
               <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,29) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) || '\n' ||  format_number( &quot;NumeroPPI&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -2318,14 +2552,116 @@ def my_form_open(dialog, layer, feature):
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>1375931.89269814174622297</xmin>
-        <ymin>5223760.84015860594809055</ymin>
-        <xmax>1381879.57173650152981281</xmax>
-        <ymax>5229448.62881479319185019</ymax>
-      </extent>
-      <id>LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850</id>
+      <id>LocalisationPPI_Axe020161213093018570</id>
       <datasource>?query=select%201%20as%20id%20/*:int*/,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'&amp;uid=id</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>LocalisationPPI_Axe0</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">virtual</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies>
+        <layer id="LocalisationPPI20161210144517256"/>
+      </layerDependencies>
+      <expressionfields/>
+      <defaults>
+        <default field="id" expression=""/>
+      </defaults>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="113,149,3,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>id</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1094622784">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342</id>
+      <datasource>?query=select%201%20as%20id%20/*:int*/,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI_GrandsProjetsUniquement%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'&amp;uid=id</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2343,10 +2679,10 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">virtual</provider>
-      <previewExpression>COALESCE("1", '&lt;NULL>')</previewExpression>
+      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies>
-        <layer id="LocalisationPPI20161210144517256"/>
+        <layer id="LocalisationPPI_GrandsProjetsUniquement20161212180920818"/>
       </layerDependencies>
       <expressionfields/>
       <defaults>
@@ -2435,13 +2771,7 @@ def my_form_open(dialog, layer, feature):
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>1375931.89269814174622297</xmin>
-        <ymin>5223760.84015860594809055</ymin>
-        <xmax>1381879.57173650152981281</xmax>
-        <ymax>5229448.62881479319185019</ymax>
-      </extent>
-      <id>LocalisationPPI_Axe120161212152717623</id>
+      <id>LocalisationPPI_Axe120161213093043960</id>
       <datasource>?query=select%20dataPPI_Axe1.id,%20dataPPI.Axe1,%20dataPPI_Axe1.libelleAxe1,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI,%20dataPPI,%20dataPPI_Axe1%0Awhere%20LocalisationPPI.NumeroPPI%20%3D%20dataPPI.NumeroPPI%0Aand%20dataPPI.Axe1%20%3D%20dataPPI_Axe1.codeAxe1%0Agroup%20by%20dataPPI.Axe1%0A%0A&amp;uid=id</datasource>
       <keywordList>
         <value></value>
@@ -2659,7 +2989,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="Axe1" index="1" name=""/>
@@ -2676,10 +3006,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2690,13 +3020,7 @@ def my_form_open(dialog, layer, feature):
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <extent>
-        <xmin>1375931.89269814174622297</xmin>
-        <ymin>5224209.81967728585004807</ymin>
-        <xmax>1381879.57173650152981281</xmax>
-        <ymax>5229448.62881479319185019</ymax>
-      </extent>
-      <id>LocalisationPPI_Axe220161212154923298</id>
+      <id>LocalisationPPI_Axe220161213093006597</id>
       <datasource>?query=select%20dataPPI_Axe2.id,%20dataPPI.Axe2,%20dataPPI_Axe2.libelleAxe2,%20dataPPI_Axe2.codeAxe1,%20dataPPI_Axe2.libelleAxe1,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI,%20dataPPI,%20dataPPI_Axe2%0Awhere%20LocalisationPPI.NumeroPPI%20%3D%20dataPPI.NumeroPPI%0A%20%20and%20dataPPI.Axe2%20%3D%20dataPPI_Axe2.codeAxe2%0Agroup%20by%20dataPPI.Axe2%0A%0Aunion%0A%0Aselect%2012,%20'C4',%20'Outils%20de%20projection%20et%20de%20suivi',%20'C',%20'Ville%20sure%20et%20durable',%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'&amp;uid=id</datasource>
       <keywordList>
         <value></value>
@@ -2715,7 +3039,7 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">virtual</provider>
-      <previewExpression>COALESCE( "Axe2", '&lt;NULL>' )</previewExpression>
+      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies>
         <layer id="dataPPI20161211174038656"/>
@@ -2753,10 +3077,10 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 attr="Axe2" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
           <category render="true" symbol="0" value="A1" label="A1"/>
-          <category render="false" symbol="1" value="A2" label="A2"/>
-          <category render="false" symbol="2" value="A3" label="A3"/>
-          <category render="false" symbol="3" value="A4" label="A4"/>
-          <category render="false" symbol="4" value="A5" label="A5"/>
+          <category render="true" symbol="1" value="A2" label="A2"/>
+          <category render="true" symbol="2" value="A3" label="A3"/>
+          <category render="true" symbol="3" value="A4" label="A4"/>
+          <category render="true" symbol="4" value="A5" label="A5"/>
           <category render="false" symbol="5" value="B1" label="B1"/>
           <category render="false" symbol="6" value="B2" label="B2"/>
           <category render="false" symbol="7" value="B3" label="B3"/>
@@ -3213,7 +3537,7 @@ def my_form_open(dialog, layer, feature):
       </conditionalstyles>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537</id>
+      <id>LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992</id>
       <datasource>?query=select%20dataPPI_Axe2.id,%20dataPPI.Axe2,%20dataPPI_Axe2.libelleAxe2,%20dataPPI_Axe2.codeAxe1,%20dataPPI_Axe2.libelleAxe1,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI_GrandsProjetsUniquement,%20dataPPI,%20dataPPI_Axe2%0Awhere%20LocalisationPPI_GrandsProjetsUniquement.NumeroPPI%20%3D%20dataPPI.NumeroPPI%0A%20%20and%20dataPPI.Axe2%20%3D%20dataPPI_Axe2.codeAxe2%0Agroup%20by%20dataPPI.Axe2%0Aunion%0A%0Aselect%2012,%20'C4',%20'Outils%20de%20projection%20et%20de%20suivi',%20'C',%20'Ville%20sure%20et%20durable',%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'%0A%0Aunion%0A%0Aselect%2010,%20'C2',%20'Les%20nouvelles%20mobilit%C3%A9s',%20'C',%20'Ville%20sure%20et%20durable',%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'&amp;uid=id</datasource>
       <keywordList>
         <value></value>
@@ -3232,7 +3556,7 @@ def my_form_open(dialog, layer, feature):
         </spatialrefsys>
       </srs>
       <provider encoding="UTF-8">virtual</provider>
-      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
+      <previewExpression></previewExpression>
       <vectorjoins/>
       <layerDependencies>
         <layer id="dataPPI20161211174038656"/>
@@ -4286,6 +4610,975 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>LocalisationPPI_TousAvecNumero20161213102015333</id>
+      <datasource>?query=select%20*%0Afrom%20LocalisationPPI%0A--where%20LocalisationPPI.dataPPI_GrandProjet%20%3D%20'X'%0A&amp;uid=pkuid</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>LocalisationPPI_TousAvecNumero</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">virtual</provider>
+      <previewExpression></previewExpression>
+      <vectorjoins/>
+      <layerDependencies>
+        <layer id="LocalisationPPI20161210144517256"/>
+      </layerDependencies>
+      <expressionfields/>
+      <defaults>
+        <default field="pkuid" expression=""/>
+        <default field="NumeroPPI" expression=""/>
+        <default field="dataPPI_NomProjet" expression=""/>
+        <default field="dataPPI_Montant" expression=""/>
+        <default field="dataPPI_Categorie" expression=""/>
+        <default field="dataPPI_Axe1" expression=""/>
+        <default field="dataPPI_Axe2" expression=""/>
+        <default field="dataPPI_GrandProjet" expression=""/>
+        <default field="dataPPI_ActionTransitionEnergetique" expression=""/>
+        <default field="dataPPI_Rappel" expression=""/>
+        <default field="dataPPI_Localisable" expression=""/>
+        <default field="dataPPI_Picto" expression=""/>
+        <default field="dataPPI_Couleur" expression=""/>
+      </defaults>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="pkuid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="NumeroPPI">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_NomProjet">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Montant">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Categorie">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Axe1">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Axe2">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_GrandProjet">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_ActionTransitionEnergetique">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Rappel">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Localisable">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Picto">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dataPPI_Couleur">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 attr="dataPPI_Axe2" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
+        <categories>
+          <category render="false" symbol="0" value="A1" label="A1"/>
+          <category render="false" symbol="1" value="A2" label="A2"/>
+          <category render="false" symbol="2" value="A3" label="A3"/>
+          <category render="false" symbol="3" value="A4" label="A4"/>
+          <category render="false" symbol="4" value="A5" label="A5"/>
+          <category render="false" symbol="5" value="B1" label="B1"/>
+          <category render="false" symbol="6" value="B2" label="B2"/>
+          <category render="false" symbol="7" value="B3" label="B3"/>
+          <category render="true" symbol="8" value="C1" label="C1"/>
+          <category render="true" symbol="9" value="C2" label="C2"/>
+          <category render="true" symbol="10" value="C3" label="C3"/>
+          <category render="true" symbol="11" value="C4" label="C4"/>
+        </categories>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="10">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="11">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="190,11,86,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="9">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="74,207,94,255"/>
+              <prop k="fill_dd_active" v="1"/>
+              <prop k="fill_dd_expression" v="&quot;dataPPI_Couleur&quot;"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v=""/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="concat('/home/fred/Documents/technic/source/qgis/GrandsProjetsPPI/Picto/transformation3/', &quot;dataPPI_Picto&quot; ,'.svg')"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_dd_active" v="1"/>
+              <prop k="offset_dd_expression" v="--'0,-35'&#xa;&#xa;concat('0',',',(-&quot;dataPPI_Montant&quot; /2000000)-4)"/>
+              <prop k="offset_dd_field" v=""/>
+              <prop k="offset_dd_useexpr" v="1"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="20"/>
+              <prop k="size_dd_active" v="1"/>
+              <prop k="size_dd_expression" v="(&quot;dataPPI_Montant&quot; /1000000) + 7"/>
+              <prop k="size_dd_field" v=""/>
+              <prop k="size_dd_useexpr" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="rule-based">
+        <rules key="{af9badc4-2e46-4450-ab4c-10ff5045cc3d}">
+          <rule scalemaxdenom="45000" description="petite echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" active="0" key="{85c29587-8f21-43fe-81fa-b84a4b53cb01}" scalemindenom="10000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="45000" description="petite echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{1839b9f3-78c0-4dbf-81ad-9482aa9ec982}" scalemindenom="10000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName="  wordwrap(&quot;NumeroPPI&quot;,23)" namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="45000" description="petite echelle et (moyens ou petits montants)" filter=" &quot;dataPPI_GrandProjet&quot; is null" key="{4517ffa5-be9f-4798-9937-8681e3bd801e}" scalemindenom="10000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="10" fieldName=" wordwrap(&quot;NumeroPPI&quot;,23)" namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="10000" description="moyenne echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{8c277a3e-8691-4278-af66-36acbeedb17e}" scalemindenom="7500">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="10000" description="moyenne echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{09aa303e-e61f-449c-af1f-35b3b5d52c5e}" scalemindenom="7500">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="7500" description="grande echelle et gros montants" filter=" &quot;dataPPI_GrandProjet&quot; = 'X'" key="{155dae03-3c70-41c8-bd5f-7d28968012d1}" scalemindenom="1000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="12" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="7500" description="grande echelle et montants moyens" filter="&quot;dataPPI_Montant&quot; >= 300000" key="{d7c2626b-4ad9-4cf1-9483-ae6188905782}" scalemindenom="1000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule scalemaxdenom="7500" description="grande echelle et petits montants" filter="&quot;dataPPI_Montant&quot; &lt; 300000" key="{c1d6f34d-a151-4486-b310-b6493ccd878f}" scalemindenom="1000">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="10" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined>
+                <Color expr="&quot;dataPPI_Couleur&quot;" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule description="Tous" filter="&quot;dataPPI_Montant&quot; &lt; 300000 or  &quot;dataPPI_Montant&quot; >= 300000" active="0" key="{46ff30f9-c77c-440d-b3a9-5b2cb56ca14c}">
+            <settings>
+              <text-style fontItalic="1" fontFamily="Trebuchet MS" fontLetterSpacing="0" fontUnderline="0" fontWeight="75" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName=" wordwrap( &quot;dataPPI_NomProjet&quot;,29) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) || '\n' ||  format_number( &quot;NumeroPPI&quot;,0) " namedStyle="Bold Italic" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="1" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="1" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="7" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined/>
+            </settings>
+          </rule>
+        </rules>
+      </labeling>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value=" wordwrap( &quot;dataPPI_NomProjet&quot;,23) ||  '\n' ||  format_number( &quot;dataPPI_Montant&quot;,0) "/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Trebuchet MS"/>
+        <property key="labeling/fontItalic" value="true"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="10"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="false"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="1"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Bold Italic"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="7"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="true"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>&lt;b>[% "dataPPI_NomProjet" %]&lt;/b>
+Montant = [% "dataPPI_Montant" %]</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="pkuid" index="0" name=""/>
+        <alias field="NumeroPPI" index="1" name=""/>
+        <alias field="dataPPI_NomProjet" index="2" name=""/>
+        <alias field="dataPPI_Montant" index="3" name=""/>
+        <alias field="dataPPI_Categorie" index="4" name=""/>
+        <alias field="dataPPI_Axe1" index="5" name=""/>
+        <alias field="dataPPI_Axe2" index="6" name=""/>
+        <alias field="dataPPI_GrandProjet" index="7" name=""/>
+        <alias field="dataPPI_ActionTransitionEnergetique" index="8" name=""/>
+        <alias field="dataPPI_Rappel" index="9" name=""/>
+        <alias field="dataPPI_Localisable" index="10" name=""/>
+        <alias field="dataPPI_Picto" index="11" name=""/>
+        <alias field="dataPPI_Couleur" index="12" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;NumeroPPI&quot;" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="pkuid"/>
+          <column width="-1" hidden="0" type="field" name="NumeroPPI"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="434" hidden="0" type="field" name="dataPPI_NomProjet"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Montant"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Categorie"/>
+          <column width="109" hidden="0" type="field" name="dataPPI_Axe1"/>
+          <column width="76" hidden="0" type="field" name="dataPPI_Axe2"/>
+          <column width="53" hidden="0" type="field" name="dataPPI_GrandProjet"/>
+          <column width="34" hidden="0" type="field" name="dataPPI_ActionTransitionEnergetique"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Localisable"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Picto"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Rappel"/>
+          <column width="-1" hidden="0" type="field" name="dataPPI_Couleur"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="PyTiledLayer">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
@@ -4433,7 +5726,7 @@ def my_form_open(dialog, layer, feature):
           <column width="68" hidden="0" type="field" name="Categorie"/>
           <column width="38" hidden="0" type="field" name="Axe1"/>
           <column width="39" hidden="0" type="field" name="Axe2"/>
-          <column width="20" hidden="0" type="field" name="GrandProjet"/>
+          <column width="123" hidden="0" type="field" name="GrandProjet"/>
           <column width="35" hidden="0" type="field" name="ActionTransitionEnergetique"/>
           <column width="45" hidden="0" type="field" name="Rappel"/>
           <column width="40" hidden="0" type="field" name="NumeroPPI"/>
@@ -4508,7 +5801,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="codeAxe1" index="0" name=""/>
         <alias field="couleurAxe1" index="1" name=""/>
@@ -4522,10 +5815,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="81">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4599,7 +5892,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="codeAxe2" index="0" name=""/>
         <alias field="couleurAxe2" index="1" name=""/>
@@ -4626,10 +5919,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -4779,14 +6072,16 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>LocalisationPPI20161210144517256</value>
-        <value>LocalisationPPI_Axe120161212152717623</value>
-        <value>LocalisationPPI_Axe220161212154923298</value>
-        <value>LocalisationPPI_GrandsProjetsUniquement20161212180920818</value>
-        <value>LocalisationPPI_Axe2_GrandsProjetsUniquement20161212181723537</value>
         <value>LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910</value>
-        <value>LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850</value>
+        <value>LocalisationPPI_GrandsProjetsUniquement20161212180920818</value>
+        <value>LocalisationPPI_Axe220161213093006597</value>
+        <value>LocalisationPPI_Axe020161213093018570</value>
+        <value>LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342</value>
+        <value>LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992</value>
+        <value>LocalisationPPI_Axe120161213093043960</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -4805,8 +6100,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -4818,6 +6115,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
       <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
@@ -4887,6 +6185,18 @@ def my_form_open(dialog, layer, feature):
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
   </properties>
   <visibility-presets>
+    <visibility-preset name="A">
+      <layer style="" id="dataPPI20161211174038656"/>
+      <layer style="" id="LocalisationPPI_TousAvecNumero20161213102015333"/>
+      <layer style="" id="OSM_Mapnik20161210144014661"/>
+      <checked-legend-nodes id="LocalisationPPI_TousAvecNumero20161213102015333">
+        <checked-legend-node id="3"/>
+        <checked-legend-node id="4"/>
+        <checked-legend-node id="0"/>
+        <checked-legend-node id="1"/>
+        <checked-legend-node id="2"/>
+      </checked-legend-nodes>
+    </visibility-preset>
     <visibility-preset name="A1">
       <layer style="" id="dataPPI20161211174038656"/>
       <layer style="" id="LocalisationPPI20161210144517256"/>
@@ -4927,6 +6237,16 @@ def my_form_open(dialog, layer, feature):
         <checked-legend-node id="4"/>
       </checked-legend-nodes>
     </visibility-preset>
+    <visibility-preset name="B">
+      <layer style="" id="dataPPI20161211174038656"/>
+      <layer style="" id="LocalisationPPI_TousAvecNumero20161213102015333"/>
+      <layer style="" id="OSM_Mapnik20161210144014661"/>
+      <checked-legend-nodes id="LocalisationPPI_TousAvecNumero20161213102015333">
+        <checked-legend-node id="5"/>
+        <checked-legend-node id="6"/>
+        <checked-legend-node id="7"/>
+      </checked-legend-nodes>
+    </visibility-preset>
     <visibility-preset name="B1">
       <layer style="" id="dataPPI20161211174038656"/>
       <layer style="" id="LocalisationPPI20161210144517256"/>
@@ -4949,6 +6269,17 @@ def my_form_open(dialog, layer, feature):
       <layer style="" id="OSM_Mapnik20161210144014661"/>
       <checked-legend-nodes id="LocalisationPPI20161210144517256">
         <checked-legend-node id="7"/>
+      </checked-legend-nodes>
+    </visibility-preset>
+    <visibility-preset name="C">
+      <layer style="" id="dataPPI20161211174038656"/>
+      <layer style="" id="LocalisationPPI_TousAvecNumero20161213102015333"/>
+      <layer style="" id="OSM_Mapnik20161210144014661"/>
+      <checked-legend-nodes id="LocalisationPPI_TousAvecNumero20161213102015333">
+        <checked-legend-node id="11"/>
+        <checked-legend-node id="8"/>
+        <checked-legend-node id="9"/>
+        <checked-legend-node id="10"/>
       </checked-legend-nodes>
     </visibility-preset>
     <visibility-preset name="C1">
@@ -4982,6 +6313,13 @@ def my_form_open(dialog, layer, feature):
       <checked-legend-nodes id="LocalisationPPI20161210144517256">
         <checked-legend-node id="11"/>
       </checked-legend-nodes>
+    </visibility-preset>
+    <visibility-preset name="Tous">
+      <layer style="" id="dataPPI_Axe120161212151732039"/>
+      <layer style="" id="dataPPI_Axe220161212151302630"/>
+      <layer style="" id="dataPPI20161211174038656"/>
+      <layer style="" id="LocalisationPPI20161210144517256"/>
+      <layer style="" id="OSM_Mapnik20161210144014661"/>
     </visibility-preset>
   </visibility-presets>
 </qgis>
