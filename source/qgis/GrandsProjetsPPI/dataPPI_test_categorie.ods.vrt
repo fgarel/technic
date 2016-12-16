@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="dataPPI_test_categorie">
+        <SrcDataSource relativeToVRT="1">dataPPI_test.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Categorie</SrcLayer>
+        <Field name="Field1" src="Field1" type="String"/>
+        <Field name="Field2" src="Field2" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

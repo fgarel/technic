@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="dataPPI_test">
+        <SrcDataSource relativeToVRT="1">dataPPI_test.ods</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>AxeVilleAtractiveEtRayonnante</SrcLayer>
+        <Field name="code" src="code" type="String"/>
+        <Field name="couleur" src="couleur" type="String"/>
+        <Field name="picto" src="picto" type="String"/>
+        <Field name="libelle" src="libelle" type="String"/>
+        <Field name="code2" src="code2" type="Integer"/>
+        <Field name="libelle2" src="libelle2" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
