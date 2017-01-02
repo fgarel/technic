@@ -1,46 +1,41 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.1">
+<qgis projectname="" version="2.14.10-Essen">
   <title></title>
-  <autotransaction active="0"/>
-  <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="voirieadresse">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="voirieadresse">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_nature20161125161403617" name="voirie_filaire_nature">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_nature20161125161403617" name="voirie_filaire_nature">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_indice20161125161403634" name="voirie_filaire_indice">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_indice20161125161403634" name="voirie_filaire_indice">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_carrefour20161125161403649" name="voirie_filaire_carrefour">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_carrefour20161125161403649" name="voirie_filaire_carrefour">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_type_voie20161125161403667" name="voirie_filaire_type_voie">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_type_voie20161125161403667" name="voirie_filaire_type_voie">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_usage20161125161403689" name="voirie_filaire_usage">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_usage20161125161403689" name="voirie_filaire_usage">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="sommet_troncon_photo20161125161403706" name="sommet_troncon_photo">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="sommet_troncon_photo20161125161403706" name="sommet_troncon_photo">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_voie_attribut20161125161403722" name="voirie_filaire_voie_attribut">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_voie_attribut20161125161403722" name="voirie_filaire_voie_attribut">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_histoire_theme20161125161403738" name="voirie_histoire_theme">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_histoire_theme20161125161403738" name="voirie_histoire_theme">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_histoire_voie20161125161403753" name="voirie_histoire_voie">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_histoire_voie_theme20161125161403768" name="voirie_histoire_voie_theme">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_histoire_voie_theme20161125161403768" name="voirie_histoire_voie_theme">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_statut20161125161403786" name="voirie_filaire_statut">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_statut20161125161403786" name="voirie_filaire_statut">
-        <customproperties/>
-      </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_nature20161125160828649" name="voirie_filaire_nature">
+      <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_nature20161125160828649" name="voirie_filaire_nature">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ouvrage_art20161125152124489" name="ouvrage_art">
@@ -55,7 +50,7 @@
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="voirie_filaire_toponymie20161125152124918" name="voirie_filaire_toponymie">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Checked" id="voirie_filaire_troncon20161125152124943" name="voirie_filaire_troncon">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" id="voirie_filaire_troncon20161125152124943" name="voirie_filaire_troncon">
         <customproperties>
           <property key="expandedLegendNodes" value="{94fca8cf-f31d-480a-9feb-987d3d5b4670}"/>
         </customproperties>
@@ -73,7 +68,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho2014_geo1720161003132531104" name="ortho2014_geo17">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho2014_geo1720161003132531104" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -81,10 +76,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1377327.59281691419892013</xmin>
-      <ymin>5226649.33832798711955547</ymin>
-      <xmax>1381310.25701722013764083</xmax>
-      <ymax>5226716.18786774389445782</ymax>
+      <xmin>1379090.59548453101888299</xmin>
+      <ymin>5225877.8740653321146965</ymin>
+      <xmax>1380086.26153460750356317</xmax>
+      <ymax>5225894.58645027130842209</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -211,71 +206,65 @@
       <item>sommet_troncon_photo20161125161403706</item>
       <item>voirie_filaire_voie_attribut20161125161403722</item>
       <item>voirie_histoire_theme20161125161403738</item>
-      <item>voirie_histoire_voie20161125161403753</item>
       <item>voirie_histoire_voie_theme20161125161403768</item>
       <item>voirie_filaire_statut20161125161403786</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="voirieadresse">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_nature" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="voirieadresse">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_nature" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_nature20161125161403617" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_nature20161125161403617" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_indice" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_indice" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_indice20161125161403634" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_indice20161125161403634" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_carrefour" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_carrefour" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_carrefour20161125161403649" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_carrefour20161125161403649" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_type_voie" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_type_voie" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_type_voie20161125161403667" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_type_voie20161125161403667" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_usage" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_usage" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_usage20161125161403689" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_usage20161125161403689" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="sommet_troncon_photo" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="sommet_troncon_photo" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="sommet_troncon_photo20161125161403706" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="sommet_troncon_photo20161125161403706" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_voie_attribut" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_voie_attribut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_voie_attribut20161125161403722" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_voie_attribut20161125161403722" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_histoire_theme" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_histoire_theme" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_histoire_theme20161125161403738" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_histoire_theme20161125161403738" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_histoire_voie" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_histoire_voie_theme" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_histoire_voie20161125161403753" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_histoire_voie_theme20161125161403768" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_histoire_voie_theme" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_statut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_histoire_voie_theme20161125161403768" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_statut20161125161403786" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_statut" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="voirie_filaire_nature" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_statut20161125161403786" visible="1"/>
-        </filegroup>
-      </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_nature" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="voirie_filaire_nature20161125160828649" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="voirie_filaire_nature20161125160828649" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ouvrage_art" showFeatureCount="0">
@@ -298,8 +287,8 @@
           <legendlayerfile isInOverview="0" layerid="voirie_filaire_toponymie20161125152124918" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="voirie_filaire_troncon" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="voirie_filaire_troncon" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="voirie_filaire_troncon20161125152124943" visible="1"/>
         </filegroup>
       </legendlayer>
@@ -324,14 +313,14 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720161003132531104" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720161003132531104" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <Composer title="A4_Paysage" visible="0">
-    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -397,7 +386,7 @@
     </Composition>
   </Composer>
   <projectlayers>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>carrefour_ce20161125152125072</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tid' srid=2154 type=Point table="sig"."carrefour_ce" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -421,35 +410,27 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="libelle" expression=""/>
-        <default field="mot_directeur" expression=""/>
-        <default field="coord_x" expression=""/>
-        <default field="coord_y" expression=""/>
-        <default field="id1" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="mot_directeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="coord_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="coord_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="id1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -459,7 +440,6 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="109,145,59,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -509,19 +489,16 @@
       </labelattributes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="id" index="0" name=""/>
-        <alias field="libelle" index="1" name=""/>
-        <alias field="mot_directeur" index="2" name=""/>
         <alias field="coord_x" index="3" name=""/>
         <alias field="coord_y" index="4" name=""/>
+        <alias field="id" index="0" name=""/>
         <alias field="id1" index="5" name=""/>
+        <alias field="libelle" index="1" name=""/>
+        <alias field="mot_directeur" index="2" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -535,7 +512,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>limitation_vitesse20161125152125055</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='id' srid=2154 type=MultiPolygon table="sig"."limitation_vitesse" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -559,23 +536,18 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="vitesse_limite" expression=""/>
-        <default field="zonage" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="vitesse_limite">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="zonage">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -634,10 +606,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -697,7 +666,7 @@
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ouvrage_art20161125152124489</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='oa_id' srid=2154 type=Point table="sig"."ouvrage_art" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -721,31 +690,24 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="oa_id" expression=""/>
-        <default field="oa_limite_tonnage" expression=""/>
-        <default field="oa_limite_hauteur" expression=""/>
-        <default field="oa_libelle" expression=""/>
-        <default field="oa_num" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="oa_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="oa_limite_tonnage">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="oa_limite_hauteur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="oa_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="oa_num">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -755,7 +717,6 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="46,128,73,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -806,17 +767,14 @@
       <annotationform>.</annotationform>
       <aliases>
         <alias field="oa_id" index="0" name=""/>
-        <alias field="oa_limite_tonnage" index="1" name=""/>
-        <alias field="oa_limite_hauteur" index="2" name=""/>
         <alias field="oa_libelle" index="3" name=""/>
+        <alias field="oa_limite_hauteur" index="2" name=""/>
+        <alias field="oa_limite_tonnage" index="1" name=""/>
         <alias field="oa_num" index="4" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="16711680">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -830,7 +788,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>sommet_troncon_photo20161125161403706</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tid' table="sig"."sommet_troncon_photo" sql=</datasource>
       <keywordList>
@@ -855,47 +813,37 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="sommet_id" expression=""/>
-        <default field="gtfprimarykey" expression=""/>
-        <default field="troncon_id" expression=""/>
-        <default field="photo_id" expression=""/>
-        <default field="wkb_geometry" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="sommet_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="gtfprimarykey">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wkb_geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="sommet_id" index="0" name=""/>
         <alias field="gtfprimarykey" index="1" name=""/>
-        <alias field="troncon_id" index="2" name=""/>
         <alias field="photo_id" index="3" name=""/>
+        <alias field="sommet_id" index="0" name=""/>
+        <alias field="troncon_id" index="2" name=""/>
         <alias field="wkb_geometry" index="4" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="5505097">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -909,7 +857,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_carrefour20161125161403649</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tid' table="sig"."voirie_filaire_carrefour" sql=</datasource>
       <keywordList>
@@ -934,23 +882,18 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ca_sommet_id" expression=""/>
-        <default field="ca_voie_at_id" expression=""/>
-        <default field="wkb_geometry" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="ca_sommet_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ca_voie_at_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wkb_geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -961,10 +904,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="4784205">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -978,7 +918,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_indice20161125161403634</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ind_id' table="sig"."voirie_filaire_indice" sql=</datasource>
       <keywordList>
@@ -1003,19 +943,15 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ind_id" expression=""/>
-        <default field="ind_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="ind_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="ind_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -1025,10 +961,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="6094896">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1042,7 +975,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_nature20161125160828649</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='nat_id' table="sig"."voirie_filaire_nature" sql=</datasource>
       <keywordList>
@@ -1067,19 +1000,15 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="nat_id" expression=""/>
-        <default field="nat_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="nat_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="nat_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -1089,10 +1018,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1106,7 +1032,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_nature20161125161403617</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='nat_id' table="sig"."voirie_filaire_nature" sql=</datasource>
       <keywordList>
@@ -1131,19 +1057,15 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="nat_id" expression=""/>
-        <default field="nat_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="nat_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="nat_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -1153,10 +1075,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1170,7 +1089,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>voirie_filaire_numero20161125152124545</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='numero_id' srid=2154 type=Point table="sig"."voirie_filaire_numero" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -1194,35 +1113,27 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="numero_id" expression=""/>
-        <default field="numero_valeur" expression=""/>
-        <default field="numero_id_parcelle" expression=""/>
-        <default field="numero_indice_repetition_id" expression=""/>
-        <default field="numero_id_troncon" expression=""/>
-        <default field="numero_isdirty" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="numero_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="numero_valeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="numero_id_parcelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="numero_indice_repetition_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="numero_id_troncon">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="numero_isdirty">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -1232,7 +1143,6 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="187,213,131,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1283,18 +1193,15 @@
       <annotationform>.</annotationform>
       <aliases>
         <alias field="numero_id" index="0" name=""/>
-        <alias field="numero_valeur" index="1" name=""/>
         <alias field="numero_id_parcelle" index="2" name=""/>
-        <alias field="numero_indice_repetition_id" index="3" name=""/>
         <alias field="numero_id_troncon" index="4" name=""/>
+        <alias field="numero_indice_repetition_id" index="3" name=""/>
         <alias field="numero_isdirty" index="5" name=""/>
+        <alias field="numero_valeur" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1001958648">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1308,7 +1215,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>voirie_filaire_photo20161125152124831</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' srid=2154 type=Point table="sig"."voirie_filaire_photo" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -1332,55 +1239,42 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ogc_fid" expression=""/>
-        <default field="photo_sens" expression=""/>
-        <default field="photo_pathname" expression=""/>
-        <default field="photo_date_prise_vue" expression=""/>
-        <default field="photo_coord_x" expression=""/>
-        <default field="photo_coord_y" expression=""/>
-        <default field="photo_angle" expression=""/>
-        <default field="photo_isdirty_1" expression=""/>
-        <default field="photo_isdirty_2" expression=""/>
-        <default field="photo_troncon_id" expression=""/>
-        <default field="photo_id" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="ogc_fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_sens">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_pathname">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_date_prise_vue">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_coord_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_coord_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_angle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_isdirty_1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_isdirty_2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_troncon_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="photo_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -1390,7 +1284,6 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="169,117,110,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1441,23 +1334,20 @@
       <annotationform>.</annotationform>
       <aliases>
         <alias field="ogc_fid" index="0" name=""/>
-        <alias field="photo_sens" index="1" name=""/>
-        <alias field="photo_pathname" index="2" name=""/>
-        <alias field="photo_date_prise_vue" index="3" name=""/>
+        <alias field="photo_angle" index="6" name=""/>
         <alias field="photo_coord_x" index="4" name=""/>
         <alias field="photo_coord_y" index="5" name=""/>
-        <alias field="photo_angle" index="6" name=""/>
+        <alias field="photo_date_prise_vue" index="3" name=""/>
+        <alias field="photo_id" index="10" name=""/>
         <alias field="photo_isdirty_1" index="7" name=""/>
         <alias field="photo_isdirty_2" index="8" name=""/>
+        <alias field="photo_pathname" index="2" name=""/>
+        <alias field="photo_sens" index="1" name=""/>
         <alias field="photo_troncon_id" index="9" name=""/>
-        <alias field="photo_id" index="10" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="33">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1471,7 +1361,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_statut20161125161403786</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='st_id' table="sig"."voirie_filaire_statut" sql=</datasource>
       <keywordList>
@@ -1496,19 +1386,15 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="st_id" expression=""/>
-        <default field="st_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="st_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="st_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -1518,10 +1404,7 @@
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1535,7 +1418,7 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>voirie_filaire_toponymie20161125152124918</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='toponymie_id' srid=2154 type=Point table="sig"."voirie_filaire_toponymie" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -1559,27 +1442,21 @@
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="toponymie_id" expression=""/>
-        <default field="voie_lib" expression=""/>
-        <default field="voie_id" expression=""/>
-        <default field="toponymie_isdirty" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="toponymie_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_lib">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="toponymie_isdirty">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -1589,7 +1466,6 @@
               <prop k="angle" v="0"/>
               <prop k="color" v="89,80,132,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1640,16 +1516,13 @@
       <annotationform>.</annotationform>
       <aliases>
         <alias field="toponymie_id" index="0" name=""/>
-        <alias field="voie_lib" index="1" name=""/>
-        <alias field="voie_id" index="2" name=""/>
         <alias field="toponymie_isdirty" index="3" name=""/>
+        <alias field="voie_id" index="2" name=""/>
+        <alias field="voie_lib" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1196642373">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1663,7 +1536,13 @@
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>372939.71875</xmin>
+        <ymin>6567684</ymin>
+        <xmax>382758.5625</xmax>
+        <ymax>6573926.5</ymax>
+      </extent>
       <id>voirie_filaire_troncon20161125152124943</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='troncon_id' srid=2154 type=LineString table="sig"."voirie_filaire_troncon" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -1694,99 +1573,75 @@
       <expressionfields>
         <field typeName="real" precision="-1" expression=" $length " length="-1" type="6" comment="" name="longueur"/>
       </expressionfields>
-      <defaults>
-        <default field="troncon_id" expression=""/>
-        <default field="troncon_numero_debut_pair" expression=""/>
-        <default field="troncon_numero_debut_impair" expression=""/>
-        <default field="troncon_numero_fin_pair" expression=""/>
-        <default field="troncon_numero_fin_impair" expression=""/>
-        <default field="troncon_chaussee_separee" expression=""/>
-        <default field="troncon_observations" expression=""/>
-        <default field="troncon_nature_id" expression=""/>
-        <default field="troncon_usage_id" expression=""/>
-        <default field="troncon_statut_id" expression=""/>
-        <default field="troncon_voie_id" expression=""/>
-        <default field="troncon_vitesse_autorisee" expression=""/>
-        <default field="troncon_hauteur_limite" expression=""/>
-        <default field="troncon_tonnage_limite" expression=""/>
-        <default field="troncon_classe" expression=""/>
-        <default field="voirie_filaire_nature_nat_libelle" expression=""/>
-        <default field="voirie_filaire_usage_us_libelle" expression=""/>
-        <default field="voirie_filaire_statut_st_libelle" expression=""/>
-        <default field="voirie_filaire_voie_voie_libelle" expression=""/>
-        <default field="voirie_filaire_voie_voie_code_fantoir" expression=""/>
-        <default field="voirie_filaire_voie_voie_classe" expression=""/>
-        <default field="longueur" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="troncon_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_numero_debut_pair">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_numero_debut_impair">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_numero_fin_pair">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_numero_fin_impair">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_chaussee_separee">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_observations">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_nature_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_usage_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_statut_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_voie_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_vitesse_autorisee">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_hauteur_limite">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_tonnage_limite">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="troncon_classe">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_nature_nat_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_usage_us_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_statut_st_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_code_fantoir">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_classe">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="longueur">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -2224,89 +2079,41 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
+      <SingleCategoryDiagramRenderer diagramType="Histogram">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="100000">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
-          </layer>
-        </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="troncon_id" index="0" name=""/>
-        <alias field="troncon_numero_debut_pair" index="1" name=""/>
-        <alias field="troncon_numero_debut_impair" index="2" name=""/>
-        <alias field="troncon_numero_fin_pair" index="3" name=""/>
-        <alias field="troncon_numero_fin_impair" index="4" name=""/>
-        <alias field="troncon_chaussee_separee" index="5" name=""/>
-        <alias field="troncon_observations" index="6" name=""/>
-        <alias field="troncon_nature_id" index="7" name=""/>
-        <alias field="troncon_usage_id" index="8" name=""/>
-        <alias field="troncon_statut_id" index="9" name=""/>
-        <alias field="troncon_voie_id" index="10" name=""/>
-        <alias field="troncon_vitesse_autorisee" index="11" name=""/>
-        <alias field="troncon_hauteur_limite" index="12" name=""/>
-        <alias field="troncon_tonnage_limite" index="13" name=""/>
-        <alias field="troncon_classe" index="14" name=""/>
-        <alias field="voirie_filaire_nature_nat_libelle" index="15" name=""/>
-        <alias field="voirie_filaire_usage_us_libelle" index="16" name=""/>
-        <alias field="voirie_filaire_statut_st_libelle" index="17" name=""/>
-        <alias field="voirie_filaire_voie_voie_libelle" index="18" name=""/>
-        <alias field="voirie_filaire_voie_voie_code_fantoir" index="19" name=""/>
-        <alias field="voirie_filaire_voie_voie_classe" index="20" name=""/>
         <alias field="longueur" index="21" name=""/>
+        <alias field="troncon_chaussee_separee" index="5" name=""/>
+        <alias field="troncon_classe" index="14" name=""/>
+        <alias field="troncon_hauteur_limite" index="12" name=""/>
+        <alias field="troncon_id" index="0" name=""/>
+        <alias field="troncon_nature_id" index="7" name=""/>
+        <alias field="troncon_numero_debut_impair" index="2" name=""/>
+        <alias field="troncon_numero_debut_pair" index="1" name=""/>
+        <alias field="troncon_numero_fin_impair" index="4" name=""/>
+        <alias field="troncon_numero_fin_pair" index="3" name=""/>
+        <alias field="troncon_observations" index="6" name=""/>
+        <alias field="troncon_statut_id" index="9" name=""/>
+        <alias field="troncon_tonnage_limite" index="13" name=""/>
+        <alias field="troncon_usage_id" index="8" name=""/>
+        <alias field="troncon_vitesse_autorisee" index="11" name=""/>
+        <alias field="troncon_voie_id" index="10" name=""/>
+        <alias field="voirie_filaire_nature_nat_libelle" index="15" name=""/>
+        <alias field="voirie_filaire_statut_st_libelle" index="17" name=""/>
+        <alias field="voirie_filaire_usage_us_libelle" index="16" name=""/>
+        <alias field="voirie_filaire_voie_voie_classe" index="20" name=""/>
+        <alias field="voirie_filaire_voie_voie_code_fantoir" index="19" name=""/>
+        <alias field="voirie_filaire_voie_voie_libelle" index="18" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="3172384">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="troncon_id"/>
-          <column width="-1" hidden="0" type="field" name="troncon_numero_debut_pair"/>
-          <column width="-1" hidden="0" type="field" name="troncon_numero_debut_impair"/>
-          <column width="-1" hidden="0" type="field" name="troncon_numero_fin_pair"/>
-          <column width="-1" hidden="0" type="field" name="troncon_numero_fin_impair"/>
-          <column width="-1" hidden="0" type="field" name="troncon_chaussee_separee"/>
-          <column width="-1" hidden="0" type="field" name="troncon_observations"/>
-          <column width="153" hidden="0" type="field" name="troncon_nature_id"/>
-          <column width="177" hidden="0" type="field" name="troncon_usage_id"/>
-          <column width="194" hidden="0" type="field" name="troncon_statut_id"/>
-          <column width="-1" hidden="0" type="field" name="troncon_voie_id"/>
-          <column width="-1" hidden="0" type="field" name="troncon_vitesse_autorisee"/>
-          <column width="-1" hidden="0" type="field" name="troncon_hauteur_limite"/>
-          <column width="-1" hidden="0" type="field" name="troncon_tonnage_limite"/>
-          <column width="-1" hidden="0" type="field" name="troncon_classe"/>
-          <column width="-1" hidden="1" type="actions"/>
-          <column width="265" hidden="0" type="field" name="voirie_filaire_nature_nat_libelle"/>
-          <column width="213" hidden="0" type="field" name="voirie_filaire_usage_us_libelle"/>
-          <column width="140" hidden="0" type="field" name="voirie_filaire_statut_st_libelle"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_libelle"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_code_fantoir"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_classe"/>
-        </columns>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2335,7 +2142,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_type_voie20161125161403667</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='tv_id' table="sig"."voirie_filaire_type_voie" sql=</datasource>
       <keywordList>
@@ -2360,19 +2167,15 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="tv_id" expression=""/>
-        <default field="tv_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="tv_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="tv_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -2382,10 +2185,7 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2399,7 +2199,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_usage20161125161403689</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='us_id' table="sig"."voirie_filaire_usage" sql=</datasource>
       <keywordList>
@@ -2424,19 +2224,15 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="us_id" expression=""/>
-        <default field="us_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="us_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="us_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
@@ -2446,10 +2242,7 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2463,7 +2256,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>voirie_filaire_voie20161125152125006</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='id' srid=2154 type=MultiLineString table="sig"."voirie_filaire_voie" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -2487,27 +2280,21 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="id" expression=""/>
-        <default field="voie_libelle" expression=""/>
-        <default field="voie_code_fantoir" expression=""/>
-        <default field="voie_classe" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_code_fantoir">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_classe">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -2702,54 +2489,23 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
+      <SingleCategoryDiagramRenderer diagramType="Histogram">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="100000">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
-          <layer pass="0" class="SimpleMarker" locked="0">
-            <prop k="angle" v="0"/>
-            <prop k="color" v="255,0,0,255"/>
-            <prop k="horizontal_anchor_point" v="1"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="name" v="circle"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="0,0,0,255"/>
-            <prop k="outline_style" v="solid"/>
-            <prop k="outline_width" v="0"/>
-            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="scale_method" v="diameter"/>
-            <prop k="size" v="2"/>
-            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="size_unit" v="MM"/>
-            <prop k="vertical_anchor_point" v="1"/>
-          </layer>
-        </symbol>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
-        <alias field="voie_libelle" index="1" name=""/>
-        <alias field="voie_code_fantoir" index="2" name=""/>
         <alias field="voie_classe" index="3" name=""/>
+        <alias field="voie_code_fantoir" index="2" name=""/>
+        <alias field="voie_libelle" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1196642373">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="voie_libelle"/>
-          <column width="-1" hidden="0" type="field" name="voie_code_fantoir"/>
-          <column width="-1" hidden="0" type="field" name="voie_classe"/>
-          <column width="-1" hidden="1" type="actions"/>
-        </columns>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2778,7 +2534,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_filaire_voie_attribut20161125161403722</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='voie_at_id' table="sig"."voirie_filaire_voie_attribut" sql=</datasource>
       <keywordList>
@@ -2803,62 +2559,49 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="voie_at_id" expression=""/>
-        <default field="voie_at_code_fantoir" expression=""/>
-        <default field="voie_at_nom_voie" expression=""/>
-        <default field="voie_at_mot_directeur" expression=""/>
-        <default field="voie_at_mot_directeur_soundex" expression=""/>
-        <default field="voie_at_arrete_permanent" expression=""/>
-        <default field="voie_at_id_type_voie" expression=""/>
-        <default field="voie_at_histo_id" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="voie_at_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_code_fantoir">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_nom_voie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_mot_directeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_mot_directeur_soundex">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_arrete_permanent">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_id_type_voie">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="voie_at_histo_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="voie_at_id" index="0" name=""/>
+        <alias field="voie_at_arrete_permanent" index="5" name=""/>
         <alias field="voie_at_code_fantoir" index="1" name=""/>
-        <alias field="voie_at_nom_voie" index="2" name=""/>
+        <alias field="voie_at_histo_id" index="7" name=""/>
+        <alias field="voie_at_id" index="0" name=""/>
+        <alias field="voie_at_id_type_voie" index="6" name=""/>
         <alias field="voie_at_mot_directeur" index="3" name=""/>
         <alias field="voie_at_mot_directeur_soundex" index="4" name=""/>
-        <alias field="voie_at_arrete_permanent" index="5" name=""/>
-        <alias field="voie_at_id_type_voie" index="6" name=""/>
-        <alias field="voie_at_histo_id" index="7" name=""/>
+        <alias field="voie_at_nom_voie" index="2" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="5505097">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2872,7 +2615,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_histoire_theme20161125161403738</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' table="sig"."voirie_histoire_theme" sql=</datasource>
       <keywordList>
@@ -2897,42 +2640,33 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ogc_fid" expression=""/>
-        <default field="wkb_geometry" expression=""/>
-        <default field="hist_th_id" expression=""/>
-        <default field="hist_th_libelle" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="ogc_fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wkb_geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="hist_th_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="hist_th_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="ogc_fid" index="0" name=""/>
-        <alias field="wkb_geometry" index="1" name=""/>
         <alias field="hist_th_id" index="2" name=""/>
         <alias field="hist_th_libelle" index="3" name=""/>
+        <alias field="ogc_fid" index="0" name=""/>
+        <alias field="wkb_geometry" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-1">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2946,132 +2680,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer minimumScale="100000" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
-      <id>voirie_histoire_voie20161125161403753</id>
-      <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' table="sig"."voirie_histoire_voie" sql=</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>voirie_histoire_voie</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <customproperties>
-        <property key="embeddedWidgets/count" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
-      </customproperties>
-      <provider encoding="System">postgres</provider>
-      <previewExpression></previewExpression>
-      <vectorjoins>
-        <join joinFieldName="id" targetFieldName="hist_voie_id" memoryCache="1" joinLayerId="voirie_filaire_voie20161125152125006"/>
-      </vectorjoins>
-      <layerDependencies/>
-      <expressionfields/>
-      <defaults>
-        <default field="ogc_fid" expression=""/>
-        <default field="wkb_geometry" expression=""/>
-        <default field="hist_voie_notice" expression=""/>
-        <default field="hist_voie_mot_directeur" expression=""/>
-        <default field="hist_voie_id" expression=""/>
-        <default field="voirie_filaire_voie_voie_libelle" expression=""/>
-        <default field="voirie_filaire_voie_voie_code_fantoir" expression=""/>
-        <default field="voirie_filaire_voie_voie_classe" expression=""/>
-      </defaults>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="ogc_fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="wkb_geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hist_voie_notice">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hist_voie_mot_directeur">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="hist_voie_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_libelle">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_code_fantoir">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="voirie_filaire_voie_voie_classe">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <annotationform>.</annotationform>
-      <aliases>
-        <alias field="ogc_fid" index="0" name=""/>
-        <alias field="wkb_geometry" index="1" name=""/>
-        <alias field="hist_voie_notice" index="2" name=""/>
-        <alias field="hist_voie_mot_directeur" index="3" name=""/>
-        <alias field="hist_voie_id" index="4" name=""/>
-        <alias field="voirie_filaire_voie_voie_libelle" index="5" name=""/>
-        <alias field="voirie_filaire_voie_voie_code_fantoir" index="6" name=""/>
-        <alias field="voirie_filaire_voie_voie_classe" index="7" name=""/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="4784205">
-        <columns>
-          <column width="-1" hidden="0" type="field" name="ogc_fid"/>
-          <column width="-1" hidden="0" type="field" name="wkb_geometry"/>
-          <column width="-1" hidden="0" type="field" name="hist_voie_notice"/>
-          <column width="-1" hidden="0" type="field" name="hist_voie_mot_directeur"/>
-          <column width="-1" hidden="0" type="field" name="hist_voie_id"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_libelle"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_code_fantoir"/>
-          <column width="-1" hidden="0" type="field" name="voirie_filaire_voie_voie_classe"/>
-          <column width="-1" hidden="1" type="actions"/>
-        </columns>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
-
-Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
-
-Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
-Voici un exemple à suivre:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-    geom = feature.geometry()
-    control = dialog.findChild(QWidget, "MyLineEdit")
-
-]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-    </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>voirie_histoire_voie_theme20161125161403768</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='ogc_fid' table="sig"."voirie_histoire_voie_theme" sql=</datasource>
       <keywordList>
@@ -3096,42 +2705,33 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="ogc_fid" expression=""/>
-        <default field="wkb_geometry" expression=""/>
-        <default field="lien_hist_th_id" expression=""/>
-        <default field="lien_hist_voie_id" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="ogc_fid">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wkb_geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="lien_hist_th_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="lien_hist_voie_id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="ogc_fid" index="0" name=""/>
-        <alias field="wkb_geometry" index="1" name=""/>
         <alias field="lien_hist_th_id" index="2" name=""/>
         <alias field="lien_hist_voie_id" index="3" name=""/>
+        <alias field="ogc_fid" index="0" name=""/>
+        <alias field="wkb_geometry" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="5505097">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -3145,7 +2745,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" readOnly="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>zoneInterdiction_PL_cv20161125152125038</id>
       <datasource>dbname='voieadresse' host=dsibdd09 port=5432 user='sig' password='Mie3Bhoutan' sslmode=disable key='zipl_cv' srid=2154 type=Polygon table="sig"."zoneInterdiction_PL_cv" (wkb_geometry) sql=</datasource>
       <keywordList>
@@ -3169,15 +2769,12 @@ def my_form_open(dialog, layer, feature):
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
-      <defaults>
-        <default field="zipl_cv" expression=""/>
-      </defaults>
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="zipl_cv">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -3234,10 +2831,7 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
+      <attributeactions/>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
@@ -3303,281 +2897,41 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>admin_level20161003133829299</value>
-        <value>admin_level20161003133829447</value>
-        <value>admin_level20161003133830421</value>
-        <value>admin_level20161003133831173</value>
-        <value>amenity20161003133850931</value>
-        <value>amenity20161003133850993</value>
-        <value>amenity20161003133851229</value>
-        <value>boundary20161003134014383</value>
-        <value>boundary20161003134014710</value>
-        <value>boundary20161003134017703</value>
-        <value>boundary20161003134020750</value>
-        <value>building20161003134717709</value>
-        <value>building20161003134717791</value>
-        <value>building20161003134744158</value>
-        <value>craft20161003134858302</value>
-        <value>craft20161003134858372</value>
-        <value>cuisine20161003135315154</value>
-        <value>cuisine20161003135315287</value>
-        <value>cycleway20161003135322796</value>
-        <value>cycleway20161003135322999</value>
-        <value>emergency20161003135332577</value>
-        <value>emergency20161003135332663</value>
-        <value>highway20161003135419725</value>
-        <value>highway20161003135422646</value>
-        <value>highway20161003135422791</value>
-        <value>historic20161003135706494</value>
-        <value>historic20161003135706619</value>
-        <value>junction20161003135723008</value>
-        <value>junction20161003135723134</value>
-        <value>landuse20161003135739073</value>
-        <value>landuse20161003135739189</value>
-        <value>landuse20161003135739346</value>
-        <value>leisure20161003135749617</value>
-        <value>leisure20161003135749738</value>
-        <value>leisure20161003135749933</value>
-        <value>man_made20161003135759681</value>
-        <value>man_made20161003135759834</value>
-        <value>man_made20161003135800011</value>
-        <value>natural20161003135807568</value>
-        <value>natural20161003135807725</value>
-        <value>natural20161003135807958</value>
-        <value>office20161003135818281</value>
-        <value>office20161003135818447</value>
-        <value>office20161003135818624</value>
-        <value>place20161003135824427</value>
-        <value>power20161003135831432</value>
-        <value>power20161003135831602</value>
-        <value>power20161003135831778</value>
-        <value>public_transport20161003135837798</value>
-        <value>public_transport20161003135837976</value>
-        <value>public_transport20161003135838161</value>
-        <value>railway20161003135847082</value>
-        <value>railway20161003135847291</value>
-        <value>route20161003135921840</value>
-        <value>route20161003135924769</value>
-        <value>route20161003135931716</value>
-        <value>route20161003135932000</value>
-        <value>shop20161003135942977</value>
-        <value>shop20161003135943186</value>
-        <value>sport20161003140704623</value>
-        <value>sport20161003140704844</value>
-        <value>sport20161003140705077</value>
-        <value>tourism20161003140718836</value>
-        <value>tourism20161003140719057</value>
-        <value>waterway20161003140724946</value>
-        <value>waterway20161003140725170</value>
-        <value>waterway20161003140725408</value>
-        <value>test20161003174213053</value>
-        <value>ObjetSurfaciqueCompose20161004124309013</value>
+        <value>carrefour_ce20161125152125072</value>
+        <value>limitation_vitesse20161125152125055</value>
+        <value>ouvrage_art20161125152124489</value>
+        <value>voirie_filaire_numero20161125152124545</value>
+        <value>voirie_filaire_photo20161125152124831</value>
+        <value>voirie_filaire_toponymie20161125152124918</value>
+        <value>voirie_filaire_troncon20161125152124943</value>
+        <value>voirie_filaire_voie20161125152125006</value>
+        <value>zoneInterdiction_PL_cv20161125152125038</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <LayerSnappingToleranceUnitList type="QStringList">
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
-        <value>1</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
-        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -3591,75 +2945,15 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
       <DefaultSnapTolerance type="double">8</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
-        <value>8.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <Identify>
