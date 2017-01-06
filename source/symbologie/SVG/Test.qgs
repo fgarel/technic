@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.14.4-Essen">
+<qgis projectname="" version="2.14.10-Essen">
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
@@ -11,29 +11,27 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-19.72663150985349034</xmin>
-      <ymin>6.56180974190985289</ymin>
-      <xmax>-12.63050650261544838</xmax>
-      <ymax>10.78455974621705415</ymax>
+      <xmin>-9.83162975583384835</xmin>
+      <ymin>-3.01518930705122656</ymin>
+      <xmax>2.94538984289424732</xmax>
+      <ymax>4.9564597201833358</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=lcc +nadgrids=@null +a=6378137.0000 +rf=298.2572221010000 +lat_0=46.000000000 +lon_0=3.000000000 +lat_1=45.250000000 +lat_2=46.750000000 +x_0=1700000.000 +y_0=5200000.000 +units=m +no_defs</proj4>
-        <srsid>10109</srsid>
-        <srid>310024146</srid>
-        <authid>IGNF:RGF93CC46</authid>
-        <description>Projection conique conforme Zone 5</description>
+        <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>1765</srsid>
+        <srid>3946</srid>
+        <authid>EPSG:3946</authid>
+        <description>RGF93 / CC46</description>
         <projectionacronym>lcc</projectionacronym>
-        <ellipsoidacronym>IGNF:ELG037</ellipsoidacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="IGNF:RGF93CC46" srcAuthId="IGNF:RGF93CC46" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nouvelle_couche_en_mémoire20161217185715689"/>
-    </layer_coordinate_transform_info>
+    <layer_coordinate_transform_info/>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
@@ -50,9 +48,9 @@
   <projectlayers>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
-        <xmin>-18.33718018805352656</xmin>
-        <ymin>9.14004158000236444</ymin>
-        <xmax>-13.82074268344675971</xmax>
+        <xmin>-18.33718018805350169</xmin>
+        <ymin>-6.01230180517396029</ymin>
+        <xmax>6</xmax>
         <ymax>9.17179158003474981</ymax>
       </extent>
       <id>Test20161218141058525</id>
@@ -104,7 +102,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="./Test.svg"/>
               <prop k="name_dd_active" v="1"/>
-              <prop k="name_dd_expression" v="'./ratios/' ||  &quot;representation&quot;  ||  '_' || &#xd;&#xa;CASE&#xd;&#xa;WHEN &quot;x_scale_factor&quot; >= &quot;y_scale_factor&quot; &#xd;&#xa;THEN 'x' || abs(round(&quot;x_scale_factor&quot; / &quot;y_scale_factor&quot; ,1)) &#xd;&#xa;ELSE 'y'|| abs(round(&quot;y_scale_factor&quot; / &quot;x_scale_factor&quot; ,1))&#xd;&#xa;END || '.svg'"/>
+              <prop k="name_dd_expression" v="'./ratios/' ||  &quot;representation&quot;  ||  '_' &#xa;|| replace(format_number((&quot;x_scale_factor&quot;) /min(abs((&quot;x_scale_factor&quot;)), abs(&quot;y_scale_factor&quot;)),1) ,',','.') || '_' || replace(format_number((&quot;y_scale_factor&quot;) / min(abs((&quot;x_scale_factor&quot;)), abs(&quot;y_scale_factor&quot;)),1) ,',','.')&#xa;|| '.svg'"/>
               <prop k="name_dd_field" v=""/>
               <prop k="name_dd_useexpr" v="1"/>
               <prop k="offset" v="0,0"/>
@@ -117,9 +115,9 @@
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="1"/>
               <prop k="size_dd_active" v="1"/>
-              <prop k="size_dd_expression" v=""/>
+              <prop k="size_dd_expression" v="abs( &quot;x_scale_factor&quot; )"/>
               <prop k="size_dd_field" v="x_scale_factor"/>
-              <prop k="size_dd_useexpr" v="0"/>
+              <prop k="size_dd_useexpr" v="1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -173,12 +171,12 @@
         <property key="labeling/dist" value="0"/>
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/drawLabels" value="false"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value="representation"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="'./ratios/' ||  &quot;representation&quot;  ||  '_' &#xa;|| replace(format_number((&quot;x_scale_factor&quot;) /min(abs((&quot;x_scale_factor&quot;)), abs(&quot;y_scale_factor&quot;)),1) ,',','.') || '_' || replace(format_number((&quot;y_scale_factor&quot;) / min(abs((&quot;x_scale_factor&quot;)), abs(&quot;y_scale_factor&quot;)),1) ,',','.')&#xa;|| '.svg'"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -192,7 +190,7 @@
         <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -205,20 +203,20 @@
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/namedStyle" value="Medium Italic"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/offsetType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="0"/>
+        <property key="labeling/placement" value="1"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
         <property key="labeling/preserveRotation" value="true"/>
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
-        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/quadOffset" value="7"/>
         <property key="labeling/repeatDistance" value="0"/>
         <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/repeatDistanceUnit" value="1"/>
@@ -284,10 +282,10 @@
         <property key="labeling/upsidedownLabels" value="0"/>
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
-        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/yOffset" value="-1"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -355,19 +353,44 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
   </projectlayers>
   <properties>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=lcc +nadgrids=@null +a=6378137.0000 +rf=298.2572221010000 +lat_0=46.000000000 +lon_0=3.000000000 +lat_1=45.250000000 +lat_2=46.750000000 +x_0=1700000.000 +y_0=5200000.000 +units=m +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">IGNF:RGF93CC46</ProjectCrs>
-      <ProjectCRSID type="int">10109</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
-    </SpatialRefSys>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -385,8 +408,9 @@ def my_form_open(dialog, layer, feature):
       <LayerSnappingEnabledList type="QStringList">
         <value>enabled</value>
       </LayerSnappingEnabledList>
-      <SnappingMode type="QString">current_layer</SnappingMode>
+      <SnappingMode type="QString">all_layers</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
+      <IntersectionSnapping type="bool">true</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>2</value>
       </LayerSnappingToleranceUnitList>
@@ -394,18 +418,44 @@ def my_form_open(dialog, layer, feature):
         <value>to_vertex</value>
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex</DefaultSnapType>
-      <DefaultSnapTolerance type="double">3</DefaultSnapTolerance>
+      <DefaultSnapTolerance type="double">1</DefaultSnapTolerance>
+      <TopologicalEditing type="bool">true</TopologicalEditing>
       <LayerSnappingToleranceList type="QStringList">
         <value>3.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:3946</ProjectCrs>
+      <ProjectCRSID type="int">1765</ProjectCRSID>
+      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
 </qgis>
