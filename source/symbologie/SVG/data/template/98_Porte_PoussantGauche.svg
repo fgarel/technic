@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns2="http://www.inkscape.org/namespaces/inkscape" xmlns:ns4="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" enable-background="new 0 0 1000 1000" height="1000" id="svg2" version="1.1" viewBox="0 0 2000 2000" width="1000" x="0px" y="0px" ns1:docname="Porte_PoussantGauche.svg" ns2:version="0.91 r13725" xml:space="preserve">
+  <ns1:namedview bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview4182" objecttolerance="10" pagecolor="#ffffff" showgrid="false" ns2:current-layer="svg2" ns2:cx="437.227" ns2:cy="648.52368" ns2:pageopacity="0" ns2:pageshadow="2" ns2:window-height="1056" ns2:window-maximized="1" ns2:window-width="1869" ns2:window-x="1331" ns2:window-y="24" ns2:zoom="0.70710678" />
+  <ns0:metadata id="metadata3355">
+    <rdf:RDF>
+      <ns4:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </ns4:Work>
+    </rdf:RDF>
+  </ns0:metadata>
+  <ns0:defs id="defs3338" />
+  <ns0:rect height="50" id="rect3339" style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="50" x="950" y="975" />
+  <ns0:rect height="900" id="rect3343" style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="50" x="1000" y="75" />
+  <ns0:rect height="50" id="rect3343-0" style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2,2;stroke-opacity:1;stroke-dashoffset:0" width="900" x="1000" y="975" />
+  <ns0:rect height="50" id="rect3339-1" style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="50" x="1900" y="975" />
+  <ns0:path d="m 1000,75 a 900,900 0 0 1 900,900" id="path3375" style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3,6;stroke-opacity:1;stroke-dashoffset:0" ns1:cx="1000" ns1:cy="975" ns1:end="0" ns1:open="true" ns1:rx="900" ns1:ry="900" ns1:start="4.712389" ns1:type="arc" />
+</ns0:svg>
