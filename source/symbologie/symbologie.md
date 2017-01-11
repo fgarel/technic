@@ -1,13 +1,30 @@
+# Symbologie et cahier des charges topo
+
+
+Actuellement les infos relatives aux symboles topo sont disséminés un peu partout :
+
+ - ~/Documents/technic/source/Symbologie
+ - ~/Documents/documentation/GTReseaux/DXFVersRTGEVersPCRS
+ - ~/f/CARTOGRAPHIE/Administratif/marche_prestations_topo_2015/CCTP
+ - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/autres
+ - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/levetopo
 
 
 
-# symbole redimensionnable sous QGis
+## Symbole redimensionnable sous QGis
+
+Etude de faisabilité pour utiliser des symboles svg sous qgis
+
+En topographie, le problème est de pouvoir redimensionner un symbole (en x et en y)
+de facon a ce que ses dimensions "plan" correpondent aux dimmensions "terrain"
+
+Les premiers echanges de mails sont ci dessous
+
+le travail continue avec les scripts strech_symbol.py
 
 
 
-
-
-## 1er mail de sebastien
+### 1er mail de sebastien
 
 
 
@@ -42,7 +59,7 @@ Cordialement,
 
 
 
-## Reponse
+### Reponse
 
 Bonjour,
 
@@ -56,7 +73,7 @@ En ce qui concerne les symboles très déformés, je pense qu'il s'agit d'une "g
 il faudra peut être que l'on ajoute un symbole initial grille caniveau "10cm par 1m" et non pas "1m par 1m"
 
 
-## 2d mail de sebastien
+### 2d mail de sebastien
 
 Bonjour Frédéric,
 
@@ -93,7 +110,7 @@ Au plaisir de te retrouver l’année prochaine pour de nouvelles aventures.
 Cordialement,
 
 
-## Explication
+### Explication
 
 le ratio (min/max) est toujours inférieur à 1
 pour deux valeurs x et y allant chacune de 1 à 2, alors, min/max va de 0.5 à 1
