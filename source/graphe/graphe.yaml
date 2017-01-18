@@ -1,0 +1,18 @@
+!!python/object:networkx.classes.digraph.DiGraph
+adj: &id001
+  1:
+    2: &id003 {}
+  2: {}
+adjlist_dict_factory: &id002 !!python/name:builtins.dict ''
+edge: *id001
+edge_attr_dict_factory: *id002
+graph: {}
+node:
+  1: {}
+  2: {}
+node_dict_factory: *id002
+pred:
+  1: {}
+  2:
+    1: *id003
+succ: *id001
