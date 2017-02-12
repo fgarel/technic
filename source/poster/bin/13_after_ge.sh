@@ -12,5 +12,5 @@
 ./15_imagemagick.sh
 # un projet hugin est généré à partir des png
 
-./16_lance_hugin.sh
+#./16_lance_hugin.sh
 
