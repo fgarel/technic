@@ -11,8 +11,11 @@ fichier_commandes_im_a_executer_300 = '15_imagemagick_300.sh'
 fichier_commandes_hugin_a_executer_150 = '16_lance_hugin_150.sh'
 fichier_commandes_hugin_a_executer_300 = '16_lance_hugin_300.sh'
 chemin_des_pdf = '/media/fred/TOSHIBA/Images/v4/'
+chemin_des_pdf = '/home/fred/Images/v5/'
 chemin_des_images_150 = '/media/fred/TOSHIBA/Images/d150_v4/'
 chemin_des_images_300 = '/media/fred/TOSHIBA/Images/d300_v4/'
+chemin_des_images_150 = '/home/fred/Images/d150_v5/'
+chemin_des_images_300 = '/home/fred/Images/d300_v5/'
 parametre_hugin_prefix_150='Assemblage_150'
 parametre_hugin_prefix_300='Assemblage_300'
 parametre_hugin_fov=10
@@ -84,46 +87,32 @@ for fichier_pdf in list_pdf:
                 pass
         fcim_150.write('convert -density 150 -gravity Center -shave \'256x045\' -level +0%,+100%,1.5 {0}{1}.pdf {2}{1}_d150_256_045.png\n'.format(chemin_des_pdf, image, chemin_des_images_150))
         fcim_300.write('convert -density 300 -gravity Center -shave \'512x090\' -level +0%,+100%,1.5 {0}{1}.pdf {2}{1}_d300_512_090.png\n'.format(chemin_des_pdf, image, chemin_des_images_300))
+
         fchugin_150.write('              --new-lens i{} \\\n'.format(compteur))
         fchugin_300.write('              --new-lens i{} \\\n'.format(compteur))
 
-        """
-        f.write('convert -density 150 -gravity Center -shave \'045x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_045_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'220x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_220_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'230x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_230_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'240x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_240_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'220x085\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_220_085.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'230x085\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_230_085.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'240x085\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_240_085.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'220x105\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_220_105.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'230x105\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_230_105.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'240x105\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_240_105.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'250x105\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_250_105.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'220x110\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_220_110.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'230x110\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_230_110.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'240x110\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_240_110.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 150 -gravity Center -shave \'250x110\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d150_250_110.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'045x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_045_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'045x165\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_045_165.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'045x205\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_045_205.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'045x245\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_045_245.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'045x265\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_045_265.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'505x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_505_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'505x165\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_505_165.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'505x205\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_505_205.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'505x245\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_505_245.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'505x265\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_505_265.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'525x045\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_525_045.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'525x165\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_525_165.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'525x205\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_525_205.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'525x245\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_525_245.png\n'.format(chemin_des_images, image))
-        f.write('convert -density 300 -gravity Center -shave \'525x265\' -level +0%,+100%,1.5 {0}{1}.pdf {0}{1}_d300_525_265.png\n'.format(chemin_des_images, image))
-        """
+
 fcim_150.close()
 fcim_300.close()
 
 fchugin_150.write('              {}/project.pto\n'.format(chemin_des_images_150))
 fchugin_150.write('\n')
+fchugin_300.write('              {}/project.pto\n'.format(chemin_des_images_300))
+fchugin_300.write('\n')
+fchugin_150.write('# personnalisation des paramètres\n')
+fchugin_300.write('# personnalisation des paramètres\n')
+
+#  ### http://hugin.sourceforge.net/docs/manual/Pto_var.html
+#
+
+# countx = 0
+# county = 0
+# for x in range(1, 20):
+#     countx += 1
+#     county = 0
+#     for y in range(1, 18):
+#         county += 1
+
 fchugin_150.write('# recherche des points de controle\n')
 fchugin_150.write('cpfind -o {0}/project2.pto --multirow {0}/project1.pto\n'.format(chemin_des_images_150))
 fchugin_150.write('\n')
@@ -147,8 +136,7 @@ fchugin_150.write('# fabrication d un makfile et lancement du makefile, remplac�
 fchugin_150.write('hugin_executor -t 2 -s -p {0}/$Prefix {0}/autoptim2.pto\n'.format(chemin_des_images_150))
 fchugin_150.write('\n')
 
-fchugin_300.write('              {}/project.pto\n'.format(chemin_des_images_300))
-fchugin_300.write('\n')
+
 fchugin_300.write('# recherche des points de controle\n')
 fchugin_300.write('cpfind -o {0}/project2.pto --multirow {0}/project1.pto\n'.format(chemin_des_images_300))
 fchugin_300.write('\n')
@@ -181,8 +169,8 @@ os.chmod(fichier_commandes_im_a_executer_150, st.st_mode | stat.S_IEXEC)
 st = os.stat(fichier_commandes_im_a_executer_300)
 os.chmod(fichier_commandes_im_a_executer_300, st.st_mode | stat.S_IEXEC)
 
-st = os.stat(fichier_commandes_hugin_a_executer_300)
-os.chmod(fichier_commandes_hugin_a_executer_300, st.st_mode | stat.S_IEXEC)
+st = os.stat(fichier_commandes_hugin_a_executer_150)
+os.chmod(fichier_commandes_hugin_a_executer_150, st.st_mode | stat.S_IEXEC)
 
 st = os.stat(fichier_commandes_hugin_a_executer_300)
 os.chmod(fichier_commandes_hugin_a_executer_300, st.st_mode | stat.S_IEXEC)
