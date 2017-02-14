@@ -25,3 +25,9 @@ for x in range (-141375, -119999, 1125):
         print('id = {}, nom = yx = {}, x = {}, y = {}'.format(id, nom, x, y))
 
 print(liste_informations[3])
+
+
+nom_a_tester = '13.13'
+for cle1, dico in liste_informations.items():
+    for cle2, valeur in dico.items():
+        print("La clé 1 {} contient le dico qui contient la clé 2 {} et la valeur {}.".format(cle1, cle2, valeur))
