@@ -8,12 +8,12 @@
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="Arc20170119155955838" name="Arc">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Arc20170119155955838" name="Arc">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" checked="Qt::Checked" id="Face20170119160032323" name="Face">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="Face20170119160032323" name="Face">
       <customproperties>
         <property key="showFeatureCount" value="1"/>
       </customproperties>
@@ -23,10 +23,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-1.05000000000000004</xmin>
-      <ymin>-1.05000000000000004</ymin>
-      <xmax>1.05000000000000004</xmax>
-      <ymax>1.05000000000000004</ymax>
+      <xmin>-1.07268106734434632</xmin>
+      <ymin>-1.73043202033036891</ymin>
+      <xmax>1.02731893265565377</xmax>
+      <ymax>0.36956797966963129</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -68,18 +68,18 @@
         <legendlayerfile isInOverview="0" layerid="Noeud20170119160103023" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Arc" showFeatureCount="1">
-      <filegroup open="false" hidden="false">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Arc" showFeatureCount="1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Arc20170119155955838" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="Face" showFeatureCount="1">
-      <filegroup open="false" hidden="false">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Face" showFeatureCount="1">
+      <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Face20170119160032323" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="1x1" visible="1">
+  <Composer title="1x1" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="2500" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="2500" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -148,13 +148,20 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.21968" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2500" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="2500" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.208061" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2500" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="2500" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <customproperties/>
+      <customproperties>
+        <property key="svgCropMarginBottom" value="0"/>
+        <property key="svgCropMarginLeft" value="0"/>
+        <property key="svgCropMarginRight" value="0"/>
+        <property key="svgCropMarginTop" value="0"/>
+        <property key="svgCropToContents" value="false"/>
+        <property key="svgGroupLayers" value="false"/>
+      </customproperties>
     </Composition>
   </Composer>
   <projectlayers>
@@ -166,7 +173,7 @@
         <ymax>0</ymax>
       </extent>
       <id>Arc20170119155955838</id>
-      <datasource>dbname='../../../../../../../symbole.sqlite' table="Arc" (geometry) sql=</datasource>
+      <datasource>dbname='../../../../../../symbole.sqlite' table="Arc" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -200,16 +207,16 @@
         <categories>
           <category render="false" symbol="0" value="1" label="1"/>
           <category render="false" symbol="1" value="2" label="2"/>
-          <category render="true" symbol="2" value="11" label="11"/>
-          <category render="true" symbol="3" value="12" label="12"/>
+          <category render="false" symbol="2" value="11" label="11"/>
+          <category render="false" symbol="3" value="12" label="12"/>
           <category render="false" symbol="4" value="21" label="21"/>
           <category render="false" symbol="5" value="22" label="22"/>
           <category render="false" symbol="6" value="31" label="31"/>
           <category render="false" symbol="7" value="32" label="32"/>
           <category render="false" symbol="8" value="41" label="41"/>
           <category render="false" symbol="9" value="42" label="42"/>
-          <category render="false" symbol="10" value="51" label="51"/>
-          <category render="false" symbol="11" value="52" label="52"/>
+          <category render="true" symbol="10" value="51" label="51"/>
+          <category render="true" symbol="11" value="52" label="52"/>
           <category render="false" symbol="12" value="" label=""/>
         </categories>
         <symbols>
@@ -698,7 +705,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1</ymax>
       </extent>
       <id>Face20170119160032323</id>
-      <datasource>dbname='../../../../../../../symbole.sqlite' table="Face" (geometry) sql=</datasource>
+      <datasource>dbname='../../../../../../symbole.sqlite' table="Face" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -730,11 +737,11 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 attr="pkuid" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="1" label="1"/>
+          <category render="false" symbol="0" value="1" label="1"/>
           <category render="false" symbol="1" value="2" label="2"/>
           <category render="false" symbol="2" value="3" label="3"/>
           <category render="false" symbol="3" value="4" label="4"/>
-          <category render="false" symbol="4" value="5" label="5"/>
+          <category render="true" symbol="4" value="5" label="5"/>
           <category render="false" symbol="5" value="0" label="0"/>
           <category render="false" symbol="6" value="98" label="98"/>
         </categories>
@@ -1079,7 +1086,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Noeud20170119160103023</id>
-      <datasource>dbname='../../../../../../../symbole.sqlite' table="Noeud" (geometry) sql=</datasource>
+      <datasource>dbname='../../../../../../symbole.sqlite' table="Noeud" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1112,21 +1119,20 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="218,246,113,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="circle"/>
+              <prop k="name" v="Symbole/fromQgis/symbole_cc_v3.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
               <prop k="outline_color" v="12,89,205,255"/>
-              <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.01"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MapUnit"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="0.04"/>
+              <prop k="size" v="2.5"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -1423,6 +1429,9 @@ def my_form_open(dialog, layer, feature):
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
+    <PAL>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+    </PAL>
     <Identify>
       <disabledLayers type="QStringList"/>
     </Identify>
