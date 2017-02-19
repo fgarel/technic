@@ -1,4 +1,7 @@
+-- Fichier sql qui contient les coordonnees des centres PVA
+
 DROP TABLE if exists poi;
+
 
 CREATE TABLE poi (
   poi_id INTEGER,

@@ -3,7 +3,8 @@
 # 1ere partie : preparation avant google earth
 
 # fabrication des points aux coordonnées des centre de PVA
-./03_make_pva.py
+#./03_make_pva.py
+./03_prepare_pva_et_genere_scripts_im_et_hugin.py
 
 # ce script python va fabrquer un sql
 # il faut executer ce script
@@ -30,5 +31,3 @@ ogr2ogr -f "LIBKML" \
         -lco NAME="centre" \
         PG:'host=localhost dbname=sandbox user=fred password=fred' \
         poi
-
-
