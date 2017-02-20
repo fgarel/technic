@@ -6,8 +6,8 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
-Path='/home/fred/Images/d300_v5/'
-Prefix='Assemblage_300'
+Path='/home/fred/Images/dO72_v5/'
+Prefix='Assemblage_072'
 FOV=10
 
 # Initialisation du projet avec les differeentes images

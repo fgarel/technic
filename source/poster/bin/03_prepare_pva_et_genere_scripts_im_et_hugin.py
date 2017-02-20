@@ -46,13 +46,19 @@ class set_of_tiles():
     """
     def __init__(self, x_pas, y_pas):
         # les paramètres pour la decoupe des images
+        self.cropx_072 = '128'
+        self.cropy_072 = '023'
         self.cropx_150 = '256'
         self.cropy_150 = '045'
         self.cropx_300 = '512'
         self.cropy_300 = '090'
+        self.cropx_600 = '1024'
+        self.cropy_600 = '180'
         # les paramètres pour le positionnement des images
+        self.coeff_072 = 3.08
         self.coeff_150 = 1.6
-        self.coeff_300 = 0.75
+        self.coeff_300 = 0.76
+        self.coeff_600 = 0.38
         self.x_pas = x_pas
         self.y_pas = y_pas
         self.x_indice_all_min = 0
@@ -144,10 +150,14 @@ class set_of_tiles():
                          path, \
                          fichier_final, \
                          resolution):
-        if resolution == 150:
+        if resolution == 72:
+            self.coeff = self.coeff_072
+        elif resolution == 150:
             self.coeff = self.coeff_150
         elif resolution == 300:
             self.coeff = self.coeff_300
+        elif resolution == 600:
+            self.coeff = self.coeff_600
         else:
             self.coeff = self.coeff_150
         # ici, on genere deux fichier_commandes
@@ -212,12 +222,18 @@ class set_of_tiles():
                                   chemin_des_pdf, \
                                   chemin_des_images, \
                                   resolution):
-        if resolution == 150:
+        if resolution == 72:
+            self.cropx = self.cropx_072
+            self.cropy = self.cropy_072
+        elif resolution == 150:
             self.cropx = self.cropx_150
             self.cropy = self.cropy_150
         elif resolution == 300:
             self.cropx = self.cropx_300
             self.cropy = self.cropy_300
+        elif resolution == 600:
+            self.cropx = self.cropx_600
+            self.cropy = self.cropy_600
         else:
             self.cropx = self.cropx_150
             self.cropy = self.cropy_150
@@ -286,10 +302,14 @@ class set_of_tiles():
                               path, \
                               fichier_final, \
                               resolution):
-        if resolution == 150:
+        if resolution == 72:
+            self.coeff = self.coeff_072
+        elif resolution == 150:
             self.coeff = self.coeff_150
         elif resolution == 300:
             self.coeff = self.coeff_300
+        elif resolution == 600:
+            self.coeff = self.coeff_600
         else:
             self.coeff = self.coeff_150
         fchugin = open(fichier_commandes, 'w')
@@ -404,7 +424,12 @@ class set_of_tiles():
 
 def genere_scripts(emprise, resolution):
 
-    if resolution == 150:
+    if resolution == 72:
+        path_pdf = '/home/fred/Images/v4/'
+        path_png = '/home/fred/Images/d072_v5/'
+        hugin_path_projet = '/home/fred/Images/dO72_v5/'
+        hugin_final = 'Assemblage_072'
+    elif resolution == 150:
         path_pdf = '/home/fred/Images/v4/'
         path_png = '/home/fred/Images/d150_v4/'
         hugin_path_projet = '/home/fred/Images/d150_v4/'
@@ -414,8 +439,16 @@ def genere_scripts(emprise, resolution):
         path_png = '/home/fred/Images/d300_v5/'
         hugin_path_projet = '/home/fred/Images/d300_v5/'
         hugin_final = 'Assemblage_300'
+    elif resolution == 600:
+        path_pdf = '/home/fred/Images/v4/'
+        path_png = '/home/fred/Images/d600_v5/'
+        hugin_path_projet = '/home/fred/Images/d600_v5/'
+        hugin_final = 'Assemblage_600'
     else:
-        self.coeff = self.coeff_150
+        path_pdf = '/home/fred/Images/v4/'
+        path_png = '/home/fred/Images/d150_v4/'
+        hugin_path_projet = '/home/fred/Images/d150_v4/'
+        hugin_final = 'Assemblage_150'
 
     kml_commandes = '04_pva.sql'
     emprise.genere_script_kml(kml_commandes, hugin_path_projet, hugin_final, resolution)
@@ -449,7 +482,7 @@ def main():
 
     # On va extraire, parmi les dalles précedentes,
     # uniquement les dalles dont les indice_x et indice_y sont les suivants
-    emprise_1.extract(0, 19, 0, 17)     # pour la totalite (v4)
+    emprise_1.extract(0, 19, 0, 17)     # pour la totalite (150_v4)
     emprise_1.extract(8, 15, 8, 15)   # pour 300_v5
     #emprise_1.extract(11, 12, 11, 12)   # pour 300_v6
     #print('x_indice_extract_max = {}, y_indice_extract_max = {}'.format(emprise_1.x_indice_extract_max, emprise_1.y_indice_extract_max))
@@ -461,7 +494,7 @@ def main():
     #print('affichage extract : extract_centre_x_indice = {}'.format(emprise_1.extract_centre_x_indice))
     #print('affichage extract : extract_centre_y_indice = {}'.format(emprise_1.extract_centre_y_indice))
     #print('affichage extract : nom_yx = {}'.format(emprise_1.items[emprise_1.extract_centre_i].nom_yx))
-    genere_scripts(emprise_1, 300)
+    genere_scripts(emprise_1, 72)
 
 if __name__ == '__main__':
     main()
