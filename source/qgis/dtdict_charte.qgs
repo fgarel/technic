@@ -3,12 +3,24 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="wms">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="wms">
       <customproperties/>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Eclairage Public">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eclairage Public">
         <customproperties>
           <property key="embedded" value="1"/>
-          <property key="embedded-invisible-layers" value="ep_point_eclairage20161026100232236"/>
+          <property key="embedded-invisible-layers">
+            <value>ep_point_eclairage20161026100232236</value>
+            <value>ep_poteau_beton20161026100230028</value>
+            <value>ep_coffret_intermediaire20161026100227483</value>
+            <value>ep_regard20161026100225011</value>
+            <value>ep_poste20161026100222491</value>
+            <value>ep_reseau_ht20161026100220267</value>
+            <value>ep_reseau_nu20161026100217980</value>
+            <value>ep_reseau_torsade20161026100215763</value>
+            <value>ep_reseau_facade20161026100213508</value>
+            <value>ep_reseau_facade20161026100211251</value>
+            <value>ep_reseau_souterrain20161026100205916</value>
+          </property>
           <property key="embedded_project" value="./dtdict.qgs"/>
         </customproperties>
       </layer-tree-group>
@@ -46,12 +58,27 @@
         </customproperties>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="portail-sig">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="portail-sig">
       <customproperties/>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="eclairagepublic">
+        <customproperties/>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="feuxtricolores">
+        <customproperties/>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="controleacces">
+        <customproperties/>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="eaupotable">
+        <customproperties/>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Checked" name="eaupluviale">
+        <customproperties/>
+      </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="dsibdd09">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="dsibdd09">
       <customproperties/>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="eclairagepublic">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="eclairagepublic">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poste20160510094015979" name="ep_poste">
           <customproperties/>
@@ -62,7 +89,7 @@
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_regard20160510094016017" name="ep_regard">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_point_eclairage20160510094015903" name="ep_point_eclairage">
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_point_eclairage20160510094015903" name="ep_point_eclairage">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poteau_beton20160510094015996" name="ep_poteau_beton">
@@ -147,7 +174,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="eauxpluviales">
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="eauxpluviales">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_sortie_fosse201605101217573181886754415" name="ep_sortie_fosse">
           <customproperties>
@@ -184,7 +211,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Plan_cadastral_janvier_201620160510115113478" name="Plan cadastral janvier 2016">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho2014_geo1720160510093432921" name="ortho2014_geo17">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho2014_geo1720160510093432921" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -355,14 +382,20 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="wms">
-      <legendgroup embedded="1" open="true" checked="Qt::PartiallyChecked" name="Eclairage Public" project="./dtdict.qgs"/>
+    <legendgroup open="true" checked="Qt::Unchecked" name="wms">
+      <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eclairage Public" project="./dtdict.qgs"/>
       <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eau Potable" project="./dtdict.qgs"/>
       <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eaux Pluviales" project="./dtdict.qgs"/>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="portail-sig"/>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="dsibdd09">
-      <legendgroup open="true" checked="Qt::PartiallyChecked" name="eclairagepublic">
+    <legendgroup open="true" checked="Qt::Checked" name="portail-sig">
+      <legendgroup open="true" checked="Qt::Checked" name="eclairagepublic"/>
+      <legendgroup open="true" checked="Qt::Checked" name="feuxtricolores"/>
+      <legendgroup open="true" checked="Qt::Checked" name="controleacces"/>
+      <legendgroup open="true" checked="Qt::Checked" name="eaupotable"/>
+      <legendgroup open="true" checked="Qt::Checked" name="eaupluviale"/>
+    </legendgroup>
+    <legendgroup open="true" checked="Qt::Unchecked" name="dsibdd09">
+      <legendgroup open="false" checked="Qt::Unchecked" name="eclairagepublic">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poste" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="ep_poste20160510094015979" visible="0"/>
@@ -378,9 +411,9 @@
             <legendlayerfile isInOverview="0" layerid="ep_regard20160510094016017" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_point_eclairage" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_point_eclairage" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20160510094015903" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20160510094015903" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poteau_beton" showFeatureCount="0">
@@ -506,7 +539,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::Unchecked" name="eauxpluviales">
+      <legendgroup open="true" checked="Qt::Unchecked" name="eauxpluviales">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_sortie_fosse" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="ep_sortie_fosse201605101217573181886754415" visible="0"/>
@@ -539,9 +572,9 @@
         <legendlayerfile isInOverview="0" layerid="Plan_cadastral_janvier_201620160510115113478" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720160510093432921" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720160510093432921" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>

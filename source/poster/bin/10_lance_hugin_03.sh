@@ -6,8 +6,8 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
-Path='/home/fred/Images/dO72_v5/'
-Prefix='Assemblage_072'
+Path='/media/fred/TOSHIBA/Images/d600_v4/'
+Prefix='Assemblage_600'
 FOV=10
 
 # Recherche des points de controle

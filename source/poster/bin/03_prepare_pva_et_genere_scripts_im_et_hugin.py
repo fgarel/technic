@@ -11,6 +11,8 @@ Trois scripts sont fabriqués pour automatiser le processus qui contient ... 4 �
    pour cela, on va fabriquer un fichier kml qui va faciliter la
    generation de ces pva au format pdf
  - la seconde etape est manuel : fabriquer une par une, les pva
+   (cette etape pourra etre eventuellement automatisée avec l'outil actiona)
+   http://linuxfr.org/news/actionaz-un-logiciel-d-automatisation-libre
  - la troisième étape consite à transformer les pdf en images png (avec redecoupage)
  - la quatrieme étabe consiste à réassembler les différentes tuiles avec un script hugin
    (hugin est un outil qui est scriptable !)
@@ -50,15 +52,23 @@ class set_of_tiles():
         self.cropy_072 = '023'
         self.cropx_150 = '256'
         self.cropy_150 = '045'
+
+        self.cropx_225 = '384'
+        self.cropy_225 = '068'
+
         self.cropx_300 = '512'
         self.cropy_300 = '090'
+        self.cropx_450 = '768'
+        self.cropy_450 = '135'
         self.cropx_600 = '1024'
         self.cropy_600 = '180'
         # les paramètres pour le positionnement des images
         self.coeff_072 = 3.08
         self.coeff_150 = 1.6
+        self.coeff_225 = 1.2
         self.coeff_300 = 0.76
-        self.coeff_600 = 0.38
+        self.coeff_450 = 0.59
+        self.coeff_600 = 0.40
         self.x_pas = x_pas
         self.y_pas = y_pas
         self.x_indice_all_min = 0
@@ -154,8 +164,12 @@ class set_of_tiles():
             self.coeff = self.coeff_072
         elif resolution == 150:
             self.coeff = self.coeff_150
+        elif resolution == 225:
+            self.coeff = self.coeff_225
         elif resolution == 300:
             self.coeff = self.coeff_300
+        elif resolution == 450:
+            self.coeff = self.coeff_450
         elif resolution == 600:
             self.coeff = self.coeff_600
         else:
@@ -228,9 +242,15 @@ class set_of_tiles():
         elif resolution == 150:
             self.cropx = self.cropx_150
             self.cropy = self.cropy_150
+        elif resolution == 225:
+            self.cropx = self.cropx_225
+            self.cropy = self.cropy_225
         elif resolution == 300:
             self.cropx = self.cropx_300
             self.cropy = self.cropy_300
+        elif resolution == 450:
+            self.cropx = self.cropx_450
+            self.cropy = self.cropy_450
         elif resolution == 600:
             self.cropx = self.cropx_600
             self.cropy = self.cropy_600
@@ -306,8 +326,12 @@ class set_of_tiles():
             self.coeff = self.coeff_072
         elif resolution == 150:
             self.coeff = self.coeff_150
+        elif resolution == 225:
+            self.coeff = self.coeff_225
         elif resolution == 300:
             self.coeff = self.coeff_300
+        elif resolution == 450:
+            self.coeff = self.coeff_450
         elif resolution == 600:
             self.coeff = self.coeff_600
         else:
@@ -425,24 +449,52 @@ class set_of_tiles():
 def genere_scripts(emprise, resolution):
 
     if resolution == 72:
-        path_pdf = '/home/fred/Images/v4/'
-        path_png = '/home/fred/Images/d072_v5/'
-        hugin_path_projet = '/home/fred/Images/dO72_v5/'
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d072_v5/'
+        #hugin_path_projet = '/home/fred/Images/dO72_v5/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d072_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d072_v4/'
         hugin_final = 'Assemblage_072'
     elif resolution == 150:
-        path_pdf = '/home/fred/Images/v4/'
-        path_png = '/home/fred/Images/d150_v4/'
-        hugin_path_projet = '/home/fred/Images/d150_v4/'
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d150_v4/'
+        #hugin_path_projet = '/home/fred/Images/d150_v4/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d150_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d150_v4/'
         hugin_final = 'Assemblage_150'
+    elif resolution == 225:
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d225_v4/'
+        #hugin_path_projet = '/home/fred/Images/d225_v4/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d225_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d225_v4/'
+        hugin_final = 'Assemblage_225'
     elif resolution == 300:
-        path_pdf = '/home/fred/Images/v4/'
-        path_png = '/home/fred/Images/d300_v5/'
-        hugin_path_projet = '/home/fred/Images/d300_v5/'
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d300_v5/'
+        #hugin_path_projet = '/home/fred/Images/d300_v5/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d300_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d300_v4/'
         hugin_final = 'Assemblage_300'
+    elif resolution == 450:
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d450_v5/'
+        #hugin_path_projet = '/home/fred/Images/d450_v5/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d450_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d450_v4/'
+        hugin_final = 'Assemblage_450'
     elif resolution == 600:
-        path_pdf = '/home/fred/Images/v4/'
-        path_png = '/home/fred/Images/d600_v5/'
-        hugin_path_projet = '/home/fred/Images/d600_v5/'
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d600_v5/'
+        #hugin_path_projet = '/home/fred/Images/d600_v5/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d600_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d600_v4/'
         hugin_final = 'Assemblage_600'
     else:
         path_pdf = '/home/fred/Images/v4/'
@@ -482,9 +534,10 @@ def main():
 
     # On va extraire, parmi les dalles précedentes,
     # uniquement les dalles dont les indice_x et indice_y sont les suivants
-    emprise_1.extract(0, 19, 0, 17)     # pour la totalite (150_v4)
-    emprise_1.extract(8, 15, 8, 15)   # pour 300_v5
+    emprise_1.extract(0, 19, 0, 17)     # pour la totalite (_v4)
+    #emprise_1.extract(8, 15, 8, 15)   # pour 300_v5
     #emprise_1.extract(11, 12, 11, 12)   # pour 300_v6
+    #emprise_1.extract(10, 12, 10, 12)   # pour 600_v5
     #print('x_indice_extract_max = {}, y_indice_extract_max = {}'.format(emprise_1.x_indice_extract_max, emprise_1.y_indice_extract_max))
     #print('affichage extract : id     = {}'.format(emprise_1.extract_centre_i))
     print('x_indice_extract_max = {}'.format(emprise_1.x_indice_extract_max))
@@ -494,7 +547,7 @@ def main():
     #print('affichage extract : extract_centre_x_indice = {}'.format(emprise_1.extract_centre_x_indice))
     #print('affichage extract : extract_centre_y_indice = {}'.format(emprise_1.extract_centre_y_indice))
     #print('affichage extract : nom_yx = {}'.format(emprise_1.items[emprise_1.extract_centre_i].nom_yx))
-    genere_scripts(emprise_1, 72)
+    genere_scripts(emprise_1, 600)
 
 if __name__ == '__main__':
     main()

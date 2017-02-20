@@ -3,36 +3,67 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="wms">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="wms">
+      <customproperties/>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eclairage Public">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded-invisible-layers">
+            <value>ep_point_eclairage20161026100232236</value>
+            <value>ep_poteau_beton20161026100230028</value>
+            <value>ep_coffret_intermediaire20161026100227483</value>
+            <value>ep_regard20161026100225011</value>
+            <value>ep_poste20161026100222491</value>
+            <value>ep_reseau_ht20161026100220267</value>
+            <value>ep_reseau_nu20161026100217980</value>
+            <value>ep_reseau_torsade20161026100215763</value>
+            <value>ep_reseau_facade20161026100213508</value>
+            <value>ep_reseau_facade20161026100211251</value>
+            <value>ep_reseau_souterrain20161026100205916</value>
+          </property>
+          <property key="embedded_project" value="./dtdict.qgs"/>
+        </customproperties>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eau Potable">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded-invisible-layers">
+            <value>eau_vidange20161026100516871</value>
+            <value>eau_ventouse20161026100514471</value>
+            <value>eau_vanne20161026100512487</value>
+            <value>eau_poteau_incendie20161026100509430</value>
+            <value>eau_reducteur_pression20161026100507302</value>
+            <value>eau_forage20161026100504998</value>
+            <value>eau_borne_fontaine20161026100502166</value>
+            <value>eau_conduite20161026100459550</value>
+            <value>eau_branchement20161026100457262</value>
+          </property>
+          <property key="embedded_project" value="./dtdict.qgs"/>
+        </customproperties>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Eaux Pluviales">
+        <customproperties>
+          <property key="embedded" value="1"/>
+          <property key="embedded-invisible-layers">
+            <value>ep_ouvrage_collecte_label20161026100353349</value>
+            <value>ep_sortie_fosse20161026100350765</value>
+            <value>ep_ouvrage_engouffrement20161026100348501</value>
+            <value>ep_regard_pluvial20161026100346350</value>
+            <value>ep_ouvrage_fonctionnel20161026100344109</value>
+            <value>ep_ouvrage_collecte20161026100341485</value>
+            <value>ep_branchement20161026100338901</value>
+            <value>ep_bassin_retention20161026100335653</value>
+          </property>
+          <property key="embedded_project" value="./dtdict.qgs"/>
+        </customproperties>
+      </layer-tree-group>
+    </layer-tree-group>
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="portail-sig">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="portail-sig">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="dsibdd09">
       <customproperties/>
-    </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="dsibdd09">
-      <customproperties/>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="controledacces">
-        <customproperties/>
-      </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="feuxtricolores">
-        <customproperties/>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_support_feu20160510154236460" name="slt_support_feu">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_armoire20160510154236362" name="slt_armoire">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_regard20160510154236442" name="slt_regard">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_boucle20160510154236410" name="slt_boucle">
-          <customproperties/>
-        </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_cable20160510154236426" name="slt_cable">
-          <customproperties/>
-        </layer-tree-layer>
-      </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="eclairagepublic">
+      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="eclairagepublic">
         <customproperties/>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poste20160510094015979" name="ep_poste">
           <customproperties/>
@@ -43,7 +74,7 @@
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_regard20160510094016017" name="ep_regard">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_point_eclairage20160510094015903" name="ep_point_eclairage">
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="ep_point_eclairage20160510094015903" name="ep_point_eclairage">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_poteau_beton20160510094015996" name="ep_poteau_beton">
@@ -62,6 +93,27 @@
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ep_depart_souterrain20160510094015839" name="ep_depart_souterrain">
+          <customproperties/>
+        </layer-tree-layer>
+      </layer-tree-group>
+      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="controledacces">
+        <customproperties/>
+      </layer-tree-group>
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="feuxtricolores">
+        <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_support_feu20160510154236460" name="slt_support_feu">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_armoire20160510154236362" name="slt_armoire">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_regard20160510154236442" name="slt_regard">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_boucle20160510154236410" name="slt_boucle">
+          <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="slt_cable20160510154236426" name="slt_cable">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -144,7 +196,7 @@
     <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="Plan_cadastral_janvier_201620160510115113478" name="Plan cadastral janvier 2016">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="ortho2014_geo1720160510093432921" name="ortho2014_geo17">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="ortho2014_geo1720160510093432921" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -152,10 +204,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379190.58185343258082867</xmin>
-      <ymin>5226366.05739976372569799</ymin>
-      <xmax>1379257.27482099831104279</xmax>
-      <ymax>5226442.82815848197788</ymax>
+      <xmin>1379255.57726634712889791</xmin>
+      <ymin>5226514.91777337528765202</ymin>
+      <xmax>1379288.92375012999400496</xmax>
+      <ymax>5226553.30315273441374302</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -173,51 +225,79 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20160510094016017"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte201605101220470411946789319"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_reducteur_pression20160510104310265"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20160125095916280"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse201605101217573181886754415"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20160510104310338"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_borne_fontaine20160510104310078"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20160510104310133"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage201605101221377031713058208"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20160510122005398601802018"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_coffret_intermediaire20160510094015745"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_reducteur_pression20161026100507302"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20160510094015979"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20161026100338901"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_support_feu20160510154236460"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_boucle20160510154236410"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse20160125095916399"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_ventouse20160510104310323"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20160125095916221"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20160510104310240"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20160510104310157"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20160510094016049"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_fonctionnel20160125095916325"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20160125095916125"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_faisceau20160510113642356"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720160510093230231"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte201605101220470411946789319"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20161026100230028"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse201605101217573181886754415"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_cable20160510154236426"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20160510094016049"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_chambre20160510113642335"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Plan_cadastral_janvier_201620160510115113478"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20160510104310157"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_forage20160510104310224"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_ventouse20160510104310323"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20161026100516871"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage20160125095916416"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720160510093230231"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20160510122118983393816371"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_fonctionnel201605101219365062012342650"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte_label20161026100353349"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20161026100225011"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20161026100457262"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20160125095916125"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20160510094015996"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20160510094015903"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse20160125095916399"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20161026100211251"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="17_numerique20160510113642229"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_coffret_intermediaire20160510094015745"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20160510094015839"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20161026100341485"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_retention20161026100335653"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage201605101221377031713058208"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_borne_fontaine20161026100502166"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_coffret_intermediaire20161026100227483"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20161026100509430"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vidange20160510104310338"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20161026100232236"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_forage20161026100504998"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20160510094015805"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20161026100346350"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20160125095916280"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_branchement20160510104310133"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20160510094015822"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="PLU_Scan20160510114810765"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_sortie_fosse20161026100350765"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_regard20160510154236442"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_facade20161026100213508"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_reducteur_pression20160510104310265"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720160510093432921"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_faisceau20160510113642356"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20161026100348501"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_poteau_incendie20160510104310240"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20161026100512487"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_torsade20161026100215763"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_armoire20160510154236362"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_engouffrement20160510122005398601802018"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial201605101218398535244133"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_torsade20160510094015879"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard_pluvial20160125095916341"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_armoire20160510154236362"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_nu20160510094015822"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_vanne20160510104310281"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="17_numerique20160510113642229"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_bassin_orage20160125095916416"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20160510094015979"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_regard20160510154236442"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="fo_chambre20160510113642335"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="slt_support_feu20160510154236460"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_forage20160510104310224"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_ht20160510094015805"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720160510093432921"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="PLU_Scan20160510114810765"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_branchement20160510122118983393816371"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poteau_beton20160510094015996"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_depart_souterrain20160510094015839"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_point_eclairage20160510094015903"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Plan_cadastral_janvier_201620160510115113478"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_fonctionnel20161026100344109"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_regard20160510094016017"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_ht20161026100220267"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_ventouse20161026100514471"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_poste20161026100222491"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_nu20161026100217980"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="eau_conduite20161026100459550"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_reseau_souterrain20161026100205916"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ep_ouvrage_collecte20160125095916221"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -256,41 +336,45 @@
       <item>slt_cable20160510154236426</item>
       <item>slt_regard20160510154236442</item>
       <item>slt_support_feu20160510154236460</item>
+      <item>ep_point_eclairage20161026100232236</item>
+      <item>ep_poteau_beton20161026100230028</item>
+      <item>ep_coffret_intermediaire20161026100227483</item>
+      <item>ep_regard20161026100225011</item>
+      <item>ep_poste20161026100222491</item>
+      <item>ep_reseau_ht20161026100220267</item>
+      <item>ep_reseau_nu20161026100217980</item>
+      <item>ep_reseau_torsade20161026100215763</item>
+      <item>ep_reseau_facade20161026100213508</item>
+      <item>ep_reseau_facade20161026100211251</item>
+      <item>ep_reseau_souterrain20161026100205916</item>
+      <item>eau_vidange20161026100516871</item>
+      <item>eau_ventouse20161026100514471</item>
+      <item>eau_vanne20161026100512487</item>
+      <item>eau_poteau_incendie20161026100509430</item>
+      <item>eau_reducteur_pression20161026100507302</item>
+      <item>eau_forage20161026100504998</item>
+      <item>eau_borne_fontaine20161026100502166</item>
+      <item>eau_conduite20161026100459550</item>
+      <item>eau_branchement20161026100457262</item>
+      <item>ep_ouvrage_collecte_label20161026100353349</item>
+      <item>ep_sortie_fosse20161026100350765</item>
+      <item>ep_ouvrage_engouffrement20161026100348501</item>
+      <item>ep_regard_pluvial20161026100346350</item>
+      <item>ep_ouvrage_fonctionnel20161026100344109</item>
+      <item>ep_ouvrage_collecte20161026100341485</item>
+      <item>ep_branchement20161026100338901</item>
+      <item>ep_bassin_retention20161026100335653</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="wms"/>
-    <legendgroup open="true" checked="Qt::Checked" name="portail-sig"/>
-    <legendgroup open="false" checked="Qt::Unchecked" name="dsibdd09">
-      <legendgroup open="true" checked="Qt::Unchecked" name="controledacces"/>
-      <legendgroup open="false" checked="Qt::Unchecked" name="feuxtricolores">
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_support_feu" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_support_feu20160510154236460" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_armoire" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_armoire20160510154236362" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_regard" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_regard20160510154236442" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_boucle" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_boucle20160510154236410" visible="0"/>
-          </filegroup>
-        </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_cable" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="slt_cable20160510154236426" visible="0"/>
-          </filegroup>
-        </legendlayer>
-      </legendgroup>
-      <legendgroup open="false" checked="Qt::Unchecked" name="eclairagepublic">
+    <legendgroup open="true" checked="Qt::Unchecked" name="wms">
+      <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eclairage Public" project="./dtdict.qgs"/>
+      <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eau Potable" project="./dtdict.qgs"/>
+      <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Eaux Pluviales" project="./dtdict.qgs"/>
+    </legendgroup>
+    <legendgroup open="true" checked="Qt::Unchecked" name="portail-sig"/>
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="dsibdd09">
+      <legendgroup open="true" checked="Qt::PartiallyChecked" name="eclairagepublic">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poste" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="ep_poste20160510094015979" visible="0"/>
@@ -306,9 +390,9 @@
             <legendlayerfile isInOverview="0" layerid="ep_regard20160510094016017" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_point_eclairage" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ep_point_eclairage" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20160510094015903" visible="0"/>
+            <legendlayerfile isInOverview="0" layerid="ep_point_eclairage20160510094015903" visible="1"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_poteau_beton" showFeatureCount="0">
@@ -339,6 +423,34 @@
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ep_depart_souterrain" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="ep_depart_souterrain20160510094015839" visible="0"/>
+          </filegroup>
+        </legendlayer>
+      </legendgroup>
+      <legendgroup open="true" checked="Qt::Unchecked" name="controledacces"/>
+      <legendgroup open="false" checked="Qt::Unchecked" name="feuxtricolores">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_support_feu" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="slt_support_feu20160510154236460" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_armoire" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="slt_armoire20160510154236362" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_regard" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="slt_regard20160510154236442" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_boucle" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="slt_boucle20160510154236410" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_cable" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="slt_cable20160510154236426" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
@@ -439,9 +551,9 @@
         <legendlayerfile isInOverview="0" layerid="Plan_cadastral_janvier_201620160510115113478" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720160510093432921" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720160510093432921" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -7426,20 +7538,19 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="circle"/>
+              <prop k="name" v="Eclairage/PointLumineux.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
+              <prop k="scale_method" v="diameter"/>
               <prop k="size" v="0.3"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
@@ -7588,8 +7699,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -7616,12 +7727,12 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <SingleCategoryDiagramRenderer diagramType="Histogram">
+      <LinearlyInterpolatedDiagramRenderer upperValue="0" lowerHeight="0" upperHeight="50" lowerValue="0" diagramType="Histogram" upperWidth="50" classificationAttributeExpression="" lowerWidth="0">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" sizeType="MM" minScaleDenominator="100000">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
-      </SingleCategoryDiagramRenderer>
+      </LinearlyInterpolatedDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>/mnt/dsifichiers02/services2/CARTOGRAPHIE/Qgis/Fred</annotationform>
       <excludeAttributesWMS/>
