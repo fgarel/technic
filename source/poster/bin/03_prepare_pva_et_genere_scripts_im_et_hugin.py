@@ -547,7 +547,7 @@ def main():
     #print('affichage extract : extract_centre_x_indice = {}'.format(emprise_1.extract_centre_x_indice))
     #print('affichage extract : extract_centre_y_indice = {}'.format(emprise_1.extract_centre_y_indice))
     #print('affichage extract : nom_yx = {}'.format(emprise_1.items[emprise_1.extract_centre_i].nom_yx))
-    genere_scripts(emprise_1, 600)
+    genere_scripts(emprise_1, 300)
 
 if __name__ == '__main__':
     main()
