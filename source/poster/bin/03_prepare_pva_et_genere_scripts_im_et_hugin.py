@@ -55,6 +55,8 @@ class set_of_tiles():
 
         self.cropx_225 = '384'
         self.cropy_225 = '068'
+        self.cropx_260 = '450'
+        self.cropy_260 = '080'
 
         self.cropx_300 = '512'
         self.cropy_300 = '090'
@@ -66,6 +68,7 @@ class set_of_tiles():
         self.coeff_072 = 3.08
         self.coeff_150 = 1.6
         self.coeff_225 = 1.2
+        self.coeff_260 = 1.0
         self.coeff_300 = 0.76
         self.coeff_450 = 0.59
         self.coeff_600 = 0.40
@@ -166,6 +169,8 @@ class set_of_tiles():
             self.coeff = self.coeff_150
         elif resolution == 225:
             self.coeff = self.coeff_225
+        elif resolution == 260:
+            self.coeff = self.coeff_260
         elif resolution == 300:
             self.coeff = self.coeff_300
         elif resolution == 450:
@@ -245,6 +250,9 @@ class set_of_tiles():
         elif resolution == 225:
             self.cropx = self.cropx_225
             self.cropy = self.cropy_225
+        elif resolution == 260:
+            self.cropx = self.cropx_260
+            self.cropy = self.cropy_260
         elif resolution == 300:
             self.cropx = self.cropx_300
             self.cropy = self.cropy_300
@@ -328,6 +336,8 @@ class set_of_tiles():
             self.coeff = self.coeff_150
         elif resolution == 225:
             self.coeff = self.coeff_225
+        elif resolution == 260:
+            self.coeff = self.coeff_260
         elif resolution == 300:
             self.coeff = self.coeff_300
         elif resolution == 450:
@@ -472,6 +482,14 @@ def genere_scripts(emprise, resolution):
         path_png = '/media/fred/TOSHIBA/Images/d225_v4/'
         hugin_path_projet = '/media/fred/TOSHIBA/Images/d225_v4/'
         hugin_final = 'Assemblage_225'
+    elif resolution == 260:
+        #path_pdf = '/home/fred/Images/v4/'
+        #path_png = '/home/fred/Images/d260_v4/'
+        #hugin_path_projet = '/home/fred/Images/d260_v4/'
+        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        path_png = '/media/fred/TOSHIBA/Images/d260_v4/'
+        hugin_path_projet = '/media/fred/TOSHIBA/Images/d260_v4/'
+        hugin_final = 'Assemblage_260'
     elif resolution == 300:
         #path_pdf = '/home/fred/Images/v4/'
         #path_png = '/home/fred/Images/d300_v5/'
@@ -535,6 +553,7 @@ def main():
     # On va extraire, parmi les dalles précedentes,
     # uniquement les dalles dont les indice_x et indice_y sont les suivants
     emprise_1.extract(0, 19, 0, 17)     # pour la totalite (_v4)
+    #emprise_1.extract(2, 19, 1, 17)     # pour une version plus legere
     #emprise_1.extract(8, 15, 8, 15)   # pour 300_v5
     #emprise_1.extract(11, 12, 11, 12)   # pour 300_v6
     #emprise_1.extract(10, 12, 10, 12)   # pour 600_v5
@@ -547,7 +566,7 @@ def main():
     #print('affichage extract : extract_centre_x_indice = {}'.format(emprise_1.extract_centre_x_indice))
     #print('affichage extract : extract_centre_y_indice = {}'.format(emprise_1.extract_centre_y_indice))
     #print('affichage extract : nom_yx = {}'.format(emprise_1.items[emprise_1.extract_centre_i].nom_yx))
-    genere_scripts(emprise_1, 300)
+    genere_scripts(emprise_1, 260)
 
 if __name__ == '__main__':
     main()
