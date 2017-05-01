@@ -465,12 +465,12 @@ def genere_scripts(emprise, resolution):
         hugin_path_projet = '/media/fred/TOSHIBA/Images/d150_v4/'
         hugin_final = 'Assemblage_150'
     elif resolution == 225:
-        #path_pdf = '/home/fred/Images/v4/'
-        #path_png = '/home/fred/Images/d225_v4/'
-        #hugin_path_projet = '/home/fred/Images/d225_v4/'
-        path_pdf = '/media/fred/TOSHIBA/Images/v4/'
-        path_png = '/media/fred/TOSHIBA/Images/d225_v4/'
-        hugin_path_projet = '/media/fred/TOSHIBA/Images/d225_v4/'
+        path_pdf = '/home/fred/Images/v4/'
+        path_png = '/home/fred/Images/d225_v4/'
+        hugin_path_projet = '/home/fred/Images/d225_v4/'
+        #path_pdf = '/media/fred/TOSHIBA/Images/v4/'
+        #path_png = '/media/fred/TOSHIBA/Images/d225_v4/'
+        #hugin_path_projet = '/media/fred/TOSHIBA/Images/d225_v4/'
         hugin_final = 'Assemblage_225'
     elif resolution == 300:
         #path_pdf = '/home/fred/Images/v4/'
@@ -547,7 +547,7 @@ def main():
     #print('affichage extract : extract_centre_x_indice = {}'.format(emprise_1.extract_centre_x_indice))
     #print('affichage extract : extract_centre_y_indice = {}'.format(emprise_1.extract_centre_y_indice))
     #print('affichage extract : nom_yx = {}'.format(emprise_1.items[emprise_1.extract_centre_i].nom_yx))
-    genere_scripts(emprise_1, 600)
+    genere_scripts(emprise_1, 225)
 
 if __name__ == '__main__':
     main()
