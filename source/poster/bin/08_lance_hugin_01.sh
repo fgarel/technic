@@ -6,6 +6,7 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
+
 Path='/home/fred/Images/d225_v4/'
 Prefix='Assemblage_225'
 FOV=10

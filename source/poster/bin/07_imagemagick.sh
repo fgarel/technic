@@ -2,6 +2,7 @@
 
 # Script pour convertir les fichiers pdf en image png
 # On en profite pour rogner une partie de l image
+
 convert -density 225 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/Images/v4/0903.pdf /home/fred/Images/d225_v4/0903_d225_384_068.png
 convert -density 225 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/Images/v4/0317.pdf /home/fred/Images/d225_v4/0317_d225_384_068.png
 convert -density 225 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/Images/v4/1016.pdf /home/fred/Images/d225_v4/1016_d225_384_068.png

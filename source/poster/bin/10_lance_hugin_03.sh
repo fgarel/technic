@@ -6,6 +6,7 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
+
 Path='/home/fred/Images/d225_v4/'
 Prefix='Assemblage_225'
 FOV=10
@@ -34,4 +35,3 @@ pano_modify --projection=0 \
 hugin_executor -t 2 -s \
                -p $Path/$Prefix \
                $Path/project8.pto
-
