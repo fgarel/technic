@@ -6,8 +6,9 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
-Path='/media/fred/TOSHIBA/Images/d260_v4/'
-Prefix='Assemblage_260'
+
+Path='/home/fred/Images/d225_v4/'
+Prefix='Assemblage_225'
 FOV=10
 
 # Recherche des points de controle
@@ -34,4 +35,3 @@ pano_modify --projection=0 \
 hugin_executor -t 2 -s \
                -p $Path/$Prefix \
                $Path/project8.pto
-

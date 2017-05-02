@@ -6,8 +6,9 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
-Path='/media/fred/TOSHIBA/Images/d260_v4/'
-Prefix='Assemblage_260'
+
+Path='/home/fred/Images/d225_v4/'
+Prefix='Assemblage_225'
 FOV=10
 
 # Initialisation du projet avec les differeentes images
