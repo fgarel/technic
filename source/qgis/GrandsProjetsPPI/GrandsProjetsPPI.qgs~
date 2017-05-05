@@ -34,7 +34,7 @@
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992" name="LocalisationPPI_Axe2_GrandsProjetsUniquement">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="LocalisationPPI_Axe220170505140908993" name="LocalisationPPI_Axe2">
+      <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="LocalisationPPI_Axe220170502153758511" name="LocalisationPPI_Axe2">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910" name="LocalisationPPI_Axe1_GrandsProjetsUniquement">
@@ -90,7 +90,6 @@
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212154805567"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212151630339"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe0_GrandsProjetsUniquement20161212182658850"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220170505140908993"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212102721562"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_Axe220161212153921125"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="LocalisationPPI_GrandsProjetsUniquement20161212180920818"/>
@@ -155,8 +154,8 @@
       <item>LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342</item>
       <item>LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992</item>
       <item>LocalisationPPI_TousAvecNumero20161213102015333</item>
+      <item>LocalisationPPI_Axe220170502153758511</item>
       <item>LocalisationPPI_Axe120170505140522219</item>
-      <item>LocalisationPPI_Axe220170505140908993</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -208,7 +207,7 @@
       </legendlayer>
       <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="LocalisationPPI_Axe2" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe220170505140908993" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="LocalisationPPI_Axe220170502153758511" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="LocalisationPPI_Axe1_GrandsProjetsUniquement" showFeatureCount="0">
@@ -1207,7 +1206,7 @@
       <customproperties/>
     </Composition>
   </Composer>
-  <Composer title="A3_Paysage_Atlas_Axe2" visible="1">
+  <Composer title="A3_Paysage_Atlas_Axe2" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1301,8 +1300,8 @@
           </markerStyle>
           <annotationFontProperties description="Noto Sans,9,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.20000000000000001"/>
-        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.28755" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="190" itemRotation="0" frame="false" pagex="10">
+        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.20000000000000001"/>
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.55794" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{d5ab9a50-b55c-4373-9013-2ae7bdf5f422}" height="190" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapLayers expr="&quot;Axe2&quot;" field="" active="false" useExpr="true"/>
@@ -1356,8 +1355,8 @@
           <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
-        <ComposerFrame sectionWidth="300.734" sectionHeight="74.3648" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="214.575" page="1" id="GPetPP_LOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="214.575" visibility="0" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="300.734" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
+        <ComposerFrame sectionWidth="198.892" sectionHeight="74.3648" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="214.575" page="1" id="GPetPP_LOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="214.575" visibility="0" zValue="1" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="198.892" outlineWidth="0.3" excludeFromExports="0" uuid="{be655668-d83b-41c9-b087-2761bdd9b57b}" height="74.3648" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1411,8 +1410,8 @@
           <firstRow enabled="0" cellBackgroundColor="255,255,255,255"/>
           <lastRow enabled="0" cellBackgroundColor="255,255,255,255"/>
         </cellStyles>
-        <ComposerFrame sectionWidth="310.775" sectionHeight="104.781" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
-          <ComposerItem pagey="200" page="1" id="GPetPP_LOCetNONLOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="310.775" outlineWidth="0.3" excludeFromExports="0" uuid="{cc882646-fa19-4172-a685-3f8b10396f38}" height="104.781" itemRotation="0" frame="false" pagex="10">
+        <ComposerFrame sectionWidth="206.494" sectionHeight="104.781" hideBackgroundIfEmpty="0" hidePageIfEmpty="0" sectionX="0" sectionY="0">
+          <ComposerItem pagey="200" page="1" id="GPetPP_LOCetNONLOC_ANCIENetNOUVEAU" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="10" y="200" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="206.494" outlineWidth="0.3" excludeFromExports="0" uuid="{cc882646-fa19-4172-a685-3f8b10396f38}" height="104.781" itemRotation="0" frame="false" pagex="10">
             <FrameColor alpha="255" red="0" blue="0" green="0"/>
             <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
             <customproperties/>
@@ -1422,9 +1421,8 @@
       </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe220170505140908993" singleFile="true" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe2&quot;"/>
   </Composer>
-  <Composer title="A3_Paysage_Atlas_Axe1" visible="0">
+  <Composer title="A3_Paysage_Atlas_Axe1" visible="1">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="1" generateWorldFile="0" paperHeight="297" numPages="2" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -3529,7 +3527,7 @@ def my_form_open(dialog, layer, feature):
           </markerStyle>
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.10000000000000001"/>
         <ComposerItem pagey="13.9445" page="1" id="" lastValidViewScaleFactor="1.76595" positionMode="0" positionLock="false" x="10" y="13.9445" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="277" outlineWidth="0.3" excludeFromExports="0" uuid="{fd6ca044-181b-4937-a2c3-0dca7a07358f}" height="105.336" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -3580,6 +3578,7 @@ def my_form_open(dialog, layer, feature):
       </ComposerAttributeTableV2>
       <customproperties/>
     </Composition>
+    <Atlas hideCoverage="false" coverageLayer="LocalisationPPI_Axe220170502153758511" singleFile="true" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" filterFeatures="false" sortFeatures="false" pageNameExpression="&quot;Axe2&quot;"/>
   </Composer>
   <Composer title="A4_Paysage_Atlas_Axe1" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="4" snapGridResolution="10" resizeToContentsMarginBottom="0">
@@ -5168,7 +5167,7 @@ def my_form_open(dialog, layer, feature):
         <xmax>1381879.57173650152981281</xmax>
         <ymax>5229448.62881479319185019</ymax>
       </extent>
-      <id>LocalisationPPI_Axe220170505140908993</id>
+      <id>LocalisationPPI_Axe220170502153758511</id>
       <datasource>?query=select%20dataPPI_Axe2.id,%20dataPPI.Axe2,%20dataPPI_Axe2.libelleAxe2,%20dataPPI_Axe2.codeAxe1,%20dataPPI_Axe2.libelleAxe1,%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI,%20dataPPI,%20dataPPI_Axe2%0Awhere%20LocalisationPPI.NumeroPPI%20%3D%20dataPPI.NumeroPPI%0A%20%20and%20dataPPI.Axe2%20%3D%20dataPPI_Axe2.codeAxe2%0Agroup%20by%20dataPPI.Axe2%0A%0Aunion%0A%0Aselect%2012,%20'C4',%20'Outils%20de%20projection%20et%20de%20suivi',%20'C',%20'Ville%20sure%20et%20durable',%20st_envelope(st_union(geometry))%20as%20geom%0Afrom%20LocalisationPPI%0A--where%20dataPPI_Axe2.codeAxe2%20%3D%20'C4'&amp;uid=id</datasource>
       <keywordList>
         <value></value>
@@ -7920,11 +7919,11 @@ def my_form_open(dialog, layer, feature):
         <value>LocalisationPPI_Axe020161213093018570</value>
         <value>LocalisationPPI_Axe0_GrandsProjetsUniquement20161213093025342</value>
         <value>LocalisationPPI_Axe1_GrandsProjetsUniquement20161212182152910</value>
+        <value>LocalisationPPI_Axe220170502153758511</value>
         <value>LocalisationPPI_Axe2_GrandsProjetsUniquement20161213093031992</value>
         <value>LocalisationPPI_GrandsProjetsUniquement20161212180920818</value>
         <value>LocalisationPPI_TousAvecNumero20161213102015333</value>
         <value>LocalisationPPI_Axe120170505140522219</value>
-        <value>LocalisationPPI_Axe220170505140908993</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>

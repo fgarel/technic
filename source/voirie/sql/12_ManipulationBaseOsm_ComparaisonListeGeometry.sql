@@ -13,7 +13,7 @@
 --  - champ automatique
 --  - champ manuel
 
--- Attention, pour pouvoir comparer deux textes plus facielement,
+-- Attention, pour pouvoir comparer deux textes plus facilement,
 -- il faut ajouter à la base de données une extension "unaccent"
 -- cela est utile pour modifier les chaines de caractères accentués
 -- vu ici
@@ -26,7 +26,7 @@
 -- ------------------------------------- --
 
 -- tables inner geometry --
--- Creation de la table_iga qui contient les informations sur 
+-- Creation de la table_iga qui contient les informations sur
 -- l'intersection des objets entre la table_01_g et la table_02_g
 drop table if exists table_iga;
 create table table_iga with oids as
@@ -68,7 +68,7 @@ update comptage
 -- ------------------------------------------ --
 -- Une fois que nous avons notre table intersection,
 -- on se place selon deux points de vue différents
--- Recherche des objets de la table_01_g qui sont concerné par ces intersections
+-- Recherche des objets de la table_01_g qui sont concernés par ces intersections
 -- en choisissant meilleur correspondance => aire d'intersection maximum
 --drop table if exists table_iga_01_temp;
 create table table_iga_01_temp as
@@ -98,7 +98,7 @@ group by
 ;
 
 -- Meme chose pour la table 02
--- Recherche des objets de la table_02_g qui sont concerné par ces intersections
+-- Recherche des objets de la table_02_g qui sont concernés par ces intersections
 -- en choisissant meilleur correspondance
 --drop table if exists table_iga_02_temp;
 create table table_iga_02_temp as
@@ -251,7 +251,7 @@ order by table_02_text_original;
 update comptage
   set table_rga = (select count(*) from table_rga);
 
-
+/*
 select
   "table_01",
   "table_01_t",
@@ -265,3 +265,51 @@ select
   "table_02_t",
   "table_02"
 from comptage;
+*/
+
+
+
+
+update comptage
+  set "table_01" = (select count(*) from "table_01");
+update comptage
+  set "table_02" = (select count(*) from "table_02");
+update comptage
+  set "table_01_t" = (select count(*) from "table_01_t");
+update comptage
+  set "table_02_t" = (select count(*) from "table_02_t");
+update comptage
+  set "table_01_g" = (select count(*) from "table_01_g");
+update comptage
+  set "table_02_g" = (select count(*) from "table_02_g");
+update comptage
+  set "table_ita" = (select count(*) from "table_ita");
+update comptage
+  set "table_lta" = (select count(*) from "table_lta");
+update comptage
+  set "table_rta" = (select count(*) from "table_rta");
+update comptage
+  set "table_iga" = (select count(*) from "table_iga");
+update comptage
+  set "table_lga" = (select count(*) from "table_lga");
+update comptage
+  set "table_rga" = (select count(*) from "table_rga");
+update comptage
+  set "table_iga_01" = (select count(*) from "table_iga_01");
+update comptage
+  set "table_iga_02" = (select count(*) from "table_iga_02");
+
+
+
+
+SET search_path = travail;
+
+select
+  table_01_text_automatique,
+  table_02_text_automatique,
+  ratio_01
+ from table_iga_01
+  where table_01_text_automatique > table_02_text_automatique
+  --and (table_01_text_automatique = table_02_text_automatique)
+  order by ratio_01 desc
+limit 10;

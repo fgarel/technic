@@ -118,8 +118,8 @@ order by sequence_id;
 */
 
 -- Recomposition de l'objet surfacique commune à partir des objets simples (nodes et ways) composant l'objet composé "commune de La Rochelle"
-drop table if exists "ObjetSurfaciqueCompose";
-create table "ObjetSurfaciqueCompose" as
+drop table if exists apidb."ObjetSurfaciqueCompose";
+create table apidb."ObjetSurfaciqueCompose" as
 select
       subquery.id,
       subquery.version,
@@ -154,17 +154,17 @@ from (
   select
   linestring,
   relations.*
-  from ways
-    inner join relation_members on relation_members.member_id = ways.id
-    inner join relations on relations.id = relation_members.relation_id
+  from apidb.ways
+    inner join apidb.relation_members on relation_members.member_id = ways.id
+    inner join apidb.relations on relations.id = relation_members.relation_id
   where ways.id in
     (
       select member_id
-      from relation_members
+      from apidb.relation_members
       where relation_id =
       (
         select id
-        from relations
+        from apidb.relations
         where
               "tags" -> 'type' = 'boundary'
           and "tags" -> 'boundary' = 'administrative' is not null
@@ -178,7 +178,7 @@ from (
       relation_members.relation_id =
       (
         select id
-        from relations
+        from apidb.relations
         where
               "tags" -> 'type' = 'boundary'
           and "tags" -> 'boundary' = 'administrative' is not null
@@ -196,54 +196,14 @@ group by
   subquery.tags
 ;
 
--- Selection des voies, qui ont un nom, et qui sont dans le poygone emprise de la commune de La Rochelle
-/*
-select
-  "tags" -> 'name' as name,
-  "tags" -> 'highway' as highway,
-  "tags" -> 'oneway' as oneway,
-  "tags" -> 'lanes' as lanes,
-  "tags" -> 'maxspeed' as maxspeed,
-  "tags" -> 'maxheight' as maxheight,
-  "tags" -> 'tunnel' as tunnel,
-  "tags" -> 'junction' as junction,
-  "tags" -> 'bicycle' as bicycle,
-  "tags" -> 'cycleway' as cycleway,
-  "tags" -> 'cycleway:left' as "cycleway:left",
-  "tags" -> 'oneway:bicycle' as "oneway:bicycle",
-  "tags" -> 'access' as access,
-  "tags" -> 'foot' as foot,
-  "tags" -> 'horse' as horse,
-  "tags" -> 'service' as service,
-  "tags" -> 'source' as source,
-  "tags" -> 'ref:FR:FANTOIR' as "ref:FR:FANTOIR",
-  "tags"
-from
-  ways
-where
-  (
-  -- condition 1 : voie avec un nom
-      ("tags" -> 'name' is not null
-      and "tags" -> 'amenity' = 'parking'
-      )
-    or
-      ("tags" -> 'name' is not null
-      and "tags" -> 'highway' is not null
-      )
-  )
-  and
-  (
-  -- condition 2 : intersection avec le polygone de la commune
-      (select the_geom as the_geom2 from "ObjetSurfaciqueCompose") && ways.bbox
-    and
-      st_intersects((select the_geom as the_geom2 from "ObjetSurfaciqueCompose"), ways.linestring)
-  )
-order by name;
-*/
+
+
+
 
 -- Selection des voies, qui ont un nom, et qui sont dans le poygone emprise de la commune de La Rochelle
-drop table if exists "ListeVoie_From_Osm";
-create table "ListeVoie_From_Osm" as
+
+drop table if exists apidb."ListeVoie_From_Osm";
+create table apidb."ListeVoie_From_Osm" as
 select distinct
   ("tags" -> 'name')::varchar(100) as voie_libelle_osm,
   "tags" -> 'highway' as highway,
@@ -266,7 +226,7 @@ select distinct
   --"tags"
   *
 from
-  ways
+  apidb.ways
 where
   (
   -- condition 1 : voie avec un nom
@@ -282,8 +242,8 @@ where
   and
   (
   -- condition 2 : intersection avec le polygone de la commune
-      (select the_geom as the_geom2 from "ObjetSurfaciqueCompose") && ways.bbox
+      (select the_geom as the_geom2 from apidb."ObjetSurfaciqueCompose") && ways.bbox
     and
-      st_intersects((select the_geom as the_geom2 from "ObjetSurfaciqueCompose"), ways.linestring)
+      st_intersects((select the_geom as the_geom2 from apidb."ObjetSurfaciqueCompose"), ways.linestring)
   )
 order by voie_libelle_osm;

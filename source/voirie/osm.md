@@ -96,6 +96,18 @@ http://wiki.openstreetmap.org/wiki/WikiProject_France/Osmecum
 http://geojson.io/#map=2/20.0/0.0
 
 
+## geopandas et osmnx
+http://www.portailsig.org/content/python-geopandas-ou-le-pandas-spatial
+
+http://geoffboeing.com/2016/11/osmnx-python-street-networks/
+
+https://github.com/gboeing/osmnx
+
+https://github.com/gboeing/osmnx/blob/master/examples/05-example-save-load-networks-shapes.ipynb
+
+https://osmnx.readthedocs.io/en/stable/
+
+
 
 
 ## Utilisation des données OSM avec Qgis
