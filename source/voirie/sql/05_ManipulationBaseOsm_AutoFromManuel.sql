@@ -58,7 +58,8 @@ select
         )
       )
     ),
-  5) as geometry_automatique
+  5,
+  'endcap=flat') as geometry_automatique
 from table_01
 group by text_manuel;
 
@@ -75,12 +76,12 @@ drop table if exists table_01_tmp;
 -- il *ne* faut *pas* concatener
 -- avant de faire un buffer
 update table_01
-set geometry_automatique =  st_buffer(st_transform(geometry_manuel, 3946),5)
+set geometry_automatique =  st_buffer(st_transform(geometry_manuel, 3946), 5, 'endcap=flat')
 where text_manuel is null;
 
 -- Geometrie des voies de la table_02
 update table_02
-set geometry_automatique = st_buffer(st_transform(st_force2d(geometry_manuel), 3946),5);
+set geometry_automatique = st_buffer(st_transform(st_force2d(geometry_manuel), 3946), 5, 'endcap=flat');
 
 
 update comptage

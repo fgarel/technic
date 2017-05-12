@@ -53,11 +53,11 @@ echo '     --host=$datahost \'
 echo '     --dbname=$database \'
 echo '     --username=$datauser \'
 echo '     -c "ALTER DATABASE $database SET search_path TO $dataschema, public;"'
-     psql \
-          --host=$datahost \
-          --dbname=$database \
-          --username=$datauser \
-          -c "ALTER DATABASE $database SET search_path TO $dataschema, public;"
+      psql \
+           --host=$datahost \
+           --dbname=$database \
+           --username=$datauser \
+           -c "ALTER DATABASE $database SET search_path TO $dataschema, public;"
 echo "#"
 echo '# 6.2. Comparaison des tables selon le champ geometry'
 echo "#"
@@ -67,9 +67,9 @@ echo '     --dbname=$database \'
 echo '     --username=$datauser \'
 echo '     -q \'
 echo '     -f "../sql/12_ManipulationBaseOsm_ComparaisonListeGeometry.sql"'
-     psql \
-          --host=$datahost \
-          --dbname=$database \
-          --username=$datauser \
-          -q \
-          -f '../sql/12_ManipulationBaseOsm_ComparaisonListeGeometry.sql'
+      psql \
+           --host=$datahost \
+           --dbname=$database \
+           --username=$datauser \
+           -q \
+           -f '../sql/12_ManipulationBaseOsm_ComparaisonListeGeometry.sql'
