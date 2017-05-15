@@ -20,6 +20,7 @@ DROP TABLE if exists table_01 cascade;
 
 CREATE TABLE table_01
 (
+  id_original bigint,
   text_original text,
   text_automatique text,
   text_manuel text,
@@ -38,6 +39,7 @@ DROP TABLE if exists table_02 cascade;
 
 CREATE TABLE table_02
 (
+  id_original integer,
   text_original text,
   text_automatique text,
   text_manuel text--,
@@ -145,12 +147,14 @@ insert into comptage values (0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 -- table_01 <- ListeVoie_From_Osm --
 -- ------------------------------ --
 INSERT INTO table_01 (
+  id_original,
   text_original,
 --  text_automatique,
   geometry_original)
 (
 select
 --  distinct voie_libelle_osm::text as text_original
+  id as id_original,
   voie_libelle_osm::text as text_original,
 --  unaccent(upper(rtrim(voie_libelle_osm)))::text as text_automatique,
   linestring as geometry_original
@@ -162,11 +166,13 @@ from "ListeVoie_From_Osm"
 -- table_02 <- ListeVoie_From_VoieAdresse --
 -- -------------------------------------- --
 INSERT INTO table_02 (
+  id_original,
   text_original,
 --  text_automatique,
   geometry_original)
 select
 --  distinct voie_libelle::text as original,
+  id as id_original,
   voie_libelle::text as original,
 --  unaccent(upper(rtrim(voie_libelle)))::text as automatique,
   wkb_geometry as geometry_original
@@ -180,6 +186,7 @@ from "ListeVoie_From_VoieAdresse"
 -- ---------------------------------------------------------- --
 -- view_01_tags : elle contient les données osm avec les tags --
 -- ---------------------------------------------------------- --
+/*
 DROP VIEW if exists view_01_tags cascade;
 CREATE VIEW view_01_tags as
 select
@@ -204,7 +211,9 @@ select
  table_01.*
 from "ListeVoie_From_Osm", table_01
 where "ListeVoie_From_Osm".linestring = table_01.geometry_original
+  and "ListeVoie_From_Osm".id = table_01.id_original
 ;
+*/
 
 -- ----------------------------------------------------------- --
 -- Mise à jour du decompte des objets présents dans les tables --

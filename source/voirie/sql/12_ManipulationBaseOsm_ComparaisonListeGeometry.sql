@@ -28,7 +28,7 @@
 -- tables inner geometry --
 -- Creation de la table_iga qui contient les informations sur
 -- l'intersection des objets entre la table_01_g et la table_02_g
-drop table if exists table_iga;
+drop table if exists table_iga cascade;
 create table table_iga with oids as
 select
   "table_01_g".oid as table_01_oid,
@@ -298,18 +298,3 @@ update comptage
   set "table_iga_01" = (select count(*) from "table_iga_01");
 update comptage
   set "table_iga_02" = (select count(*) from "table_iga_02");
-
-
-
-
-SET search_path = travail;
-
-select
-  table_01_text_automatique,
-  table_02_text_automatique,
-  ratio_01
- from table_iga_01
-  where table_01_text_automatique > table_02_text_automatique
-  --and (table_01_text_automatique = table_02_text_automatique)
-  order by ratio_01 desc
-limit 10;

@@ -8,7 +8,7 @@
 -- voieadresse
 
 --drop table if exists travail."ListeVoie_From_VoieAdresse";
-drop view if exists travail."ListeVoie_From_VoieAdresse";
+drop view if exists travail."ListeVoie_From_VoieAdresse" cascade;
 create view "ListeVoie_From_VoieAdresse" as
 
 SELECT *
@@ -17,7 +17,9 @@ FROM dblink(
    host=dsibdd09 user=sig password=Mie3Bhoutan',
 
    '-- selection des voies de la base interne
-    select distinct voie_libelle,
+    select distinct
+      id,
+      voie_libelle,
       voie_code_fantoir,
       voie_classe,
       wkb_geometry
@@ -25,7 +27,8 @@ FROM dblink(
     order by voie_libelle;
     '
     )
-    AS voirie_filiare(
+    AS "VoieAdresse"(
+      id integer,
       voie_libelle varchar(100),
       voie_code_fantoir varchar(5),
       voie_classe smallint,
@@ -37,7 +40,7 @@ FROM dblink(
 -- osm (apidb)
 
 --drop table if exists travail."ListeVoie_From_Osm";
-drop view if exists travail."ListeVoie_From_Osm";
+drop view if exists travail."ListeVoie_From_Osm" cascade;
 create view travail."ListeVoie_From_Osm" as
 
 SELECT *
@@ -46,7 +49,8 @@ FROM dblink(
      host=vlr6180y user=osmuser password=osmuser',
 
     '-- selection des voies de la base osm
-     select voie_libelle_osm,
+     select distinct
+            voie_libelle_osm,
             highway,
             oneway,
             lanes,
@@ -76,7 +80,7 @@ FROM dblink(
      from apidb."ListeVoie_From_Osm";
     '
     )
-    AS voirie_filiare(
+    AS "Osm"(
             voie_libelle_osm character varying(100),
             highway text,
             oneway text,
