@@ -1,20 +1,6 @@
 -- Initialisation des tables qui contiennent les infos locales
 
--- Au depart on a deux tables avec des données brutes
--- on fabrique deux tables intermédiaires
--- qui auront une structure identique et qui seront ainsi
--- plus facile à comparer
-
--- Ces tables intermediaires, contiennent chacune 3 colonnes :
---  - champ original
---  - champ automatique
---  - champ manuel
-
--- Attention, pour pouvoir comparer deux textes plus facilement,
--- il faut ajouter à la base de données une extension "unaccent"
--- cela est utile pour modifier les chaines de caractères accentués
--- vu ici
---   http://stackoverflow.com/questions/13596638/function-to-remove-accents-in-postgresql
+-- Une table de paramètre typeVoie
 
 
 SET search_path = stockage, travail, public;
