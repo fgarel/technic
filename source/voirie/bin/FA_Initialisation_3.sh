@@ -41,3 +41,48 @@ echo '     -f "../sql/21_ManipulationBaseOsm_Initialisation_3.sql"'
            --username=$datauser \
            -q \
            -f '../sql/21_ManipulationBaseOsm_Initialisation_3.sql'
+ echo "#"
+ echo '# 7.3. Initialisation des tables'
+ echo "#"
+ echo 'psql \'
+ echo '     --host=$datahost \'
+ echo '     --dbname=$database \'
+ echo '     --username=$datauser \'
+ echo '     -q \'
+ echo '     -f "../sql/22_ManipulationBaseOsm_TypeVoie_1_Privee.sql"'
+       psql \
+            --host=$datahost \
+            --dbname=$database \
+            --username=$datauser \
+            -q \
+            -f '../sql/22_ManipulationBaseOsm_TypeVoie_1_Privee.sql'
+echo "#"
+echo '# 7.4. Initialisation des tables'
+echo "#"
+echo 'psql \'
+echo '     --host=$datahost \'
+echo '     --dbname=$database \'
+echo '     --username=$datauser \'
+echo '     -q \'
+echo '     -f "../sql/23_ManipulationBaseOsm_TypeVoie_2.sql"'
+      psql \
+           --host=$datahost \
+           --dbname=$database \
+           --username=$datauser \
+           -q \
+           -f '../sql/23_ManipulationBaseOsm_TypeVoie_2.sql'
+ echo "#"
+ echo '# 7.5. Initialisation des tables'
+ echo "#"
+ echo 'psql \'
+ echo '     --host=$datahost \'
+ echo '     --dbname=$database \'
+ echo '     --username=$datauser \'
+ echo '     -q \'
+ echo '     -f "../sql/24_ManipulationBaseOsm_Classement.sql"'
+       psql \
+            --host=$datahost \
+            --dbname=$database \
+            --username=$datauser \
+            -q \
+            -f '../sql/24_ManipulationBaseOsm_Classement.sql'
