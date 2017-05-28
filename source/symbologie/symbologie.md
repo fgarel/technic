@@ -11,6 +11,67 @@ Actuellement les infos relatives aux symboles topo sont disséminés un peu part
 
 
 
+# Objectif
+Création d'une bibliotheque de symboles
+avec un listing de ces symbole et un atlas de ces différents symboles
+
+Chaque symbole devra être disponible dans différents format
+svg, dxf, png
+
+
+ - Création, dessin du symbole
+ - Transformation en différents format
+ - Utilisation sous QGIS, AutoCAD, Mapserver
+ - Création de l'atlas
+
+
+# Création dessin du symbole
+
+Il y a plusieurs façons de créer un symbole ou une série de symbole.
+et cela est plus ou moins automatisable
+
+Pourquoi automatiser ?
+Création de plusieurs symboles "quasi-identiques" pour :
+- une même famille
+- symboles redimensionnables
+
+## Dessin avec Inkscape
+
+## Dessin avec QGis
+
+Un fichier qgis pour créer des symboles
+/home/fred/Documents/technic/source/symbologie/data/qgis/SymboleAtelierCreation.qgs
+
+la base correspondante
+
+
+
+## Dessin avec imagemagick
+
+## Automatisation de la création des symbole
+
+# Transformation des symboles en différents Format
+
+## de QGis à SVG
+
+## de QGIS à dxf
+
+# Utilisation
+
+Un fichier qgis pour tester l'utilisation des symboles
+/home/fred/Documents/technic/source/symbologie/data/qgis/SymboleTestUtilisation.qgs
+
+la base correspondante est une base postgresql qui est créée à l'aide de scripts :
+la table symboleTest contient un jeu de données.
+ces données ont été initialement paramétrées au sein du fichier calc
+data/SymboleInsert.ods
+
+# Création de l'atlas sous QGis
+
+Un fichier qgis pour lister les symboles
+/home/fred/Documents/technic/source/symbologie/data/qgis/SymboleAtlas.qgs
+
+
 ## Symbole redimensionnable sous QGis
 
 Etude de faisabilité pour utiliser des symboles svg sous qgis
