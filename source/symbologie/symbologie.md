@@ -18,7 +18,6 @@ avec un listing de ces symbole et un atlas de ces différents symboles
 Chaque symbole devra être disponible dans différents format
 svg, dxf, png
 
-
  - Création, dessin du symbole
  - Transformation en différents format
  - Utilisation sous QGIS, AutoCAD, Mapserver
@@ -30,10 +29,6 @@ svg, dxf, png
 Il y a plusieurs façons de créer un symbole ou une série de symbole.
 et cela est plus ou moins automatisable
 
-Pourquoi automatiser ?
-Création de plusieurs symboles "quasi-identiques" pour :
-- une même famille
-- symboles redimensionnables
 
 ## Dessin avec Inkscape
 
@@ -42,13 +37,43 @@ Création de plusieurs symboles "quasi-identiques" pour :
 Un fichier qgis pour créer des symboles
 /home/fred/Documents/technic/source/symbologie/data/qgis/SymboleAtelierCreation.qgs
 
-la base correspondante
+La base correspondante est une base postgresql/postigs qui est créée à l'aide de scripts :
+Les données ont été initialement paramétrées au sein du fichier calc
+"data/SymboleInsert.ods"
+La table symboleCreationNoeud provient de la feuille symboleCreationNoeud
+La table symboleTest provient de la feuille symboleTest
+
+
+### Dessin du symbole
+Le symbole est dessiné avec les primitives noeud arc facteur
+
+Dans les noeuds, si un symbole svg doit etre inséré, alors, il faut choisir la taille en multipliant par le coefficient 2.5
+Par exemple, si on veut que le symbole fasse 1 m, alors il faut insérer le symbole en mettant la taille à 2.5 unité terrain.
+
+### Export du symbole au format svg
+Dans le composeur d'impression (choisir le modele 1x1), on peut exporter le fichier au format svg
+
+L'export se fait dans le repertoire :
+/source/symbologie/data/Symbole/fromQgis/
+
+### Transformation du fichier xml
+Le xml doit etre transformé pour etre utilisé :
+- transformation du blanc en transparent
+- faire en sorte que les épaisseurs des traits, les couleurs puissent être piloté à partir de qgis
+
+Pour faire ces différentes transformations, des scripts sont utilisés :
+
 
 
 
 ## Dessin avec imagemagick
 
 ## Automatisation de la création des symbole
+
+Pourquoi automatiser ?
+Création de plusieurs symboles "quasi-identiques" pour :
+- une même famille
+- symboles redimensionnables
 
 # Transformation des symboles en différents Format
 
@@ -61,10 +86,11 @@ la base correspondante
 Un fichier qgis pour tester l'utilisation des symboles
 /home/fred/Documents/technic/source/symbologie/data/qgis/SymboleTestUtilisation.qgs
 
-la base correspondante est une base postgresql qui est créée à l'aide de scripts :
-la table symboleTest contient un jeu de données.
-ces données ont été initialement paramétrées au sein du fichier calc
-data/SymboleInsert.ods
+La base correspondante est une base postgresql/postigs qui est créée à l'aide de scripts :
+Les données ont été initialement paramétrées au sein du fichier calc
+"data/SymboleInsert.ods"
+La table symboleCreationNoeud provient de la feuille symboleCreationNoeud
+La table symboleTest provient de la feuille symboleTest
 
 # Création de l'atlas sous QGis
 

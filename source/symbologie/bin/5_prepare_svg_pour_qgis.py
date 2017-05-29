@@ -43,6 +43,49 @@ import xml.etree.ElementTree as ET
 import re
 
 
+def prepare_svg_1ere_passe_compactage(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = ET.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
+
+
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
+
+
+def prepare_svg_2de_passe(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = ET.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
+
+
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
+
+
+def prepare_svg_3eme_passe(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = ET.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
+
+
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
 
 def prepare_svg_gestion_couleurs(inFile, outFile):
     # Lecture du fichier SVG (comme un XML) en entree
@@ -122,12 +165,36 @@ if __name__ == '__main__':
     #cheminSortie = re.sub('/template/', '/output/', cheminEntree)
     cheminSortie = cheminEntree
     # print("{}".format(str(cheminSortie)))
+
+    ## 1ere passe : compactage
     fichierEntreeSansChemin = fichierEntree.split('/')[-1]
-    fichierSortieSansChemin = re.sub(r'98_', r'99_', fichierEntreeSansChemin)
-    # print("{}".format(str(fichierEntreeSansChemin)))
-    # print("{}".format(str(fichierSortieSansChemin)))
-
+    fichierSortieSansChemin = re.sub(r'_v01', r'_v02', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("{}".format(fichierSortie))
+    print("1ere passe => {}".format(fichierSortie))
+    prepare_svg_1ere_passe_compactage(fichierEntree, fichierSortie)
 
-    prepare_svg_gestion_couleurs(fichierEntree, fichierSortie)
+    ## 2de passe :
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    fichierSortieSansChemin = re.sub(r'_v02', r'_v03', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    fichierSortie = cheminSortie + fichierSortieSansChemin
+    print("2de passe  => {}".format(fichierSortie))
+    prepare_svg_2de_passe(fichierEntree, fichierSortie)
+
+    ## 3eme passe :
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    fichierSortieSansChemin = re.sub(r'_v03', r'_v04', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    fichierSortie = cheminSortie + fichierSortieSansChemin
+    print("3eme passe  => {}".format(fichierSortie))
+    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+
+    ## xeme passe :
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    fichierSortieSansChemin = re.sub(r'_v0w', r'_v0x', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    fichierSortie = cheminSortie + fichierSortieSansChemin
+    print("xeme passe  => {}".format(fichierSortie))
+    prepare_svg_xeme_passe(fichierEntree, fichierSortie)
+    #prepare_svg_gestion_couleurs(fichierEntree, fichierSortie)

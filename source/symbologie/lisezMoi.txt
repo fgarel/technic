@@ -1,0 +1,20 @@
+installation de ipython
+
+aptitude install ipython3
+
+aptitude install ipython3-notebook
+
+### Installation
+
+aptitude install jupyter-notebook
+
+aptitude install jupyter-core
+
+### Utilisation
+
+Lancement du serveur
+jupyter-notebook &
+
+Client : connexion
+http://localhost:8888/
+

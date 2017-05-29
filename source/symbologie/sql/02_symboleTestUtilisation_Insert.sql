@@ -6,9 +6,102 @@
 SET search_path = stockage, public;
 
 
--- ------------------------------ --
--- Creation des tables de stokage --
--- ------------------------------ --
+-- ------------------------------------- --
+-- Insertion des données dans les tables --
+-- ------------------------------------- --
+
+
+-- Attention, il y a deux feuilles à insérer
+
+-- ici, il faut recopier le contenue du fichier calc
+-- data/SymboleInsert.ods
+-- (feuille SymboleCreationNoeud)
+
+INSERT INTO "SymboleCreationNoeud" VALUES (1, 'Noeud', '255,255,255', '200', 0, -1, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (2, 'Noeud', '255,255,255', '200', 0, -0.75, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (3, 'Noeud', '255,255,255', '200', 0, -0.5, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (4, 'Noeud', '255,255,255', '200', 0, -0.25, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (5, 'Noeud', '255,255,255', '200', 0, 0, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (6, 'Noeud', '255,255,255', '200', 0, 0.25, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (7, 'Noeud', '255,255,255', '200', 0, 0.5, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (8, 'Noeud', '255,255,255', '200', 0, 0.75, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (9, 'Noeud', '255,255,255', '200', 0, 1, 1);
+INSERT INTO "SymboleCreationNoeud" VALUES (10, 'Noeud', '255,255,255', '200', 0, -1, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (11, 'Noeud', '255,255,255', '200', 0, -0.75, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (12, 'Noeud', '255,255,255', '200', 0, -0.5, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (13, 'Noeud', '255,255,255', '200', 0, -0.25, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (14, 'Noeud', '255,255,255', '200', 0, 0, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (15, 'Noeud', '255,255,255', '200', 0, 0.25, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (16, 'Noeud', '255,255,255', '200', 0, 0.5, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (17, 'Noeud', '255,255,255', '200', 0, 0.75, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (18, 'Noeud', '255,255,255', '200', 0, 1, 0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (19, 'Noeud', '255,255,255', '200', 0, -1, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (20, 'Noeud', '255,255,255', '200', 0, -0.75, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (21, 'Noeud', '255,255,255', '200', 0, -0.5, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (22, 'Noeud', '255,255,255', '200', 0, -0.25, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (23, 'Noeud', '255,255,255', '200', 0, 0, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (24, 'Noeud', '255,255,255', '200', 0, 0.25, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (25, 'Noeud', '255,255,255', '200', 0, 0.5, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (26, 'Noeud', '255,255,255', '200', 0, 0.75, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (27, 'Noeud', '255,255,255', '200', 0, 1, 0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (28, 'Noeud', '255,255,255', '200', 0, -1, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (29, 'Noeud', '255,255,255', '200', 0, -0.75, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (30, 'Noeud', '255,255,255', '200', 0, -0.5, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (31, 'Noeud', '255,255,255', '200', 0, -0.25, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (32, 'Noeud', '255,255,255', '200', 0, 0, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (33, 'Noeud', '255,255,255', '200', 0, 0.25, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (34, 'Noeud', '255,255,255', '200', 0, 0.5, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (35, 'Noeud', '255,255,255', '200', 0, 0.75, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (36, 'Noeud', '255,255,255', '200', 0, 1, 0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (37, 'Noeud', '255,255,255', '200', 0, -1, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (38, 'Noeud', '255,255,255', '200', 0, -0.75, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (39, 'Noeud', '255,255,255', '200', 0, -0.5, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (40, 'Noeud', '255,255,255', '200', 0, -0.25, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (41, 'Noeud', '255,255,255', '200', 0, 0, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (42, 'Noeud', '255,255,255', '200', 0, 0.25, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (43, 'Noeud', '255,255,255', '200', 0, 0.5, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (44, 'Noeud', '255,255,255', '200', 0, 0.75, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (45, 'Noeud', '255,255,255', '200', 0, 1, 0);
+INSERT INTO "SymboleCreationNoeud" VALUES (46, 'Noeud', '255,255,255', '200', 0, -1, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (47, 'Noeud', '255,255,255', '200', 0, -0.75, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (48, 'Noeud', '255,255,255', '200', 0, -0.5, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (49, 'Noeud', '255,255,255', '200', 0, -0.25, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (50, 'Noeud', '255,255,255', '200', 0, 0, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (51, 'Noeud', '255,255,255', '200', 0, 0.25, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (52, 'Noeud', '255,255,255', '200', 0, 0.5, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (53, 'Noeud', '255,255,255', '200', 0, 0.75, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (54, 'Noeud', '255,255,255', '200', 0, 1, -0.25);
+INSERT INTO "SymboleCreationNoeud" VALUES (55, 'Noeud', '255,255,255', '200', 0, -1, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (56, 'Noeud', '255,255,255', '200', 0, -0.75, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (57, 'Noeud', '255,255,255', '200', 0, -0.5, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (58, 'Noeud', '255,255,255', '200', 0, -0.25, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (59, 'Noeud', '255,255,255', '200', 0, 0, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (60, 'Noeud', '255,255,255', '200', 0, 0.25, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (61, 'Noeud', '255,255,255', '200', 0, 0.5, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (62, 'Noeud', '255,255,255', '200', 0, 0.75, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (63, 'Noeud', '255,255,255', '200', 0, 1, -0.5);
+INSERT INTO "SymboleCreationNoeud" VALUES (64, 'Noeud', '255,255,255', '200', 0, -1, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (65, 'Noeud', '255,255,255', '200', 0, -0.75, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (66, 'Noeud', '255,255,255', '200', 0, -0.5, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (67, 'Noeud', '255,255,255', '200', 0, -0.25, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (68, 'Noeud', '255,255,255', '200', 0, 0, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (69, 'Noeud', '255,255,255', '200', 0, 0.25, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (70, 'Noeud', '255,255,255', '200', 0, 0.5, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (71, 'Noeud', '255,255,255', '200', 0, 0.75, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (72, 'Noeud', '255,255,255', '200', 0, 1, -0.75);
+INSERT INTO "SymboleCreationNoeud" VALUES (73, 'Noeud', '255,255,255', '200', 0, -1, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (74, 'Noeud', '255,255,255', '200', 0, -0.75, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (75, 'Noeud', '255,255,255', '200', 0, -0.5, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (76, 'Noeud', '255,255,255', '200', 0, -0.25, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (77, 'Noeud', '255,255,255', '200', 0, 0, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (78, 'Noeud', '255,255,255', '200', 0, 0.25, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (79, 'Noeud', '255,255,255', '200', 0, 0.5, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (80, 'Noeud', '255,255,255', '200', 0, 0.75, -1);
+INSERT INTO "SymboleCreationNoeud" VALUES (81, 'Noeud', '255,255,255', '200', 0, 1, -1);
+
+
+
+
 
 -- ici, il faut recopier le contenue du fichier calc
 -- data/SymboleInsert.ods
