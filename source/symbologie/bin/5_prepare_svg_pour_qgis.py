@@ -52,7 +52,69 @@ def prepare_svg_1ere_passe_compactage(inFile, outFile):
     # Mise en memoire
     root = tree.getroot()
 
+    # suppression des branches sans path
 
+    """
+    for element in root.iter():
+        print('>  {}'.format(element.tag))
+        if element.tag == '{http://www.w3.org/2000/svg}g':
+            for selement in element.iter():
+                print('>> {}'.format(selement.tag))
+                if selement.tag == '{http://www.w3.org/2000/svg}g':
+                    for sselement in selement.iter():
+                        print('>>>{}'.format(sselement.tag))
+                        if sselement.tag == '{http://www.w3.org/2000/svg}path':
+                            print('---{}'.format(sselement.tag, sselement.attrib))
+
+    for element in root.iter('{http://www.w3.org/2000/svg}g'):
+        #if element.findall('{http://www.w3.org/2000/svg}path') is None:
+        #    print('A  {}'.format(element.tag))
+        #else:
+        #    print('B  {}'.format(element.attrib))
+
+        for selement in element.findall('{http://www.w3.org/2000/svg}g'):
+            compteurg = 0
+            compteurpath = 0
+
+            print('C  {}'.format(element.tag))
+        else:
+            print('D  {}, {}, {}'.format(element.tag, \
+                                         element.attrib, \
+                                         element[0].tag))
+    """
+
+    #for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}path"):
+    #    print('>  {}'.format(element.tag))
+
+    removeList = list()
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+        if element.findall('{http://www.w3.org/2000/svg}path'):
+            print('path {}, {}'.format(element.tag, \
+                                       element.attrib))
+            pass
+        else:
+            print('supperflu {}, {}'.format(element.tag, \
+                                            element.attrib))
+            removeList.append(element)
+            #root.remove(element)
+    print(removeList)
+    for tag in removeList:
+       parent = root.find("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g")
+       parent.remove(tag)
+
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+        print('test {}, {}'.format(element.tag, \
+                                        element.attrib))
+        """
+            if selement.tag == '{http://www.w3.org/2000/svg}path':
+                ++compteurpath
+            else:
+                print('>>>{}'.format(selement.tag))
+                pass
+        if compteurpath > 0:
+            print('>> {}'.format(element.tag))
+            root.remove(element)
+        """
 
     #Ecriture du fichier en sortie
     tree.write(outFile)
@@ -148,7 +210,8 @@ if __name__ == '__main__':
         fichierEntree = str(sys.argv[1])
 
     except:
-        print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/template/01_Porte_PoussantGauche.svg'")
+        #print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/template/01_Porte_PoussantGauche.svg'")
+        print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/Symbole/fromQgis/symbole_bg_v01.svg'")
         sys.exit()
 
     # A partir des paramètres, on en déduit le nom du fichier svg qui sera generé
