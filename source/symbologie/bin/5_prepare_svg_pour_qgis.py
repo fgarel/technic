@@ -95,16 +95,19 @@ def prepare_svg_1ere_passe_compactage(inFile, outFile):
         else:
             print('supperflu {}, {}'.format(element.tag, \
                                             element.attrib))
-            removeList.append(element)
+            #removeList.append(element)
+            #https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
+            print('parent {}, {}'.format(element.getparent().tag, \
+                                            elementgetparent().attrib))
             #root.remove(element)
-    print(removeList)
-    for tag in removeList:
-       parent = root.find("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g")
-       parent.remove(tag)
+    #print(removeList)
+    #for tag in removeList:
+    #   parent = root.find("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g")
+    #   parent.remove(tag)
 
-    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
-        print('test {}, {}'.format(element.tag, \
-                                        element.attrib))
+    #for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+    #    print('test {}, {}'.format(element.tag, \
+    #                                    element.attrib))
         """
             if selement.tag == '{http://www.w3.org/2000/svg}path':
                 ++compteurpath
@@ -211,7 +214,7 @@ if __name__ == '__main__':
 
     except:
         #print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/template/01_Porte_PoussantGauche.svg'")
-        print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/Symbole/fromQgis/symbole_bg_v01.svg'")
+        print("Ce script s'utilise ainsi : './5_prepare_svg_pour_qgis.py ../data/Symbole/fromQgis/symbole_bg_v01.svg'")
         sys.exit()
 
     # A partir des paramètres, on en déduit le nom du fichier svg qui sera generé
