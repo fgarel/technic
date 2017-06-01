@@ -38,86 +38,39 @@ Exemple d'utilisation
 # Sys pour les parametres
 import sys
 # Utilisation de la librairie de lecture des fichier .xml
-import xml.etree.ElementTree as ET
+#import xml.etree.ElementTree as ET
+import lxml.etree as et
 # expressions regulieres
 import re
 
 
-def prepare_svg_1ere_passe_compactage(inFile, outFile):
+def prepare_svg_1ere_passe(inFile, outFile):
     """
-    Suppression des entrées inutiles
+    Suppression des branches de l'arbre xml qui sont inutiles
     """
     # Lecture du fichier SVG (comme un XML) en entree
-    tree = ET.parse(inFile)
+    tree = et.parse(inFile)
     # Mise en memoire
     root = tree.getroot()
 
-    # suppression des branches sans path
+    # Suppression des branches sans path
+    # on recherche les branches g/g qui sont inutiles
+    # - une branche g/g/path est utile
+    # - une branche g/g/vide est inutile
 
-    """
-    for element in root.iter():
-        print('>  {}'.format(element.tag))
-        if element.tag == '{http://www.w3.org/2000/svg}g':
-            for selement in element.iter():
-                print('>> {}'.format(selement.tag))
-                if selement.tag == '{http://www.w3.org/2000/svg}g':
-                    for sselement in selement.iter():
-                        print('>>>{}'.format(sselement.tag))
-                        if sselement.tag == '{http://www.w3.org/2000/svg}path':
-                            print('---{}'.format(sselement.tag, sselement.attrib))
-
-    for element in root.iter('{http://www.w3.org/2000/svg}g'):
-        #if element.findall('{http://www.w3.org/2000/svg}path') is None:
-        #    print('A  {}'.format(element.tag))
-        #else:
-        #    print('B  {}'.format(element.attrib))
-
-        for selement in element.findall('{http://www.w3.org/2000/svg}g'):
-            compteurg = 0
-            compteurpath = 0
-
-            print('C  {}'.format(element.tag))
-        else:
-            print('D  {}, {}, {}'.format(element.tag, \
-                                         element.attrib, \
-                                         element[0].tag))
-    """
-
-    #for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}path"):
-    #    print('>  {}'.format(element.tag))
-
-    removeList = list()
     for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
         if element.findall('{http://www.w3.org/2000/svg}path'):
-            print('path {}, {}'.format(element.tag, \
-                                       element.attrib))
+            #print('path {}, {}'.format(element.tag, \
+            #                           element.attrib))
             pass
         else:
-            print('supperflu {}, {}'.format(element.tag, \
-                                            element.attrib))
-            #removeList.append(element)
-            #https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
-            print('parent {}, {}'.format(element.getparent().tag, \
-                                            elementgetparent().attrib))
-            #root.remove(element)
-    #print(removeList)
-    #for tag in removeList:
-    #   parent = root.find("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g")
-    #   parent.remove(tag)
+            #print('supperflu {}, {}'.format(element.tag, \
+            #                                element.attrib))
+            #
+            # https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
+            #
+            element.getparent().remove(element)
 
-    #for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
-    #    print('test {}, {}'.format(element.tag, \
-    #                                    element.attrib))
-        """
-            if selement.tag == '{http://www.w3.org/2000/svg}path':
-                ++compteurpath
-            else:
-                print('>>>{}'.format(selement.tag))
-                pass
-        if compteurpath > 0:
-            print('>> {}'.format(element.tag))
-            root.remove(element)
-        """
 
     #Ecriture du fichier en sortie
     tree.write(outFile)
@@ -125,13 +78,18 @@ def prepare_svg_1ere_passe_compactage(inFile, outFile):
 
 def prepare_svg_2de_passe(inFile, outFile):
     """
-    Suppression des entrées inutiles
+    Suppression des branches dont la couleur est blanche(ffffff) et opacity est 1
     """
     # Lecture du fichier SVG (comme un XML) en entree
-    tree = ET.parse(inFile)
+    tree = et.parse(inFile)
     # Mise en memoire
     root = tree.getroot()
 
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g[@fill='#ffffff']"):
+        if element.findall("[@fill-opacity='1']"):
+            #print('opactity {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            element.getparent().remove(element)
 
 
     #Ecriture du fichier en sortie
@@ -143,10 +101,49 @@ def prepare_svg_3eme_passe(inFile, outFile):
     Suppression des entrées inutiles
     """
     # Lecture du fichier SVG (comme un XML) en entree
-    tree = ET.parse(inFile)
+    tree = et.parse(inFile)
     # Mise en memoire
     root = tree.getroot()
 
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
+
+
+def prepare_svg_4eme_passe(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = et.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
+
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
+
+def prepare_svg_5eme_passe(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = et.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
+
+
+    #Ecriture du fichier en sortie
+    tree.write(outFile)
+
+def prepare_svg_6eme_passe(inFile, outFile):
+    """
+    Suppression des entrées inutiles
+    """
+    # Lecture du fichier SVG (comme un XML) en entree
+    tree = et.parse(inFile)
+    # Mise en memoire
+    root = tree.getroot()
 
 
     #Ecriture du fichier en sortie
@@ -154,7 +151,7 @@ def prepare_svg_3eme_passe(inFile, outFile):
 
 def prepare_svg_gestion_couleurs(inFile, outFile):
     # Lecture du fichier SVG (comme un XML) en entree
-    tree = ET.parse(inFile)
+    tree = et.parse(inFile)
     # Mise en memoire
     root = tree.getroot()
 
@@ -238,7 +235,7 @@ if __name__ == '__main__':
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("1ere passe => {}".format(fichierSortie))
-    prepare_svg_1ere_passe_compactage(fichierEntree, fichierSortie)
+    prepare_svg_1ere_passe(fichierEntree, fichierSortie)
 
     ## 2de passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
@@ -253,7 +250,23 @@ if __name__ == '__main__':
     fichierSortieSansChemin = re.sub(r'_v03', r'_v04', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("3eme passe  => {}".format(fichierSortie))
+    print("3eme passe => {}".format(fichierSortie))
+    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+
+    ## 4eme passe :
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    fichierSortieSansChemin = re.sub(r'_v04', r'_v05', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    fichierSortie = cheminSortie + fichierSortieSansChemin
+    print("4eme passe => {}".format(fichierSortie))
+    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+
+    ## 5eme passe :
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    fichierSortieSansChemin = re.sub(r'_v05', r'_v06', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    fichierSortie = cheminSortie + fichierSortieSansChemin
+    print("5eme passe => {}".format(fichierSortie))
     prepare_svg_3eme_passe(fichierEntree, fichierSortie)
 
     ## xeme passe :
@@ -261,6 +274,6 @@ if __name__ == '__main__':
     fichierSortieSansChemin = re.sub(r'_v0w', r'_v0x', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("xeme passe  => {}".format(fichierSortie))
-    prepare_svg_xeme_passe(fichierEntree, fichierSortie)
+    #print("xeme passe => {}".format(fichierSortie))
+    #prepare_svg_xeme_passe(fichierEntree, fichierSortie)
     #prepare_svg_gestion_couleurs(fichierEntree, fichierSortie)
