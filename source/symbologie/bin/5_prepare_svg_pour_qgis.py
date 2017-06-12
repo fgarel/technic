@@ -232,7 +232,7 @@ if __name__ == '__main__':
 
     ## 1ere passe : compactage
     fichierEntreeSansChemin = fichierEntree.split('/')[-1]
-    fichierSortieSansChemin = re.sub(r'_v01', r'_v02', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'pp_x_010', r'mm_x_010', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("1ere passe => {}".format(fichierSortie))
@@ -240,7 +240,7 @@ if __name__ == '__main__':
 
     ## 2de passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'_v02', r'_v03', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'mm_x_010', r'pp_x_010', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("2de passe  => {}".format(fichierSortie))
@@ -251,24 +251,24 @@ if __name__ == '__main__':
     fichierSortieSansChemin = re.sub(r'_v03', r'_v04', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("3eme passe => {}".format(fichierSortie))
-    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+    #print("3eme passe => {}".format(fichierSortie))
+    #prepare_svg_3eme_passe(fichierEntree, fichierSortie)
 
     ## 4eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
     fichierSortieSansChemin = re.sub(r'_v04', r'_v05', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("4eme passe => {}".format(fichierSortie))
-    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+    #print("4eme passe => {}".format(fichierSortie))
+    #prepare_svg_3eme_passe(fichierEntree, fichierSortie)
 
     ## 5eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
     fichierSortieSansChemin = re.sub(r'_v05', r'_v06', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("5eme passe => {}".format(fichierSortie))
-    prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+    #print("5eme passe => {}".format(fichierSortie))
+    #prepare_svg_3eme_passe(fichierEntree, fichierSortie)
 
     ## xeme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin

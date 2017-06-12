@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.8">
+<qgis projectname="" version="2.18.9">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -16,10 +16,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379274.62210430111736059</xmin>
-      <ymin>5226371.34917148947715759</ymin>
-      <xmax>1379283.68701363075524569</xmax>
-      <ymax>5226379.45278718322515488</ymax>
+      <xmin>1379280.94053475256077945</xmin>
+      <ymin>5226367.58480430487543344</ymin>
+      <xmax>1379299.07035341556183994</xmax>
+      <ymax>5226383.79203567747026682</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -96,13 +96,13 @@
         <edittype widgetv2type="TextEdit" name="EchelleRepresentation">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="Rotation">
+        <edittype widgetv2type="TextEdit" name="Obs_Rotation">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="Echelle_X">
+        <edittype widgetv2type="TextEdit" name="Obs_LargeurX">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="Echelle_Y">
+        <edittype widgetv2type="TextEdit" name="Obs_HauteurY">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="X">
@@ -117,11 +117,15 @@
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v="&quot;Obs_Rotation&quot;"/>
+              <prop k="angle_dd_field" v=""/>
+              <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="5,9,236,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="Symbole/fromQgis/symbole_bg_v01.svg"/>
+              <prop k="name" v=""/>
               <prop k="name_dd_active" v="1"/>
-              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '.svg'"/>
+              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_pp_x_010.svg'&#xa;-- &quot;CodeSymbole&quot;  || '_pp_x_010.svg'"/>
               <prop k="name_dd_field" v=""/>
               <prop k="name_dd_useexpr" v="1"/>
               <prop k="offset" v="0,0"/>
@@ -133,6 +137,26 @@
               <prop k="outline_width_unit" v="MapUnit"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="2.5"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.02"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -344,9 +368,9 @@
       <aliases>
         <alias field="CodeSymbole" index="0" name=""/>
         <alias field="EchelleRepresentation" index="1" name=""/>
-        <alias field="Rotation" index="2" name=""/>
-        <alias field="Echelle_X" index="3" name=""/>
-        <alias field="Echelle_Y" index="4" name=""/>
+        <alias field="Obs_Rotation" index="2" name=""/>
+        <alias field="Obs_LargeurX" index="3" name=""/>
+        <alias field="Obs_HauteurY" index="4" name=""/>
         <alias field="X" index="5" name=""/>
         <alias field="Y" index="6" name=""/>
       </aliases>
@@ -357,12 +381,12 @@
         <columns>
           <column width="296" hidden="0" type="field" name="CodeSymbole"/>
           <column width="-1" hidden="0" type="field" name="EchelleRepresentation"/>
-          <column width="-1" hidden="0" type="field" name="Rotation"/>
-          <column width="-1" hidden="0" type="field" name="Echelle_X"/>
-          <column width="-1" hidden="0" type="field" name="Echelle_Y"/>
           <column width="-1" hidden="0" type="field" name="X"/>
           <column width="-1" hidden="0" type="field" name="Y"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="Obs_Rotation"/>
+          <column width="-1" hidden="0" type="field" name="Obs_LargeurX"/>
+          <column width="-1" hidden="0" type="field" name="Obs_HauteurY"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -395,9 +419,9 @@ def my_form_open(dialog, layer, feature):
       <defaults>
         <default field="CodeSymbole" expression=""/>
         <default field="EchelleRepresentation" expression=""/>
-        <default field="Rotation" expression=""/>
-        <default field="Echelle_X" expression=""/>
-        <default field="Echelle_Y" expression=""/>
+        <default field="Obs_Rotation" expression=""/>
+        <default field="Obs_LargeurX" expression=""/>
+        <default field="Obs_HauteurY" expression=""/>
         <default field="X" expression=""/>
         <default field="Y" expression=""/>
       </defaults>

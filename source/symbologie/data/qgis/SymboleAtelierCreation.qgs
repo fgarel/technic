@@ -90,7 +90,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="1x1" visible="1">
+  <Composer title="1x1" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="2500" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="2500" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -160,7 +160,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.148511" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2500" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="2500" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.238925" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2500" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="2500" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -298,8 +298,6 @@
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -686,8 +684,6 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1096,8 +1092,6 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
@@ -1486,8 +1480,6 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp type="randomcolors" name="[source]"/>
-        <invertedcolorramp value="0"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
       </renderer-v2>

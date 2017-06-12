@@ -5,16 +5,16 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationNoeud20170529105839690" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationNoeud&quot; (geometry) sql=" name="SymboleCreationNoeud">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationNoeud20170529105839690" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationNoeud&quot; (geometry) sql=" name="SymboleCreationNoeud">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationTexte20170612150607373" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationTexte&quot; (geometry) sql=" name="SymboleCreationTexte">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationTexte20170612150607373" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationTexte&quot; (geometry) sql=" name="SymboleCreationTexte">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationFace20170612150607366" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Polygon table=&quot;stockage&quot;.&quot;SymboleCreationFace&quot; (geometry) sql=" name="SymboleCreationFace">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationFace20170612150607366" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Polygon table=&quot;stockage&quot;.&quot;SymboleCreationFace&quot; (geometry) sql=" name="SymboleCreationFace">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationArc20170612150607356" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=LineString table=&quot;stockage&quot;.&quot;SymboleCreationArc&quot; (geometry) sql=" name="SymboleCreationArc">
+    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationArc20170612150607356" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=LineString table=&quot;stockage&quot;.&quot;SymboleCreationArc&quot; (geometry) sql=" name="SymboleCreationArc">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -69,23 +69,23 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleCreationNoeud" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SymboleCreationNoeud" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="SymboleCreationNoeud20170529105839690" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleCreationTexte" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SymboleCreationTexte" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="SymboleCreationTexte20170612150607373" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleCreationFace" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SymboleCreationFace" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="SymboleCreationFace20170612150607366" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleCreationArc" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SymboleCreationArc" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="SymboleCreationArc20170612150607356" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -228,13 +228,14 @@
         <edittype widgetv2type="TextEdit" name="Y_fin">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="st_asewkt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 attr="CodeRepresentation" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="Normalise2BasGauche" label="Normalise2BasGauche"/>
-          <category render="false" symbol="1" value="NormaliseBasGauche" label="NormaliseBasGauche"/>
-          <category render="false" symbol="2" value="NormaliseCentreCentre" label="NormaliseCentreCentre"/>
-          <category render="true" symbol="3" value="" label=""/>
+          <category render="false" symbol="0" value="" label=""/>
+          <category render="true" symbol="1" value="L4T_pp_x_010" label="L4T_pp_x_010"/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -245,7 +246,7 @@
               <prop k="customdash_unit" v="MapUnit"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,0,0,255"/>
+              <prop k="line_color" v="228,65,158,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.02"/>
               <prop k="line_width_unit" v="MapUnit"/>
@@ -265,44 +266,6 @@
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="line_color" v="255,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.02"/>
-              <prop k="line_width_unit" v="MapUnit"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="square"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MapUnit"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,0,0,255"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.02"/>
-              <prop k="line_width_unit" v="MapUnit"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="3">
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="square"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="customdash_unit" v="MapUnit"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="228,65,158,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.02"/>
               <prop k="line_width_unit" v="MapUnit"/>
@@ -512,6 +475,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -537,7 +501,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="CodeRepresentation" index="1" name=""/>
@@ -547,11 +511,12 @@
         <alias field="Y_ini" index="5" name=""/>
         <alias field="X_fin" index="6" name=""/>
         <alias field="Y_fin" index="7" name=""/>
+        <alias field="st_asewkt" index="8" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="952631296">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="184" hidden="0" type="field" name="CodeRepresentation"/>
@@ -562,12 +527,13 @@
           <column width="-1" hidden="0" type="field" name="X_fin"/>
           <column width="-1" hidden="0" type="field" name="Y_fin"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="st_asewkt"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -600,6 +566,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Y_ini" expression=""/>
         <default field="X_fin" expression=""/>
         <default field="Y_fin" expression=""/>
+        <default field="st_asewkt" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -645,19 +612,21 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="CouleurRepresentation2">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="st_asewkt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 attr="CodeRepresentation" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="Normalise2BasGauche" label="Normalise2BasGauche"/>
-          <category render="false" symbol="1" value="NormaliseBasGauche" label="NormaliseBasGauche"/>
-          <category render="false" symbol="2" value="NormaliseCentreCentre" label="NormaliseCentreCentre"/>
-          <category render="false" symbol="3" value="" label=""/>
+          <category render="false" symbol="0" value="" label=""/>
+          <category render="false" symbol="1" value="Autre_pp_x_010" label="Autre_pp_x_010"/>
+          <category render="true" symbol="2" value="L4T_pp_x_010" label="L4T_pp_x_010"/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="220,29,80,0"/>
+              <prop k="color" v="206,227,128,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -672,7 +641,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="58,204,165,0"/>
+              <prop k="color" v="255,255,255,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -687,22 +656,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="114,78,231,0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.02"/>
-              <prop k="outline_width_unit" v="MapUnit"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="206,227,128,255"/>
+              <prop k="color" v="255,255,255,0"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -909,6 +863,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -934,18 +889,19 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="CodeRepresentation" index="1" name=""/>
         <alias field="CouleurRepresentation" index="2" name=""/>
         <alias field="DimensionEchelleRepresentation" index="3" name=""/>
         <alias field="CouleurRepresentation2" index="4" name=""/>
+        <alias field="st_asewkt" index="5" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="7733248">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="218" hidden="0" type="field" name="CodeRepresentation"/>
@@ -953,12 +909,13 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="DimensionEchelleRepresentation"/>
           <column width="-1" hidden="0" type="field" name="CouleurRepresentation2"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="st_asewkt"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -988,6 +945,7 @@ def my_form_open(dialog, layer, feature):
         <default field="CouleurRepresentation" expression=""/>
         <default field="DimensionEchelleRepresentation" expression=""/>
         <default field="CouleurRepresentation2" expression=""/>
+        <default field="st_asewkt" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -1040,13 +998,81 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
-        <rules key="{9a5784b8-fd8c-4454-b6fc-202d4b2cab7e}">
-          <rule filter=" &quot;id&quot; = 41 " key="{0e76c902-05df-40d8-88a0-b8d862126c7c}" symbol="0"/>
-          <rule checkstate="0" filter=" &quot;id&quot; = 25" key="{036d6fa8-7c2d-421e-9b15-3836545d4f6e}" symbol="1"/>
-          <rule checkstate="0" key="{a2210f3a-85d9-4382-b293-16a742f0e9b5}" symbol="2"/>
-        </rules>
+      <renderer-v2 attr="CodeRepresentation" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
+        <categories>
+          <category render="true" symbol="0" value="L4T_pp_x_010" label="L4T_pp_x_010"/>
+          <category render="false" symbol="1" value="Noeud" label="Noeud"/>
+          <category render="false" symbol="2" value="" label=""/>
+        </categories>
         <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="150,214,124,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="outline_color" v="12,89,205,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.015"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MapUnit"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.05"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="214,220,87,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="outline_color" v="12,89,205,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MapUnit"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.02"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="39,95,238,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="outline_color" v="12,89,205,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.015"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MapUnit"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.05"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
@@ -1069,51 +1095,11 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="85,250,173,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="230,117,225,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-        </symbols>
+        </source-symbol>
+        <colorramp type="randomcolors" name="[source]"/>
+        <invertedcolorramp value="0"/>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -1421,26 +1407,27 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Valeur">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="st_asewkt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 attr="CodeRepresentation" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="Normalise2BasGauche" label="Normalise2BasGauche"/>
-          <category render="false" symbol="1" value="NormaliseBasGauche" label="NormaliseBasGauche"/>
-          <category render="false" symbol="2" value="NormaliseCentreCentre" label="NormaliseCentreCentre"/>
-          <category render="false" symbol="3" value="" label=""/>
+          <category render="false" symbol="0" value="" label=""/>
+          <category render="true" symbol="1" value="L4T_pp_x_010" label="L4T_pp_x_010"/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="84,216,18,0"/>
+              <prop k="color" v="211,125,107,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,0"/>
+              <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1455,7 +1442,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="142,15,201,0"/>
+              <prop k="color" v="224,72,128,0"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1463,50 +1450,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="0,0,0,0"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="98,192,210,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,0"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="211,125,107,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1720,6 +1663,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -1745,7 +1689,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="CodeRepresentation" index="1" name=""/>
@@ -1753,11 +1697,12 @@ def my_form_open(dialog, layer, feature):
         <alias field="DimensionEchelleRepresentation" index="3" name=""/>
         <alias field="PoliceRepresentation" index="4" name=""/>
         <alias field="Valeur" index="5" name=""/>
+        <alias field="st_asewkt" index="6" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="80">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="208" hidden="0" type="field" name="CodeRepresentation"/>
@@ -1766,12 +1711,13 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="PoliceRepresentation"/>
           <column width="-1" hidden="0" type="field" name="Valeur"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="st_asewkt"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -1802,6 +1748,7 @@ def my_form_open(dialog, layer, feature):
         <default field="DimensionEchelleRepresentation" expression=""/>
         <default field="PoliceRepresentation" expression=""/>
         <default field="Valeur" expression=""/>
+        <default field="st_asewkt" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>

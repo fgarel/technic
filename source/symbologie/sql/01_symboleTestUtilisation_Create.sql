@@ -90,9 +90,9 @@ CREATE table "SymboleTest"
 (
   "CodeSymbole" text,
   "EchelleRepresentation" text,
-  "Rotation" numeric,
-  "Echelle_X" numeric,
-  "Echelle_Y" numeric,
+  "Obs_Rotation" numeric,
+  "Obs_LargeurX" numeric,
+  "Obs_HauteurY" numeric,
   "X" numeric,
   "Y" numeric
 )
