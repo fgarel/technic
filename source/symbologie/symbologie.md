@@ -1,17 +1,11 @@
 # Symbologie et cahier des charges topo
 
 
-Actuellement les infos relatives aux symboles topo sont disséminés un peu partout :
 
- - ~/Documents/technic/source/Symbologie
- - ~/Documents/documentation/GTReseaux/DXFVersRTGEVersPCRS
- - ~/f/CARTOGRAPHIE/Administratif/marche_prestations_topo_2015/CCTP
- - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/autres
- - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/levetopo
+## Introduction
 
+### Objectif
 
-
-# Objectif
 Création d'une bibliotheque de symboles
 avec un listing de ces symbole et un atlas de ces différents symboles
 
@@ -23,16 +17,66 @@ svg, dxf, png
  - Utilisation sous QGIS, AutoCAD, Mapserver
  - Création de l'atlas
 
+### Documentation
 
-# Création dessin du symbole
+Actuellement les infos relatives aux symboles topo sont disséminés un peu partout :
 
-Il y a plusieurs façons de créer un symbole ou une série de symbole.
-et cela est plus ou moins automatisable
+ - ~/Documents/technic/source/Symbologie
+ - ~/Documents/documentation/GTReseaux/DXFVersRTGEVersPCRS
+ - ~/f/CARTOGRAPHIE/Administratif/marche_prestations_topo_2015/CCTP
+ - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/autres
+ - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/leveto
 
 
-## Dessin avec Inkscape
+## Création, dessin du symbole
 
-## Dessin avec QGis
+Un symbole peut etre recupéré à partir d'un existant ou il peut etre créé de toutes pieces.
+
+Cependant, il faut savoir que le symbole devra etre "normé" pour pouvoir etre utilisé.
+
+Normé, cela veut dire que le symbole de base devra respecter une dimension 1x1, car la mise à la dimension réelle se fera avec qgis.
+
+Par exemple, un symbole L3T de base sera dessiné avec une dimension de 1m par 1m, mais par contre, en ce qui concerne son insertion, parce que cet objet est tres souvent levé par 3 points, le symbole sera très souvent inséré avec un facteur "scaleX" et un facteur "scaleY".
+Les dimensions des plaques pour les chambres L0T, L1T, L2T, .... sont ici :
+http://gisone.free.fr/produits/catalogue/RESEAU-SEC.pdf
+
+Autre exemple un peu différent, une fleche directionnelle (voirie / signalisation horizontale), parce que cet objet est souvent levé par 2 points, le symbole de base sera inséré avec un seul facteur d'echelle "scaleXY". Il faut donc que le symbole de base respecte une emprise max 1x1, mais il ne faut pas que le symbole soit deformé.
+
+Il faut donc que les symboles soient classées selon deifférents groupes :
+des symboles dont la dimension réelle ou dont la représentative est fixe à une echelle donnée (objet levé par un point, ex poteau incendie)
+des symboles etirables selon un seul facteur d'echelle (objet levé par deux points, ex regard rond levé par centre plus un point sur la circonférence, regard carre levé par les deux extrémités d'une diagonale, fleches directionnelle, ..)
+des symboles étirables selon deux facteurs d'echelle (objet levé par trois points, ex regard rectangulaire)
+
+Si on recupere un symbole svg à partir d'une source externe, il faudra donc "normaliser" ce symbole suivant l'usage que l'on en fera.
+
+Si on souhaite créer un symbole à partir de rien, il y a plusieurs façons de créer un symbole ou une série de symbole.
+Et la creation de plusieurs symboles quasi-identiques est plus ou moins automatisable.
+
+
+### Récupération d'un fichier svg
+
+Il est possible de recupérer des fichiers de symboles à paritr de plusieurs sources :
+https://thenounproject.com
+https://commons.wikimedia.org/wiki/Category:Road_signs_of_France_by_number?uselang=fr
+http://www.equipementsdelaroute.equipement.gouv.fr/IMG/pdf/Arrete1967_2annexe_vc20120402_cle03791b.pdf
+http://www.equipementsdelaroute.equipement.gouv.fr/IMG/pdf/IISR_7ePARTIE_VC_20160215_cle217e65.pdf
+https://fr.wikipedia.org/wiki/Fl%C3%A8che_directionnelle_en_France
+https://commons.wikimedia.org/wiki/Category:Diagrams_of_road_signs_of_France?uselang=fr
+
+https://upload.wikimedia.org/wikipedia/commons/f/f3/Ligne-d%27effet-de-feux-avec-sas.svg
+https://commons.wikimedia.org/wiki/Category:Disabled_persons%27_vehicle_parking_road_marking
+https://commons.wikimedia.org/wiki/Category:Disabled_persons%27_vehicle_parking_road_marking_diagrams
+https://upload.wikimedia.org/wikipedia/commons/f/fe/Picto-voiture-%C3%A9lectrique.svg
+
+https://upload.wikimedia.org/wikipedia/commons/a/af/Fl%C3%A8ches-directionnelles.svg
+https://upload.wikimedia.org/wikipedia/commons/a/aa/Fl%C3%A8che-dir-cot%C3%A9e.svg
+https://upload.wikimedia.org/wikipedia/commons/f/f0/Fl%C3%A8che-bidir-cot%C3%A9e.svg?uselang=fr
+https://upload.wikimedia.org/wikipedia/commons/c/c9/Fl%C3%A8che.svg
+
+
+### Dessin avec Inkscape
+
+### Dessin avec QGis
 
 Un fichier qgis pour créer des symboles
 /home/fred/Documents/technic/source/symbologie/data/qgis/SymboleAtelierCreation.qgs
@@ -44,19 +88,19 @@ La table symboleCreationNoeud provient de la feuille symboleCreationNoeud
 La table symboleTest provient de la feuille symboleTest
 
 
-### Dessin du symbole
+#### Dessin du symbole
 Le symbole est dessiné avec les primitives noeud arc facteur
 
 Dans les noeuds, si un symbole svg doit etre inséré, alors, il faut choisir la taille en multipliant par le coefficient 2.5
 Par exemple, si on veut que le symbole fasse 1 m, alors il faut insérer le symbole en mettant la taille à 2.5 unité terrain.
 
-### Export du symbole au format svg
+#### Export du symbole au format svg
 Dans le composeur d'impression (choisir le modele 1x1), on peut exporter le fichier au format svg
 
 L'export se fait dans le repertoire :
 /source/symbologie/data/Symbole/fromQgis/
 
-### Transformation du fichier xml
+#### Transformation du fichier xml
 Le xml doit etre transformé pour etre utilisé :
 - transformation du blanc en transparent
 - faire en sorte que les épaisseurs des traits, les couleurs puissent être piloté à partir de qgis
@@ -66,22 +110,22 @@ Pour faire ces différentes transformations, des scripts sont utilisés :
 
 
 
-## Dessin avec imagemagick
+### Dessin avec imagemagick
 
-## Automatisation de la création des symbole
+### Automatisation de la création des symbole
 
 Pourquoi automatiser ?
 Création de plusieurs symboles "quasi-identiques" pour :
 - une même famille
 - symboles redimensionnables
 
-# Transformation des symboles en différents Format
+## Transformation des symboles en différents Format
 
-## de QGis à SVG
+### de QGis à SVG
 
-## de QGIS à dxf
+### de QGIS à dxf
 
-# Utilisation
+## Utilisation
 
 Un fichier qgis pour tester l'utilisation des symboles
 /home/fred/Documents/technic/source/symbologie/data/qgis/SymboleTestUtilisation.qgs
@@ -92,13 +136,13 @@ Les données ont été initialement paramétrées au sein du fichier calc
 La table symboleCreationNoeud provient de la feuille symboleCreationNoeud
 La table symboleTest provient de la feuille symboleTest
 
-# Création de l'atlas sous QGis
+## Création de l'atlas sous QGis
 
 Un fichier qgis pour lister les symboles
 /home/fred/Documents/technic/source/symbologie/data/qgis/SymboleAtlas.qgs
 
 
-## Symbole redimensionnable sous QGis
+### Symbole redimensionnable sous QGis
 
 Etude de faisabilité pour utiliser des symboles svg sous qgis
 
@@ -111,7 +155,7 @@ le travail continue avec les scripts strech_symbol.py
 
 
 
-### 1er mail de sebastien
+#### 1er mail de sebastien
 
 
 
