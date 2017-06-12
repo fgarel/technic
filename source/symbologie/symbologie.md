@@ -1,7 +1,6 @@
 # Symbologie et cahier des charges topo
 
 
-
 ## Introduction
 
 ### Objectif
@@ -36,7 +35,7 @@ Cependant, il faut savoir que le symbole devra etre "normé" pour pouvoir etre u
 
 Normé, cela veut dire que le symbole de base devra respecter une dimension 1x1, car la mise à la dimension réelle se fera avec qgis.
 
-Par exemple, un symbole L3T de base sera dessiné avec une dimension de 1m par 1m, mais par contre, en ce qui concerne son insertion, parce que cet objet est tres souvent levé par 3 points, le symbole sera très souvent inséré avec un facteur "scaleX" et un facteur "scaleY".
+Par exemple, un symbole L3T de base sera dessiné avec une dimension de 1m par 1m, mais par contre, en ce qui concerne son insertion, parce que cet objet est tres souvent levé par 3 points, le symbole sera inséré avec un facteur "scaleX" et un facteur "scaleY".
 Les dimensions des plaques pour les chambres L0T, L1T, L2T, .... sont ici :
 http://gisone.free.fr/produits/catalogue/RESEAU-SEC.pdf
 

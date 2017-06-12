@@ -10,21 +10,7 @@ SET search_path = stockage, public;
 -- Creation des tables --
 -- ------------------- --
 
-
-DROP table if exists "SymboleTest" cascade;
-CREATE table "SymboleTest"
-(
-  "CodeSymbole" text,
-  "EchelleRepresentation" text,
-  "Rotation" numeric,
-  "Echelle_X" numeric,
-  "Echelle_Y" numeric,
-  "X" numeric,
-  "Y" numeric
-)
-with (oids=True);
-
-
+-- Table SymboleCreationNoeud
 
 DROP table if exists "SymboleCreationNoeud" cascade;
 CREATE table "SymboleCreationNoeud"
@@ -39,6 +25,10 @@ CREATE table "SymboleCreationNoeud"
 )
 with (oids=True);
 
+select Addgeometrycolumn('SymboleCreationNoeud', 'geometry', 3946, 'POINT', 2);
+
+
+-- Table SymboleCreationArc
 
 DROP table if exists "SymboleCreationArc" cascade;
 CREATE table "SymboleCreationArc"
@@ -50,10 +40,15 @@ CREATE table "SymboleCreationArc"
   "X_ini" numeric,
   "Y_ini" numeric,
   "X_fin" numeric,
-  "Y_fin" numeric
+  "Y_fin" numeric,
+  "st_asewkt" text
 )
 with (oids=True);
 
+select Addgeometrycolumn('SymboleCreationArc', 'geometry', 3946, 'LINESTRING', 2);
+
+
+-- Table SymboleCreationFace
 
 DROP table if exists "SymboleCreationFace" cascade;
 CREATE table "SymboleCreationFace"
@@ -62,10 +57,15 @@ CREATE table "SymboleCreationFace"
   "CodeRepresentation" text,
   "CouleurRepresentation" text,
   "DimensionEchelleRepresentation" text,
-  "CouleurRepresentation2" text
+  "CouleurRepresentation2" text,
+  "st_asewkt" text
 )
 with (oids=True);
 
+select Addgeometrycolumn('SymboleCreationFace', 'geometry', 3946, 'POLYGON', 2);
+
+
+-- Table SymboleCreationTexte
 
 DROP table if exists "SymboleCreationTexte" cascade;
 CREATE table "SymboleCreationTexte"
@@ -75,6 +75,30 @@ CREATE table "SymboleCreationTexte"
   "CouleurRepresentation" text,
   "DimensionEchelleRepresentation" text,
   "PoliceRepresentation" text,
-  "Valeur" text
+  "Valeur" text,
+  "st_asewkt" text
 )
 with (oids=True);
+
+select Addgeometrycolumn('SymboleCreationTexte', 'geometry', 3946, 'POINT', 2);
+
+
+-- Table SymboleTest
+
+DROP table if exists "SymboleTest" cascade;
+CREATE table "SymboleTest"
+(
+  "CodeSymbole" text,
+  "EchelleRepresentation" text,
+  "Rotation" numeric,
+  "Echelle_X" numeric,
+  "Echelle_Y" numeric,
+  "X" numeric,
+  "Y" numeric
+)
+with (oids=True);
+
+select Addgeometrycolumn('SymboleTest', 'geometry', 3946, 'POINT', 2);
+
+
+--select * from "SymboleTest";

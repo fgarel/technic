@@ -99,7 +99,16 @@ INSERT INTO "SymboleCreationNoeud" VALUES (79, 'Noeud', '255,255,255', '200', 0,
 INSERT INTO "SymboleCreationNoeud" VALUES (80, 'Noeud', '255,255,255', '200', 0, 0.75, -1);
 INSERT INTO "SymboleCreationNoeud" VALUES (81, 'Noeud', '255,255,255', '200', 0, 1, -1);
 
+INSERT INTO "SymboleCreationNoeud" VALUES (82, 'L4T_pp_x_010', '255,255,255', '200', 0, 0, 0);
 
+INSERT INTO "SymboleCreationArc" VALUES (1, 'L4T_pp_x_010', '255,255,255', '200', 0.25, 1, 0.25, 0, 'SRID=3946;LINESTRING(0.25 1,0.25 0)');
+INSERT INTO "SymboleCreationArc" VALUES (2, 'L4T_pp_x_010', '255,255,255', '200', 0.5, 1, 0.5, 0, 'SRID=3946;LINESTRING(0.5 1,0.5 0)');
+INSERT INTO "SymboleCreationArc" VALUES (3, 'L4T_pp_x_010', '255,255,255', '200', 0.75, 1, 0.75, 0, 'SRID=3946;LINESTRING(0.75 1,0.75 0)');
+
+INSERT INTO "SymboleCreationFace" VALUES (1, 'L4T_pp_x_010', '255,255,255', '200', '255,255,255', 'SRID=3946;POLYGON((0 0,0 1,1 1,1 0,0 0))');
+INSERT INTO "SymboleCreationFace" VALUES (2, 'Autre_pp_x_010', '255,255,255', '200', '255,255,255', 'SRID=3946;POLYGON((-0.5 0.5,0.5 0.5,0.5 -0.5,-0.5 -0.5,-0.5 0.5))');
+
+INSERT INTO "SymboleCreationTexte" VALUES (1, 'L4T_pp_x_010', '255,255,255', '200', 'Source Code Pro for Powerline', 'L4T', 'SRID=3946;POINT(0.5 0.5)');
 
 
 

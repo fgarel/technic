@@ -212,6 +212,7 @@ if __name__ == '__main__':
     except:
         #print("Ce script s'utilise ainsi : './prepare_svg_pour_qgis.py ../data/template/01_Porte_PoussantGauche.svg'")
         print("Ce script s'utilise ainsi : './5_prepare_svg_pour_qgis.py ../data/Symbole/fromQgis/symbole_bg_v01.svg'")
+        print("Ce script s'utilise ainsi : './5_prepare_svg_pour_qgis.py ../data/Symbole/fromQgis/l4t_pp_x_010.svg'")
         sys.exit()
 
     # A partir des paramètres, on en déduit le nom du fichier svg qui sera generé
