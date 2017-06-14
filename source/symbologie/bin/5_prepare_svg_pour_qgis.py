@@ -63,6 +63,10 @@ def prepare_svg_1ere_passe(inFile, outFile):
             #print('path {}, {}'.format(element.tag, \
             #                           element.attrib))
             pass
+        elif element.findall('{http://www.w3.org/2000/svg}text'):
+            #print('path {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            pass
         else:
             #print('supperflu {}, {}'.format(element.tag, \
             #                                element.attrib))
