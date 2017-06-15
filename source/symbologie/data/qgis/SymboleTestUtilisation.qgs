@@ -13,10 +13,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379274.53861155500635505</xmin>
-      <ymin>5226374.99204532243311405</ymin>
-      <xmax>1379275.89062434760853648</xmax>
-      <ymax>5226376.20068312622606754</ymax>
+      <xmin>1379276.3180411159992218</xmin>
+      <ymin>5226375.9335626307874918</ymin>
+      <xmax>1379287.13414345681667328</xmax>
+      <ymax>5226385.60266506113111973</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -116,7 +116,7 @@
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v=""/>
               <prop k="name_dd_active" v="1"/>
-              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixeFromXY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'&#xa;--&quot;CodeSymbole&quot;  || '_' || suffixeFromXY( 3,5) || '.svg'"/>
+              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixe_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'&#xa;--&quot;CodeSymbole&quot;  || '_' ||  suffixe_from_XY( 3,5) || '.svg'"/>
               <prop k="name_dd_field" v=""/>
               <prop k="name_dd_useexpr" v="1"/>
               <prop k="offset" v="0,0"/>
@@ -129,7 +129,7 @@
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="2.5"/>
               <prop k="size_dd_active" v="1"/>
-              <prop k="size_dd_expression" v="echelleInsertionFromXY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;)"/>
+              <prop k="size_dd_expression" v="taille_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;)"/>
               <prop k="size_dd_field" v=""/>
               <prop k="size_dd_useexpr" v="1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>

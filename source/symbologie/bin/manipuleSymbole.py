@@ -236,6 +236,16 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
+    # Ajout de la transformation de mise a l'echelle pour tous les textes.
+    for text in root.iter('{http://www.w3.org/2000/svg}text'):
+        text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
+                                         str(param['Svg_ScaleY']) + ', ' +
+                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+        # text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
+        #                                  str(param['Svg_ScaleY']) + ', ' +
+        #                                  str(1250*(1-abs(param['Svg_ScaleX']))) + ' ,' +
+        #                                  str(1000*(-param['Svg_ScaleY']) + 625 ) + ')')
     # Ajout de la transformation de mise a l'echelle pour tous les conteneur de textes.
     for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
         flowRoot.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
@@ -249,12 +259,6 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
         # Remise a l'echelle 1,1 donc pas d'echelle des text dans les flowRoot ?
         for text in flowRoot.iter('{http://www.w3.org/2000/svg}text'):
             text.set('transform','')
-
-    for text in root.iter('{http://www.w3.org/2000/svg}text'):
-        text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
-                                         str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-abs(param['Svg_ScaleX']))) + ' ,' +
-                                         str(1000*(-param['Svg_ScaleY']) + 625 ) + ')')
 
     #Ecriture du fichier en sortie
     tree.write(outFile)
@@ -281,7 +285,7 @@ def prepare_svg_1ere_passe(inFile, outFile):
             #                           element.attrib))
             pass
         elif element.findall('{http://www.w3.org/2000/svg}text'):
-            #print('path {}, {}'.format(element.tag, \
+            #print('text {}, {}'.format(element.tag, \
             #                           element.attrib))
             pass
         else:
@@ -319,7 +323,7 @@ def prepare_svg_2de_passe(inFile, outFile):
 
 def prepare_svg_3eme_passe(inFile, outFile):
     """
-
+    Modification de la Largeur, Hauteur et de la viewbox
     """
     # Lecture du fichier SVG (comme un XML) en entree
     tree = et.parse(inFile)
@@ -333,6 +337,27 @@ def prepare_svg_3eme_passe(inFile, outFile):
     # Modification de la viewbox
     root.set('viewBox', '0 0 2500 2500')
 
+    # Modification de la matrice de transformation du groupe contenant le texte
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+        if element.findall('{http://www.w3.org/2000/svg}path'):
+            element.set('transform','matrix(1, 0, 0, 1, ' +
+                                             str(0) + ' ,' +
+                                             str(0) + ')')
+            pass
+        elif element.findall('{http://www.w3.org/2000/svg}text'):
+            element.set('transform','matrix(1, 0, 0, 1, ' +
+                                             str(0) + ' ,' +
+                                             str(0) + ')')
+            pass
+        else:
+            print('supperflu {}, {}'.format(element.tag, \
+                                            element.attrib))
+            #
+            # https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
+            #
+            element.getparent().remove(element)
+
+
     #Ecriture du fichier en sortie
     tree.write(outFile)
 
@@ -345,6 +370,8 @@ def prepare_svg_4eme_passe(inFile, outFile):
     tree = et.parse(inFile)
     # Mise en memoire
     root = tree.getroot()
+
+
 
 
     #Ecriture du fichier en sortie
@@ -419,7 +446,7 @@ def main():
 
     ## 2de passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010_2', r'pp_x_010', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'pp_x_010_2', r'pp_x_010_3', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("2de passe  => {}".format(fichierSortie))
@@ -427,7 +454,7 @@ def main():
 
     ## 3eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010', r'pp_x_010_3', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'pp_x_010_3', r'pp_x_010_4', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("3eme passe => {}".format(fichierSortie))
@@ -435,7 +462,7 @@ def main():
 
     ## 4eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010_3', r'pp_x_010', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'pp_x_010_4', r'pp_x_010', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("4eme passe => {}".format(fichierSortie))
@@ -446,8 +473,8 @@ def main():
     #fichierSortieSansChemin = re.sub(r'pp_x_010_2', r'pp_x_010_4', fichierEntreeSansChemin)
     #fichierEntree = cheminEntree + fichierEntreeSansChemin
     #fichierSortie = cheminSortie + fichierSortieSansChemin
-    print("5eme passe => {}".format(fichierSortie))
     #print("5eme passe => {}".format(fichierSortie))
+    print("5eme passe => {}".format(fichierSortie))
     prepare_svg_5eme_passe(cheminEntree, cheminSortie, fichierEntreeSansChemin)
 
 

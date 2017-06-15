@@ -4,34 +4,34 @@
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel">
 
-<g fill="#000000" fill-opacity="0" stroke="none" transform="matrix(1,0,0,1,0,0)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
+<g fill="#000000" fill-opacity="0" stroke="none" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
 <path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M0,0 L2500,0 L2500,2500 L0,2500 L0,0" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="20" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="20" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
 <path vector-effect="none" fill-rule="evenodd" d="M1500,250 L1500,1250" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 <path vector-effect="none" fill-rule="evenodd" d="M1750,250 L1750,1250" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 <path vector-effect="none" fill-rule="evenodd" d="M2000,250 L2000,1250" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="#ffffff" fill-opacity="0" stroke="#000000" stroke-opacity="1" stroke-width="20" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
+<g fill="#ffffff" fill-opacity="0" stroke="#000000" stroke-opacity="1" stroke-width="20" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
 <path vector-effect="none" fill-rule="evenodd" d="M1250,1250 L1250,250 L2250,250 L2250,1250 L1250,1250" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="#e04880" fill-opacity="0" stroke="#000000" stroke-opacity="0" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
+<g fill="#e04880" fill-opacity="0" stroke="#000000" stroke-opacity="0" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
 <path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1760,750 C1760,755.523 1755.52,760 1750,760 C1744.48,760 1740,755.523 1740,750 C1740,744.477 1744.48,740 1750,740 C1755.52,740 1760,744.477 1760,750 " transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="#96d67c" fill-opacity="1" stroke="#0c59cd" stroke-opacity="1" stroke-width="15" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
+<g fill="#96d67c" fill-opacity="1" stroke="#0c59cd" stroke-opacity="1" stroke-width="15" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
 <path vector-effect="none" fill-rule="evenodd" d="M1275,1250 C1275,1263.81 1263.81,1275 1250,1275 C1236.19,1275 1225,1263.81 1225,1250 C1225,1236.19 1236.19,1225 1250,1225 C1263.81,1225 1275,1236.19 1275,1250 " transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="#58d9dd" fill-opacity="0" stroke="#58d9dd" stroke-opacity="0.500008" stroke-width="50" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,1300.75,948.75)" font-family="Ubuntu" font-size="38.8056" font-weight="400" font-style="normal">
-<path vector-effect="none" fill-rule="nonzero" d="M60,0 L271,0 L271,-49 L117.5,-49 L117.5,-327 L60,-327 L60,0 M376.5,-126.5 L443.5,-215 C454.5,-232 466.5,-249 477,-265.5 L479.5,-265.5 C478.5,-246.5 477,-221.5 476.5,-202.5 L476.5,-126.5 L376.5,-126.5 M575.5,-126.5 L530.5,-126.5 L530.5,-318.5 L464,-318.5 L318,-121 L318,-82 L476.5,-82 L476.5,0 L530.5,0 L530.5,-82 L575.5,-82 L575.5,-126.5 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
+<g fill="#58d9dd" fill-opacity="0" stroke="#58d9dd" stroke-opacity="0.500008" stroke-width="50" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Noto Sans" font-size="31.75" font-weight="400" font-style="normal">
+<path vector-effect="none" fill-rule="nonzero" d="M60,0 L271,0 L271,-49 L117.5,-49 L117.5,-327 L60,-327 L60,0 M458.5,-38 C423,-38 396,-62 389,-118 C412,-145 437,-155 458.5,-155 C494.5,-155 516,-136.5 516,-98.5 C516,-59.5 490,-38 458.5,-38 M564,-288 C542.5,-308 511,-324 469,-324 C399,-324 333.5,-273 333.5,-149.5 C333.5,-42.5 392,6 459,6 C518,6 569.5,-35 569.5,-98.5 C569.5,-165 527.5,-197 470.5,-197 C442.5,-197 411.5,-182.5 387,-158.5 C389.5,-247 428.5,-277 473.5,-277 C496,-277 518.5,-267 533,-253 L564,-288 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)"/>
 </g>
 
-<g fill="#96d67c" fill-opacity="1" stroke="#33a02c" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1300.75,948.75)" font-family="Source Code Pro for Powerline" font-size="500" font-weight="630" font-style="normal">
-<text fill="#33a02c" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Source Code Pro for Powerline" font-size="500" font-weight="630" font-style="normal" transform="matrix(-0.167, 0, 0, 1.0, 1041.25 ,-375.0)">L4T</text>
+<g fill="#96d67c" fill-opacity="1" stroke="#33a02c" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1, 0, 0, 1, 0 ,0)" font-family="Source Code Pro for Powerline" font-size="500" font-weight="630" font-style="normal">
+<text fill="#33a02c" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="0" font-family="Source Code Pro for Powerline" font-size="500" font-weight="630" font-style="normal" transform="matrix(-0.167, 0, 0, 1.0, 1458.75 ,0.0)">L6T</text>
 </g>
 
 </g>

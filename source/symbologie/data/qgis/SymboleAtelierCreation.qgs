@@ -8,7 +8,7 @@
     <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationNoeud20170529105839690" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationNoeud&quot; (geometry) sql=" name="SymboleCreationNoeud">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationTexte20170612150607373" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationTexte&quot; (geometry) sql=" name="SymboleCreationTexte">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationTexte20170612150607373" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleCreationTexte&quot; (geometry) sql=" name="SymboleCreationTexte">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="SymboleCreationFace20170612150607366" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Polygon table=&quot;stockage&quot;.&quot;SymboleCreationFace&quot; (geometry) sql=" name="SymboleCreationFace">
@@ -22,10 +22,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-0.56559710124312312</xmin>
-      <ymin>-0.38821995971066781</ymin>
-      <xmax>0.53690289875687647</xmax>
-      <ymax>0.71428004028933179</ymax>
+      <xmin>-0.74788895033936176</xmin>
+      <ymin>-0.77611946451196701</ymin>
+      <xmax>1.33103922907200611</xmax>
+      <ymax>1.30280871489940031</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -74,8 +74,8 @@
         <legendlayerfile isInOverview="0" layerid="SymboleCreationNoeud20170529105839690" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="SymboleCreationTexte" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleCreationTexte" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="SymboleCreationTexte20170612150607373" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -90,7 +90,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="1x1" visible="0">
+  <Composer title="1x1" visible="1">
     <Composition resizeToContentsMarginLeft="2.775557561562891e-17" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{56b4da81-3022-46b6-8b61-8003720e98e6}" alignmentSnap="1" printResolution="254" paperWidth="250" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="250" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -160,7 +160,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="1.72401" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="250" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.4086" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" excludeFromExports="0" uuid="{56b4da81-3022-46b6-8b61-8003720e98e6}" height="250" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
