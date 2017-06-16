@@ -10,7 +10,7 @@ Les paramètres transmis sont :
 - le nom du fichier svg template
 
 Exemple d'utilisation
-python ./manipuleSymbole.py ../data/Symbole/fromQgis/Grille_pp_x_010.svg
+python ./manipuleSymbole.py ../data/Symbole/fromQgis/Grille_original.svg
 """
 
 # Import
@@ -74,11 +74,16 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
         except ZeroDivisionError:
             Obs_RatioLabel = 999
     Obs_RatioLabel = '{:0>3}'.format(Obs_RatioLabel)
-
-    Obs_Ratio = round((max(abs(Obs_LargeurX), abs(Obs_HauteurY))
-                       / min(abs(Obs_LargeurX), abs(Obs_HauteurY))), 1)
-    Obs_InvRatio = round((min(abs(Obs_LargeurX), abs(Obs_HauteurY))
-                          / max(abs(Obs_LargeurX), abs(Obs_HauteurY))), 3)
+    try:
+        Obs_Ratio = round((max(abs(Obs_LargeurX), abs(Obs_HauteurY))
+                           / min(abs(Obs_LargeurX), abs(Obs_HauteurY))), 1)
+    except ZeroDivisionError:
+        Obs_Ratio = 999.9
+    try:
+        Obs_InvRatio = round((min(abs(Obs_LargeurX), abs(Obs_HauteurY))
+                              / max(abs(Obs_LargeurX), abs(Obs_HauteurY))), 3)
+    except ZeroDivisionError:
+        Obs_InvRatio = 999.9
 
     # On definit 8 zones : chaque quadrant est divisé en deux
     if (abs(Obs_LargeurX) >= abs(Obs_HauteurY)) and (Obs_LargeurX >= 0.0 and Obs_HauteurY >= 0.0):
@@ -236,13 +241,19 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
+    # Pour chacun des noeuds de type circle, transformation geometrique (etirement_x, etirement_y, translation)
+    for circle in root.iter('{http://www.w3.org/2000/svg}circle'):
+        circle.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
+                                         str(param['Svg_ScaleY']) + ', ' +
+                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
     # Pour chacun des noeuds de type text, transformation geometrique (etirement_x, etirement_y, translation)
     for text in root.iter('{http://www.w3.org/2000/svg}text'):
         text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
-    # Pour mémmoire (semble inutile) :
+    # Pour mémoire (semble inutile) :
     # Pour chacun des noeuds de type flowRoot, transformation geometrique (etirement_x, etirement_y, translation)
     #for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
     #    flowRoot.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
@@ -303,6 +314,14 @@ def prepare_svg_1ere_passe(inFile, outFile):
             #print('path {}, {}'.format(element.tag, \
             #                           element.attrib))
             pass
+        elif element.findall('{http://www.w3.org/2000/svg}rect'):
+            #print('rect {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            pass
+        elif element.findall('{http://www.w3.org/2000/svg}circle'):
+            #print('circle {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            pass
         elif element.findall('{http://www.w3.org/2000/svg}text'):
             #print('text {}, {}'.format(element.tag, \
             #                           element.attrib))
@@ -319,7 +338,7 @@ def prepare_svg_1ere_passe(inFile, outFile):
 
 def prepare_svg_2de_passe(inFile, outFile):
     """
-    Suppression des branches dont la couleur est blanche(ffffff) et opacity est 1
+    Suppression des branches dont la couleur est blanche(#ffffff) et opacity est 1
     """
     # Lecture du fichier SVG (comme un XML) en entree
     tree = et.parse(inFile)
@@ -376,15 +395,38 @@ def prepare_svg_4eme_passe(inFile, outFile):
     root = tree.getroot()
 
     for element in root.iter('{http://www.w3.org/2000/svg}path'):
-        #print('path {}, {}'.format(element.tag, \
-        #                           element.attrib))
         element.set('style', '')
-        element.set('fill', 'param(fill) #FFF')
-        element.set('stroke', 'param(outline) #000')
+        element.set('fill', 'param(fill) #ffffff')
+        element.set('fill-opacity', 'param(fill-opacity) 1')
+        element.set('stroke', 'param(outline) #000000')
         element.set('stroke-width', 'param(outline-width) 1')
+        #element.set('stroke-opacity', 'param(stroke-opacity) 1')
         #print('path {}, {}'.format(element.tag, \
         #                           element.attrib))
 
+    for element in root.iter('{http://www.w3.org/2000/svg}rect'):
+        element.set('style', '')
+        element.set('fill', 'param(fill) #ffffff')
+        element.set('fill-opacity', 'param(fill-opacity) 1')
+        element.set('stroke', 'param(outline) #000000')
+        element.set('stroke-width', 'param(outline-width) 1')
+        #element.set('stroke-opacity', 'param(stroke-opacity) 1')
+
+    for element in root.iter('{http://www.w3.org/2000/svg}circle'):
+        element.set('style', '')
+        element.set('fill', 'param(fill) #ffffff')
+        element.set('fill-opacity', 'param(fill-opacity) 1')
+        element.set('stroke', 'param(outline) #000000')
+        element.set('stroke-width', 'param(outline-width) 1')
+        #element.set('stroke-opacity', 'param(stroke-opacity) 1')
+
+    for element in root.iter('{http://www.w3.org/2000/svg}text'):
+        element.set('style', '')
+        element.set('fill', 'param(fill) #ffffff')
+        element.set('fill-opacity', 'param(fill-opacity) 1')
+        element.set('stroke', 'param(outline) #000000')
+        element.set('stroke-width', 'param(outline-width) 1')
+        #element.set('stroke-opacity', 'param(stroke-opacity) 1')
 
     # Ecriture du fichier en sortie
     tree.write(outFile)
@@ -395,9 +437,12 @@ def prepare_svg_5eme_passe(inPath, outPath, inFile):
     """
     fichierEntree = inPath + inFile
 
-    for Obs_LargeurX in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
-        for Obs_HauteurY in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
-
+    #for Obs_LargeurX in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
+    for X in range(-20, 21, 1):
+        Obs_LargeurX = X / 10.0
+        #for Obs_HauteurY in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
+        for Y in range(-20, 21, 1):
+            Obs_HauteurY = Y / 10.0
             # Les parametres de deformation sont calculés dans une autre fonction
             param = param_from_XY(Obs_LargeurX, Obs_HauteurY)
             nouveau_suffixe = param['Svg_Suffixe']
@@ -428,29 +473,34 @@ def main():
     un fichier svg modele, et plusieurs manipulations successives sont réalisées
     sur ce fichier de départ.
 
-    la première passe consiste à
+    - la première passe consiste à nettoyer/compacter le fichier svg original
 
-    la seconde passe permet
+    - la seconde passe continue le nettoyage pour supprimer les elements de couleur blanche...
 
-    la troisième passe
+    - la troisième passe permet de fixer les dimensions du symbole (2500 x 2500)
 
-    la quatrième passe
+    - la quatrième passe modifie les couleurs et les épaisseurs des elements dans le svg :
+      ces informations deviennent des paramètres et pourront être utilisés à partir de qgis
+
+    - la cinquième passe est celle qui va générer la série de symbole à partir de ce dernier modele.
+      pour x allant de -5 à 5, et y allant de -5 à 5, chaque symbole généré est personnalisé
+      grace à une matrice de transformation géométrique (ScaleX, 0, 0, ScaleY, TranslationX, TranslationY)
     """
 
     try:
         # Premier parametre : le nom du fichier svg a traiter (fichier template)
         # le fichier en entrée doit respecter quelques caractéristiques,
-        # par exemple, son nom doit finir par le suffixe _pp_x_010.svg
+        # par exemple, son nom doit finir par le suffixe _original.svg
         fichierEntree = str(sys.argv[1])
     except:
         print("Ce script s'utilise ainsi :")
-        print("python ./manipuleSymbole.py ../data/Symbole/fromQgis/Grille_pp_x_010.svg")
+        print("python ./manipuleSymbole.py ../data/Symbole/fromQgis/Grille_original.svg")
         return
 
     cheminEntree = '/'.join(fichierEntree.split('/')[0:-1]) + '/'
     cheminSortie = cheminEntree
     fichierEntreeSansChemin = fichierEntree.split('/')[-1]
-    fichierSortieSansChemin = re.sub(r'pp_x_010', r'pp_x_010_2', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'original', r'pp_x_010_2', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("1ere passe => {}".format(fichierSortie))
@@ -482,10 +532,6 @@ def main():
 
     ## 5eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    #fichierSortieSansChemin = re.sub(r'pp_x_010_2', r'pp_x_010_4', fichierEntreeSansChemin)
-    #fichierEntree = cheminEntree + fichierEntreeSansChemin
-    #fichierSortie = cheminSortie + fichierSortieSansChemin
-    #print("5eme passe => {}".format(fichierSortie))
     print("5eme passe => {}".format(fichierSortie))
     prepare_svg_5eme_passe(cheminEntree, cheminSortie, fichierEntreeSansChemin)
 

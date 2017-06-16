@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="SymboleTest20170526182050698" source="dbname='symbologie' host=localhost port=5432 user='fred' sslmode=disable key='oid' srid=3946 type=Point table=&quot;stockage&quot;.&quot;SymboleTest&quot; (geometry) sql=" name="SymboleTest">
+    <layer-tree-layer expanded="1" providerKey="spatialite" checked="Qt::Checked" id="symboletest20170616162422373" source="dbname='/home/fred/Documents/technic/source/symbologie/data/qgis/Test.sqlite' table=&quot;symboletest&quot; (geometry) sql=" name="symboletest">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -13,10 +13,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379274.94588787294924259</xmin>
-      <ymin>5226375.47352177929133177</ymin>
-      <xmax>1379276.29790066555142403</xmax>
-      <ymax>5226376.68215958308428526</ymax>
+      <xmin>1379275.46996228257194161</xmin>
+      <ymin>5226376.63383620977401733</ymin>
+      <xmax>1379279.60433728294447064</xmax>
+      <ymax>5226377.68383621051907539</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -37,30 +37,55 @@
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
-      <item>SymboleTest20170526182050698</item>
+      <item>symboletest20170616162422373</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SymboleTest" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="symboletest" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SymboleTest20170526182050698" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="symboletest20170616162422373" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
+  <mapcanvas>
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>0</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info/>
+  </mapcanvas>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
-        <xmin>1379266.875</xmin>
-        <ymin>5226362</ymin>
-        <xmax>1379383.625</xmax>
-        <ymax>5226388</ymax>
+        <xmin>1379260</xmin>
+        <ymin>5226359</ymin>
+        <xmax>1379386</xmax>
+        <ymax>5226391</ymax>
       </extent>
-      <id>SymboleTest20170526182050698</id>
-      <datasource>dbname='symbologie' host=localhost port=5432 user='fred' password='fred' sslmode=disable key='oid' srid=3946 type=Point table="stockage"."SymboleTest" (geometry) sql=</datasource>
+      <id>symboletest20170616162422373</id>
+      <datasource>dbname='./Test.sqlite' table="symboletest" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>SymboleTest</layername>
+      <layername>symboletest</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
@@ -73,7 +98,7 @@
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
-      <provider encoding="UTF-8">postgres</provider>
+      <provider encoding="UTF-8">spatialite</provider>
       <vectorjoins/>
       <layerDependencies/>
       <expressionfields/>
@@ -81,6 +106,9 @@
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <edittypes>
+        <edittype widgetv2type="TextEdit" name="oid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="CodeSymbole">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -108,7 +136,11 @@
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="158,33,200,140"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v="&quot;Obs_Rotation&quot;"/>
+              <prop k="angle_dd_field" v=""/>
+              <prop k="angle_dd_useexpr" v="1"/>
+              <prop k="color" v="158,33,200,75"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="crosses/Star1.svg"/>
               <prop k="name_dd_active" v="1"/>
@@ -118,14 +150,14 @@
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MapUnit"/>
-              <prop k="outline_color" v="243,242,0,255"/>
+              <prop k="outline_color" v="0,243,32,255"/>
               <prop k="outline_width" v="0.02"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MapUnit"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="1"/>
               <prop k="size_dd_active" v="1"/>
-              <prop k="size_dd_expression" v="taille_from_XY(  &quot;Obs_LargeurX&quot; , &quot;Obs_HauteurY&quot; )"/>
+              <prop k="size_dd_expression" v="2.5*taille_from_XY(  &quot;Obs_LargeurX&quot; , &quot;Obs_HauteurY&quot; )"/>
               <prop k="size_dd_field" v=""/>
               <prop k="size_dd_useexpr" v="1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -134,7 +166,7 @@
             </layer>
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="79,151,27,255"/>
+              <prop k="color" v="158,33,200,75"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -361,13 +393,14 @@
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="CodeSymbole" index="0" name=""/>
-        <alias field="EchelleRepresentation" index="1" name=""/>
-        <alias field="Obs_Rotation" index="2" name=""/>
-        <alias field="Obs_LargeurX" index="3" name=""/>
-        <alias field="Obs_HauteurY" index="4" name=""/>
-        <alias field="X" index="5" name=""/>
-        <alias field="Y" index="6" name=""/>
+        <alias field="oid" index="0" name=""/>
+        <alias field="CodeSymbole" index="1" name=""/>
+        <alias field="EchelleRepresentation" index="2" name=""/>
+        <alias field="Obs_Rotation" index="3" name=""/>
+        <alias field="Obs_LargeurX" index="4" name=""/>
+        <alias field="Obs_HauteurY" index="5" name=""/>
+        <alias field="X" index="6" name=""/>
+        <alias field="Y" index="7" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -382,6 +415,7 @@
           <column width="-1" hidden="0" type="field" name="Obs_Rotation"/>
           <column width="-1" hidden="0" type="field" name="Obs_LargeurX"/>
           <column width="-1" hidden="0" type="field" name="Obs_HauteurY"/>
+          <column width="-1" hidden="0" type="field" name="oid"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -412,6 +446,7 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <defaults>
+        <default field="oid" expression=""/>
         <default field="CodeSymbole" expression=""/>
         <default field="EchelleRepresentation" expression=""/>
         <default field="Obs_Rotation" expression=""/>
@@ -474,7 +509,7 @@ def my_form_open(dialog, layer, feature):
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>SymboleTest20170526182050698</value>
+        <value>symboletest20170616162422373</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>

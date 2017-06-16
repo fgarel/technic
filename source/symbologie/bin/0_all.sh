@@ -8,7 +8,7 @@
 
 ## Recopie du script dans le repertoire python
 
-cp symbologie.py ~fred/.qgis2/python/expressions/
+cp manipuleSymbole.py ~fred/.qgis2/python/expressions/
 
 ./AA_installPostgresqlSymbologie.sh
 ./BA_Initialisation_1.sh
