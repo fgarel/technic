@@ -90,7 +90,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="1x1" visible="1">
+  <Composer title="1x1" visible="0">
     <Composition resizeToContentsMarginLeft="2.775557561562891e-17" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{56b4da81-3022-46b6-8b61-8003720e98e6}" alignmentSnap="1" printResolution="254" paperWidth="250" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="250" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">

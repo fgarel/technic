@@ -218,49 +218,68 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
           ' ; controleX = ' + str(round(Obs_LargeurX - param['Svg_ScaleX'] * param['Svg_EchelleInsertion'],3)) + \
           ' ; controleY = ' + str(round(Obs_HauteurY - param['Svg_ScaleY'] * param['Svg_EchelleInsertion'],3)))
     """
-    # Ajout de la transformation pour tous les noeuds du XML.
+    # Pour chacun des noeuds de type path, transformation geometrique (etirement_x, etirement_y, translation)
     for path in root.iter('{http://www.w3.org/2000/svg}path'):
         path.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
-    # Ajout de la transformation de mise a l'echelle pour tous les rectangles.
+    # Pour chacun des noeuds de type rect, transformation geometrique (etirement_x, etirement_y, translation)
     for rect in root.iter('{http://www.w3.org/2000/svg}rect'):
         rect.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
-    # Ajout de la transformation de mise a l'echelle pour tous les polygones.
+    # Pour chacun des noeuds de type polygon, transformation geometrique (etirement_x, etirement_y, translation)
     for polygon in root.iter('{http://www.w3.org/2000/svg}polygon'):
         polygon.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
-    # Ajout de la transformation de mise a l'echelle pour tous les textes.
+    # Pour chacun des noeuds de type text, transformation geometrique (etirement_x, etirement_y, translation)
     for text in root.iter('{http://www.w3.org/2000/svg}text'):
         text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
                                          str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
                                          str(1250*(1-param['Svg_ScaleY'])) + ')')
-        # text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
-        #                                  str(param['Svg_ScaleY']) + ', ' +
-        #                                  str(1250*(1-abs(param['Svg_ScaleX']))) + ' ,' +
-        #                                  str(1000*(-param['Svg_ScaleY']) + 625 ) + ')')
-    # Ajout de la transformation de mise a l'echelle pour tous les conteneur de textes.
-    for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
-        flowRoot.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
-                                         str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
-        # Remise a l'echelle 1,1 donc pas d'echelle des path dans les flowRoot ?
-        for path in flowRoot.iter('{http://www.w3.org/2000/svg}path'):
-            path.set('transform','')
+    # Pour mémmoire (semble inutile) :
+    # Pour chacun des noeuds de type flowRoot, transformation geometrique (etirement_x, etirement_y, translation)
+    #for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
+    #    flowRoot.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
+    #                                     str(param['Svg_ScaleY']) + ', ' +
+    #                                     str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
+    #                                     str(1250*(1-param['Svg_ScaleY'])) + ')')
+    #    # Remise a l'echelle 1,1 donc pas d'echelle des path dans les flowRoot ?
+    #    for path in flowRoot.iter('{http://www.w3.org/2000/svg}path'):
+    #        path.set('transform','')
+    #   # Remise a l'echelle 1,1 donc pas d'echelle des text dans les flowRoot ?
+    #    for text in flowRoot.iter('{http://www.w3.org/2000/svg}text'):
+    #        text.set('transform','')
 
-        # Remise a l'echelle 1,1 donc pas d'echelle des text dans les flowRoot ?
-        for text in flowRoot.iter('{http://www.w3.org/2000/svg}text'):
-            text.set('transform','')
+    # Pour mémoire :
+    # Suivant la méthode de fabrication du symbole initial,
+    # si le groupe g (qui est parent d'un texte ou d'un chemin),
+    # contient deja une matrice de transformation,
+    # alors, on a essayé de paramétrer cette matrice de manière automatique,
+    # mais cela est apparu trop compliqué
+    # (il faut deporter la translation du groupe directement sur la géometrie de l'objet)
+    #
+    # IL FAUT DONC MODIFIER LE SYMBOLE MANUELLEMENT
+    #
+    # Modification de la matrice de transformation du groupe g contenant le texte
+    #for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+    #    if element.findall('{http://www.w3.org/2000/svg}path'):
+    #        element.set('transform','matrix(1, 0, 0, 1, ' +
+    #                                         str(0) + ' ,' +
+    #                                         str(0) + ')')
+    #        pass
+    #    elif element.findall('{http://www.w3.org/2000/svg}text'):
+    #        element.set('transform','matrix(1, 0, 0, 1, ' +
+    #                                         str(0) + ' ,' +
+    #                                         str(0) + ')')
+    #        pass
 
-    #Ecriture du fichier en sortie
+    # Ecriture du fichier en sortie
     tree.write(outFile)
 
 
@@ -291,13 +310,10 @@ def prepare_svg_1ere_passe(inFile, outFile):
         else:
             #print('supperflu {}, {}'.format(element.tag, \
             #                                element.attrib))
-            #
             # https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
-            #
             element.getparent().remove(element)
 
-
-    #Ecriture du fichier en sortie
+    # Ecriture du fichier en sortie
     tree.write(outFile)
 
 
@@ -316,8 +332,7 @@ def prepare_svg_2de_passe(inFile, outFile):
             #                           element.attrib))
             element.getparent().remove(element)
 
-
-    #Ecriture du fichier en sortie
+    # Ecriture du fichier en sortie
     tree.write(outFile)
 
 
@@ -337,33 +352,22 @@ def prepare_svg_3eme_passe(inFile, outFile):
     # Modification de la viewbox
     root.set('viewBox', '0 0 2500 2500')
 
-    # Modification de la matrice de transformation du groupe contenant le texte
-    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
-        if element.findall('{http://www.w3.org/2000/svg}path'):
-            element.set('transform','matrix(1, 0, 0, 1, ' +
-                                             str(0) + ' ,' +
-                                             str(0) + ')')
-            pass
-        elif element.findall('{http://www.w3.org/2000/svg}text'):
-            element.set('transform','matrix(1, 0, 0, 1, ' +
-                                             str(0) + ' ,' +
-                                             str(0) + ')')
-            pass
-        else:
-            print('supperflu {}, {}'.format(element.tag, \
-                                            element.attrib))
-            #
-            # https://stackoverflow.com/questions/7981840/how-to-remove-an-element-in-lxml
-            #
-            element.getparent().remove(element)
-
-
-    #Ecriture du fichier en sortie
+    # Ecriture du fichier en sortie
     tree.write(outFile)
 
 
 def prepare_svg_4eme_passe(inFile, outFile):
     """
+    Faire en sorte que le symbole soit personnalisable depuis qgis,
+    c'est à dire que l'on modifie ici le svg, en remplaçant les couleurs et les
+    épaisseurs, par une commande de type param,
+    de façon à ce que, depuis qgis, le symbole soit personnalisable
+    http://www.portailsig.org/content/ajouter-et-personnaliser-des-symboles-svg-depuis-qgis
+    Les modifications à faire :
+
+    fill="param(fill) #FFF" --> modifie le remplissage
+    stroke="param(outline) #000" --> modifie la couleur de bordure
+    stroke-width="param(outline-width) 1" --> modifie l'épaisseur du contour
 
     """
     # Lecture du fichier SVG (comme un XML) en entree
@@ -371,10 +375,18 @@ def prepare_svg_4eme_passe(inFile, outFile):
     # Mise en memoire
     root = tree.getroot()
 
+    for element in root.iter('{http://www.w3.org/2000/svg}path'):
+        #print('path {}, {}'.format(element.tag, \
+        #                           element.attrib))
+        element.set('style', '')
+        element.set('fill', 'param(fill) #FFF')
+        element.set('stroke', 'param(outline) #000')
+        element.set('stroke-width', 'param(outline-width) 1')
+        #print('path {}, {}'.format(element.tag, \
+        #                           element.attrib))
 
 
-
-    #Ecriture du fichier en sortie
+    # Ecriture du fichier en sortie
     tree.write(outFile)
 
 def prepare_svg_5eme_passe(inPath, outPath, inFile):

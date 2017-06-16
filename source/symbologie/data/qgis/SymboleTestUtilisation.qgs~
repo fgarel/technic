@@ -13,10 +13,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379274.53861155500635505</xmin>
-      <ymin>5226374.99204532243311405</ymin>
-      <xmax>1379275.89062434760853648</xmax>
-      <ymax>5226376.20068312622606754</ymax>
+      <xmin>1379275.24775301804766059</xmin>
+      <ymin>5226375.3366637509316206</ymin>
+      <xmax>1379280.65580418845638633</xmax>
+      <ymax>5226380.17121496610343456</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -112,11 +112,11 @@
               <prop k="angle_dd_expression" v="&quot;Obs_Rotation&quot;"/>
               <prop k="angle_dd_field" v=""/>
               <prop k="angle_dd_useexpr" v="1"/>
-              <prop k="color" v="5,9,236,255"/>
+              <prop k="color" v="101,236,4,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v=""/>
               <prop k="name_dd_active" v="1"/>
-              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixeFromXY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'&#xa;--&quot;CodeSymbole&quot;  || '_' || suffixeFromXY( 3,5) || '.svg'"/>
+              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixe_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'&#xa;--&quot;CodeSymbole&quot;  || '_' ||  suffixe_from_XY( 3,5) || '.svg'"/>
               <prop k="name_dd_field" v=""/>
               <prop k="name_dd_useexpr" v="1"/>
               <prop k="offset" v="0,0"/>
@@ -127,31 +127,57 @@
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MapUnit"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="2.5"/>
+              <prop k="size" v="0.0002"/>
               <prop k="size_dd_active" v="1"/>
-              <prop k="size_dd_expression" v="echelleInsertionFromXY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;)"/>
+              <prop k="size_dd_expression" v="taille_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;)"/>
               <prop k="size_dd_field" v=""/>
               <prop k="size_dd_useexpr" v="1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
-            <layer pass="0" class="SimpleMarker" locked="0">
+            <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="255,0,0,255"/>
+              <prop k="color" v="158,33,200,140"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
+              <prop k="name" v="crosses/Star1.svg"/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixe_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
+              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="outline_color" v="243,242,0,255"/>
               <prop k="outline_width" v="0"/>
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="0.02"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="79,151,27,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="name_dd_active" v="1"/>
+              <prop k="name_dd_expression" v="--'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || suffixe_from_XY(&quot;Obs_LargeurX&quot;, &quot;Obs_HauteurY&quot;) || '.svg'&#xa;'/home/fred/Documents/technic/source/symbologie/data/Symbole/fromQgis/' ||  &quot;CodeSymbole&quot;  || '_' || 'pp_x_010' || '.svg'"/>
+              <prop k="name_dd_field" v=""/>
+              <prop k="name_dd_useexpr" v="1"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MapUnit"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MapUnit"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.1"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MapUnit"/>
               <prop k="vertical_anchor_point" v="1"/>
