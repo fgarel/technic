@@ -24,7 +24,7 @@ Actuellement les infos relatives aux symboles topo sont disséminés un peu part
  - ~/Documents/documentation/GTReseaux/DXFVersRTGEVersPCRS
  - ~/f/CARTOGRAPHIE/Administratif/marche_prestations_topo_2015/CCTP
  - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/autres
- - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/leveto
+ - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/levetopo
 
 
 ## Création, dessin du symbole
