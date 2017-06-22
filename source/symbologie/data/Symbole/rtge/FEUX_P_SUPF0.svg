@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2500"
+   height="2500"
+   viewBox="0 0 2500 2500"
+   version="1.1"
+   id="svg4527"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="FEUX_P_SUPF0.svg">
+  <defs
+     id="defs4521">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 1250 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="2500 : 1250 : 1"
+       inkscape:persp3d-origin="1250 : 833.33333 : 1"
+       id="perspective4486" />
+    <linearGradient
+       gradientTransform="matrix(12.733999,0,0,12.733999,-7247.082,-3931.5765)"
+       id="SVGID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="665.11823"
+       y1="391.73291"
+       x2="672.11823"
+       y2="391.73291">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop6" />
+      <stop
+         offset="1"
+         style="stop-color:#000000"
+         id="stop8" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="1440.4521"
+     inkscape:cy="2524.9434"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1869"
+     inkscape:window-height="1056"
+     inkscape:window-x="1331"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4524">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       stroke-miterlimit="4"
+       id="path4521"
+       cx="1267.0989"
+       cy="1246.0071"
+       r="23.194342"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:11.59717083;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="fill:url(#SVGID_1_);stroke:#000000;stroke-width:12.7339983"
+       x="1222.5305"
+       y="865.74109"
+       width="89.137985"
+       height="382.01993"
+       id="rect11" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#c2c2c2;stroke:#000000;stroke-width:12.7339983"
+       d="m 1384.8884,776.62854 c 0,66.80251 -52.744,120.9475 -117.7895,120.9475 v 0 c -65.045,0 -117.789,-54.14499 -117.789,-120.9475 V 375.44388 c 0,-66.80252 52.744,-120.9475 117.789,-120.9475 v 0 c 65.0455,0 117.7895,54.14498 117.7895,120.9475 z"
+       id="path13" />
+    <ellipse
+       style="fill:#ea302e;stroke:#000000;stroke-width:12.7339983"
+       cx="1267.4181"
+       cy="368.75833"
+       rx="89.672806"
+       ry="80.708076"
+       id="ellipse15" />
+    <ellipse
+       style="fill:#f5c461;stroke:#000000;stroke-width:12.7339983"
+       cx="1267.4181"
+       cy="578.86926"
+       rx="89.672806"
+       ry="80.720818"
+       id="ellipse17" />
+    <ellipse
+       style="fill:#81c891;stroke:#000000;stroke-width:12.7339983"
+       cx="1264.2349"
+       cy="788.98016"
+       rx="89.672806"
+       ry="80.720818"
+       id="ellipse19" />
+  </g>
+</svg>

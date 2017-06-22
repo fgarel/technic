@@ -1,0 +1,2313 @@
+# extended LDIF
+#
+# LDAPv3
+# base <ou=people,dc=larochelle,dc=fr> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# people, larochelle.fr
+dn: ou=people,dc=larochelle,dc=fr
+ou: people
+objectClass: organizationalUnit
+objectClass: top
+
+# liber.acces, people, larochelle.fr
+dn: uid=liber.acces,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXGroupID: 500
+userCountry: Tuxworld
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+mailDomain: larochelle.fr
+OXTaskDays: 5
+seeAlso: uid=mailadmin,ou=people,dc=larochelle,dc=fr
+OXTimeZone: Europe/Paris
+mailEnabled: OK
+shadowWarning: 7
+ou: ou=exemple,ou=collectivites,dc=larochelle,dc=fr
+gidNumber: 500
+uidNumber: 1000
+displayName: false
+givenName: Liber
+telephoneNumber: 0505050505
+uid: liber.acces
+cn: Acces Liber
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+manager: uid=mailadmin,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: liber.acces
+sn: Acces
+homeDirectory: /home/liber.acces
+
+# yolande.abadie, people, larochelle.fr
+dn: uid=yolande.abadie,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+businessCategory: Ville de La Rochelle
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+gidNumber: 500
+uidNumber: 1000
+displayName: Yolande ABADIE
+employeeType: Animateur des Centres de Loisirs
+givenName: Yolande
+telephoneNumber: 05 46 67 20 09
+uid: yolande.abadie
+cn: ABADIE Yolande
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 2137
+o: Ville de La Rochelle
+email: yolande.abadie@ville-larochelle.fr
+description: yolande.abadie
+sn: ABADIE
+homeDirectory: /home/yolande.abadie
+roomNumber: Palissy maternelle
+title: Madame
+ouDisplayName: Enfance
+
+# ghislaine.ache, people, larochelle.fr
+dn: uid=ghislaine.ache,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: RW5zLiAxZXIgRGVncsOpIE1hdGVybmVsbGVz
+ou:: b3U9RWNvbGVzLG91PUxhcm1ldCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sY
+ XJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Ghislaine ACHE
+employeeType:: QVRTRU0gLSBMaW5nZXJpZSA=
+givenName: Ghislaine
+uid: ghislaine.ache
+cn: ACHE Ghislaine
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 3016
+manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: ghislaine.ache
+sn: ACHE
+homeDirectory: /home/ghislaine.ache
+roomNumber:: ZMOpcMO0dCBsaW5nZXJpZSBDVE0=
+title: Madame
+telephoneNumber: .
+ouDisplayName: Ecoles
+
+# nadege.adler, people, larochelle.fr
+dn: uid=nadege.adler,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+employeeNumber: 9330
+o: Ville de La Rochelle
+sn: ADLER
+gidNumber: 500
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+telephoneNumber: .
+givenName:: TmFkw6hnZQ==
+uid: nadege.adler
+uidNumber: 1000
+employeeType: Animateur des Centres de Loisirs
+cn:: QURMRVIgTmFkw6hnZQ==
+displayName:: TmFkw6hnZSBBRExFUg==
+title: Madame
+description: nadege.adler
+homeDirectory: /home/nadege.adler
+ouDisplayName: Enfance
+
+# kamel.afounas, people, larochelle.fr
+dn: uid=kamel.afounas,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Terrains de Sports
+ou:: b3U9Q2FtcGluZyxvdT1FcXVpcGVfRXF1aXBlbWVudCxvdT1EaXJlY3Rpb25fYWRqb2ludGUsb
+ 3U9U3BvcnRzLG91PVJvdXNzZWF1LG91PUZpbGnDqHJlcyxvdT1jb2xsZWN0aXZpdGVzLGRjPWxhcm
+ 9jaGVsbGUsZGM9ZnI=
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Kamel AFOUNAS
+employeeType: Gardien d'installations sportives / Camping
+givenName: Kamel
+telephoneNumber: .
+uid: kamel.afounas
+cn: AFOUNAS Kamel
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 6811
+manager: uid=laurent.navarro,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: kamel.afounas
+sn: AFOUNAS
+homeDirectory: /home/kamel.afounas
+title: Monsieur
+ouDisplayName: Direction des sports et affaires maritimes
+
+# julien.aimon, people, larochelle.fr
+dn: uid=julien.aimon,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Espaces Verts Sports
+businessCategory: Ville de La Rochelle
+ou:: b3U9RXNwYWNlX1B1YmxpYyxvdT1Nb2xsYXJkLG91PUZpbGnDqHJlcyxvdT1jb2xsZWN0aXZpd
+ GVzLGRjPWxhcm9jaGVsbGUsZGM9ZnI=
+gidNumber: 500
+uidNumber: 1000
+displayName: Julien AIMON
+employeeType:: SmFyZGluaWVyIA==
+givenName: Julien
+telephoneNumber: .
+uid: julien.aimon
+cn: AIMON Julien
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 3278
+o: Ville de La Rochelle
+description: julien.aimon
+sn: AIMON
+homeDirectory: /home/julien.aimon
+title: Monsieur
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# veronique.alguazil, people, larochelle.fr
+dn: uid=veronique.alguazil,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: C.E.S./Ville
+ou:: b3U9RWNvbGVzLG91PUxhcm1ldCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sY
+ XJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName:: VsOpcm9uaXF1ZSBBTEdVQVpJTA==
+employeeType: Adjoint technique - entretien des locaux scolaires
+givenName:: VsOpcm9uaXF1ZQ==
+uid: veronique.alguazil
+cn:: QUxHVUFaSUwgVsOpcm9uaXF1ZQ==
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 8795
+manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: veronique.alguazil
+sn: ALGUAZIL
+homeDirectory: /home/veronique.alguazil
+roomNumber:: w6ljb2xl
+title: Madame
+email: veronique.alguazil@ville-larochelle.fr
+IPPhone: .
+telephoneNumber: .
+ouDisplayName: Ecoles
+
+# aline.allochon, people, larochelle.fr
+dn: uid=aline.allochon,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: ADMINISTRATION GENERALE
+ou: ou=Police,ou=Cabinet,ou=collectivites,dc=larochelle,dc=fr
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Aline ALLOCHON
+employeeType:: QWdlbnQgZCdhY2N1ZWlsIGRlIGxhIG1haXJpZSBkZSBwcm94aW1pdMOpIGRlIE1
+ pcmV1aWw=
+givenName: Aline
+telephoneNumber: 05 46 31 87 47
+uid: aline.allochon
+cn: ALLOCHON Aline
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: 2 square de la Passerelle
+IPPhone: 8747
+employeeNumber: 7105
+o: Ville de La Rochelle
+email: aline.allochon@ville-larochelle.fr
+l: La Rochelle
+description: aline.allochon
+sn: ALLOCHON
+facsimileTelephoneNumber: 05 46 43 13 43
+secretary: uid=axele.de-tschudy,ou=people,dc=larochelle,dc=fr
+secretary: uid=michelle.granier,ou=people,dc=larochelle,dc=fr
+homeDirectory: /home/aline.allochon
+title: Madame
+ouDisplayName:: RGlyZWN0aW9uIHZpZSBkZXMgcXVhcnRpZXJzLCB2aWUgYXNzb2NpYXRpdmUsIG
+ NpdG95ZW5uZXTDqQ==
+
+# daniel.ambrosino, people, larochelle.fr
+dn: uid=daniel.ambrosino,ou=people,dc=larochelle,dc=fr
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Sports
+ou:: b3U9TWFuaWZlc3RhdGlvbl9DbHVicyxvdT1EaXJlY3Rpb25fYWRqb2ludGUsb3U9U3BvcnRzL
+ G91PVJvdXNzZWF1LG91PUZpbGnDqHJlcyxvdT1jb2xsZWN0aXZpdGVzLGRjPWxhcm9jaGVsbGUsZG
+ M9ZnI=
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+mobile: 06 80 58 60 97
+uidNumber: 1000
+displayName: Daniel AMBROSINO
+employeeType:: QXNzaXN0YW50IGRlIGdlc3Rpb24gU3BvcnRzIChtYW5pZmVzdGF0aW9ucyBldCB
+ tYXTDqQ==
+givenName: Daniel
+uid: daniel.ambrosino
+cn: AMBROSINO Daniel
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 1752
+o: Ville de La Rochelle
+telexNumber:: IA==
+description: daniel.ambrosino
+sn: AMBROSINO
+homeDirectory: /home/daniel.ambrosino
+title: Monsieur
+IPPhone: 1420
+telephoneNumber: 05 46 51 14 20
+ouDisplayName: Direction des sports et affaires maritimes
+
+# patricia.amoros, people, larochelle.fr
+dn: uid=patricia.amoros,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+info:: RGlyZWN0LiBQYXRyaW1vaW5lIFB1YmxpYyBCw6J0aQ==
+ou:: b3U9UGF0cmltb2luZV9QdWJsaWNfQmF0aSxvdT1Nb2xsYXJkLG91PUZpbGnDqHJlcyxvdT1jb
+ 2xsZWN0aXZpdGVzLGRjPWxhcm9jaGVsbGUsZGM9ZnI=
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: false
+employeeType:: QWdlbnQgY2hhcmfDqSBkZSBsYSBjb21wdGFiaWxpdMOp
+givenName: Patricia
+uid: patricia.amoros
+cn: AMOROS Patricia
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 3211
+manager: uid=celine.bourdon,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: patricia.amoros@ville-larochelle.fr
+description: patricia.amoros
+sn: AMOROS
+homeDirectory: /home/patricia.amoros
+title: Madame
+ouDisplayName: Administration des services techniques
+
+# david.andre, people, larochelle.fr
+dn: uid=david.andre,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Terrains de Sports
+ou:: b3U9Q2FtcGluZyxvdT1FcXVpcGVfRXF1aXBlbWVudCxvdT1EaXJlY3Rpb25fYWRqb2ludGUsb
+ 3U9U3BvcnRzLG91PVJvdXNzZWF1LG91PUZpbGnDqHJlcyxvdT1jb2xsZWN0aXZpdGVzLGRjPWxhcm
+ 9jaGVsbGUsZGM9ZnI=
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: David ANDRE
+employeeType:: R2FyZGllbiBkJ2luc3RhbGxhdGlvbnMgc3BvcnRpdmVzIA==
+givenName: David
+telephoneNumber: .
+uid: david.andre
+cn: ANDRE David
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 2770
+manager: uid=laurent.navarro,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: david.andre
+sn: ANDRE
+homeDirectory: /home/david.andre
+title: Monsieur
+ouDisplayName: Direction des sports et affaires maritimes
+
+# eric.andreau, people, larochelle.fr
+dn: uid=eric.andreau,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Eric ANDREAU
+employeeType: Animateur des Centres de Loisirs
+givenName: Eric
+telephoneNumber: 05 46 56 72 33
+uid: eric.andreau
+cn: ANDREAU Eric
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 8609
+o: Ville de La Rochelle
+email: eric.andreau@ville-larochelle.fr
+description: eric.andreau
+sn: ANDREAU
+homeDirectory: /home/eric.andreau
+roomNumber:: QmVydGhlbG90IMOpbMOpbWVudGFpcmU=
+title: Monsieur
+ouDisplayName: Enfance
+
+# sylvie.andron, people, larochelle.fr
+dn: uid=sylvie.andron,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: QmlibGlvdGjDqHF1ZXM=
+ou:: b3U9QmlibGlvdGhlcXVlcyxvdT1Sb3Vzc2VhdSxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2a
+ XRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Sylvie ANDRON
+employeeType:: QWdlbnQgZGUgYmlibGlvdGjDqHF1ZQ==
+givenName: Sylvie
+uid: sylvie.andron
+cn: ANDRON Sylvie
+postalCode: 17 000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: Place du 14 juillet
+IPPhone: 3008
+employeeNumber: 2868
+o: Ville de La Rochelle
+email: sylvie.andron@ville-larochelle.fr
+telexNumber: 05 46 44 01 27
+l: La Rochelle
+description: sylvie.andron
+sn: ANDRON
+homeDirectory: /home/sylvie.andron
+roomNumber:: TcOpZGlhdGjDqHF1ZSBkZSBWaWxsZW5ldXZlLWxlcy1TYWxpbmVz
+title: Madame
+ouDisplayName:: TcOpZGlhdGjDqHF1ZXM=
+
+# stephane.apperce, people, larochelle.fr
+dn: uid=stephane.apperce,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Police Municipale
+ou: ou=Police,ou=Cabinet,ou=collectivites,dc=larochelle,dc=fr
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName:: U3TDqXBoYW5lIEFQUEVSQ0U=
+employeeType: Policier municipal
+givenName:: U3TDqXBoYW5l
+uid: stephane.apperce
+cn:: QVBQRVJDRSBTdMOpcGhhbmU=
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 76
+o: Ville de La Rochelle
+description: stephane.apperce
+sn: APPERCE
+homeDirectory: /home/stephane.apperce
+title: Monsieur
+IPPhone: .
+telephoneNumber: .
+email: stephane.apperce@ville-larochelle.fr
+ouDisplayName:: RGlyZWN0aW9uIGRlIGxhIHRyYW5xdWlsbGl0w6kgcHVibGlxdWUgZXQgZGUgbG
+ EgcG9saWNlIG11bmljaXBhbGU=
+
+# catherine.guillebot, people, larochelle.fr
+dn: uid=catherine.guillebot,ou=people,dc=larochelle,dc=fr
+gidNumber: 500
+uidNumber: 1000
+displayName: Catherine GUILLEBOT
+employeeType:: QWdlbnQgZCdFdGF0LUNpdmlsLCBkw6ljw6hz
+postalAddress:: SMO0dGVsIGRlIFZpbGxlLCBCLlAuIDE1NDEgTGEgUm9jaGVsbGUgQ2VkZXggMg
+ ==
+givenName: Catherine
+telephoneNumber: 05 46 51 11 48
+uid: catherine.guillebot
+cn: GUILLEBOT Catherine
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street:: Q2VudHJlIGZ1bsOpcmFpcmU=
+employeeNumber: 2292
+manager: uid=gwenaelle.yhuel,ou=people,dc=larochelle,dc=fr
+physicalDeliveryOfficeName: 27, rue du Docteur Schweitzer
+o: Ville de La Rochelle
+email: catherine.guillebot@ville-larochelle.fr
+l:: TEEgUk9DSEVMTEUg
+description: catherine.guillebot
+sn: GUILLEBOT
+facsimileTelephoneNumber: 05 46 51 51 91
+homeDirectory: /home/catherine.guillebot
+title: Madame
+IPPhone: 1148
+ouDisplayName:: RXRhdCBjaXZpbCwgZm9ybWFsaXTDqXMsIMOpbGVjdGlvbnM=
+
+# stephane.archambaud, people, larochelle.fr
+dn: uid=stephane.archambaud,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Assainissement Pluvial
+ou:: b3U9QXNzYWluaXNzZW1lbnRfcGx1dmlhbCxvdT1Fc3BhY2VfUHVibGljLG91PU1vbGxhcmQsb
+ 3U9RmlsacOocmVzLG91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName:: U3TDqXBoYW5lIEFSQ0hBTUJBVUQ=
+employeeType:: T3V2cmllciBkJ2VudHJldGllbiBkdSByw6lzZWF1IHBsdXZpYWwg
+givenName:: U3TDqXBoYW5l
+uid: stephane.archambaud
+cn:: QVJDSEFNQkFVRCBTdMOpcGhhbmU=
+postalCode: 17180
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: CTM
+employeeNumber: 3381
+manager: uid=jean-yves.oberlin,ou=people,dc=larochelle,dc=fr
+physicalDeliveryOfficeName: Rue Blaise Pascal
+o: Ville de La Rochelle
+l: PERIGNY
+description: stephane.archambaud
+sn: ARCHAMBAUD
+facsimileTelephoneNumber: .
+homeDirectory: /home/stephane.archambaud
+title: Monsieur
+IPPhone: .
+telephoneNumber: .
+email:
+ouDisplayName: Voirie et protection du littoral
+
+# doria.ardiet, people, larochelle.fr
+dn: uid=doria.ardiet,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+seeAlso: uid=jean-pierre.heintz,ou=people,dc=larochelle,dc=fr
+info: Affaires Culturelles
+ou:: b3U9QWZmYWlyZXNfY3VsdHVyZWxsZXMsb3U9Um91c3NlYXUsb3U9RmlsacOocmVzLG91PWNvb
+ GxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Doria ARDIET
+employeeType:: TcOpZGlhdHJpY2UgY3VsdHVyZWxsZSBhcnRzIHBsYXN0aXF1ZXM=
+givenName: Doria
+telephoneNumber: 05 46 51 50 65
+uid: doria.ardiet
+cn: ARDIET Doria
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+IPPhone: 5065
+employeeNumber: 7695
+manager: uid=renaud.planade,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: doria.ardiet@ville-larochelle.fr
+description: doria.ardiet
+sn: ARDIET
+homeDirectory: /home/doria.ardiet
+title: Madame
+ouDisplayName: Direction Culture et Patrimoine
+
+# corinne.ardouin, people, larochelle.fr
+dn: uid=corinne.ardouin,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: QWlkZSDDoCBEb21pY2lsZSBSZW1wbGFjZW1lbnQ=
+ou:: b3U9RmluYW5jZXMsb3U9Sm9zZXBoRnJhbmNvaXMsb3U9RmlsacOocmVzLG91PWNvbGxlY3Rpd
+ ml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Corinne ARDOUIN
+employeeType: Agent comptable
+givenName: Corinne
+uid: corinne.ardouin
+cn: ARDOUIN Corinne
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+IPPhone: 5533
+employeeNumber: 8855
+o: Ville de La Rochelle
+email: corinne.ardouin@ville-larochelle.fr
+description: corinne.ardouin
+sn: ARDOUIN
+homeDirectory: /home/corinne.ardouin
+title: Madame
+ouDisplayName: Direction des finances
+
+# maryline.argentieri, people, larochelle.fr
+dn: uid=maryline.argentieri,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Restaurants Scolaires
+ou:: b3U9UmVzdGF1cmFudHNfc2NvbGFpcmVzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOoc
+ mVzLG91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Maryline ARGENTIERI
+employeeType: Cuisinier des Restaurants Scolaires
+givenName: Maryline
+telephoneNumber: .
+uid: maryline.argentieri
+cn: ARGENTIERI Maryline
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 7907
+o: Ville de La Rochelle
+description: maryline.argentieri
+sn: ARGENTIERI
+homeDirectory: /home/maryline.argentieri
+title: Madame
+email: maryline.argentieri@ville-larochelle.fr
+ouDisplayName: Restauration
+
+# pascale.arliguie, people, larochelle.fr
+dn: uid=pascale.arliguie,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+mailDomain: ville-larochelle.fr
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+mailEnabled: OK
+shadowWarning: 7
+info:: QmlibGlvdGjDqHF1ZXM=
+ou:: b3U9QmlibGlvdGhlcXVlcyxvdT1Sb3Vzc2VhdSxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2a
+ XRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Pascale ARLIGUIE
+employeeType: Assistant de conservation
+givenName: Pascale
+uid: pascale.arliguie
+cn: ARLIGUIE Pascale
+postalCode: 17 000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: Place du 14 Juillet
+IPPhone: 3003
+employeeNumber: 6496
+o: Ville de La Rochelle
+email: pascale.arliguie@ville-larochelle.fr
+telexNumber: 05 46 44 01 27
+l: La Rochelle
+description: pascale.arliguie
+sn: ARLIGUIE
+facsimileTelephoneNumber: 05 46 45 16 22
+homeDirectory: /home/pascale.arliguie
+roomNumber:: TcOpZGlhdGjDqHF1ZSBkZSBWaWxsZW5ldXZlLWxlcy1TYWxpbmVz
+title: Madame
+ouDisplayName:: TcOpZGlhdGjDqHF1ZXM=
+
+# luc.arnaud, people, larochelle.fr
+dn: uid=luc.arnaud,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Assainissement Pluvial
+ou:: b3U9QXNzYWluaXNzZW1lbnRfcGx1dmlhbCxvdT1Fc3BhY2VfUHVibGljLG91PU1vbGxhcmQsb
+ 3U9RmlsacOocmVzLG91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Luc ARNAUD
+employeeType: Manutentionnaire
+givenName: Luc
+telephoneNumber: .
+uid: luc.arnaud
+mail: ctm.transports-manifestations@ville-larochelle.fr
+cn: ARNAUD Luc
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+pager: 5020
+employeeNumber: 87
+o: Ville de La Rochelle
+description: luc.arnaud
+sn: ARNAUD
+facsimileTelephoneNumber: 5040
+homeDirectory: /home/luc.arnaud
+title: Monsieur
+ouDisplayName: Centre technique municipal
+
+# jean-pierre.arnaud, people, larochelle.fr
+dn: uid=jean-pierre.arnaud,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+info: Eau
+ou:: b3U9RWF1LG91PUVzcGFjZV9QdWJsaWMsb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sb
+ GVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+ouDisplayName: Eau potable
+gidNumber: 500
+uidNumber: 1000
+displayName: Jean-Pierre ARNAUD
+employeeType: magasinier
+givenName: Jean-Pierre
+telephoneNumber: 05 46 51 79 47
+uid: jean-pierre.arnaud
+cn: ARNAUD Jean-Pierre
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street:: MSBydWUgSmVhbiBKYXVyw6hz
+pager: 05 46 51 14 86 ou 14 58
+IPPhone: 5354
+employeeNumber: 2835
+manager: uid=francois.carton,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: jean-pierre.arnaud@ville-larochelle.fr
+l: LA ROCHELLE
+description: jean-pierre.arnaud
+sn: ARNAUD
+homeDirectory: /home/jean-pierre.arnaud
+title: Monsieur
+
+# bernard.aubert, people, larochelle.fr
+dn: uid=bernard.aubert,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+seeAlso: uid=bernard.aubert,ou=people,dc=larochelle,dc=fr
+info:: QWZmLiBKdXJpZC4gZXQgSW1tb2JpbGnDqHJlcw==
+businessCategory: Ville de La Rochelle
+ou:: b3U9QWZmLl9qdXJpZC5fZXRfaW1tb2JpbGllcmVzLG91PUpvc2VwaEZyYW5jb2lzLG91PUZpb
+ GnDqHJlcyxvdT1jb2xsZWN0aXZpdGVzLGRjPWxhcm9jaGVsbGUsZGM9ZnI=
+ouDisplayName: DGA des services juridiques et de l'occupation du domaine publi
+ c
+gidNumber: 500
+uidNumber: 1000
+displayName: Bernard AUBERT
+employeeType:: RGlyZWN0ZXVyIGfDqW7DqXJhbCBhZGpvaW50IGF1eCBzZXJ2aWNlcyBqdXJpZGl
+ xdWVzLCBmb25jaWVycyBldCBpbW1vYmlsaWVycw==
+givenName: Bernard
+telephoneNumber: 05 46 51 51 21
+uid: bernard.aubert
+cn: AUBERT Bernard
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+pager: 05 46 51 50 79
+IPPhone: 5121
+employeeNumber: 2072
+manager: uid=emilie.bout,ou=people,dc=larochelle,dc=fr
+physicalDeliveryOfficeName:: SMO0dGVsIGRlIFZpbGxl
+o: Ville de La Rochelle
+email: bernard.aubert@ville-larochelle.fr
+description: bernard.aubert
+sn: AUBERT
+secretary: uid=christelle.guillou,ou=people,dc=larochelle,dc=fr
+homeDirectory: /home/bernard.aubert
+title: Monsieur
+
+# alain.audebault, people, larochelle.fr
+dn: uid=alain.audebault,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Espaces Verts Entretien
+ou:: b3U9RXNwYWNlc19WZXJ0c19Qcm9wcmV0ZV9VcmJhaW5lLG91PUVzcGFjZV9QdWJsaWMsb3U9T
+ W9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Alain AUDEBAULT
+employeeType: Conducteur d'engins de travaux publics
+givenName: Alain
+uid: alain.audebault
+cn: AUDEBAULT Alain
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: Place de l'Arsenal
+employeeNumber: 3007
+manager: uid=emmanuel.pavy,ou=people,dc=larochelle,dc=fr
+physicalDeliveryOfficeName:: RMOpcMO0dCBSaWNoZWxpZXU=
+o: Ville de La Rochelle
+description: alain.audebault
+sn: AUDEBAULT
+facsimileTelephoneNumber: 05 46 67 59 10
+homeDirectory: /home/alain.audebault
+title: Monsieur
+telephoneNumber: .
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# michel.audebert, people, larochelle.fr
+dn: uid=michel.audebert,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: UHJvcHJldMOpIFVyYmFpbmUgRW50cmV0aWVu
+ou:: b3U9RXNwYWNlc19WZXJ0c19Qcm9wcmV0ZV9VcmJhaW5lLG91PUVzcGFjZV9QdWJsaWMsb3U9T
+ W9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Michel AUDEBERT
+employeeType:: SmFyZGluaWVyIA==
+givenName: Michel
+telephoneNumber: .
+uid: michel.audebert
+cn: AUDEBERT Michel
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 2241
+o: Ville de La Rochelle
+description: michel.audebert
+sn: AUDEBERT
+homeDirectory: /home/michel.audebert
+title: Monsieur
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# richard.audiget, people, larochelle.fr
+dn: uid=richard.audiget,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Espaces Verts Sports
+ou:: b3U9RXNwYWNlc19WZXJ0c19Qcm9wcmV0ZV9VcmJhaW5lLG91PUVzcGFjZV9QdWJsaWMsb3U9T
+ W9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Richard AUDIGET
+employeeType: Ouvrier d'entretien des terrains de sports
+givenName: Richard
+telephoneNumber: .
+uid: richard.audiget
+cn: AUDIGET Richard
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 2299
+o: Ville de La Rochelle
+description: richard.audiget
+sn: AUDIGET
+homeDirectory: /home/richard.audiget
+title: Monsieur
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# lucie.audurier, people, larochelle.fr
+dn: uid=lucie.audurier,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Lucie AUDURIER
+givenName: Lucie
+telephoneNumber: 05 46 35 94 46
+uid: lucie.audurier
+cn: AUDURIER Lucie
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 8142
+o: Ville de La Rochelle
+email: lucie.audurier@ville-larochelle.fr
+description: lucie.audurier
+sn: AUDURIER
+homeDirectory: /home/lucie.audurier
+roomNumber: Pierre Loti Maternelle
+title: Madame
+ouDisplayName: Enfance
+
+# nadine.auger, people, larochelle.fr
+dn: uid=nadine.auger,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Restaurants Scolaires
+ou:: b3U9UmVzdGF1cmFudHNfc2NvbGFpcmVzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOoc
+ mVzLG91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Nadine AUGER
+employeeType: Cuisinier des Restaurants Scolaires
+givenName: Nadine
+telephoneNumber: .
+uid: nadine.auger
+cn: AUGER Nadine
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 2957
+o: Ville de La Rochelle
+description: nadine.auger
+sn: AUGER
+homeDirectory: /home/nadine.auger
+title: Madame
+email: nadine.auger@ville-larochelle.fr
+ouDisplayName: Restauration
+
+# gerald.auger, people, larochelle.fr
+dn: uid=gerald.auger,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+info: C.A.S.E.L.
+ou:: b3U9VmllX3NvY2lhbGUsb3U9Um91c3NlYXUsb3U9RmlsacOocmVzLG91PWNvbGxlY3Rpdml0Z
+ XMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+ouDisplayName:: RGlyZWN0aW9uIGRlIGxhIHRyYW5xdWlsbGl0w6kgcHVibGlxdWUgZXQgZGUgbG
+ EgcG9saWNlIG11bmljaXBhbGU=
+gidNumber: 500
+mobile: 06 07 98 34 31
+uidNumber: 1000
+displayName:: R8OpcmFsZCBBVUdFUg==
+employeeType:: UmVzcG9uc2FibGUgZHUgU2VydmljZSBQcsOpdmVudGlvbiAtIFRyYW5xdWlsbGl
+ 0w6k=
+givenName:: R8OpcmFsZA==
+telephoneNumber: 05 46 51 14 93
+uid: gerald.auger
+cn:: QVVHRVIgR8OpcmFsZA==
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: 3 rue de la Grille
+IPPhone: 1493
+employeeNumber: 198
+manager: uid=bernard.aubert,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: gerald.auger@ville-larochelle.fr
+l: LA ROCHELLE
+description: gerald.auger
+sn: AUGER
+facsimileTelephoneNumber: 05 46 51 53 48
+secretary: uid=nadia.fouetillou,ou=people,dc=larochelle,dc=fr
+homeDirectory: /home/gerald.auger
+title: Monsieur
+
+# beatrice.augereau, people, larochelle.fr
+dn: uid=beatrice.augereau,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+mailDomain: ville-larochelle.fr
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+mailEnabled: OK
+shadowWarning: 7
+info:: QmlibGlvdGjDqHF1ZXM=
+ou:: b3U9QmlibGlvdGhlcXVlcyxvdT1Sb3Vzc2VhdSxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2a
+ XRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+mobile: 06 48 61 42 09
+uidNumber: 1000
+displayName:: QsOpYXRyaWNlIEFVR0VSRUFV
+employeeType:: TcOpZGlhdGV1ciBjdWx0dXJlbA==
+givenName:: QsOpYXRyaWNl
+telephoneNumber: 05 46 31 87 79
+uid: beatrice.augereau
+cn:: QVVHRVJFQVUgQsOpYXRyaWNl
+postalCode: 17 000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: 28 Place de l'Europe
+IPPhone: 87 79
+employeeNumber: 7790
+o: Ville de La Rochelle
+email: beatrice.augereau@ville-larochelle.fr
+telexNumber: 30 14
+l: La Rochelle
+description: beatrice.augereau
+sn: AUGEREAU
+homeDirectory: /home/beatrice.augereau
+title: Madame
+ouDisplayName:: TcOpZGlhdGjDqHF1ZXM=
+
+# sandrine.augris, people, larochelle.fr
+dn: uid=sandrine.augris,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: RW5zLiAxZXIgRGVncsOpIEVsw6ltZW50YWlyZQ==
+ou:: b3U9RWNvbGVzLG91PUxhcm1ldCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sY
+ XJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+mobile: 06 72 95 51 96
+uidNumber: 1000
+displayName: Sandrine AUGRIS
+employeeType:: UmVzcG9uc2FibGUgZGUgbCfDqXF1aXBlIG1vYmlsZSBldCByZXNwb25zYWJsZSB
+ kZSBzZWN0ZXVy
+givenName: Sandrine
+telephoneNumber: .
+uid: sandrine.augris
+cn: AUGRIS Sandrine
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+IPPhone: .
+employeeNumber: 7832
+manager: uid=aurelie.splingart,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: sandrine.augris@ville-larochelle.fr
+description: sandrine.augris
+sn: AUGRIS
+homeDirectory: /home/sandrine.augris
+roomNumber:: RMOpcMO0dCBEb3VtZXI=
+title: Mme
+ouDisplayName: DGA  des services ressources
+
+# florian.aujard, people, larochelle.fr
+dn: uid=florian.aujard,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Voirie
+ou:: b3U9Vm9pcmllLG91PUVzcGFjZV9QdWJsaWMsb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y
+ 29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Florian AUJARD
+employeeType: Ouvrier polyvalent d'entretien de la voie publique
+givenName: Florian
+uid: florian.aujard
+cn: AUJARD Florian
+postalCode: 17180
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: CTM
+employeeNumber: 3217
+physicalDeliveryOfficeName: Rue Blaise Pascal
+o: Ville de La Rochelle
+l: PERIGNY
+description: florian.aujard
+sn: AUJARD
+homeDirectory: /home/florian.aujard
+title: Monsieur
+IPPhone: .
+telephoneNumber: .
+email:
+ouDisplayName: Voirie et protection du littoral
+
+# pascal.auneau, people, larochelle.fr
+dn: uid=pascal.auneau,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: C.T.M. Approvisionnements
+ou:: b3U9QXBwcm92aXNpb25uZW1lbnRzLG91PUMuVC5NLG91PVBhdHJpbW9pbmVfUHVibGljX0Jhd
+ Gksb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLG
+ RjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Pascal AUNEAU
+employeeType: Magasinier
+givenName: Pascal
+uid: pascal.auneau
+mail: ctm.magasin@ville-larochelle.fr
+cn: AUNEAU Pascal
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+pager: 5020
+IPPhone: 5669
+employeeNumber: 1843
+manager: uid=murielle.lavielle,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+description: pascal.auneau
+sn: AUNEAU
+facsimileTelephoneNumber: 5036
+homeDirectory: /home/pascal.auneau
+email: pascal.auneau@ville-larochelle.fr
+ouDisplayName: Centre technique municipal
+
+# brigitte.autet, people, larochelle.fr
+dn: uid=brigitte.autet,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: Q3LDqmNoZSBGYW1pbCBWaWxsZW5ldXZl
+ou:: b3U9RWNvbGVzLG91PUxhcm1ldCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sY
+ XJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Brigitte AUTET
+employeeType:: QWdlbnQgdGVycml0b3JpYWwgc3DDqWNpYWxpc8OpIGRlcyDDqWNvbGVzIG1hdGV
+ ybmVsbGVz
+givenName: Brigitte
+uid: brigitte.autet
+cn: AUTET Brigitte
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 8827
+manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: brigitte.autet@ville-larochelle.fr
+description: brigitte.autet
+sn: AUTET
+homeDirectory: /home/brigitte.autet
+roomNumber:: w6ljb2xl
+title: Madame
+IPPhone: .
+telephoneNumber: .
+ouDisplayName: Ecoles
+
+# karine.ayme, people, larochelle.fr
+dn: uid=karine.ayme,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Karine AYME
+employeeType: Animateur des Centres de Loisirs
+givenName: Karine
+telephoneNumber: .
+uid: karine.ayme
+cn: AYME Karine
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 9524
+o: Ville de La Rochelle
+description: karine.ayme
+sn: AYME
+homeDirectory: /home/karine.ayme
+title: Madame
+email: karine.ayme@ville-larochelle.fr
+ouDisplayName: Enfance
+
+# nicolas.azzopardi, people, larochelle.fr
+dn: uid=nicolas.azzopardi,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Eau
+ou:: b3U9RWF1LG91PUVzcGFjZV9QdWJsaWMsb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sb
+ GVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+ouDisplayName: Eau potable
+gidNumber: 500
+mobile: 06 79 01 02 99
+uidNumber: 1000
+displayName: Nicolas AZZOPARDI
+employeeType:: YWdlbnQgY2hhcmfDqSBkdSByZWxldsOpIGRlcyBjb21wdGV1cnMgZCdlYXU=
+givenName: Nicolas
+telephoneNumber: 05 46 51 79 90
+uid: nicolas.azzopardi
+cn: AZZOPARDI Nicolas
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: 65 avenue des Cordeliers
+employeeNumber: 80
+manager: uid=daniele.dumont,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+l: LA ROCHELLE
+description: nicolas.azzopardi
+sn: AZZOPARDI
+homeDirectory: /home/nicolas.azzopardi
+title: Monsieur
+
+# emmanuelle.baillie, people, larochelle.fr
+dn: uid=emmanuelle.baillie,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Restaurants Scolaires
+ou:: b3U9UmVzdGF1cmFudHNfc2NvbGFpcmVzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOoc
+ mVzLG91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Emmanuelle BAILLIE
+employeeType: Agent de service des restaurants scolaires
+givenName: Emmanuelle
+telephoneNumber: .
+uid: emmanuelle.baillie
+cn: BAILLIE Emmanuelle
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 10047
+o: Ville de La Rochelle
+description: emmanuelle.baillie
+sn: BAILLIE
+homeDirectory: /home/emmanuelle.baillie
+title: Madame
+email: emmanuelle.baillie@ville-larochelle.fr
+ouDisplayName: Restauration
+
+# nathalie.bailly, people, larochelle.fr
+dn: uid=nathalie.bailly,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Centres de Loisirs
+ou:: b3U9Q2VudHJlc19kZV9Mb2lzaXJzLG91PUVjb2xlcyxvdT1MYXJtZXQsb3U9RmlsacOocmVzL
+ G91PWNvbGxlY3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+mobile: 06 82 59 90 95
+uidNumber: 1000
+displayName: Nathalie BAILLY
+employeeType:: YXNzaXN0YW50ZSBkZSBjb29yZGluYXRpb24g
+givenName: Nathalie
+uid: nathalie.bailly
+cn: BAILLY Nathalie
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 7360
+o: Ville de La Rochelle
+email: nathalie.bailly@ville-larochelle.fr
+description: nathalie.bailly
+sn: BAILLY
+homeDirectory: /home/nathalie.bailly
+title: Madame
+IPPhone: 8872
+telephoneNumber: 05 46 31 88 72
+ouDisplayName: Enfance
+
+# gael.baland, people, larochelle.fr
+dn: uid=gael.baland,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Espaces Verts Entretien
+ou:: b3U9RXNwYWNlc19WZXJ0c19Qcm9wcmV0ZV9VcmJhaW5lLG91PUVzcGFjZV9QdWJsaWMsb3U9T
+ W9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Gael BALAND
+employeeType:: SmFyZGluaWVyIA==
+givenName: Gael
+telephoneNumber: .
+uid: gael.baland
+cn: BALAND Gael
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+employeeNumber: 3009
+o: Ville de La Rochelle
+description: gael.baland
+sn: BALAND
+homeDirectory: /home/gael.baland
+title: Monsieur
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# catherine.ballet, people, larochelle.fr
+dn: uid=catherine.ballet,ou=people,dc=larochelle,dc=fr
+mailEnabled: OK
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+mailDomain: ville-larochelle.fr
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+info:: U2VjcsOpdGFyaWF0IEfDqW7DqXJhbA==
+ou:: b3U9U2VjcmV0YXJpYXRfZ2VuZXJhbCxvdT1MYXJtZXQsb3U9RmlsacOocmVzLG91PWNvbGxlY
+ 3Rpdml0ZXMsZGM9bGFyb2NoZWxsZSxkYz1mcg==
+businessCategory: Ville de La Rochelle
+ouDisplayName:: RGlyZWN0aW9uIGR1IHNlY3LDqXRhcmlhdCBnw6luw6lyYWw=
+gidNumber: 500
+uidNumber: 1000
+displayName: Catherine BALLET
+employeeType: Chef de service
+givenName: Catherine
+telephoneNumber: 05 46 51 51 15
+uid: catherine.ballet
+cn: BALLET Catherine
+postalCode: 17086
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+postOfficeBox: B.P. 1541
+street:: SMO0dGVsIGRlIFZpbGxl
+IPPhone: 5115
+employeeNumber: 2834
+manager: uid=bernard.aubert,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: catherine.ballet@ville-larochelle.fr
+l: LA ROCHELLE CEDEX 2
+description: catherine.ballet
+sn: BALLET
+facsimileTelephoneNumber: 05 46 51 51 92
+secretary: uid=evelyne.boutet,ou=people,dc=larochelle,dc=fr
+homeDirectory: /home/catherine.ballet
+title: Madame
+
+# frederic.balthy, people, larochelle.fr
+dn: uid=frederic.balthy,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info:: RkwgTWluaW1lcyBIw6liZXJnZW1lbnQ=
+ou:: b3U9Vm9pcmllLG91PUVzcGFjZV9QdWJsaWMsb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y
+ 29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName:: RnLDqWTDqXJpYyBCQUxUSFk=
+employeeType: Ouvrier polyvalent d'entretien de la voie publique
+givenName:: RnLDqWTDqXJpYw==
+uid: frederic.balthy
+telephoneNumber: .
+cn:: QkFMVEhZIEZyw6lkw6lyaWM=
+postalCode: 17180
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street: CTM
+IPPhone: .
+employeeNumber: 238
+physicalDeliveryOfficeName: Rue Blaise Pascal
+o: Ville de La Rochelle
+l: PERIGNY
+description: frederic.balthy
+sn: BALTHY
+homeDirectory: /home/frederic.balthy
+title: Monsieur
+ouDisplayName: Voirie et protection du littoral
+
+# sophie.baradeau, people, larochelle.fr
+dn: uid=sophie.baradeau,ou=people,dc=larochelle,dc=fr
+OXGroupID: 500
+OXAppointmentDays: 5
+OXDayviewStartTime: 07:00
+OXDayviewEndTime: 18:00
+OXTimeZone: Europe/Paris
+shadowMin: 0
+shadowWarning: 7
+lnetMailAccess: TRUE
+OXTaskDays: 5
+userCountry: France
+OXDayviewInterval: 30
+shadowMax: 9999
+shadowExpire: 0
+loginShell: /bin/bash
+preferredLanguage: FR
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Urbanisme Espace Urbain
+ou:: b3U9VXJiYW5pc21lX0VzcGFjZV9VcmJhaW4sb3U9TW9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y
+ 29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName: Sophie BARADEAU
+employeeType: Assistant administratif
+givenName: Sophie
+uid: sophie.baradeau
+cn: BARADEAU Sophie
+postalCode: 17086 La Rochelle Cedex 2
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+postOfficeBox: BP 1541
+street: 20, place de l'Arsenal
+IPPhone: 8810
+employeeNumber: 3245
+manager: uid=alain.goux,ou=people,dc=larochelle,dc=fr
+o: Ville de La Rochelle
+email: sophie.baradeau@ville-larochelle.fr
+l: La Rochelle
+description: sophie.baradeau
+sn: BARADEAU
+facsimileTelephoneNumber: 05.46.51.14.98
+homeDirectory: /home/sophie.baradeau
+title: Madame
+telephoneNumber: 05 46 31 88 10
+ouDisplayName: Urbanisme et risques majeurs
+
+# frederic.barbin, people, larochelle.fr
+dn: uid=frederic.barbin,ou=people,dc=larochelle,dc=fr
+preferredLanguage: FR
+shadowExpire: 0
+OXDayviewInterval: 30
+OXGroupID: 500
+OXDayviewEndTime: 18:00
+userCountry: France
+lnetMailAccess: TRUE
+OXAppointmentDays: 5
+loginShell: /bin/bash
+shadowMin: 0
+shadowMax: 9999
+OXTaskDays: 5
+OXDayviewStartTime: 07:00
+OXTimeZone: Europe/Paris
+shadowWarning: 7
+mailDomain: ville-larochelle.fr
+mailEnabled: OK
+info: Espaces Verts Entretien
+ou:: b3U9RXNwYWNlc19WZXJ0c19Qcm9wcmV0ZV9VcmJhaW5lLG91PUVzcGFjZV9QdWJsaWMsb3U9T
+ W9sbGFyZCxvdT1GaWxpw6hyZXMsb3U9Y29sbGVjdGl2aXRlcyxkYz1sYXJvY2hlbGxlLGRjPWZy
+businessCategory: Ville de La Rochelle
+gidNumber: 500
+uidNumber: 1000
+displayName:: RnLDqWTDqXJpYyBCQVJCSU4=
+employeeType:: UE9MRSBFU1BBQ0VTIFZFUlRTIC0gR0VTVElPTiwgc2VjdGV1ciBzdWQsIEFkam9
+ pbnQgYXUgcmVzcG9uc2FibGUgZGUgbCfDqXF1aXBlIENlbnRyZSBWaWxsZQ==
+givenName:: RnLDqWTDqXJpYw==
+telephoneNumber: 05 46 31 87 88
+uid: frederic.barbin
+cn:: QkFSQklOIEZyw6lkw6lyaWM=
+postalCode: 17000
+objectClass: OXUserObject
+objectClass: frGovPerson
+objectClass: frPerson
+objectClass: euGovPerson
+objectClass: euPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+street:: RMOpcMO0dCBFc3BhY2VzIHZlcnRzIFJ1ZSBSaWNoZWxpZXU=
+pager: 05 46 51 11 66
+IPPhone: 8788
+employeeNumber: 2951
+o: Ville de La Rochelle
+l: La Rochelle
+description: frederic.barbin
+sn: BARBIN
+facsimileTelephoneNumber: 05 46 67 59 10
+homeDirectory: /home/frederic.barbin
+title: Monsieur
+ouDisplayName:: RXNwYWNlcyB2ZXJ0cywgcHJvcHJldMOpIHVyYmFpbmU=
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2455
+# numEntries: 2454
