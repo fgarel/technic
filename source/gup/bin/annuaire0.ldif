@@ -152,10 +152,6 @@ employeeNumber: 2951
 dn: uid=delphine.barbin,ou=people,dc=larochelle,dc=fr
 employeeNumber: 3271
 
-dn: uid=francois.barbotin,ou=people,dc=larochelle,dc=fr
-employeeNumber: 1743
-manager: uid=david.berthiaud,ou=people,dc=larochelle,dc=fr
-
 dn: uid=thierry.barbreau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 2999
 
@@ -615,7 +611,7 @@ employeeNumber: 2129
 
 dn: uid=noel.chapitreau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 2900
-manager: uid=dominique.herbreteau,ou=people,dc=larochelle,dc=fr
+manager: uid=francois.carton,ou=people,dc=larochelle,dc=fr
 
 dn: uid=laurent.charbonneau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 6928
@@ -1187,7 +1183,6 @@ manager: uid=elise.patole-edoumba,ou=people,dc=larochelle,dc=fr
 
 dn: uid=philippe.gaucher,ou=people,dc=larochelle,dc=fr
 employeeNumber: 3014
-manager: uid=jean-luc.chagneau,ou=people,dc=larochelle,dc=fr
 
 dn: uid=andree.gauthier,ou=people,dc=larochelle,dc=fr
 employeeNumber: 2092
@@ -1414,7 +1409,6 @@ manager: uid=g.martin-leroux,ou=people,dc=larochelle,dc=fr
 
 dn: uid=vincent.herve,ou=people,dc=larochelle,dc=fr
 employeeNumber: 11178
-manager: uid=andre.launay,ou=people,dc=larochelle,dc=fr
 
 dn: uid=philippe.herviou,ou=people,dc=larochelle,dc=fr
 employeeNumber: 3038
@@ -1770,7 +1764,6 @@ employeeNumber: 7763
 
 dn: uid=yves.magliocca,ou=people,dc=larochelle,dc=fr
 employeeNumber: 2924
-manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
 
 dn: uid=thierry.magneron,ou=people,dc=larochelle,dc=fr
 employeeNumber: 3193
@@ -2813,9 +2806,6 @@ dn: uid=celine.visset,ou=people,dc=larochelle,dc=fr
 employeeNumber: 4486
 manager: uid=jf.fountaine,ou=people,dc=larochelle,dc=fr
 
-dn: uid=jean-marcel.vitel,ou=people,dc=larochelle,dc=fr
-employeeNumber: 6503
-
 dn: uid=patricia.vrignaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 10586
 
@@ -3533,7 +3523,6 @@ manager: uid=etienne.parlebas,ou=people,dc=larochelle,dc=fr
 
 dn: uid=philippe.teillaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 11362
-manager: uid=pascal.ferrand,ou=people,dc=larochelle,dc=fr
 
 dn: uid=melanie.liaigre,ou=people,dc=larochelle,dc=fr
 employeeNumber: 10158
@@ -3555,7 +3544,6 @@ manager: uid=guillaume.fauvel,ou=people,dc=larochelle,dc=fr
 
 dn: uid=veronique.bourion,ou=people,dc=larochelle,dc=fr
 employeeNumber: 10567
-manager: uid=guillaume.fauvel,ou=people,dc=larochelle,dc=fr
 
 dn: uid=salima.perillaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 373
@@ -3595,7 +3583,7 @@ manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
 
 dn: uid=isabelle.couffin,ou=people,dc=larochelle,dc=fr
 employeeNumber: 10061
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sandrine.grmovick,ou=people,dc=larochelle,dc=fr
 employeeNumber: 95
@@ -4021,7 +4009,6 @@ manager: uid=fabrice.bonneau,ou=people,dc=larochelle,dc=fr
 
 dn: uid=houssin.sadeq,ou=people,dc=larochelle,dc=fr
 employeeNumber: 11472
-manager: uid=pascal.ferrand,ou=people,dc=larochelle,dc=fr
 
 dn: uid=renaud.martin,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12060
@@ -4265,7 +4252,6 @@ employeeNumber: 12414
 
 dn: uid=teddy.priouzeau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12393
-manager: uid=laurent.navarro,ou=people,dc=larochelle,dc=fr
 
 dn: uid=eau.facturation,ou=people,dc=larochelle,dc=fr
 employeeNumber: a20043
@@ -4396,17 +4382,13 @@ manager: uid=nicolas.pasquier,ou=people,dc=larochelle,dc=fr
 dn: uid=maryse.vinet,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13896
 
-dn: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
-employeeNumber: 12748
-manager: uid=dominique.stanchieri,ou=people,dc=larochelle,dc=fr
-
 dn: uid=marie-pierre.huguet,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12749
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=alexia.reynaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12750
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=brigitte.auburtin,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12647
@@ -4438,7 +4420,7 @@ employeeNumber: 12676
 
 dn: uid=anne.memin,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12752
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sandrine.marche,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12751
@@ -4453,7 +4435,7 @@ manager: uid=francoise.koch,ou=people,dc=larochelle,dc=fr
 
 dn: uid=nelly.branger,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12649
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=delphine.chaudet,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12650
@@ -4591,7 +4573,7 @@ manager: uid=francoise.koch,ou=people,dc=larochelle,dc=fr
 
 dn: uid=dominique.verriere,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20066
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=jeannine.chabiron,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12686
@@ -4604,11 +4586,11 @@ employeeNumber: 12690
 
 dn: uid=marie-christine.foucaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20075
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=lauryse.fougereuse,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20076
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=roselyne.gaiguant,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12691
@@ -4652,7 +4634,7 @@ manager: uid=francoise.koch,ou=people,dc=larochelle,dc=fr
 
 dn: uid=francoise.koch,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12656
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sonia.monteiro,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12659
@@ -4709,7 +4691,7 @@ manager: uid=pascale.laurens-dold,ou=people,dc=larochelle,dc=fr
 
 dn: uid=samantha.boutolleau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20113
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=julie.cabon,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12716
@@ -4749,7 +4731,7 @@ manager: uid=pascale.laurens-dold,ou=people,dc=larochelle,dc=fr
 
 dn: uid=nathalien.garnier,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20125
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=vanessa.gorge,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12728
@@ -4765,7 +4747,7 @@ manager: uid=pascale.laurens-dold,ou=people,dc=larochelle,dc=fr
 
 dn: uid=pascale.laurens-dold,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12736
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=alexandra.palot,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12740
@@ -4801,15 +4783,15 @@ manager: uid=nathalie.gatesous,ou=people,dc=larochelle,dc=fr
 
 dn: uid=yvelyne.moyon,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20043
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=valerie.bonnamy,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12757
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=coralie.blancho,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12756
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=chrystel.charrier,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12651
@@ -4829,15 +4811,15 @@ manager: uid=sophie.de-boccard,ou=people,dc=larochelle,dc=fr
 
 dn: uid=evelyne.margat,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12762
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=aicha.zenasni,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12763
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sabrina.gadais,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12760
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=formationdsi.formationdsi,ou=people,dc=larochelle,dc=fr
 employeeNumber: 50013
@@ -4853,7 +4835,7 @@ manager: uid=emmanuel.pavy,ou=people,dc=larochelle,dc=fr
 
 dn: uid=severine.mercier,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12634
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=morgane.cottenec,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12767
@@ -4861,7 +4843,7 @@ manager: uid=laurent.sedilleau,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sophie.de-boccard,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12673
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=thomas.gautronneau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12768
@@ -4898,7 +4880,7 @@ employeeNumber: 13140
 
 dn: uid=chrystelle.bouillaud,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20203
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=catherine.dervillers,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12652
@@ -4978,11 +4960,10 @@ employeeNumber: 12697
 
 dn: uid=rachida.alfakeri,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12755
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=francois.bolleau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 11698
-manager: uid=philippe.trehello,ou=people,dc=larochelle,dc=fr
 
 dn: uid=emma.gouriou,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12764
@@ -5298,7 +5279,7 @@ employeeNumber: 12983
 
 dn: uid=carine.berhault,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12969
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=michel.bertrand,ou=people,dc=larochelle,dc=fr
 employeeNumber: 12965
@@ -6356,7 +6337,7 @@ employeeNumber: c9999
 
 dn: uid=christelle.drapeau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 20921
-manager: uid=catherine.chapon-phelut,ou=people,dc=larochelle,dc=fr
+manager: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
 
 dn: uid=marie-christine.chabot-belleuvre,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13073
@@ -6391,10 +6372,6 @@ employeeNumber: 13103
 dn: uid=marine.boutet,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13104
 manager: uid=geoffrey.boynard,ou=people,dc=larochelle,dc=fr
-
-dn: uid=jenny.jousset,ou=people,dc=larochelle,dc=fr
-employeeNumber: 13102
-manager: uid=denis.metayer,ou=people,dc=larochelle,dc=fr
 
 dn: uid=isabelle.sorel-portoleau,ou=people,dc=larochelle,dc=fr
 employeeNumber: cxdg5645
@@ -6779,10 +6756,6 @@ employeeNumber: st9999
 
 dn: uid=ludovic.beynard,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13123
-
-dn: uid=thomas.bossard,ou=people,dc=larochelle,dc=fr
-employeeNumber: N5656
-manager: uid=eric.villette,ou=people,dc=larochelle,dc=fr
 
 dn: uid=stephane.bonnay,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13355
@@ -7324,7 +7297,6 @@ manager: uid=patricia.fremondiere,ou=people,dc=larochelle,dc=fr
 
 dn: uid=jean-michel.vivien,ou=people,dc=larochelle,dc=fr
 employeeNumber: 9221
-manager: uid=francois.barbotin,ou=people,dc=larochelle,dc=fr
 
 dn: uid=valerie.moreau,ou=people,dc=larochelle,dc=fr
 employeeNumber: 9024
@@ -7362,14 +7334,10 @@ employeeNumber: nn999
 
 dn: uid=valerie.flandrois,ou=people,dc=larochelle,dc=fr
 employeeNumber: 2100
-manager: uid=francois.barbotin,ou=people,dc=larochelle,dc=fr
 
 dn: uid=sebastien.codet,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13859
 manager: uid=emmanuel.pavy,ou=people,dc=larochelle,dc=fr
-
-dn: uid=guillaume.beynard,ou=people,dc=larochelle,dc=fr
-employeeNumber: 13123
 
 dn: uid=anne.bremond,ou=people,dc=larochelle,dc=fr
 employeeNumber: 13665
@@ -8148,4 +8116,23 @@ employeeNumber: 14252
 
 dn: uid=sylvain.thomas,ou=people,dc=larochelle,dc=fr
 employeeNumber: 1054
+
+dn: uid=catherine.chapon,ou=people,dc=larochelle,dc=fr
+employeeNumber: 12748
+manager: uid=dominique.stanchieri,ou=people,dc=larochelle,dc=fr
+
+dn: uid=amandine.heinisch,ou=people,dc=larochelle,dc=fr
+employeeNumber: 14481
+
+dn: uid=karine.letissier,ou=people,dc=larochelle,dc=fr
+employeeNumber: 13285
+
+dn: uid=gardiens.sm,ou=people,dc=larochelle,dc=fr
+employeeNumber: S9639
+
+dn: uid=simon.doublet,ou=people,dc=larochelle,dc=fr
+employeeNumber: 05098
+
+dn: uid=anthony.rautureau,ou=people,dc=larochelle,dc=fr
+employeeNumber: 14547
 
