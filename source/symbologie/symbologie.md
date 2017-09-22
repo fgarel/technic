@@ -25,6 +25,7 @@ Actuellement les infos relatives aux symboles topo sont disséminés un peu part
  - ~/f/CARTOGRAPHIE/Administratif/marche_prestations_topo_2015/CCTP
  - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/autres
  - ~/f/CARTOGRAPHIE/Agents/Fred/geodata/DCE/levetopo
+ - ~/f/CARTOGRAPHIE/documentation/normes_erdf
 
 
 ## Création, dessin du symbole
@@ -41,15 +42,33 @@ http://gisone.free.fr/produits/catalogue/RESEAU-SEC.pdf
 
 Autre exemple un peu différent, une fleche directionnelle (voirie / signalisation horizontale), parce que cet objet est souvent levé par 2 points, le symbole de base sera inséré avec un seul facteur d'echelle "scaleXY". Il faut donc que le symbole de base respecte une emprise max 1x1, mais il ne faut pas que le symbole soit deformé.
 
-Il faut donc que les symboles soient classées selon deifférents groupes :
-des symboles dont la dimension réelle ou dont la représentative est fixe à une echelle donnée (objet levé par un point, ex poteau incendie)
-des symboles etirables selon un seul facteur d'echelle (objet levé par deux points, ex regard rond levé par centre plus un point sur la circonférence, regard carre levé par les deux extrémités d'une diagonale, fleches directionnelle, ..)
-des symboles étirables selon deux facteurs d'echelle (objet levé par trois points, ex regard rectangulaire)
+Il faut donc que les symboles soient classées selon différents groupes :
 
-Si on recupere un symbole svg à partir d'une source externe, il faudra donc "normaliser" ce symbole suivant l'usage que l'on en fera.
+- des symboles dont la représentation est fixe à une échelle donnée, non orienté
+(dimension en unité papier, mm)
+(objet levé par un point)
+(ex : borne géomètre, bouche à clef, poteau incendie, symbole mise en page)
+- des symboles dont la représentation est fixe à une échelle donnée et orientable
+(dimension en unité papier, mm)
+(objet levé par deux points)
+(ex : sens d'écoulement, candélabre (pour une représentation 2.5 D), poteau feux tricolore, signalisation verticale, avaloir simple orienté le long de la bordure, coffret Elec orienté le long d'un mur ou d'une façade, bouche a clef "ovale", signalisation horizontale type "logo vélo")
+- des symboles dont la dimension correspond à celle de l'objet terrain (objet expansible selon un seul facteur d'échelle mais sans déformation)
+(dimension en unité terrain)
+(objet levé par deux points)
+(ex : regard rond levé par centre plus un point sur la circonférence, regard carre levé par les deux extrémités d'une diagonale, flêches directionnelle (signalisation horizontale), arbre avec Houppier représentatif)
+- des symboles dont une dimension correspond à celle de l'objet terrain, et l'autre dimension est fixe (objet extensible selon un seul facteur d'échelle, mais avec déformation)
+(dimension en unité terrain pour un axe, en unité papier pour l'autre axe)
+(objet levé par deux points)
+(ex : seuil, caniveau, dalot, panneau publicitaire)
+- des symboles étirables selon deux facteurs d'échelle
+(dimension en unité terrain)
+(objet levé par trois points)
+(ex : regard rectangulaire, L1T, L2T, L3T,... )
+
+Si on recupère un symbole svg à partir d'une source externe, il faudra donc "normaliser" ce symbole suivant l'usage que l'on en fera.
 
 Si on souhaite créer un symbole à partir de rien, il y a plusieurs façons de créer un symbole ou une série de symbole.
-Et la creation de plusieurs symboles quasi-identiques est plus ou moins automatisable.
+Et la création de plusieurs symboles quasi-identiques est plus ou moins automatisable.
 
 
 ### Récupération d'un fichier svg
