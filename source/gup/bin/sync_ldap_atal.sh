@@ -1,9 +1,19 @@
 #/bin/sh
 
 # #############################################
+# Le but de cet utilitaire est de manipuler des données ldap
+# les etapes sont :
+# - export des données ldap au format ldif
+# - manipulation du fichier ldif
+# - transformation du fichier ldif en graphique
+#
+# #############################################
+
+# #############################################
 # 1. Recherche des données dans l'annuaire ldap
 # on fabrique le fichier annuaire1.ldif
 # ldapsearch -h aul.larochelle.fr -x -b "ou=people,dc=larochelle,dc=fr" -LL dn manager employeeNumber > annuaire0.ldif
+# ldapsearch -h aul.larochelle.fr -x -b "ou=Filires,ou=collectivites,dc=larochelle,dc=fr" > annuaire1.ldif
 ldapsearch -h aul.larochelle.fr -x -b "ou=people,dc=larochelle,dc=fr" > annuaire1.ldif
 
 

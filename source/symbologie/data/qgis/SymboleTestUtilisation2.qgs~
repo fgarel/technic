@@ -131,7 +131,7 @@
     <layer-tree-group expanded="1" checked="Qt::Checked" name="fdp_cadastre">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="ortho2014_geo1720170912163452256" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="ortho2014_geo1720170912163452256" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -139,10 +139,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379396.16986987111158669</xmin>
-      <ymin>5226303.23721363861113787</ymin>
-      <xmax>1379558.17373296921141446</xmax>
-      <ymax>5226507.52796291653066874</ymax>
+      <xmin>1379975.897072350140661</xmin>
+      <ymin>5226457.24270264059305191</ymin>
+      <xmax>1379980.95969307189807296</xmax>
+      <ymax>5226463.62678855657577515</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -403,9 +403,9 @@
       </legendlayer>
     </legendgroup>
     <legendgroup open="true" checked="Qt::Checked" name="fdp_cadastre"/>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720170912163452256" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720170912163452256" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>

@@ -1,10 +1,27 @@
 Outils pour manipuler fichier ldif
 
+Dans ce repertoire, des ressources concernant l'utilisation de ldap peuvent etre trouvées :
+
+1. sync_ldap_atal.sh
+L'utilitaire sync_ldap_atal.sh a pour objectif de demontrer que l'annuaire ldap peut-etre manipulé,
+donc importé/exporté dans Atal
+
+2. jxplorer
+Pour une manipulation du ldap en mode graphique, il est préférable d'utiliser jxplorer
+
+```
+apt-get install jxplorer
+```
+http://tutoriels.meddeb.net/openldap-tutorial-administration-jxplorer/
+
+
+3. Code
+Pour ecrire un script python qui manipule des fichier ldif, il faut voir ici :
+
 https://www.netiq.com/communities/cool-solutions/build-your-own-scripts-manipulate-ldif-exports-part-3/
 
 
-
-graphe
+4. graphe
 
 http://www.graphviz.org/Documentation/dotguide.pdf
 
