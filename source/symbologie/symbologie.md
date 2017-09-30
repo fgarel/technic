@@ -73,7 +73,7 @@ Et la création de plusieurs symboles quasi-identiques est plus ou moins automat
 
 ### Récupération d'un fichier svg
 
-Il est possible de recupérer des fichiers de symboles à paritr de plusieurs sources :
+Il est possible de recupérer des fichiers de symboles à partir de plusieurs sources :
 https://thenounproject.com
 https://commons.wikimedia.org/wiki/Category:Road_signs_of_France_by_number?uselang=fr
 http://www.equipementsdelaroute.equipement.gouv.fr/IMG/pdf/Arrete1967_2annexe_vc20120402_cle03791b.pdf
