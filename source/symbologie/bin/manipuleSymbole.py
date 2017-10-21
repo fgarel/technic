@@ -17,6 +17,7 @@ python ./manipuleSymbole.py ../data/Symbole/fromQgis/Grille_original.svg
 import sys
 import re
 import lxml.etree as et
+import os
 # Import necessaire pour pouvoir utiliser les fonctions décorées depuis qgis
 from qgis.core import *
 from qgis.gui import *
@@ -48,6 +49,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
     # Transformation en float
     Obs_LargeurX = (Obs_LargeurX) * 1.0
     Obs_HauteurY = (Obs_HauteurY) * 1.0
+    #print("{} {}".format(Obs_LargeurX,Obs_HauteurY))
 
     # Des paramètres servent à définir les caractéristiques du symbole final :
     # c'est à dire son nom, ses paramètres de déformation, sa taille, ...
@@ -94,7 +96,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "+" + Obs_AxeDirection,
             'Svg_ScaleX': 1.0,
             'Svg_ScaleY': Obs_InvRatio,
@@ -108,7 +110,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "+" + Obs_AxeDirection,
             'Svg_ScaleX': 1.0,
             'Svg_ScaleY': -Obs_InvRatio,
@@ -122,7 +124,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "-" + Obs_AxeDirection,
             'Svg_ScaleX': -1.0,
             'Svg_ScaleY': -Obs_InvRatio,
@@ -136,7 +138,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "-" + Obs_AxeDirection,
             'Svg_ScaleX': -1.0,
             'Svg_ScaleY': Obs_InvRatio,
@@ -150,7 +152,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "+" + Obs_AxeDirection,
             'Svg_ScaleX': Obs_InvRatio,
             'Svg_ScaleY': 1.0,
@@ -164,7 +166,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "-" + Obs_AxeDirection,
             'Svg_ScaleX': Obs_InvRatio,
             'Svg_ScaleY': -1.0,
@@ -178,7 +180,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "-" + Obs_AxeDirection,
             'Svg_ScaleX': -Obs_InvRatio,
             'Svg_ScaleY': -1.0,
@@ -192,7 +194,7 @@ def param_from_XY(Obs_LargeurX, Obs_HauteurY):
             'Obs_AxeDirection': Obs_AxeDirection,
             'Obs_Ratio': Obs_Ratio,
             'Obs_RatioLabel': Obs_RatioLabel,
-            'Svg_Suffixe': Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
+            'Svg_Suffixe':  "_" + Obs_QuadrantSigneSigne + "_" + Obs_AxeDirection + "_" + str(Obs_RatioLabel),
             'SVg_QuadrantEtirement': "+" + Obs_AxeDirection,
             'Svg_ScaleX': -Obs_InvRatio,
             'Svg_ScaleY': 1.0,
@@ -227,32 +229,32 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
     for path in root.iter('{http://www.w3.org/2000/svg}path'):
         path.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
     # Pour chacun des noeuds de type rect, transformation geometrique (etirement_x, etirement_y, translation)
     for rect in root.iter('{http://www.w3.org/2000/svg}rect'):
         rect.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
     # Pour chacun des noeuds de type polygon, transformation geometrique (etirement_x, etirement_y, translation)
     for polygon in root.iter('{http://www.w3.org/2000/svg}polygon'):
         polygon.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
     # Pour chacun des noeuds de type circle, transformation geometrique (etirement_x, etirement_y, translation)
     for circle in root.iter('{http://www.w3.org/2000/svg}circle'):
         circle.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
     # Pour chacun des noeuds de type text, transformation geometrique (etirement_x, etirement_y, translation)
     for text in root.iter('{http://www.w3.org/2000/svg}text'):
         text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(1250*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1250*(1-param['Svg_ScaleY'])) + ')')
+                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
+                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
     # Pour mémoire (semble inutile) :
     # Pour chacun des noeuds de type flowRoot, transformation geometrique (etirement_x, etirement_y, translation)
     #for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
@@ -338,7 +340,7 @@ def prepare_svg_1ere_passe(inFile, outFile):
 
 def prepare_svg_2de_passe(inFile, outFile):
     """
-    Suppression des branches dont la couleur est blanche(#ffffff) et opacity est 1
+    Suppression des branches dont (la couleur est blanche(#ffffff)) AND (opacity est 1)
     """
     # Lecture du fichier SVG (comme un XML) en entree
     tree = et.parse(inFile)
@@ -365,17 +367,20 @@ def prepare_svg_3eme_passe(inFile, outFile):
     root = tree.getroot()
 
     # Modification de la largeur
-    root.set('width', '2500 px')
+    root.set('width', '1000 px')
     # Modification de la hauteur
-    root.set('height', '2500 px')
+    root.set('height', '2000 px')
     # Modification de la viewbox
-    root.set('viewBox', '0 0 2500 2500')
+    root.set('viewBox', '0 0 1000 2000')
 
     # Ecriture du fichier en sortie
     tree.write(outFile)
 
 
-def prepare_svg_4eme_passe(inFile, outFile):
+def prepare_svg_4eme_passe(inFile, outFile,
+                           qgisCompatible=True,
+                           valueFill='#494949', valueFillOpacity='0.2',
+                           valueOutline='#494949', valueOutlineWidth='0.02'):
     """
     Faire en sorte que le symbole soit personnalisable depuis qgis,
     c'est à dire que l'on modifie ici le svg, en remplaçant les couleurs et les
@@ -385,6 +390,7 @@ def prepare_svg_4eme_passe(inFile, outFile):
     Les modifications à faire :
 
     fill="param(fill) #FFF" --> modifie le remplissage
+    fill-opacity="param(fill-opacity) 0.2" --> modifie la transparence du remplissage
     stroke="param(outline) #000" --> modifie la couleur de bordure
     stroke-width="param(outline-width) 1" --> modifie l'épaisseur du contour
 
@@ -394,38 +400,47 @@ def prepare_svg_4eme_passe(inFile, outFile):
     # Mise en memoire
     root = tree.getroot()
 
+    if qgisCompatible == True:
+        valueFill = 'param(fill) {}'.format(valueFill)
+        valueFillOpacity = 'param(fill-opacity) {}'.format(valueFillOpacity)
+        valueOutline = 'param(outline) {}'.format(valueOutline)
+        valueOutlineWidth = 'param(outline-width) {}'.format(valueOutlineWidth)
+    #else:
+    #    valueFill = '{}'.format(valueFill)
+    #    valueFillOpacity = '{}'.format(valueFillOpacity)
+    #    valueOutline = '{}'.format(valueOutline)
+    #    valueOutlineWidth = '{}'.format(valueOutlineWidth)
+
     for element in root.iter('{http://www.w3.org/2000/svg}path'):
         element.set('style', '')
-        element.set('fill', 'param(fill) #ffffff')
-        element.set('fill-opacity', 'param(fill-opacity) 1')
-        element.set('stroke', 'param(outline) #000000')
-        element.set('stroke-width', 'param(outline-width) 1')
+        element.set('fill', valueFill)
+        element.set('fill-opacity', valueFillOpacity)
+        element.set('stroke', valueOutline)
+        element.set('stroke-width', valueOutlineWidth)
         #element.set('stroke-opacity', 'param(stroke-opacity) 1')
-        #print('path {}, {}'.format(element.tag, \
-        #                           element.attrib))
 
     for element in root.iter('{http://www.w3.org/2000/svg}rect'):
         element.set('style', '')
-        element.set('fill', 'param(fill) #ffffff')
-        element.set('fill-opacity', 'param(fill-opacity) 1')
-        element.set('stroke', 'param(outline) #000000')
-        element.set('stroke-width', 'param(outline-width) 1')
+        element.set('fill', valueFill)
+        element.set('fill-opacity', valueFillOpacity)
+        element.set('stroke', valueOutline)
+        element.set('stroke-width', valueOutlineWidth)
         #element.set('stroke-opacity', 'param(stroke-opacity) 1')
 
     for element in root.iter('{http://www.w3.org/2000/svg}circle'):
         element.set('style', '')
-        element.set('fill', 'param(fill) #ffffff')
-        element.set('fill-opacity', 'param(fill-opacity) 1')
-        element.set('stroke', 'param(outline) #000000')
-        element.set('stroke-width', 'param(outline-width) 1')
+        element.set('fill', valueFill)
+        element.set('fill-opacity', valueFillOpacity)
+        element.set('stroke', valueOutline)
+        element.set('stroke-width', valueOutlineWidth)
         #element.set('stroke-opacity', 'param(stroke-opacity) 1')
 
     for element in root.iter('{http://www.w3.org/2000/svg}text'):
         element.set('style', '')
-        element.set('fill', 'param(fill) #ffffff')
-        element.set('fill-opacity', 'param(fill-opacity) 1')
-        element.set('stroke', 'param(outline) #000000')
-        element.set('stroke-width', 'param(outline-width) 1')
+        element.set('fill', valueFill)
+        element.set('fill-opacity', valueFillOpacity)
+        element.set('stroke', valueOutline)
+        element.set('stroke-width', valueOutlineWidth)
         #element.set('stroke-opacity', 'param(stroke-opacity) 1')
 
     # Ecriture du fichier en sortie
@@ -438,23 +453,39 @@ def prepare_svg_5eme_passe(inPath, outPath, inFile):
     fichierEntree = inPath + inFile
 
     #for Obs_LargeurX in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
-    for X in range(-20, 21, 1):
+    #for X in range(-20, 21, 1):
+    for X in range(-20, 21, 10):
+    #for X in range(10, 11, 1):
         Obs_LargeurX = X / 10.0
         #for Obs_HauteurY in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
-        for Y in range(-20, 21, 1):
+        #for Y in range(-20, 21, 1):
+        for Y in range(-20, 21, 10):
+        #for Y in range(10, 11, 1):
             Obs_HauteurY = Y / 10.0
             # Les parametres de deformation sont calculés dans une autre fonction
             param = param_from_XY(Obs_LargeurX, Obs_HauteurY)
             nouveau_suffixe = param['Svg_Suffixe']
+            #print('{}'.format(param['Svg_Suffixe']))
 
-            if nouveau_suffixe != "pp_x_010":
+            if nouveau_suffixe != "_pp_x_010":
                 # on ne deforme pas le fichier initial....
-                fichierSortieSansChemin = re.sub(r'pp_x_010',
+                fichierSortieSansChemin = re.sub(r'_pp_x_010_5',
                                                  nouveau_suffixe,
                                                  inFile)
                 fichierSortie = outPath + fichierSortieSansChemin
                 stretch_symbol(fichierEntree, fichierSortie, Obs_LargeurX, Obs_HauteurY)
-
+            elif nouveau_suffixe == "_pp_x_010":
+                # on ne deforme pas le fichier initial....
+                fichierSortieSansChemin = re.sub(r'_pp_x_010_5',
+                                                 nouveau_suffixe,
+                                                 inFile)
+                fichierSortie = outPath + fichierSortieSansChemin
+                stretch_symbol(fichierEntree, fichierSortie, Obs_LargeurX, Obs_HauteurY)
+                fichierSortieSansChemin = re.sub(r'_pp_x_010_5',
+                                                 '',
+                                                 inFile)
+                fichierSortie = outPath + fichierSortieSansChemin
+                stretch_symbol(fichierEntree, fichierSortie, Obs_LargeurX, Obs_HauteurY)
 
 def main():
     """
@@ -500,7 +531,7 @@ def main():
     cheminEntree = '/'.join(fichierEntree.split('/')[0:-1]) + '/'
     cheminSortie = cheminEntree
     fichierEntreeSansChemin = fichierEntree.split('/')[-1]
-    fichierSortieSansChemin = re.sub(r'original', r'pp_x_010_2', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'_original', r'_pp_x_010_2', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("1ere passe => {}".format(fichierSortie))
@@ -508,32 +539,65 @@ def main():
 
     ## 2de passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010_2', r'pp_x_010_3', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'_pp_x_010_2', r'_pp_x_010_3', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("2de passe  => {}".format(fichierSortie))
     prepare_svg_2de_passe(fichierEntree, fichierSortie)
+    ## nettoyage
+    os.remove(fichierEntree)
 
     ## 3eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010_3', r'pp_x_010_4', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'_pp_x_010_3', r'_pp_x_010_4', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("3eme passe => {}".format(fichierSortie))
     prepare_svg_3eme_passe(fichierEntree, fichierSortie)
+    os.remove(fichierEntree)
 
     ## 4eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    fichierSortieSansChemin = re.sub(r'pp_x_010_4', r'pp_x_010', fichierEntreeSansChemin)
+    fichierSortieSansChemin = re.sub(r'_pp_x_010_4', r'_pp_x_010_5', fichierEntreeSansChemin)
     fichierEntree = cheminEntree + fichierEntreeSansChemin
     fichierSortie = cheminSortie + fichierSortieSansChemin
     print("4eme passe => {}".format(fichierSortie))
-    prepare_svg_4eme_passe(fichierEntree, fichierSortie)
+    # pour des symboles "qgisCompatible", avec des couleurs grises
+    prepare_svg_4eme_passe(fichierEntree, fichierSortie,
+                           qgisCompatible=True,
+                           valueFill='#494949', valueFillOpacity='0.2',
+                           valueOutline='#494949', valueOutlineWidth='0.02')
+    # pour des symboles "qgisCompatible", avec des couleurs assainissement 125,73,0
+    prepare_svg_4eme_passe(fichierEntree, fichierSortie,
+                           qgisCompatible=True,
+                           valueFill='#7d4900', valueFillOpacity='0.2',
+                           valueOutline='#7d4900', valueOutlineWidth='25')
+    # pour des symboles non "qgisCompatible", avec des couleurs assainissement 125,73,0
+    # pour les symboles non "qgisCompatible", ne pas hésiter à mettre une epaisseur ~ 25
+    #prepare_svg_4eme_passe(fichierEntree, fichierSortie,
+    #                       qgisCompatible=False,
+    #                       valueFill='#7d4900', valueFillOpacity='0.2',
+    #                       valueOutline='#7d4900', valueOutlineWidth='25')
+    os.remove(fichierEntree)
 
     ## 5eme passe :
     fichierEntreeSansChemin = fichierSortieSansChemin
-    print("5eme passe => {}".format(fichierSortie))
+    #fichierSortieSansChemin = re.sub(r'pp_x_010_5', r'pp_x_010_6', fichierEntreeSansChemin)
+    fichierEntree = cheminEntree + fichierEntreeSansChemin
+    #fichierSortie = cheminSortie + fichierSortieSansChemin
+    #print("5eme passe => {}".format(fichierSortie))
+    print("5eme passe => {} {} {}".format(cheminEntree, cheminSortie, fichierEntreeSansChemin))
     prepare_svg_5eme_passe(cheminEntree, cheminSortie, fichierEntreeSansChemin)
+    os.remove(fichierEntree)
+
+
+    ## Nettoyage
+    fichierEntreeSansChemin = fichierSortieSansChemin
+    liste_suffixe_a_supprimer = [r'_mp_x_999', r'_pm_y_999', r'_pp_x_999', r'_pp_y_999']
+    for suffixe in liste_suffixe_a_supprimer:
+        fichierEntree = cheminEntree + re.sub(r'_pp_x_010_5', suffixe, fichierEntreeSansChemin)
+        os.remove(fichierEntree)
+        print('os.remove({})'.format(fichierEntree))
 
 
 if __name__ == '__main__':
