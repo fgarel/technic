@@ -26,15 +26,11 @@ Le but est de créer une base de type graphe connecté
  - un graphe pour les vélos
  - un graphe pour les piétons
 Possibilité de connecté ce point de vue avec
-pgrouting, chouette, osmnx, geopandas, networkx, pysal
+pgrouting, chouette, osmnx, geopandas, networkx
 https://www.graphhopper.com/
 https://github.com/graphhopper/jsprit
 https://github.com/Mapkin/osmgraph
 https://gist.github.com/aflaxman/287370/
-https://gis.stackexchange.com/questions/244576/using-geopandas-to-create-a-graph
-http://geoffboeing.com/
-http://i11www.iti.kit.edu/projects/route_planning/index
-http://i11www.iti.kit.edu/projects/route_planning/publications
 
 Base de type topologie de réseau qui doit s'appuyer sur des "lanes" (file de vehicules)
 

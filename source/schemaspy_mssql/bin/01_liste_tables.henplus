@@ -1,0 +1,6 @@
+-- 01_liste_tables.henplus
+
+
+spool ../data/02_tables_result.data
+tables
+spool off

@@ -1,31 +1,31 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.13">
+<qgis projectname="" version="2.18.14">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="sigar_b_controle_acces">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="sigar_b_controle_acces">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ca_tampon20171016142548357" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cat_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_tampon&quot; (shape) sql=" name="ca_tampon">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ca_tampon20171016142548357" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cat_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_tampon&quot; (shape) sql=" name="ca_tampon">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ca_pga20171016142547971" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cap_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_pga&quot; (shape) sql=" name="ca_pga">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ca_pga20171016142547971" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cap_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_pga&quot; (shape) sql=" name="ca_pga">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ca_coffret_electrique20171016142547786" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cace_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_coffret_electrique&quot; (shape) sql=" name="ca_coffret_electrique">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ca_coffret_electrique20171016142547786" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cace_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_coffret_electrique&quot; (shape) sql=" name="ca_coffret_electrique">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ca_borne20171016142538598" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cab_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_borne&quot; (shape) sql=" name="ca_borne">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ca_borne20171016142538598" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cab_id' srid=-1 type=Point table=&quot;b_controle_acces&quot;.&quot;ca_borne&quot; (shape) sql=" name="ca_borne">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="ca_bus_cuivre20171016142547517" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cabc_id' srid=-1 type=MultiLineString table=&quot;b_controle_acces&quot;.&quot;ca_bus_cuivre&quot; (shape) sql=" name="ca_bus_cuivre">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="ca_bus_cuivre20171016142547517" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cabc_id' srid=-1 type=MultiLineString table=&quot;b_controle_acces&quot;.&quot;ca_bus_cuivre&quot; (shape) sql=" name="ca_bus_cuivre">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="ca_reseau_electrique20171016142548164" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='care_id' srid=-1 type=MultiLineString table=&quot;b_controle_acces&quot;.&quot;ca_reseau_electrique&quot; (shape) sql=" name="ca_reseau_electrique">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="ca_reseau_electrique20171016142548164" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='care_id' srid=-1 type=MultiLineString table=&quot;b_controle_acces&quot;.&quot;ca_reseau_electrique&quot; (shape) sql=" name="ca_reseau_electrique">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ca_zone20171016142548555" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='caz_id' srid=-1 type=Polygon table=&quot;b_controle_acces&quot;.&quot;ca_zone&quot; (shape) sql=" name="ca_zone">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="ca_zone20171016142548555" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='caz_id' srid=-1 type=Polygon table=&quot;b_controle_acces&quot;.&quot;ca_zone&quot; (shape) sql=" name="ca_zone">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -197,21 +197,21 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="sigar_b_signalisation_lumineuse">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="sigar_b_signalisation_lumineuse">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="slt_armoire20171018180330443" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='id_armoire' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_armoire&quot; (shape) sql=" name="slt_armoire">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="slt_armoire20171018180330443" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='id_armoire' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_armoire&quot; (shape) sql=" name="slt_armoire">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="slt_boucle20171018180330604" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='boucle_id' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_boucle&quot; (shape) sql=" name="slt_boucle">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="slt_boucle20171018180330604" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='boucle_id' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_boucle&quot; (shape) sql=" name="slt_boucle">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="slt_regard20171018180330724" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='regard_id' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_regard&quot; (shape) sql=" name="slt_regard">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="slt_regard20171018180330724" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='regard_id' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_regard&quot; (shape) sql=" name="slt_regard">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="slt_cable20171018180330866" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cable_id' srid=-1 type=MultiLineString table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_cable&quot; (shape) sql=" name="slt_cable">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="slt_support20171018180330982" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='id_support' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_support&quot; (shape) sql=" name="slt_support">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="slt_support20171018180330982" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='id_support' srid=-1 type=Point table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_support&quot; (shape) sql=" name="slt_support">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="slt_cable20171018180330866" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='cable_id' srid=-1 type=MultiLineString table=&quot;b_signalisation_lumineuse&quot;.&quot;slt_cable&quot; (shape) sql=" name="slt_cable">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -314,19 +314,19 @@
     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="sigar_a_pcrs">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="sigar_a_rtge">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="sigar_a_rtge">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="sigar_c_cadastre">
+    <layer-tree-group expanded="0" checked="Qt::Checked" name="sigar_c_cadastre">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="parcelle20171016115450545" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_cadastre&quot;.&quot;parcelle&quot; (shape) sql=" name="parcelle">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="parcelle20171016115450545" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_cadastre&quot;.&quot;parcelle&quot; (shape) sql=" name="parcelle">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="bati20171016115450026" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_cadastre&quot;.&quot;bati&quot; (shape) sql=" name="bati">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="bati20171016115450026" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_cadastre&quot;.&quot;bati&quot; (shape) sql=" name="bati">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="ortho2014_geo1720171016115225065" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
+    <layer-tree-layer expanded="0" providerKey="wms" checked="Qt::Unchecked" id="ortho2014_geo1720171016115225065" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -334,10 +334,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1379605.06531121721491218</xmin>
-      <ymin>5226129.18330149259418249</ymin>
-      <xmax>1380044.86765649309381843</xmax>
-      <ymax>5226391.45361094083636999</ymax>
+      <xmin>1379565.20656709559261799</xmin>
+      <ymin>5227181.30912049394100904</ymin>
+      <xmax>1379609.88807755894958973</xmax>
+      <ymax>5227207.95434804540127516</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -557,40 +557,40 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Checked" name="sigar_b_controle_acces">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ca_tampon" showFeatureCount="0">
+    <legendgroup open="false" checked="Qt::Unchecked" name="sigar_b_controle_acces">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ca_tampon" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_tampon20171016142548357" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_tampon20171016142548357" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ca_pga" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ca_pga" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_pga20171016142547971" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_pga20171016142547971" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ca_coffret_electrique" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ca_coffret_electrique" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_coffret_electrique20171016142547786" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_coffret_electrique20171016142547786" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ca_borne" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ca_borne" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_borne20171016142538598" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_borne20171016142538598" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ca_bus_cuivre" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ca_bus_cuivre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_bus_cuivre20171016142547517" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_bus_cuivre20171016142547517" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ca_reseau_electrique" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ca_reseau_electrique" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_reseau_electrique20171016142548164" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_reseau_electrique20171016142548164" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ca_zone" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ca_zone" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="ca_zone20171016142548555" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="ca_zone20171016142548555" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -852,30 +852,30 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="sigar_b_signalisation_lumineuse">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_armoire" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="sigar_b_signalisation_lumineuse">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_armoire" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="slt_armoire20171018180330443" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="slt_armoire20171018180330443" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_boucle" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_boucle" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="slt_boucle20171018180330604" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="slt_boucle20171018180330604" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_regard" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_regard" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="slt_regard20171018180330724" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="slt_regard20171018180330724" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="slt_cable" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="slt_cable20171018180330866" visible="0"/>
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_support" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" layerid="slt_support20171018180330982" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="slt_support" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="slt_cable" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="slt_support20171018180330982" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="slt_cable20171018180330866" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -1028,22 +1028,22 @@
       </legendgroup>
     </legendgroup>
     <legendgroup open="true" checked="Qt::Unchecked" name="sigar_a_pcrs"/>
-    <legendgroup open="true" checked="Qt::Unchecked" name="sigar_a_rtge"/>
-    <legendgroup open="false" checked="Qt::Unchecked" name="sigar_c_cadastre">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="parcelle" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="sigar_a_rtge"/>
+    <legendgroup open="false" checked="Qt::Checked" name="sigar_c_cadastre">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="parcelle" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="parcelle20171016115450545" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="parcelle20171016115450545" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="bati" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="bati" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="bati20171016115450026" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="bati20171016115450026" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720171016115225065" visible="1"/>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720171016115225065" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -36526,7 +36526,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="31,31,31,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.5"/>
+              <prop k="outline_width" v="0.25"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
             </layer>
@@ -36706,7 +36706,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -37255,9 +37255,39 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{11bb496a-d730-48e5-95c0-9f4c10318858}">
+          <rule scalemaxdenom="75" key="{31cc6453-d45b-4a2f-9487-6709cb86aee9}" symbol="0" scalemindenom="1" label="pour 1/10, entre 1/75 et 1/1, schematique"/>
+          <rule scalemaxdenom="162" key="{a208b57d-c737-4c9a-84db-154cd6f117ef}" symbol="1" scalemindenom="75" label="pour 1/100, entre 1/162 et 1/75, topo"/>
+          <rule scalemaxdenom="350" key="{e44de6f4-31f1-41bd-9909-081c8727729d}" symbol="2" scalemindenom="162" label="pour 1/200, entre 1/350 et 1/162, topo"/>
+          <rule scalemaxdenom="750" key="{a4f87785-69f3-434d-8fb8-9eb12246f425}" symbol="3" scalemindenom="350" label="pour 1/500, entre 1/750 et 1/350, topo"/>
+          <rule scalemaxdenom="1625" key="{edbec11c-2820-43ed-b79c-05b827bf273c}" symbol="4" scalemindenom="750" label="pour 1/1000, entre 1/1625 et 1/750, schematique"/>
+          <rule scalemaxdenom="3500" key="{6b4ab6db-8825-4e01-a6c2-d0a0002b6233}" symbol="5" scalemindenom="1625" label="pour 1/2000, entre 1/3500 et 1/1625, schematique"/>
+        </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="94,130,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="97,7,240,255"/>
@@ -37279,9 +37309,95 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="228,13,35,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="150,101,15,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="0.4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="208,39,213,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="diamond"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="star"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties/>

@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="demandes_interventions_reunions_publiques" id="demandes_interventions_reunions_publiques">
+	<SimpleField name="id" type="float"></SimpleField>
+	<SimpleField name="gup_dem" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_date_demande_original" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_demandeur_original" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_lieu_rue" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_destinataires" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_date_transmission_par_intermediaire" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_date_reponse_service" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_reponse_service" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_date_previsionnelle_intervention" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_date_reelle_intervention" type="string"></SimpleField>
+	<SimpleField name="secteurs_suivi_des_demandes-Feuille1_Statut" type="string"></SimpleField>
+</Schema>
+<Folder><name>demandes_interventions_reunions_publiques</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">2</SimpleData>
+		<SimpleData name="gup_dem">llp_01_01</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue de Vaugouin</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Malgré la zone 30 la vitesse est excessive bien qu'il ai une école</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Marquage au sol &quot;ECOLE&quot; + dôme devant le passage piétons ou coussin berlinois -information riverains -</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie Deplacements</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18630906427974,46.1634524947755</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">3</SimpleData>
+		<SimpleData name="gup_dem">llp_01_02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue de Vaugouin</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">La LPO 17 propose en collaboration avec les autres associations du site et la mairie l’aménagement de l’espace de biodiversité sur la pelouse</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Autres</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1856442983238,46.1637537976773</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">4</SimpleData>
+		<SimpleData name="gup_dem">llp_01_03</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue du Général de Castelnau</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Demande de changer l'avaloir à l'angle de la rue des vignes et de l'allée du sel</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Demande déjà prise en compte avant la fin de l'année</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie Pluviale</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1837086562756,46.1626433698287</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">5</SimpleData>
+		<SimpleData name="gup_dem">llp_01_04</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue des Vignes</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Voir les murs de clôtures des riverains qui seraient abîmés par le passage de la tondeuse par les agents sur les espaces verts</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Une sensibilisation sera faite auprés des agents du services des espaces verts.
+Proposition de prévoir la plantation en bordure de plantes vivaces</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Espaces Verts</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18317830990633,46.1627618616734</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">6</SimpleData>
+		<SimpleData name="gup_dem">llp_01_05</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue Meschinet de Richemond angle rue des vignes</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Nid de poule dans la voirie et le trottoir se soulève</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Boucher les trous + couper les racines refaire le trottoir</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie Travaux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18311232210924,46.1623488318519</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">8</SimpleData>
+		<SimpleData name="gup_dem">llp_01_07</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">32 rue Meschinet de Richemond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Suite au PC 17300170050 en date du 20/06/2017, demande si un trottoir est prévu </SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">à la charge du riverain.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Urbanisme</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1851017319921,46.1622134115633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">9</SimpleData>
+		<SimpleData name="gup_dem">llp_01_08</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue Meschinet de Richemond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Entretien du terrain de sport. Comment réinvestir régulièrement le site ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Demande la mise en place d'une poubelle publique et de bancs
+Nettoyage du boulodrome</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Propreté Urbaine / Espaces Verts</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18783411559044,46.1621727854117</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">10</SimpleData>
+		<SimpleData name="gup_dem">llp_01_09</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue  Meschinet de Richemond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Nid de poule vers le terrain de sport</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Boucher les trous</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie Travaux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18790254733577,46.1619493410407</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="id">11</SimpleData>
+		<SimpleData name="gup_dem">llp_01_10</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/13</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Rossignolette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue  Meschinet de Richemond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Les jardins familiaux ne sont pas entretenus en bordure de route.
+Vérifier autorisation de faire des barbecue dans les jardins</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ">Prendre contact avec le responsable</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Autres</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">MProx.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_tel">546426680</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1925348058225,46.1618183345387</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_108</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/15</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue Gambetta</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Propreté rue Gambetta</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Réponse faite ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14765281324433,46.1617979083861</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_107</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/26</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Parc Beltrémieux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Demande de bancs Parc Beltrémieux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Espaces verts</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Le sol va être refait et un/deux banc(s) supplémentaire sera prévu</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.18198299226229,46.1629722350152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_106</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/08/09</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">avenue A. Briand</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Stationnement problématique d'un garage auto avenue A. Briand</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PM</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">La PM est passée, pour le moment plus de problèmes.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.16472580776214,46.1646993328155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_105</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/06/21</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">M. Robaux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">PréVer</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue des deux moulins</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Problème de circulation rue des deux moulins</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Pascal, a-t-on répondu ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15775728676324,46.1557492385719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_104</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/24</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mairie de proximité</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">Hypercentre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">RDV à monter sur le plan de déploiement des réseaux et de réhabilitation du CV : demandes récurrentes comité de quartier NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">David, Sébastien devait proposer une rencontre tous les trois, du nouveau ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15313836874431,46.1579460065278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_103</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/08/17</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">M. Bénard</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue Vernet</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Stationnement rue Vernet</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Avons-nous fait une réponse ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14712385739758,46.1728908602488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_102</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/30</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mme Le Port - 05 46 41 41 69</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">PréVer</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Plaintes de nuisances du restaurant Pattaya</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">MPCentre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15502041253832,46.1559667928477</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_100</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/11/02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">MDA Lafond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Demande de renseignements MDA Lafond</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">MPCentre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Ok</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14055323398876,46.173347090334</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_97</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/03</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">Fétilly</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">parking piscine</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Dépôts sauvages parking piscine</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">EV/PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Ok</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15230386538925,46.1694982734588</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_96</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/03</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">Fétilly</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rues Faisan et Place du curé crampette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Dépôts sauvages rues Faisan et Place du curé crampette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">EV/PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Passage prévu + passage réguliers ensuite.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15513042625003,46.1717012157468</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_95</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/03</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">Fétilly</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue du Lignon</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Propreté urbaine rue du Lignon</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">EV/PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Fait le 3 octobre. Passages réguliers durant l'automne.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1547796448029,46.1741115715359</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_94</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">50-52 avenue Jean Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Couleur grille à peindre 50-52 avenue Jean Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">MPCentre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Mail fait à S. Dorin</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.16484276449309,46.1595996845958</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_93</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">avenue Coligny</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Propreté avenue Coligny</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Passage demandé à la PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.16548032515838,46.1611666020779</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_91</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">avenue Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Propreté avenue Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_transmission_par_intermediaire">2017/10/08</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Passage demandé à la PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.16792225635522,46.1600208300233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_90</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/10/09</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mme Lemaire</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">29 rue du Cordouan</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Plaque rouge bruyante et gênante 29 rue du Cordouan</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_transmission_par_intermediaire">2017/10/10</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">France Télécom doit intervenir avant le 10/11</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14915360271584,46.1637470593427</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_86</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/09/23</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">La Genette</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Avenue Jean Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Propreté devant BNP Avenue Jean Guiton</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">C'est la Ville qui intervient et c'est régulièrement fait. Réponse faite au CDQ.</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1658606460958,46.1598597039145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_84</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">31/08/2017
+Relance le 25 septembre 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mme Fernagut</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">St Eloi</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue Jean Jaurès</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Vitesse excessive rue Jean Jaurès</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Voir avec P. Laffargue</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14166288030459,46.1638919773703</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_83</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/05/29</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">CDQ</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">Le Prieuré</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Demande de grilles </SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">DJCDT</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_reponse_service">2017/06/09</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Accord</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14623165480189,46.1780477758736</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_82</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue Gambetta</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Extension zone horodatée rue Gambetta</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">C'est prévu dans le cadre de l'extension de la zone horodatée de la Ville</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14428204844313,46.161890369896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_81</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">2 rue amos barbot</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Demande d'arceaux vélo 2 rue amos barbot</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Pas de réponse à ce jour</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14833757429674,46.1642875163969</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_80</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue St Louis</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Entretien trottoir MATMUT Rue St Louis</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Trottoir refait dans le cadre des travaux</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14640150687102,46.159016554836</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_79</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">334</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Place de la Caille</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Pavé descellé Place de la Caille</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Pavé rescellé ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15169458901433,46.1589860430376</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_78</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue du pas du minage</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Saleté des arcades rue du pas du minage</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">/</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Responsabilité des propriétaires - Participation possible VLR 20/40%</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14955546286492,46.1623004155184</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_77</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">330</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">17 rue du collège</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Saleté des trottoirs 17 rue du collège</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Le niveau de passage n'augmentera pas</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15011840905377,46.1631916365849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_76</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">329</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">9 impasse du collège</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Refaire trottoirs 9 impasse du collège</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Trop étroits, niveaux différents - Pas possible</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14984663519782,46.1632015705311</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_75</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">328</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU NDA 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue de l'Evescot</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Désherbage rue de l'Evescot</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">EV/NP</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Entretien de la bordure et du fil de l'eau fait ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.148933244667,46.1629644331219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_73</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">299</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">45 bld de cognehors</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Problème de visibilité 45 bld de cognehors</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Balisette ou ligne jaune posées ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14411887488487,46.1684604537351</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_72</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">298</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Mauvaise état terre plein suite travuax Renaissance</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">ENEDIS est intervenu : OK</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14562837165995,46.1688562155618</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_71</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">297</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Impasse de cognehors (29 bld de cognehors)</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Impasse de cognehors (29 bld de cognehors) : quelle propriété ?</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">AIF</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Voir avec J. Vaillant</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14497507955644,46.1689702381604</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_70</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">293</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">rue Pierre et Marie Curie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Mettre un panneau de rue pour Pierre et Marie Curie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Voirie</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Voir avec P. Laffargue</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.13979554847949,46.1703314359393</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_69</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">284</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Autorisation de se brancher sur la crèche pour les manifestations</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">GTPB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Voir avec GTPB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14205030792792,46.1745774933078</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_68</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">283</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Bois des Protestants</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Groupe de travail Bois des Protestants (PU, eclairage, sécurisation des jeux)</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">MPCentre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Relancer en septembre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Demande à transmettre</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14203186370964,46.1748486836917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_67</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">282</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">BU CLAB 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Riverains</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">CLAB</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Bois des Protestants</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Remplacement du toboggan Bois des Protestants</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">EV</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Toboggan à poser le 1er juin - Vérifier si cela est fait</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14225806671165,46.174750260306</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_01</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation">333</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/08/24</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">M. Lafuente</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Cour du Temple</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Bruit cour du Temple</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">Tranquillité</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_reponse_service">30 aout 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.15240700404689,46.1591403341827</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_02</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/06/27</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">M. Corre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Avenue Porte Royale</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Repas de rue Avenue Porte Royale</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">SG</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_reponse_service">2017/08/11</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Ok sous conditions</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.1408806992181,46.1624538621588</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_03</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">1er août 2017</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Village du Cordouan</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">NDA</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Rue du Cordouan</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Vide-greniers rue du Cordouan</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">CxM</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_reponse_service">2017/09/05</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Ok</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.14922560522341,46.1635006978197</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_04</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/08/28</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mme Tardy</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">St Eloi</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Repas de rue rue d'Amboise</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Repas de rue rue d'Amboise</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">SG</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Ok</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Clos</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.13156099003341,46.1660239331748</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#demandes_interventions_reunions_publiques">
+		<SimpleData name="gup_dem">centre_05</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_demande_original">2017/08/08</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_original">Mme Bernard</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier">St Eloi</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_lieu_rue">Fief des Ardennes</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande">Problème de poubelles Fief des Ardennes</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_destinataires">PU/Déchets</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_date_transmission_par_intermediaire">2017/09/05</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_demandeur_intermediaire">centre</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_reponse_service">Courrier à rédiger</SimpleData>
+		<SimpleData name="secteurs_suivi_des_demandes-Feuille1_Statut">Attente retour services</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.12010951429987,46.1660989465085</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

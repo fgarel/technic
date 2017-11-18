@@ -12,7 +12,7 @@ Creation semi-automatique de métadonnées à partir d'une base postgresql
 trois outils sont utilisés :
  - schemaSpy permet d'extraire des informations concernant le schema de la base de données
  - henplus permet d'extraire aussi des informations sur le schema, mais aussi d'interroger la base (données)
- - csvkit est un ensemble de petits utilitaires  permettant de manipuler aisement des fichiers au format csv
+ - csvkit est un ensemble de petits utilitaires permettant de manipuler aisement des fichiers au format csv
 
 Des scripts ont aussi été développés pour ces utilitaires :
  - tables.sql
@@ -36,7 +36,7 @@ Des scripts ont aussi été développés pour ces utilitaires :
   # modification du path pour prendre en compte les outils (csvjoin,...)
   export PATH=$PATH:~/install/csvkit/csvkit/:.
 
-  # lancement de henplus et connection à la base postgresql 
+  # lancement de henplus et connection à la base postgresql
   henplus
   connect jdbc:postgresql://dsiappli14/ds_siecle/public ds_siecle
   contrib
@@ -73,12 +73,13 @@ henplus est un outil qui va nous permettre de vérifier la bonne installation de
 2.2. installation des drivers
 -----------------------------
 1. mise en place du driver
-   mettre les drivers dans le repertoire ./henplus/lib
+   mettre les drivers dans le repertoire ~/.henplus/lib
    par exemple :
 
 .. code::
 
-  cd ./henplus/lib
+  cd ~/.henplus/lib
+  cp /usr/share/java/jtds* ~/.henplus/lib/
   wget http://jdbc.postgresql.org/download/postgresql-8.4-703.jdbc4.jar
 
 2. optionnel : enregistrement du driver
@@ -94,6 +95,7 @@ henplus est un outil qui va nous permettre de vérifier la bonne installation de
 3. utilisation du driver
 
 .. code::
+  connect jdbc:jtds:sqlserver://dsibdd01:1433/ATAL
   connect jdbc:jtds:sqlserver://VLR:1433/reseau_eau
   connect jdbc:oracle:thin:@dsioracle4:1521:GESCIMEP
   connect jdbc:oracle:thin:@dsioracle3:1523:thotp     (Thot/Thot)
@@ -102,29 +104,7 @@ henplus est un outil qui va nous permettre de vérifier la bonne installation de
 4. utilisation avancee de henplus
    cf travail/opendata/export/LisezMoi.txt
 
-2.3. installation de unixodbc
------------------------------
-cf : http://www.easysoft.com/products/data_access/odbc-access-driver/index.html
 
-.. code::
-
-  cd /usr/local
-  mkdir easysoft
-
-  cd ~/doc/install/schemaSpy/
-  cd odbc-access-1.0.0-linux-x86-glibc
-  sudo ./install
-
-  vi /etc/odbcinst.ini
-  vi /etc/odbc.ini
-
-  odbcinst -q -s
-  odbcinst -q -d
-
-
-  aptitude install mdbtools
-
-  isql
 
 
 2.4. Utilisation de henplus
@@ -135,8 +115,9 @@ Se mettre dans le bon repertoire : il faut en effet executer henplus à partir d
 .. code::
 
   ~/travail/openData/export/bin/
+  cd ~/Documents/technic/source/schemaspy_mssql/bin/
 
-qui contient aussi les fichiers 
+qui contient aussi les fichiers
 
 .. code::
 
@@ -186,50 +167,3 @@ qui contient aussi les fichiers
 ### cf fichier recherche.sh
 
 ### on obtient aussi les fichiers metadata4.csv et metadata5.csv
-
-
-
-3. SchemaSpy
-------------
-Documentation relative à la mise en oeuvre de l'outil SchemaSpy
-
-SchemaSpy est un outil permettant,
-
- - à partir des paramètres de connexion à une base de données
- - de produire une documentation de cette base au format html
-
-schemaSpy tourne en java
-http://schemaspy.sourceforge.net/
-
-schemaSpy utilise graphviz pour la representation graphique des tables et des relations
-http://www.graphviz.org/Resources.php
-
-schemaSpyGui est une interface graphique
-http://www.joachim-uhl.de/projekte/schemaspygui/
-
-les connexions aux bases de données de font via jdbc (marche pas) ou, mieux, via jtds
-cf : http://randomactsofcoding.blogspot.com/2009/01/database-documentation-using-schemaspy.html
-
-Installation de l'outil
------------------------
-Il faut installer schemaSpy dans /home/garel/install/schemaSpy
-schemaSpyGui dans le meme repertoire
-graphviz (donc ses outils dot, ...) sont dans le path
-le driver jtds dans le repertoire /home/garel/install/schemaSpy/jdts-1.2.5-dist/jtds-1.2.5.jar
-
-Utilisation de l'outil en mode graphique
-----------------------------------------
-exemple : recuperer le schema de la base de données compta
-qui est une base de type ms sql server 2005
-
-BD Type = mssql5-jtds
-DB Host = VLR
-DB name = Compta
-BD User = sa
-DB Port = 1433
-Password = 
-Path do DB Driver = /home/garel/install/schemaSpy/jdts-1.2.5-dist/jtds-1.2.5.jar
-Path de SchemaSpy = /home/garel/install/schemaSpy/schemaSpy.jar
-output directory = /home/garel/public_html/openData/Compta
-
-

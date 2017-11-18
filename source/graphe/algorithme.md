@@ -41,6 +41,30 @@ http://www.graham-kendall.com/papers/bhkw2007.pdf
 ### Les algorithmes
 https://wiki.python.org/moin/ProblemSets/99%20Prolog%20Problems%20Solutions
 http://www.faqs.org/faqs/graphics/algorithms-faq/
+https://github.com/keon/algorithms
+https://github.com/TheAlgorithms/Python
+https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html
+https://doc.cgal.org/latest/Manual/packages.html
+https://doc.cgal.org/latest/Manual/packages.html#PartSearchStructures
+https://github.com/cgal/cgal-swig-bindings
+https://www.cgal.org/projects.html#gis
+http://www.mathprepa.fr/python-project-euler-mpsi-mp/
+https://projecteuler.net/
+https://www.nayuki.io/page/project-euler-solutions
+https://github.com/nayuki/Project-Euler-solutions
+
+
+### Photogrammetrie
+https://www.cgal.org/projects.html#vision
+http://inria-mvs.gforge.inria.fr/html/user.html#overview
+http://arc-team-open-research.blogspot.fr/2012/12/how-to-make-3d-scan-with-pictures-and.html
+http://arc-team-open-research.blogspot.fr/
+https://github.com/steve-vincent/photogrammetry
+http://imagine.enpc.fr/~moulonp/openMVG/index.html
+https://github.com/openMVG/openMVG/
+http://openmvg.readthedocs.io/en/latest/
+http://openmvg.readthedocs.io/en/latest/software/Geodesy/geodesy/
+http://openmvg.readthedocs.io/en/latest/software/SfM/SfM/
 
 ### Les outils
 https://pypi.python.org/pypi/Fiona

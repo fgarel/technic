@@ -3,7 +3,7 @@
 Il existe plusieurs logiciels de gestion de relation usager
 
 Dans un première partie, nous allons essayer de faire un état des lieux des logiciels existants.
-En particulier, le logiciel entrouvert sera installé pour etre testé.
+En particulier, le logiciel entrouvert sera installé pour être testé.
 
 Dans une seconde partie, nous allons essayer d'analyser les différents logiciels déjà en place
 
@@ -34,6 +34,16 @@ http://doc.entrouvert.org/wcs/dev/
 demo
 https://portail-citoyen-publik.entrouvert.com/
 https://demarches-publik.entrouvert.com/
+
+
+autres outils :
+publik  : https://portail-citoyen-publik.entrouvert.com/
+opengst : http://www.opengst.fr/  http://www.opengst.fr/logiciel-services-techniques-ou-fichier-excel/
+taiga-docker (back et front) : https://github.com/htdvisser/taiga-docker  https://hub.docker.com/r/htdvisser/taiga-front-dist/
+cf aussi fichier ~/Documents/documentation/Gup/taiga_et_gup.ods
+odoo : https://www.odoo.com/fr_FR/
+openmairie : http://www.openmairie.org/
+
 
 ### Installation de combo et de wcs dans un environnemenet virtuel
 
@@ -74,7 +84,7 @@ adresse
 
 Comment sont transférés/traduits les incidents en demande d'intervention ? (e-atal, atal, portail-citoyen ?)
 
-Qui recoit et comment sont recues les demandes ? est ce que le destinataire peut les corriger, les réorienter ?
+Qui reçoit et comment sont reçues les demandes ? est ce que le destinataire peut les corriger, les réorienter ?
 Qui transmet et comment sont transmises les demandes destinées à la CDA, à l'OPH ?
 
 comment sont restituées (à l'usager) les informations concernant la prise en charge de l'incident : date de la prise en charge, date prévue de l'intervention, motif de l'acceptation ou du refus, ...?
@@ -107,6 +117,3 @@ fg | fb140355
 la comparaison e_atal | extranet des ecoles se trouve dans le fichier "etiquetage_demandes.ods"
 
 ### la circulation de l'information, les destinataires
-
-
-

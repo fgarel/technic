@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="secteurs_suivi_des_demandes-Feuille1">
+        <SrcDataSource relativeToVRT="1">secteurs_suivi_des_demandes.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>Feuille1</SrcLayer>
+        <Field name="identifiant_gup_demande" src="identifiant_gup_demande" type="String"/>
+        <Field name="identifiant_gup_observation" src="identifiant_gup_observation" type="String"/>
+        <Field name="date_demande_original" src="date_demande_original" type="String"/>
+        <Field name="demandeur_original" src="demandeur_original" type="String"/>
+        <Field name="lieu_quartier" src="lieu_quartier" type="String"/>
+        <Field name="lieu_rue" src="lieu_rue" type="String"/>
+        <Field name="objet_de_la_demande" src="objet_de_la_demande" type="String"/>
+        <Field name="preconisations_in_situ" src="preconisations_in_situ" type="String"/>
+        <Field name="destinataires" src="destinataires" type="String"/>
+        <Field name="date_transmission_par_intermediaire" src="date_transmission_par_intermediaire" type="String"/>
+        <Field name="demandeur_intermediaire" src="demandeur_intermediaire" type="String"/>
+        <Field name="demandeur_tel" src="demandeur_tel" type="String"/>
+        <Field name="date_reponse_service" src="date_reponse_service" type="String"/>
+        <Field name="reponse_service" src="reponse_service" type="String"/>
+        <Field name="date_previsionnelle_intervention" src="date_previsionnelle_intervention" type="String"/>
+        <Field name="date_reelle_intervention" src="date_reelle_intervention" type="String"/>
+        <Field name="Statut" src="Statut" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
