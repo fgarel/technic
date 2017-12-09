@@ -23,9 +23,9 @@ rm -f test.svg ; \
   rm -f test-notugly.svg ; \
   rm -f test-notugly.png ; \
   dot -Tsvg test.dot > test.svg ; \
-  xsltproc notugly.xsl test.svg > test-notugly.svg ; \
+  xsltproc --novalid notugly.xsl test.svg > test-notugly.svg ; \
   rsvg test-notugly.svg test-notugly.png
-la syntaxe est maintenant dans le script 
+la syntaxe est maintenant dans le script
 dot2png.sh
 
 utilisation avancée : traceviz = traceroute avec graphviz
@@ -35,4 +35,3 @@ utilisation avancée : ancestors
 populateAncetres.sh
 
 ancestors.sh
-

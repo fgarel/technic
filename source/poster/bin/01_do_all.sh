@@ -1,9 +1,11 @@
 #!/bin/sh
 
 # 1ere partie : preparation avant google earth
-#./02_before_ge.sh
+./02_before_ge.sh
 
 # puis travail sous google earth
+/usr/bin/actiona -E -C -x -e ~/Documents/technic/source/poster/bin/06_script_actiona_v1.ascr
+/usr/bin/actiona -E -C -x -e ~/Documents/technic/source/poster/bin/06_script_actiona_v2.ascr
 
 # 2de partie : traitement des pdf
 # les fichiers pdf sont recupérés a partir de google earth
@@ -18,5 +20,3 @@
 
 # on reassemble le tout
 ./10_lance_hugin_03.sh
-
-

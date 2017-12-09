@@ -19,7 +19,7 @@ regex_04 = r"(objectClass):([^:\n]*)\n"
 
 
 
-with open('annuaire1.ldif') as file_input:
+with open('agents1.ldif') as file_input:
     texte_00 = file_input.read()
     #print(read_data)
     with open('annuaire2.ldif', 'w') as file_output:

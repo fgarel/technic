@@ -1,0 +1,864 @@
+<scriptfile>
+    <settings program="actiona" version="3.9.2" scriptVersion="1.1.0" os="GNU/Linux"/>
+    <actions>
+        <action name="ActionWindowCondition" version="1.0.0"/>
+        <action name="ActionWriteClipboard" version="1.0.0"/>
+        <action name="ActionWheel" version="1.0.0"/>
+        <action name="ActionWindow" version="1.0.0"/>
+        <action name="ActionKey" version="1.0.0"/>
+        <action name="ActionLoop" version="1.0.0"/>
+        <action name="ActionClick" version="1.0.0"/>
+        <action name="ActionVariable" version="1.0.0"/>
+    </actions>
+    <parameters/>
+    <resources/>
+    <script pauseBefore="0" pauseAfter="0">
+        <action name="ActionVariable" comment="Affectation de la variable NbCasesX">
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="positionValue">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">9</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">NbCasesX</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionVariable" comment="NbCasesT = NbCasesX * NbCasesX - 1">
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="positionValue">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="1">NbCasesX * NbCasesX - 1</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">NbCasesT</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionVariable" comment="Initialisation de la variable tuileCourante">
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="positionValue">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">tuileCourante</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWindow" comment="Focus sur la fenetre Google Earth Pro">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="title">
+                <subParameter name="value" code="0">Google Earth Pro</subParameter>
+            </parameter>
+            <parameter name="movePosition">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="resizeWidth">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="useBorders">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">setForeground</subParameter>
+            </parameter>
+            <parameter name="resizeHeight">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Deploie Lieux Temporaires" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1340:238</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Deploie centrePVA_pour_poster" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1351:257</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Deploie centre" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1364:302</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Focus dans panneau lieux" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1412:237</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWheel" comment="Molette pour remonter l'ascenceur" pauseAfter="200">
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="intensity">
+                <subParameter name="value" code="0">1000</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Focus dans panneau lieux, sur Lieux temporaires" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1412:237</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="1 x touche bas : focus sur &quot;centrePVA_pour_poster&quot;" pauseAfter="100">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Down</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="1 x touche bas : focus sur centre (avant la premiere dalle)" pauseAfter="100">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Down</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="1 x touche bas" pauseAfter="10">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Down</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionLoop" comment="Il faut appuyer X fois sur la touche bas  avec X = tuileCourante">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="line">
+                <subParameter name="value" code="0">013</subParameter>
+            </parameter>
+            <parameter name="count">
+                <subParameter name="value" code="1">tuileCourante</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="1 x touche retour" pauseAfter="10000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Return</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur le bouton &quot;Enregistrer le fichier PDF" pauseAfter="500">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">2082:120</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWriteClipboard" comment="Ecriture de la variable tuileCourante dans le presse-papier" pauseAfter="200">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="value">
+                <subParameter name="value" code="1">tuileCourante</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="Copie du presse papier comme nom du fichier pdf en sortie" pauseAfter="200">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">V</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="Appui sur la touche entr&#233;e pour enregistrer le pdf" pauseAfter="10000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Return</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWindowCondition" comment="Attente de la fin de l'impression">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="xCoordinate">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="height">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="title">
+                <subParameter name="value" code="0">Impression en cours</subParameter>
+            </parameter>
+            <parameter name="ifFalse">
+                <subParameter name="line" code="0"/>
+                <subParameter name="action" code="0">wait</subParameter>
+            </parameter>
+            <parameter name="condition">
+                <subParameter name="value" code="0">dontexists</subParameter>
+            </parameter>
+            <parameter name="size">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="width">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="processId">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="ifTrue">
+                <subParameter name="line" code="0"/>
+                <subParameter name="action" code="0">do_nothing</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="yCoordinate">
+                <subParameter name="value" code="0"/>
+            </parameter>
+        </action>
+        <action name="ActionVariable" comment="Incrementation de la variable tuileCourante" pauseAfter="100">
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="positionValue">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="value">
+                <subParameter name="value" code="1">tuileCourante + 1</subParameter>
+            </parameter>
+            <parameter name="colorValue">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">tuileCourante</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">integer</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionLoop" comment="On reitere (n*n - 1) fois (la boucle) &#224; partir de l'instruction 8">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="line">
+                <subParameter name="value" code="0">008</subParameter>
+            </parameter>
+            <parameter name="count">
+                <subParameter name="value" code="1">NbCasesT</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Focus sur la fenetre Google Earth Pro" pauseAfter="300">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">2223:43</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" comment="Clic sur menu Fichier" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">press</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">1355:67</subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="On descend dans ce menu" pauseAfter="300">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Down</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionLoop" comment="Pour arriver sur Quitter" pauseAfter="100">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="line">
+                <subParameter name="value" code="0">025</subParameter>
+            </parameter>
+            <parameter name="count">
+                <subParameter name="value" code="0">8</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="On valide la Sortie de GE" pauseAfter="1000">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Return</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWindowCondition" comment="Attente de la fenetre de sortie" pauseAfter="200">
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="xCoordinate">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="height">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="title">
+                <subParameter name="value" code="0">Google Earth</subParameter>
+            </parameter>
+            <parameter name="ifFalse">
+                <subParameter name="line" code="0"/>
+                <subParameter name="action" code="0">wait</subParameter>
+            </parameter>
+            <parameter name="condition">
+                <subParameter name="value" code="0">exists</subParameter>
+            </parameter>
+            <parameter name="size">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="width">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="processId">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="ifTrue">
+                <subParameter name="line" code="0"/>
+                <subParameter name="action" code="0">do_nothing</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0"/>
+            </parameter>
+            <parameter name="yCoordinate">
+                <subParameter name="value" code="0"/>
+            </parameter>
+        </action>
+        <action name="ActionWindow" comment="Focus sur le fenetre de sortie" pauseAfter="200">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="title">
+                <subParameter name="value" code="0">Google Earth</subParameter>
+            </parameter>
+            <parameter name="movePosition">
+                <subParameter name="value" code="0"/>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="resizeWidth">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="useBorders">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">setForeground</subParameter>
+            </parameter>
+            <parameter name="resizeHeight">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="On se deplace dans cette boite de dialogue" pauseAfter="200">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Left</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="On se deplace dans cette boite de dialogue" pauseAfter="200">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Left</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" comment="On ferme GE sans enregistrer" pauseAfter="200">
+            <exception id="33" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="0" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="isQtKey" code="0">true</subParameter>
+                <subParameter name="key" code="0">Return</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+    </script>
+</scriptfile>

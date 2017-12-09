@@ -6,8 +6,9 @@
 
 # http://wiki.panotools.org/Panorama_scripting_in_a_nutshell
 
-Path='/home/fred/hugin/pva9'
-Prefix='Assemblage'
+
+Path='/home/fred/Images/d225_v4/'
+Prefix='Assemblage_225'
 FOV=10
 
 # Recherche des points de controle
@@ -27,11 +28,10 @@ pano_modify --projection=0 \
             --center \
             --canvas=AUTO \
             --crop=AUTO \
-            -o $Path/project8.pto \
+            -o $Path/project8.pto\
             $Path/project7.pto
 
 # Assemblage avec hugin_excutor, "was" fabrication d un makfile et execution
 hugin_executor -t 2 -s \
                -p $Path/$Prefix \
                $Path/project8.pto
-

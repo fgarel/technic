@@ -1,0 +1,66 @@
+@startuml
+
+' Ligne 0
+' -------
+state "Direction de la Voirie" as Direction
+Direction: Sébastien Codet
+
+' Ligne 1
+' -------
+state "Mission Mode doux de déplacement Urbain" as Doux
+Doux: Birgitta Morin
+
+state "Service Éclairage public\nSignalisation Tricolore" as Eclairage
+Eclairage: Olivier Golinvaux
+
+state "Unité Assainissement pluvial\net Protection du littoral" as Pluvial
+Pluvial: Séverine Teyssot
+
+state "Unité Déplacements" as Déplacement
+Déplacement: Pascal Laffargue
+
+state "Unité Topographie" as Topographie
+Topographie: Frédéric Garel
+
+state "Unité Voirie Travaux" as Travaux
+Travaux: David Germaneau
+
+' Ligne 2
+' -------
+state "Organisation technique\nProgrammation Etudes Commandes DT/DICT" as EclairageN2
+EclairageN2: Sébastien Paillé
+
+state "Réseau pluvial\nProtection Littorale\nExploitation" as PluvialN2
+PluvialN2: Jean-Yves Oberlin
+
+state "Acessibilité PMR Mobilier Urbain Opérations Diverses" as DéplacementN2A
+DéplacementN2A: Fabrice Malaussene
+
+state "Signalisation Exploitation" as DéplacementN2B
+DéplacementN2B: André Launay
+
+state "Gestion Patrimoine routier" as TravauxN2A
+TravauxN2A: Christophe Debar-Monclair
+
+state "Gestion Patrimoine routier" as TravauxN2B
+TravauxN2B: Nicolas Hoste\nMichel Marchand\nRoger Tomasso
+
+' Relation entre Agents Ligne 0 et Agents Ligne 1
+' -------
+Direction --> Doux
+Direction --> Eclairage
+Direction --> Pluvial
+Direction --> Déplacement
+Direction --> Topographie
+Direction --> Travaux
+
+' Relation entre Agents Ligne 1 et Agents Ligne 2
+' -------
+Eclairage --> EclairageN2
+Pluvial --> PluvialN2
+Déplacement --> DéplacementN2A
+Déplacement --> DéplacementN2B
+Travaux --> TravauxN2A
+Travaux --> TravauxN2B
+
+@enduml

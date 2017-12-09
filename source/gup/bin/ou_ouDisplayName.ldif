@@ -1,0 +1,99 @@
+##############################################
+Technique pour la traduction de ouDisplayName
+correpondance entre nom en clair en nom crypté
+##############################################
+
+2 listes :
+- texte dans les deux langues
+- pas de problèmes de traduction
+
+Le passe d'une langue à l'autre, c'est l'encodage/décodage base64
+
+https://www.base64decode.org/
+
+##############################################
+Liste 1
+##############################################
+ouDisplayName: Unité Assainissement pluvial et protection du littoral
+ouDisplayName:: VW5pdMOpIEFzc2Fpbmlzc2VtZW50IHBsdXZpYWwgZXQgcHJvdGVjdGlvbiBkdSBsaXR0b3JhbA==
+
+ouDisplayName: Unité Voirie Travaux
+ouDisplayName:: VW5pdMOpIFZvaXJpZSBUcmF2YXV4
+
+ouDisplayName: Unité Topographie
+ouDisplayName:: VW5pdMOpIFRvcG9ncmFwaGll
+
+ouDisplayName: Unité Déplacements
+ouDisplayName:: VW5pdMOpIETDqXBsYWNlbWVudHM=
+
+ouDisplayName: Equipe Régie Automatismes
+ouDisplayName:: RXF1aXBlIFLDqWdpZSBBdXRvbWF0aXNtZXM=
+
+ouDisplayName: Equipe d'interventions Opérateurs sur Hydrocureurs
+ouDisplayName:: RXF1aXBlIGQnaW50ZXJ2ZW50aW9ucyBPcMOpcmF0ZXVycyBzdXIgSHlkcm9jdXJldXJz
+
+ouDisplayName: Réseau pluvial - Protection Littorale Exploitation
+ouDisplayName:: UsOpc2VhdSBwbHV2aWFsIC0gUHJvdGVjdGlvbiBMaXR0b3JhbGUgRXhwbG9pdGF0aW9u
+
+ouDisplayName: Electriciens Réseau
+ouDisplayName:: RWxlY3RyaWNpZW5zIFLDqXNlYXU=
+
+ouDisplayName: Gestion Travaux réseaux Autorisations
+ouDisplayName:: R2VzdGlvbiBUcmF2YXV4IHLDqXNlYXV4IEF1dG9yaXNhdGlvbnM=
+
+ouDisplayName: Observatoire Circulation Mobilier Urbain Opérations diverses
+ouDisplayName:: T2JzZXJ2YXRvaXJlIENpcmN1bGF0aW9uIE1vYmlsaWVyIFVyYmFpbiBPcMOpcmF0aW9ucyBkaXZlcnNlcw==
+
+ouDisplayName: Acessibilité PMR Mobilier Urbain Opérations Diverses
+ouDisplayName:: QWNlc3NpYmlsaXTDqSBQTVIgTW9iaWxpZXIgVXJiYWluIE9ww6lyYXRpb25zIERpdmVyc2Vz
+
+ouDisplayName: Mission Mode doux de déplacement Urbain
+ouDisplayName:: TWlzc2lvbiBNb2RlIGRvdXggZGUgZMOpcGxhY2VtZW50IFVyYmFpbg==
+
+
+
+##############################################
+Liste 2
+##############################################
+
+ouDisplayName: Direction de la voirie
+ouDisplayName: Direction de la voirie
+
+ouDisplayName: Service Eclairage public signalisation tricolore
+ouDisplayName: Service Eclairage public signalisation tricolore
+
+ouDisplayName: Signalisation Exploitation
+ouDisplayName: Signalisation Exploitation
+
+ouDisplayName: Equipe d'interventions
+ouDisplayName: Equipe d'interventions
+
+ouDisplayName: Gestion Patrimoine routier
+ouDisplayName: Gestion Patrimoine routier
+
+ouDisplayName: Voirie Travaux Exploitation
+ouDisplayName: Voirie Travaux Exploitation
+
+ouDisplayName: Surveillance et suivi patrimoine routier
+ouDisplayName: Surveillance et suivi patrimoine routier
+
+ouDisplayName: Equipe d'interventions
+ouDisplayName: Equipe d'interventions
+
+ouDisplayName: Exploitation pluviale
+ouDisplayName: Exploitation pluviale
+
+ouDisplayName: Gestion du Patrimoine pluvial
+ouDisplayName: Gestion du Patrimoine pluvial
+
+ouDisplayName: Organisation technique Programmation Etudes Commandes DT/DICT
+ouDisplayName: Organisation technique Programmation Etudes Commandes DT/DICT
+
+ouDisplayName: SIG DT/DICT Facturation
+ouDisplayName: SIG DT/DICT Facturation
+
+ouDisplayName: Suivi Organisation Coordination Stocks
+ouDisplayName: Suivi Organisation Coordination Stocks
+
+
+
