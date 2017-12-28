@@ -1,11 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.14">
+<qgis projectname="" version="2.18.15">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="05_mypoi20171201123605848" source="/home/fred/Documents/technic/source/poster/bin/05_mypoi.shp" name="05_mypoi">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="EmpriseEchangePCRS20171228175814425" source="/home/fred/Documents/install/source/geogig/data/repo/localhost__pcrs/CDA-46-00197-01045-16-D-16-D/EmpriseEchangePCRS.gpkg|layername=EmpriseEchangePCRS" name="EmpriseEchangePCRS">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="05_mypoi20171201123605848" source="/home/fred/Documents/technic/source/poster/bin/05_mypoi.shp" name="05_mypoi">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="poi_polygon20171201104314680" source="/home/fred/Documents/technic/source/qgis/data/poi_polygon.shp" name="poi_polygon">
@@ -17,7 +20,7 @@
     <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="population_comite_quartier20171103161823743" source="dbname='decouppopulation' host=dsibdd09 port=5432 user='sig' sslmode=disable key='cq_id' srid=2154 type=MultiPolygon table=&quot;sig&quot;.&quot;population_comite_quartier&quot; (wkb_geometry) sql=" name="population_comite_quartier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bdtopo_commune20171106144117150" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_ignf&quot;.&quot;bdtopo_commune&quot; (shape) sql=" name="bdtopo_commune">
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="bdtopo_commune20171106144117150" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_ignf&quot;.&quot;bdtopo_commune&quot; (shape) sql=" name="bdtopo_commune">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="poi20171106164406391" source="/home/fred/Documents/technic/source/qgis/data/poi.sqlite|layername=poi" name="poi">
@@ -62,7 +65,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="ortho2014_geo1720171103150836132" source="crs=EPSG:3946&amp;dpiMode=7&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="ortho2014_geo1720171103150836132" source="crs=EPSG:3946&amp;dpiMode=7&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OSM_Standard20171103160534270" source="/home/fred/Documents/technic/source/qgis" name="OSM Standard">
@@ -88,60 +91,33 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-437.375</xmin>
-      <ymin>-12168.7999999999992724</ymin>
-      <xmax>17932.375</xmax>
-      <ymax>296.7999999999992724</ymax>
+      <xmin>1379779.45310083217918873</xmin>
+      <ymin>5226079.19493951089680195</ymin>
+      <xmax>1379779.72547021694481373</xmax>
+      <ymax>5226174.52640954218804836</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
-        <srsid>3857</srsid>
-        <srid>3857</srid>
-        <authid>EPSG:3857</authid>
-        <description>WGS 84 / Pseudo Mercator</description>
-        <projectionacronym>merc</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>1765</srsid>
+        <srid>3946</srid>
+        <authid>EPSG:3946</authid>
+        <description>RGF93 / CC46</description>
+        <projectionacronym>lcc</projectionacronym>
+        <ellipsoidacronym>GRS80</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Satellite20171201093612151"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="sitesmunicipauxcomplements20171106143319777"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="TestLyon20171109084515585"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="05_mypoi20171201123605848"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_9_act_eco20171106143319717"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="NASA_Fires___Past_48_hours20171205145218435"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_7_logement20171106143319686"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="05_mypoi20171205171607762"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Humanitarian20171113142046741"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_polygon20171201104314680"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20171103150855213"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_1_salub20171106143319548"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_2_enseign20171106143319565"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20171103160534270"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_3_culture20171106143319587"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bing_Satellite20171205115513070"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_cn_Satellite20171205112324683"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Assemblage20171206115157601"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_0_adm_gnrl20171106143319431"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_8_anenagt_sce20171106143319702"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier20171103161823743"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="bdtopo_commune20171106144117150"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_4_sport20171106143319615"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier20171103161356470"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720171103150836132"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenTopoMap20171113120543336"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_6_famille20171106143319661"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="cdalr_communes20171106143950540"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZoneImplantationOuvrage_PortLaRochelle20171109090416955"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_communal20171106143319733"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_gima20171106143319761"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi20171106164406391"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_5_social20171106143319643"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720171103150836132"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20171103160534270"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="EmpriseEchangePCRS20171228175814425"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="bdtopo_commune20171106144117150"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="05_mypoi20171201123605848"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="05_mypoi20171205171607762"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -171,12 +147,18 @@
       <item>05_mypoi20171201123605848</item>
       <item>Bing_Satellite20171205115513070</item>
       <item>05_mypoi20171205171607762</item>
+      <item>EmpriseEchangePCRS20171228175814425</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="05_mypoi" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="EmpriseEchangePCRS" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="05_mypoi20171201123605848" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="EmpriseEchangePCRS20171228175814425" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="05_mypoi" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="05_mypoi20171201123605848" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="poi_polygon" showFeatureCount="0">
@@ -194,9 +176,9 @@
         <legendlayerfile isInOverview="0" layerid="population_comite_quartier20171103161823743" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="bdtopo_commune" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="bdtopo_commune20171106144117150" visible="1"/>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="bdtopo_commune" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="bdtopo_commune20171106144117150" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="poi" showFeatureCount="0">
@@ -266,9 +248,9 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720171103150836132" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720171103150836132" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OSM Standard" showFeatureCount="0">
@@ -968,13 +950,13 @@
       <layername>05_mypoi</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
-          <srsid>3857</srsid>
-          <srid>3857</srid>
-          <authid>EPSG:3857</authid>
-          <description>WGS 84 / Pseudo Mercator</description>
-          <projectionacronym>merc</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
@@ -1054,8 +1036,8 @@
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{0bdcc6a7-c14d-4216-889f-f3f71bddc0b0}">
-          <rule description="hg" key="{866f1866-b136-4e58-b4cb-38da01018459}">
+        <rules key="{9f1e521f-de45-45f0-b21b-efb1788157e7}">
+          <rule description="hg" key="{b9649a40-f308-4a5f-a821-1a53b4d07bf4}">
             <settings>
               <text-style fontItalic="1" fontFamily="Ubuntu" fontLetterSpacing="0" fontUnderline="0" fontWeight="63" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="poi_idhg" namedStyle="Medium Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1069,7 +1051,7 @@
               <data-defined/>
             </settings>
           </rule>
-          <rule description="im" key="{08401b8d-3eb4-4c20-b057-6f7128b59602}">
+          <rule description="im" key="{49d4b449-33f3-488b-b3f7-8cde20de6387}">
             <settings>
               <text-style fontItalic="1" fontFamily="Ubuntu" fontLetterSpacing="0" fontUnderline="0" fontWeight="63" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="0" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="11" fieldName="poi_idim" namedStyle="Medium Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1083,7 +1065,7 @@
               <data-defined/>
             </settings>
           </rule>
-          <rule description="xoffset" key="{27ec9d29-8669-4775-826e-290aa4588d48}">
+          <rule description="xoffset" key="{fbccd1e9-b82d-474f-bb92-5da76159fe4d}">
             <settings>
               <text-style fontItalic="1" fontFamily="Ubuntu" fontLetterSpacing="0" fontUnderline="0" fontWeight="63" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName=" round( xoffset,1)" namedStyle="Medium Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1097,7 +1079,7 @@
               <data-defined/>
             </settings>
           </rule>
-          <rule description="yoffset" key="{186a00e9-b32f-4294-9db3-aefa1b77b3a4}">
+          <rule description="yoffset" key="{6476869a-561b-4841-8b51-9f3c2ef55f83}">
             <settings>
               <text-style fontItalic="1" fontFamily="Ubuntu" fontLetterSpacing="0" fontUnderline="0" fontWeight="63" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName="round(yoffset,1)" namedStyle="Medium Italic" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -1857,6 +1839,137 @@ def my_form_open(dialog, layer, feature):
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>EmpriseEchangePCRS20171228175814425</id>
+      <datasource>../../../install/source/geogig/data/repo/localhost__pcrs/CDA-46-00197-01045-16-D-16-D/EmpriseEchangePCRS.gpkg|layername=EmpriseEchangePCRS</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>EmpriseEchangePCRS</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="fid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="idEmpriseEchange">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="complement">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="datePublication">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gestionnaire">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="27,98,160,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>fid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="fid" index="0" name=""/>
+        <alias field="idEmpriseEchange" index="1" name=""/>
+        <alias field="complement" index="2" name=""/>
+        <alias field="datePublication" index="3" name=""/>
+        <alias field="gestionnaire" index="4" name=""/>
+        <alias field="type" index="5" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-669492032">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="fid" expression=""/>
+        <default field="idEmpriseEchange" expression=""/>
+        <default field="complement" expression=""/>
+        <default field="datePublication" expression=""/>
+        <default field="gestionnaire" expression=""/>
+        <default field="type" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="PyTiledLayer">
       <extent>
@@ -4060,7 +4173,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>5256748.5</ymax>
       </extent>
       <id>bdtopo_commune20171106144117150</id>
-      <datasource>dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' password='Mie9Asie' sslmode=disable key='gid' srid=-1 type=MultiPolygon table="c_ignf"."bdtopo_commune" (shape) sql=</datasource>
+      <datasource>dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' password='Mie1Asie' sslmode=disable key='gid' srid=-1 type=MultiPolygon table="c_ignf"."bdtopo_commune" (shape) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -6964,19 +7077,47 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
   </projectlayers>
   <properties>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSRestrictedComposers type="QStringList"/>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">GRS80</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -7098,13 +7239,38 @@ def my_form_open(dialog, layer, feature):
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:3946</ProjectCrs>
+      <ProjectCRSID type="int">1765</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
 </qgis>

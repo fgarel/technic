@@ -10,12 +10,12 @@
         <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="table_prefecture20170510115324985" name="table_prefecture">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" checked="Qt::Checked" id="table_01_extended20170510115324997" name="table_01_extended">
+        <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="table_01_extended20170510115324997" name="table_01_extended">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="presence_2_bases">
+        <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="presence_2_bases">
           <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_iga20170502150839335" name="table_iga">
+          <layer-tree-layer expanded="1" checked="Qt::Checked" id="table_iga20170502150839335" name="table_iga">
             <customproperties/>
           </layer-tree-layer>
           <layer-tree-group expanded="1" checked="Qt::Unchecked" name="geometrie_directe">
@@ -46,9 +46,9 @@
             <customproperties/>
           </layer-tree-layer>
         </layer-tree-group>
-        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="données_initiales">
+        <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="données_initiales">
           <customproperties/>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_0120170502143736065" name="table_01">
+          <layer-tree-layer expanded="1" checked="Qt::Checked" id="table_0120170502143736065" name="table_01">
             <customproperties/>
           </layer-tree-layer>
           <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_0120170502143736106" name="table_01">
@@ -57,7 +57,7 @@
           <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_01_g20170502143736121" name="table_01_g">
             <customproperties/>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_0220170502143736143" name="table_02">
+          <layer-tree-layer expanded="1" checked="Qt::Checked" id="table_0220170502143736143" name="table_02">
             <customproperties/>
           </layer-tree-layer>
           <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="table_0220170502143736133" name="table_02">
@@ -242,10 +242,10 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="ortho2014_geo1720161003132531104" name="ortho2014_geo17">
+    <layer-tree-layer expanded="0" checked="Qt::Checked" id="ortho2014_geo1720161003132531104" name="ortho2014_geo17">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="OSM_Standard20170421172325499" name="OSM Standard">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OSM_Standard20170421172325499" name="OSM Standard">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -253,10 +253,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-132018.52360832507838495</xmin>
-      <ymin>5806475.19469120353460312</ymin>
-      <xmax>-131039.66492116593872197</xmax>
-      <ymax>5807080.94906760007143021</ymax>
+      <xmin>-129427.79801460998714902</xmin>
+      <ymin>5805312.45169940032064915</ymin>
+      <xmax>-128448.93932745090569369</xmax>
+      <ymax>5806187.50673984922468662</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -274,39 +274,58 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="QUADRILLAGE_500_SOUS_QUADRILLAGE_50020170502102853731"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_line_vlr20170502110824860"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_PASSAGE_SUP20170421171435936"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="voirie_filaire_toponymie20161125152124918"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_prefecture20170510115324985"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways_vlr20170502105800254"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="voirie_filaire_troncon20161125152124943"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="voirie_filaire_voie20161125152125006"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_VOIES_INACCESS_TS_VEHICULES20170421171436525"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0220170502143736133"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0120170502150839271"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_01_extended20170510115324997"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_polygon_vlr20170502110709540"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0120170502150839249"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27562" srcDatumTransform="-1" destDatumTransform="-1" layerid="CDA_VOIES_SURF20170421171127948"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_PISTE_CYCLE20170421171436022"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0120170502143736065"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_01_g20170502143736121"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_GR20170421171435801"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_roads_vlr20170502110709560"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_RD_PRINCIPALES_JAUNES20170421171436086"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TOPONYME_COMMUNICATION20170421171940419"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="SURFACE_ROUTE20170421171940352"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0220170502143736143"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20170421172325499"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="limitation_vitesse20161125152125055"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="QUADRILLAGE_500_SOUS_QUADRILLAGE_50020170502102853731"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_VOIES_PROVISOIRES20170421171436589"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_line_vlr20170502110824860"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="carrefour_ce20161125152125072"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0220170502150839308"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_point_vlr20170502110208350"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zoneInterdiction_PL_cv20161125152125038"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="nodes_vlr20170502105740666"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="QUADRILLAGE_500_QUADRILLAGE_50020170502102823528"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_lga20170502150839319"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_rga20170502150839327"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ouvrage_art20161125152124489"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ROUTE20170421171939239"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0220170502150839295"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TOPONYME_COMMUNICATION20170421171940419"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="QUADRILLAGE_500_QUADRILLAGE_50020170502102823528"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_roads_vlr20170502110709560"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ListeVoie_From_Osm20170502134254545"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="SURFACE_ROUTE20170421171940352"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_01_g20170502143736121"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20170421172325499"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_prefecture20170510115324985"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0220170502143736143"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0220170502150839308"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_02_g20170502143736153"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27562" srcDatumTransform="-1" destDatumTransform="-1" layerid="CDA_VOIES_SURF20170421171127948"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27562" srcDatumTransform="-1" destDatumTransform="-1" layerid="CDA_VOIES_AXES20170421171119504"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_polygon_vlr20170502110709540"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways_vlr20170502105800254"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga20170502150839335"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170421170741253"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_RN_2X2_VOIES20170421171436217"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720161003132531104"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0120170502150839271"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170421170727845"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_GR20170421171435801"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="voirie_filaire_numero20161125152124545"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_RN_2X1_VOIE20170421171436139"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_01_extended20170510115324997"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_02_g20170502143736153"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27562" srcDatumTransform="-1" destDatumTransform="-1" layerid="CDA_VOIES_AXES20170421171119504"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga20170502150839335"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_VOIES_ACCESSIBLES_TOUS_VEHICULES20170421171436344"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170421170741253"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0120170502143736106"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="nodes_vlr20170502105740666"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_point_vlr20170502110208350"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_lga20170502150839319"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_0120170502143736065"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_rga20170502150839327"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="table_iga_0120170502150839249"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="voirie_filaire_photo20161125152124831"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="VOIES_VOIES_ACCESSIBLES_4X420170421171436273"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -384,15 +403,15 @@
             <legendlayerfile isInOverview="0" layerid="table_prefecture20170510115324985" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="table_01_extended" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="table_01_extended20170510115324997" visible="1"/>
+        <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="table_01_extended" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="table_01_extended20170510115324997" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendgroup open="true" checked="Qt::Unchecked" name="presence_2_bases">
-          <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="table_iga" showFeatureCount="0">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="presence_2_bases">
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="table_iga" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-              <legendlayerfile isInOverview="0" layerid="table_iga20170502150839335" visible="0"/>
+              <legendlayerfile isInOverview="0" layerid="table_iga20170502150839335" visible="1"/>
             </filegroup>
           </legendlayer>
           <legendgroup open="true" checked="Qt::Unchecked" name="geometrie_directe">
@@ -432,10 +451,10 @@
             </filegroup>
           </legendlayer>
         </legendgroup>
-        <legendgroup open="true" checked="Qt::Unchecked" name="données_initiales">
-          <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="table_01" showFeatureCount="0">
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="données_initiales">
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="table_01" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-              <legendlayerfile isInOverview="0" layerid="table_0120170502143736065" visible="0"/>
+              <legendlayerfile isInOverview="0" layerid="table_0120170502143736065" visible="1"/>
             </filegroup>
           </legendlayer>
           <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="table_01" showFeatureCount="0">
@@ -448,9 +467,9 @@
               <legendlayerfile isInOverview="0" layerid="table_01_g20170502143736121" visible="0"/>
             </filegroup>
           </legendlayer>
-          <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="table_02" showFeatureCount="0">
+          <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="table_02" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-              <legendlayerfile isInOverview="0" layerid="table_0220170502143736143" visible="0"/>
+              <legendlayerfile isInOverview="0" layerid="table_0220170502143736143" visible="1"/>
             </filegroup>
           </legendlayer>
           <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="table_02" showFeatureCount="0">
@@ -718,14 +737,14 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="ortho2014_geo17" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720161003132531104" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720161003132531104" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="OSM Standard" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OSM Standard" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OSM_Standard20170421172325499" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="OSM_Standard20170421172325499" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -13475,7 +13494,7 @@ def my_form_open(dialog, layer, feature):
           <category render="true" symbol="0" value="" label=""/>
           <category render="true" symbol="1" value="VCPC" label="VCPC"/>
           <category render="true" symbol="2" value="VCVP" label="VCVP"/>
-          <category render="true" symbol="3" value="VCVU" label="VCVU"/>
+          <category render="false" symbol="3" value="VCVU" label="VCVU"/>
           <category render="true" symbol="4" value="VDEP" label="VDEP"/>
           <category render="true" symbol="5" value="VNAT" label="VNAT"/>
         </categories>

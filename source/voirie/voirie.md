@@ -1,27 +1,27 @@
 # Voirie
 
 
-## Plusieurs points de vue et utlisation de l'extension topologie de postgis
+## Plusieurs points de vue et utilisation de l'extension topologie de postgis
 
 Il existe plusieurs points de vue quand on aborde la thématique de la
 gestion des données voirie dans un SIG.
 
 ### Point de vue Gestion Administrative
-Le but est de creer une base "tableau de classement de voirie"
-l'idee est de faire du reporting (tableau, atlas) avec
-le nom de la voie, sa longueur, son classement, la date de la délibération, ...
-Simple geometrie filaire, topologie non nécessaire ?
+Le but est de créer une base "tableau de classement de voirie"
+L'idée est de faire du reporting (tableau, atlas) avec
+Le nom de la voie, sa longueur, son classement, la date de la délibération, ...
+Simple géométrie filaire, topologie non nécessaire ?
 
 ### Point de vue Travaux
 Le but est de créer une base d'objet surfacique
-revetement, etat du revetement
-Base pouvant etre topologie de surface et qui peut s'appuyer sur les arcs
+revêtement, état du revêtement, présence d'amiante
+Base pouvant être topologie de surface et qui peut s'appuyer sur les arcs
 limiteVoiriePCRS
 
-### Point de vue Deplacement / Circulation
+### Point de vue Déplacement / Circulation
 Le but est de créer une base de type graphe connecté
  - un graphe pour les transports en commun / taxi
- - un graphe pour les véhicules 4 roues electriques
+ - un graphe pour les véhicules 4 roues électriques
  - un graphe pour les véhicules 4 roues ou 2 roues thermiques
  - un graphe pour les vélos
  - un graphe pour les piétons
@@ -35,26 +35,26 @@ https://gist.github.com/aflaxman/287370/
 Base de type topologie de réseau qui doit s'appuyer sur des "lanes" (file de vehicules)
 
 ### Point de vue TopoPCRS
-Creation des objets linéaire LimiteVoiriePCRS
-(eventuellement complétés par les objets signalisation horizontale)
+Création des objets linéaire LimiteVoiriePCRS
+(éventuellement complétés par les objets signalisation horizontale)
 
 
 ## Détail du point de vue Gestion Administrative de la Voirie
 
 Attribut Type de Voie :
 
-les différentes "natureAdministrative" sont ici
+Les différentes "natureAdministrative" sont ici
 
-serveur vlr6180y, base espu, schema stockage, table typeVoie
+```
+Serveur vlr6180y, base espu, schema stockage, table typeVoie
+```
 
-l'initialisation de cette table est ici
+L'initialisation de cette table est ici
 21_ManipulationBaseOsm_Initialisation_3.sql
-
 
 Attribut Voie Privée ("natureAdministrative" = "") :
 
 parcelles / voies privées
-
 
 Attribut Date Delibération Classement
 

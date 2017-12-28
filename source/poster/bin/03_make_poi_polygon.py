@@ -12,57 +12,130 @@ class set_of_tiles():
     qui correspond à une emprise géographique.
     Cet ensemble possede des propriétés et des méthodes
     """
-    def __init__(self, NbCasesX, Coeff):
+    def __init__(self, NbCasesX, Type):
         # Initialisation de l'emprise
         # coordonnées du centre
         # largeur, hauteur
         # et nombre de bandes de découpages
+        if Type == "Poster":
+            # Pour un poster (de La Rochelle)
+            self.type = Type
+            self.path = '/home/fred/hugin/pva{}'.format(NbCasesX)
+            self.fichier_final = 'Assemblage'
+            if NbCasesX == 1:
+                self.altitude = 14000
+                self.coeff = 4.0
+            elif NbCasesX == 2:
+                self.altitude = 8000
+                self.coeff = 4.0
+            elif NbCasesX == 3:
+                self.altitude = 6000
+                self.coeff = 2.0
+            elif NbCasesX == 4:
+                self.altitude = 4500
+                self.coeff = 1.5
+            elif NbCasesX == 5:
+                self.altitude = 4000
+                self.coeff = 1.2
+            elif NbCasesX == 6:
+                self.altitude = 3500
+                self.coeff = 1.0
+            elif NbCasesX == 7:
+                self.altitude = 2800
+                self.coeff = 1.0
+            elif NbCasesX == 8:
+                self.altitude = 2000
+                self.coeff = 1.0
+            elif NbCasesX == 9:
+                self.altitude = 1800
+                self.coeff = 1.0
+            elif NbCasesX == 10:
+                self.altitude = 1600
+                self.coeff = 1.0
+            elif NbCasesX == 11:
+                self.altitude = 1500
+                self.coeff = 1.0
+            elif NbCasesX == 12:
+                self.altitude = 1400
+                self.coeff = 1.0
+            elif NbCasesX == 13:
+                self.altitude = 1300
+                self.coeff = 1.0
+            elif NbCasesX == 14:
+                self.altitude = 1250
+                self.coeff = 1.0
+            elif NbCasesX == 15:
+                self.altitude = 1200
+                self.coeff = 1.0
+            self.Xcenter = -131011
+            self.Ycenter = 5806279
+            #self.Largeur = 15000
+            #self.Hauteur = 10500
+            self.Largeur = 16000
+            self.Hauteur = 11500
+        elif Type == "Case":
+            # Pour une case, dans le sens case pcrs
+            # pour une case
+            self.type = Type
+            self.path = '/home/fred/hugin/case{}'.format(NbCasesX)
+            self.fichier_final = 'Case{}'.format(NbCasesX)
+            self.altitude = 100
+            if NbCasesX == 1:
+                self.altitude = 250
+                self.coeff = 0.05000
+            # elif NbCasesX == 2:
+            #     self.coeff = 0.03846
+            elif NbCasesX == 3:
+                #self.coeff = 0.03846
+                self.coeff = 0.02857
+            # elif NbCasesX == 4:
+            #     self.coeff = 0.03846
+            elif NbCasesX == 5:
+                self.coeff = 0.02778
+            # elif NbCasesX == 6:
+            #     self.coeff = 0.03846
+            elif NbCasesX == 7:
+                self.coeff = 0.02650
+            # elif NbCasesX == 8:
+            #     self.coeff = 0.03846
+            elif NbCasesX == 9:
+                self.coeff = 0.02506
+            # elif NbCasesX == 10:
+            #     self.coeff = 0.02857
+            elif NbCasesX == 11:
+                self.coeff = 0.02857
+            # elif NbCasesX == 12:
+            #     self.coeff = 0.02857
+            elif NbCasesX == 13:
+                self.coeff = 0.02857
+            # elif NbCasesX == 14:
+            #     self.coeff = 0.02857
+            elif NbCasesX == 15:
+                self.coeff = 0.02857
+            elif NbCasesX == 17:
+                self.coeff = 0.02857
+            elif NbCasesX == 19:
+                self.coeff = 0.02857
+            elif NbCasesX == 21:
+                self.coeff = 0.02857
 
-        self.path = '/home/fred/hugin/pva{}'.format(NbCasesX)
-        self.fichier_final = 'Assemblage'
-        self.coeff = Coeff
-        if NbCasesX == 1:
-            self.altitude = 14000
-        elif NbCasesX == 2:
-            self.altitude = 8000
-            self.coeff = Coeff * 4
-        elif NbCasesX == 3:
-            self.altitude = 6000
-            self.coeff = Coeff * 2
-        elif NbCasesX == 4:
-            self.altitude = 4500
-            self.coeff = Coeff * 1.5
-        elif NbCasesX == 5:
-            self.altitude = 4000
-            self.coeff = Coeff * 1.2
-        elif NbCasesX == 6:
-            self.altitude = 3500
-            self.coeff = Coeff * 1.0
-        elif NbCasesX == 7:
-            self.altitude = 2800
-            self.coeff = Coeff * 1.0
-        elif NbCasesX == 8:
-            self.altitude = 2000
-        elif NbCasesX == 9:
-            self.altitude = 1800
-        elif NbCasesX == 10:
-            self.altitude = 1600
-        elif NbCasesX == 11:
-            self.altitude = 1500
-        elif NbCasesX == 12:
-            self.altitude = 1400
-        elif NbCasesX == 13:
-            self.altitude = 1300
-        elif NbCasesX == 14:
-            self.altitude = 1250
-        elif NbCasesX == 15:
-            self.altitude = 1200
-        self.Xcenter = -131011
-        self.Ycenter = 5806279
-        self.Largeur = 15000
-        self.Hauteur = 10500
-        self.Largeur = 16000
-        self.Hauteur = 11500
+            # self.Xcenter = -127800
+            # self.Ycenter = 5806000
+            # self.Xcenter = -127940
+            # self.Ycenter = 5805900
+            # self.Xcenter = -127940
+            # self.Ycenter = 5806000
+            #self.Xcenter = -129114
+            #self.Ycenter = 5806094
+            # residence la genette
+            self.Xcenter = 1378930
+            self.Ycenter = 5226250
+            # arsenal
+            self.Xcenter = 1379770
+            self.Ycenter = 5226150
+            self.Largeur = 150
+            self.Hauteur = 150
+
         self.NbCasesX = NbCasesX
         self.NbCasesY = NbCasesX
         self.xBGEmprise = self.Xcenter - self.Largeur / 2
@@ -72,10 +145,10 @@ class set_of_tiles():
         self.xPas = self.Largeur / self.NbCasesX
         self.yPas = self.Hauteur / self.NbCasesY
         self.NbCasesT = self.NbCasesX * self.NbCasesY
-        print('xBGEmprise = {}, xHDEmprise = {}, xPas = {}, \
-               yBGEmprise = {}, yHDEmprise = {}, yPas = {}'.format( \
-               self.xBGEmprise, self.xHDEmprise, self.xPas, \
-               self.yBGEmprise, self.yHDEmprise, self.yPas))
+        # print('xBGEmprise = {}, xHDEmprise = {}, xPas = {}, \
+        #        yBGEmprise = {}, yHDEmprise = {}, yPas = {}'.format( \
+        #        self.xBGEmprise, self.xHDEmprise, self.xPas, \
+        #        self.yBGEmprise, self.yHDEmprise, self.yPas))
 
     def calcul_index_hugin(self, n, x, y):
         """
@@ -188,9 +261,9 @@ class set_of_tiles():
         root = tree.getroot()
 
         for element in root.findall("./script/action[@comment='Affectation de la variable NbCasesX']/parameter[@name='value']/subParameter"):
-            print('element {}, {}'.format(element.tag, \
-                                          element.attrib))
-            print('text {}'.format(element.text))
+            # print('element {}, {}'.format(element.tag, \
+            #                               element.attrib))
+            # print('text {}'.format(element.text))
             element.text = '{}'.format(self.NbCasesX)
             #element.text = self.NbCasesX
 
@@ -242,8 +315,10 @@ class set_of_tiles():
         fcsql.write("  roll float DEFAULT 0\n")
         fcsql.write(");\n")
         fcsql.write("\n")
+        #fcsql.write("SELECT AddGeometryColumn('poi_polygon', 'poi_geom',\n");
+        #fcsql.write("                          3857, 'POLYGON', 2);\n")
         fcsql.write("SELECT AddGeometryColumn('poi_polygon', 'poi_geom',\n");
-        fcsql.write("                          3857, 'POLYGON', 2);\n")
+        fcsql.write("                          3946, 'POLYGON', 2);\n")
         fcsql.write("\n")
         fcsql.write("\n")
         fcsql.write("-- Tables des points\n")
@@ -270,7 +345,8 @@ class set_of_tiles():
         fcsql.write("  roll float DEFAULT 0\n")
         fcsql.write(");\n")
         fcsql.write("\n")
-        fcsql.write("SELECT AddGeometryColumn('poi_point', 'poi_geom', 3857, 'POINT', 2);\n")
+        #fcsql.write("SELECT AddGeometryColumn('poi_point', 'poi_geom', 3857, 'POINT', 2);\n")
+        fcsql.write("SELECT AddGeometryColumn('poi_point', 'poi_geom', 3946, 'POINT', 2);\n")
         fcsql.write('\n')
 
         fcim.write("#!/bin/sh\n")
@@ -351,13 +427,37 @@ class set_of_tiles():
         fchugin03.write('# Recherche des points de controle\n')
         fchugin03.write('# mais, avec l option prealign, car on utilise la position de l objectif\n')
         fchugin03.write('cpfind --prealigned \\\n')
+        fchugin03.write('       --fullscale \\\n')
+        fchugin03.write('       --sieve1width 50 \\\n')
+        fchugin03.write('       --sieve1height 50 \\\n')
+        fchugin03.write('       --sieve1size 2500 \\\n')
         fchugin03.write('       -o $Path/project6.pto \\\n')
         fchugin03.write('       $Path/project5.pto\n')
         fchugin03.write('\n')
+        fchugin03.write('# Nettoyage des points de controle\n')
+        fchugin03.write('cpclean --max-distance=1 \\\n')
+        fchugin03.write('        -o $Path/project7.pto \\\n')
+        fchugin03.write('        $Path/project6.pto\n')
+        fchugin03.write('\n')
+        fchugin03.write('# Nettoyage des points de controle\n')
+        fchugin03.write('cpclean --max-distance=1 \\\n')
+        fchugin03.write('        -o $Path/project7.pto \\\n')
+        fchugin03.write('        $Path/project7.pto\n')
+        fchugin03.write('\n')
+        fchugin03.write('# Nettoyage des points de controle\n')
+        fchugin03.write('cpclean --max-distance=1 \\\n')
+        fchugin03.write('        -o $Path/project7.pto \\\n')
+        fchugin03.write('        $Path/project7.pto\n')
+        fchugin03.write('\n')
+        fchugin03.write('# Recherche des lignes\n')
+        fchugin03.write('linefind \\\n')
+        fchugin03.write('         -o $Path/project8.pto \\\n')
+        fchugin03.write('         $Path/project7.pto\n')
+        fchugin03.write('\n')
         fchugin03.write('# Optimisation\n')
         fchugin03.write('autooptimiser -n \\\n')
-        fchugin03.write('              -o $Path/project7.pto \\\n')
-        fchugin03.write('              $Path/project6.pto\n')
+        fchugin03.write('              -o $Path/project9.pto \\\n')
+        fchugin03.write('              $Path/project8.pto\n')
         fchugin03.write('\n')
         fchugin03.write('# Ajustement\n')
         fchugin03.write('pano_modify --projection=0 \\\n')
@@ -365,13 +465,13 @@ class set_of_tiles():
         fchugin03.write('            --center \\\n')
         fchugin03.write('            --canvas=AUTO \\\n')
         fchugin03.write('            --crop=AUTO \\\n')
-        fchugin03.write('            -o $Path/project8.pto \\\n')
-        fchugin03.write('            $Path/project7.pto\n')
+        fchugin03.write('            -o $Path/project10.pto \\\n')
+        fchugin03.write('            $Path/project9.pto\n')
         fchugin03.write('\n')
         fchugin03.write('# Assemblage avec hugin_excutor, "was" fabrication d un makfile et execution\n')
         fchugin03.write('hugin_executor -t 2 -s \\\n')
         fchugin03.write('               -p $Path/$Prefix \\\n')
-        fchugin03.write('               $Path/project8.pto\n')
+        fchugin03.write('               $Path/project10.pto\n')
         fchugin03.write('\n')
 
         poi_idx = 0
@@ -456,7 +556,7 @@ class set_of_tiles():
                              '{}',
                              {}, {}, {}, {},
                              ST_GeomFromEWKT(
-                               'SRID=3857;POLYGON(({} {},
+                               'SRID=3946;POLYGON(({} {},
                                                    {} {},
                                                    {} {},
                                                    {} {},
@@ -487,7 +587,7 @@ class set_of_tiles():
                              {}, {}, {}, {},
                              {},
                              ST_GeomFromEWKT(
-                               'SRID=3857;POINT({} {})'));
+                               'SRID=3946;POINT({} {})'));
                         """.format(poi_idim, poi_idhg, poi_idx, poi_idy, \
                                    poi_idhg, \
                                    xCentre, yCentre, \
@@ -499,6 +599,9 @@ class set_of_tiles():
                 #fcsql.write("\n")
 
                 fchugin01.write('              --new-lens i{} \\\n'.format(poi_idhg))
+
+                fchugin02.write('        --set=a{}=0 \\\n'.format(poi_idhg))
+                fchugin02.write('        --set=b{}=0 \\\n'.format(poi_idhg))
                 fchugin02.write('        --set=d{}={}/{} \\\n'.format(poi_idhg, 0 - self.poi_idhgx * self.xPas, self.coeff))
                 fchugin02.write('        --set=e{}={}/{} \\\n'.format(poi_idhg, self.poi_idhgy * self.yPas, self.coeff))
 
@@ -553,8 +656,48 @@ class set_of_tiles():
 
         fcim.write('for i in `seq 0 {}`;'.format(id - 1))
         fcim.write('do\n')
-        fcim.write("   #convert -density 225 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf /home/fred/h/cartographie/pva/$i.png\n")
-        fcim.write("  convert -density 75 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        fcim.write("  # Pour le poster\n")
+        fcim.write("  # pour memoire (trop dense) : convert -density 225 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf /home/fred/h/cartographie/pva/$i.png\n")
+        fcim.write("  # convert -density 75 -gravity Center -shave '384x068' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        fcim.write("  #\n")
+        if self.type == "Case" and  self.NbCasesX == 1:
+            fcim.write("  # pour les cases (1)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '581x068' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        if self.type == "Case" and  self.NbCasesX == 3:
+            fcim.write("  # pour les cases (3)\n")
+            fcim.write("  #convert -density 75 -gravity Center -shave '534x020' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+            fcim.write("  #mogrify -gravity Center -shave '400x400' {}/$i.png\n".format(self.path))
+            fcim.write("  #mogrify -gravity Center -shave '550x550' {}/$i.png\n".format(self.path))
+            fcim.write("  convert -density 75 -gravity Center -shave '634x120' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 5:
+            fcim.write("  # pour les cases (5)\n")
+            fcim.write("  # convert -density 75 -gravity Center -shave '534x020' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+            fcim.write("  # mogrify -gravity Center -shave '600x600' {}/$i.png\n".format(self.path))
+            fcim.write("  convert -density 75 -gravity Center -shave '1134x620' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 7:
+            fcim.write("  # pour les cases (7)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1284x770' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 9:
+            fcim.write("  # pour les cases (9)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1394x880' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 11:
+            fcim.write("  # pour les cases (11)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '934x420' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 13:
+            fcim.write("  # pour les cases (13)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '934x420' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 15:
+            fcim.write("  # pour les cases (15)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1134x620' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 17:
+            fcim.write("  # pour les cases (17)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1534x1020' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 19:
+            fcim.write("  # pour les cases (19)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1534x1020' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
+        elif self.type == "Case" and self.NbCasesX == 21:
+            fcim.write("  # pour les cases (21)\n")
+            fcim.write("  convert -density 75 -gravity Center -shave '1534x1020' -level +0%,+100%,1.5 /home/fred/PDF/$i.pdf {}/$i.png\n".format(self.path))
         fcim.write('done\n')
         fcim.write('\n')
 
@@ -564,14 +707,24 @@ class set_of_tiles():
         fchugin02.write('        -o $Path/project4.pto \\\n')
         fchugin02.write('        $Path/project3.pto\n')
         fchugin02.write('\n')
+        # fchugin02.write('\n')
+        # fchugin02.write('# Personnalisation des paramètres - 3\n')
+        # fchugin02.write('# optimisation possible\n')
+        # fchugin02.write('# avec comme point de depart, la photo centrale\n')
+        # fchugin02.write('pto_var \\\n')
+        # fchugin02.write('        --opt=!y,!p,!r \\\n')
+        # fchugin02.write('        --opt=d,e \\\n')
+        # fchugin02.write('        --opt=!d{0},!e{0} \\\n'.format(0))
+        # fchugin02.write('        -o $Path/project5.pto \\\n')
+        # fchugin02.write('        $Path/project4.pto\n')
         fchugin02.write('\n')
         fchugin02.write('# Personnalisation des paramètres - 3\n')
         fchugin02.write('# optimisation possible\n')
-        fchugin02.write('# avec comme point de depart, la photo central\n')
+        fchugin02.write('# avec comme point de depart, la photo centrale\n')
         fchugin02.write('pto_var \\\n')
         fchugin02.write('        --opt=!y,!p,!r \\\n')
-        fchugin02.write('        --opt=d,e \\\n')
-        fchugin02.write('        --opt=!d{0},!e{0} \\\n'.format(0))
+        fchugin02.write('        --opt=!a,!b,!c \\\n')
+        fchugin02.write('        --opt=!d,!e \\\n')
         fchugin02.write('        -o $Path/project5.pto \\\n')
         fchugin02.write('        $Path/project4.pto\n')
 
@@ -607,7 +760,7 @@ def genere_scripts(emprise):
 
 def main():
     #print('main')
-    emprise_1 = set_of_tiles(9, 1.0)
+    emprise_1 = set_of_tiles(21, "Case")
     genere_scripts(emprise_1)
 
 

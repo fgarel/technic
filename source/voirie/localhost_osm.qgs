@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.11">
+<qgis projectname="" version="2.18.15">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -8,7 +8,7 @@
     <layer-tree-group expanded="1" checked="Qt::Unchecked" name="osm_cdalr">
       <customproperties/>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="localhost_osm_apidb">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="localhost_osm_apidb">
       <customproperties/>
       <layer-tree-group expanded="1" checked="Qt::Unchecked" name="localhost_osm_apidb_vlr">
         <customproperties/>
@@ -38,14 +38,14 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="localhost_osm_osm2pgsql">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql">
       <customproperties/>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="localhost_osm_osm2pgsql_vlr">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_vlr">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="poitou_charentes_latest_osm_pbf_multipolygons20170804141147278" source="/home/fred/Documents/osmosis/poitou-charentes-latest.osm.pbf|layername=multipolygons" name="poitou-charentes-latest.osm.pbf multipolygons">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="poitou_charentes_latest_osm_pbf_lines20170804141147213" source="/home/fred/Documents/osmosis/poitou-charentes-latest.osm.pbf|layername=lines" name="poitou-charentes-latest.osm.pbf lines">
+        <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="poitou_charentes_latest_osm_pbf_lines20170804141147213" source="/home/fred/Documents/osmosis/poitou-charentes-latest.osm.pbf|layername=lines" name="poitou-charentes-latest.osm.pbf lines">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="poitou_charentes_latest_osm_pbf_points20170804141147170" source="/home/fred/Documents/osmosis/poitou-charentes-latest.osm.pbf|layername=points" name="poitou-charentes-latest.osm.pbf points">
@@ -67,7 +67,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_cda">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_cda">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="planet_osm_point_cda20170804122205476" source="dbname='osm' host=vlr6180y port=5432 user='osmuser' sslmode=disable key='osm_id' srid=3857 type=Point table=&quot;osm2pgsql&quot;.&quot;planet_osm_point_cda&quot; (way) sql=" name="planet_osm_point_cda">
           <customproperties/>
@@ -82,7 +82,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_region">
+      <layer-tree-group expanded="0" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_region">
         <customproperties/>
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="planet_osm_point20170804122300104" source="dbname='osm' host=vlr6180y port=5432 user='osmuser' sslmode=disable key='tid' srid=3857 type=Point table=&quot;osm2pgsql&quot;.&quot;planet_osm_point&quot; (way) sql=" name="planet_osm_point">
           <customproperties/>
@@ -98,15 +98,21 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="Tilestache_OpenStreetMap_hot20171222144654032" source="" name="Tilestache OpenStreetMap_hot">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="Direct_OpenStreetMap_hot20171222144610195" source="" name="Direct OpenStreetMap_hot">
+      <customproperties/>
+    </layer-tree-layer>
   </layer-tree-group>
   <relations/>
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1378505.59070450393483043</xmin>
-      <ymin>5226967.52955895382910967</ymin>
-      <xmax>1379018.51472027460113168</xmax>
-      <ymax>5227464.47818861808627844</ymax>
+      <xmin>1379085.04978027078323066</xmin>
+      <ymin>5226042.94107434991747141</ymin>
+      <xmax>1379597.97379604144953191</xmax>
+      <ymax>5226539.88970401231199503</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -127,6 +133,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_point_lr20170501125949662"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways_cda20170501150045033"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_polygon_lr20170501133108886"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Direct_OpenStreetMap_hot20171222144610195"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="nodes_vlr20170501145958316"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170421201111756"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="nodes20170421210142163"/>
@@ -138,6 +145,7 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_roads_vlr20170501150050357"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_roads20170422142742537"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_point20170804122300104"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Tilestache_OpenStreetMap_hot20171222144654032"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_polygon20170422142742545"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170421210146207"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_line20170422142742457"/>
@@ -149,8 +157,8 @@
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="poitou_charentes_latest_osm_pbf_multilinestrings20170804141147245"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170422142746579"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="nodes20170422142746570"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170422142750555"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="poitou_charentes_latest_osm_pbf_multipolygons20170804141147278"/>
+      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ways20170422142750555"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_point_cda20170804122205476"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="poitou_charentes_latest_osm_pbf_points20170804141147170"/>
       <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="planet_osm_line20170804122300088"/>
@@ -191,11 +199,13 @@
       <item>poitou_charentes_latest_osm_pbf_points20170804141147170</item>
       <item>poitou_charentes_latest_osm_pbf_lines20170804141147213</item>
       <item>poitou_charentes_latest_osm_pbf_multipolygons20170804141147278</item>
+      <item>Direct_OpenStreetMap_hot20171222144610195</item>
+      <item>Tilestache_OpenStreetMap_hot20171222144654032</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendgroup open="true" checked="Qt::Unchecked" name="osm_cdalr"/>
-    <legendgroup open="true" checked="Qt::Unchecked" name="localhost_osm_apidb">
+    <legendgroup open="false" checked="Qt::Unchecked" name="localhost_osm_apidb">
       <legendgroup open="true" checked="Qt::Unchecked" name="localhost_osm_apidb_vlr">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="nodes_vlr" showFeatureCount="0">
           <filegroup open="true" hidden="false">
@@ -233,16 +243,16 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="localhost_osm_osm2pgsql">
-      <legendgroup open="true" checked="Qt::PartiallyChecked" name="localhost_osm_osm2pgsql_vlr">
+    <legendgroup open="false" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql">
+      <legendgroup open="false" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_vlr">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="poitou-charentes-latest.osm.pbf multipolygons" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="poitou_charentes_latest_osm_pbf_multipolygons20170804141147278" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="poitou-charentes-latest.osm.pbf lines" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="poitou-charentes-latest.osm.pbf lines" showFeatureCount="0">
           <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="poitou_charentes_latest_osm_pbf_lines20170804141147213" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="poitou_charentes_latest_osm_pbf_lines20170804141147213" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="poitou-charentes-latest.osm.pbf points" showFeatureCount="0">
@@ -276,7 +286,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_cda">
+      <legendgroup open="false" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_cda">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="planet_osm_point_cda" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="planet_osm_point_cda20170804122205476" visible="0"/>
@@ -298,7 +308,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_region">
+      <legendgroup open="false" checked="Qt::Unchecked" name="localhost_osm_osm2pgsql_region">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="planet_osm_point" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="planet_osm_point20170804122300104" visible="0"/>
@@ -321,8 +331,96 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Tilestache OpenStreetMap_hot" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Tilestache_OpenStreetMap_hot20171222144654032" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Direct OpenStreetMap_hot" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Direct_OpenStreetMap_hot20171222144610195" visible="0"/>
+      </filegroup>
+    </legendlayer>
   </legend>
   <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="TileLayer">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278924390673637</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>Direct_OpenStreetMap_hot20171222144610195</id>
+      <datasource></datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="">OpenStreetMap</attribution>
+      <layername>Direct OpenStreetMap_hot</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="blendMode" value="SourceOver"/>
+        <property key="credit" value="OpenStreetMap"/>
+        <property key="creditVisibility" value="1"/>
+        <property key="serviceUrl" value="http://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/>
+        <property key="smoothRender" value="1"/>
+        <property key="title" value="Direct OpenStreetMap_hot"/>
+        <property key="transparency" value="0"/>
+        <property key="yOriginTop" value="1"/>
+        <property key="zmax" value="19"/>
+        <property key="zmin" value="0"/>
+      </customproperties>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="TileLayer">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278924390673637</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>Tilestache_OpenStreetMap_hot20171222144654032</id>
+      <datasource></datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="">OpenStreetMap</attribution>
+      <layername>Tilestache OpenStreetMap_hot</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="blendMode" value="SourceOver"/>
+        <property key="credit" value="OpenStreetMap"/>
+        <property key="creditVisibility" value="1"/>
+        <property key="serviceUrl" value="http://127.0.0.1:8081/openstreetmap_hot/{z}/{x}/{y}.png"/>
+        <property key="smoothRender" value="1"/>
+        <property key="title" value="Tilestache OpenStreetMap_hot"/>
+        <property key="transparency" value="0"/>
+        <property key="yOriginTop" value="1"/>
+        <property key="zmax" value="19"/>
+        <property key="zmin" value="0"/>
+      </customproperties>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>-2.47216463088988991</xmin>
@@ -1035,7 +1133,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="access" index="1" name=""/>
@@ -1109,13 +1207,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-394657792">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2373,7 +2471,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="access" index="1" name=""/>
@@ -2447,13 +2545,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-394657792">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -2821,7 +2919,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="access" index="1" name=""/>
@@ -2895,13 +2993,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-394608512">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3269,7 +3367,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="access" index="1" name=""/>
@@ -3343,13 +3441,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-394608512">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -3710,7 +3808,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="access" index="1" name=""/>
@@ -3784,13 +3882,13 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="-394657792">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6654,6 +6752,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="man_made">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="z_order">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="other_tags">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -6710,7 +6811,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -6719,12 +6820,13 @@ def my_form_open(dialog, layer, feature):
         <alias field="aerialway" index="4" name=""/>
         <alias field="barrier" index="5" name=""/>
         <alias field="man_made" index="6" name=""/>
-        <alias field="other_tags" index="7" name=""/>
+        <alias field="z_order" index="7" name=""/>
+        <alias field="other_tags" index="8" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1875572820">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="osm_id"/>
           <column width="395" hidden="0" type="field" name="name"/>
@@ -6737,10 +6839,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -6757,6 +6859,7 @@ def my_form_open(dialog, layer, feature):
         <default field="aerialway" expression=""/>
         <default field="barrier" expression=""/>
         <default field="man_made" expression=""/>
+        <default field="z_order" expression=""/>
         <default field="other_tags" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
@@ -6853,7 +6956,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -6863,13 +6966,13 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="70867048">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -7043,7 +7146,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="osm_way_id" index="1" name=""/>
@@ -7104,10 +7207,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -7258,7 +7361,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="osm_id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -7274,13 +7377,13 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="286040432">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
