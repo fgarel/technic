@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.14">
+<qgis projectname="" version="2.18.15">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -15,10 +15,14 @@
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="demandes_interventions_reunions_publiques20171117115236212" source="/home/fred/Documents/technic/source/gup/data/demandes_interventions_reunions_publiques.kml|layername=demandes_interventions_reunions_publiques" name="demandes_interventions_reunions_publiques">
-      <customproperties/>
+      <customproperties>
+        <property key="showFeatureCount" value="0"/>
+      </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="demandes_interventions_reunions_publiques20171109211634496" source="/home/fred/Documents/technic/source/gup/data/demandes_interventions_reunions_publiques.shp" name="demandes_interventions_reunions_publiques">
-      <customproperties/>
+      <customproperties>
+        <property key="showFeatureCount" value="0"/>
+      </customproperties>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="secteurs_suivi_des_demandes_Feuille120171115105943388" source="/home/fred/Documents/technic/source/gup/data/data_responsables_secteurs/secteurs_suivi_des_demandes.xlsx.Feuille1.vrt" name="secteurs_suivi_des_demandes-Feuille1">
       <customproperties/>
@@ -26,10 +30,10 @@
     <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="population_comite_quartier_copier20171120152150126" source="dbname='decouppopulation' host=dsibdd09 port=5432 user='sig' sslmode=disable key='cq_id' srid=2154 type=MultiPolygon table=&quot;sig&quot;.&quot;population_comite_quartier&quot; (wkb_geometry) sql=" name="population_comite_quartier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="spatialite" checked="Qt::Checked" id="secteur20171120173157893" source="dbname='/home/fred/Documents/technic/source/gup/data/localisation_demandes.sqlite' table=&quot;secteur&quot; (geometry) sql=" name="secteur">
+    <layer-tree-layer expanded="0" providerKey="spatialite" checked="Qt::Checked" id="secteur20171120173157893" source="dbname='/home/fred/Documents/technic/source/gup/data/localisation_demandes.sqlite' table=&quot;secteur&quot; (geometry) sql=" name="secteur">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="localisation_demandes20171120165746283" source="/home/fred/Documents/technic/source/gup/data/localisation_demandes.sqlite|layername=emprise_reunion_publiques" name="localisation_demandes emprise_reunion_publiques Polygon">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="localisation_demandes20171120165746283" source="/home/fred/Documents/technic/source/gup/data/localisation_demandes.sqlite|layername=emprise_reunion_publiques" name="localisation_demandes emprise_reunion_publiques Polygon">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="bdtopo_commune20171120152640045" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='gid' srid=-1 type=MultiPolygon table=&quot;c_ignf&quot;.&quot;bdtopo_commune&quot; (shape) sql=" name="bdtopo_commune">
@@ -38,10 +42,25 @@
     <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="OpenStreetMap20171109210645949" source="&lt;GDAL_WMS>&#xa;  &lt;Service name=&quot;TMS&quot;>&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xa;  &lt;/Service>&#xa;  &lt;DataWindow>&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xa;  &lt;/DataWindow>&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xa;  &lt;Cache />&#xa;&lt;/GDAL_WMS>&#xa;" name="OpenStreetMap">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="Google_Satellite20171117114415866" source="/home/fred/Documents/technic/source/gup/data" name="Google Satellite">
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="Bing_Satellite20180110182055913" source="crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=http://ecn.t3.tiles.virtualearth.net/tiles/a%7Bq%7D.jpeg?g%3D0%26dir%3Ddir_n'&amp;zmax=18&amp;zmin=1" name="Bing Satellite">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Checked" id="ortho2014_geo1720180110181954458" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17" name="ortho2014_geo17">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="Direct_OpenStreetMap_hot20180110180721171" source="/home/fred/Documents/technic/source/gup/data" name="Direct OpenStreetMap_hot">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="Google_Satellite20171117114415866" source="/home/fred/Documents/technic/source/gup/data" name="Google Satellite">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="ortho201320171117113917263" source="contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2013&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2013" name="ortho2013">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="Google_Road20180110165902371" source="crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=20&amp;zmin=0" name="Google Road">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="wms" checked="Qt::Unchecked" id="OSM_Humanitarian20180110174225387" source="crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=http://tile-b.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png,%20http://tile-a.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png,%20http://tile-c.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" name="OSM Humanitarian">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -49,37 +68,40 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1378923.70267961407080293</xmin>
-      <ymin>5225948.84295913763344288</ymin>
-      <xmax>1381562.55334959411993623</xmax>
-      <ymax>5227690.59230661578476429</ymax>
+      <xmin>-129061.59386442131653894</xmin>
+      <ymin>5805786.53317238204181194</ymin>
+      <xmax>-127457.94348477288440336</xmax>
+      <ymax>5806788.93499745242297649</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>1765</srsid>
-        <srid>3946</srid>
-        <authid>EPSG:3946</authid>
-        <description>RGF93 / CC46</description>
-        <projectionacronym>lcc</projectionacronym>
-        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="demandes_interventions_reunions_publiques20171109211634496"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreetMap20171109210645949"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="bdtopo_commune20171120152640045"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Satellite20171117114415866"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="virtual_layer20171120173024182"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="virtual_layer20171120152906161"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="localisation_demandes20171120165746283"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier_copier20171120152150126"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="secteur20171120173157893"/>
-      <layer_coordinate_transform destAuthId="EPSG:3946" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier20171120152137705"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720180110181954458"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="demandes_interventions_reunions_publiques20171109211634496"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="bdtopo_commune20171120152640045"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreetMap20171109210645949"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Satellite20171117114415866"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="localisation_demandes20171120165746283"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Humanitarian20180110174225387"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier_copier20171120152150126"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="demandes_interventions_reunions_publiques20171117115236212"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Road20180110165902371"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="secteur20171120173157893"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Direct_OpenStreetMap_hot20180110180721171"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Bing_Satellite20180110182055913"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -97,6 +119,11 @@
       <item>bdtopo_commune20171120152640045</item>
       <item>localisation_demandes20171120165746283</item>
       <item>secteur20171120173157893</item>
+      <item>Google_Road20180110165902371</item>
+      <item>OSM_Humanitarian20180110174225387</item>
+      <item>Direct_OpenStreetMap_hot20180110180721171</item>
+      <item>ortho2014_geo1720180110181954458</item>
+      <item>Bing_Satellite20180110182055913</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -135,13 +162,13 @@
         <legendlayerfile isInOverview="0" layerid="population_comite_quartier_copier20171120152150126" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="secteur" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="secteur" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="secteur20171120173157893" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="localisation_demandes emprise_reunion_publiques Polygon" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="localisation_demandes emprise_reunion_publiques Polygon" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="localisation_demandes20171120165746283" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -155,14 +182,39 @@
         <legendlayerfile isInOverview="0" layerid="OpenStreetMap20171109210645949" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Satellite" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Satellite" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Google_Satellite20171117114415866" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Bing_Satellite20180110182055913" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ortho2014_geo17" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ortho2014_geo1720180110181954458" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Direct OpenStreetMap_hot" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Direct_OpenStreetMap_hot20180110180721171" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Satellite" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Google_Satellite20171117114415866" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ortho2013" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="ortho201320171117113917263" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Road" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Google_Road20180110165902371" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OSM Humanitarian" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="OSM_Humanitarian20180110174225387" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -236,7 +288,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="0.94206" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{86d5d02a-4268-4254-8688-92e3d45c8da6}" height="277" itemRotation="0" frame="false" pagex="10">
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="0.682403" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{86d5d02a-4268-4254-8688-92e3d45c8da6}" height="277" itemRotation="0" frame="false" pagex="10">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -246,7 +298,7 @@
     </Composition>
   </Composer>
   <Composer title="A3_paysage_atlas" visible="0">
-    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{86d5d02a-4268-4254-8688-92e3d45c8da6}" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="297" numPages="2" snapGridResolution="10" resizeToContentsMarginBottom="0">
+    <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{86d5d02a-4268-4254-8688-92e3d45c8da6}" alignmentSnap="1" printResolution="300" paperWidth="420" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="297" numPages="3" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -262,65 +314,93 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5226180.42065418045967817" xmin="nan" ymax="nan" xmax="nan"/>
-        <LayerSet/>
-        <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{36b08226-325b-4fda-b815-0e145ebb9820}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
-          <lineStyle>
-            <symbol alpha="1" clip_to_extent="1" type="line" name="">
-              <layer pass="0" class="SimpleLine" locked="0">
-                <prop k="capstyle" v="square"/>
-                <prop k="customdash" v="5;2"/>
-                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="customdash_unit" v="MM"/>
-                <prop k="draw_inside_polygon" v="0"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="0,0,0,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0"/>
-                <prop k="line_width_unit" v="MM"/>
-                <prop k="offset" v="0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="use_custom_dash" v="0"/>
-                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
-              </layer>
-            </symbol>
-          </lineStyle>
-          <markerStyle>
-            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
-              <layer pass="0" class="SimpleMarker" locked="0">
-                <prop k="angle" v="0"/>
-                <prop k="color" v="0,0,0,255"/>
-                <prop k="horizontal_anchor_point" v="1"/>
-                <prop k="joinstyle" v="bevel"/>
-                <prop k="name" v="circle"/>
-                <prop k="offset" v="0,0"/>
-                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="offset_unit" v="MM"/>
-                <prop k="outline_color" v="0,0,0,255"/>
-                <prop k="outline_style" v="solid"/>
-                <prop k="outline_width" v="0"/>
-                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="outline_width_unit" v="MM"/>
-                <prop k="scale_method" v="diameter"/>
-                <prop k="size" v="2"/>
-                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                <prop k="size_unit" v="MM"/>
-                <prop k="vertical_anchor_point" v="1"/>
-              </layer>
-            </symbol>
-          </markerStyle>
-          <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-        </ComposerMapGrid>
-        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.69999999999999996"/>
-        <ComposerItem pagey="10" page="2" id="" lastValidViewScaleFactor="1.06308" positionMode="0" positionLock="false" x="10" y="317" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{9ba5bc35-fbfd-42c0-b011-7d018ea3e5bf}" height="277" itemRotation="0" frame="false" pagex="10">
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Réponse apportée par les services et en cours de traitement (études en cours ou exécution programmée)" htmlState="0" halign="1">
+        <LabelFont description="Ubuntu,20,-1,5,63,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="188.551" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="325.203" y="802.551" visibility="1" zValue="10" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="94.2118" outlineWidth="0.3" excludeFromExports="0" uuid="{efe315d2-928d-424c-9222-b4c048644b9a}" height="33.8015" itemRotation="0" frame="false" pagex="325.203">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
-      </ComposerMap>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Réponse positive et réalisée, information apportée ou demande irréalisable." htmlState="0" halign="1">
+        <LabelFont description="Ubuntu,20,-1,5,63,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="153.039" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="325.788" y="767.039" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="94.3991" outlineWidth="0.3" excludeFromExports="0" uuid="{06b64a70-346b-409c-8a8e-7f3aaf402da6}" height="25.0719" itemRotation="0" frame="false" pagex="325.788">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Demande instruite mais refusée" htmlState="0" halign="1">
+        <LabelFont description="Ubuntu,20,-1,5,63,1,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="231.598" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="325.203" y="845.598" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="95.3812" outlineWidth="0.3" excludeFromExports="0" uuid="{8dfd980c-8910-4b60-bf99-4b164b0e745e}" height="23.2594" itemRotation="0" frame="false" pagex="325.203">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="Cartographie des demandes d'interventions" htmlState="0" halign="4">
+        <LabelFont description="Ubuntu,36,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="69.7076" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="304.007" y="683.708" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="117.35" outlineWidth="0.3" excludeFromExports="0" uuid="{5be94f3f-b688-48df-884c-da4e5000c3c8}" height="49.3724" itemRotation="0" frame="false" pagex="304.007">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLabel valign="32" marginX="1" marginY="1" labelText="[%attribute(@atlas_feature, 'nom')%]" htmlState="0" halign="4">
+        <LabelFont description="Ubuntu,36,-1,5,75,0,0,0,0,0" style=""/>
+        <FontColor red="0" blue="0" green="0"/>
+        <ComposerItem pagey="29.9676" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="302.838" y="643.968" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="117.35" outlineWidth="0.3" excludeFromExports="0" uuid="{658f3eac-4f3f-4d84-a53a-9a1b8c9de862}" height="39.7399" itemRotation="0" frame="false" pagex="302.838">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerLegend symbolWidth="7" title="Légende" rasterBorderWidth="0" titleAlignment="1" map="1" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Ubuntu,16,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Ubuntu,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="demandes_interventions_reunions_publiques20171109211634496" source="/home/fred/Documents/technic/source/gup/data/demandes_interventions_reunions_publiques.shp" name="demandes_interventions_reunions_publiques">
+            <customproperties>
+              <property key="legend/label-1" value="Demande à transmettre"/>
+              <property key="legend/label-2" value="Demande instruite mais refusée"/>
+              <property key="legend/label-3" value="Réponse positive et réalisée, information apportée ou demande irréalisable."/>
+              <property key="legend/label-4" value="Réponse apportée par les services et en cours de traitement (études en cours ou exécution programmée)"/>
+              <property key="legend/node-order" value="2,3,4"/>
+              <property key="legend/title-label" value=""/>
+            </customproperties>
+          </layer-tree-layer>
+          <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="population_comite_quartier_copier20171120152150126" source="dbname='decouppopulation' host=dsibdd09 port=5432 user='sig' sslmode=disable key='cq_id' srid=2154 type=MultiPolygon table=&quot;sig&quot;.&quot;population_comite_quartier&quot; (wkb_geometry) sql=" name="population_comite_quartier">
+            <customproperties>
+              <property key="legend/title-label" value="Limite de quartier"/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+        <ComposerItem pagey="238.134" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="194.677" y="238.134" visibility="0" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="212.338" outlineWidth="0.3" excludeFromExports="0" uuid="{51091c42-518f-4f82-901b-bcad08e0a36b}" height="37.8" itemRotation="0" frame="false" pagex="194.677">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Render" drawCanvasItems="true">
         <Extent ymin="5804642.20498979184776545" xmin="-130842.03531650369404815" ymax="5809217.68050221353769302" xmax="-124234.85046102068736218"/>
         <LayerSet/>
@@ -374,7 +454,161 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0.02"/>
-        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="1.06308" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{2be69d2b-76e2-440b-b01f-c52c7aafa031}" height="277" itemRotation="0" frame="false" pagex="10">
+        <ComposerItem pagey="10" page="1" id="" lastValidViewScaleFactor="2.00284" positionMode="0" positionLock="false" x="10" y="10" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{2be69d2b-76e2-440b-b01f-c52c7aafa031}" height="277" itemRotation="0" frame="false" pagex="10">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="1" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="5226180.42065418045967817" xmin="nan" ymax="nan" xmax="nan"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{36b08226-325b-4fda-b815-0e145ebb9820}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.69999999999999996"/>
+        <ComposerItem pagey="10" page="2" id="" lastValidViewScaleFactor="0.792504" positionMode="0" positionLock="false" x="10" y="317" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{9ba5bc35-fbfd-42c0-b011-7d018ea3e5bf}" height="277" itemRotation="0" frame="false" pagex="10">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerMap>
+      <ComposerLegend symbolWidth="15" title=" " rasterBorderWidth="0" titleAlignment="1" map="1" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#000000" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="35" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+        <styles>
+          <style marginBottom="2" name="title">
+            <styleFont description="Ubuntu,16,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="group">
+            <styleFont description="Ubuntu,14,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="subgroup">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" name="symbol">
+            <styleFont description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+          <style marginTop="2" marginLeft="2" name="symbolLabel">
+            <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
+          </style>
+        </styles>
+        <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+          <customproperties/>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="demandes_interventions_reunions_publiques20171109211634496" source="/home/fred/Documents/technic/source/gup/data/demandes_interventions_reunions_publiques.shp" name="demandes_interventions_reunions_publiques">
+            <customproperties>
+              <property key="legend/label-2" value=" "/>
+              <property key="legend/label-3" value=" "/>
+              <property key="legend/label-4" value=" "/>
+              <property key="legend/node-order" value="3,4,2"/>
+              <property key="legend/title-label" value=""/>
+            </customproperties>
+          </layer-tree-layer>
+        </layer-tree-group>
+        <ComposerItem pagey="133.277" page="3" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="304.007" y="747.277" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="21.9688" outlineWidth="0.3" excludeFromExports="0" uuid="{5a5d1572-202c-411e-befc-d2cc274c2fa4}" height="124.8" itemRotation="0" frame="false" pagex="304.007">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLegend>
+      <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="" id="2" previewMode="Render" drawCanvasItems="true">
+        <Extent ymin="5804642.20498979184776545" xmin="-130842.03531650369404815" ymax="5811097.10208781436085701" xmax="-124234.85046102068736218"/>
+        <LayerSet/>
+        <Grid/>
+        <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{0821744f-0c3a-4d16-9fe4-f06f0fb2995e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+          <lineStyle>
+            <symbol alpha="1" clip_to_extent="1" type="line" name="">
+              <layer pass="0" class="SimpleLine" locked="0">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="0,0,0,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              </layer>
+            </symbol>
+          </lineStyle>
+          <markerStyle>
+            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+              <layer pass="0" class="SimpleMarker" locked="0">
+                <prop k="angle" v="0"/>
+                <prop k="color" v="0,0,0,255"/>
+                <prop k="horizontal_anchor_point" v="1"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="name" v="circle"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="outline_color" v="0,0,0,255"/>
+                <prop k="outline_style" v="solid"/>
+                <prop k="outline_width" v="0"/>
+                <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="outline_width_unit" v="MM"/>
+                <prop k="scale_method" v="diameter"/>
+                <prop k="size" v="2"/>
+                <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="size_unit" v="MM"/>
+                <prop k="vertical_anchor_point" v="1"/>
+              </layer>
+            </symbol>
+          </markerStyle>
+          <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+        </ComposerMapGrid>
+        <AtlasMap scalingMode="2" atlasDriven="1" margin="0.02"/>
+        <ComposerItem pagey="0" page="3" id="" lastValidViewScaleFactor="1.82077" positionMode="0" positionLock="false" x="0" y="614" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="304.007" outlineWidth="0.3" excludeFromExports="0" uuid="{90b35c6f-d3cc-4ae8-92a3-b42eac4c711d}" height="297" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -385,6 +619,137 @@
     <Atlas hideCoverage="false" coverageLayer="localisation_demandes20171120165746283" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="localisation_demandes emprise_reunion_publiques Polygon" filterFeatures="false" coverageLayerProvider="ogr" sortFeatures="false" pageNameExpression="&quot;nom&quot;" coverageLayerSource="/home/fred/Documents/technic/source/gup/data/localisation_demandes.sqlite|layername=emprise_reunion_publiques"/>
   </Composer>
   <projectlayers>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>Bing_Satellite20180110182055913</id>
+      <datasource>crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=http://ecn.t3.tiles.virtualearth.net/tiles/a%7Bq%7D.jpeg?g%3D0%26dir%3Ddir_n'&amp;zmax=18&amp;zmin=1</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Bing Satellite</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="0.741176" alphaBand="0" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="TileLayer">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278924390673637</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>Direct_OpenStreetMap_hot20180110180721171</id>
+      <datasource>.</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="">OpenStreetMap</attribution>
+      <layername>Direct OpenStreetMap_hot</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="blendMode" value="SourceOver"/>
+        <property key="credit" value="OpenStreetMap"/>
+        <property key="creditVisibility" value="1"/>
+        <property key="serviceUrl" value="http://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/>
+        <property key="smoothRender" value="1"/>
+        <property key="title" value="Direct OpenStreetMap_hot"/>
+        <property key="transparency" value="0"/>
+        <property key="yOriginTop" value="1"/>
+        <property key="zmax" value="19"/>
+        <property key="zmin" value="0"/>
+      </customproperties>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>Google_Road20180110165902371</id>
+      <datasource>crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=https://mt1.google.com/vt/lyrs%3Dm%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&amp;zmax=20&amp;zmin=0</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</attribution>
+      <layername>Google Road</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="PyTiledLayer">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
@@ -426,6 +791,52 @@
         <property key="zmax" value="20"/>
         <property key="zmin" value="0"/>
       </customproperties>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>OSM_Humanitarian20180110174225387</id>
+      <datasource>crs=EPSG:3857&amp;format=&amp;type=xyz&amp;url=http://tile-b.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png,%20http://tile-a.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png,%20http://tile-c.openstreetmap.fr/hot/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</attribution>
+      <layername>OSM Humanitarian</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
     </maplayer>
     <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>
@@ -504,7 +915,7 @@
         <ymax>5256748.5</ymax>
       </extent>
       <id>bdtopo_commune20171120152640045</id>
-      <datasource>dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' password='Mie9Asie' sslmode=disable key='gid' srid=-1 type=MultiPolygon table="c_ignf"."bdtopo_commune" (shape) sql=</datasource>
+      <datasource>dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' password='Mie1Asie' sslmode=disable key='gid' srid=-1 type=MultiPolygon table="c_ignf"."bdtopo_commune" (shape) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1046,23 +1457,17 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{0138d99d-26b9-4954-af0e-93077e6536f3}">
-          <rule checkstate="0" filter="ELSE" key="{d5af802d-cf08-4e63-ba30-f38897b46151}" symbol="0"/>
-          <rule filter="--trim(&quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;)  = 'Attente retour services'&#xa;levenshtein( to_string( &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;), 'Attente retour services') &lt;= 1" key="{4dc40f74-aebb-4131-b5a1-6c442f2e0fa0}" symbol="1" label="Statut = 'Attente retour services'"/>
-          <rule filter="&quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot; = 'Clos'" key="{4cb10676-64e9-4489-92d6-01a89d37f873}" symbol="2" label="Statut = 'Clos'"/>
-          <rule filter=" &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot; = 'Demande à transmettre'" key="{3d36424e-9a7f-4439-b363-db6fccb75d1f}" symbol="3" label="Statut = 'Demande à transmettre'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'EV'  OR &#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'EV/NP'  OR &#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'EV/PU'  OR &#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Espaces verts' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Espaces Verts' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'PU' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'PU/Déchets' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Propreté Urbaine / Espaces Verts' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'NP'" key="{8f3b0982-43d5-4728-9801-f7b79ce86a3f}" symbol="4" label="Destinataire = 'Espaces Verts, Nature et Paysage, Propreté Urbaine'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'CTM' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'CxM'" key="{8fd833ca-672f-4cf5-a218-9fb63ad8e377}" symbol="5" label="Destinataire = &quot;CTM&quot;"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Voirie Deplacements'  OR &#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Voirie Travaux' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Voirie Pluviale' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Voirie'" key="{f3e4da11-9a83-40e2-9031-e4e499da2cbe}" symbol="6" label="Destinataire = 'Voirie'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Urbanisme'" key="{f12a46eb-880f-403f-ac29-eb91e4611ebe}" symbol="7" label="Destinataire = 'Urbanisme'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Autres'" key="{0232ac49-d018-4984-bd37-8957418582f6}" symbol="8" label="Destinataire = 'Autres'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'PM' OR&#xa;  &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'Tranquillité'" key="{be949b21-3b28-4666-9157-9184f4e8d8c3}" symbol="9" label="Destinataire = 'Police Municipale'"/>
-          <rule checkstate="0" filter=" &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'SG' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'MPCentre' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'AIF/NP' OR&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_destinataires&quot; = 'AIF'" key="{2b2993dd-3620-4d71-aba1-c5648b90aa62}" symbol="10" label="Destinataire = 'Secretariat Général, Mairie Proximité, AIF'"/>
+          <rule filter="ELSE" key="{d5af802d-cf08-4e63-ba30-f38897b46151}" symbol="0"/>
+          <rule checkstate="0" filter="--trim(&quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;)  = 'Attente retour services'&#xa;levenshtein( to_string( &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;), 'Demande à transmettre') &lt;= 1" key="{4dc40f74-aebb-4131-b5a1-6c442f2e0fa0}" symbol="1" label="Statut = 'Demande à transmettre'"/>
+          <rule filter="--trim(&quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;)  = 'Attente retour services'&#xa;levenshtein( to_string( &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot;), 'Demande instruite mais refusée') &lt;= 1" key="{4285387e-11fe-4884-9eda-965d92708a07}" symbol="2" label="Statut = 'Demande instruite mais refusée'"/>
+          <rule filter="--&quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot; = 'Clos'&#xa; &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot; = 'Réponse positive et réalisée, information apportée ou demande irréalisable.'" key="{4cb10676-64e9-4489-92d6-01a89d37f873}" symbol="3" label="Statut = 'Réponse positive et réalisée, information apportée ou demande irréalisable.'"/>
+          <rule filter=" &quot;secteurs_suivi_des_demandes-Feuille1_Statut&quot; = 'Réponse apportée par les services et en cours de traitement (études en cours ou exécution programmée)'" key="{3d36424e-9a7f-4439-b363-db6fccb75d1f}" symbol="4" label="Statut = 'Réponse apportée par les services et en cours de traitement (études en cours ou exécution programmée)'"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="201,80,145,255"/>
+              <prop k="color" v="255,231,9,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1084,7 +1489,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="255,13,1,255"/>
+              <prop k="color" v="217,1,255,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1103,32 +1508,10 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="10">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="51,160,44,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="cross_fill"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="1,255,35,255"/>
+              <prop k="color" v="255,13,1,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1150,7 +1533,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="255,145,1,255"/>
+              <prop k="color" v="1,255,35,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -1172,32 +1555,10 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="178,223,138,0"/>
+              <prop k="color" v="255,145,1,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="diamond"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="222,149,31,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="hexagon"/>
+              <prop k="name" v="circle"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -1207,95 +1568,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="251,154,153,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="equilateral_triangle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="31,120,180,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="square"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MapUnit"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MapUnit"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="5"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="251,154,153,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="star"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="6"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="9">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="51,160,44,0"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="pentagon"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="6"/>
+              <prop k="size" v="4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -1329,9 +1602,9 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/dist" value="1"/>
         <property key="labeling/distInMapUnits" value="true"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/drawLabels" value="false"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value="--wordwrap(gup_dem  ||  '\n'  || &quot;secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande&quot; ,-15)&#xa;wordwrap(&quot;secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande&quot; ,-15)"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="--wordwrap(gup_dem  ||  '\n'  || &quot;secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande&quot; ,-15)&#xa;--wordwrap(&quot;secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande&quot; ,-15)&#xa; &quot;gup_dem&quot; "/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="Ubuntu"/>
@@ -1525,15 +1798,15 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;gup_dem&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;gup_dem&quot;" sortOrder="0">
         <columns>
-          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="56" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="1" type="actions"/>
           <column width="-1" hidden="0" type="field" name="gup_dem"/>
-          <column width="237" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation"/>
-          <column width="-1" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_date_demande_original"/>
+          <column width="56" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_identifiant_gup_observation"/>
+          <column width="56" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_date_demande_original"/>
           <column width="60" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_demandeur_original"/>
-          <column width="286" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier"/>
+          <column width="56" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_lieu_quartier"/>
           <column width="-1" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_lieu_rue"/>
           <column width="-1" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_objet_de_la_demande"/>
           <column width="-1" hidden="0" type="field" name="secteurs_suivi_des_demandes-Feuille1_preconisations_in_situ"/>
@@ -2879,6 +3152,52 @@ def my_form_open(dialog, layer, feature):
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>1372000</xmin>
+        <ymin>5207000</ymin>
+        <xmax>1404999.99998400011099875</xmax>
+        <ymax>5239999.99998399987816811</ymax>
+      </extent>
+      <id>ortho2014_geo1720180110181954458</id>
+      <datasource>contextualWMSLegend=0&amp;crs=EPSG:3946&amp;dpiMode=7&amp;featureCount=10&amp;format=image/jpeg&amp;layers=ortho2014_geo17&amp;styles=default&amp;tileMatrixSet=epsg:3946&amp;url=https://sigar.agglo-larochelle.fr/CeramikServer/rest/wmts/cdalr/ortho2014_geo17</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ortho2014_geo17</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=45.25 +lat_2=46.75 +lat_0=46 +lon_0=3 +x_0=1700000 +y_0=5200000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1765</srsid>
+          <srid>3946</srid>
+          <authid>EPSG:3946</authid>
+          <description>RGF93 / CC46</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Undefined"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="0.741176" alphaBand="0" band="1" type="singlebandcolordata">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>372793.40625</xmin>
@@ -3616,7 +3935,11 @@ def my_form_open(dialog, layer, feature):
           <geographicflag>true</geographicflag>
         </spatialrefsys>
       </srs>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <provider encoding="UTF-8">ogr</provider>
       <vectorjoins/>
       <layerDependencies/>
@@ -3700,15 +4023,15 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;identifiant_gup_demande&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="identifiant_gup_demande"/>
-          <column width="-1" hidden="0" type="field" name="identifiant_gup_observation"/>
-          <column width="-1" hidden="0" type="field" name="date_demande_original"/>
-          <column width="-1" hidden="0" type="field" name="demandeur_original"/>
-          <column width="-1" hidden="0" type="field" name="lieu_quartier"/>
-          <column width="-1" hidden="0" type="field" name="lieu_rue"/>
-          <column width="-1" hidden="0" type="field" name="objet_de_la_demande"/>
+          <column width="56" hidden="0" type="field" name="identifiant_gup_observation"/>
+          <column width="56" hidden="0" type="field" name="date_demande_original"/>
+          <column width="56" hidden="0" type="field" name="demandeur_original"/>
+          <column width="56" hidden="0" type="field" name="lieu_quartier"/>
+          <column width="186" hidden="0" type="field" name="lieu_rue"/>
+          <column width="199" hidden="0" type="field" name="objet_de_la_demande"/>
           <column width="-1" hidden="0" type="field" name="preconisations_in_situ"/>
           <column width="-1" hidden="0" type="field" name="destinataires"/>
           <column width="-1" hidden="0" type="field" name="date_transmission_par_intermediaire"/>
@@ -3718,7 +4041,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="reponse_service"/>
           <column width="-1" hidden="0" type="field" name="date_previsionnelle_intervention"/>
           <column width="-1" hidden="0" type="field" name="date_reelle_intervention"/>
-          <column width="-1" hidden="0" type="field" name="Statut"/>
+          <column width="224" hidden="0" type="field" name="Statut"/>
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
@@ -3726,7 +4049,22 @@ def my_form_open(dialog, layer, feature):
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>

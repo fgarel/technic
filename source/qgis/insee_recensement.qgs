@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.14">
+<qgis projectname="" version="2.18.15">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -40,10 +40,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-130456.84968460112577304</xmin>
-      <ymin>5796137.73508372437208891</ymin>
-      <xmax>-111623.36198592692380771</xmax>
-      <ymax>5819119.44666400086134672</ymax>
+      <xmin>-129665.27870687907852698</xmin>
+      <ymin>5801470.24721631407737732</ymin>
+      <xmax>-120248.53485754197754432</xmax>
+      <ymax>5812961.10300645232200623</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -164,67 +164,6 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <mapcanvas>
-    <units>meters</units>
-    <extent>
-      <xmin>-223.46757317409810639</xmin>
-      <ymin>-2828.56152397652658692</ymin>
-      <xmax>4544.53242682590189361</xmax>
-      <ymax>541.43847602347341308</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <projections>1</projections>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
-        <srsid>3857</srsid>
-        <srid>3857</srid>
-        <authid>EPSG:3857</authid>
-        <description>WGS 84 / Pseudo Mercator</description>
-        <projectionacronym>merc</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_linestring20171122153753323"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="sitesmunicipauxcomplements20171106143319777"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Satellite20171122114523421"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="TestLyon20171109084515585"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_9_act_eco20171106143319717"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_7_logement20171106143319686"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Humanitarian20171113142046741"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_polygon_copier20171122164744885"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="iris_2013_01_0120171123173613502"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_point20171122153637915"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Google_Road20171122141327553"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20171103150855213"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_polygon20171122153910221"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_1_salub20171106143319548"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_2_enseign20171106143319565"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Raster20171123182334433"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20171103160534270"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_3_culture20171106143319587"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_0_adm_gnrl20171106143319431"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_point_copier20171122162057803"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_8_anenagt_sce20171106143319702"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier20171103161823743"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="bdtopo_commune20171106144117150"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_4_sport20171106143319615"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="population_comite_quartier20171103161356470"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="ortho2014_geo1720171103150836132"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenTopoMap20171113120543336"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_6_famille20171106143319661"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="cdalr_communes20171106143950540"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZoneImplantationOuvrage_PortLaRochelle20171109090416955"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_communal20171106143319733"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_gima20171106143319761"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi20171106164406391"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3946" srcDatumTransform="-1" destDatumTransform="-1" layerid="poi_linestring_copier20171122171159917"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="batiment_5_social20171106143319643"/>
-    </layer_coordinate_transform_info>
-  </mapcanvas>
   <Composer title="A1_Paysage" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{097f897c-b2c1-4ca1-b344-0d37cfe25401}" alignmentSnap="1" printResolution="300" paperWidth="841" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="594" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
@@ -324,7 +263,7 @@
       <ComposerLabel valign="128" marginX="1" marginY="1" labelText="Etat Actuel" htmlState="0" halign="4">
         <LabelFont description="Ubuntu,72,-1,5,63,1,0,0,0,0" style=""/>
         <FontColor red="0" blue="0" green="0"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="2" positionLock="false" x="789" y="0" visibility="0" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{73747604-d82b-40e6-8dc8-1c95084eba07}" height="100" itemRotation="0" frame="false" pagex="789">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="2" positionLock="false" x="789" y="0" visibility="0" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="400" outlineWidth="0.3" excludeFromExports="0" uuid="{73747604-d82b-40e6-8dc8-1c95084eba07}" height="100" itemRotation="0" frame="false" pagex="789">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="128" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -365,14 +304,14 @@
             </layer-tree-layer>
           </layer-tree-group>
         </layer-tree-group>
-        <ComposerItem pagey="736.623" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="31.6896" y="736.623" visibility="0" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="52.7672" outlineWidth="0.3" excludeFromExports="0" uuid="{e3ebe3a4-e43c-4d96-a54e-20aa4d80f6b2}" height="33" itemRotation="0" frame="false" pagex="31.6896">
+        <ComposerItem pagey="736.623" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="31.6896" y="736.623" visibility="0" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="52.7672" outlineWidth="0.3" excludeFromExports="0" uuid="{e3ebe3a4-e43c-4d96-a54e-20aa4d80f6b2}" height="33" itemRotation="0" frame="false" pagex="31.6896">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Render" drawCanvasItems="false">
-        <Extent ymin="5799042.44723181053996086" xmin="-138432.49069672339828685" ymax="5814180.44724725373089314" xmax="-117030.49067489337176085"/>
+        <Extent ymin="5799042.44723181053996086" xmin="-138432.49069672339828685" ymax="5814180.44724725093692541" xmax="-117030.49067489337176085"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{72a8a27b-2ef8-4605-8cbd-f488494e345d}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -424,7 +363,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.593033" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1189" outlineWidth="0.3" excludeFromExports="0" uuid="{5743c4fb-7d67-430f-901b-7c13510b3972}" height="841" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="0.296517" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1189" outlineWidth="0.3" excludeFromExports="0" uuid="{5743c4fb-7d67-430f-901b-7c13510b3972}" height="841" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
