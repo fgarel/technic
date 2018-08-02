@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dossierConsultation xmlns:ns2="http://www.opengis.net/gml/3.2" xmlns="http://www.reseaux-et-canalisations.gouv.fr/schema-teleservice/2.2" xmlns:ns4="http://xml.insee.fr/schema" xmlns:ns3="http://www.w3.org/1999/xlink" xmlns:ns5="http://www.isotc211.org/2005/gco" xmlns:ns6="http://www.isotc211.org/2005/gmd" xmlns:ns7="http://www.isotc211.org/2005/gts">
+    <DT>
+        <noConsultationDuTeleserviceSeize>2018080156731S10</noConsultationDuTeleserviceSeize>
+        <noAffaireDuResponsableDuProjet>RE7-1800365-2018G062</noAffaireDuResponsableDuProjet>
+        <dateDeLaDeclaration>2018-08-01T09:58:21.622+02:00</dateDeLaDeclaration>
+        <typeEntite>PERSONNE_PHYSIQUE</typeEntite>
+        <declarationConjointeDTDICT>false</declarationConjointeDTDICT>
+        <responsableDuProjet>
+            <denomination></denomination>
+            <noSiret>00000000000000</noSiret>
+        </responsableDuProjet>
+        <representantDuResponsableDeProjet>
+            <denomination>ATLANTIQUE INGENIERIE RESEAUX - POLE ELEC</denomination>
+            <voie>34 Rue de la Binetterie</voie>
+            <codePostal>17700</codePostal>
+            <commune>SURGERES</commune>
+            <personneAcontacter>PRIOD</personneAcontacter>
+            <tel>0546562142</tel>
+            <courriel>benjamin-priod@air-reseaux.com</courriel>
+        </representantDuResponsableDeProjet>
+        <emplacementDuProjet>
+            <adresse>14, r du palais, </adresse>
+            <CP>17000</CP>
+            <communePrincipale>La Rochelle</communePrincipale>
+            <codeINSEE>17300</codeINSEE>
+            <nombreDeCommunes>1</nombreDeCommunes>
+            <listeDesEmplacementsDesCommunesConcernees>
+                <emplacementDeLaCommuneConcernee>
+                    <nomDeLaCommune>La Rochelle</nomDeLaCommune>
+                    <codeCommune>17000</codeCommune>
+                    <codeINSEE>17300</codeINSEE>
+                </emplacementDeLaCommuneConcernee>
+            </listeDesEmplacementsDesCommunesConcernees>
+        </emplacementDuProjet>
+        <emprise>
+            <geometrie srsName="urn:ogc:def:crs:EPSG::4326" srsDimension="2" ns2:id="DT-0">
+                <ns2:surfaceMember ns3:type="simple">
+                    <ns2:Polygon ns2:id="DT-0-0">
+                        <ns2:exterior>
+                            <ns2:LinearRing>
+                                <ns2:posList srsDimension="2">-1.154034 46.15851 -1.153803 46.158551 -1.153776 46.158844 -1.153428 46.159903 -1.153658 46.159985 -1.154034 46.15851</ns2:posList>
+                            </ns2:LinearRing>
+                        </ns2:exterior>
+                    </ns2:Polygon>
+                </ns2:surfaceMember>
+            </geometrie>
+            <surface>2560.0</surface>
+        </emprise>
+        <souhaitsPourLeRecepisse>
+            <modeReceptionElectronique>
+                <tailleDesPlans>A0</tailleDesPlans>
+                <souhaitDePlansVectoriels>true</souhaitDePlansVectoriels>
+                <formatDesPlansVectoriels>DXF</formatDesPlansVectoriels>
+            </modeReceptionElectronique>
+        </souhaitsPourLeRecepisse>
+        <projetEtSonCalendrier>
+            <natureDesTravaux>SOU</natureDesTravaux>
+            <natureDesTravaux>TER</natureDesTravaux>
+            <decrivezLeProjet>AUGMENTATION DE PUISSANCE POSTE GAZ</decrivezLeProjet>
+            <emploiDeTechniquesSansTranchees>false</emploiDeTechniquesSansTranchees>
+            <souhaitLesPlansDesReseauxElectriqueAeriens>true</souhaitLesPlansDesReseauxElectriqueAeriens>
+            <datePrevuePourLeCommencementDesTravaux>2018-10-08+02:00</datePrevuePourLeCommencementDesTravaux>
+            <dureeDuChantierEnJours>10</dureeDuChantierEnJours>
+            <positionnementDesTravauxPrevusParLeDeclarant>AERIENS_ET_SOUTERRAINS</positionnementDesTravauxPrevusParLeDeclarant>
+        </projetEtSonCalendrier>
+        <signatureDuResponsableDuProjetOuDeSonRepresentant>
+            <nomDuSignataire>David RIVIERE</nomDuSignataire>
+        </signatureDuResponsableDuProjetOuDeSonRepresentant>
+    </DT>
+    <listeDesOuvrages>
+        <ouvrage>
+            <contact>
+                <societe>VILLE DE LA ROCHELLE</societe>
+                <voie>HOTEL DE VILLE</voie>
+                <codePostal>17086</codePostal>
+                <commune>LA ROCHELLE CEDEX 1</commune>
+                <codePays>FR</codePays>
+                <fax>0546377111</fax>
+                <courriel>dt.dict@ville-larochelle.fr</courriel>
+                <telephone>0546511433</telephone>
+                <telEndommagement>0546515151</telEndommagement>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>CANALISATIONS_EAU_POTABLE</classeOuvrage>
+            <codeOuvrage>EAUPOT01</codeOuvrage>
+            <denominationOuvrage>EAU POTABLE</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2012-10-07+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>VILLE DE LA ROCHELLE</societe>
+                <voie>HOTEL DE VILLE</voie>
+                <codePostal>17086</codePostal>
+                <commune>LA ROCHELLE CEDEX 1</commune>
+                <codePays>FR</codePays>
+                <fax>0546377111</fax>
+                <courriel>dt.dict@ville-larochelle.fr</courriel>
+                <telephone>0546511433</telephone>
+                <telephoneUrgence>0546515151</telephoneUrgence>
+                <faxUrgence>0546515086</faxUrgence>
+                <telEndommagement>0546515151</telEndommagement>
+            </contact>
+            <categorieOuvrage>S</categorieOuvrage>
+            <classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</classeOuvrage>
+            <codeOuvrage>ECL01</codeOuvrage>
+            <denominationOuvrage>Réseau d'éclairage public</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2012-10-07+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>ORANGE DT DICT</societe>
+                <agence>UI AQUITAINE POLE MDM DICTP0</agence>
+                <voie>TSA 50010</voie>
+                <codePostal>64210</codePostal>
+                <commune>BIDART cedex</commune>
+                <codePays>FR</codePays>
+                <fax>0140874137</fax>
+                <courriel>FT40P0.FTO@demat.protys.fr</courriel>
+                <telephone>0558449700</telephone>
+                <mailUrgence>FT40P0.FTO@demat.protys.fr</mailUrgence>
+                <telEndommagement>0810300111</telEndommagement>
+                <referenceInterne>_|FTO$FT40P0|_</referenceInterne>
+                <site>www.protys.fr</site>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</classeOuvrage>
+            <codeOuvrage>FTO-17</codeOuvrage>
+            <denominationOuvrage>RESEAUX DE TELECOMMUNICATION FTO  -- CHARENTE-MARITIME (17)</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2018-06-10+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>ENEDIS-DRPCH-POITOU-CHARENTES</societe>
+                <agence>CHEZ PROTYS P0101</agence>
+                <lieuDitBP>CS 90125</lieuDitBP>
+                <codePostal>27091</codePostal>
+                <commune>EVREUX CEDEX 9</commune>
+                <codePays>FR</codePays>
+                <fax>0972569720</fax>
+                <courriel>0000000000405rwy.ENEDIS@demat.protys.fr</courriel>
+                <telephone>0546883423</telephone>
+                <telephoneUrgence>0181624701</telephoneUrgence>
+                <faxUrgence>0972569720</faxUrgence>
+                <mailUrgence>0000000000405rwy.ENEDIS@demat.protys.fr</mailUrgence>
+                <telEndommagement>0176614701</telEndommagement>
+                <referenceInterne>_|ERDFNAT$0000000000405rwy|_</referenceInterne>
+            </contact>
+            <categorieOuvrage>S</categorieOuvrage>
+            <classeOuvrage>LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT</classeOuvrage>
+            <codeOuvrage>ENEDIS-0000000000405RWY^1</codeOuvrage>
+            <denominationOuvrage>RESEAUX ENEDIS HTA ET BT AERIEN ET SOUTERRAIN</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2018-07-29+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>GRDF - Direction Réseaux Ouest</societe>
+                <agence>CHEZ PROTYS P0063</agence>
+                <lieuDitBP>CS 90125</lieuDitBP>
+                <codePostal>27091</codePostal>
+                <commune>EVREUX CEDEX 9</commune>
+                <codePays>FR</codePays>
+                <fax>0972569682</fax>
+                <courriel>14600433C.GRDF@demat.protys.fr</courriel>
+                <telephone>0228034630</telephone>
+                <telephoneUrgence>0810300360</telephoneUrgence>
+                <faxUrgence>0972569682</faxUrgence>
+                <mailUrgence>14600433C.GRDF@demat.protys.fr</mailUrgence>
+                <telEndommagement>0800473333</telEndommagement>
+                <referenceInterne>_|GRDF$14600433C|_</referenceInterne>
+                <site>www.protys.fr</site>
+            </contact>
+            <categorieOuvrage>S</categorieOuvrage>
+            <classeOuvrage>CANALISATIONS_GAZ_COMBUSTIBLES</classeOuvrage>
+            <codeOuvrage>GRDFPDLP</codeOuvrage>
+            <denominationOuvrage>RESEAU_DISTRIBUTION_GRDF</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2018-07-08+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <nom>
+                    <ns4:NomFamille>Cassegrain</ns4:NomFamille>
+                </nom>
+                <prenom>
+                    <ns4:Prenom>Thierry</ns4:Prenom>
+                </prenom>
+                <societe>Communauté d’Agglomération de La Rochelle</societe>
+                <agence>Service Assainissement</agence>
+                <complement>CS 30001</complement>
+                <voie>16 rue de Vaucanson</voie>
+                <codePostal>17183</codePostal>
+                <commune>PERIGNY Cedex</commune>
+                <codePays>FR</codePays>
+                <fax>0546684271</fax>
+                <courriel>dtdict@agglo-larochelle.fr</courriel>
+                <telephone>0546684264</telephone>
+                <telephoneUrgence>0546303400</telephoneUrgence>
+                <telEndommagement>0546684264</telEndommagement>
+                <site>www.agglo-larochelle.fr</site>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</classeOuvrage>
+            <codeOuvrage>REU</codeOuvrage>
+            <denominationOuvrage>Réseaux Eaux Usées</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2016-07-03+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <nom>
+                    <ns4:NomFamille>My Récépissé chez Cube Solution</ns4:NomFamille>
+                </nom>
+                <societe>SFR</societe>
+                <complement>Pour SFR  Sud Ouest</complement>
+                <voie>463 Rue des Clauwiers</voie>
+                <codePostal>59113</codePostal>
+                <commune>Seclin</commune>
+                <codePays>FR</codePays>
+                <fax>0000000000</fax>
+                <courriel>dictsfr@altice-sfr.myrecepisse.com</courriel>
+                <telephone>0359529111</telephone>
+                <telephoneUrgence>0359529111</telephoneUrgence>
+                <faxUrgence>0000000000</faxUrgence>
+                <mailUrgence>dictsfr@altice-sfr.myrecepisse.com</mailUrgence>
+                <telEndommagement>0805200410</telEndommagement>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</classeOuvrage>
+            <codeOuvrage>SFR_DICT_NOV_2015</codeOuvrage>
+            <denominationOuvrage>SFR - SERVICE DICT</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2018-01-14+01:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <nom>
+                    <ns4:NomFamille>Rebillard</ns4:NomFamille>
+                </nom>
+                <prenom>
+                    <ns4:Prenom>Jean-Philippe</ns4:Prenom>
+                </prenom>
+                <societe>Communauté d’Agglomération de La Rochelle</societe>
+                <agence>DSTI</agence>
+                <complement>CS 30001</complement>
+                <voie>16 rue de Vaucanson</voie>
+                <codePostal>17183</codePostal>
+                <commune>PERIGNY Cedex</commune>
+                <codePays>FR</codePays>
+                <fax>0546303429</fax>
+                <courriel>dtdict@agglo-larochelle.fr</courriel>
+                <telephone>0546303433</telephone>
+                <telephoneUrgence>0684532375</telephoneUrgence>
+                <telEndommagement>0546303433</telEndommagement>
+                <site>www.agglo-larochelle.fr</site>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</classeOuvrage>
+            <positionnementOuvrage>AERIEN</positionnementOuvrage>
+            <codeOuvrage>RFO</codeOuvrage>
+            <denominationOuvrage>Réseaux Fibres Optiques</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2016-07-03+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>VILLE DE LA ROCHELLE</societe>
+                <voie>HOTEL DE VILLE</voie>
+                <codePostal>17086</codePostal>
+                <commune>LA ROCHELLE CEDEX 1</commune>
+                <codePays>FR</codePays>
+                <fax>0546377111</fax>
+                <courriel>dt.dict@ville-larochelle.fr</courriel>
+                <telephone>0546511433</telephone>
+                <telEndommagement>0546515151</telEndommagement>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</classeOuvrage>
+            <codeOuvrage>FO_001</codeOuvrage>
+            <denominationOuvrage>fibre optique 001</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2012-10-07+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <nom>
+                    <ns4:NomFamille>DITTLO</ns4:NomFamille>
+                </nom>
+                <prenom>
+                    <ns4:Prenom>MARTINE</ns4:Prenom>
+                </prenom>
+                <societe>17 NUMERIQUE</societe>
+                <agence>Gestion DT-DICT chez AXIONE</agence>
+                <voie>132, boulevard CAMELINAT</voie>
+                <codePostal>92240</codePostal>
+                <commune>MALAKOFF</commune>
+                <codePays>FR</codePays>
+                <fax>0172258081</fax>
+                <courriel>17.numerique.dict@axionesi.net</courriel>
+                <telephone>0178160080</telephone>
+                <telephoneUrgence>0533740217</telephoneUrgence>
+                <faxUrgence>0172258081</faxUrgence>
+                <mailUrgence>17.numerique.dict@axionesi.net</mailUrgence>
+                <telEndommagement>0533740217</telEndommagement>
+                <site>http://17numerique.olm.fr/</site>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT</classeOuvrage>
+            <codeOuvrage>1095_56190_46251</codeOuvrage>
+            <denominationOuvrage>AXIONE - 17 NUMERIQUE - CMA_17</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2018-06-17+02:00</dateCreation>
+        </ouvrage>
+        <ouvrage>
+            <contact>
+                <societe>VILLE DE LA ROCHELLE</societe>
+                <voie>HOTEL DE VILLE</voie>
+                <codePostal>17086</codePostal>
+                <commune>LA ROCHELLE CEDEX 1</commune>
+                <codePays>FR</codePays>
+                <fax>0546377111</fax>
+                <courriel>dt.dict@ville-larochelle.fr</courriel>
+                <telephone>0546511433</telephone>
+                <telEndommagement>0546515151</telEndommagement>
+            </contact>
+            <categorieOuvrage>NS</categorieOuvrage>
+            <classeOuvrage>CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT</classeOuvrage>
+            <codeOuvrage>ASSPL01</codeOuvrage>
+            <denominationOuvrage>ASSAINISSEMENT PLUVIAL</denominationOuvrage>
+            <statut>ACTIF</statut>
+            <dateCreation>2012-10-07+02:00</dateCreation>
+        </ouvrage>
+    </listeDesOuvrages>
+    <listeDesREADE/>
+</dossierConsultation>
