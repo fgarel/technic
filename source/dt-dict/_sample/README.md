@@ -41,9 +41,9 @@ sogelink_betri : la geometrie est dans le fichier pdf
    - ceux dont les coordonnées de l'emprise sont stockés deux fois dans le pdf (cf dictfr_safege),
      - du gml : *Gml_D* ou *Gml_Dp*
      - une liste de coordonnées : *Liste_A* ou *Liste_Ap*
-   - ceux dont les coordonnées sont sous la forme d'une liste, appelé *Liste_B* (cf dictfr_grdf, dictfr_somelec, sogelink_betri),
+   - ceux dont les coordonnées sont sous la forme d'une liste, appelé *Liste_B* ou *Liste_Bp* (cf dictfr_grdf, dictfr_somelec, sogelink_betri),
    - ceux dont les coordonnées sont sous la forme d'un tableau, appelé *Table_B* ou *Table_Bp* (cf protys_enedis)
-   - ceux dont les coordonnées sont sous la forme d'un gml, appelé *Gml_E* (cf dictservices_air)
+   - ceux dont les coordonnées sont sous la forme d'un gml, appelé *Gml_E* ou *Gml_Ep* (cf dictservices_air)
 
 ## Les outils
 
@@ -75,6 +75,9 @@ Pour parser nous allons utiliser différents outils :
 
 On privilégie d'abord le xml : les coordonnées sont en CC46 EPSG:4326
 
+```
+cat direct_vlr_2018080100424T_DDC_description.xml
+```
 
 Gml_A
 ```
@@ -99,6 +102,10 @@ Gml_A
 ### dictservices
 
 On privilégie d'abord le xml : les coordonnées sont en CC46 EPSG:4326
+
+```
+
+```
 
 Gml_B
 ```
@@ -207,8 +214,7 @@ Longitude
 
 #### Extraction avec qpdf
 ```
-qpdf --qdf --object-streams=disable direct_vlr_2018080100424T_DDC_emprise.pdf - | iconv -f 'CP1250' -t 'utf-8' -
-| grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
+qpdf --qdf --object-streams=disable direct_vlr_2018080100424T_DDC_emprise.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
 ```
 
 Gml_Cp et Table_Ap
@@ -294,7 +300,7 @@ Les coordonnées se présentent en deux endroits dans le fichier pdf :
 
 methode 1 : attention au signe moins
 ```
-pdftotext dictfr_safege_DICT.309302313.4.document.pdf -
+pdftotext dictfr_safege_DICT.309302313.4.document.pdf - > pdftotext.txt
 ```
 
 Gml_D et Liste_A
@@ -323,7 +329,7 @@ methode 2 : plus complet, mais nettoyage a faire
 
 qpdf --qdf --object-streams=disable dictfr_safege_DICT.309302313.4.document.pdf document1.pdf
 ```
-qpdf --qdf --object-streams=disable dictfr_safege_DICT.309302313.4.document.pdf - | grep --binary-files=text ")Tj$"
+qpdf --qdf --object-streams=disable dictfr_safege_DICT.309302313.4.document.pdf - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
 ```
 
 ```
@@ -477,7 +483,7 @@ LA ROCHELLE
 pdftotext dictservices_air_DT.pdf - > pdftotext.txt
 ```
 
-Table_B
+Gml_E
 
 ```
 La loi n° 78-17 du 6 janvier 1978 modifiée relative à l’informatique, aux fichiers et aux libertés, garantit un droit d’accès et de rectification des données auprès des organismes destinataires du formulaire.
@@ -492,6 +498,7 @@ on="2">-1.154034 46.15851 -1.153803 46.158551 -1.153776 46.158844 -1.153428 46.1
 qpdf --qdf --object-streams=disable dictservices_air_DT.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
 ```
 
+Gml_Ep
 ```
 Coordonnées : <gml:Polygon srsName="EPSG:4171"><gml:exterior><gml:LinearRing><gml:posList srsDimensi
 on="2">-1.154034 46.15851 -1.153803 46.158551 -1.153776 46.158844 -1.153428 46.159903 -1.153658 46.1

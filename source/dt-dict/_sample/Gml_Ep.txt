@@ -1,0 +1,8 @@
+qpdf --qdf --object-streams=disable dictservices_air_DT.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
+
+
+
+RE7-1800365-2018G062-DT-15452005
+Coordonnées : <gml:Polygon srsName="EPSG:4171"><gml:exterior><gml:LinearRing><gml:posList srsDimensi
+on="2">-1.154034 46.15851 -1.153803 46.158551 -1.153776 46.158844 -1.153428 46.159903 -1.153658 46.1
+59985 -1.154034 46.15851</gml:posList></gml:LinearRing></gml:exterior></gml:Polygon>

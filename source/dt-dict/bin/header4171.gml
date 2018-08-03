@@ -9,9 +9,9 @@
   <gml:featureMember>
     <ogr:EmpriseDeclaration fid="emprise">
       <ogr:geometry>
-        <gml:MultiPolygon srsName="EPSG:3946">
+        <!--<gml:MultiPolygon srsName="EPSG:4171">
           <gml:polygonMember>
 	          <gml:Polygon>
 	            <gml:outerBoundaryIs>
 	              <gml:LinearRing>
-      	          <gml:coordinates>
+      	          <gml:coordinates>-->

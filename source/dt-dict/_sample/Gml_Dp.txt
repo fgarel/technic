@@ -1,0 +1,12 @@
+qpdf --qdf --object-streams=disable dictfr_safege_DICT.309302313.4.document.pdf - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
+
+
+
+<gml:MultiPolygon xmlns:gml='http://www.opengis.net/gml'
+srsName='EPSG:4326'><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-
+1.134109,46.14098299999999 -1.133894,46.140961000000004 -1.133921,46.14082700000001 -1.134195,46.140838 -
+1.135482,46.14097599999999 -1.136442,46.141102 -1.137596,46.14138899999999 -1.137794,46.14123199999999 -1.137644,46.141177 -
+1.137789,46.14102099999999 -1.138046,46.141128 -1.1378800000000002,46.141377 -1.137665,46.14150799999998 -1.13729,46.141437
+-1.136378,46.14123999999999 -1.136292,46.141365999999984 -1.135911,46.141284999999996 -1.135949,46.141147 -
+1.134109,46.14098299999999</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon></gml:polygonMember></gml:M
+ultiPolygon>

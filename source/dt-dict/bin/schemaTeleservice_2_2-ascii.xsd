@@ -1,0 +1,2688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version 02052016 -->
+<xs:schema xmlns:ie="http://xml.insee.fr/schema" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:t="http://www.reseaux-et-canalisations.gouv.fr/schema-teleservice/2.2"
+	xmlns:gml="http://www.opengis.net/gml/3.2" attributeFormDefault="unqualified"
+	elementFormDefault="qualified"
+	targetNamespace="http://www.reseaux-et-canalisations.gouv.fr/schema-teleservice/2.2"
+	version="2.2">
+	
+	<xs:import namespace="http://xml.insee.fr/schema"
+		schemaLocation="http://xml.insee.fr/schema/insee.xsd" />
+	<xs:import namespace="http://www.opengis.net/gml/3.2"
+		schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+
+
+	<!-- Element racine -->
+
+	<xs:element name="dossierConsultation">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="DT" type="t:informationsDT" />
+					<xs:element name="DICT" type="t:informationsDICT" />
+					<xs:element name="dtDictConjointes" type="t:informationsDtDictConjointes" />
+					<xs:element name="ATU" type="t:informationsATU" />
+				</xs:choice>
+				<xs:element name="listeDesOuvrages" type="t:ouvrages" />	
+				<xs:element name="listeDesREADE" type="t:reades"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dossierConsultationReferencement">
+		<xs:annotation>
+			<xs:documentation>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="DT"
+						type="t:informationsDTReferencement" />
+					<xs:element name="DICT"
+						type="t:informationsDICTReferencement" />
+					<xs:element name="dtDictConjointes"
+						type="t:informationsDtDictConjointesReferencement" />
+					<xs:element name="ATU"
+						type="t:informationsATUReferencement" />
+				</xs:choice>
+				<xs:element name="lettreConsultation" type="xs:string"
+					maxOccurs="1" minOccurs="1">
+				</xs:element>
+				<xs:element name="typeDemande" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="informationsDT">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="noConsultationDuTeleserviceSeize" type="t:numDossierSeize">
+					<xs:annotation>
+						<xs:documentation>Numro de consultation du dossier sur 16
+							caractres
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+					<xs:annotation>
+						<xs:documentation>Numro de consultation du dossier sur 14
+							caractres
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="noAffaireDuResponsableDuProjet" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro d'affaire du responsable projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDeLaDeclaration" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date de cration du dossier de consultation
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeEntite" type="t:typeEntite"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Type de responsable du projet: personne morale ou
+						physique
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="declarationConjointeDTDICT" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Cocher si c'est dans le cadre d'une consultation
+						pour une DT/DICT conjointe
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="responsableDuProjet" type="t:responsableDuProjet">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="representantDuResponsableDeProjet" type="t:representantDuResponsableDeProjet">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du reprsentant du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emplacementDuProjet" type="t:localisationChantier">
+				<xs:annotation>
+					<xs:documentation>Adresse du chantier (prsent sur la commune
+						principale)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" />
+			<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisse">
+				<xs:annotation>
+					<xs:documentation>Liste permettant de prciser les souhaits
+						concernant le rcpiss (Taille, couleur et format)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="projetEtSonCalendrier" type="t:projetEtSonCalendrier">
+				<xs:annotation>
+					<xs:documentation>Description du projet (Nature des travaux,
+						Distance minimale entre les travaux et la ligne lectrique ...)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="investigationsComplementaires" type="t:investigationsComplementairesDT"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Investigations complmentaires de la DT
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="signatureDuResponsableDuProjetOuDeSonRepresentant"
+				type="t:signatureDeLExecutantDesTravaux"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDTReferencement">
+		<xs:sequence>
+			<xs:element name="noAffaireDuResponsableDuProjet" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro d'affaire du responsable projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeEntite" type="t:typeEntite"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Type de responsable du projet: personne morale ou
+						physique
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="declarationConjointeDTDICT" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Cocher si c'est dans le cadre d'une consultation
+						pour une DT/DICT conjointe
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="responsableDuProjet" type="t:responsableDuProjet">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="representantDuResponsableDeProjet" type="t:representantDuResponsableDeProjet">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du reprsentant du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emplacementDuProjet" type="t:localisationChantier">
+				<xs:annotation>
+					<xs:documentation>Adresse du chantier (prsent sur la commune
+						principale)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" />
+			<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisse">
+				<xs:annotation>
+					<xs:documentation>Liste permettant de prciser les souhaits
+						concernant le rcpiss (Taille, couleur et format)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="projetEtSonCalendrier" type="t:projetEtSonCalendrier">
+				<xs:annotation>
+					<xs:documentation>Description du projet (Nature des travaux,
+						Distance minimale entre les travaux et la ligne lectrique ...)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="investigationsComplementaires" type="t:investigationsComplementairesDT"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Investigations complmentaires de la DT
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="signatureDuResponsableDuProjetOuDeSonRepresentant"
+				type="t:signatureDeLExecutantDesTravaux"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDTsimplifiee">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="noConsultationDuTeleserviceSeize" type="t:numDossierSeize">
+					<xs:annotation>
+						<xs:documentation>Numro de consultation du dossier sur 16
+							caractres
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+					<xs:annotation>
+						<xs:documentation>Numro de consultation du dossier sur 14
+							caractres
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="noAffaireDuResponsableDuProjet" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro d'affaire du responsable projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDeLaDeclaration" type="xs:dateTime"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date de cration du dossier de consultation
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeEntite" type="t:typeEntite"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Type de responsable du projet: personne morale ou
+						physique
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="declarationConjointeDTDICT" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cocher si c'est dans le cadre d'une consultation
+						pour une DT/DICT conjointe
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="responsableDuProjet" type="t:responsableDuProjetNonObligatoire"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="representantDuResponsableDeProjet"
+				type="t:representantDuResponsableDeProjetNonObligatoire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coordonnes du reprsentant du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emplacementDuProjet" type="t:localisationChantierNonObligatoire"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse du chantier (prsent sur la commune
+						principale)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:empriseNonObligatoire"
+				minOccurs="0" />
+			<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisse"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Liste permettant de prciser les souhaits
+						concernant le rcpiss (Taille, couleur et format)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="projetEtSonCalendrier" type="t:projetEtSonCalendrierNonObligatoire"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Description du projet (Nature des travaux,
+						Distance minimale entre les travaux et la ligne lectrique ...)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="investigationsComplementaires" type="t:investigationsComplementairesDT"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Investigations complmentaires de la DT
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="signatureDuResponsableDuProjetOuDeSonRepresentant"
+				type="t:signatureDeLExecutantDesTravauxNonObligatoire" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDICT">
+		<xs:sequence>
+			<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+				<xs:annotation>
+					<xs:documentation>Numro de consultation du dossier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noAffaireDeLexecutantDesTravaux" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro d'affaire de l'excutant des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDeLaDeclaration" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date de la dclaration</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="natureDeLaDeclaration" type="t:natureDeclarationDICT">
+				<xs:annotation>
+					<xs:documentation>Nature de la DICT</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="executantDesTravaux" type="t:identificationPersonne">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de l'excutant de travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emplacementDesTravaux" type="t:localisationChantier">
+				<xs:annotation>
+					<xs:documentation>Adresse du chantier(prsent sur la commune
+						principale)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" />
+			<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisseDICT"></xs:element>
+			<xs:element name="travauxEtLeurCalendrier" type="t:travauxEtLeurCalendrier" />
+			<xs:element name="signatureDeLExecutantDesTravauxOuDeSonRepresentant"
+				type="t:signatureDeLExecutantDesTravaux"></xs:element>
+			<xs:element name="DtLiee" type="t:informationsDTsimplifiee"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDICTReferencement">
+		<xs:sequence>
+			<xs:element name="noAffaireDeLexecutantDesTravaux" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro d'affaire de l'excutant des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="natureDeLaDeclaration" type="t:natureDeclarationDICT">
+				<xs:annotation>
+					<xs:documentation>Nature de la DICT</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="executantDesTravaux" type="t:identificationPersonne">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de l'excutant de travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emplacementDesTravaux" type="t:localisationChantier">
+				<xs:annotation>
+					<xs:documentation>Adresse du chantier(prsent sur la commune
+						principale)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" />
+			<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisseDICT"></xs:element>
+			<xs:element name="travauxEtLeurCalendrier" type="t:travauxEtLeurCalendrier" />
+			<xs:element name="signatureDeLExecutantDesTravauxOuDeSonRepresentant"
+				type="t:signatureDeLExecutantDesTravaux"></xs:element>
+			<xs:element name="DtLiee" type="t:informationsDTsimplifiee"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDtDictConjointes">
+		<xs:sequence>
+			<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+				<xs:annotation>
+					<xs:documentation>Numro de consultation du dossier de la DICT
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDeLaDeclaration" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date de cration de la consultation
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="partieDT">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+							<xs:annotation>
+								<xs:documentation>Numro de consultation de la DT
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="noAffaireDuResponsableDuProjet" type="xs:string"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Numro d'affaire du responsable projet
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="dateDeLaDeclaration" type="xs:dateTime">
+							<xs:annotation>
+								<xs:documentation>Date de la consultation</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="typeEntite" type="t:typeEntite"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Responsable de projet (personne morale ou
+									physique)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="declarationConjointeDTDICT" type="xs:boolean">
+							<xs:annotation>
+								<xs:documentation>Prciser si le dossier de consultation
+									concerne DT/DICT Conjointe
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="responsableDuProjet" type="t:responsableDuProjet">
+							<xs:annotation>
+								<xs:documentation>Coordonnes du dclarant</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="representantDuResponsableDeProjet"
+							type="t:representantDuResponsableDeProjet">
+							<xs:annotation>
+								<xs:documentation>Cordonnes du reprsentant du responsable du
+									projet
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emplacementDuProjet" type="t:localisationChantier">
+							<xs:annotation>
+								<xs:documentation>Adresse du chantier (prsent sur la commune
+									principale)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emprise" type="t:emprise" />
+						<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisse">
+							<xs:annotation>
+								<xs:documentation>Liste permettant de prciser les souhaits
+									concernant le rcpiss (Taille, Couleur et format)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="projetEtSonCalendrier" type="t:projetEtSonCalendrier">
+							<xs:annotation>
+								<xs:documentation>Projet et son calendrier</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="investigationsComplementaires" type="t:investigationsComplementairesDT"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Investigations complmentaires
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="signatureDuResponsableDuProjetOuDeSonRepresentant"
+							type="t:signatureDuResponsableDuProjet"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="partieDICT">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+							<xs:annotation>
+								<xs:documentation>Numro de consultation du tlservice
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="noAffaireDeLexecutantDesTravaux"
+							type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Numro d'affaire de l'excutant des travaux
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="dateDeLaDeclaration" type="xs:dateTime">
+							<xs:annotation>
+								<xs:documentation>Date de cration du dossier</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="natureDeLaDeclaration" type="t:natureDeclarationDICT">
+							<xs:annotation>
+								<xs:documentation>Nature de la DICT</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="executantDesTravaux" type="t:identificationPersonne">
+							<xs:annotation>
+								<xs:documentation>Coordonnes sur l'excutant des travaux
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emplacementDesTravaux" type="t:localisationChantier">
+							<xs:annotation>
+								<xs:documentation>Localisation de la commune slectionne
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emprise" type="t:emprise" />
+						<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisseDICT"></xs:element>
+						<xs:element name="travauxEtLeurCalendrier" type="t:travauxEtLeurCalendrier"
+							minOccurs="0" />
+						<xs:element name="signatureDeLExecutantDesTravauxOuDeSonRepresentant"
+							type="t:signatureDeLExecutantDesTravaux"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du responsable du projet ou de son
+						reprsentant signataire du dossier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombrePagesJointes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de pices jointes </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsDtDictConjointesReferencement">
+		<xs:sequence>
+			<xs:element name="partieDT">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="noAffaireDuResponsableDuProjet" type="xs:string"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Numro d'affaire du responsable projet
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="typeEntite" type="t:typeEntite"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Responsable de projet (personne morale ou
+									physique)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="declarationConjointeDTDICT" type="xs:boolean">
+							<xs:annotation>
+								<xs:documentation>Prciser si le dossier de consultation
+									concerne DT/DICT Conjointe
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="responsableDuProjet" type="t:responsableDuProjet">
+							<xs:annotation>
+								<xs:documentation>Coordonnes du dclarant</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="representantDuResponsableDeProjet"
+							type="t:representantDuResponsableDeProjet">
+							<xs:annotation>
+								<xs:documentation>Cordonnes du reprsentant du responsable du
+									projet
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emplacementDuProjet" type="t:localisationChantier">
+							<xs:annotation>
+								<xs:documentation>Adresse du chantier (prsent sur la commune
+									principale)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emprise" type="t:emprise" />
+						<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisse">
+							<xs:annotation>
+								<xs:documentation>Liste permettant de prciser les souhaits
+									concernant le rcpiss (Taille, Couleur et format)
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="projetEtSonCalendrier" type="t:projetEtSonCalendrier">
+							<xs:annotation>
+								<xs:documentation>Projet et son calendrier</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="investigationsComplementaires" type="t:investigationsComplementairesDT"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Investigations complmentaires
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="signatureDuResponsableDuProjetOuDeSonRepresentant"
+							type="t:signatureDuResponsableDuProjet"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="partieDICT">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="noAffaireDeLexecutantDesTravaux"
+							type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Numro d'affaire de l'excutant des travaux
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="natureDeLaDeclaration" type="t:natureDeclarationDICT">
+							<xs:annotation>
+								<xs:documentation>Nature de la DICT</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="executantDesTravaux" type="t:identificationPersonne">
+							<xs:annotation>
+								<xs:documentation>Coordonnes sur l'excutant des travaux
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emplacementDesTravaux" type="t:localisationChantier">
+							<xs:annotation>
+								<xs:documentation>Localisation de la commune slectionne
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="emprise" type="t:emprise" />
+						<xs:element name="souhaitsPourLeRecepisse" type="t:souhaitsPourLeRecepisseDICT"></xs:element>
+						<xs:element name="travauxEtLeurCalendrier" type="t:travauxEtLeurCalendrier"
+							minOccurs="0" />
+						<xs:element name="signatureDeLExecutantDesTravauxOuDeSonRepresentant"
+							type="t:signatureDeLExecutantDesTravaux"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du responsable du projet ou de son
+						reprsentant signataire du dossier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombrePagesJointes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de pices jointes </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsATU">
+		<xs:sequence>
+			<xs:element name="noConsultationDuTeleservice" type="t:numDossier">
+				<xs:annotation>
+					<xs:documentation>Numro de consultation </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="date" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Date de consultation  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="chantierTermineOuChantierAVenir"
+				type="t:pourLesReseauxSensiblesPourLaSecuriteReponseAttendueOuNonAttendue"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information  prciser par le dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="justificationDeLUrgence" type="t:justificationDeLUrgenceATU"
+				minOccurs="0" maxOccurs="4">
+				<xs:annotation>
+					<xs:documentation>Justification de l'urgence
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="personneOrdonnantLesTravauxUrgents"
+				type="t:identificationPersonneATU">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de la personne ordonnant les travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" minOccurs="0" />
+
+			<xs:element name="entrepriseChargeeDeLExecutionDesTravaux"
+				type="t:entrepriseChargeeDeLExecutionDesTravauxATU" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de l'entreprise charge de
+						l'excution des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="travauxEmplacementDureeDescription"
+				type="t:travauxEmplacementDureeDescriptionATU" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Description des travaux et des moyens mis en
+						oeuvre
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du signataire
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="informationsATUReferencement">
+		<xs:sequence>
+			<xs:element name="chantierTermineOuChantierAVenir"
+				type="t:pourLesReseauxSensiblesPourLaSecuriteReponseAttendueOuNonAttendue"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information  prciser par le dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="justificationDeLUrgence" type="t:justificationDeLUrgenceATU"
+				minOccurs="0" maxOccurs="4">
+				<xs:annotation>
+					<xs:documentation>Justification de l'urgence
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="personneOrdonnantLesTravauxUrgents"
+				type="t:identificationPersonneATU">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de la personne ordonnant les travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emprise" type="t:emprise" minOccurs="0" />
+
+			<xs:element name="entrepriseChargeeDeLExecutionDesTravaux"
+				type="t:entrepriseChargeeDeLExecutionDesTravauxATU" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coordonnes de l'entreprise charge de
+						l'excution des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="travauxEmplacementDureeDescription"
+				type="t:travauxEmplacementDureeDescriptionATU" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Description des travaux et des moyens mis en
+						oeuvre
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du signataire
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Elments pour les dossiers de type DT -->
+
+	<xs:complexType name="investigationsComplementairesDT">
+		<xs:annotation>
+			<xs:documentation>Investigations complmentaires par le responsable
+				du projet
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="realisationDInvestigationsComplementaires"
+				type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Ralisation d'investigations complmentaires,
+						"Vrai" si "oui"
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="motifDeRealisationOuNonDInvestigation"
+				type="t:codeInvestigationsCompl" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Motif de ralisation ou non d'investigations
+						complmentaires avant travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDesInvestigationsComplementaires"
+				type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date de commencement des investigations
+						complmentaires
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="InvestigationsSusceptibleDeNecessiterUneDICT"
+				type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cocher si ncessit d'une DICT
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element
+				name="envoiDesResultatsAuxExploitantsDOuvragesEtAuxEntreprises"
+				type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cocher si envoi des rsultats aux exploitants
+						d'ouvrages et aux entreprises.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="projetEtSonCalendrier">
+		<xs:annotation>
+			<xs:documentation>Projet et son calendier
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="natureDesTravaux" type="t:codeNatureTravaux"
+				maxOccurs="5">
+				<xs:annotation>
+					<xs:documentation>Liste des codes prcisant la nature des travaux
+						effectus
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="decrivezLeProjet" type="xs:string">
+				<xs:annotation>
+					<xs:documentation> Description du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emploiDeTechniquesSansTranchees" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Emploi de techniques sans tranches
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="distanceMinimaleEntreLesTravauxEtLaLigneElectrique"
+				type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance minimale entre les travaux et la ligne
+						lectrique en mtres
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="souhaitLesPlansDesReseauxElectriqueAeriens"
+				type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Dans le cas de travaux  proxit de rseaux
+						lectriques ariens, cocher "Vrai" si souhait d'obtenir les plans
+						de localisation des rseaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datePrevuePourLeCommencementDesTravaux"
+				type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de commencement des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dureeDuChantierEnJours" type="xs:nonNegativeInteger">
+				<xs:annotation>
+					<xs:documentation>Dure du chantier en jours
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="positionnementDesTravauxPrevusParLeDeclarant"
+				type="t:CodePositionnementDesTravauxPrevusParLeDeclarant" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Positionnement des travaux prvus par le
+						dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="projetEtSonCalendrierNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Projet et son calendier. (Version avec tous les
+				champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="natureDesTravaux" type="t:codeNatureTravaux"
+				minOccurs="0" maxOccurs="5">
+				<xs:annotation>
+					<xs:documentation>Liste des codes prcisant la nature des travaux
+						effectus
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="decrivezLeProjet" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> Description du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emploiDeTechniquesSansTranchees" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Emploi de techniques sans tranches
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="distanceMinimaleEntreLesTravauxEtLaLigneElectrique"
+				type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance minimale entre les travaux et la ligne
+						lectrique en mtres
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="souhaitLesPlansDesReseauxElectriqueAeriens"
+				type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dans le cas de travaux  proxit de rseaux
+						lectriques ariens, cocher "Vrai" si souhait d'obtenir les plans
+						de localisation des rseaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datePrevuePourLeCommencementDesTravaux"
+				type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date de commencement des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dureeDuChantierEnJours" type="xs:nonNegativeInteger"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dure du chantier en jours
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="positionnementDesTravauxPrevusParLeDeclarant"
+				type="t:CodePositionnementDesTravauxPrevusParLeDeclarant" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Positionnement des travaux prvus par le
+						dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="travauxEtLeurCalendrier">
+		<xs:annotation>
+			<xs:documentation>Projet et son calendier
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="natureDesTravaux" type="t:codeNatureTravaux"
+				minOccurs="1" maxOccurs="5">
+				<xs:annotation>
+					<xs:documentation>Codes prcisant la nature des travaux effectus
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="decrivezLesTravaux" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Description du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="techniquesUtilisees" type="t:codeTechnique"
+				minOccurs="1" maxOccurs="10">
+				<xs:annotation>
+					<xs:documentation>Codes prcisant les "Techniques utilises" pour
+						les travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="autreTechnique" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Prcision sur les autres techniques
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="profondeurMaxDExcavation" type="xs:positiveInteger"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance maximale d'excavation en centimres
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="modificationProfilTerrain" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Cocher cette case s'il y a une modification du
+						profil du terrain en fin de travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communicationResultatsInvestigations"
+				type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Cocher "Vrai" (Oui) si les rsultats des
+						investigations complmentaires ont t communiques par le
+						responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="distanceMinimaleEntreLesTravauxEtLaLigneElectrique"
+				type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance minimale entre les travaux et la ligne
+						lectrique en mtres
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="souhaitLesPlansDesReseauxElectriqueAeriens"
+				type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Dans le cas de travaux  proximit de rseaux
+						lectriques ariens, cocher "Vrai" si le dclarant souhaite
+						obtenir les plans de localisation des rseaux lectriques
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="datePrevuePourLeCommencementDesTravaux"
+				type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de preuve de commencement des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dureeDuChantierEnJours" type="xs:nonNegativeInteger">
+				<xs:annotation>
+					<xs:documentation>Dure du chantier en jours
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="positionnementDesTravauxPrevusParLeDeclarant"
+				type="t:CodePositionnementDesTravauxPrevusParLeDeclarant" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Positionnement des travaux prvus par le
+						dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="typeEntite">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PERSONNE_MORALE" />
+			<xs:enumeration value="PERSONNE_PHYSIQUE" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="responsableDuProjet">
+		<xs:annotation>
+			<xs:documentation>Donnes du responsable du projet
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du responsable de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noSiret" type="ie:SIRETType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro SIRET de la socit du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pays" type="ie:PaysType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays de la socit (uniquement pour DT)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="responsableDuProjetNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Donnes du responsable du projet. (Version avec
+				tous les champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom du responsable de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noSiret" type="ie:SIRETType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro SIRET de la socit du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pays" type="ie:PaysType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays de la socit (uniquement pour DT)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="responsableDuProjetSimplifiee">
+		<xs:annotation>
+			<xs:documentation>Donnes du responsable du projet
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du responsable de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noSiret" type="ie:SIRETType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro SIRET de la socit du responsable du
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pays" type="ie:PaysType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays de la socit (uniquement pour DT)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="representantDuResponsableDeProjet">
+		<xs:annotation>
+			<xs:documentation>Coordonnes du responsable du projet
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom de la socit et du service reprsentant du
+						responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="complementService" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> Complment d'adresse du service reprsentant du
+						responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numero" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de la voie
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="voie" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la voie
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieuDitBP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu dit / BP
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codePostal" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code Postal
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="commune" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="personneAcontacter" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tel" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tlphone du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fax" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de fax du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="courriel" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse de courriel du reprsentant du
+						responsable de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="representantDuResponsableDeProjetNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Coordonnes du responsable du projet. (Version avec
+				tous les champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la socit et du service reprsentant du
+						responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="complementService" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> Complment d'adresse du service reprsentant du
+						responsable du projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numero" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de la voie
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="voie" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la voie
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieuDitBP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu dit / BP
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codePostal" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Code Postal
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="commune" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="personneAcontacter" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tel" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tlphone du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fax" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de fax du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="courriel" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse de courriel du reprsentant du
+						responsable de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="signatureDuResponsableDuProjet">
+		<xs:annotation>
+			<xs:documentation>signature du Responsable du projet.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation> Nom du signataire
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombrePagesJointes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de pices jointes
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="signatureDeLExecutantDesTravaux">
+		<xs:annotation>
+			<xs:documentation>Signature de l'executant des travaux.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nomDuSignataire" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom du signataire</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombrePagesJointes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de pices jointes</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="signatureDeLExecutantDesTravauxNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Signature de l'executant des travaux. (Version avec
+				tous les champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nomDuSignataire" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom du signataire</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombrePagesJointes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de pices jointes</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Elments pour les dossiers de type DICT -->
+	<xs:simpleType name="natureDeclarationDICT">
+		<xs:annotation>
+			<xs:documentation>Code identifiant la nature de la dclaration
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="INITIAL" />
+			<xs:enumeration value="INVEST" />
+			<xs:enumeration value="MR_3" />
+			<xs:enumeration value="INTERUP" />
+			<xs:enumeration value="MR_6" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<!-- Elments pour les dossiers de type ATU -->
+	<xs:complexType name="travauxEmplacementDureeDescriptionATU">
+		<xs:annotation>
+			<xs:documentation>Description des travaux et moyens mis en oeuvre
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="adresse" type="xs:string" minOccurs="0" />
+			<xs:element name="codePostal" type="xs:string" />
+			<xs:element name="commune" type="xs:string" />
+			<xs:element name="dateDebutDesTravaux" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de commencement des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="heureDebutDesTravaux" type="xs:time"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Heure de commencement des travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dureeTravauxDemiJournees" type="xs:nonNegativeInteger">
+				<xs:annotation>
+					<xs:documentation>Dure en demi-journes</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="travauxEtMoyensMisEnOeuvre" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Travaux et moyens mis en oeuvre
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="positionnementDesTravauxPrevusParLeDeclarant"
+				type="t:CodePositionnementDesTravauxPrevusParLeDeclarant" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Positionnement des travaux prvus par le
+						dclarant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="listeDesEmplacementsDesCommunesConcerneesATU"
+				type="t:emplacement">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="entrepriseChargeeDeLExecutionDesTravauxATU">
+		<xs:annotation>
+			<xs:documentation>Entreprise charge de l'excution des travaux
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nom" type="xs:string" />
+			<xs:element name="adresse" type="xs:string" />
+			<xs:element name="codePostal" type="xs:string" />
+			<xs:element name="commune" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType
+		name="pourLesReseauxSensiblesPourLaSecuriteReponseAttendueOuNonAttendue">
+		<xs:annotation>
+			<xs:documentation>
+
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="pasDeReponseAFournirChantierTermine"
+				type="xs:boolean" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> Avis informatif. "Vrai" si "pas de rponse 
+						fournir, chantier termin".
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reponseAttendueChantierAVenir" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation> Demande d'information. "Vrai" si "rponse
+						attendue, chantier  venir".
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="pourLesReseauxSensiblesATU">
+		<xs:annotation>
+			<xs:documentation>
+				Pour les rseaux sensibles de l'ATU
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nomDuRepresentantDeLExploitantContacte"
+				type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom du reprsentant de l'exploitant contact
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateDuContactTelephonique" type="xs:date"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date du contact tlphonique</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="heureDuContactTelephonique" type="xs:time"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Heure du contact tlphonique</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="justificationDeLUrgenceATU">
+		<xs:annotation>
+			<xs:documentation>Justification de l'urgence</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="securite" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Slectionner si la justification de l'urgence
+						porte sur la securit.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="continuiteDuServicePublic" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Slectionner si la justification de l'urgence
+						porte sur la continuit du service
+						public.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="sauvegardeDesPersonnesEtDesBiens" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Slectionner si la justification de l'urgence
+						porte sur la sauvegarde des personnes
+						ou des biens.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="casDeForceMajeure" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Slectionner si la justification de l'urgence
+						porte sur un cas de force majeure.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Elements lis aux ouvrages(DT / DICT / DTDICT / ATU) -->
+
+	<xs:simpleType name="numDossierSeize">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z0-9]{16}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="numDossier">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z0-9]{14}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="emprise">
+		<xs:annotation>
+			<xs:documentation>Donnes de l'emprise du chantier</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="geometrie" type="gml:MultiSurfaceType">
+				<xs:annotation>
+					<xs:documentation>Donnes gometrie de la surface de l'emprise
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="surface" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Surface en mtres carrs</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="referenceDelaCarte" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Rfrence du fond cartographique ayant servi 
+						dessiner le trac
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="empriseNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Donnes de l'emprise du chantier. (Version avec
+				tous les champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="geometrie" type="gml:MultiSurfaceType"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Donnes gometrie de la surface de l'emprise
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="surface" type="xs:double" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Surface en mtres carrs</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="referenceDelaCarte" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Rfrence du fond cartographique ayant servi 
+						dessiner le trac
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="identificationPersonne">
+		<xs:annotation>
+			<xs:documentation>Donnes personnelles identifiant une personne
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="denomination" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom de la personne</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="complementService" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Complment d'adresse de la personne
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numero" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="voie" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieuDitBP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu Dit / BP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codePostal" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code Postal</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="commune" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pays" type="ie:PaysType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays de la socit (uniquement pour DT)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noSiret" type="ie:SIRETType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Siret de la socit</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nomDeLaPersonneAContacter" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tel" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tlphone du reprsentant de l'excutant de
+						travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fax" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de fax du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="courriel" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse courriel du reprsentant du responsable
+						de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="identificationPersonneATU">
+		<xs:annotation>
+			<xs:documentation>Donnes personnelles identifiant une personne
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nom" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Nom de la personne</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="complementDAdresse" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complment d'adresse de la personne
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numero" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="voie" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieuDitBP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu Dit / BP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codePostal" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code Postal</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="commune" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pays" type="ie:PaysType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays de la socit (uniquement pour DT)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="noSiret" type="ie:SIRETType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nomDeLaPersonneAContacter" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tel" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Tlphone du reprsentant de l'excutant de
+						travaux
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fax" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numro de fax du reprsentant du responsable de
+						projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="courriel" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse courriel du reprsentant du responsable
+						de projet
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="adresseMail">
+		<xs:restriction base="xs:string">
+			<xs:pattern
+				value="[A-Za-z0-9_]+([-+.'][A-Za-z0-9_]+)*@[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*\.[A-Za-z0-9_]+([-.][A-Za-z0-9_]+)*" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="localisationChantier">
+		<xs:annotation>
+			<xs:documentation>Informations sur la localisation du chantier qui
+				peut s'tendre sur une ou plusieurs communes.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="adresse" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse complte du chantier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CP" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code postal
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communePrincipale" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Commune principale de l'emprise du chantier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codeINSEE" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code INSEE de la commune </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombreDeCommunes" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>Nombre de communes concernes par l'emprise du
+						chantier, y compris de la commune principale
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="listeDesEmplacementsDesCommunesConcernees"
+				type="t:emplacement">
+
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="localisationChantierNonObligatoire">
+		<xs:annotation>
+			<xs:documentation>Informations sur la localisation du chantier qui
+				peut s'tendre sur une ou plusieurs communes. (Version avec tous les
+				champs optionnels)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="adresse" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse complte du chantier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Code postal
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="communePrincipale" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Commune principale de l'emprise du chantier
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codeINSEE" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Code INSEE de la commune </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nombreDeCommunes" type="xs:int"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de communes concernes par l'emprise du
+						chantier, y compris de la commune principale
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="listeDesEmplacementsDesCommunesConcernees"
+				type="t:emplacement" minOccurs="0">
+
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="emplacement">
+		<xs:annotation>
+			<xs:documentation>Emplacement de la commune concerne
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="emplacementDeLaCommuneConcernee"
+				maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nomDeLaCommune" type="xs:string"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Nom de la Commune</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="codeCommune" type="ie:CodeCommuneType"
+							minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Code Commune</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="codeINSEE" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Code INSEE de la commune</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="codeNatureTravaux">
+		<xs:annotation>
+			<xs:documentation>Liste des codes "Nature des tracs"
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CNS" />
+			<xs:enumeration value="CSP" />
+			<xs:enumeration value="CUR" />
+			<xs:enumeration value="DEC" />
+			<xs:enumeration value="DEM" />
+			<xs:enumeration value="DRA" />
+			<xs:enumeration value="ELG" />
+			<xs:enumeration value="EBL" />
+			<xs:enumeration value="ERE" />
+			<xs:enumeration value="ESC" />
+			<xs:enumeration value="FOH" />
+			<xs:enumeration value="FOV" />
+			<xs:enumeration value="CHA" />
+			<xs:enumeration value="SOU" />
+			<xs:enumeration value="RBL" />
+			<xs:enumeration value="TER" />
+			<xs:enumeration value="OUV" />
+			<xs:enumeration value="SFP" />
+			<xs:enumeration value="OTR" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="codeTechnique">
+		<xs:annotation>
+			<xs:documentation>
+				Liste des codes "Techniques prvues ou utilises"
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BTO" />
+			<xs:enumeration value="DBR" />
+			<xs:enumeration value="TRA" />
+			<xs:enumeration value="TUB" />
+			<xs:enumeration value="STA" />
+			<xs:enumeration value="TAR" />
+			<xs:enumeration value="FOD" />
+			<xs:enumeration value="FUS" />
+			<xs:enumeration value="MTB" />
+			<xs:enumeration value="TUN" />
+			<xs:enumeration value="ECL" />
+			<xs:enumeration value="BRO" />
+			<xs:enumeration value="ECH" />
+			<xs:enumeration value="ELE" />
+			<xs:enumeration value="VIB" />
+			<xs:enumeration value="EXP" />
+			<xs:enumeration value="GRU" />
+			<xs:enumeration value="MAN" />
+			<xs:enumeration value="PEL" />
+			<xs:enumeration value="RTR" />
+			<xs:enumeration value="TED" />
+			<xs:enumeration value="ENG" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="souhaitsPourLeRecepisse">
+		<xs:annotation>
+			<xs:documentation>
+
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="souhaiteRecevoirLeRecepisse" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Souhaite recevoir le rcpiss cas de la DT-Dict
+						conjointe
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="modeReceptionElectronique" type="t:modeReceptionElectronique"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							Mode de rception du rcpiss lectronique
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="modeReceptionCourrier" type="t:modeReceptionCourrier"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							Mode de rception du rcpiss par courrier
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="modeReceptionFax" type="t:modeReceptionFax"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>
+							Mode de rception du rcpiss par fax
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="souhaitsPourLeRecepisseDICT">
+		<xs:annotation>
+			<xs:documentation>
+				Elments complmentaires du dossier
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:choice>
+				<xs:element name="modeReceptionElectronique" minOccurs="0"
+					type="t:modeReceptionElectronique">
+					<xs:annotation>
+						<xs:documentation>
+							Rception du rcpiss lectronique
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="modeReceptionCourrier" minOccurs="0"
+					type="t:modeReceptionCourrier">
+					<xs:annotation>
+						<xs:documentation>
+							Rception du rcpiss par courrier
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="modeReceptionFax" minOccurs="0"
+					type="t:modeReceptionFax">
+					<xs:annotation>
+						<xs:documentation>
+							Rception du rcpiss par fax
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="modeReceptionElectronique">
+		<xs:annotation>
+			<xs:documentation>
+				Mode de rception lectronique
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="tailleDesPlans" type="t:formatImpressionTaille"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Taille de l'impression : A4, A3...
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="couleurDesPlans" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Format de couleur de l'impression
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="souhaitDePlansVectoriels" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Souhait des plans vectoriels
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="formatDesPlansVectoriels" type="t:formatDonneesCarto"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Format des plans vectoriel : XML, PDF...
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="modeReceptionCourrier">
+		<xs:annotation>
+			<xs:documentation>Mode de rception par courrier</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+
+	<xs:complexType name="modeReceptionFax">
+		<xs:annotation>
+			<xs:documentation>Mode de rception par fax</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+
+	<xs:simpleType name="formatDonneesCarto">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DXF" />
+			<xs:enumeration value="SHAPE" />
+			<xs:enumeration value="MIF_MID" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="formatImpressionTaille">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="A4" />
+			<xs:enumeration value="A3" />
+			<xs:enumeration value="A2" />
+			<xs:enumeration value="A1" />
+			<xs:enumeration value="A0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="codeInvestigationsCompl">
+		<xs:annotation>
+			<xs:documentation>Liste des codes "Motif de (non) investigations
+				complmentaires".
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CARTOB" />
+			<xs:enumeration value="CARTOC" />
+			<xs:enumeration value="ACARTO" />
+			<xs:enumeration value="CARTOA" />
+			<xs:enumeration value="DISPEN" />
+			<xs:enumeration value="INVEMD" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="categorieOuvrage">
+		<xs:annotation>
+			<xs:documentation>
+				Code prcisant la catgorie d'un ouvrage (Sensible,
+				Non-Sensible ou
+				Non-Sensible Forc Sensible)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="S">
+				<xs:annotation>
+					<xs:documentation>L'ouvrage est catgoris comme sensible
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NS">
+				<xs:annotation>
+					<xs:documentation>L'ouvrage est catgoris comme non-sensible
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NSFS">
+				<xs:annotation>
+					<xs:documentation>L'ouvrage est catgoris comme non-sensible mais
+						a t forc en sensible par l'exploitant
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="classeOuvrage">
+		<xs:annotation>
+			<xs:documentation>Code identifiant la classe d'un ouvrage
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CANALISATIONS_HYDROCARBURES_LIQUIDES" />
+			<xs:enumeration value="CANALISATIONS_PRODUITS_CHIMIQUES_LIQUIDES_OU_GAZEUX" />
+			<xs:enumeration value="CANALISATIONS_GAZ_COMBUSTIBLES" />
+			<xs:enumeration value="RESEAUX_DE_CHALEUR_OU_DE_FROID" />
+			<xs:enumeration value="LIGNES_ELECTRIQUES_ET_ECLAIRAGE_PUBLIC_HORS_TBT" />
+			<xs:enumeration value="INSTALLATIONS_DE_TRANSPORT_GUIDE" />
+			<xs:enumeration value="CANALISATIONS_DE_TRANSPORT_DE_DECHETS" />
+			<xs:enumeration value="DIGUES_PREVENTION_INONDATIONS_SUBMERSIONS" />
+			<xs:enumeration
+				value="COMMUNICATIONS_ELECTRONIQUES_ET_LIGNES_ELECTRIQUES_ECLAIRAGE_TBT" />
+			<xs:enumeration value="CANALISATIONS_EAU_POTABLE" />
+			<xs:enumeration value="CANALISATIONS_EAUX_USEES_OU_ASSAINISSEMENT" />
+			<xs:enumeration value="AUTRE" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="positionnementOuvrage">
+		<xs:annotation>
+			<xs:documentation>Code de positionnement de l'ouvrage.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AERIEN" />
+			<xs:enumeration value="SOUTERRAIN" />
+			<xs:enumeration value="AERIEN_ET_SOUTERRAIN" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="statutOuvrage">
+		<xs:annotation>
+			<xs:documentation>Liste des statuts de l'ouvrage.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ACTIF" />
+			<xs:enumeration value="INACTIF" />
+			<xs:enumeration value="ABANDONNE" />
+			<xs:enumeration value="SUPPRIME" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="contact">
+		<xs:annotation>
+			<xs:documentation>
+				Fiche contact de l'exploitant de rseau
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<!-- Personne -->
+			<xs:element name="nom" type="ie:NomDeFamilleSeulType"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Informations nominatives sur la personne
+						reponsable pour l'exploitant de rseau
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prenom" type="ie:PrenomsOfficielsSeulsType"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Informations nominatives sur la personne
+						reponsable pour l'exploitant de rseau
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- Organisation -->
+			<xs:element name="societe" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Socit</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="agence" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Agence</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="complement" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complment d'adresse</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- Adresse postale -->
+			<xs:element name="numero" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="voie" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>nom de la voie</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieuDitBP" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu Dit / BP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codePostal" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code Postal</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="commune" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Personne  contacter</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- Pays -->
+			<xs:element name="codePays" type="ie:CodePaysIsoType"
+				minOccurs="0" />
+			<!-- Informations de contact -->
+			<xs:element name="fax" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fax du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="courriel" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Courriel du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telephone" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Tlphone du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telephoneUrgence" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tlphone urgence du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="faxUrgence" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Fax urgence du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mailUrgence" type="t:adresseMail"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Courriel d'urgence du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telEndommagement" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Tlphone endommagement du contact
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="consigne" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Commentaire du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="referenceInterne" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Rfrence interne du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="site" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Site web du contact</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="gestionDesFichiersDematerialises" type="t:gestionDesFichiersDematerialises"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gestion des fichiers dmatrialiss
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ouvrage">
+		<xs:sequence>
+			<xs:element name="contact" type="t:contact">
+				<xs:annotation>
+					<xs:documentation>Fiche contact de l'exploitant de rseau
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="pourLesReseauxSensiblesPourLaSecuriteUniquement"
+				type="t:pourLesReseauxSensiblesATU" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information  prciser (sur les rseaux sensibles
+						pour la scurit uniquement)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- ouvrage -->
+			<xs:element name="categorieOuvrage" type="t:categorieOuvrage">
+				<xs:annotation>
+					<xs:documentation>Catgorie de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="classeOuvrage" type="t:classeOuvrage">
+				<xs:annotation>
+					<xs:documentation>Classe de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="positionnementOuvrage" type="t:positionnementOuvrage"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Positionnement de l'ouvrage.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codeOuvrage" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Code de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="denominationOuvrage" type="xs:string"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dnomination de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="statut" type="t:statutOuvrage">
+				<xs:annotation>
+					<xs:documentation>Statut de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateCreation" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de cration de l'ouvrage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- Informations supplmentaires -->
+			<xs:element name="polygoneConcerne" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Ce boolen est valoris  vrai lorsque l'emprise
+						fournie coupe les
+						polygones gorfrencs de l'exploitant sur la
+						commune. L'lement
+						n'est pas prsent si la requte de
+						rfrencement
+						ne s'est pas faite
+						sur la base d'une emprise mais
+						sur toute la
+						commune.
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="formatDesFichiersDematerialises">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="XML" />
+			<xs:enumeration value="XML_PDF" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="gestionDesFichiersDematerialises">
+		<xs:annotation>
+			<xs:documentation>
+				Prciser si l'exploitant peut traiter les
+				dclarations dmatrialises
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="gereLesFichiersDematerialises" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>
+						Cocher si l'exploitant du rseau gre les
+						fichiers dmatrialises
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="formatDesFichiersDematerialises" type="t:formatDesFichiersDematerialises"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Si l'exploitant gre les fichiers dmatrialis,
+						quel(s) format(s) il souhaite recevoir (XML seul OU les deux
+						formats, XML et PDF)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ouvrages">
+		<xs:annotation>
+			<xs:documentation>Liste des ouvrages du dossier</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ouvrage" minOccurs="0" maxOccurs="unbounded"
+				type="t:ouvrage" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CodePositionnementDesTravauxPrevusParLeDeclarant">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AERIENS" />
+			<xs:enumeration value="SOUTERRAINS" />
+			<xs:enumeration value="AERIENS_ET_SOUTERRAINS" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<xs:complexType name="reades">
+		<xs:sequence>
+			<xs:element name="reade" type="t:reade" maxOccurs="unbounded"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="reade">
+		<xs:sequence>
+			<xs:element name="classe" type="t:classeOuvrage"></xs:element>
+			<xs:element name="code" type="xs:string"></xs:element>
+			<xs:element name="type" type="xs:string"></xs:element>
+			<xs:element name="dateCreation" type="xs:dateTime"></xs:element>
+			<xs:element name="denomination" type="xs:string"></xs:element>
+			<xs:element name="diametre" type="xs:int"></xs:element>
+			<xs:element name="renseignements" type="xs:string"></xs:element>
+			<xs:element name="raisonSociale" type="xs:string"></xs:element>
+			<xs:element name="dernierExploitant" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="criteres">
+		<xs:sequence>
+			<xs:element name="region" type="xs:string" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="departement" type="xs:string" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="commune" type="xs:string" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="type" type="t:typeDeclaration" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="numero-dossier" type="xs:string" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="dateConsultationMin" type="xs:dateTime" maxOccurs="1" minOccurs="1">
+			</xs:element>
+			<xs:element name="dateConsultationMax" type="xs:dateTime" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="dateDebutTravauxMin" type="xs:dateTime" maxOccurs="1" minOccurs="0">
+			</xs:element>
+			<xs:element name="dateDebutTravauxMax" type="xs:dateTime" maxOccurs="1" minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="listeNumerosConsultation">
+		<xs:annotation>
+			<xs:documentation>Liste des numros de consultation
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="numeroConsultation" type="t:numeroConsultation"
+				maxOccurs="unbounded" minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="typeDeclaration">
+		<xs:annotation>
+			<xs:documentation>Code identifiant le type de dclaration effectu
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="DT" />
+			<xs:enumeration value="DICT" />
+			<xs:enumeration value="DT_DICT" />
+			<xs:enumeration value="ATU" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="numeroConsultation">
+		<xs:annotation>
+			<xs:documentation>Numro de consultation</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="numero-dossier" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			<xs:element name="nature" type="t:typeDeclaration" maxOccurs="1" minOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="listeAnneesStatistiques">
+		<xs:annotation>
+			<xs:documentation>Liste Statistiques par annees</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="anneeStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:anneeStatistiques" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="anneeStatistiques">
+		<xs:annotation>
+			<xs:documentation>Statistiques par annee</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="annee" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			<xs:element name="listeMoisStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:moisStatistiques" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="listeMoisStatistiques">
+		<xs:annotation>
+			<xs:documentation>Liste Statistiques par mois</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="moisStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:moisStatistiques" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="moisStatistiques">
+		<xs:annotation>
+			<xs:documentation>Statistiques par mois</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="mois" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			<xs:element name="listeDepartementStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:listeDepartementsStatistiques" />
+			<xs:element name="listeCommunesStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:listeCommunesStatistiques" />
+		</xs:sequence>
+	</xs:complexType>	
+	<xs:complexType name="listeDepartementsStatistiques">
+		<xs:annotation>
+			<xs:documentation>Liste Statistiques par dpartements</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="departementStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:departementStatistiques" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="departementStatistiques">
+		<xs:annotation>
+			<xs:documentation>Statistiques par dpartement</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="departement" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			<xs:element name="nombreConsultations" type="xs:int" maxOccurs="1" minOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="listeCommunesStatistiques">
+		<xs:annotation>
+			<xs:documentation>Liste Statistiques par communes</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="communeStatistiques" minOccurs="0"
+				maxOccurs="unbounded" type="t:communeStatistiques" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="communeStatistiques">
+		<xs:annotation>
+			<xs:documentation>Statistiques par commune</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="commune" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+			<xs:element name="nombreConsultations" type="xs:int" maxOccurs="1" minOccurs="1"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

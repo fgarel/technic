@@ -1,9 +1,9 @@
-	                </gml:coordinates>
+	                <!--</gml:coordinates>
 	              </gml:LinearRing>
 	            </gml:outerBoundaryIs>
 	          </gml:Polygon>
           </gml:polygonMember>
-        </gml:MultiPolygon>
+        </gml:MultiPolygon>-->
       </ogr:geometry>
     </ogr:EmpriseDeclaration>
   </gml:featureMember>

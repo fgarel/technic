@@ -1,0 +1,18 @@
+<GMLFeatureClassList>
+  <GMLFeatureClass>
+    <Name>EmpriseDeclaration</Name>
+    <ElementPath>EmpriseDeclaration</ElementPath>
+    <GeometryName>geometry</GeometryName>
+    <GeometryElementPath>geometry</GeometryElementPath>
+    <!--MULTIPOLYGON-->
+    <GeometryType>6</GeometryType>
+    <SRSName>EPSG:4171</SRSName>
+    <DatasetSpecificInfo>
+      <FeatureCount>1</FeatureCount>
+      <ExtentXMin>-1.14989</ExtentXMin>
+      <ExtentXMax>-1.14866</ExtentXMax>
+      <ExtentYMin>46.16126</ExtentYMin>
+      <ExtentYMax>46.16219</ExtentYMax>
+    </DatasetSpecificInfo>
+  </GMLFeatureClass>
+</GMLFeatureClassList>

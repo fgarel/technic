@@ -1,0 +1,35 @@
+qpdf --qdf --object-streams=disable direct_vlr_2018080100424T_DDC_emprise.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj$" | sed -E -e 's/\)Tj$//g' -e 's/^\(//g' > qpdf.txt
+
+
+Emprise du chantier :
+Polygone 1
+Sommets
+Latitude
+Longitude
+Coordonnées sommet 1
+46.17082584164174
+-1.1503573288314963
+Coordonnées sommet 2
+46.16997869276238
+-1.1511031074494937
+Coordonnées sommet 3
+46.16975947228694
+-1.1511621259012776
+Coordonnées sommet 4
+46.169365616356366
+-1.1508133805043725
+Coordonnées sommet 5
+46.169150109087376
+-1.1499924874931953
+Coordonnées sommet 6
+46.16914267778717
+-1.1496705686652828
+Coordonnées sommet 7
+46.16933960690319
+-1.1494452254857437
+Coordonnées sommet 8
+46.17023878371865
+-1.149021365695659
+Coordonnées sommet 9
+46.17082584164174
+-1.1503573288314963
