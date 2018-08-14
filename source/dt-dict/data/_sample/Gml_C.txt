@@ -1,0 +1,25 @@
+pdftotext direct_vlr_2018080100424T_DDC_emprise.pdf -  > pdftotext.txt
+
+
+
+Dossier n° 2018080100424T
+
+
+
+Coordonnées géoréférencées de l'emprise du chantier:
+Emprise au format GML :
+
+<gml:MultiSurface srsName="EPSG:4171">
+<gml:surfaceMember>
+<gml:Polygon>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList srsDimension="2">-1.150357 46.170826 -1.151103 46.169979
+-1.151162 46.169759 -1.150813 46.169366 -1.149992 46.16915 -1.149671
+46.169143 -1.149445 46.16934 -1.149021 46.170239 -1.150357 46.170826</
+gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</gml:surfaceMember>
+</gml:MultiSurface>

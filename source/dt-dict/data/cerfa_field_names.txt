@@ -1,0 +1,582 @@
+---
+FieldType: Text
+FieldName: Denomination
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ComplementAdresse
+FieldNameAlt: Compl&#233;ment d&#8217;adresse
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: NoVoie
+FieldNameAlt: Num&#233;ro et Voie
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: LieuditBP
+FieldNameAlt: Lieu-dit ou BP
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: CodePostal
+FieldNameAlt: Code postal
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 5
+---
+FieldType: Text
+FieldName: Commune
+FieldNameAlt: Commune
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Pays
+FieldNameAlt: Pays
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: NoGU
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 16
+---
+FieldType: Text
+FieldName: ReferenceExploitant
+FieldNameAlt: R&#233;f&#233;rence de l&#8217;exploitant
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: NoAffaireDeclarant
+FieldNameAlt: N&#176; d&#8217;affaire du d&#233;clarant
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Personne_Contacter
+FieldNameAlt: Commune o&#249; sont pr&#233;vus les travaux
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: JourReception
+FieldNameAlt: Jour r&#233;ception
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: MoisReception
+FieldNameAlt: Mois r&#233;ception
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AnneeReception
+FieldNameAlt: Ann&#233;e r&#233;ception
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Text
+FieldName: CommuneTravaux
+FieldNameAlt: Commune o&#249; sont pr&#233;vus les travaux
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: AdresseTravaux
+FieldNameAlt: Commune o&#249; sont pr&#233;vus les travaux
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: RaisonSocialeExploitant
+FieldNameAlt: Raison sociale
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: ContactExploitant
+FieldNameAlt: Personne &#224; contacter
+FieldFlags: 4194304
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: NoVoieExploitant
+FieldNameAlt: Num&#233;ro et Voie
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: LieuditBPExploitant
+FieldNameAlt: Lieu-dit ou BP
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: CodePostalExploitant
+FieldNameAlt: Code postal
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 5
+---
+FieldType: Text
+FieldName: CommuneExploitant
+FieldNameAlt: Commune
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: TelExploitant
+FieldNameAlt: T&#233;l&#233;phone
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 10
+---
+FieldType: Text
+FieldName: FaxExploitant
+FieldNameAlt: Fax
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 10
+---
+FieldType: Button
+FieldName: RepImpossible
+FieldNameAlt: R&#233;ponse impossible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: InfoPreciser
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: PasConcerne
+FieldNameAlt: R&#233;ponse impossible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: DistanceReseau
+FieldNameAlt: Les r&#233;seaux/ouvrages que nous exploitons ne sont pas concern&#233;s au regard des informations fournies. Distance &gt; &#224;
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Concerne
+FieldNameAlt: R&#233;ponse impossible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Choice
+FieldName: CategorieReseau1
+FieldFlags: 71434240
+FieldValue:  
+FieldValueDefault: DI
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: CU
+FieldStateOption: DE
+FieldStateOption: DI
+FieldStateOption: EA
+FieldStateOption: EL
+FieldStateOption: EU
+FieldStateOption: GA
+FieldStateOption: HC
+FieldStateOption: PC
+FieldStateOption: TL
+FieldStateOption: TR
+---
+FieldType: Choice
+FieldName: CategorieReseau2
+FieldFlags: 71434240
+FieldValue:  
+FieldValueDefault: DI
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: CU
+FieldStateOption: DE
+FieldStateOption: DI
+FieldStateOption: EA
+FieldStateOption: EL
+FieldStateOption: EU
+FieldStateOption: GA
+FieldStateOption: HC
+FieldStateOption: PC
+FieldStateOption: TL
+FieldStateOption: TR
+---
+FieldType: Choice
+FieldName: CategorieReseau3
+FieldFlags: 71434240
+FieldValue:  
+FieldValueDefault: DI
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: CU
+FieldStateOption: DE
+FieldStateOption: DI
+FieldStateOption: EA
+FieldStateOption: EL
+FieldStateOption: EU
+FieldStateOption: GA
+FieldStateOption: HC
+FieldStateOption: PC
+FieldStateOption: TL
+FieldStateOption: TR
+---
+FieldType: Text
+FieldName: ModifPrevue
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: ModifEnCours
+FieldNameAlt: R&#233;ponse impossible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: RepresentantExploitant
+FieldNameAlt: Veuillez contacter notre repr&#233;sentant
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: TelModification
+FieldNameAlt: T&#233;l&#233;phone
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 10
+---
+FieldType: Button
+FieldName: PlansJoints
+FieldNameAlt: R&#233;ponse impossible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: Ref1
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Echelle1
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: JourEditionPlan1
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: MoisEditionPlan1
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AnneeEdition1
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Sensible1
+FieldNameAlt: R&#233;seau sensible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: Profondeur1
+FieldNameAlt: Profondeur (en cm)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Materiau1
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Ref2
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Echelle2
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: JourEditionPlan2
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: MoisEditionPlan2
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AnneeEdition2
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Sensible2
+FieldNameAlt: R&#233;seau sensible
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: Profondeur2
+FieldNameAlt: Profondeur (en cm)
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: Materiau2
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: ReunionChantierCase
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Button
+FieldName: DateRDV
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: JourReunion
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: MoisReunion
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AnneeReunion
+FieldFlags: 12582912
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Text
+FieldName: HeureReunion
+FieldFlags: 12582912
+FieldJustification: Center
+---
+FieldType: Text
+FieldName: MinuteReunion
+FieldFlags: 12582912
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: RDVparDeclarant
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: AppelNonConcl_Jour
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AppelNonConcl_Mois
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AppelNonConcl_Annee
+FieldFlags: 12582912
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Button
+FieldName: ServitudeCase
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Button
+FieldName: PasClasseACase
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Button
+FieldName: BranchementsCase
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Text
+FieldName: Recommandations
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: RubriquesGuide
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Button
+FieldName: MiseHorsTension
+FieldFlags: 49152
+FieldJustification: Left
+FieldStateOption: HT_Impossible
+FieldStateOption: HT_Possible
+FieldStateOption: Off
+---
+FieldType: Text
+FieldName: MesuresSecurite
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: MesuresSecurite2
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Choice
+FieldName: DispositifsSecurite
+FieldFlags: 131072
+FieldValue:  
+FieldValueDefault:  
+FieldJustification: Left
+FieldStateOption:  
+FieldStateOption: Aucun dans l'emprise
+FieldStateOption: Voir la liste des dispositifs en place dans le document joint
+FieldStateOption: Voir la localisation sur le plan joint
+---
+FieldType: Text
+FieldName: TelEndommagement
+FieldNameAlt: T&#233;l&#233;phone
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 10
+---
+FieldType: Text
+FieldName: Endommagement
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: NomResponsableDossier
+FieldNameAlt: Nom
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: D&#233;signationService
+FieldNameAlt: D&#233;signation du service
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: TelResponsableDossier
+FieldNameAlt: T&#233;l&#233;phone
+FieldFlags: 29360128
+FieldJustification: Left
+FieldMaxLength: 10
+---
+FieldType: Text
+FieldName: NomSignataire
+FieldFlags: 0
+FieldJustification: Left
+---
+FieldType: Text
+FieldName: JourRecepisse
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: MoisRecepisse
+FieldNameAlt: undefined
+FieldFlags: 0
+FieldJustification: Center
+FieldMaxLength: 2
+---
+FieldType: Text
+FieldName: AnneeRecepisse
+FieldFlags: 12582912
+FieldJustification: Center
+FieldMaxLength: 4
+---
+FieldType: Text
+FieldName: NbPJ
+FieldNameAlt: Nombre de pi&#232;ces jointes, y compris les plans
+FieldFlags: 0
+FieldJustification: Center
+---
+FieldType: Button
+FieldName: Recepisse_DICT
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Button
+FieldName: Recepisse_DT
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui
+---
+FieldType: Button
+FieldName: Recepisse_DC
+FieldFlags: 0
+FieldJustification: Left
+FieldStateOption: Off
+FieldStateOption: Oui

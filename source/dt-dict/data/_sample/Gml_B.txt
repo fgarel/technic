@@ -1,0 +1,23 @@
+cat dictservices_air_17321626_RE7-1800365-2018G062-DT-15452005.xml
+
+
+
+<noConsultationDuTeleserviceSeize>2018080156731S10</noConsultationDuTeleserviceSeize>
+
+
+
+<emprise>
+    <geometrie srsName="urn:ogc:def:crs:EPSG::4326" srsDimension="2" ns2:id="DT-0">
+        <ns2:surfaceMember ns3:type="simple">
+            <ns2:Polygon ns2:id="DT-0-0">
+                <ns2:exterior>
+                    <ns2:LinearRing>
+                        <ns2:posList srsDimension="2">-1.154034 46.15851 -1.153803 46.158551 -1.153776 46.158844 -1.153428 46.159903 -1.153658 46.159985 -1.154034 46.15
+851</ns2:posList>
+                    </ns2:LinearRing>
+                </ns2:exterior>
+            </ns2:Polygon>
+        </ns2:surfaceMember>
+    </geometrie>
+    <surface>2560.0</surface>
+</emprise>

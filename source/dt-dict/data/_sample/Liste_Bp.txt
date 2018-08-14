@@ -1,0 +1,22 @@
+qpdf --qdf --object-streams=disable dictfr_grdf_DT_DICT.309370035.6.document.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj 0 g ET Q EMC" | sed -E -e 's/\)Tj 0 g ET Q EMC//g' > qpdf.txt
+
+
+q Q /Tx BMC q 0 0 777.84 34.61 re W n BT 1 0 0 1 2 28.16 Tm /Helv 8 Tf 0 g (\(46.170225 -1.143014\);\(46.170136 -1.143057\);\(46.170058 -1.142821\);\(46.170147 -1.142762\);\(46.170225 -1.143014\);
+q Q /Tx BMC q 0 0 251.97 20.59 re W n BT 1 0 0 1 2 12.53 Tm /Arial 9 Tf 0 g (                               Création branchement gaz
+q Q /Tx BMC q 0 0 254.22 19.51 re W n BT 1 0 0 1 2 11.45 Tm /Arial 9 Tf 0 g (                                   Création branchement gaz
+
+
+
+qpdf --qdf --object-streams=disable dictfr_somelec_DT\ DICT.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj 0 g ET Q EMC" | sed -E -e 's/\)Tj 0 g ET Q EMC//g' > qpdf.txt
+
+
+q Q /Tx BMC q 0 0 777.84 34.61 re W n BT 1 0 0 1 2 28.16 Tm /Helv 8 Tf 0 g (\(46.168652 -1.149113\);\(46.168619 -1.148153\);\(46.168503 -1.148135\);\(46.168524 -1.149143\);\(46.168652 -1.149113\);
+q Q /Tx BMC q 0 0 251.97 20.59 re W n BT 1 0 0 1 2 12.53 Tm /Arial 9 Tf 0 g (                               ADDUCTION TELEPHONIQUE
+q Q /Tx BMC q 0 0 254.22 19.51 re W n BT 1 0 0 1 2 11.45 Tm /Arial 9 Tf 0 g (                                   ADDUCTION TELEPHONIQUE
+
+
+qpdf --qdf --object-streams=disable sogelink_betri_DICT.309494286.5.envoi.pdf - | iconv -f 'latin1' -t 'utf-8' - | grep --binary-files=text ")Tj 0 g ET Q EMC" | sed -E -e 's/\)Tj 0 g ET Q EMC//g' > qpdf.txt
+
+q Q /Tx BMC q 0 0 777.84 34.61 re W n BT 1 0 0 1 2 28.16 Tm /Helv 8 Tf 0 g (\(46.139931 -1.161349\);\(46.140053 -1.161531\);\(46.140381 -1.161429\);\(46.140496 -1.160860\);\(46.140425 -1.160893\);\(46.140355 -1.160887\);\(46.140284 -1.160817\);\(46.140247 -1.160758\);\(46.140206 -)Tj 0 g 1 0 0 1 2 18.91 Tm 0 g (1.160694\);\(46.140165 -1.160651\);\(46.140117 -1.160651\);\(46.140079 -1.160678\);\(46.140053 -1.160737\);\(46.139931 -1.161349\);
+q Q /Tx BMC q 0 0 251.97 20.59 re W n BT 1 0 0 1 2 12.53 Tm /Arial 9 Tf 0 g (                               construction d'une résidence étudiante
+q Q /Tx BMC q 0 0 254.22 19.51 re W n BT 1 0 0 1 2 11.45 Tm /Arial 9 Tf 0 g (                                   construction d'une résidence étudiante

@@ -1,0 +1,23 @@
+cat direct_vlr_2018080100424T_DDC_description.xml
+
+
+
+<t:noConsultationDuTeleservice>2018080100424T</t:noConsultationDuTeleservice>
+
+
+
+<t:emprise>
+    <t:geometrie srsName="urn:ogc:def:crs:EPSG::4171" srsDimension="2" gml:id="dtemprise0">
+        <gml:surfaceMembers>
+            <gml:Polygon gml:id="dt0">
+                <gml:exterior>
+<gml:LinearRing>
+<gml:coordinates>-1.1503573288314963,46.17082584164174 -1.1511031074494937,46.16997869276238 -1.1511621259012776,46.16975947228694 -1.1508133805043725,46.169365616356366 -1.1499924874931953,46.169150109087376 -1.1496705686652828,46.16914267778717 -1.1494452254857437,46.16933960690319 -1.149021365695659,46.17023878371865 -1.1503573288314963,46.17082584164174</gml:coordinates>
+</gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </gml:surfaceMembers>
+    </t:geometrie>
+    <t:surface>19709.513648547636</t:surface>
+    <t:referenceDelaCarte>Photographies aériennes: Géoportail Numérique 2010; Carte: 2012; Limites administratives: 2011</t:referenceDelaCarte>
+</t:emprise>
