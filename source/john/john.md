@@ -1,6 +1,6 @@
 
 
-# Hashcat ou John The Ripper pour cracker un fichier zip ou un fichier office
+# Hashcat ou John The Ripper pour cracker un fichier zip, un fichier office ou un fichier pdf
 
 
 ## Installation des outils
@@ -107,6 +107,10 @@ Attention, on verra un peu plus tard en essayant de l'utiliser, qu'il faut :
 ~/Install/john/run/zip2john francolinuscapensis07.zip > francolinuscapensis07.john
 ~/Install/john/run/john --incremental francolinuscapensis07.john
 ```
+
+### Utilisation pour cracker un fichier pdf
+https://blog.didierstevens.com/2017/12/26/cracking-encrypted-pdfs-part-1/
+a tester ....
 
 
 ### Utilisation pour cracker un fichier office
@@ -230,8 +234,44 @@ cd /home/fred/Documents/technic/source/john/hashcat-3.10
 ```
 
 ```
-sudo ./hashcat64.bin -a 3 -m 9400 --username --status -o ../Propositions\ évaluation\ DSI\ 2015_modif_al.crack ../Propositions\ évaluation\ DSI\ 2015_modif_al.hash
+sudo ./hashcat64.bin -a 3 -m 9600 \
+                     --username \
+                     --status \
+                     -o FichierAOuvrir4.crack \
+                     FichierAOuvrir4.hash
 ```
+
+#### utilisation de hascat avec un dictionnaire
+
+Les dictionnaires sont ici :
+https://wiki.skullsecurity.org/Passwords
+
+```
+wget http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2
+```
+
+```
+wget http://downloads.skullsecurity.org/passwords/facebook-names-withcount.txt.bz2
+```
+
+```
+bzip2 -d rockyou.txt.bz2
+bzip2 -d facebook-names-withcount.txt.bz2
+```
+
+```
+sudo ./hashcat64.bin -a 0 -m 9600 \
+                     --username \
+                     --status \
+                     -o FichierAOuvrir4.crack \
+                     FichierAOuvrir4.hash \
+                     rockyou.txt
+```
+
+La doc complementaire sur haschcat est ici
+
+http://fhack.troptop.net/?BruteForce_%26amp%3B_Rainbow_%26amp%3B_Dico___Outils___Hashcat
+
 
 #### utilisation de john
 
@@ -242,3 +282,5 @@ cd /home/fred/Documents/technic/source/john
 ```
 ~/Install/john/run/john --incremental Propositions\ évaluation\ DSI\ 2015_modif_al.hash
 ```
+
+

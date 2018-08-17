@@ -32,6 +32,9 @@ source/gup/bin/tmpsa/*
 source/gup/data/0_gup/
 source/gup/data/
 source/gup/data/*.sqlite
+source/john/4letters.dic.gz
+source/john/facebook-names-withcount.txt.bz2
+source/john/rockyou.txt
 source/john/omercy/
 source/john/omercy/oreilly-free-ebooks/*
 source/latex/doc/
