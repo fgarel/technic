@@ -64,6 +64,11 @@ Les données de départs sont fournis par le service archive
 noms de rues.xls
 ce fichier est retravaillé puis enregistrés sous ClassementDeclassement.ods
 
+### Et encore plus détaillé ?
+ouverture du fichier qgis
+/home/fred/Documents/technic/source/voirie/voirieadresse.qgs
+
+
 
 ## Détail du point de vue Travaux
 

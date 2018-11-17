@@ -18,10 +18,10 @@ class ParametresConnexion(object):
         u""" Fonction lancée au moment de l'instanciation. """
         # les parametres pour la creation
         # Attention : la creation se fait sur la machine localhost
-        self.dict_dbuser_dbpass = {'fred': 'fred',
-                                   'francois': 'fc',
-                                   'michel': 'mr',
-                                   'pascal': 'pb',
+        self.dict_dbuser_dbpass = {'fred': 'fgpass',
+                                   'francois': 'fcpass',
+                                   'michel': 'mrpass',
+                                   'pascal': 'pbpass',
                                    'voirie_administratif': 'adm',
                                    'voirie_deplacement': 'dep',
                                    'voirie_topographie': 'topo',
@@ -65,19 +65,21 @@ class ParametresConnexion(object):
                                                                 'postgis_topology',
                                                                 'fuzzystrmatch',
                                                                 'hstore',
-                                                                'dblink']}
+                                                                'dblink',
+                                                                'unaccent',
+                                                                'ogr_fdw']}
         self.dict_dbname_listschemas = {'espu': ['voirie_administratif',
                                                  'voirie_deplacement',
                                                  'voirie_topographie',
                                                  'voirie_travaux']}
-        self.dict_dbuser_searchpath = {'fred':                 'public',
-                                       'francois':             'voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
-                                       'michel':               'voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
-                                       'pascal':               'voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
-                                       'voirie_administratif': 'voirie_administratif, public',
-                                       'voirie_deplacement':   'voirie_deplacement, public',
-                                       'voirie_topographie':   'voirie_topographie, public',
-                                       'voirie_travaux':       'voirie_travaux, public'                                       }
+        self.dict_dbuser_searchpath = {'fred':                 '"$user", public',
+                                       'francois':             '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'michel':               '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'pascal':               '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'voirie_administratif': '"$user", public',
+                                       'voirie_deplacement':   '"$user", public',
+                                       'voirie_topographie':   '"$user", public',
+                                       'voirie_travaux':       '"$user", public'                                       }
         self.dict_dbname_dict_schema_dict_dbuser_listdroits = \
             {'espu': {'voirie_administratif':       {'fred':                 ['ALL'],
                                                      'francois':             ['ALL'],
@@ -105,12 +107,27 @@ class ParametresConnexion(object):
                       'voirie_topographie':         [],
                       'voirie_travaux':             []}}
 
+        self.dict_dbname_dict_schema_listsqlfilescreate = \
+            {'espu':              {'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_create.sql',
+                                                            './sql/espu_voirieAdministratif_projet_create.sql'],
+                                   'voirie_deplacement':   [],
+                                   'voirie_topographie':   [],
+                                   'voirie_travaux':       ['../sql/espu_voirieTravaux_projet_create.sql',
+                                                            './sql/espu_voirieTravaux_projet_create.sql']}}
+        self.dict_dbname_dict_schema_listsqlfilesinsert = \
+            {'espu':              {'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_insert.sql',
+                                                            './sql/espu_voirieAdministratif_projet_insert.sql'],
+                                   'voirie_deplacement':   [],
+                                   'voirie_topographie':   [],
+                                   'voirie_travaux':       ['../sql/espu_voirieTravaux_projet_insert.sql',
+                                                            './sql/espu_voirieTravaux_projet_insert.sql']}}
+
 
         # les paramètres pour la connexion
         self.hostname = 'localhost'
         self.port = '5432'
         self.username = 'fred'
-        self.password = 'fred'
+        self.password = 'fgpass'
 
 
 def main():

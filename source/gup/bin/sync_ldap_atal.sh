@@ -47,6 +47,15 @@ ldapsearch -h aul.larochelle.fr -x -t -T ./tmpsa -b "cn=Voirie,cn=Espace_Public,
 ldapsearch -h aul.larochelle.fr -x -t -T ./tmpga -b "ou=groups,dc=larochelle,dc=fr" > groupeAgents1.ldif # les relations Groupes/Agents
 ldapsearch -h aul.larochelle.fr -x -t -T ./tmps -b "ou=Voirie,ou=Espace_Public,ou=morisset,ou=Filires,ou=collectivites,dc=larochelle,dc=fr" > service1.ldif # Le service Voirie et les sous-services
 
+## jxplorer
+# hote : dsiad03.mairie.fr
+# port : 389
+# protocole : LDAPv3
+# Base DN : DC=mairie,DC=fr
+# Sécurité Niveau : Utilisateur + Mot de Passe
+# Sécurité Utilisateur DN : CN=Administrateur,CN=Users,DC=mairie,DC=fr
+# Sécurité Mot de Passe : MS,adm$10.07
+
 
 # #############################################
 # 2. Suppression des données photos

@@ -29,6 +29,8 @@ class Database(object):
         self.dict_dbuser_searchpath = paramconnexion.dict_dbuser_searchpath
         self.dict_dbname_dict_schema_dict_dbuser_listdroits = paramconnexion.dict_dbname_dict_schema_dict_dbuser_listdroits
         self.dict_dbname_dict_schema_listtables = paramconnexion.dict_dbname_dict_schema_listtables
+        self.dict_dbname_dict_schema_listsqlfilescreate = paramconnexion.dict_dbname_dict_schema_listsqlfilescreate
+        self.dict_dbname_dict_schema_listsqlfilesinsert = paramconnexion.dict_dbname_dict_schema_listsqlfilesinsert
 
         self.hostname = paramconnexion.hostname
         self.port = paramconnexion.port
@@ -87,8 +89,8 @@ class Database(object):
         # La troisième commande, c'est pour lui affecter des droits
         commande = "sudo -u postgres " + \
                    "     psql -c " + \
-                   "\"" + "ALTER ROLE \\\"" + username + "\\\"" + \
-                   " " + right + ";" + "\""
+                   "\'" + 'ALTER ROLE "' + username + '"' + \
+                   " " + right + ";" + "\'"
 
         print("{}".format(commande))
         subprocess.call(
@@ -97,12 +99,11 @@ class Database(object):
 
     def update_role_searchpath(self, username, searchpath):
         # pour modifier le search_path d'un utilisateur
-
         commande = "sudo -u postgres " + \
                    "     psql -c " + \
-                   "\"" + "ALTER ROLE \\\"" + username + "\\\"" + \
+                   "\'" + 'ALTER ROLE "' + username + '"' + \
                    " " + "SET search_path = " + \
-                   "\\\"" + searchpath + "\\\";" + "\""
+                   " " + searchpath + ";" + "\'"
 
         print("{}".format(commande))
         subprocess.call(
@@ -116,6 +117,7 @@ class Database(object):
         self.dbowner = dbowner
         self.conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT) # <-- ADD THIS LINE
         self.cur = self.conn.cursor()
+        #self.cur.execute("-- REVOKE CONNECT ON DATABASE {} FROM public;".format(self.dbname))
         self.cur.execute("DROP DATABASE if exists {} ;".format(self.dbname))
         self.cur.execute("CREATE DATABASE {} ;".format(self.dbname))
         self.cur.execute("ALTER DATABASE {} OWNER TO \"{}\";".format(self.dbname, self.dbowner))
@@ -185,9 +187,28 @@ class Database(object):
         self.cur.close()
         self.conn.close()
 
-    def do_all(self):
+    def execute_sqlfile(self, dbname, schema, sqlfile):
+        self.dbname = dbname
+        self.schema = schema
+        self.sqlfile = sqlfile
+        #print("dbname    = {}".format(self.dbname))
+        #print('schema    = {}'.format(self.schema))
+        #print('sqlfile   = {}'.format(self.sqlfile))
+        self.conn = self.conn_database(self.dbname)
+        self.conn.autocommit = True
+        self.cur = self.conn.cursor()
+        try:
+            self.sqlfileraw = open(self.sqlfile,'r')
+            self.cur.execute(self.sqlfileraw.read())
+            self.sqlfileraw.close()
+        except:
+            print('Impossible d acceder au fichier {}'.format(self.sqlfile))
+        self.cur.close()
+        self.conn.close()
+
+    def do_first(self):
         """
-        Methode pour automatiser la configuration de la base de données postgresql
+        Methode pour automatiser la creation de la base de données postgresql
         """
 
         # Creation des roles / utilisateurs
@@ -248,11 +269,48 @@ class Database(object):
                 for table in listtables:
                     self.create_table(dbname, schema, table)
 
+    def do_sqlfilescreate(self):
+        """
+        Methode pour simplement executer un fichier sql dans la base
+        """
+
+        # Execution fichier de commandes SQL
+        print('10 Execution fichier de commandes SQL : Create')
+        for dbname, dict_schema_listsqlfilescreate in self.dict_dbname_dict_schema_listsqlfilescreate.items():
+            for schema, listsqlfilescreate in dict_schema_listsqlfilescreate.items():
+                for sqlfilecreate in listsqlfilescreate:
+                    self.execute_sqlfile(dbname, schema, sqlfilecreate)
+
+    def do_sqlfilesinsert(self):
+        """
+        Methode pour simplement executer un fichier sql dans la base
+        """
+
+        # Execution fichier de commandes SQL
+        print('11 Execution fichier de commandes SQL : Insert')
+        for dbname, dict_schema_listsqlfilesinsert in self.dict_dbname_dict_schema_listsqlfilesinsert.items():
+            for schema, listsqlfilesinsert in dict_schema_listsqlfilesinsert.items():
+                for sqlfileinsert in listsqlfilesinsert:
+                    self.execute_sqlfile(dbname, schema, sqlfileinsert)
+
+
+    def do_all(self):
+        """
+        Methode pour automatiser la creation et la configuration de la base de
+        données postgresql
+        """
+
+        #print('do_all')
+        self.do_first()
+        self.do_sqlfilescreate()
+        self.do_sqlfilesinsert()
+
 def main():
     u""" Fonction appelée par défaut. """
     import parametresConnexion
     mesparametres = parametresConnexion.ParametresConnexion()
-    maconnexion.do_all()
+    madatabase = Database(mesparametres)
+    madatabase.do_all()
 
 
 
