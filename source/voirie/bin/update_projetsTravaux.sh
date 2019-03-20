@@ -2,7 +2,7 @@
 
 
 # Le but de ce script est :
-# - transferer les données du fichiers num_align.ods sous la forme de deux tables dans une base de données
+# - transferer les données des fichier projetsTravaux.ods et PPI.ods sous la forme de deux tables dans une base de données
 #   base de données espu, schéma voirie_travaux, tables projet, phase et objetGeometrique
 # - a partir de ces trois tables, et à partir des tables "in" (pour la saisie), il s'agit de mettre à jour
 #   un lot de tables "out" (pour l'affichage)
@@ -16,20 +16,30 @@
 
 # 1. Conversion de l'ods en xlsx
 echo "1. Conversion de l'ods en xlsx"
-#rm /home/fred/f/CARTOGRAPHIE/donnees/urbanisme/NUMEROTATIONS/2018/num_align.xlsx
+## echo "1.1. projetsTravaux.ods"
+#rm /home/fred/f/CARTOGRAPHIE/donnees/urbanisme/NUMEROTATIONS/2018/projetsTravaux.xlsx
 libreoffice \
             --view \
             --convert-to xlsx \
             /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux.ods \
             --outdir /home/fred/Documents/technic/source/qgis/data/projetsTravaux
 
+## echo "1.2. ppi/PPI.ods"
+#rm /home/fred/f/CARTOGRAPHIE/donnees/urbanisme/NUMEROTATIONS/2018/ppi/PPI.xlsx
+#libreoffice \
+#            --view \
+#            --convert-to xlsx \
+#            /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/PPI.ods \
+#            --outdir /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi
+
 # 2. Conversion de l'xlsx en csv
 # Attention, il faut avoir l'utilitaire xlsx2csv d'installé
 echo "2. Conversion de l'xlsx en csv"
+## echo "1.1. projetsTravaux.xlsx"
 xlsx2csv -a \
          /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux.xlsx \
          /home/fred/Documents/technic/source/qgis/data/projetsTravaux
-         
+
 rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-projet.csv
 mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projet.csv \
    /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-projet.csv
@@ -37,16 +47,32 @@ mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projet.csv \
 rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-phase.csv
 mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/phase.csv \
    /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-phase.csv
-   
+
 rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-objetGeometrique.csv
 mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/objetGeometrique.csv \
    /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-objetGeometrique.csv
-   
+
+rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-ppi.csv
+mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi.csv \
+  /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-ppi.csv
+
 rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux.xlsx
+
+## echo "1.1. PPI.xlsx"
+#xlsx2csv -a \
+#         /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/PPI.xlsx \
+#         /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi
+
+#rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/PPI-ppi_finances_2018_02.csv
+#mv /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/ppi_finances_2018_02.csv \
+#   /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/PPI-ppi_finances_2018_02.csv
+
+#rm /home/fred/Documents/technic/source/qgis/data/projetsTravaux/ppi/PPI.xlsx
+
+
 
 # 3. Lancement de la requete SQL pour mettre à jour les données
 # suite à la mise à jour du fichier libre office
 #
 echo "3. Lancement de la requete SQL"
 psql -h localhost -U fred -d espu -f /home/fred/Documents/technic/source/voirie/bin/sql/update_projetsTravaux.sql
-

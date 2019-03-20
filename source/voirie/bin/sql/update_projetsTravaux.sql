@@ -422,3 +422,455 @@ ALTER TABLE voirie_travaux."outObjetMultiPolygon"
   OWNER TO fred;
 COMMENT ON TABLE voirie_travaux."outObjetMultiPolygon"
   IS 'Objet Multi Polygon.';
+
+
+
+
+
+
+
+-- ------------------ --
+-- outObjetSimplePointPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetSimplePointPpi";
+drop table if exists voirie_travaux."outObjetSimplePointPpi";
+create table voirie_travaux."outObjetSimplePointPpi" as
+  select
+    --voirie_travaux."inObjetSimplePoint".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimplePoint".id+1000) as id,
+    --voirie_travaux."inObjetSimplePoint"."CodeSimplePoint",
+    voirie_travaux."inObjetSimplePoint"."CodeObjet",
+    voirie_travaux."inObjetSimplePoint".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetSimplePoint" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetSimplePoint"."CodeObjet"::numeric = voirie_travaux."ppi"."Code4";
+
+ALTER TABLE voirie_travaux."outObjetSimplePointPpi"
+  ADD constraint "outObjetSimplePointPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetSimplePointPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'POINT'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetSimplePointPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetSimplePointPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetSimplePointPpi"
+  IS 'Objet Simple Point.';
+
+
+-- ------------------ --
+-- outObjetMultiPointPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetMultiPointPpi";
+drop table if exists voirie_travaux."outObjetMultiPointPpi";
+create table voirie_travaux."outObjetMultiPointPpi" as
+  select
+    --voirie_travaux."inObjetMultiPoint".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiPoint".id+1000) as id,
+    --voirie_travaux."inObjetMultiPoint"."CodeMultiPoint",
+    voirie_travaux."inObjetMultiPoint"."CodeObjet",
+    voirie_travaux."inObjetMultiPoint".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetMultiPoint" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetMultiPoint"."CodeObjet"::numeric = voirie_travaux."ppi"."Code4";
+
+ALTER TABLE voirie_travaux."outObjetMultiPointPpi"
+  ADD constraint "outObjetMultiPointPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetMultiPointPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'MULTIPOINT'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetMultiPointPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetMultiPointPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetMultiPointPpi"
+  IS 'Objet Multi Point.';
+
+
+-- ------------------ --
+-- outObjetSimpleLinestringPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetSimpleLinestringPpi";
+drop table if exists voirie_travaux."outObjetSimpleLinestringPpi";
+create table voirie_travaux."outObjetSimpleLinestringPpi" as
+  select
+    --voirie_travaux."inObjetSimpleLinestring".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimpleLinestring".id+1000) as id,
+    --voirie_travaux."inObjetSimpleLinestring"."CodeSimpleLinestring",
+    voirie_travaux."inObjetSimpleLinestring"."CodeObjet",
+    voirie_travaux."inObjetSimpleLinestring".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetSimpleLinestring" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetSimpleLinestring"."CodeObjet"::numeric = voirie_travaux."ppi"."Code4";
+
+ALTER TABLE voirie_travaux."outObjetSimpleLinestringPpi"
+  ADD constraint "outObjetSimpleLinestringPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetSimpleLinestringPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'LINESTRING'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetSimpleLinestringPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetSimpleLinestringPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetSimpleLinestringPpi"
+  IS 'Objet Simple Linestring.';
+
+
+
+-- ------------------ --
+-- outObjetMultiLinestringPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetMultiLinestringPpi";
+drop table if exists voirie_travaux."outObjetMultiLinestringPpi";
+create table voirie_travaux."outObjetMultiLinestringPpi" as
+  select
+    --voirie_travaux."inObjetMultiLinestring".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiLinestring".id+1000) as id,
+    --voirie_travaux."inObjetMultiLinestring"."CodeMultiLinestring",
+    voirie_travaux."inObjetMultiLinestring"."CodeObjet",
+    voirie_travaux."inObjetMultiLinestring".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetMultiLinestring" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetMultiLinestring"."CodeObjet" = voirie_travaux."ppi"."Code4"::varchar;
+
+ALTER TABLE voirie_travaux."outObjetMultiLinestringPpi"
+  ADD constraint "outObjetMultiLinestringPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetMultiLinestringPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'MULTILINESTRING'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetMultiLinestringPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetMultiLinestringPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetMultiLinestringPpi"
+  IS 'Objet Multi Linestring.';
+
+
+
+-- ------------------ --
+-- outObjetSimplePolygonPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetSimplePolygonPpi";
+drop table if exists voirie_travaux."outObjetSimplePolygonPpi";
+create table voirie_travaux."outObjetSimplePolygonPpi" as
+  select
+    --voirie_travaux."inObjetSimplePolygon".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimplePolygon".id+1000) as id,
+    --voirie_travaux."inObjetSimplePolygon"."CodeSimplePolygon",
+    voirie_travaux."inObjetSimplePolygon"."CodeObjet",
+    voirie_travaux."inObjetSimplePolygon".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetSimplePolygon" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetSimplePolygon"."CodeObjet"::numeric = voirie_travaux."ppi"."Code4";
+
+ALTER TABLE voirie_travaux."outObjetSimplePolygonPpi"
+  ADD constraint "outObjetSimplePolygonPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetSimplePolygonPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'POLYGON'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetSimplePolygonPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetSimplePolygonPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetSimplePolygonPpi"
+  IS 'Objet Simple Polygon.';
+
+
+
+-- ------------------ --
+-- outObjetMultiPolygonPpi --
+-- ------------------ --
+
+--drop view if exists voirie_travaux."outObjetMultiPolygonPpi";
+drop table if exists voirie_travaux."outObjetMultiPolygonPpi";
+create table voirie_travaux."outObjetMultiPolygonPpi" as
+  select
+    --voirie_travaux."inObjetMultiPolygon".id,
+    coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiPolygon".id+1000) as id,
+    --voirie_travaux."inObjetMultiPolygon"."CodeMultiPolygon",
+    voirie_travaux."inObjetMultiPolygon"."CodeObjet",
+    voirie_travaux."inObjetMultiPolygon".shape,
+    voirie_travaux."ppi"."ordre", -- Ordre
+    voirie_travaux."ppi"."Code1", -- Code 1
+    voirie_travaux."ppi"."Libelle1", -- Libelle 1
+    voirie_travaux."ppi"."Code2", -- Code 2
+    voirie_travaux."ppi"."Libelle2", -- Libelle 2
+    voirie_travaux."ppi"."Code3", -- Code 3
+    voirie_travaux."ppi"."Libelle3", -- Libelle 3
+    voirie_travaux."ppi"."Code4", -- Code 4
+    voirie_travaux."ppi"."Libelle4", -- Libelle 4
+    voirie_travaux."ppi"."2016D", -- Année, Dépense
+    voirie_travaux."ppi"."2016R", -- Année, Recette
+    voirie_travaux."ppi"."2017D", -- Année, Dépense
+    voirie_travaux."ppi"."2017R", -- Année, Recette
+    voirie_travaux."ppi"."2018D", -- Année, Dépense
+    voirie_travaux."ppi"."2018R", -- Année, Recette
+    voirie_travaux."ppi"."2019D", -- Année, Dépense
+    voirie_travaux."ppi"."2019R", -- Année, Recette
+    voirie_travaux."ppi"."2020D", -- Année, Dépense
+    voirie_travaux."ppi"."2020R", -- Année, Recette
+    voirie_travaux."ppi"."2021D", -- Année, Dépense
+    voirie_travaux."ppi"."2021R", -- Année, Recette
+    voirie_travaux."ppi"."2022D", -- Année, Dépense
+    voirie_travaux."ppi"."2022R", -- Année, Recette
+    voirie_travaux."ppi"."2023D", -- Année, Dépense
+    voirie_travaux."ppi"."2023R", -- Année, Recette
+    voirie_travaux."ppi"."TotalD", -- Total, Dépense
+    voirie_travaux."ppi"."TotalR", -- Total, Recette
+    voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
+    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."TotalDA", -- Total, Dépense
+    voirie_travaux."ppi"."TotalRA", -- Total, Recette
+    voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
+    voirie_travaux."ppi"."Picto", -- nom du picto
+    voirie_travaux."ppi"."Orientation", -- orientation du symbole
+    voirie_travaux."ppi"."Taille", --taille du symbole
+    voirie_travaux."ppi"."CouleurLigne", -- code de la couleur
+    voirie_travaux."ppi"."Epaisseur", -- epaisseur
+    voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
+    voirie_travaux."ppi"."CouleurRemplissage",
+    voirie_travaux."ppi"."CouleurTexte",
+    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+  from
+    voirie_travaux."inObjetMultiPolygon" left join
+    voirie_travaux."ppi" on
+    voirie_travaux."inObjetMultiPolygon"."CodeObjet"::numeric = voirie_travaux."ppi"."Code4";
+
+ALTER TABLE voirie_travaux."outObjetMultiPolygonPpi"
+  ADD constraint "outObjetMultiPolygonPpi_id_pk" PRIMARY KEY (id);
+ALTER TABLE voirie_travaux."outObjetMultiPolygonPpi"
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'MULTIPOLYGON'::text OR shape IS NULL);
+ALTER TABLE voirie_travaux."outObjetMultiPolygonPpi"
+  ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
+ALTER TABLE voirie_travaux."outObjetMultiPolygonPpi"
+  OWNER TO fred;
+COMMENT ON TABLE voirie_travaux."outObjetMultiPolygonPpi"
+  IS 'Objet Multi Polygon.';

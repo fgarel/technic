@@ -1,21 +1,87 @@
-Utilisation de josm
+# Voirie
 
-Pour avoir la derniere version de josm, il est perferable d'utilier la technologie
-jnlp et java web start.
-kesako ?
+En ce qui concerne la voirie, plusieurs aspects sont à creuser :
+1. Structuration des données
+Utilisation de la topologie pour les données de voirie
 
-La réponse theorique est ici : 
-https://josm.openstreetmap.de/wiki/Fr:WikiStart
-https://www.java.com/fr/download/faq/java_webstart.xml
+2. Structuration plus spécifiques des adresses
 
-En pratique :
-L'utilitaire javaws se trouve dans le paquet iceadtea-netx
-```
-apt-get install iceadtea-netx
-```
+3. Utilisation d'outils
+josm
+chouette
+pgrouting, chouette, osmnx, geopandas, networkx, pysal
 
-Le lancement de josm
-```
-javaws josm.jnlp
-```
+
+## Structuration de la données adresse
+
+
+### Infos concernant les différentes bases
+BANO : Base Adresse Nationale Ouverte
+https://github.com/osm-fr/bano
+
+BAN : Base Adresse Nationale
+https://guichet-adressev2.ign.fr/
+https://github.com/etalab/adresse.data.gouv.fr
+https://adresse.data.gouv.fr/
+
+BAL : Base Adresse Locale
+https://scdl.opendatafrance.net/docs/schemas/scdl-adresses.html
+https://git.opendatafrance.net/scdl/adresses
+https://cms.geobretagne.fr/sites/default/files/documents/aitf-sig-topo-adresse-fichier-echange-simplifie-v_1.1_0.pdf
+
+voir BaseVoirie_BAL_BAN.ods
+
+## De la base Nationale à la Base Locale
+
+### Methode 1
+se rendre sur cette page :
+https://scdl.opendatafrance.net/docs/schemas/scdl-adresses.html
+
+puis sur cette page :
+https://adresse.data.gouv.fr/bases-locales/editeur
+
+un validateur de fichier est ausi disponible ici :
+https://adresse.data.gouv.fr/bases-locales/validateur
+
+On obtient un fichier 
+~/Documents/technic/source/voirie/data/extraction_ban_csv/filename.csv   (3.3 Mo)
+
+### Methode 2
+
+se rendre sur la page :
+https://guichet-adressev2.ign.fr/
+connexion
+
+nom d'utilisateur ou email : fgarel
+mot de passe : Cartographie1+
+
+Outil : Export de données
+
+choix de la commune : 17300 : LA ROCHELLE
+
+On obtient un fichier 
+~/Documents/technic/source/voirie/data/extraction_ban_csv/export_17300.csv   (5.5 Mo)
+
+### Methode 3
+se rendre sur la page
+https://adresse.data.gouv.fr/donnees-nationales
+
+Diffusion principale sans licence
+https://adresse.data.gouv.fr/data/adresses-cadastre/latest/csv/adresses-cadastres-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-cadastre/latest/geojson/adresses-cadastres-17.geojson.gz
+https://adresse.data.gouv.fr/data/adresses-cadastre/latest/ndjson-full/adresses-cadastres-17.ndjson.gz
+https://adresse.data.gouv.fr/data/adresses-ftth/latest/geojson/adresses-ftth-17.geojson.gz
+https://adresse.data.gouv.fr/data/adresses-locales/latest/csv/adresses-locales-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/bal/adresses-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/ban-v0/adresses-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/geojson/adresses-17.geojson.gz
+https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/bal/adresses-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/ban-v0/adresses-17.csv.gz
+https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/geojson/adresses-17.geojson.gz
+
+
+Diffusion alternative sous licence ODbL (assuré par OpenStreetMap France)
+http://bano.openstreetmap.fr/BAN_odbl/BAN_odbl_17-csv.bz2
+http://bano.openstreetmap.fr/BAN_odbl/BAN_odbl_17-json.bz2
+http://bano.openstreetmap.fr/BAN_odbl/BAN_odbl_17-shp.bz2
 

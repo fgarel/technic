@@ -270,6 +270,146 @@ COMMENT ON VIEW voirie_travaux."objetGeometrique"
 
 
 
+
+-- ------------------ --
+-- ppi --
+-- ------------------ --
+
+-- ppi_fdw
+DROP SERVER if exists "myserver_ppi" cascade;
+CREATE SERVER "myserver_ppi"
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-ppi.csv',
+    format 'CSV',
+    config_options 'HEADERS=FORCE');
+
+DROP FOREIGN TABLE if exists voirie_travaux."ppi_fdw";
+CREATE FOREIGN TABLE voirie_travaux."ppi_fdw" (
+    "ordre" character varying, -- Ordre
+    "Code1" character varying, -- Code Axe1
+    "Libelle1" character varying, -- Libelle Axe1
+    "Code2" character varying, -- Code Axe2
+    "Libelle2" character varying, -- Libelle Axe2
+    "Code3" character varying, -- Code
+    "Libelle3" character varying, -- Libelle
+    "Code4" character varying, -- Code
+    "Libelle4" character varying, -- Libelle
+    "2016D" character varying, -- Année, dépense
+    "2016R" character varying, -- Année, Recette
+    "2017D" character varying, -- Année, dépense
+    "2017R" character varying, -- Année, Recette
+    "2018D" character varying, -- Année, dépense
+    "2018R" character varying, -- Année, Recette
+    "2019D" character varying, -- Année, dépense
+    "2019R" character varying, -- Année, Recette
+    "2020D" character varying, -- Année, dépense
+    "2020R" character varying, -- Année, Recette
+    "2021D" character varying, -- Année, dépense
+    "2021R" character varying, -- Année, Recette
+    "2022D" character varying, -- Année, dépense
+    "2022R" character varying, -- Année, Recette
+    "2023D" character varying, -- Année, dépense
+    "2023R" character varying, -- Année, Recette
+    "TotalD" character varying, -- Total dépense
+    "TotalR" character varying, -- Total Recette
+    "Old_NumeroPPI" character varying, -- Ancien identifiant PPI
+    "StartTimeD" character varying, -- Debut, Dépense
+    "EndTimeD" character varying, -- Fin, Dépense
+    "StartTimeR" character varying, -- Début, Recette
+    "EndTimeR" character varying, -- Fin, Recette
+    "TotalDA" character varying, -- Total dépense Arrondi
+    "TotalRA" character varying, -- Total Recette Arrondi
+    "CouleurSymbole" character varying, -- code de la couleur
+    "Picto" character varying, -- nom du picto
+    "Orientation" character varying, -- orientation du symbole
+    "Taille" character varying, --taille du symbole
+    "CouleurLigne" character varying, -- code de la couleur
+    "Epaisseur"  character varying, -- epaisseur
+    "TypeDeLigne"  character varying, -- type de ligne
+    "CouleurRemplissage" character varying, -- code de la couleur
+    "CouleurTexte" character varying, -- code de la couleur
+    "Avancement" character varying--, -- Etat d'avancement du projet
+) SERVER "myserver_ppi"
+OPTIONS (layer 'projetsTravaux-ppi');
+
+-- Sequence: voirie_travaux."ppi_id_seq"
+
+-- DROP SEQUENCE if exists voirie_travaux."ppi_id_seq";
+DROP SEQUENCE if exists voirie_travaux."ppi_id_seq";
+CREATE SEQUENCE voirie_travaux."ppi_id_seq"
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER SEQUENCE voirie_travaux."ppi_id_seq"
+  OWNER TO fred;
+
+-- Vue: voirie_travaux."ppi"
+
+-- DROP VIEW if exists voirie_travaux."ppi";
+DROP VIEW if exists voirie_travaux."ppi";
+CREATE VIEW voirie_travaux."ppi" as
+select
+  nextval('voirie_travaux."ppi_id_seq"') as id, -- Identifiant
+    "ordre"::numeric, -- ordre
+    "Code1"::numeric, -- Code 1
+    "Libelle1", -- Libelle1
+    "Code2"::numeric, -- Code 2
+    "Libelle2", -- Libelle2
+    "Code3"::numeric, -- Code 3
+    "Libelle3", -- Libelle3
+    "Code4"::numeric, -- Code 4
+    "Libelle4", -- Libelle4
+    "2016D"::numeric, -- Année, dépense
+    "2016R"::numeric, -- Année, Recette
+    "2017D"::numeric, -- Année, dépense
+    "2017R"::numeric, -- Année, Recette
+    "2018D"::numeric, -- Année, dépense
+    "2018R"::numeric, -- Année, Recette
+    "2019D"::numeric, -- Année, dépense
+    "2019R"::numeric, -- Année, Recette
+    "2020D"::numeric, -- Année, dépense
+    "2020R"::numeric, -- Année, Recette
+    "2021D"::numeric, -- Année, dépense
+    "2021R"::numeric, -- Année, Recette
+    "2022D"::numeric, -- Année, dépense
+    "2022R"::numeric, -- Année, Recette
+    "2023D"::numeric, -- Année, dépense
+    "2023R"::numeric, -- Année, Recette
+    "TotalD"::numeric, -- Total dépense
+    "TotalR"::numeric, -- Total Recette
+    "Old_NumeroPPI"::numeric, -- Ancien identifiant PPI
+    "StartTimeD"::date, -- Debut, Dépense
+    "EndTimeD"::date, -- Fin, Dépense
+    "StartTimeR"::date, -- Début, Recette
+    "EndTimeR"::date, -- Fin, Recette
+    "TotalDA", -- Total dépense Arrondi
+    "TotalRA", -- Total Recette Arrondi
+    "CouleurSymbole", -- code de la couleur
+    "Picto", -- nom du picto
+    "Orientation"::numeric, -- orientation du symbole
+    "Taille"::numeric, --taille du symbole
+    "CouleurLigne", -- code de la couleur
+    "Epaisseur"::numeric, -- epaisseur
+    "TypeDeLigne", -- type de ligne
+    "CouleurRemplissage", -- code de la couleur
+    "CouleurTexte", -- code de la couleur
+    "Avancement"--, -- Etat d'avancement du projet
+FROM
+  voirie_travaux."ppi_fdw";
+
+--ALTER VIEW voirie_travaux."ppi"
+--  ADD constraint "ppi_id_pk" PRIMARY KEY (id);
+ALTER VIEW voirie_travaux."ppi"
+  OWNER TO fred;
+COMMENT ON VIEW voirie_travaux."ppi"
+  IS 'Plan Pluriannuel d Investissement';
+
+
+
+
 -- ------------------ --
 -- inObjetSimplePoint --
 -- ------------------ --
@@ -401,7 +541,7 @@ WITH (
 ALTER TABLE voirie_travaux."inObjetSimpleLinestring"
   ADD constraint "inObjetSimpleLinestring_id_pk" PRIMARY KEY (id);
 ALTER TABLE voirie_travaux."inObjetSimpleLinestring"
-  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'MULTIPOLYGON'::text OR shape IS NULL);
+  ADD CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'LINESTRING'::text OR shape IS NULL);
 ALTER TABLE voirie_travaux."inObjetSimpleLinestring"
   ADD CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946);
 ALTER TABLE voirie_travaux."inObjetSimpleLinestring"
