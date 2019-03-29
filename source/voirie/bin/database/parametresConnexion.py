@@ -112,8 +112,8 @@ class ParametresConnexion(object):
                                                             './sql/espu_voirieAdministratif_projet_create.sql'],
                                    'voirie_deplacement':   [],
                                    'voirie_topographie':   [],
-                                   'voirie_travaux':       ['../sql/espu_voirieTravaux_projet_create.sql',
-                                                            './sql/espu_voirieTravaux_projet_create.sql']}}
+                                   'voirie_travaux':       ['../sql/espu_voirieTravaux_projetphaseobjet_create.sql',
+                                                            './sql/espu_voirieTravaux_projetphaseobjet_create.sql']}}
         self.dict_dbname_dict_schema_listsqlfilesinsert = \
             {'espu':              {'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_insert.sql',
                                                             './sql/espu_voirieAdministratif_projet_insert.sql'],

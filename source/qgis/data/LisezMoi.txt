@@ -1,9 +1,9 @@
-Légendes que l'on veux voir apparaitre sur la carte
+Légendes que l'on veux voir apparaître sur la carte
 
 
 
     Salles municipales, locaux des comités de quartier
-      ~/Documents/install/source/osm/requete_overpass-turbo_FondDePlan_sallesMunicipalesLocauxComitesQuartiers.oql 
+      ~/Documents/install/source/osm/requete_overpass-turbo_FondDePlan_sallesMunicipalesLocauxComitesQuartiers.oql
     Centres sociaux
       ~/Documents/install/source/osm/requete_overpass-turbo_FondDePlan_centresSociaux.oql
     Services Ville/CDA/CCAS
@@ -27,9 +27,9 @@ Légendes que l'on veux voir apparaitre sur la carte
     Parkings
       ~/Documents/install/source/osm/requete_overpass-turbo_FondDePlan_Parkings.oql
 
-recupération des données (osm ou bases internes)
+récupération des données (osm ou bases internes)
 
-Nota : La recupération des données osm est expliqué ici :
+Nota : La récupération des données osm est expliqué ici :
 
 ```
 ~/Documents/install/source/osm/installOSM_3.md

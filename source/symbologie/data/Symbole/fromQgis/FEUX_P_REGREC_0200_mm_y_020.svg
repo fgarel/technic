@@ -1,0 +1,22 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="2500 px" version="1.2" viewBox="0 0 2500 2500" width="2500 px">
+ <title>Qt SVG Document</title>
+ <desc>Generated with Qt</desc>
+ <defs/>
+ <g stroke="black" stroke-linejoin="bevel" fill="none" fill-rule="evenodd" stroke-linecap="square" stroke-width="1">
+  <g font-style="normal" stroke-opacity="1" font-weight="400" stroke="#000000" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="round" font-size="38.8056" fill="#ffffff" stroke-linecap="square" font-family="Ubuntu" stroke-width="20" fill-opacity="0">
+   <path fill-rule="evenodd" vector-effect="none" d="M750,750 L1750,750 L1750,1750 L750,1750 L750,750" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(-0.5, 0, 0, -1.0, 1875.0 ,2500.0)"/>
+  </g>
+  <g font-style="normal" stroke-opacity="1" font-weight="400" stroke="#0c59cd" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="bevel" font-size="38.8056" fill="#96d67c" stroke-linecap="square" font-family="Ubuntu" stroke-width="15" fill-opacity="1">
+   <path fill-rule="evenodd" vector-effect="none" d="M1275,1250 C1275,1263.81 1263.81,1275 1250,1275 C1236.19,1275 1225,1263.81 1225,1250 C1225,1236.19 1236.19,1225 1250,1225 C1263.81,1225 1275,1236.19 1275,1250 " style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(-0.5, 0, 0, -1.0, 1875.0 ,2500.0)"/>
+  </g>
+  <g font-style="normal" stroke-opacity="0" font-weight="400" stroke="#232323" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="bevel" font-size="38.8056" fill="#85b66f" stroke-linecap="square" font-family="Ubuntu" stroke-width="1" fill-opacity="0">
+   <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M1260,1250 C1260,1255.52 1255.52,1260 1250,1260 C1244.48,1260 1240,1255.52 1240,1250 C1240,1244.48 1244.48,1240 1250,1240 C1255.52,1240 1260,1244.48 1260,1250 " style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(-0.5, 0, 0, -1.0, 1875.0 ,2500.0)"/>
+  </g>
+  <g font-style="normal" stroke-opacity="0.500008" font-weight="400" stroke="#58d9dd" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="round" font-size="38.8056" fill="#58d9dd" stroke-linecap="square" font-family="Ubuntu" stroke-width="50" fill-opacity="0">
+   <path fill-rule="nonzero" vector-effect="none" d="M29,-42 C61.5,-11.5 105,6 151,6 C227,6 272,-38 272,-91 C272,-138.5 242.5,-163 201,-179.5 L158,-198 C128.5,-209.5 102,-218.5 102,-244 C102,-268 123,-282.5 157,-282.5 C187,-282.5 210,-272 232,-254.5 L262,-291.5 C235,-317 197,-333 157,-333 C90.5,-333 43.5,-293 43.5,-241 C43.5,-193 79,-167.5 113.5,-154 L158,-134.5 C190.5,-122 213,-113.5 213,-86.5 C213,-61 192,-44.5 152,-44.5 C120,-44.5 87.5,-59.5 63,-81.5 L29,-42 M359.5,0 L570.5,0 L570.5,-49 L417,-49 L417,-327 L359.5,-327 L359.5,0 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" transform="matrix(-0.5, 0, 0, -1.0, 1474.625 ,1051.25)" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02"/>
+  </g>
+  <g font-style="normal" font-weight="400" stroke="none" transform="matrix(1,0,0,1,0,0)" font-size="38.8056" fill="#33a02c" font-family="Ubuntu" fill-opacity="1">
+   <path fill-rule="nonzero" vector-effect="none" d="M29,-42 C61.5,-11.5 105,6 151,6 C227,6 272,-38 272,-91 C272,-138.5 242.5,-163 201,-179.5 L158,-198 C128.5,-209.5 102,-218.5 102,-244 C102,-268 123,-282.5 157,-282.5 C187,-282.5 210,-272 232,-254.5 L262,-291.5 C235,-317 197,-333 157,-333 C90.5,-333 43.5,-293 43.5,-241 C43.5,-193 79,-167.5 113.5,-154 L158,-134.5 C190.5,-122 213,-113.5 213,-86.5 C213,-61 192,-44.5 152,-44.5 C120,-44.5 87.5,-59.5 63,-81.5 L29,-42 M359.5,0 L570.5,0 L570.5,-49 L417,-49 L417,-327 L359.5,-327 L359.5,0 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" transform="matrix(-0.5, 0, 0, -1.0, 1474.625 ,1051.25)" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02"/>
+  </g>
+  </g>
+</svg>

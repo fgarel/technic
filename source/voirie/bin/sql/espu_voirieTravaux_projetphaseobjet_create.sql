@@ -318,6 +318,10 @@ CREATE FOREIGN TABLE voirie_travaux."ppi_fdw" (
     "EndTimeD" character varying, -- Fin, Dépense
     "StartTimeR" character varying, -- Début, Recette
     "EndTimeR" character varying, -- Fin, Recette
+    "StartTimeDS" character varying, -- Debut, Dépense
+    "EndTimeDS" character varying, -- Fin, Dépense
+    "StartTimeRS" character varying, -- Début, Recette
+    "EndTimeRS" character varying, -- Fin, Recette
     "TotalDA" character varying, -- Total dépense Arrondi
     "TotalRA" character varying, -- Total Recette Arrondi
     "CouleurSymbole" character varying, -- code de la couleur
@@ -385,6 +389,10 @@ select
     "EndTimeD"::date, -- Fin, Dépense
     "StartTimeR"::date, -- Début, Recette
     "EndTimeR"::date, -- Fin, Recette
+    "StartTimeDS"::varchar, -- Debut, Dépense
+    "EndTimeDS"::varchar, -- Fin, Dépense
+    "StartTimeRS"::varchar, -- Début, Recette
+    "EndTimeRS"::varchar, -- Fin, Recette
     "TotalDA", -- Total dépense Arrondi
     "TotalRA", -- Total Recette Arrondi
     "CouleurSymbole", -- code de la couleur

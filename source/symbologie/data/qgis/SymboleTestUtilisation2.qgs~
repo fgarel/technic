@@ -170,7 +170,7 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="a_pcrs">
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="a_pcrs">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="FacadePCRS20171009153457748" source="dbname='sig' host=172.17.150.6 port=5432 user='frederic.garel' sslmode=disable key='idObjet' srid=3946 type=LineString table=&quot;a_pcrs&quot;.&quot;FacadePCRS&quot; (geometrie) sql=" name="FacadePCRS">
         <customproperties/>
@@ -599,7 +599,7 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="a_pcrs">
+    <legendgroup open="false" checked="Qt::PartiallyChecked" name="a_pcrs">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="FacadePCRS" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="FacadePCRS20171009153457748" visible="1"/>

@@ -10,7 +10,9 @@
 -- ------------------ --
 
 --drop view if exists voirie_travaux."outObjetSimplePoint";
+truncate table voirie_travaux."outObjetSimplePoint";
 drop table if exists voirie_travaux."outObjetSimplePoint";
+--insert into voirie_travaux."outObjetSimplePoint"
 create table voirie_travaux."outObjetSimplePoint" as
  select
    voirie_travaux."inObjetSimplePoint".id,
@@ -435,7 +437,9 @@ COMMENT ON TABLE voirie_travaux."outObjetMultiPolygon"
 
 --drop view if exists voirie_travaux."outObjetSimplePointPpi";
 drop table if exists voirie_travaux."outObjetSimplePointPpi";
+--truncate table voirie_travaux."outObjetSimplePointPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetSimplePointPpi" as
+--insert into voirie_travaux."outObjetSimplePointPpi"
   select
     --voirie_travaux."inObjetSimplePoint".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimplePoint".id+1000) as id,
@@ -470,10 +474,14 @@ create table voirie_travaux."outObjetSimplePointPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -485,7 +493,20 @@ create table voirie_travaux."outObjetSimplePointPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName')  as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetSimplePoint".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetSimplePoint".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetSimplePoint" left join
     voirie_travaux."ppi" on
@@ -509,7 +530,9 @@ COMMENT ON TABLE voirie_travaux."outObjetSimplePointPpi"
 
 --drop view if exists voirie_travaux."outObjetMultiPointPpi";
 drop table if exists voirie_travaux."outObjetMultiPointPpi";
+--truncate table voirie_travaux."outObjetMultiPointPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetMultiPointPpi" as
+--insert into voirie_travaux."outObjetMultiPointPpi"
   select
     --voirie_travaux."inObjetMultiPoint".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiPoint".id+1000) as id,
@@ -544,10 +567,14 @@ create table voirie_travaux."outObjetMultiPointPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -559,7 +586,20 @@ create table voirie_travaux."outObjetMultiPointPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName')  as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetMultiPoint".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetMultiPoint".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetMultiPoint" left join
     voirie_travaux."ppi" on
@@ -583,7 +623,9 @@ COMMENT ON TABLE voirie_travaux."outObjetMultiPointPpi"
 
 --drop view if exists voirie_travaux."outObjetSimpleLinestringPpi";
 drop table if exists voirie_travaux."outObjetSimpleLinestringPpi";
+--truncate table voirie_travaux."outObjetSimpleLinestringPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetSimpleLinestringPpi" as
+--insert into voirie_travaux."outObjetSimpleLinestringPpi"
   select
     --voirie_travaux."inObjetSimpleLinestring".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimpleLinestring".id+1000) as id,
@@ -618,10 +660,14 @@ create table voirie_travaux."outObjetSimpleLinestringPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -633,7 +679,20 @@ create table voirie_travaux."outObjetSimpleLinestringPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName') as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetSimpleLinestring".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetSimpleLinestring".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetSimpleLinestring" left join
     voirie_travaux."ppi" on
@@ -658,7 +717,9 @@ COMMENT ON TABLE voirie_travaux."outObjetSimpleLinestringPpi"
 
 --drop view if exists voirie_travaux."outObjetMultiLinestringPpi";
 drop table if exists voirie_travaux."outObjetMultiLinestringPpi";
+--truncate table voirie_travaux."outObjetMultiLinestringPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetMultiLinestringPpi" as
+--insert into voirie_travaux."outObjetMultiLinestringPpi"
   select
     --voirie_travaux."inObjetMultiLinestring".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiLinestring".id+1000) as id,
@@ -693,10 +754,14 @@ create table voirie_travaux."outObjetMultiLinestringPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -708,7 +773,20 @@ create table voirie_travaux."outObjetMultiLinestringPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName') as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetMultiLinestring".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetMultiLinestring".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetMultiLinestring" left join
     voirie_travaux."ppi" on
@@ -733,7 +811,9 @@ COMMENT ON TABLE voirie_travaux."outObjetMultiLinestringPpi"
 
 --drop view if exists voirie_travaux."outObjetSimplePolygonPpi";
 drop table if exists voirie_travaux."outObjetSimplePolygonPpi";
+--truncate table voirie_travaux."outObjetSimplePolygonPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetSimplePolygonPpi" as
+--insert into voirie_travaux."outObjetSimplePolygonPpi"
   select
     --voirie_travaux."inObjetSimplePolygon".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetSimplePolygon".id+1000) as id,
@@ -768,10 +848,14 @@ create table voirie_travaux."outObjetSimplePolygonPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -783,7 +867,20 @@ create table voirie_travaux."outObjetSimplePolygonPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName') as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetSimplePolygon".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetSimplePolygon".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetSimplePolygon" left join
     voirie_travaux."ppi" on
@@ -808,7 +905,9 @@ COMMENT ON TABLE voirie_travaux."outObjetSimplePolygonPpi"
 
 --drop view if exists voirie_travaux."outObjetMultiPolygonPpi";
 drop table if exists voirie_travaux."outObjetMultiPolygonPpi";
+--truncate table voirie_travaux."outObjetMultiPolygonPpi" RESTART IDENTITY;
 create table voirie_travaux."outObjetMultiPolygonPpi" as
+--insert into voirie_travaux."outObjetMultiPolygonPpi"
   select
     --voirie_travaux."inObjetMultiPolygon".id,
     coalesce( voirie_travaux."ppi"."ordre", voirie_travaux."inObjetMultiPolygon".id+1000) as id,
@@ -843,10 +942,14 @@ create table voirie_travaux."outObjetMultiPolygonPpi" as
     voirie_travaux."ppi"."TotalD", -- Total, Dépense
     voirie_travaux."ppi"."TotalR", -- Total, Recette
     voirie_travaux."ppi"."Old_NumeroPPI", -- Ancien identifiant PPI
-    voirie_travaux."ppi"."StartTimeD", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeD", -- Année, Recette
-    voirie_travaux."ppi"."StartTimeR", -- Année, Dépense
-    voirie_travaux."ppi"."EndTimeR", -- Année, Recette
+    voirie_travaux."ppi"."StartTimeD", -- Debut, Dépense
+    voirie_travaux."ppi"."EndTimeD", -- fin, Recette
+    voirie_travaux."ppi"."StartTimeR", -- Début, Dépense
+    voirie_travaux."ppi"."EndTimeR", -- Fin, Recette
+    coalesce( voirie_travaux."ppi"."StartTimeD",'2016-01-01')::varchar as "StartTimeDS", -- Debut, Dépense
+    coalesce( voirie_travaux."ppi"."EndTimeD",'2023-12-31')::varchar as "EndTimeDS", -- Fin, Dépense
+    coalesce( voirie_travaux."ppi"."StartTimeR",'2016-01-01')::varchar as "StartTimeRS", -- Début Recette
+    coalesce( voirie_travaux."ppi"."EndTimeR",'2023-12-31')::varchar as "EndTimeRS", -- Fin Recette
     voirie_travaux."ppi"."TotalDA", -- Total, Dépense
     voirie_travaux."ppi"."TotalRA", -- Total, Recette
     voirie_travaux."ppi"."CouleurSymbole", -- code de la couleur
@@ -858,7 +961,20 @@ create table voirie_travaux."outObjetMultiPolygonPpi" as
     voirie_travaux."ppi"."TypeDeLigne", -- type de ligne
     voirie_travaux."ppi"."CouleurRemplissage",
     voirie_travaux."ppi"."CouleurTexte",
-    voirie_travaux."ppi"."Avancement"--, -- Etat d'avancement du projet
+    voirie_travaux."ppi"."Avancement", -- Etat d'avancement du projet
+    coalesce( voirie_travaux."ppi"."Code2" || ' ' || voirie_travaux."ppi"."Libelle2",'DefaultFolderName') as "FolderName", -- Regroupement
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultPlaceMarkName') as "PlacemarkName", -- nom de l emplacement
+    st_y(st_transform((st_centroid(voirie_travaux."inObjetMultiPolygon".shape)),4326)) as "Latitude", -- latitude
+    st_x(st_transform((st_centroid(voirie_travaux."inObjetMultiPolygon".shape)),4326)) as "Longitude",  -- longitude
+    '' as "Address", -- address
+    'TemplateVLR' as "Template", --template
+    coalesce( voirie_travaux."ppi"."Libelle4",'DefaultTitle') as "Title", -- title
+    'https://yt3.ggpht.com/a-/AAuE7mAHMitTNqMsVLuzyTxVjXgPNjhAL4Zv6Oj2LQ=s288-mo-c-c0xffffffff-rj-k-no' as "ImageUrl",  -- ImageUrl
+    384 as "ImageWidth", -- Largeur
+    252 as "ImageHeight", --Hauteur
+    ('Dépenses = ' || voirie_travaux."ppi"."TotalDA" || ' ; Recettes = ' || voirie_travaux."ppi"."TotalRA" || '<br>' || 'Début du Projet = ' || voirie_travaux."ppi"."StartTimeD"|| ' ; Fin du Projet = ' || voirie_travaux."ppi"."EndTimeD") as "ParagraphText", -- Paragraph
+    'https://www.larochelle.fr' as "LinkUrl", -- LinkUrl
+    'Ville de La Rochelle' as "LinkText"--, --LinkText
   from
     voirie_travaux."inObjetMultiPolygon" left join
     voirie_travaux."ppi" on

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 """
@@ -227,34 +227,114 @@ def stretch_symbol(inFile, outFile, Obs_LargeurX, Obs_HauteurY):
     """
     # Pour chacun des noeuds de type path, transformation geometrique (etirement_x, etirement_y, translation)
     for path in root.iter('{http://www.w3.org/2000/svg}path'):
+        # on recupere les valeurs de la matrice de transformation initiale
+        # puis on fabrique la nouvelle matrice
+        #print('3 tag {}, {}'.format(text.tag, \
+        #                           text.attrib["transform"]))
+        try :
+            StartXOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<2>', path.attrib["transform"]))
+            StartYOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<3>', path.attrib["transform"]))
+        except:
+            StartXOld = 0.0
+            StartYOld = 0.0
+        #print('4 Old {}, {}'.format(StartXOld, \
+        #                           StartYOld))
+        StartXNew = str(1250*(1-param['Svg_ScaleX'])+StartXOld*param['Svg_ScaleX'])
+        StartYNew = str(1250*(1-param['Svg_ScaleY'])+StartYOld*param['Svg_ScaleY'])
+        #print('4 New {}, {}'.format(StartXNew, \
+        #                           StartYNew))
         path.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
+                                         StartXNew + ' ,' +
+                                         StartYNew + ')')
     # Pour chacun des noeuds de type rect, transformation geometrique (etirement_x, etirement_y, translation)
     for rect in root.iter('{http://www.w3.org/2000/svg}rect'):
+        # on recupere les valeurs de la matrice de transformation initiale
+        # puis on fabrique la nouvelle matrice
+        #print('3 tag {}, {}'.format(text.tag, \
+        #                           text.attrib["transform"]))
+        try:
+            StartXOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<2>', rect.attrib["transform"]))
+            StartYOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<3>', rect.attrib["transform"]))
+        except:
+            StartXOld = 0.0
+            StartYOld = 0.0
+        #print('4 Old {}, {}'.format(StartXOld, \
+        #                           StartYOld))
+        StartXNew = str(1250*(1-param['Svg_ScaleX'])+StartXOld*param['Svg_ScaleX'])
+        StartYNew = str(1250*(1-param['Svg_ScaleY'])+StartYOld*param['Svg_ScaleY'])
+        #print('4 New {}, {}'.format(StartXNew, \
+        #                           StartYNew))
         rect.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
+                                         StartXNew + ' ,' +
+                                         StartYNew + ')')
     # Pour chacun des noeuds de type polygon, transformation geometrique (etirement_x, etirement_y, translation)
     for polygon in root.iter('{http://www.w3.org/2000/svg}polygon'):
+        # on recupere les valeurs de la matrice de transformation initiale
+        # puis on fabrique la nouvelle matrice
+        #print('3 tag {}, {}'.format(text.tag, \
+        #                           text.attrib["transform"]))
+        try:
+            StartXOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<2>', polygon.attrib["transform"]))
+            StartYOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<3>', polygon.attrib["transform"]))
+        except:
+            StartXOld = 0.0
+            StartYOld = 0.0
+        #print('4 Old {}, {}'.format(StartXOld, \
+        #                           StartYOld))
+        StartXNew = str(1250*(1-param['Svg_ScaleX'])+StartXOld*param['Svg_ScaleX'])
+        StartYNew = str(1250*(1-param['Svg_ScaleY'])+StartYOld*param['Svg_ScaleY'])
+        #print('4 New {}, {}'.format(StartXNew, \
+        #                           StartYNew))
         polygon.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
+                                         StartXNew + ' ,' +
+                                         StartYNew + ')')
     # Pour chacun des noeuds de type circle, transformation geometrique (etirement_x, etirement_y, translation)
     for circle in root.iter('{http://www.w3.org/2000/svg}circle'):
+        # on recupere les valeurs de la matrice de transformation initiale
+        # puis on fabrique la nouvelle matrice
+        #print('3 tag {}, {}'.format(text.tag, \
+        #                           text.attrib["transform"]))
+        try:
+            StartXOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<2>', circle.attrib["transform"]))
+            StartYOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<3>', circle.attrib["transform"]))
+        except:
+            StartXOld = 0.0
+            StartYOld = 0.0
+        #print('4 Old {}, {}'.format(StartXOld, \
+        #                           StartYOld))
+        StartXNew = str(1250*(1-param['Svg_ScaleX'])+StartXOld*param['Svg_ScaleX'])
+        StartYNew = str(1250*(1-param['Svg_ScaleY'])+StartYOld*param['Svg_ScaleY'])
+        #print('4 New {}, {}'.format(StartXNew, \
+        #                           StartYNew))
         circle.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
+                                         StartXNew + ' ,' +
+                                         StartYNew + ')')
     # Pour chacun des noeuds de type text, transformation geometrique (etirement_x, etirement_y, translation)
     for text in root.iter('{http://www.w3.org/2000/svg}text'):
+        # on recupere les valeurs de la matrice de transformation initiale
+        # puis on fabrique la nouvelle matrice
+        #print('3 tag {}, {}'.format(text.tag, \
+        #                           text.attrib["transform"]))
+        try:
+            StartXOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<2>', text.attrib["transform"]))
+            StartYOld = float(re.sub('(.*)\,(.*)\,(.*)\)', '\g<3>', text.attrib["transform"]))
+        except:
+            StartXOld = 0.0
+            StartYOld = 0.0
+        #print('4 Old {}, {}'.format(StartXOld, \
+        #                           StartYOld))
+        StartXNew = str(1250*(1-param['Svg_ScaleX'])+StartXOld*param['Svg_ScaleX'])
+        StartYNew = str(1250*(1-param['Svg_ScaleY'])+StartYOld*param['Svg_ScaleY'])
+        #print('4 New {}, {}'.format(StartXNew, \
+        #                           StartYNew))
         text.set('transform','matrix(' + str(param['Svg_ScaleX']) + ', 0, 0, ' +
                                          str(param['Svg_ScaleY']) + ', ' +
-                                         str(500*(1-param['Svg_ScaleX'])) + ' ,' +
-                                         str(1000*(1-param['Svg_ScaleY'])) + ')')
+                                         StartXNew + ' ,' +
+                                         StartYNew + ')')
     # Pour mémoire (semble inutile) :
     # Pour chacun des noeuds de type flowRoot, transformation geometrique (etirement_x, etirement_y, translation)
     #for flowRoot in root.iter('{http://www.w3.org/2000/svg}flowRoot'):
@@ -340,7 +420,9 @@ def prepare_svg_1ere_passe(inFile, outFile):
 
 def prepare_svg_2de_passe(inFile, outFile):
     """
-    Suppression des branches dont (la couleur est blanche(#ffffff)) AND (opacity est 1)
+    1. Suppression des branches dont (la couleur est blanche(#ffffff)) AND (opacity est 1)
+    2. Suppression des branches dont (la couleur est noire(#000000)) AND (opacity est 1)
+    3. transfert des matrices de transformation du groupe vers ses elements fils
     """
     # Lecture du fichier SVG (comme un XML) en entree
     tree = et.parse(inFile)
@@ -352,6 +434,41 @@ def prepare_svg_2de_passe(inFile, outFile):
             #print('opactity {}, {}'.format(element.tag, \
             #                           element.attrib))
             element.getparent().remove(element)
+
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g[@fill='#000000']"):
+        if element.findall("[@fill-opacity='1']"):
+            #print('opactity {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            element.getparent().remove(element)
+        if element.findall("[@fill-opacity='0']"):
+            #print('opactity {}, {}'.format(element.tag, \
+            #                           element.attrib))
+            element.getparent().remove(element)
+        #if element.findall("[@fill-opacity='0']/rect"):
+        #    print('opactity {}, {}'.format(element.tag, \
+        #                               element.attrib))
+        #    element.getparent().remove(element)
+
+    # maintenant, on va reecrire, si besoin, la matrice de transformation
+    # on la passe de l'element g, a ses elements fils
+    for element in root.findall("./{http://www.w3.org/2000/svg}g/{http://www.w3.org/2000/svg}g"):
+        if element.findall("[@transform='matrix(1,0,0,1,0,0)']"):
+            #print('1 tag {}, {}'.format(element.tag, \
+            #                           element.attrib["transform"]))
+            pass
+        else:
+            sauve_transform = element.attrib["transform"]
+            #print('2 tag {}, {}'.format(element.tag, \
+            #                            element.attrib["transform"]))
+            for element_fils in element.iter('{http://www.w3.org/2000/svg}path'):
+                element_fils.set('transform', sauve_transform )
+            for element_fils in element.iter('{http://www.w3.org/2000/svg}rect'):
+                element_fils.set('transform', sauve_transform )
+            for element_fils in element.iter('{http://www.w3.org/2000/svg}circle'):
+                element_fils.set('transform', sauve_transform )
+            for element_fils in element.iter('{http://www.w3.org/2000/svg}text'):
+                element_fils.set('transform', sauve_transform )
+            element.set('transform', 'matrix(1,0,0,1,0,0)' )
 
     # Ecriture du fichier en sortie
     tree.write(outFile)
@@ -368,10 +485,13 @@ def prepare_svg_3eme_passe(inFile, outFile):
 
     # Modification de la largeur
     root.set('width', '1000 px')
+    root.set('width', '2500 px')
     # Modification de la hauteur
     root.set('height', '2000 px')
+    root.set('height', '2500 px')
     # Modification de la viewbox
     root.set('viewBox', '0 0 1000 2000')
+    root.set('viewBox', '0 0 2500 2500')
 
     # Ecriture du fichier en sortie
     tree.write(outFile)
@@ -452,6 +572,17 @@ def prepare_svg_5eme_passe(inPath, outPath, inFile):
     """
     fichierEntree = inPath + inFile
 
+    # Les valeurs de debut et de fin correpondent
+    # aux coefficient de deformation multiplié par 10,
+    # ou, exprimé autrement, à des valeurs en unité décimétriques
+    # Par exemple, -20 correspont à -2 en coefficient,
+    # et comme le symbole initial a 1 mètre de coté,
+    # alors, cela correspond à une valeur de -2 mètres
+    #
+    # Le pas, ici 10, correspond au "grain", à la "finesse",
+    # ici, pour un pas de 10, alors, on aura les rapports suivants :
+    # 20/10 ; 10/10 et 10/20
+    #
     #for Obs_LargeurX in [-3, -2, -1, -0.5, 0.5, 1, 2, 3, 4]:
     #for X in range(-20, 21, 1):
     for X in range(-20, 21, 10):
@@ -498,7 +629,9 @@ def main():
       @qgsfunction(args='auto', group='Custom')
       ces fonctions peuvent etre appelées depuis qgis
       il faut que ce script soit placé dans le repertoire adéquat
-      .qgis2/python/expressions/manipuleSymbole.py
+      ~/.qgis2/python/expressions/manipuleSymbole.py
+      ou, pour la version 3
+      ~/.local/share/QGIS/QGIS3/profile/default/python/expressions/manipuleSymbole.py
 
     Quand il est utilisé en ligne de commande, ce script prend donc en entrée
     un fichier svg modele, et plusieurs manipulations successives sont réalisées
@@ -568,10 +701,10 @@ def main():
                            valueFill='#494949', valueFillOpacity='0.2',
                            valueOutline='#494949', valueOutlineWidth='0.02')
     # pour des symboles "qgisCompatible", avec des couleurs assainissement 125,73,0
-    prepare_svg_4eme_passe(fichierEntree, fichierSortie,
-                           qgisCompatible=True,
-                           valueFill='#7d4900', valueFillOpacity='0.2',
-                           valueOutline='#7d4900', valueOutlineWidth='25')
+    #prepare_svg_4eme_passe(fichierEntree, fichierSortie,
+    #                       qgisCompatible=True,
+    #                       valueFill='#7d4900', valueFillOpacity='0.2',
+    #                       valueOutline='#7d4900', valueOutlineWidth='25')
     # pour des symboles non "qgisCompatible", avec des couleurs assainissement 125,73,0
     # pour les symboles non "qgisCompatible", ne pas hésiter à mettre une epaisseur ~ 25
     #prepare_svg_4eme_passe(fichierEntree, fichierSortie,

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2500 px" height="2500 px" version="1.2" baseProfile="tiny" viewBox="0 0 2500 2500">
+ <title>Qt SVG Document</title>
+ <desc>Generated with Qt</desc>
+ <defs/>
+ <g stroke-linejoin="bevel" fill="none" stroke-width="1" stroke="black" fill-rule="evenodd" stroke-linecap="square">
+  <g stroke-linejoin="bevel" fill="none" stroke-width="20" font-style="normal" stroke="#ff0000" font-weight="400" font-family="Ubuntu" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)" stroke-linecap="square" font-size="38.8056">
+   <path d="M1500,250 L1500,1250" fill-rule="evenodd" vector-effect="none" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+   <path d="M1750,250 L1750,1250" fill-rule="evenodd" vector-effect="none" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+   <path d="M2000,250 L2000,1250" fill-rule="evenodd" vector-effect="none" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+  </g>
+  <g stroke-linejoin="bevel" fill="#ffffff" stroke-width="20" font-style="normal" stroke="#000000" fill-opacity="0" font-weight="400" font-family="Ubuntu" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)" stroke-linecap="square" font-size="38.8056">
+   <path d="M1250,1250 L1250,250 L2250,250 L2250,1250 L1250,1250" fill-rule="evenodd" vector-effect="none" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+  </g>
+  <g stroke-linejoin="bevel" fill="#96d67c" stroke-width="15" font-style="normal" stroke="#0c59cd" fill-opacity="1" font-weight="400" font-family="Ubuntu" stroke-opacity="1" transform="matrix(1,0,0,1,0,0)" stroke-linecap="square" font-size="38.8056">
+   <path d="M1275,1250 C1275,1263.81 1263.81,1275 1250,1275 C1236.19,1275 1225,1263.81 1225,1250 C1225,1236.19 1236.19,1225 1250,1225 C1263.81,1225 1275,1236.19 1275,1250 " fill-rule="evenodd" vector-effect="none" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+  </g>
+  <g stroke-linejoin="bevel" fill="#e04880" stroke-width="1" font-style="normal" stroke="#000000" fill-opacity="0" font-weight="400" font-family="Ubuntu" stroke-opacity="0" transform="matrix(1,0,0,1,0,0)" stroke-linecap="square" font-size="38.8056">
+   <path d="M1760,750 C1760,755.523 1755.52,760 1750,760 C1744.48,760 1740,755.523 1740,750 C1740,744.477 1744.48,740 1750,740 C1755.52,740 1760,744.477 1760,750 " fill-rule="evenodd" vector-effect="non-scaling-stroke" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, 0.5, 0.0 ,625.0)"/>
+  </g>
+  <g stroke-linejoin="round" fill="#58d9dd" stroke-width="50" font-style="normal" stroke="#58d9dd" fill-opacity="0" font-weight="400" font-family="Ubuntu" stroke-opacity="0.500008" transform="matrix(1,0,0,1,0,0)" stroke-linecap="square" font-size="38.8056">
+   <path d="M60,0 L271,0 L271,-49 L117.5,-49 L117.5,-327 L60,-327 L60,0 M376.5,-126.5 L443.5,-215 C454.5,-232 466.5,-249 477,-265.5 L479.5,-265.5 C478.5,-246.5 477,-221.5 476.5,-202.5 L476.5,-126.5 L376.5,-126.5 M575.5,-126.5 L530.5,-126.5 L530.5,-318.5 L464,-318.5 L318,-121 L318,-82 L476.5,-82 L476.5,0 L530.5,0 L530.5,-82 L575.5,-82 L575.5,-126.5 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" fill-rule="nonzero" vector-effect="none" transform="matrix(1.0, 0, 0, 0.5, 1300.75 ,1099.375)" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02"/>
+  </g>
+  <g fill="#33a02c" font-style="normal" stroke="none" fill-opacity="1" font-weight="400" font-family="Ubuntu" transform="matrix(1,0,0,1,0,0)" font-size="38.8056">
+   <path d="M60,0 L271,0 L271,-49 L117.5,-49 L117.5,-327 L60,-327 L60,0 M376.5,-126.5 L443.5,-215 C454.5,-232 466.5,-249 477,-265.5 L479.5,-265.5 C478.5,-246.5 477,-221.5 476.5,-202.5 L476.5,-126.5 L376.5,-126.5 M575.5,-126.5 L530.5,-126.5 L530.5,-318.5 L464,-318.5 L318,-121 L318,-82 L476.5,-82 L476.5,0 L530.5,0 L530.5,-82 L575.5,-82 L575.5,-126.5 M720,0 L778,0 L778,-278 L881,-278 L881,-327 L617,-327 L617,-278 L720,-278 L720,0" fill-rule="nonzero" vector-effect="none" transform="matrix(1.0, 0, 0, 0.5, 1300.75 ,1099.375)" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02"/>
+  </g>
+  </g>
+</svg>

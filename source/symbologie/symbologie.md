@@ -30,17 +30,17 @@ Actuellement les infos relatives aux symboles topo sont disséminés un peu part
 
 ## Création, dessin du symbole
 
-Un symbole peut etre recupéré à partir d'un existant ou il peut etre créé de toutes pieces.
+Un symbole peut être récupéré à partir d'un existant ou il peut être créé de toutes pièces.
 
 Cependant, il faut savoir que le symbole devra etre "normé" pour pouvoir etre utilisé.
 
 Normé, cela veut dire que le symbole de base devra respecter une dimension 1x1, car la mise à la dimension réelle se fera avec qgis.
 
-Par exemple, un symbole L3T de base sera dessiné avec une dimension de 1m par 1m, mais par contre, en ce qui concerne son insertion, parce que cet objet est tres souvent levé par 3 points, le symbole sera inséré avec un facteur "scaleX" et un facteur "scaleY".
+Par exemple, un symbole L3T de base sera dessiné avec une dimension de 1m par 1m, mais par contre, en ce qui concerne son insertion, parce que cet objet est très souvent levé par 3 points, le symbole sera inséré avec un facteur "scaleX" et un facteur "scaleY".
 Les dimensions des plaques pour les chambres L0T, L1T, L2T, .... sont ici :
 http://gisone.free.fr/produits/catalogue/RESEAU-SEC.pdf
 
-Autre exemple un peu différent, une fleche directionnelle (voirie / signalisation horizontale), parce que cet objet est souvent levé par 2 points, le symbole de base sera inséré avec un seul facteur d'echelle "scaleXY". Il faut donc que le symbole de base respecte une emprise max 1x1, mais il ne faut pas que le symbole soit deformé.
+Autre exemple un peu différent, une flèche directionnelle (voirie / signalisation horizontale), parce que cet objet est souvent levé par 2 points, le symbole de base sera inséré avec un seul facteur d'échelle "scaleXY". Il faut donc que le symbole de base respecte une emprise max 1x1, mais il ne faut pas que le symbole soit déformé.
 
 Il faut donc que les symboles soient classées selon différents groupes :
 
@@ -55,7 +55,7 @@ Il faut donc que les symboles soient classées selon différents groupes :
 - des symboles dont la dimension correspond à celle de l'objet terrain (objet expansible selon un seul facteur d'échelle mais sans déformation)
 (dimension en unité terrain)
 (objet levé par deux points)
-(ex : regard rond levé par centre plus un point sur la circonférence, regard carre levé par les deux extrémités d'une diagonale, flêches directionnelle (signalisation horizontale), arbre avec Houppier représentatif)
+(ex : regard rond levé par centre plus un point sur la circonférence, regard carre levé par les deux extrémités d'une diagonale, flèches directionnelle (signalisation horizontale), arbre avec Houppier représentatif)
 - des symboles dont une dimension correspond à celle de l'objet terrain, et l'autre dimension est fixe (objet extensible selon un seul facteur d'échelle, mais avec déformation)
 (dimension en unité terrain pour un axe, en unité papier pour l'autre axe)
 (objet levé par deux points)
@@ -65,7 +65,7 @@ Il faut donc que les symboles soient classées selon différents groupes :
 (objet levé par trois points)
 (ex : regard rectangulaire, L1T, L2T, L3T,... )
 
-Si on recupère un symbole svg à partir d'une source externe, il faudra donc "normaliser" ce symbole suivant l'usage que l'on en fera.
+Si on récupère un symbole svg à partir d'une source externe, il faudra donc "normaliser" ce symbole suivant l'usage que l'on en fera.
 
 Si on souhaite créer un symbole à partir de rien, il y a plusieurs façons de créer un symbole ou une série de symbole.
 Et la création de plusieurs symboles quasi-identiques est plus ou moins automatisable.

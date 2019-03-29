@@ -1,0 +1,17 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" height="2500 px" version="1.2" viewBox="0 0 2500 2500" width="2500 px">
+ <title>Qt SVG Document</title>
+ <desc>Generated with Qt</desc>
+ <defs/>
+ <g stroke="black" stroke-linejoin="bevel" fill="none" fill-rule="evenodd" stroke-linecap="square" stroke-width="1">
+  <g font-style="normal" stroke-opacity="1" font-weight="400" stroke="#ff0000" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="round" font-size="38.8056" fill="none" stroke-linecap="butt" font-family="Ubuntu" stroke-width="20">
+   <path fill-rule="evenodd" vector-effect="none" d="M750,750 L1750,1750" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, -0.5, 0.0 ,1875.0)"/>
+   <path fill-rule="evenodd" vector-effect="none" d="M750,1750 L1750,750" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, -0.5, 0.0 ,1875.0)"/>
+  </g>
+  <g font-style="normal" stroke-opacity="1" font-weight="400" stroke="#000000" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="round" font-size="38.8056" fill="#ffffff" stroke-linecap="square" font-family="Ubuntu" stroke-width="20" fill-opacity="0">
+   <path fill-rule="evenodd" vector-effect="none" d="M750,750 L1750,750 L1750,1750 L750,1750 L750,750" style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, -0.5, 0.0 ,1875.0)"/>
+  </g>
+  <g font-style="normal" stroke-opacity="1" font-weight="400" stroke="#0c59cd" transform="matrix(1,0,0,1,0,0)" stroke-linejoin="bevel" font-size="38.8056" fill="#96d67c" stroke-linecap="square" font-family="Ubuntu" stroke-width="15" fill-opacity="1">
+   <path fill-rule="evenodd" vector-effect="none" d="M1275,1250 C1275,1263.81 1263.81,1275 1250,1275 C1236.19,1275 1225,1263.81 1225,1250 C1225,1236.19 1236.19,1225 1250,1225 C1263.81,1225 1275,1236.19 1275,1250 " style="" fill="param(fill) #494949" fill-opacity="param(fill-opacity) 0.2" stroke="param(outline) #494949" stroke-width="param(outline-width) 0.02" transform="matrix(1.0, 0, 0, -0.5, 0.0 ,1875.0)"/>
+  </g>
+  </g>
+</svg>
