@@ -7,7 +7,7 @@
 # 1. On signe sur une page A4, et on scanne (resolution 600, format tif) ces signatures : le fichier s'appelle
 #   ../data/A4_signature_1.tif
 
-# 2. A l'aide d'image magick, on extrait la singature
+# 2. A l'aide d'image magick, on extrait la signature
 # Les options fuzz et median sont expliquées ici
 # https://stackoverflow.com/questions/9155377/set-transparent-background-using-imagemagick-and-commandline-prompt
 # une solution meilleure est ici

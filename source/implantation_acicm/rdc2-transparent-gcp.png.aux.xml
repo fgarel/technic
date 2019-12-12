@@ -1,0 +1,11 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+  </Metadata>
+  <GCPList>
+    <GCP Id="" Pixel="690.8408" Line="731.3514" X="1.382048343502E+06" Y="5.224850692217E+06" />
+    <GCP Id="" Pixel="9173.3183" Line="732.3724" X="1.382103568105E+06" Y="5.224818437662E+06" />
+    <GCP Id="" Pixel="9176.3183" Line="5838.3724" X="1.382084201588E+06" Y="5.224785168998E+06" />
+    <GCP Id="" Pixel="688.3183" Line="5838.3724" X="1.382028927756E+06" Y="5.224817443245E+06" />
+  </GCPList>
+</PAMDataset>

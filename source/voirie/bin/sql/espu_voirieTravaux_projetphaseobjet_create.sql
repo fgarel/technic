@@ -54,6 +54,7 @@
 --drop sequence if exists voirie_travaux."projetMultiPolygon_id_seq" cascade;
 --drop sequence if exists voirie_travaux."projetMultiPolygon_id_seq1" cascade;
 
+
 -- ------------------ --
 -- Projet --
 -- ------------------ --
@@ -63,7 +64,7 @@ DROP SERVER if exists myserver_projet cascade;
 CREATE SERVER myserver_projet
   FOREIGN DATA WRAPPER ogr_fdw
   OPTIONS (
-    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-projet.csv',
+    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-Projet.csv',
     format 'CSV',
     config_options 'HEADERS=FORCE');
 
@@ -117,6 +118,73 @@ ALTER VIEW voirie_travaux."projet"
 COMMENT ON VIEW voirie_travaux."projet"
   IS 'Projet';
 
+
+
+-- ------------------ --
+-- NatureTravaux --
+-- ------------------ --
+
+-- natureTravaux_fdw
+--DROP SERVER if exists "myserver_naturetravaux" cascade;
+DROP SERVER if exists "myserver_natureTravaux" cascade;
+CREATE SERVER "myserver_natureTravaux"
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-NatureTravaux.csv',
+    format 'CSV',
+    config_options 'HEADERS=FORCE');
+
+--DROP FOREIGN TABLE if exists voirie_travaux."naturetravaux_fdw" cascade;
+DROP FOREIGN TABLE if exists voirie_travaux."natureTravaux_fdw" cascade;
+CREATE FOREIGN TABLE voirie_travaux."natureTravaux_fdw" (
+    "CodeProjet" character varying, -- CodeProjet
+    "CodeNature" character varying, -- CodeNature
+    "LibelleProjet1" character varying, -- Libelle1
+    "NatureTravaux" character varying, -- NatureTravaux
+    "MaitreDOeuvre" character varying, -- MaitreDOeuvre
+    "Contact" character varying--, -- Contact
+) SERVER "myserver_natureTravaux"
+OPTIONS (layer 'projetsTravaux-NatureTravaux');
+
+-- DROP SEQUENCE if exists voirie_travaux."natureTravaux_id_seq";
+DROP SEQUENCE if exists voirie_travaux."natureTravaux_id_seq";
+CREATE SEQUENCE voirie_travaux."natureTravaux_id_seq"
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+ALTER SEQUENCE voirie_travaux."natureTravaux_id_seq"
+  OWNER TO fred;
+
+-- Vue: voirie_travaux."natureTravaux"
+
+-- DROP VIEW if exists voirie_travaux."natureTravaux" CASCADE;
+DROP VIEW if exists voirie_travaux."natureTravaux" CASCADE;
+CREATE VIEW voirie_travaux."natureTravaux" as
+select
+  nextval('voirie_travaux."natureTravaux_id_seq"') as id, -- Identifiant
+  "CodeProjet", -- CodeProjet
+  "CodeNature", -- CodeNature
+  "LibelleProjet1", -- Libelle1
+  "NatureTravaux", -- NatureTravaux
+  "MaitreDOeuvre", -- MaitreDOeuvre
+  "Contact"--, -- Contact
+  --CONSTRAINT projet_id_pk PRIMARY KEY (id),
+  --CONSTRAINT enforce_geotype_geom CHECK (geometrytype(shape) = 'MULTIPOLYGON'::text OR shape IS NULL),
+  --CONSTRAINT enforce_srid_geom CHECK (st_srid(shape) = 3946)
+FROM
+  voirie_travaux."natureTravaux_fdw";
+
+--ALTER VIEW voirie_travaux."natureTravaux"
+--  ADD constraint natureTravaux_id_pk PRIMARY KEY (id);
+ALTER VIEW voirie_travaux."natureTravaux"
+  OWNER TO fred;
+COMMENT ON VIEW voirie_travaux."natureTravaux"
+  IS 'natureTravaux';
+
+
+
 -- ------------------ --
 -- Phase --
 -- ------------------ --
@@ -126,7 +194,7 @@ DROP SERVER if exists myserver_phase cascade;
 CREATE SERVER myserver_phase
   FOREIGN DATA WRAPPER ogr_fdw
   OPTIONS (
-    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-phase.csv',
+    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-Phase.csv',
     format 'CSV',
     config_options 'HEADERS=FORCE');
 
@@ -134,6 +202,7 @@ DROP FOREIGN TABLE if exists voirie_travaux.phase_fdw;
 CREATE FOREIGN TABLE voirie_travaux.phase_fdw (
     "CodeProjet" character varying, -- Code
     "CodePhase" character varying, -- Code
+    "LibelleProjet1" character varying, -- Libelle1
     "LibellePhase1" character varying, -- Libelle1
     "LibellePhase2" character varying, -- Libelle2
     "LibellePhase3" character varying, -- Libelle3
@@ -142,7 +211,9 @@ CREATE FOREIGN TABLE voirie_travaux.phase_fdw (
     "TagPhase3" character varying, -- Etiquette1
     "DateDebut" character varying, -- Date de début des travaux
     "DateFin" character varying, -- Date de fin des travaux
-    "DateTsrange" character varying--, -- plage
+    "DateDebutS" character varying, -- Date de début des travaux
+    "DateFinS" character varying, -- Date de fin des travaux
+    "Avancement" character varying--, -- plage
 ) SERVER myserver_phase
 OPTIONS (layer 'projetsTravaux-phase');
 
@@ -166,6 +237,7 @@ select
   nextval('voirie_travaux."phase_id_seq"') as id, -- Identifiant
   "CodeProjet", -- Code
   "CodePhase", -- Code
+  "LibelleProjet1", -- Libelle1
   "LibellePhase1", -- Libelle1
   "LibellePhase2", -- Libelle2
   "LibellePhase3", -- Libelle3
@@ -174,7 +246,9 @@ select
   "TagPhase3", -- Etiquette1
   "DateDebut"::date, -- Date de début des travaux
   "DateFin"::date, -- Date de fin des travaux
-  "DateTsrange"::tsrange
+  "DateDebutS", -- Date de début des travaux, character
+  "DateFinS", -- Date de fin des travaux, character
+  "Avancement"--, --Etat d'avancement du projet
 FROM
   voirie_travaux.phase_fdw;
 --ALTER VIEW voirie_travaux."phase"
@@ -183,6 +257,7 @@ ALTER VIEW voirie_travaux."phase"
     OWNER TO fred;
 COMMENT ON VIEW voirie_travaux."phase"
     IS 'Phase';
+
 
 -- ------------------ --
 -- objetGeometrique --
@@ -193,7 +268,7 @@ DROP SERVER if exists "myserver_objetGeometrique" cascade;
 CREATE SERVER "myserver_objetGeometrique"
   FOREIGN DATA WRAPPER ogr_fdw
   OPTIONS (
-    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-objetGeometrique.csv',
+    datasource '/home/fred/Documents/technic/source/qgis/data/projetsTravaux/projetsTravaux-ObjetGeometrique.csv',
     format 'CSV',
     config_options 'HEADERS=FORCE');
 

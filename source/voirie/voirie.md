@@ -71,7 +71,7 @@ Base de type topologie de réseau qui doit s'appuyer sur des "lanes" (file de ve
 
 #### Utilisation de josm
 
-Pour avoir la derniere version de josm, il est perferable d'utilier la technologie
+Pour avoir la derniere version de josm, il est preferable d'utilier la technologie
 jnlp et java web start.
 kesako ?
 

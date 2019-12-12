@@ -10,7 +10,7 @@ la documentation sur les graphes se trouve dispersée en plusieurs endroits
 
 ## Theorie
 
-La théorie des graphes ainsi que les algorithmes liés au parcours des graphes sont deux domaines qui sont largements documentés sur le web.
+La théorie des graphes ainsi que les algorithmes liés au parcours des graphes sont deux domaines qui sont largement documentés sur le web.
 les exercices du concours prologin sont l'occasion de se plonger dans cet univers
 
 Par exemple, le concours prologin aborde
@@ -20,10 +20,10 @@ Par exemple, le concours prologin aborde
  - ...
 
 D'autre part, dans le livre graphe et algorithme, que l'on peut utiliser pour
-résoudre le 5ème exercie de prologin de decembre 2016, il est aussi mentionné
-la notion de diametre d'un graphe dans un plan
+résoudre le 5ème exercie de prologin de décembre 2016, il est aussi mentionné
+la notion de diamètre d'un graphe dans un plan
 
-Les informations plus détaillées sur cettre notion de diamètre d'un graphe dans un plan sont ici
+Les informations plus détaillées sur cette notion de diamètre d'un graphe dans un plan sont ici
 http://repository.cmu.edu/isr/113/
 http://euro.ecom.cmu.edu/shamos.html
 http://euro.ecom.cmu.edu/people/faculty/mshamos/1975GeometricComplexity.pdf
@@ -60,10 +60,10 @@ http://acm-stoc.org/
 ## De la théorie à la pratique
 Nous allons partir d'un exemple concret, la résolution d'un exercice prologin,
 pour mettre en place un environnement de travail, et les premiers scripts python
-qui feront appel à networkx pour resoudre ce type de problème.
+qui feront appel à networkx pour résoudre ce type de problème.
 
 ### Présentation de l'exercice de prologin
-Nous allons décomposer le problème en une serie de sous-problème
+Nous allons décomposer le problème en une série de sous-problème
 
 On a en entree une liste de bipoints
 x_ini y_ini x_fin y_fin
@@ -102,7 +102,7 @@ nous allons effectuer les calculs ou manipulations suivantes :
 
 Pour manipuler les graphes, on peut recenser plusieurs outils qui ont chacun
 leur système de stockage (fichier, base de données), leur mécanisme d'import export,
-leurs algoithmes pour résoudre des problèmes, etc, etc...
+leurs algorithmes pour résoudre des problèmes, etc, etc...
 
 Ces systèmes sont :
 

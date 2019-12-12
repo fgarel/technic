@@ -1,6 +1,6 @@
 ﻿
 -- les tables in* sont des tables pour la numérisation des objets
--- ces tables in* sont définies dans le fichier "create" espu_voirieTravaux_projetphaseobjet_create.SQL
+-- ces tables in* sont définies dans le fichier "create" espu_voirieTravaux_projetphaseobjet_create.sql
 -- les tables out* sont des tables pour la visualisationdes données
 -- les tables out* sont définies dans le fichier "update"
 
