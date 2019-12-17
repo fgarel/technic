@@ -144,7 +144,7 @@ class Database(object):
         self.conn = self.conn_database(self.dbname)
         self.conn.autocommit = True
         self.cur = self.conn.cursor()
-        self.cur.execute("CREATE EXTENSION if not exists {} ;".format(self.extension))
+        self.cur.execute("CREATE EXTENSION if not exists {} CASCADE ;".format(self.extension))
         self.cur.close()
         self.conn.close()
 
@@ -310,19 +310,19 @@ def main():
     import parametresConnexion
     mesparametres = parametresConnexion.ParametresConnexion()
     madatabase = Database(mesparametres)
-    #madatabase.do_all()
+    madatabase.do_all()
 
-    print('dict_dbuser_dbpass         = {}'.format(mesparametres.dict_dbuser_dbpass))
-    print('dict_dbuser_listdroits     = {}'.format(mesparametres.dict_dbuser_listdroits))
-    print('listdbname                 = {}'.format(mesparametres.listdbname))
-    print('dict_dbname_dbowner        = {}'.format(mesparametres.dict_dbname_dbowner))
-    print('dict_dbname_listextensions = {}'.format(mesparametres.dict_dbname_listextensions))
-    print('dict_dbname_listschemas    = {}'.format(mesparametres.dict_dbname_listschemas))
+    #print('dict_dbuser_dbpass         = {}'.format(mesparametres.dict_dbuser_dbpass))
+    #print('dict_dbuser_listdroits     = {}'.format(mesparametres.dict_dbuser_listdroits))
+    #print('listdbname                 = {}'.format(mesparametres.listdbname))
+    #print('dict_dbname_dbowner        = {}'.format(mesparametres.dict_dbname_dbowner))
+    #print('dict_dbname_listextensions = {}'.format(mesparametres.dict_dbname_listextensions))
+    #print('dict_dbname_listschemas    = {}'.format(mesparametres.dict_dbname_listschemas))
 
-    print('hostname                   = {}'.format(mesparametres.hostname))
-    print('port                       = {}'.format(mesparametres.port))
-    print('username                   = {}'.format(mesparametres.username))
-    print('password                   = {}'.format(mesparametres.password))
+    #print('hostname                   = {}'.format(mesparametres.hostname))
+    #print('port                       = {}'.format(mesparametres.port))
+    #print('username                   = {}'.format(mesparametres.username))
+    #print('password                   = {}'.format(mesparametres.password))
 
 
 if __name__ == '__main__':

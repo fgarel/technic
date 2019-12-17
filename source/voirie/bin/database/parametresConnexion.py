@@ -63,6 +63,8 @@ class ParametresConnexion(object):
                                   'voirie_topographie':   ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'voirie_travaux':       ['CONNECT', 'TEMPORARY', 'ALL']}}
 
+        # sudo apt-get install postgresql-12-python3-multicorn
+        # sudo apt-get install postgresql-plpython3-12
 
         self.dict_dbname_listextensions = {'espu':             ['adminpack',
                                                                 'postgis',
