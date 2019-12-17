@@ -22,6 +22,7 @@ class ParametresConnexion(object):
                                    'francois': 'fcpass',
                                    'michel': 'mrpass',
                                    'pascal': 'pbpass',
+                                   'voirie_adresse': 'adr',
                                    'voirie_administratif': 'adm',
                                    'voirie_deplacement': 'dep',
                                    'voirie_topographie': 'topo',
@@ -33,6 +34,8 @@ class ParametresConnexion(object):
                                        'michel':               ['NOSUPERUSER', 'NOCREATEDB',
                                                                 'NOCREATEROLE', 'NOREPLICATION'],
                                        'pascal':               ['NOSUPERUSER', 'NOCREATEDB',
+                                                                'NOCREATEROLE', 'NOREPLICATION'],
+                                       'voirie_adresse':       ['NOSUPERUSER', 'NOCREATEDB',
                                                                 'NOCREATEROLE', 'NOREPLICATION'],
                                        'voirie_administratif': ['NOSUPERUSER', 'NOCREATEDB',
                                                                 'NOCREATEROLE', 'NOREPLICATION'],
@@ -54,6 +57,7 @@ class ParametresConnexion(object):
                                   'francois':             ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'michel':               ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'pascal':               ['CONNECT', 'TEMPORARY', 'ALL'],
+                                  'voirie_adresse':       ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'voirie_administratif': ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'voirie_deplacement':   ['CONNECT', 'TEMPORARY', 'ALL'],
                                   'voirie_topographie':   ['CONNECT', 'TEMPORARY', 'ALL'],
@@ -62,26 +66,39 @@ class ParametresConnexion(object):
 
         self.dict_dbname_listextensions = {'espu':             ['adminpack',
                                                                 'postgis',
+                                                                'postgis_raster',
+                                                                'postgis_sfcgal',
+                                                                'postgis_tiger_geocoder',
                                                                 'postgis_topology',
                                                                 'fuzzystrmatch',
                                                                 'hstore',
                                                                 'dblink',
                                                                 'unaccent',
-                                                                'ogr_fdw']}
-        self.dict_dbname_listschemas = {'espu': ['voirie_administratif',
+                                                                'ogr_fdw',
+                                                                'multicorn',
+                                                                'plpgsql',
+                                                                'plpython3u']}
+        self.dict_dbname_listschemas = {'espu': ['voirie_adresse',
+                                                 'voirie_administratif',
                                                  'voirie_deplacement',
                                                  'voirie_topographie',
                                                  'voirie_travaux']}
         self.dict_dbuser_searchpath = {'fred':                 '"$user", public',
-                                       'francois':             '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
-                                       'michel':               '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
-                                       'pascal':               '"$user", voirie_topographie, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'francois':             '"$user", voirie_topographie, voirie_adresse, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'michel':               '"$user", voirie_topographie, voirie_adresse, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'pascal':               '"$user", voirie_topographie, voirie_adresse, voirie_administratif, voirie_deplacement, voirie_travaux, public',
+                                       'voirie_adresse':       '"$user", public',
                                        'voirie_administratif': '"$user", public',
                                        'voirie_deplacement':   '"$user", public',
                                        'voirie_topographie':   '"$user", public',
-                                       'voirie_travaux':       '"$user", public'                                       }
+                                       'voirie_travaux':       '"$user", public'}
         self.dict_dbname_dict_schema_dict_dbuser_listdroits = \
-            {'espu': {'voirie_administratif':       {'fred':                 ['ALL'],
+            {'espu': {'voirie_adresse':             {'fred':                 ['ALL'],
+                                                     'francois':             ['ALL'],
+                                                     'michel':               ['ALL'],
+                                                     'pascal':               ['ALL'],
+                                                     'voirie_adresse':       ['ALL']},
+                      'voirie_administratif':       {'fred':                 ['ALL'],
                                                      'francois':             ['ALL'],
                                                      'michel':               ['ALL'],
                                                      'pascal':               ['ALL'],
@@ -102,20 +119,23 @@ class ParametresConnexion(object):
                                                      'pascal':               ['ALL'],
                                                      'voirie_travaux':       ['ALL']}}}
         self.dict_dbname_dict_schema_listtables = \
-            {'espu': {'voirie_administratif':       [],
+            {'espu': {'voirie_adresse':             [],
+                      'voirie_administratif':       [],
                       'voirie_deplacement':         [],
                       'voirie_topographie':         [],
                       'voirie_travaux':             []}}
 
         self.dict_dbname_dict_schema_listsqlfilescreate = \
-            {'espu':              {'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_create.sql',
+            {'espu':              {'voirie_adresse':       [],
+                                   'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_create.sql',
                                                             './sql/espu_voirieAdministratif_projet_create.sql'],
                                    'voirie_deplacement':   [],
                                    'voirie_topographie':   [],
                                    'voirie_travaux':       ['../sql/espu_voirieTravaux_projetphaseobjet_create.sql',
                                                             './sql/espu_voirieTravaux_projetphaseobjet_create.sql']}}
         self.dict_dbname_dict_schema_listsqlfilesinsert = \
-            {'espu':              {'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_insert.sql',
+            {'espu':              {'voirie_adresse':       [],
+                                   'voirie_administratif': ['../sql/espu_voirieAdministratif_projet_insert.sql',
                                                             './sql/espu_voirieAdministratif_projet_insert.sql'],
                                    'voirie_deplacement':   [],
                                    'voirie_topographie':   [],
@@ -124,7 +144,7 @@ class ParametresConnexion(object):
 
 
         # les paramètres pour la connexion
-        self.hostname = 'localhost'
+        self.hostname = 'fzg1.mairie.fr'
         self.port = '5432'
         self.username = 'fred'
         self.password = 'fgpass'

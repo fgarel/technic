@@ -1,80 +1,86 @@
 #!/bin/sh
 
 
+# Script fonctionnant le 13/12/2019
+#
+# BAN =
 
 # script pour la récupération de données BAN
 # ce script a beson de l'utilitaire p7zip-full
 # sudo apt-get install p7zip-full
 
 # 1. BAN = Diffusion principale sans licence
-rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.csv.gz
+# on nettoie
 rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.geojson.gz
 rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.geojson
-rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.ndjson.gz
 rm ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.ndjson
-rm ../data/ban_auto_adresse_data_gouv/adresses-ftth-17.geojson.gz
 rm ../data/ban_auto_adresse_data_gouv/adresses-ftth-17.geojson
-rm ../data/ban_auto_adresse_data_gouv/adresses-locales-17.csv.gz
 rm ../data/ban_auto_adresse_data_gouv/adresses-locales-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-bal-17.csv.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-bal-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-ban-v0-17.csv.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-ban-v0-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-17.geojson.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-17.geojson
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-bal-17.csv.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-bal-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-ban-v0-17.csv.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-ban-v0-17.csv
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-17.geojson.gz
-rm ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-17.geojson
+rm ../data/ban_auto_adresse_data_gouv/adresses-lo-17.ndjson
+rm ../data/ban_auto_adresse_data_gouv/adresses-lo-17.csv
+rm ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.ndjson
+rm ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.csv
+rm ../data/ban_auto_adresse_data_gouv/adresses-api-ban-17.csv
+rm ../data/ban_auto_adresse_data_gouv/adresses-api-groupign-17.csv
+rm ../data/ban_auto_adresse_data_gouv/adresses-api-housenumberign-17.csv
+rm ../data/ban_auto_adresse_data_gouv/adresses-compare-17.geojson
 
 
+# on telecharge
+# adresses-cadastre
 wget https://adresse.data.gouv.fr/data/adresses-cadastre/latest/csv/adresses-cadastre-17.csv.gz \
      -O ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.csv.gz
 wget https://adresse.data.gouv.fr/data/adresses-cadastre/latest/geojson/adresses-cadastre-17.geojson.gz \
      -O ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.geojson.gz
 wget https://adresse.data.gouv.fr/data/adresses-cadastre/latest/ndjson-full/adresses-cadastre-17.ndjson.gz \
      -O ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.ndjson.gz
+# adresses-ftth
 wget https://adresse.data.gouv.fr/data/adresses-ftth/latest/geojson/adresses-ftth-17.geojson.gz \
      -O ../data/ban_auto_adresse_data_gouv/adresses-ftth-17.geojson.gz
+# adresses-locales
 wget https://adresse.data.gouv.fr/data/adresses-locales/latest/csv/adresses-locales-17.csv.gz \
      -O ../data/ban_auto_adresse_data_gouv/adresses-locales-17.csv.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/bal/adresses-17.csv.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-bal-17.csv.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/ban-v0/adresses-17.csv.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-ban-v0-17.csv.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/ban-bal/geojson/adresses-17.geojson.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-17.geojson.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/bal/adresses-17.csv.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-bal-17.csv.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/ban-v0/adresses-17.csv.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-ban-v0-17.csv.gz
-wget https://adresse.data.gouv.fr/data/adresses-merge/cadastre-ftth-bal/geojson/adresses-17.geojson.gz \
-     -O ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-17.geojson.gz
+# ban/adresses-lo
+wget https://adresse.data.gouv.fr/data/ban/adresses-lo/latest/addok/adresses-addok-17.ndjson.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-lo-17.ndjson.gz
+wget https://adresse.data.gouv.fr/data/ban/adresses-lo/latest/csv/adresses-17.csv.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-lo-17.csv.gz
+# ban/adresses-odbl
+wget https://adresse.data.gouv.fr/data/ban/adresses-odbl/latest/addok/adresses-addok-17.ndjson.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.ndjson.gz
+wget https://adresse.data.gouv.fr/data/ban/adresses-odbl/latest/csv/adresses-17.csv.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.csv.gz
+# ban/export-api-gestion/ban
+wget https://adresse.data.gouv.fr/data/ban/export-api-gestion/latest/ban/ban-17.csv.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-api-ban-17.csv.gz
+wget https://adresse.data.gouv.fr/data/ban/export-api-gestion/latest/group-id-ign/group-id-ign-17.csv.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-api-groupign-17.csv.gz
+wget https://adresse.data.gouv.fr/data/ban/export-api-gestion/latest/housenumber-id-ign/housenumber-id-ign-17.csv.gz \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-api-housenumberign-17.csv.gz
+# compare
+wget https://adresse.data.gouv.fr/data/compare/compare-17.geojson \
+     -O ../data/ban_auto_adresse_data_gouv/adresses-compare-17.geojson
 
+# On décompresse
 gunzip ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.csv.gz
 gunzip ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.geojson.gz
 gunzip ../data/ban_auto_adresse_data_gouv/adresses-cadastre-17.ndjson.gz
 gunzip ../data/ban_auto_adresse_data_gouv/adresses-ftth-17.geojson.gz
 gunzip ../data/ban_auto_adresse_data_gouv/adresses-locales-17.csv.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-bal-17.csv.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-ban-v0-17.csv.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-ban-bal-17.geojson.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-bal-17.csv.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-ban-v0-17.csv.gz
-gunzip ../data/ban_auto_adresse_data_gouv/adresses-merge-cadastre-ftth-bal-17.geojson.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-lo-17.ndjson.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-lo-17.csv.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.ndjson.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-odbl-17.csv.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-api-ban-17.csv.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-api-groupign-17.csv.gz
+gunzip ../data/ban_auto_adresse_data_gouv/adresses-api-housenumberign-17.csv.gz
 
 # 2. BANO = Diffusion alternative sous licence ODbL (assuré par OpenStreetMap France)
-rm ../data/bano_auto_openstreetmap/BAN_odbl_17-csv.bz2
 rm ../data/bano_auto_openstreetmap/BAN_odbl_17-csv
-rm ../data/bano_auto_openstreetmap/BAN_odbl_17-json.bz2
 rm ../data/bano_auto_openstreetmap/BAN_odbl_17-json
-rm ../data/bano_auto_openstreetmap/BAN_odbl_17-shp.zip
 rm -f ../data/bano_auto_openstreetmap/BAN_odbl_17.*
-rm ../data/bano_auto_openstreetmap/LICENCE.txt
-rm ../data/bano_auto_openstreetmap/LISEZ-MOI.txt
+#rm ../data/bano_auto_openstreetmap/LICENCE.txt
+#rm ../data/bano_auto_openstreetmap/LISEZ-MOI.txt
 
 wget http://bano.openstreetmap.fr/BAN_odbl/BAN_odbl_17-csv.bz2 \
      -O ../data/bano_auto_openstreetmap/BAN_odbl_17-csv.bz2
@@ -89,6 +95,7 @@ bunzip2 ../data/bano_auto_openstreetmap/BAN_odbl_17-json.bz2
    -o../data/bano_auto_openstreetmap/ \
    ../data/bano_auto_openstreetmap/BAN_odbl_17-shp.zip
 rm ../data/bano_auto_openstreetmap/BAN_odbl_17-shp.zip
+#rm -f ../data/bano_auto_openstreetmap/BAN_odbl_17.*
 rm ../data/bano_auto_openstreetmap/LICENCE.txt
 rm ../data/bano_auto_openstreetmap/LISEZ-MOI.txt
 
@@ -110,9 +117,12 @@ rm ../data/cadastre_auto_fantoir/nouvelle_aquitaine.zip
 echo "#"
 echo "# L'adresse url est à prendre sur cette page"
 echo "# http://results.openaddresses.io/sources/fr/charente_maritime"
-echo "#"
+echo "# le numero du sous-repertoire est ensuite à changer dans l'adresse ci-dessous"
+export SOUSREP=723398
 rm ../data/openaddresses_semiauto_openaddresses/nouvelle_aquitaine.zip
-wget https://s3.amazonaws.com/data.openaddresses.io/runs/608595/fr/charente_maritime.zip \
+#wget https://s3.amazonaws.com/data.openaddresses.io/runs/$SOUSREP/fr/charente_maritime.zip \
+#     -O ../data/openaddresses_semiauto_openaddresses/charente_maritime.zip
+wget https://data.openaddresses.io/runs/$SOUSREP/fr/charente_maritime.zip \
      -O ../data/openaddresses_semiauto_openaddresses/charente_maritime.zip
 rm -f ../data/openaddresses_semiauto_openaddresses/README.txt
 rm -f ../data/openaddresses_semiauto_openaddresses/fr/charente_maritime.csv
@@ -130,6 +140,3 @@ echo "#"
 rm ../data/osm_semiauto_bbbike/planet_-1.2591,46.125_-1.0939,46.199.osm.pbf
 wget https://download.bbbike.org/osm/extract/planet_-1.2591,46.125_-1.0939,46.199.osm.pbf \
      -O ../data/osm_semiauto_bbbike/planet_-1.2591,46.125_-1.0939,46.199.osm.pbf
-
-
-

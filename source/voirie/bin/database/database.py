@@ -3,14 +3,14 @@
 
 # script pour la creation d'une base de données :
 
-#from connexion import parametres
-#import parametresConnection
-#from database import parametresConnection
+# from connexion import parametres
+# import parametresConnection
+# from database import parametresConnection
 
 import subprocess
 import psycopg2
-from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT # <-- ADD THIS LINE
-from psycopg2.extensions import ISOLATION_LEVEL_READ_COMMITTED # <-- ADD THIS LINE
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT  # <-- ADD THIS LINE
+from psycopg2.extensions import ISOLATION_LEVEL_READ_COMMITTED  # <-- ADD THIS LINE
 
 
 class Database(object):
@@ -310,8 +310,19 @@ def main():
     import parametresConnexion
     mesparametres = parametresConnexion.ParametresConnexion()
     madatabase = Database(mesparametres)
-    madatabase.do_all()
+    #madatabase.do_all()
 
+    print('dict_dbuser_dbpass         = {}'.format(mesparametres.dict_dbuser_dbpass))
+    print('dict_dbuser_listdroits     = {}'.format(mesparametres.dict_dbuser_listdroits))
+    print('listdbname                 = {}'.format(mesparametres.listdbname))
+    print('dict_dbname_dbowner        = {}'.format(mesparametres.dict_dbname_dbowner))
+    print('dict_dbname_listextensions = {}'.format(mesparametres.dict_dbname_listextensions))
+    print('dict_dbname_listschemas    = {}'.format(mesparametres.dict_dbname_listschemas))
+
+    print('hostname                   = {}'.format(mesparametres.hostname))
+    print('port                       = {}'.format(mesparametres.port))
+    print('username                   = {}'.format(mesparametres.username))
+    print('password                   = {}'.format(mesparametres.password))
 
 
 if __name__ == '__main__':
