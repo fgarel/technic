@@ -1,0 +1,35 @@
+// conversion des pdf en png
+
+digraph G1 {
+
+    graph [bgcolor=snow, splines=ortho];
+
+    nodesep=1.0 // increases the separation between nodes
+
+    //edge [color=red, arrowsize=2];
+    node [color=yellow, style=filled, shape=record, fontname="verdana"];
+
+    subgraph processus {
+        P101 [label="{Direction de la Voirie|Sébastien Codet}" style=filled color="/accent3/1" ];
+
+        P202 [label="{Mission Mode doux de déplacement Urbain|Birgitta Morin}" style=filled color="/accent3/2" ];
+        P203 [label="{Service Éclairage public\nSignalisation Tricolore|Olivier Golinvaux}" style=filled color="/accent3/2" ];
+        P204 [label="{Unité Assainissement pluvial\net Protection du littoral|Séverine Teyssot}" style=filled color="/accent3/2" ];
+        P205 [label="{Unité Déplacements|Pascal Laffargue}" style=filled color="/accent3/2" ];
+        P206 [label="{Unité Topographie|Frédéric Garel}" style=filled color="/accent3/2" ];
+        P207 [label="{Unité Voirie Travaux|David Germaneau}" style=filled color="/accent3/2" ];
+
+        P101 -> {P202 ; P203 ; P204 ; P205 ; P206 ; P207}
+        {rank=same; P202 P203 P204 P205 P206 P207}  // Put them on the same level
+
+        P308 [label="{Organisation technique\nProgrammation Etudes Commandes DT/DICT|Sébastien Paillé}" style=filled color="/accent3/3" ];
+        P309 [label="{Réseau pluvial\nProtection Littorale\nExploitation|Jean-Yves Oberlin}" style=filled color="/accent3/3" ];
+
+        P203 -> P308;
+        P204 -> P309;
+        {rank=same; P308 P309}  // Put them on the same level
+
+    }
+
+
+}
